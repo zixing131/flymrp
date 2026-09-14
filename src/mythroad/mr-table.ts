@@ -1576,7 +1576,20 @@ export class MrTableBridge {
         this.noteRead({ name, lookfor, guestAddr: address, length: entry.storedLength });
         return address;
       }
-      const data = archive.readFile(name);
+      // The native reader publishes the gzip output size before attempting
+      // decompression and returns NULL on failure. Wrappers can handle this
+      // while probing a RAM package; do not turn it into a host exception.
+      if (lenAddr && entry.storedLength >= 4) {
+        const trailer = entry.offset + entry.storedLength - 4;
+        mem.write32(lenAddr, new DataView(archive.data.buffer, archive.data.byteOffset + trailer, 4).getUint32(0, true));
+      }
+      let data: Uint8Array;
+      try { data = archive.readFile(name); }
+      catch (e) {
+        if (!(e instanceof MrpFormatError)) throw e;
+        this.noteRead({ name, lookfor, guestAddr: 0, length: 0 });
+        return 0;
+      }
       const address = this.malloc(data.length);
       if (!address) return 0;
       mem.load(address, data);
