@@ -1,0 +1,187 @@
+{
+  "caseId": 80,
+  "md5": "866d2ae9cd441dbe28725e60fb64cf30",
+  "reference": "FFmpeg adpcm_ima_wav to s16le; compare declared fact length bounded by actual blocks",
+  "results": [
+    {
+      "name": "egg_boom.wav",
+      "bytes": 4156,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 8080,
+      "referenceSamples": 8080,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "eggs_bird_2.wav",
+      "bytes": 1596,
+      "channels": 1,
+      "sampleRate": 22050,
+      "samples": 3051,
+      "referenceSamples": 3051,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "s_bird_2.wav",
+      "bytes": 1084,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 2020,
+      "referenceSamples": 2020,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "a_bird_2.wav",
+      "bytes": 4668,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 9090,
+      "referenceSamples": 9090,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "eggs_bird_1.wav",
+      "bytes": 4412,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 8585,
+      "referenceSamples": 8585,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "s_bird_1.wav",
+      "bytes": 4668,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 9090,
+      "referenceSamples": 9090,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "a_bird_1.wav",
+      "bytes": 4412,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 8585,
+      "referenceSamples": 8585,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "red_bird_1.wav",
+      "bytes": 6492,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 12625,
+      "referenceSamples": 12625,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "birds_hit.wav",
+      "bytes": 2396,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 4545,
+      "referenceSamples": 4545,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "failed.wav",
+      "bytes": 10070,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 19695,
+      "referenceSamples": 19695,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "success.wav",
+      "bytes": 10556,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 20705,
+      "referenceSamples": 20705,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "title_theme.wav",
+      "bytes": 30548,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 60095,
+      "referenceSamples": 60095,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "birds_call.wav",
+      "bytes": 25430,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 49995,
+      "referenceSamples": 49995,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "fork.wav",
+      "bytes": 4412,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 8585,
+      "referenceSamples": 8585,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "eagle_fly.wav",
+      "bytes": 11524,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 22220,
+      "referenceSamples": 22220,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "eagle_exp.wav",
+      "bytes": 10372,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 20200,
+      "referenceSamples": 20200,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "pig_break.wav",
+      "bytes": 2902,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 5555,
+      "referenceSamples": 5555,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "canned_shot.wav",
+      "bytes": 7172,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 13635,
+      "referenceSamples": 13635,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "pig_smile.wav",
+      "bytes": 4668,
+      "channels": 1,
+      "sampleRate": 11025,
+      "samples": 9090,
+      "referenceSamples": 9090,
+      "maxSampleDifference": 0
+    },
+    {
+      "name": "silience.wav",
+      "bytes": 1596,
+      "channels": 1,
+      "sampleRate": 8000,
+      "samples": 3030,
+      "referenceSamples": 3030,
+      "maxSampleDifference": 0
+    }
+  ]
+}

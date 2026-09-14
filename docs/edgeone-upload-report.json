@@ -1,0 +1,481 @@
+{
+  "projectId": "makers-gciglthrse9a",
+  "domain": "flymrp-bgoitpfz.edgeone.cool",
+  "store": "my-store",
+  "uploadedByKind": {
+    "mrp": 2640,
+    "icon": 1286,
+    "resource": 12,
+    "large": 73
+  },
+  "originalObjectBytes": 1030870038,
+  "chunkedFiles": 18,
+  "uniqueChunks": 33,
+  "maxChunkBytes": 1900000,
+  "downloadVerification": {
+    "verifiedAt": "2026-09-14T07:05:05.352Z",
+    "verified": [
+      {
+        "key": "mrp-files/tommao.mrp",
+        "bytes": 3942799,
+        "sha256": "eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7"
+      },
+      {
+        "key": "mrp-files/395020_240320_gjmrry.mrp",
+        "bytes": 2318296,
+        "sha256": "70745a80f2a1eb064fbf5a0e8014b2b744f38e6e3220718570a42ca380dd8527"
+      },
+      {
+        "key": "mrp-files/talkcat.zip",
+        "bytes": 3481569,
+        "sha256": "90f7fcb0d4d5fa3078b0ad345cea67d6cf9872bd1ab33d4bfe47dc42e05f425f"
+      },
+      {
+        "key": "runtime/mythroad_res/ghdtz/resourcefile.res",
+        "bytes": 3165754,
+        "sha256": "0d6da06323f18e5d6eb6db9124a982701d10c8620b176ef1afb3f2c159722167"
+      },
+      {
+        "key": "runtime/mythroad_res/gltzj/resourcefile.res",
+        "bytes": 2416390,
+        "sha256": "295aa9fd299b1e8e40593a78f4664e7ba7ffa52f61731f8c76afddb9ed0b1092"
+      },
+      {
+        "key": "runtime/mythroad_res/gkxct/resourcefile.res",
+        "bytes": 3044162,
+        "sha256": "cb232198d73d1bf4154b0ca3cf693f23150461da395437ec9675b2338206a5c5"
+      },
+      {
+        "key": "runtime/mythroad_res/gmhxyb/resourcefile.res",
+        "bytes": 2396704,
+        "sha256": "5da4b0cb5d7d60447cff111d44f1cb980e3b02d96b919f3fa2d4c763533fffd2"
+      },
+      {
+        "key": "runtime/mythroad_res/gmjws/resourcefile.res",
+        "bytes": 2634998,
+        "sha256": "f48c255973190a5be5b5a04742b7f095d71786c759b1a90018ad9e8b9ad4cc5c"
+      },
+      {
+        "key": "runtime/mythroad_res/gmyqy/resourcefile.res",
+        "bytes": 2992272,
+        "sha256": "ead66c632758f15b789303daf5de261e0ce1d4a4897773d15e2c229b7b47cde4"
+      },
+      {
+        "key": "runtime/mythroad_res/gtbmj/resourcefile.res",
+        "bytes": 2155288,
+        "sha256": "f231d87f5850d38832f5bb9a1b4e4add8833c148c33492cb218e37e082589249"
+      },
+      {
+        "key": "runtime/mythroad_res/gxyzs/resourcefile.res",
+        "bytes": 2303264,
+        "sha256": "87a27fe03f007081c90d95f740516e66ca7c526f2cc13bd58819db29843567ab"
+      },
+      {
+        "key": "runtime/mythroad_res/gysdbz/vpack",
+        "bytes": 2682189,
+        "sha256": "f6bba614e92ef23c12c189cab27dd6111519df13e47a0e88d6adb82416f5059c"
+      },
+      {
+        "key": "runtime/mythroad_res/system/gb16.uc2",
+        "bytes": 2097152,
+        "sha256": "6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5"
+      },
+      {
+        "key": "runtime/mythroad_res/system/gb16_mrpoid.uc2",
+        "bytes": 2097152,
+        "sha256": "127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308"
+      },
+      {
+        "key": "runtime/system/gb16.uc2",
+        "bytes": 2097152,
+        "sha256": "6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5"
+      },
+      {
+        "key": "runtime/system/gb16_mrpoid.uc2",
+        "bytes": 2097152,
+        "sha256": "127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308"
+      },
+      {
+        "key": "runtime/mythroad_res/system/font16_t.unf",
+        "bytes": 7108100,
+        "sha256": "8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645"
+      },
+      {
+        "key": "runtime/system/font16_t.unf",
+        "bytes": 7108100,
+        "sha256": "8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645"
+      }
+    ],
+    "maxResponseBytes": 1900000,
+    "requests": [
+      {
+        "path": "/blob/mrp-files/tommao.mrp",
+        "bytes": 802,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7/1",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7/2",
+        "bytes": 142799,
+        "status": 200
+      },
+      {
+        "path": "/blob/mrp-files/395020_240320_gjmrry.mrp",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/70745a80f2a1eb064fbf5a0e8014b2b744f38e6e3220718570a42ca380dd8527/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/70745a80f2a1eb064fbf5a0e8014b2b744f38e6e3220718570a42ca380dd8527/1",
+        "bytes": 418296,
+        "status": 200
+      },
+      {
+        "path": "/blob/mrp-files/talkcat.zip",
+        "bytes": 587,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/90f7fcb0d4d5fa3078b0ad345cea67d6cf9872bd1ab33d4bfe47dc42e05f425f/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/90f7fcb0d4d5fa3078b0ad345cea67d6cf9872bd1ab33d4bfe47dc42e05f425f/1",
+        "bytes": 1581569,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/ghdtz/resourcefile.res",
+        "bytes": 587,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/0d6da06323f18e5d6eb6db9124a982701d10c8620b176ef1afb3f2c159722167/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/0d6da06323f18e5d6eb6db9124a982701d10c8620b176ef1afb3f2c159722167/1",
+        "bytes": 1265754,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gltzj/resourcefile.res",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/295aa9fd299b1e8e40593a78f4664e7ba7ffa52f61731f8c76afddb9ed0b1092/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/295aa9fd299b1e8e40593a78f4664e7ba7ffa52f61731f8c76afddb9ed0b1092/1",
+        "bytes": 516390,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gkxct/resourcefile.res",
+        "bytes": 587,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/cb232198d73d1bf4154b0ca3cf693f23150461da395437ec9675b2338206a5c5/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/cb232198d73d1bf4154b0ca3cf693f23150461da395437ec9675b2338206a5c5/1",
+        "bytes": 1144162,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gmhxyb/resourcefile.res",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/5da4b0cb5d7d60447cff111d44f1cb980e3b02d96b919f3fa2d4c763533fffd2/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/5da4b0cb5d7d60447cff111d44f1cb980e3b02d96b919f3fa2d4c763533fffd2/1",
+        "bytes": 496704,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gmjws/resourcefile.res",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f48c255973190a5be5b5a04742b7f095d71786c759b1a90018ad9e8b9ad4cc5c/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f48c255973190a5be5b5a04742b7f095d71786c759b1a90018ad9e8b9ad4cc5c/1",
+        "bytes": 734998,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gmyqy/resourcefile.res",
+        "bytes": 587,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/ead66c632758f15b789303daf5de261e0ce1d4a4897773d15e2c229b7b47cde4/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/ead66c632758f15b789303daf5de261e0ce1d4a4897773d15e2c229b7b47cde4/1",
+        "bytes": 1092272,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gtbmj/resourcefile.res",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f231d87f5850d38832f5bb9a1b4e4add8833c148c33492cb218e37e082589249/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f231d87f5850d38832f5bb9a1b4e4add8833c148c33492cb218e37e082589249/1",
+        "bytes": 255288,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gxyzs/resourcefile.res",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/87a27fe03f007081c90d95f740516e66ca7c526f2cc13bd58819db29843567ab/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/87a27fe03f007081c90d95f740516e66ca7c526f2cc13bd58819db29843567ab/1",
+        "bytes": 403264,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/gysdbz/vpack",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f6bba614e92ef23c12c189cab27dd6111519df13e47a0e88d6adb82416f5059c/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/f6bba614e92ef23c12c189cab27dd6111519df13e47a0e88d6adb82416f5059c/1",
+        "bytes": 782189,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/system/gb16.uc2",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5/1",
+        "bytes": 197152,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/system/gb16_mrpoid.uc2",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308/1",
+        "bytes": 197152,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/system/gb16.uc2",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5/1",
+        "bytes": 197152,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/system/gb16_mrpoid.uc2",
+        "bytes": 586,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308/1",
+        "bytes": 197152,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/mythroad_res/system/font16_t.unf",
+        "bytes": 1019,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/1",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/2",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/3",
+        "bytes": 1408100,
+        "status": 200
+      },
+      {
+        "path": "/blob/runtime/system/font16_t.unf",
+        "bytes": 1019,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/0",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/1",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/2",
+        "bytes": 1900000,
+        "status": 200
+      },
+      {
+        "path": "/blob/chunks/8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645/3",
+        "bytes": 1408100,
+        "status": 200
+      }
+    ]
+  },
+  "deployBytes": 294258159,
+  "deployMaxFileBytes": 993913,
+  "deployed": false,
+  "deploymentFilesVerified": true,
+  "zipVerification": [
+    {
+      "key": "/mrp-files/nes.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/gcqdxb.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/gdjbd.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/gxdfl.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/talkcat.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/ghyjwdh.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/gjsncz.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/skirt_free.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/rxcqsj.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/xsls2011.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/ehex2013b.zip",
+      "validZip": true,
+      "sizeMatches": true
+    },
+    {
+      "key": "/mrp-files/otapvz_320x480.zip",
+      "validZip": true,
+      "sizeMatches": true
+    }
+  ],
+  "finalInventory": {
+    "remoteObjects": 4046,
+    "missing": [],
+    "catalog": true,
+    "chunkCatalog": true,
+    "verifiedAt": "2026-09-14T07:07:09.364Z"
+  }
+}

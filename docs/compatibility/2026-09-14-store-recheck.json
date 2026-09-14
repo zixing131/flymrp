@@ -1,0 +1,15 @@
+{
+  "sha256": "a9a87ea1bc18811d89f59c394160c50f3327c747f4243511394dfd05a0b5230a",
+  "classification": "input-smoke-passed",
+  "phase": "complete",
+  "error": null,
+  "unknownSlot": null,
+  "unknownEvents": [],
+  "nonBlack": true,
+  "distinctFrames": 19,
+  "inputChanges": 8,
+  "elapsedMs": 35404,
+  "caseId": 17,
+  "label": "斗地主2026",
+  "note": "全量批测结束后单进程复测，取消外层 45 秒 watchdog；其余 coarse 设置相同。"
+}

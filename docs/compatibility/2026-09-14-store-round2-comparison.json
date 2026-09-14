@@ -1,0 +1,3879 @@
+{
+  "originalNonPassing": 430,
+  "newSmokePasses": 113,
+  "remainingOriginal": 317,
+  "totalNonPassing": 317,
+  "priorPassRegressions": [],
+  "rows": [
+    {
+      "caseId": 3,
+      "label": "sky插件V7安装包",
+      "md5": "cda81002990a83f22cd1caf092984ffd",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 4,
+      "label": "sky字库V3安装包",
+      "md5": "c50c052b56b48ebccf1261f31a42690a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 5,
+      "label": "vmrp安装包",
+      "md5": "dd9728e2d41c9c51e18f32b8e5da0dab",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 7,
+      "label": "冒泡",
+      "md5": "5f8bac5fe4e5638232bdf38233ebeaa3",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 10,
+      "label": "听听音阅",
+      "md5": "13fcde3e3af887a25f9aac0908d2cae9",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 11,
+      "label": "应用列表8.0",
+      "md5": "879f70851253183d2a94fa52c0228ae2",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 17,
+      "label": "斗地主2026",
+      "md5": "c3c89b2469e851d64f1962eafa4a5d91",
+      "before": "worker-timeout",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 18,
+      "label": "斗象棋2026",
+      "md5": "6e491b7d7e2733102f985a9bbfd13c55",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 29,
+      "label": "2010十二星座运势",
+      "md5": "91775e1411054ff9b8db7f6294c00c36",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 31,
+      "label": "2012超级美眉连连看",
+      "md5": "d22da71dbe58e584f35bee5238ad2ad7",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 39,
+      "label": "2048",
+      "md5": "0d006895c66a782efdeaa4f67ed625dc",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 41,
+      "label": "2048美化版XL",
+      "md5": "770e00a7147313541385074f9c225e38",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 76,
+      "label": "a.bmp→a.jpg",
+      "md5": "1cff3b79b15a30c07155863cf106cf36",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 81,
+      "label": "AV美女写真",
+      "md5": "c23e088936c0b9aec6c8349f6be482d7",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24ba7c (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 87,
+      "label": "CPU性能测试",
+      "md5": "7dc5b4dcf256dcd6f6930cdcc7826c07",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24cf22 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 95,
+      "label": "CS1.6特警先锋",
+      "md5": "52e556c230ce27975cfa54cfd753e361",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 98,
+      "label": "CS反恐风云",
+      "md5": "caa06c256ae9e32c5fd3c94b0be6a255",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 106,
+      "label": "DNF复仇者之怒",
+      "md5": "b8de67542860d115bcf4ea88a7da317f",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 109,
+      "label": "DNF狂战之怒",
+      "md5": "5cf0ac4840d1b9d2532916a600b40921",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 110,
+      "label": "DNF欲望格斗",
+      "md5": "24a78fcb280e1550070f08c84e418b9b",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 115,
+      "label": "Dota之超神屠夫",
+      "md5": "9386d847c8b662b2da1ab2e85098403a",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 116,
+      "label": "Dota之超神屠夫",
+      "md5": "63153f1e6ed12e24e1fd93c377d7a48b",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 132,
+      "label": "MRP NES软件平台",
+      "md5": "b4bdfafc2c646f8a4fa0a15e7aae246f",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "NativeAbiError: unsupported Lua _platEx code 1221",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 137,
+      "label": "MSN",
+      "md5": "f428f4850407359a310d38d4e5dd9509",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 138,
+      "label": "MSN",
+      "md5": "5d0e4e03fb563c78b62163d5a480a178",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 139,
+      "label": "MSN",
+      "md5": "053c087f85b641a6ba4140f01855d412",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 144,
+      "label": "MTK魔法寿司_320x240",
+      "md5": "8cffb31c17c42bc55f9f3a839bcdf009",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x1e870a4 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 145,
+      "label": "MTK魔法寿司_320x480",
+      "md5": "eaa4ecb7de09a9230cca74c41b41d390",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x1e87098 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 158,
+      "label": "NBA：超经典射篮",
+      "md5": "2dfca266f62bf1732d970b9a15f9431c",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 159,
+      "label": "NES积分-天蓝",
+      "md5": "4a49e8c36016ba4d1043d4ce6879e349",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 160,
+      "label": "NES模拟器",
+      "md5": "8920c6a45caba20efe6da65a4ecb61d6",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: BitmapLoad: image bounds exceed resource",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 161,
+      "label": "nes模拟器XL版1.2",
+      "md5": "576fe45f4f637128b49134be2ffd1e58",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 162,
+      "label": "QQ",
+      "md5": "0d85f944a402a72370a1d3946167a086",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 163,
+      "label": "QQ",
+      "md5": "66d9135d825ae9d2fdf865551787f9eb",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 164,
+      "label": "QQ2010",
+      "md5": "d47caa5b3ccb0a8678bf9ddd7c32c211",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 165,
+      "label": "QQ2010",
+      "md5": "325859f2d233b861054c552c0759bc18",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 166,
+      "label": "QQ2010",
+      "md5": "ac648f79c6392e1a10d646137e5fa66d",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 170,
+      "label": "QQ2010（超级挂Q）",
+      "md5": "f20689c7d50cbbc528f065b184953b32",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 173,
+      "label": "QQDSM",
+      "md5": "3b795f6aae2286618cfdd74dd01bb497",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 174,
+      "label": "QQ斗地主3.3正式版",
+      "md5": "ff85e4354e97b19717c540c2d56d7f01",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 178,
+      "label": "QQ空间",
+      "md5": "a41df0777c29b74795b810b6b3f857c8",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 179,
+      "label": "QQ空间",
+      "md5": "db017fef4c7bb894918cd64339442451",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 183,
+      "label": "QQ手机软件管理",
+      "md5": "64864ec9f43c13ca22643d4ed97ccf60",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 184,
+      "label": "QQ网游大厅",
+      "md5": "30a63a6b3d73ac54ee2327ad8a83e87d",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 187,
+      "label": "QQ炫舞",
+      "md5": "45a79eeff9ad1a1ef5c4432dd502fab2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 188,
+      "label": "Q版飞车",
+      "md5": "5eed46ccde604ae2a9ffefe85df29da7",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 189,
+      "label": "Q版火影忍者壁纸",
+      "md5": "a47f6893aa11671951e48137bce4c8ea",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 192,
+      "label": "ram_scan",
+      "md5": "a523bb52b816a0ab3f7c4d2bf1043cba",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 193,
+      "label": "RC编辑器",
+      "md5": "b665feda31fbf32c6866646518d8c8ad",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 197,
+      "label": "RX管理器",
+      "md5": "7477dddd523a80ac2ac3eaa9ce1439f8",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x26552e (arm_ext_call: GuestMemory map16 fault at 0x80110004)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 200,
+      "label": "seg编辑器",
+      "md5": "46128e78465b4a46a79c654344ccc6c0",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 203,
+      "label": "Tom猫",
+      "md5": "1aec07488b268c46291b0945792b77e4",
+      "before": "worker-timeout",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 212,
+      "label": "xqc安装包2",
+      "md5": "103ca253ce609e4268d8700f72041137",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 214,
+      "label": "X战警：金刚狼传",
+      "md5": "93b06f415483c2b236d55bb46be94893",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 215,
+      "label": "ZCOM手机杂志",
+      "md5": "a27060eaa7ce96981b712e70934d4965",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 216,
+      "label": "“粽”想过61",
+      "md5": "1f852b1ca978bea046eff23bbea4ad2e",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 217,
+      "label": "ＣＳ反恐特警",
+      "md5": "01131383aaf5528a2aeee03074fa3e58",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 223,
+      "label": "阿凡提笑话大全",
+      "md5": "6aa559d014ba8454b40abdfddd64a05e",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 228,
+      "label": "艾弗森：NBA球星",
+      "md5": "f567c7ff3b81c93bbcf112b965d72862",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 232,
+      "label": "爱上3D爱上图",
+      "md5": "35cd916f5745df640202bc875ac34ff8",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 233,
+      "label": "爱阅看书2.0",
+      "md5": "d4283e37dc8db228753b9afbd35e1ef4",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free block: address=0x32d100 size=0x0 base=0x2965c8 end=0x3965c8",
+      "triage": "来宾堆损坏待定位，保留异常"
+    },
+    {
+      "caseId": 236,
+      "label": "按键扫描实例",
+      "md5": "cd24efc018a5b4c48198219202db8ddb",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x24cf3a (arm_ext_call: GuestMemory map16 fault at 0x80110004)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 239,
+      "label": "暗黑穿越-真实杀戮",
+      "md5": "4a8a3ac014a436d92620e497f5dab9ea",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 240,
+      "label": "暗黑穿越-真实杀戮",
+      "md5": "dbbccf8445ea34c7f748372e0fcf3b7f",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 253,
+      "label": "傲剑OL",
+      "md5": "6ac9bee0f3e03b84fa3bde64c59b199f",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 265,
+      "label": "八仙过海",
+      "md5": "69131c0ffdfadda1346d47ea76dc88f0",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 266,
+      "label": "把美女灌醉",
+      "md5": "fe7686548c0a6e243eb4da50d05070fa",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 267,
+      "label": "把美女灌醉",
+      "md5": "b4d2272e4419c61d4081741ec81c51a0",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 268,
+      "label": "把美女灌醉",
+      "md5": "aa718ed30e1389b6affe50d2965f20d7",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 276,
+      "label": "百宝箱",
+      "md5": "f1eba0866f7713dcc30c9cddf44ad128",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 279,
+      "label": "百家乐",
+      "md5": "f5c8801ab9633906b82690ef222ebdc8",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 282,
+      "label": "保护眼睛的壁纸集",
+      "md5": "731a64493f62a0617e59c9618d620c2b",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 295,
+      "label": "宝石迷阵",
+      "md5": "a078edceaaa064c6bde4664a4b49c6f6",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 302,
+      "label": "暴强国外笑话",
+      "md5": "9d16168d0bc3712ca1016cf0fb5285f3",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 305,
+      "label": "爆笑古代人",
+      "md5": "23fe51f0df46ed26fb6c1656ec35dd99",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 314,
+      "label": "避孕大作战",
+      "md5": "769920f5490c58d0bb0ecda33dca3bce",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 315,
+      "label": "便宜！绝对划算",
+      "md5": "6793f037be728770621fae991994dc8a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 321,
+      "label": "别踩白块",
+      "md5": "4e297aa75463a737ac79f1d1ffdcf4ec",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 336,
+      "label": "捕鱼达人",
+      "md5": "5242efcf378385087915fde6e719b3c7",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 337,
+      "label": "捕鱼达人",
+      "md5": "c612d03c5fbd1de36866e9b29ca23725",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 344,
+      "label": "不是一般的幽默",
+      "md5": "aa0ae4f5eec4cf087f548f4af0458603",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 345,
+      "label": "布拉德皮特魅力秀",
+      "md5": "a33b68b9fa5534539b2db337a8824e8a",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 347,
+      "label": "猜奥运金牌得手机",
+      "md5": "a66041a4e9614da4aaf3e724707b4a64",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 349,
+      "label": "彩蛋大战",
+      "md5": "4719f6e1bda1938a66b3cabadf04fac7",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 351,
+      "label": "彩虹QQ2014完整收藏版",
+      "md5": "e50c9d35d701eb70395bf0c1f57bff6a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 366,
+      "label": "超级合金装备",
+      "md5": "795ad526c5d29a4e438091d98182e871",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 391,
+      "label": "超强悍：改装跑车",
+      "md5": "76534199766f72286ec5fb1482f82b86",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 396,
+      "label": "超爽绝杀大合辑",
+      "md5": "eecbaef4651bb505351e1ba8aca89dd0",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: attempt to index a non-table",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 405,
+      "label": "成语大师",
+      "md5": "d7f6e5555be188cafe0fa82d19d701e5",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 431,
+      "label": "穿越火线秘密行动",
+      "md5": "cf16a2d74cff147e8982d26cd5eee12c",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 432,
+      "label": "穿越火线之飞虎队",
+      "md5": "92a78e35280416243494a4ff5af46221",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 451,
+      "label": "吹裙子",
+      "md5": "088ebd7aeab3493338fefde00d069cf4",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 455,
+      "label": "刺陵：周杰伦主演",
+      "md5": "e347c1725cd11972c02dcc6d7092a338",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 461,
+      "label": "存款计算器",
+      "md5": "da5a27bc4c7d00d3d71e68ce6fae3e85",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 465,
+      "label": "打小鸟",
+      "md5": "ca5ae1a92775c344058ccadebbf74e64",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 489,
+      "label": "大明星汤姆克鲁斯",
+      "md5": "3502c4e520f8582b8a07d97f4d073c04",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 491,
+      "label": "大漠狂刀",
+      "md5": "f9ca35e1fc61d2c9115f810a7d85af60",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 498,
+      "label": "大师在线设计签名",
+      "md5": "e8aa2132c2c40351a22b588e4f2f8dff",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 500,
+      "label": "大雄约会放屁",
+      "md5": "a444b4fabfee564dd7de9b3a24e970fb",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 506,
+      "label": "弹力球",
+      "md5": "f4ba993e547ff634f0ed73bc783a7d71",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 519,
+      "label": "到此一游",
+      "md5": "779e21913f8161774c3ee1547a9846ab",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 523,
+      "label": "盗墓鬼吹灯笔记",
+      "md5": "1467d18f5c1dd171c8c2da29a825d33c",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x262f62 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 543,
+      "label": "第十亿个幸运者",
+      "md5": "719ec639db451f12330787cd46e64acf",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 545,
+      "label": "第一次亲密接触",
+      "md5": "cd40a1b1f5434db8592d6f487b08e7db",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 548,
+      "label": "点击最高的爆笑图",
+      "md5": "c54eb9daf0317f0854eb982dfdad3e1d",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 551,
+      "label": "调色板XL",
+      "md5": "da7610404a0d4a8952e9ec58a7fd8b32",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 553,
+      "label": "谍影重重Ⅱ",
+      "md5": "ff827e652bcb55bfbf87a28683e7640a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 558,
+      "label": "动物亦是武林高手",
+      "md5": "9da8eaeee931cc429111624e3bb334e6",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 575,
+      "label": "毒蛇行动2-丛林之谜",
+      "md5": "f78739da89438062a211e6c1c8654198",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 577,
+      "label": "独孤九剑",
+      "md5": "fa64e0961dd221106ef1ba2017998272",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 583,
+      "label": "赌王之王-黄金城",
+      "md5": "e112fdb3adbd2deab2a20934fbd2c0e4",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 589,
+      "label": "多款游戏限时免费",
+      "md5": "d82144c91e9ccdce402593471ad50f24",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 596,
+      "label": "夺命番茄",
+      "md5": "c4a48e72eac46e119f6a2592309ed716",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 603,
+      "label": "俄罗斯方块",
+      "md5": "7cb5e0079506b73d9fe2420f20934bea",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: BitmapLoad: image bounds exceed resource",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 633,
+      "label": "放假啦疯狂游戏吧",
+      "md5": "7e93f4d03a5b4bcc71f2b89020396608",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 640,
+      "label": "飞天忍者喵",
+      "md5": "ead1386fc228261745d8cff6c68a54a6",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 643,
+      "label": "飞信",
+      "md5": "f16e1694acb12775144414c7ae84e27e",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 645,
+      "label": "飞信",
+      "md5": "04eb906a292bd349c0d4abc6da05cd00",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 659,
+      "label": "风流三国",
+      "md5": "076b748ba3d17ffa013bb40fc31d29be",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 664,
+      "label": "风云2：武侠巨制",
+      "md5": "e5336f9924f0d937a471be481754671a",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 665,
+      "label": "风云三国",
+      "md5": "3195e5496333c86a5cecdff65e1adad2",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 673,
+      "label": "疯狂吧！光棍",
+      "md5": "715b97c39792c05e69ebea4bc80c1940",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 674,
+      "label": "疯狂捕鱼",
+      "md5": "e6a3a2c83c36be85d9dade7b67b3d8a6",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 687,
+      "label": "疯狂的小鸟太空版",
+      "md5": "fea3cabc114b031553935bc82fdeb4d4",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 723,
+      "label": "父亲节抢楼送手机",
+      "md5": "01112232cc4763c2c610b1bbfcd72320",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 726,
+      "label": "干爹的爱",
+      "md5": "dcc7afb12f0cec7ed7d0b1265807e549",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24c588 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 727,
+      "label": "干爹的爱",
+      "md5": "6132c8a722d1ac2eab2820b0928755d8",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x2976f4 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 734,
+      "label": "港式五张",
+      "md5": "50d52f0e640c43bce3468e7a57171993",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 742,
+      "label": "搞笑事件大集合",
+      "md5": "9cf53ae74dfbf886be1e75c407e35cb1",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 752,
+      "label": "给力猫",
+      "md5": "7d50483fb4d6ee2e539da3ea9f1054c9",
+      "before": "runtime-error",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 753,
+      "label": "给力猫",
+      "md5": "7a692885dadbd5c675759178c4f2f6f9",
+      "before": "runtime-error",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 754,
+      "label": "给力猫",
+      "md5": "6792604d20849068944d43dfd9563376",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 755,
+      "label": "给力枪手连环杀",
+      "md5": "d52f2fad768e094a3f58a26816bfec2e",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 758,
+      "label": "更多精品游戏",
+      "md5": "7fcca238d9372f2d8fb63bb852a0c923",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 768,
+      "label": "公交查询",
+      "md5": "4cb2183843c9ac1d4d4517adf3b6081a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 772,
+      "label": "孤军深入",
+      "md5": "176ccf6a6758c1c67c965e62a4e45e71",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 773,
+      "label": "古代暴强笑话",
+      "md5": "b6770aab97250e89f33a102f37f4286e",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 776,
+      "label": "古惑仔",
+      "md5": "ec607aa637518efb809b826e9851e077",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 781,
+      "label": "古人的幽默",
+      "md5": "e02f85e80fe46275bfff8efed918e6d9",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 782,
+      "label": "股票交易版",
+      "md5": "58a418cd7673542d5d1f8e8d21913a65",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "存在 _start.mr，需显式入口"
+    },
+    {
+      "caseId": 783,
+      "label": "怪蛋风暴_大屏版",
+      "md5": "b1cf9833397dae0c2ecfbeb054717d66",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 801,
+      "label": "鬼手伏魔录",
+      "md5": "b945660278bea18070954facca8eebbb",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 806,
+      "label": "滚木块",
+      "md5": "14bca0599b970bd3b80db2350136b135",
+      "before": "worker-timeout",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 809,
+      "label": "国庆去哪儿",
+      "md5": "449204f7b671d41692d9f983c7b02606",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 810,
+      "label": "国外爱情笑话",
+      "md5": "c6e8f108af1b815ff202a03d5186e8ab",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 811,
+      "label": "国外幽默荟萃",
+      "md5": "3c9802ae9bb50d0a73773e940665fdf0",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 830,
+      "label": "韩国超人气布娃娃",
+      "md5": "81115ff653f5b28d924d5e60af12e0b1",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 831,
+      "label": "韩国花样美男乐队",
+      "md5": "4f6f283bbd3d6d07a8112a66079f2088",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 832,
+      "label": "韩国手绘纯美女孩",
+      "md5": "bd633237b08b18d804e506e628a5cb39",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 837,
+      "label": "好莱坞电影壁纸集",
+      "md5": "9eb4f1b532d5b3b59df01c4fe232d815",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 839,
+      "label": "核弹风暴",
+      "md5": "fdff41fe8a263bb4c7a1a40b3f769e5e",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 841,
+      "label": "和美女20次亲密接触",
+      "md5": "ce284ef8d14465d014e27c30d50aded2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 844,
+      "label": "合金弹头2013",
+      "md5": "f492ef88e5239559370e91064ab3099c",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 845,
+      "label": "合金弹头2013",
+      "md5": "a0d0f54a7db05f6048b728130909aa59",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 855,
+      "label": "黑暗传说之利器",
+      "md5": "1e26b20cdb21dd9cf95ca66cf5ee2f5d",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 858,
+      "label": "黑白棋AI",
+      "md5": "b1781fd05f95ef58fe07d7831bbd508d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 874,
+      "label": "华容道",
+      "md5": "31b4678673548ea850e0087086edea26",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 880,
+      "label": "欢乐马戏团",
+      "md5": "1dc855a1351bc22fd2efa91fb2f90e74",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 882,
+      "label": "欢乐五一幸运抽奖",
+      "md5": "082126624f6a1e9db0388e42eca4c84c",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 886,
+      "label": "欢迎来到童话世界",
+      "md5": "4dbffd6c3cd396dcf085409fab0105c9",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 894,
+      "label": "幻想三国",
+      "md5": "8a000a9dfe508bf30961b62b2014a744",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 895,
+      "label": "幻想三国online",
+      "md5": "2bdafe418f1d45e3099a6e1c2edbf169",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 901,
+      "label": "黄金矿工",
+      "md5": "a9b23ffc3daba84dcd429a9ae90e2465",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 908,
+      "label": "毁灭巫师",
+      "md5": "8c536f8d627c4b2c8763310c74171fe0",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 910,
+      "label": "会飞的汤姆猫",
+      "md5": "6ba08d165f7587dbfdacd2e797720a52",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 912,
+      "label": "婚礼花饰大揭秘",
+      "md5": "02cac85d69eca1cd2b6add5a1b287007",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 917,
+      "label": "魂之利刃",
+      "md5": "cef96d9ee851142959a49cf32382909f",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x1000c (arm_ext_call: GuestMemory map8 fault at 0x40008d80)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 918,
+      "label": "活动介绍",
+      "md5": "c70a79349530a404bd1f0129bb53b266",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 922,
+      "label": "火车订票",
+      "md5": "648734eaceb9632ab2bcefe85cd06134",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 923,
+      "label": "火车订票",
+      "md5": "f0cec678e0916219c1fcd4045ba24dac",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 947,
+      "label": "激情冲动",
+      "md5": "de912f401a945762999e6462ae551ac4",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: MRP FileLen 124976 exceeds buffer 98304",
+      "triage": "包内容/压缩数据错误，待取得可验证的完整包"
+    },
+    {
+      "caseId": 960,
+      "label": "极品家丁-9527",
+      "md5": "c49bab56c78854a7c1b04a79383dcc46",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 967,
+      "label": "寄生兽",
+      "md5": "29be0e91adc43d6f550df1e92d2cc7cd",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 968,
+      "label": "寄生兽",
+      "md5": "ab1a2b8f0a7cf6eb0cb8fe0a013ab0ab",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 974,
+      "label": "家居装饰经典插花",
+      "md5": "35c2efc84cea0039d58509575660fc60",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 975,
+      "label": "假日休闲乐逍遥",
+      "md5": "f58809c002382ead0619f9e2eb11da62",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: attempt to index a non-table",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 976,
+      "label": "价值上亿元的豪宅",
+      "md5": "44dcfa388d8cc814eeee25a0d257c66f",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 988,
+      "label": "剑侣情缘3美人如玉",
+      "md5": "df8ed715de1c36384121b2e7ad42002e",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1004,
+      "label": "僵尸大暴走",
+      "md5": "729a83de3ac517d9d33a9868e04d5fb1",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1018,
+      "label": "江南style骑马舞",
+      "md5": "659877407b90aa737024301aa3b8188f",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1021,
+      "label": "降龙十八掌",
+      "md5": "0da36801d03a7c955ef38eac8975e952",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1024,
+      "label": "接水管",
+      "md5": "61e31de0088b9b9c633532ee99f06450",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1040,
+      "label": "节日祝福语",
+      "md5": "fd5c97cda4b4c44403fddab29b9c4b47",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1062,
+      "label": "精品切水果",
+      "md5": "c178dab058e6d7e75d25b8be5f4e6281",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1065,
+      "label": "精选非主流清新图",
+      "md5": "b7f0df1eef574ddf7242bf6311626af5",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1073,
+      "label": "经典国外幽默",
+      "md5": "44b8ee60cafadea03f7bba7c88376f88",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1075,
+      "label": "经典泡泡龙",
+      "md5": "83a0227cb2b26bec03c0ec4fce31e22a",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 1076,
+      "label": "经典悬疑冒险漫画",
+      "md5": "a5e88f4227b146a00561d689224fc65c",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1078,
+      "label": "警花射击训练",
+      "md5": "b275bbc404422f81d0a2f081e568da31",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1081,
+      "label": "狙击精英",
+      "md5": "0d0a50c6f1e89fdc9c0643f5e90aeb79",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1083,
+      "label": "狙击小日本",
+      "md5": "3fd57417c083949bd031c83053a5313c",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1091,
+      "label": "绝命杀手斩龙刃",
+      "md5": "f059cea39844ca1f99873832db893733",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1111,
+      "label": "开心瞬间",
+      "md5": "9c3f9903c513eea6b176a1448185bac2",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1123,
+      "label": "科幻世界主题壁纸",
+      "md5": "5f155f324af0b9fed3f464149d2ff3d2",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1124,
+      "label": "可爱新娘唯美婚纱",
+      "md5": "f5af6edcaa56f9c927ad63e8009549b9",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1143,
+      "label": "快点网址导航",
+      "md5": "a1340bcbc89592cc1efa63e8d66ef0fc",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1160,
+      "label": "来电助手",
+      "md5": "14f6762aa1bc45989685887137632d1c",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 1161,
+      "label": "来自天堂的精灵们",
+      "md5": "5205ccdac770f7e9803d8db0258465a1",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1169,
+      "label": "老外的搞笑事",
+      "md5": "08aeea712a4db4562cc7f646c547d2e6",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1190,
+      "label": "冷笑话大全",
+      "md5": "03c5e4ad11aab94896700cbb7d99b695",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1201,
+      "label": "恋爱气球",
+      "md5": "642481aa4feb5ce0ae60a12bcbc7f9ba",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: MRP FileLen 365325 exceeds buffer 331255",
+      "triage": "包内容/压缩数据错误，待取得可验证的完整包"
+    },
+    {
+      "caseId": 1220,
+      "label": "零距离触摸美女",
+      "md5": "66bac72da423d5ba58cafae69f60e0d0",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1225,
+      "label": "灵剑封魔录",
+      "md5": "4675637bcaa436310a27c6a7b32bf616",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1227,
+      "label": "刘烨：忧郁的硬汉",
+      "md5": "d3516e96ab41bd90c339641e804d2217",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1280,
+      "label": "漫画里的俊男靓女",
+      "md5": "70a9eb50420ae31f4d0a2c947147bbbb",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1285,
+      "label": "猫捉老鼠",
+      "md5": "4b3daa3c370d1107d511a00896c1fbdb",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1286,
+      "label": "冒泡",
+      "md5": "bc8f9cd1494f8d3b3975d6e5e92a51fc",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1287,
+      "label": "冒泡VIP游戏套餐",
+      "md5": "435e8570bc4356725da1c50031d5dcbd",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1292,
+      "label": "冒泡看图",
+      "md5": "b3f83dd6db263f1ad75b88ac553531f2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1296,
+      "label": "冒泡平台",
+      "md5": "943a9df381e27adaee5c2b7af9545e7f",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1297,
+      "label": "冒泡棋牌",
+      "md5": "cfd4df865dbe063877b4c5539ead5291",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1298,
+      "label": "冒泡棋牌",
+      "md5": "122d7f33aea6700069e60f7d77d7eca6",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1300,
+      "label": "冒泡软件魔盒",
+      "md5": "aed658c79cd0da48db815aa7b8e47471",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "UnknownAbiError: unsupported sprintf format unterminated string",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 1301,
+      "label": "冒泡社区",
+      "md5": "9bdccd09b020197a780d067e1c86478b",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1302,
+      "label": "冒泡社区安装",
+      "md5": "f9ed9701930345c46aa79a8149788c80",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1303,
+      "label": "冒泡视频交友",
+      "md5": "06ac93c547dc060b368e0ce106ee1f70",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1309,
+      "label": "冒泡听吧",
+      "md5": "f61064ac89454ac9d022901d44f8273d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1310,
+      "label": "冒泡网",
+      "md5": "de9f58f3f4704c21813b960589869fb6",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1311,
+      "label": "冒泡网游",
+      "md5": "d2641fe9a6f1d8f43ce9609365009508",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1312,
+      "label": "冒泡音乐",
+      "md5": "1baf93262847a07767284388b89d2db3",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1315,
+      "label": "冒泡游戏商城",
+      "md5": "2e1114e5048d2b8b6aecede7346fcebc",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1324,
+      "label": "冒泡浏览器安装",
+      "md5": "bbd3c025c03f7a0b90a14a3b2cec10aa",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1325,
+      "label": "冒泡浏览器安装",
+      "md5": "5b40de168b47166229180518d0acdad4",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1328,
+      "label": "冒险岛",
+      "md5": "8cb03038858d445bd35543e29c2326db",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 1339,
+      "label": "美女3D飞车",
+      "md5": "1a7069947c46f1bffae467490d470bb3",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1350,
+      "label": "美女翻翻看",
+      "md5": "2152b826887d1347dd9f0aeed0fea440",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x297372 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 1354,
+      "label": "美女话费领回家",
+      "md5": "90315de2cad89f5a317e7d4b5bfd05f5",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1386,
+      "label": "梦幻封神",
+      "md5": "484d31666e682b1b121e24a82fb2a662",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1393,
+      "label": "梦幻文件管理器",
+      "md5": "56528264216b3c4d08fd76879aa517c8",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1397,
+      "label": "梦幻西游-无敌战神",
+      "md5": "740c4b7da3453a4e2056a5b12bf0bc56",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "UnknownAbiError: unsupported sprintf format %",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 1406,
+      "label": "免费抽奖|欢乐共享",
+      "md5": "1ac8e06df8e9d35b7d307b21642182ff",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1408,
+      "label": "秒杀iPhone的游戏",
+      "md5": "eb5c7a3ece08aa88f4704e13a4518b9d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1410,
+      "label": "明星美女麻将馆",
+      "md5": "cf3cae04628e37cdd32bd9b7d0718362",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free block: address=0x2a4a08 size=0x43005100 base=0x24b5c8 end=0x34b5c8",
+      "triage": "来宾堆损坏待定位，保留异常"
+    },
+    {
+      "caseId": 1414,
+      "label": "名将三国OL",
+      "md5": "eaad25a94a5a75e3c4d070f90398cd15",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1426,
+      "label": "魔法世界的大冒险",
+      "md5": "be50c62b34960c535ccf22b96f356753",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1485,
+      "label": "南极海底未知生物",
+      "md5": "aaa600434973321dfe4bb9ec9b498829",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1491,
+      "label": "内衣大盗",
+      "md5": "a6d69ac858e7fd2b85bd605da2901a12",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1504,
+      "label": "年年有“愚”",
+      "md5": "638c7075cf3cde43659a0bd545a354a8",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1511,
+      "label": "农民斗地主",
+      "md5": "a013125456f3f69a4106b14a692d1bc3",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 1515,
+      "label": "怒火铁拳",
+      "md5": "e19188da11a3e20969b48b365404f8e2",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1516,
+      "label": "怒火铁拳",
+      "md5": "16381c9add2c916a536ae8526c2cac42",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1517,
+      "label": "怒火铁拳",
+      "md5": "d6ec8825e394ac2d90cec780d1bf1e94",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1526,
+      "label": "欧洲杯有奖竞猜",
+      "md5": "8c2e67b60d14b902ff5f489bf25ba094",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1527,
+      "label": "排列数字测智商",
+      "md5": "ad9f9abef44666a688c08bd626141c7b",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1534,
+      "label": "跑跑卡丁车壁纸集",
+      "md5": "7fd0dce667a2856dded23b002caaef6b",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1560,
+      "label": "七夕“遇见爱”",
+      "md5": "54d2896c9fa0d7606773ebd03f71c36d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1561,
+      "label": "七夕冒泡送情意",
+      "md5": "890b9279225c0c4c6e6d8c3c32280bc4",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1565,
+      "label": "奇迹捕鱼",
+      "md5": "a267d6da935f285b106904431ff11b69",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1585,
+      "label": "抢！注册道具费全免",
+      "md5": "56beb74a35805b231e016177af6f0752",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1589,
+      "label": "抢登钓鱼岛",
+      "md5": "4e408b3104fca3dcf3a63cbbc6bdb5df",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1590,
+      "label": "抢登钓鱼岛",
+      "md5": "30e1b95c307691bdeb71a02d095781f8",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1591,
+      "label": "抢滩登陆2012",
+      "md5": "1d9b5ce813cc031494461b94ec8f0271",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1604,
+      "label": "青春纪念册",
+      "md5": "f8a6f463183be843e9447cec3acc12d8",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1616,
+      "label": "情趣高手",
+      "md5": "ea1bf9ec3c68dc12a56f3349f5b76db6",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1621,
+      "label": "邱泽：忧郁美少年",
+      "md5": "20d044a28c64a730a2e5e3ddb23e3c8e",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1628,
+      "label": "趣拼高帅富",
+      "md5": "95e2228bcd20730ac1178be933564312",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1629,
+      "label": "趣拼图",
+      "md5": "9354e72e852c2034d310d4f7999c64a1",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1630,
+      "label": "趣拼学生妹",
+      "md5": "01d696853c30b5f200ae29c9b282a2d1",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1631,
+      "label": "趣拼学生妹",
+      "md5": "42f94fb36982921f0890bd685eab0e64",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1633,
+      "label": "全球最怪异的求婚",
+      "md5": "1afc547a04f32498c4c95bcc1a931a6b",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1651,
+      "label": "让你笑喷的笑话",
+      "md5": "be0a3aa4d2f57a760194f3f686a792cd",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1680,
+      "label": "人气漫画壁纸合集",
+      "md5": "cae26178a27dd220ea329d8fa4b81729",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1681,
+      "label": "人人网",
+      "md5": "cafab6d94588ae5537874679b06b8e97",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1682,
+      "label": "人生就像摩天轮",
+      "md5": "1f5dbfcad1b1b129c851686935036f92",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1696,
+      "label": "忍者水果",
+      "md5": "e336f228949c2dbbdb80a96b3c2d087c",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1697,
+      "label": "忍者水果",
+      "md5": "f90b857999d5a445af313fcea9819617",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1698,
+      "label": "忍者水果",
+      "md5": "b7554b4e0fe0c0b90e40ba2a2fcbefaa",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1699,
+      "label": "忍者水果",
+      "md5": "010a4cdd32f3f63fd92bf651bc1c1618",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1700,
+      "label": "忍者水果",
+      "md5": "b93ad498910ac70f3ecf2b57bfb8b3cb",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1703,
+      "label": "扔纸团",
+      "md5": "490a607c4cef630002d43b2b4910fd06",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1707,
+      "label": "如来神掌",
+      "md5": "f84d6f246cf3712fa053050fd4efceb2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1708,
+      "label": "塞尔达传说游戏图",
+      "md5": "1eb26e2ff3e3e60f369c8136b9d75a52",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1711,
+      "label": "赛车场上生死之战",
+      "md5": "42ace2d308c7c3aad4d9373e89d05a4d",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1714,
+      "label": "三国保钓战",
+      "md5": "5c55910f6cfb1d655981b70055bba0c5",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 1715,
+      "label": "三国大富翁",
+      "md5": "6971088a06bbf2dc21f46fbfb5b50913",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1716,
+      "label": "三国大富翁",
+      "md5": "855ad118aab6b11d49ecacfdf62441a0",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1730,
+      "label": "三国猛将传",
+      "md5": "08ddddeb855cd55cf27488353ceed9b8",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1736,
+      "label": "三国纳妾记",
+      "md5": "1da1855230ea98e208821ba686335835",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 1737,
+      "label": "三国群英传壁纸集",
+      "md5": "94730ba5ea6121bfe61fa0a708fcbfe4",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1744,
+      "label": "三国英雄传",
+      "md5": "101797ab163609eb298d559fc1e949c8",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x24c5aa (arm_ext_call: GuestMemory map32 fault at 0xfffffffc)",
+      "triage": "来宾非法地址访问待定位"
+    },
+    {
+      "caseId": 1781,
+      "label": "蛇来运转大抽奖",
+      "md5": "1543303ffc2f4d291730dd867d4f77b3",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1799,
+      "label": "神马过年不寂寞",
+      "md5": "5b93c7ded50520d2fb44866f3a9acc31",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1801,
+      "label": "神魔大陆",
+      "md5": "d481a9830d383f725de2821846bc6642",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1851,
+      "label": "史上最贱百变猫叔",
+      "md5": "c6b8be6d0d87b293a8ba3ab9363689dd",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1864,
+      "label": "世界名贵跑车合集",
+      "md5": "f32781b149db4e0adffa86448b9e4842",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1868,
+      "label": "侍魂之修罗斩",
+      "md5": "70c30a7dc3161a22b0382b09e1ac2399",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 1870,
+      "label": "释小龙：功夫小子",
+      "md5": "e34584e58b515ea585d6461947eb3281",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1872,
+      "label": "视频下载器",
+      "md5": "b8f56e764350c9d6ce599786b7ff9a05",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1880,
+      "label": "手机QQ",
+      "md5": "58e565e03257282b8d512929bf38f132",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 1883,
+      "label": "手机UC原版",
+      "md5": "e9936d995ff956d5e2f4e9f2e6e08395",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1887,
+      "label": "手机恋人唯美图片",
+      "md5": "831549c345a85abc76704a9388b33733",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1889,
+      "label": "手机信号强度仪V3",
+      "md5": "6d53cd5afbbd4d0183fff20675e84b49",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1891,
+      "label": "手机阅读",
+      "md5": "bc5186eb26f7327efc922b289f1a0500",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 1895,
+      "label": "手写库01",
+      "md5": "a0430226085f32fa9773b67055b64bee",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1896,
+      "label": "手写库02",
+      "md5": "647567e570c8a94f549a44f8cc819058",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1897,
+      "label": "手写库03",
+      "md5": "c4a5ac99a553f6fe1fb2cd9abbd8c33f",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1898,
+      "label": "手写库04",
+      "md5": "ab7ca57f7af7c882a3f373e20f43aee6",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1901,
+      "label": "手信语音聊天",
+      "md5": "1f8d418a5c21fa3aae3690290b787e29",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1903,
+      "label": "暑期iPhone大礼包",
+      "md5": "bcb7e8dc935e6c677acd2298c355ac69",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1904,
+      "label": "蜀山剑侠",
+      "md5": "2586ba3844d705f21d9ab96a626cba49",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1908,
+      "label": "数学达人",
+      "md5": "0c4d50e74ef1ff897c16bfbcd2c86e8f",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1915,
+      "label": "水果老虎机",
+      "md5": "e8fa31494afdfc5e5672422421aebc02",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 1916,
+      "label": "水果梦工厂",
+      "md5": "5931cda5c71e6498d7537bc9a6f794b8",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1924,
+      "label": "水晶之恋",
+      "md5": "38be222741569b975d44f18e839f601a",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1928,
+      "label": "水浒对对碰",
+      "md5": "5e97f50581e19c130e2a4ea623726824",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1929,
+      "label": "水浒反殴传",
+      "md5": "443fa5acc5111dccfa2cbe0b27a89246",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 1938,
+      "label": "说不出的美妙感觉",
+      "md5": "9fdda091692aba921faf9f929bbb9ee5",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1942,
+      "label": "撕衣美女之对对碰",
+      "md5": "f26eadd978a1eddc7a77f56dd2be3eb0",
+      "before": "worker-timeout",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1948,
+      "label": "死亡笔记动漫壁纸",
+      "md5": "5bb5faa5a05e24c25239da4b6c518fbc",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1962,
+      "label": "孙红雷：阳刚之气",
+      "md5": "ff3c59728f06a13609bf855e54b965d5",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1964,
+      "label": "她迷倒了千万男生",
+      "md5": "a681157a45f59a5d8ddfc53149ce604a",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1966,
+      "label": "泰坦尼克号壁纸集",
+      "md5": "647655f2674d3ddd11f74815ca3c85e5",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1975,
+      "label": "贪吃小鳄鱼",
+      "md5": "64f7eac948c18e1c9a2b548b81702896",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1976,
+      "label": "贪吃小鳄鱼",
+      "md5": "a32c76c0300f75f5468d842c25018dc4",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 1989,
+      "label": "特种部队英勇身姿",
+      "md5": "e18e691abfeabed3d54e0b622c14c81a",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 1998,
+      "label": "天龙八部",
+      "md5": "4f14336691495cd0d0fb79682820db2b",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2005,
+      "label": "天马行空傲视群雄",
+      "md5": "9c87a675b112a995043edcdfab720ecc",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2013,
+      "label": "天天打怪兽",
+      "md5": "1ddf4b37f7d5955015ed4488ed0fadf6",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2014,
+      "label": "天天打折货到付款",
+      "md5": "672c090ac4d57a624be456cbd6dd2776",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2024,
+      "label": "铁血抗日",
+      "md5": "71bc8598885770006b7033cbbc6b54aa",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2025,
+      "label": "铁血抗日",
+      "md5": "178d0f7ce0c9d64e00618dfd08fcc7ab",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2028,
+      "label": "听听音阅贺岁版",
+      "md5": "6fdad97b89d690d45f30c03b77c5571c",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2029,
+      "label": "听听音阅贺岁版",
+      "md5": "b66fbe577db56cacbb6f090669a38fb1",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2034,
+      "label": "童年经典游戏合辑",
+      "md5": "49737217f65b186ce4c87570143c9094",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2036,
+      "label": "偷看美女",
+      "md5": "24b77498f4916bbd01c55f2efc59c476",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2039,
+      "label": "图片浏览器",
+      "md5": "2a869270d864ea975bae94a7eabf8c3f",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2040,
+      "label": "图片浏览器",
+      "md5": "877a0d10424474b8436fa2b26a75042a",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2042,
+      "label": "途客行天下",
+      "md5": "054f58a5e8fcf8646f38a650f1c7e586",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 2057,
+      "label": "吞食天地2",
+      "md5": "02da0308d190391ca55ef8b8457eca85",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24cc72 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 2061,
+      "label": "外国笑话",
+      "md5": "134486778e963542b1879b333cfb3c7d",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2062,
+      "label": "外国笑话典藏",
+      "md5": "dc04598eab2ac91c57bcdf7ac3b7b37f",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2063,
+      "label": "外国幽默大全",
+      "md5": "62b23021add26a39955f0ab6635f97a0",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2064,
+      "label": "玩手信赢乐phone",
+      "md5": "4343770dd615190cf72a16dc748e65fd",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2071,
+      "label": "万水千山粽是情",
+      "md5": "79a1917a431072cc9064c8bccf1a7ea5",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2082,
+      "label": "网络时钟",
+      "md5": "71420c52251de0e4438d3ef1765ada9d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2098,
+      "label": "未来之英雄传奇",
+      "md5": "3ea72d34d6d9cccdeb6b048bbf5c863c",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2101,
+      "label": "我爱拼图安装包2",
+      "md5": "3e703fc2d35730ebcfa287508612e178",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2105,
+      "label": "我记忆中的E界参赛作品",
+      "md5": "b282798045156fc3488319094096d22d",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2110,
+      "label": "巫妖王之怒官方图",
+      "md5": "b62f2e028c913c2eab097a0b959a0faf",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2130,
+      "label": "五一带你玩转不停",
+      "md5": "70dba3ade10fdc7be1bcef06b46c2425",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2141,
+      "label": "误入一个花的海洋",
+      "md5": "c7159f433bd02a48479b267224982faf",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2145,
+      "label": "西游记OL",
+      "md5": "2d679c799366f86cfa6076d0c3a864f6",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2146,
+      "label": "西游记OL",
+      "md5": "6e89edcb3c616841ca7537ae123345d7",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2164,
+      "label": "夏日MM连连看",
+      "md5": "430d972dfc7507e9a9ff190ca46960e7",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free list: base=2965c8 end=3e4f78 head=2005c0 node=52cb94 previousEnd=396968",
+      "triage": "来宾堆损坏待定位，保留异常"
+    },
+    {
+      "caseId": 2165,
+      "label": "夏日Party",
+      "md5": "3a3baf5663f1394845d278f089022758",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2167,
+      "label": "夏日缤纷礼包",
+      "md5": "030b785a60c8d62ce21f7a00930fc150",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2177,
+      "label": "仙剑问情",
+      "md5": "384d8f26aeb8f95af2beb2b1a513be71",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2181,
+      "label": "仙境传说可爱人物",
+      "md5": "6585cf0444f16628d1c8e73492450686",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2184,
+      "label": "仙魔逆唯我独尊",
+      "md5": "485d44427e7ce210c8ff4206bffa3af1",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2185,
+      "label": "仙魔逆唯我独尊",
+      "md5": "b2593526eb12aa5d0b20f652738c68ad",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2191,
+      "label": "现代人的幽默观",
+      "md5": "191bb190776b9281e6880b8da51b73cb",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2192,
+      "label": "限时抢购买一送一",
+      "md5": "cfc7cf0ddf4c9b129f87e70258a6a6bb",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2194,
+      "label": "香格里拉灵魂之地",
+      "md5": "04d5be80825fed14f242e1eeda17e369",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2208,
+      "label": "小火柴里的大谜题",
+      "md5": "4753839340cc594a5624ee004fd7abfb",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2216,
+      "label": "小时候的难忘趣事",
+      "md5": "4abc7c1f359051513c75f4e917417b51",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2225,
+      "label": "笑傲江湖",
+      "md5": "485135633cb1eeb6f4cfd1cc5516bd0d",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2233,
+      "label": "笑笑阿凡提",
+      "md5": "2e682a78cbde4595616ae85813e5ca60",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2234,
+      "label": "笑笑更健康",
+      "md5": "e9dc295ce80f8b964c4771afd8491514",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2235,
+      "label": "笑在现代",
+      "md5": "4e04ad7da6750050a6494fc622d41561",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2265,
+      "label": "新羊过河",
+      "md5": "b982ded8c84c2c4bf37a7f78d03b01ef",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2271,
+      "label": "星河舰队",
+      "md5": "9a023a6ddc0c92c0726ef414b17b69db",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2285,
+      "label": "幸运砸蛋",
+      "md5": "c15171a40ea4cd2ddc4c84af06600e0d",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2287,
+      "label": "性感美女找茬",
+      "md5": "3f92da1e2e1d266e4042c873b6e5f797",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2292,
+      "label": "雄霸三国神鬼乱舞",
+      "md5": "42a4bd4a725263cf8076fb57f44669d9",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2294,
+      "label": "熊猫大乱斗",
+      "md5": "f29bea6f6e9b9d280380fcf367b0c99d",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2333,
+      "label": "炎龙骑士",
+      "md5": "5f3720edcfb69577fcc8d61c2b2e7c51",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2342,
+      "label": "要钱不要命",
+      "md5": "71d3239647815665e1c0ad78372fdb65",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2345,
+      "label": "野人岛3",
+      "md5": "1eb476d90c5f3130ff9a4d333a2e1d5f",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2349,
+      "label": "夜袭鬼子营",
+      "md5": "522f9a74781a4804e5e4086b4888a3fd",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2354,
+      "label": "一毛钱手机抽回家",
+      "md5": "69949b9c341056bdbcc3331ee8d57609",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2355,
+      "label": "一枪杀几人",
+      "md5": "83eb28c63969212b1b571a2e45ea8589",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2359,
+      "label": "移动股票王",
+      "md5": "309b21a4d305aec98fce039c88e9ec01",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "存在 _start.mr，需显式入口"
+    },
+    {
+      "caseId": 2360,
+      "label": "移动视线",
+      "md5": "1934bba5fe66fd726559b062a7b4025d",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2364,
+      "label": "倚天屠龙绝情剑",
+      "md5": "ea7bf687da23b2b92a9366254f392842",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2374,
+      "label": "银钩杀戮之危险情人",
+      "md5": "38188f6521b341b24706a73453910298",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2380,
+      "label": "英汉字典",
+      "md5": "3d573fea8f444810cefdf444e89a73c2",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "triage": "包明确要求父启动平台"
+    },
+    {
+      "caseId": 2382,
+      "label": "英雄救美之狙击之神",
+      "md5": "65069ced1ff1b7ec845771ed2c4e4803",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2389,
+      "label": "应用列表",
+      "md5": "c46dafe3fe01b9a86f79cab92870fe90",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2391,
+      "label": "应用软件>>",
+      "md5": "79670026a0e397deff3b1d6c68a20175",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: attempt to index a non-table",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 2399,
+      "label": "永远的冒险岛",
+      "md5": "fa1dde713ce1744cd7f3496e27a737e3",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2405,
+      "label": "优化大师",
+      "md5": "c311486367124b5559ea3186e6b2f748",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x1e90fcc (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 2407,
+      "label": "游戏布袋",
+      "md5": "7be0805c731e2ade055f15d3c4f7cc25",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2408,
+      "label": "游戏猎手",
+      "md5": "b47d8bd04e64ff21fae298e93f56b4d5",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2409,
+      "label": "游戏中心",
+      "md5": "3eaf6aa0afcb82db59ac951b0b00eede",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2411,
+      "label": "愚人节泡妞利器",
+      "md5": "b42561310ed07f90e4838e692185a8c9",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2438,
+      "label": "缘分测试",
+      "md5": "702b5b15ac339777e731cdcece6722bb",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2442,
+      "label": "越狱吧吊丝",
+      "md5": "9eade5faeb957ab6c76e27494581a50a",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: invalid deflate distance",
+      "triage": "包内容/压缩数据错误，待取得可验证的完整包"
+    },
+    {
+      "caseId": 2445,
+      "label": "怎么看也看不厌哦",
+      "md5": "a32b5c0198ef362d75b76aa394a87116",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2451,
+      "label": "宅人七天乐",
+      "md5": "b3daecd751e77a5f153f0933fd826978",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2462,
+      "label": "战国英雄传",
+      "md5": "73f41587a04d4c472ec5ae716e4fe925",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2465,
+      "label": "战神",
+      "md5": "414ab35f13bff46b76db8627230cbbcf",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2468,
+      "label": "战神金刚",
+      "md5": "e2f515ce32fc41aca6ec038826ec2415",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2476,
+      "label": "战神之魂",
+      "md5": "01bd74cacf362ba2b53050e2029afed7",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2479,
+      "label": "张敬轩：全才歌手",
+      "md5": "879ea02e262a86e95ee9834d4274b6cd",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2481,
+      "label": "掌上e_mrp",
+      "md5": "7207e86016b67c158a05e682fc863233",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2485,
+      "label": "掌星汉字字典",
+      "md5": "9b72be61067c69a15fccaf43cb71d440",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2486,
+      "label": "找回元素",
+      "md5": "7673d30aa8dddaa5293b14d6ebdb96c4",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2490,
+      "label": "这样的笑话才好笑",
+      "md5": "bbf2b044b28ce030fa8dc9a3214abbb9",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2508,
+      "label": "争霸三国",
+      "md5": "e1b89ea7dd047819df2bf4fc27edb81f",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2514,
+      "label": "正义英雄联盟-蝙蝠侠",
+      "md5": "ce1bc54ccabdd0abbc8351d0693afe1e",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 2522,
+      "label": "植物大战僵尸官方版",
+      "md5": "9383a38adb70e04964192c3259680389",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2537,
+      "label": "中国笑林大全",
+      "md5": "9486ad476f4c3cf9d20c3b49be164a86",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2540,
+      "label": "中国幽默荟萃",
+      "md5": "057820ffc2b931713fd43f4f70d71f8c",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2543,
+      "label": "中秋:天涯共此时",
+      "md5": "b22cae7f8abffeeac653c80b1e5a4fc2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2565,
+      "label": "抓拍宝贝",
+      "md5": "55d3852ffcf0c05ba75732f6ed815919",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unsupported at 0x24fda0 (arm_ext_call: unsupported Thumb insn at 0x24fda0 word=0xb8e0)",
+      "triage": "运行时接口或来宾错误待定位"
+    },
+    {
+      "caseId": 2568,
+      "label": "追忆童真那些年",
+      "md5": "7d92413e76d21439c9e06d38a646af12",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2571,
+      "label": "字体模块",
+      "md5": "6e66c068a13c74b7a0f995cc14e20cf9",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2577,
+      "label": "醉美人",
+      "md5": "52604253d1eb1cd0f18037e00b91b798",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2584,
+      "label": "最浪漫的表白方式",
+      "md5": "23c8f2bb2cfa9448f692bea022a90f18",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2585,
+      "label": "最新笑话专集",
+      "md5": "3d194435f427a9c7ae68cd6810c0b551",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2601,
+      "label": "喋血双雄",
+      "md5": "d4c589fdb623793c1acb1877344a3199",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "triage": "来宾主动退出；可能是安装器/按键流程，不能算通过"
+    },
+    {
+      "caseId": 2606,
+      "label": "逍遥剑侠传",
+      "md5": "7b5a58ac6e52104fe9540e84e34a747e",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2608,
+      "label": "缤纷双蛋激情约惠",
+      "md5": "26199c7a4cc268261671972ec3fbf6eb",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    },
+    {
+      "caseId": 2619,
+      "label": "鳄鱼爱洗澡",
+      "md5": "0009291085af578bfbe605f1360cf104",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "triage": "缺独立启动成员：资源包"
+    },
+    {
+      "caseId": 2620,
+      "label": "鳄鱼洗澡",
+      "md5": "f0e3ffdc1f43ae65c39adf97b0411554",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x2a20a0 (arm_ext_call: budget exceeded)",
+      "triage": "来宾指令预算超限待定位，预算未提高"
+    },
+    {
+      "caseId": 2622,
+      "label": "魅惑浮生录",
+      "md5": "72417b717f8ca497166cde992589cf22",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "triage": "缺 SDK 配置依赖，未伪造 key"
+    },
+    {
+      "caseId": 2624,
+      "label": "[壁纸]爱情之花",
+      "md5": "1fa16e81236baae2d6f66238612f49af",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2625,
+      "label": "[壁纸]宝马跑车",
+      "md5": "42f612f6ded8f2a6cb9cd14b5dd88051",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2626,
+      "label": "[壁纸]迪斯尼乐园",
+      "md5": "a46d8d73f16e90d9ef8336800ee8d905",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2627,
+      "label": "[壁纸]非主流美女",
+      "md5": "3c2af9d7c31dfa157de534066fb4fa51",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2628,
+      "label": "[壁纸]韩国校花",
+      "md5": "79841a821a4aa8d0cd210844ff71a887",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2629,
+      "label": "[壁纸]浪漫法国",
+      "md5": "ce5ea1b7e264bede591df5036a662729",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2630,
+      "label": "[壁纸]玛丽兄弟",
+      "md5": "10416af66b06bb2f2ffdf21412a6a604",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2631,
+      "label": "[壁纸]雪之世界",
+      "md5": "ee3d0b9cbbe913bf4f16c80f127cd28e",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2632,
+      "label": "[壁纸]仰望天空",
+      "md5": "5696cd528913a1226ea0de4ade7956da",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2633,
+      "label": "[壁纸]野生动物",
+      "md5": "e6611fab4d19b6d320d0ffb6da588a3e",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "triage": "原固定场景现已通过；不等于完整可玩"
+    },
+    {
+      "caseId": 2635,
+      "label": "[免费]冒泡棋牌",
+      "md5": "3619fbbf112d8e871e31e1a7b9896a68",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2638,
+      "label": "[免费]冒泡社区安装",
+      "md5": "1b8a6d531a151ab382148c799ba1375f",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2639,
+      "label": "[免费]冒泡网游",
+      "md5": "7d215f1dc286eedfcf46551b691ea8ac",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "triage": "没有可确认的可见场景，需逐包核验"
+    },
+    {
+      "caseId": 2640,
+      "label": "[网游]无双三国",
+      "md5": "a6f6b1aefedf5453d441bd7b6ad8dbd5",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "triage": "固定键序无画面变化；需真实入口、触屏或资源核验"
+    }
+  ]
+}

@@ -1,0 +1,1136 @@
+{
+  "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+  "workingDiffSha256": "68f3177393006b19132d5024cb9bf29b1e6270ad3ea335ab8e376ff2310b27ef",
+  "manifestSha256": "00d7da703c458cb326f8d88320ef5373592f5960c777356cf167ca38996f7a58",
+  "scenarioSha256": null,
+  "systemFilesSha256": {
+    "app240400/0/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/100/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/200/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/205/config.sav": "cc26b69ee5f63b4a28cf8b8b4e805faa6217742e961e3e44289f6a008168835e",
+    "app240400/205/dl.dlm": "d25a33906d71167f6b0de5184a7ec7cdebab1e988a93cea5a838fb2c1f414645",
+    "app240400/205/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/205/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/217/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/219/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/221/config.sav": "cc26b69ee5f63b4a28cf8b8b4e805faa6217742e961e3e44289f6a008168835e",
+    "app240400/221/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/221/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/239/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/247/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/248/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/249/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/304/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/306/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/CpuRuns_v2.mrp": "71ce3c63dba12af338f0d444bccf84d7dec4819fc3899bed2ebf193608be3a87",
+    "app240400/RX_v4450.mrp": "fac44cfd9f24a7f9580c928e3270cc74a56ef93c942593dafd90cd2db497041b",
+    "app240400/SaiApp_v1104.mrp": "13a559b23f1237e69e4c9f5673c1dde61d596fe8a1aad31f7da0ed55860209de",
+    "app240400/ad/monitor.sav": "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450",
+    "app240400/cfg/localdir.sav": "7095b2d1b4c11b36a0d69d75291724dbacf4a1e4666dbcc4c59ac46cd969e3d6",
+    "app240400/cfg/location.sav": "7b28a42af75afb289938f809ba3119a86891dc0dbe5e73e179cd09e0e631cc11",
+    "app240400/cfg/payroot.itm": "66dd319d4fe834cd81ceff92e8309129e47d7f06d87f9aa959113c0214396dad",
+    "app240400/gwy.mrp": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f",
+    "app240400/sgm/rollmsg.dat": "c1584c693bf57bdf62db554272785774d4045ee6590bfb0b96590014935388cf",
+    "dsm_gm.mrp": "1f5521066b861d5bc1a749465b3b105fa7f747c4f6049aa9e203b22dcd7b9298",
+    "gwy/cardcharge.mrp": "57805f07edbe10ee6e4ce86cb6787de2eb1ce3928523e00816b8b5f64f61e773",
+    "gwy/directpay.mrp": "771a8aabf4ae6b883c3e82c40a6f94b49d8a90b9bbb450a27794e84eb6e2c590",
+    "gwy/dload.mrp": "d7847c6eac6e486db427f534ed4a4f11850a2eaa2a03fc235fed1be3c8b82fdf",
+    "gwy/font.mrp": "2d55879781068e484b80a38b8bf7d43a5cb5bf1c88056cc57d49a5f0258c19ef",
+    "gwy/gamelist.mrp": "4b24babfc82be19015fdf5eb9e2468c7ea030130f61f617a8644ab1e7bf7d956",
+    "gwy/gifs/ban_ng_hxsg1024.gif": "77be17af6a1cfbeafe05c74c81a0e45f7451706bbfcd8c56590907a7d2a103a2",
+    "gwy/gifs/gg_dj_jpdj.gif": "9bb7f448abc28a589e640fc115999b06ba087918903788939f6b1723889c429d",
+    "gwy/gifs/gg_mpsc1.gif": "62d1d351c5cb72d935432683e6baba28439fdad4a1d06574bff9788ce2a72896",
+    "gwy/gifs/gg_ng_ajol5.gif": "a2a3e4f561ac89996e8d7853bd910d59922fc0fecd9559c0d8d9bfc4d51da902",
+    "gwy/gifs/gg_ng_csj1.gif": "4b36aa2fd88e955c0029d2647ceaaee9dcc80154712f5af0e9d0cce2885aeb74",
+    "gwy/gifs/gg_ng_ddz01.gif": "930c1585d895898e65ca3a784f7b2534593cc86bdaffac857575f6d7adace8ca",
+    "gwy/gifs/gg_ng_flsg.gif": "c23d5f5d9e1a494f3063ec663efd02eb2e049d1a4712fca1c647c7099ce70796",
+    "gwy/gifs/gg_ng_gdyy01.gif": "8bb613073b9e34db8cffe690104ac68f9d7a602b8fe062840625d224b0a930fb",
+    "gwy/gifs/gg_ng_kdxy.gif": "84ee2f66f554916dd1386db1350f489d535704ad804132ebdc68566527826ff0",
+    "gwy/gifs/gg_ng_mpkj01.gif": "4ef45afcfdc66547193974f64253d3eaf5db58d9978135fb7087c89e02262941",
+    "gwy/gifs/gg_ng_sgmc3.gif": "2ed5b08c2497d0c3acb6c3d304a11d8cc2e3fb413b412dd9754b722c2fa7920a",
+    "gwy/gifs/gg_ng_sgqxz1.gif": "96cd87b641525aefa6dc9dc5324d9c30d444ec81f08c66907983127621c9dd92",
+    "gwy/gifs/gg_ng_sgzc3.gif": "a3555a47627248e78fbcaa830b3386dfe3b3f9178785373e5e55122269121d97",
+    "gwy/gifs/gg_ng_ssjx3.gif": "05bc32ddf8d327974103436c543d89d0a35174a7a3ecce68b69e4b35fa8fd2fb",
+    "gwy/gifs/gg_ng_sxz.gif": "523a2390bb3d3945c5f6c74513c8a7fcbcf6bcdf50469e198499b10185d0c1cf",
+    "gwy/gifs/gg_ng_tlbb12.gif": "78473e4fabfb404579199b38af1cb1da4de6efe104d1bba1f29915830a00aab8",
+    "gwy/gifs/gg_ng_tyol2.gif": "ccba82d7d157b8faf4747e0584530a6f79bd09699adc8b8090045ee9053dfc88",
+    "gwy/gifs/gg_ng_xaxc.gif": "7244d44328d4f0b1667a4ab573dba66b9050f90a33739515fd645aa0c3ac2ed6",
+    "gwy/gifs/gg_ng_xjwq.gif": "7d1a5c78a36b04e7efbedb5709ea02558e0a647db517bcefd3438e1d6694fc6a",
+    "gwy/gifs/gg_ng_xpsx01.gif": "8e24706c9a669c9fcf68cc89ea35e87b4f9f6ee8b82b6c124228829704e09aac",
+    "gwy/gifs/gg_ng_xyj1.gif": "3b0de4ad104cdf38bdd8b9cbdd549246013315e7d30a4e6297b0e26cf7e027fa",
+    "gwy/gifs/gg_ng_yhzx01.gif": "02dd627e81828093801dc979f0cb5c5d08a0cd4c858483bf93d3f510b9f334c3",
+    "gwy/gifs/gg_ng_yxlm.gif": "d094bf1df37bc76e9febbe8d96615fbb7d2d7239487c0914d03c61d98a96e92f",
+    "gwy/gifs/gg_ng_zd.gif": "7f5494251f6e41ecdebfac12e5ebdbfd5e5e1a310e40634e2bc1a8afa0d96e78",
+    "gwy/gifs/gg_ng_zsol04.gif": "8a93f84d9e7ce1e42a445563807018d3672dd7dd2432a9888a1e4fb5b5893371",
+    "gwy/gifs/gg_xblt.gif": "2e693b93f510564e5082b082d6602281da7e05c1b381f32fdd01cee83e78725a",
+    "gwy/gifs/gifdesc.info": "a84525762755e7cce64b90d0967753949e19a62e8ffa4bd1674a452f9efda552",
+    "gwy/gifs/gifinfo.idx1": "9536acb298eb0f2953d01fdad8fd7f147858d34f7003c852a6b829cb1d389af5",
+    "gwy/gifs/gifinfo.idx13": "eac49f8a28d5be1dec929f43efa1fc435264fe77fbdef15ef57481d22ba6fa0b",
+    "gwy/gifs/gifinfo.idx21": "7fadc524c5d55fd03a7a3fd251c613a63a00f76a02b20e5af87be781c63facfb",
+    "gwy/gifs/gifinfo.idx22": "e74fce5580818b0ada5ffd8ef45a2968781e026c6e67ba364698b067cf4463ff",
+    "gwy/gifs/gifinfo.idx23": "e441f03babb209231fc635e2cdacc835c696f25c2bdfaf843a07264d707bfb4e",
+    "gwy/gifs/gifinfo.idx29": "9c70166f24c3887bef3b62c1e655ac91b29074349d002a9c114432f1cb810085",
+    "gwy/gifs/gifinfo.idx34": "a032b60c93342907a706eccd1f2dcf0f3b50c077e1be020228aa80662cd0be0a",
+    "gwy/gifs/gifinfo.idx40": "e27fbb69cf2e4ad9d8b41867e8febc757b524888c77d207b1d4d66484c298875",
+    "gwy/gifs/gifinfo.idx41": "0ed96ac19935fbc38a7027aa4e9a172767b1132d555992028fb2776f9afd7c06",
+    "gwy/gifs/gifinfo.idx42": "f944a0a0aacba23075fcdc53ed6a71b5a8e0a0922fcc39846167935020d4ca49",
+    "gwy/gifs/gifinfo.idx5": "d274c68724c16245aa7826cdf1653c8f09f43c98efa18245f88d573f88a525af",
+    "gwy/gifs/gifinfo.idx53": "f85fd1f44bc86d6d7fb1145683353b45a76197a054836abcf8eef382f59413ab",
+    "gwy/gifs/gifinfo.idx55": "10512e36e574758309085587897e74347e335afc9b22f4b6499571e113045360",
+    "gwy/gifs/gifinfo.idx61": "2e067a02cf55d2472e27e3189b57697dc40aee34f65888af39135d3d342e2671",
+    "gwy/gifs/gifinfo.idx7": "63b368d819b3d9284a8df227dfd1495cc6f7d1d54e01be2a01cd0c4f537147db",
+    "gwy/gifs/gifinfo.idx71": "a5fbcdf2ff7de3052d265e750183aa98ea7145003895f4d4d2e0e285586abe66",
+    "gwy/gifs/gifinfo.idx72": "71f7cf81eeb836b543868740e4dcc8eff816e415fbe062b03cd8dd5cb3eec8cc",
+    "gwy/gifs/gifinfo.idx82": "ae959a7f58ed156746180045780742788d3b6cf7a23ac2e139256d04a06e4bea",
+    "gwy/gifs/gifinfo.idx84": "144bd519de5b4f2a751801d4af39084993607b7de99089bc612d451c77e11eb4",
+    "gwy/gifs/gifinfo.idx87": "7fa3a29c468781bd32016abf2b4dfa7ea1741ebde7f2dc4280ef4d619bb37fe2",
+    "gwy/gifs/gifinfo.idx93": "d4afa0a1674409793736e314f2b3bcd59d86fe6343c593d4672d367b30c7e830",
+    "gwy/gifs/gifinfo.idx96": "fa24afc0c560b1ba23f8381c906049b037c5160a2db351983dcada731c60f2e7",
+    "gwy/gifs/gifinfo.idx99": "b1f9fd439220cc95b443f1877224ab3ea3a357f2c29c863bf9142a22310d2c61",
+    "gwy/gifs/wyzq_xajh.gif": "c53385a835aa34a9d7fa641ea26e6cd18b3385db9ce564d9363f61d5222221e7",
+    "gwy/gui.mrp": "508a4867815dc7e00aa3dfc95fe41e691ae348e21a8cc02d18a7000d30dbc207",
+    "gwy/hotchat.mrp": "8b221c5bf0e8613457fbb16ae09e7a79e2753aeb912e360c36da1ce178663b4b",
+    "gwy/hxsg_cfg.bin": "d455a3a725d56376adda3579992c03b779f89bd407bb29463a73ca80411e63c1",
+    "gwy/pmsg.mrp": "dc678b3641ac4399ed83cebc6d8ee70bc4f16f796f738d2914d70fc16a93089a",
+    "gwy/reglogin.mrp": "70da238867c82023a516f26f539b4a36ebf885ba1449866ca6c82853202ced82",
+    "gwy/resmng.mrp": "9d036ac6c696442c4508d7076b671d94fa96868bd4df9593e33b515b34fbc060",
+    "gwy/rollscr.mrp": "2b61ab8f6cc52ba885204b38a37fb7e26f05308ce37337272c797d0011fcb709",
+    "gwy/sound/msg.mid": "4bd584ed65f38fd15fd9c127d582dcb857e443e55ca4b1a32d0f6e5a0bab226a",
+    "gwy/svrctrl.mrp": "211230b19ce05d028aeb81353165c32285a19f9f395988a84f14dc0270d1683c",
+    "gwy/vdload.mrp": "5089b4f9f5d90b0edd90d9fe8b8b59ba07e28c1c78b00518e9803abdf2942961",
+    "gwy.mrp": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f",
+    "menu.dat": "31102d73244e5df36565446b0b0e7342c0599d062c09c5e996935163d058369a",
+    "plugin240400/cookie.mrp": "25f2f967da4f4ce000dff98e9d44102928f181bb7a3bcaee203012e421d07f15",
+    "plugins/advbar.mrp": "902f604ab9db00f762f6548b19e03b60d8b83aa2b3bc4e5b7b7e3e71a00891b4",
+    "plugins/brwcore.mrp": "5f312bce40cad9570a9e49f5d6c6e96561251b7470391a6fe292c5eabfa426c4",
+    "plugins/brwgui.mrp": "2a8d5f001278db35e2cd6f40425cf8a0057a33d108c9f0fe14aa0e4553792686",
+    "plugins/brwmain.mrp": "7ec0ecda025f1d9bd6dfd9916b12fb1ca16dcfa21a59176d18448f2ee9be2425",
+    "plugins/brwshell.mrp": "1ca0da9b25a47b21ae0eb4600a5300b40e034f987378d39ddaf843991f55311d",
+    "plugins/cloudstorage.mrp": "ec1e09b830d387c473d723804c58cbca312048fc000c4d5bea470155ab84fba8",
+    "plugins/comment.mrp": "84013e5e8a9bc9bf81854a327a8fbefbe729db0ebdcb78d2047471ed22d2ffcf",
+    "plugins/embrw.mrp": "e2d1387205b12de6dd321f767486b0e6478ce82a305d224e88ede19c03a86241",
+    "plugins/flaengine.mrp": "e8cf02e024c451368f8d2dd8af868a287b4e2aa5f278c231a749c2f1920e5d0d",
+    "plugins/freecurr.mrp": "0d3254e1aa5d2a96f40bc8777b1e8e70a370b01b76311b4296a5556df6026346",
+    "plugins/netcfg.mrp": "be92dff1b25f046749ec4968254468adbf398faa1f27b18ad6629b27ebba3c85",
+    "plugins/netpay.mrp": "6f6d7f07d9751860bd77f76e4b844bf60332e6a36af1966ccb86eecdff3cfd4c",
+    "plugins/ongame.mrp": "13185d3a33ff69734830265b25a3b3f8818f676f39f8ae4145d56a1998334c9c",
+    "plugins/passport.mrp": "1d89ede966343bd808069e5cd2716c5ab33816679f730a438500963555d4dcc5",
+    "plugins/passpt.mrp": "1bca2613d6f2b64f3a199783b513001753153a78b65b8325b67dc56adf0677fb",
+    "plugins/player.mrp": "1f936ffa603c4da86a7bf555a05c249ef6c34155afa3a19ff952e2482b6bc1ff",
+    "plugins/smsend.mrp": "850aafce207a2f5cbd8b440639c0ea8df68c6f57c8e933af1dba1f4a84fdea5c",
+    "plugins/wbrwassist.mrp": "7ae5430281ec5d145f9f9f56be8a0ebc30fba0093a3e6c65b80da7e263eae70d",
+    "plugins/wbrwcore.mrp": "c2212ce5d958fd43f2876ddc111a9287b66663ab3bb59a3c32490f5382e58185",
+    "plugins/wbrwmain.mrp": "50af9e6e5b8e70a443eeaceb645b79a45bbd1e429cf40c0ff5458101643b7888",
+    "plugins/wbrwshell.mrp": "9f7782b93624c85fc483071877c7a0f72852c863eb3e6f39fa053d6611cb3d20",
+    "plugins/wembrw.mrp": "bae041742cbc081b2862b39508bf09bb0db2bf0b1c9b34e84c13b151e2f1d67c",
+    "plugins/xrecom.mrp": "33036e1ac9df054b3b5d39ff1b6af5766d46fc41a6cfe468aa9eda114923a378",
+    "system/1008.uni": "5e3515001810f6e25363a9152b4d449877aa24b38c17a9358b178af94c36e5e6",
+    "system/___sftmp.mrp": "0af958f7e12c0fde6d2f14692238b662ad0b27e2bd11dbf9c283fda8e0c822c3",
+    "system/font16.unf": "4c860840f78d0a003b49a8706e38fa6e7581f85f62d76a32a0837a352b61cf84",
+    "system/font16_t.unf": "8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645",
+    "system/fonts12.bin": "717d361f5114bb02eef1b1b2027af74ab4dbd8c8632c0324326d3c39079984a9",
+    "system/fonts14.bin": "330ed6e0089fa1432c41df8832304aacbaa986fa8b7b80b162eac754aeb8e99d",
+    "system/fonts16.bin": "e1357b837238ab8612c9f4b9a96b5b86187844cb0da183313ede1bc6b2c5d5f8",
+    "system/fullSrc.sys": "ba8c9eac092a503e4fb70771c34a00c5bb651043de24db4d3525ebbb3ee7ff08",
+    "system/gb12.bin": "4ce246305464f82e98ffef2ff9f4bd39638bd89d02174bb397c04e0615c0a09b",
+    "system/gb12.uc2": "f8e9a443e28eecce3a99f0ebf26a197b1ef5e65bab5406054ff7e985d48274b3",
+    "system/gb12_uc2.adl": "3149a176488216bda8e4656c918962584c19d29fdde1a9e40c162e0da3a33bce",
+    "system/gb12c.uc2": "a4b0b69a1b5c83f57d6b531b915bc2902c7a2dfa54bd6f4097897a82b34f6a1c",
+    "system/gb12v2.adl": "05ff9a62aeea4d5c8a2a0c3d2a45fa086c478e2f9628f1bbe1cdb75f3a9b61ee",
+    "system/gb12v2.uc2": "728e3c78b4a7ebd11c3cdcec671a4c0c70d2cb03fe5f919ca0b4379ac74533f9",
+    "system/gb16.bin": "e1357b837238ab8612c9f4b9a96b5b86187844cb0da183313ede1bc6b2c5d5f8",
+    "system/gb16.uc2": "6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5",
+    "system/gb16_mrpoid.uc2": "127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308",
+    "system/gb16_uc2.adl": "3149a176488216bda8e4656c918962584c19d29fdde1a9e40c162e0da3a33bce",
+    "system/statis.sys": "39f0b99e2a92e20a3dd23fdac9e6701d59fb22704227b40c3018e99badc40c24",
+    "system/sysinfo.dat": "ac0ad03db355fa3266c4456819fedaba65186bf59a2795725a83a445be857417",
+    "time.py.sys": "b8a8437e42cf68f3a3ac59475363c6c326b3304b6a437576cd5e9ea22260de6e",
+    "usrConfig": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb"
+  },
+  "startedAt": "2026-09-14T02:28:48.989Z",
+  "requiredCount": 8,
+  "selectedCount": 8,
+  "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+  "complete": true,
+  "allPassed": false,
+  "results": [
+    {
+      "sha256": "4b844097520cb8e5f6dd908df3a3080b8734df74cb6c5b61035ef5223a75f605",
+      "title": "见缝插针2025",
+      "storeCaseId": 22,
+      "id": 1,
+      "outcome": "worker-timeout",
+      "error": "",
+      "elapsedMs": 120013,
+      "progress": {
+        "phase": "controls",
+        "ticks": 237,
+        "keysTested": 13,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "9ca269f3ef6907345fb71f66c0c251fe0f1ee63f0e4bf7d315ddfdee68ddba78",
+            "image": "1-boot.png",
+            "clock": 4200,
+            "colors": 274
+          },
+          {
+            "name": "entry1",
+            "sha256": "6b5cdb85ad488bafab388daf5ea90318fd3a0aa7ea474b1420213b3809628736",
+            "image": "1-entry1.png",
+            "clock": 5240,
+            "colors": 3
+          },
+          {
+            "name": "entry2",
+            "sha256": "88dfb721f7b68966a6012b7c89c39ab4b396d222a168f4e4c359b9894b2381dd",
+            "image": "1-entry2.png",
+            "clock": 6280,
+            "colors": 3
+          },
+          {
+            "name": "entry3",
+            "sha256": "c8f42a73806fe9dd28eb79b52ffc7fb4686a28fdcaff2dec24e94481c97ef691",
+            "image": "1-entry3.png",
+            "clock": 7320,
+            "colors": 3
+          },
+          {
+            "name": "entry4",
+            "sha256": "5e6b8b827ea43368113a86b9385cf46c9b44870091580b8614ffb549f8db59cf",
+            "image": "1-entry4.png",
+            "clock": 8360,
+            "colors": 3
+          },
+          {
+            "name": "control1",
+            "sha256": "001c3a9111e20ab40687fe8ebdbeddfd02a89ee0f40ee19e90bdde50ca19e685",
+            "image": "1-control1.png",
+            "clock": 9560,
+            "colors": 3
+          },
+          {
+            "name": "control2",
+            "sha256": "da29c23a8e7b41ceb17eec3cb07f4ae641ba3b8908365810cf3a30447cf2898a",
+            "image": "1-control2.png",
+            "clock": 10760,
+            "colors": 3
+          },
+          {
+            "name": "control3",
+            "sha256": "11af3e7f66e1ee872b9b0b2528ca8690c8cc381cd5cd6d8972013f6fad2c5e87",
+            "image": "1-control3.png",
+            "clock": 11960,
+            "colors": 3
+          },
+          {
+            "name": "control4",
+            "sha256": "621989b4e41c8fa89a1ceb1a2037ee1800a4d3fb99b5e329bf801d2b91fa0649",
+            "image": "1-control4.png",
+            "clock": 13160,
+            "colors": 3
+          },
+          {
+            "name": "control5",
+            "sha256": "8e365c394ba00bf79d9392ab18390419719906904f10bd786f871d290fec5e65",
+            "image": "1-control5.png",
+            "clock": 14360,
+            "colors": 3
+          },
+          {
+            "name": "control6",
+            "sha256": "247688e06df82cfed621e1c8888cf8442f1fb034705fd190d5e24e027f419946",
+            "image": "1-control6.png",
+            "clock": 15560,
+            "colors": 3
+          },
+          {
+            "name": "control7",
+            "sha256": "75e95613204402f8ad5d8696483ae6df26e22e530fe584e90da66eca9becaec4",
+            "image": "1-control7.png",
+            "clock": 16760,
+            "colors": 3
+          },
+          {
+            "name": "control8",
+            "sha256": "56e9225f1ca6388546906c985d316f03fa788faac9d86cd9d9b260bbebeaa9c4",
+            "image": "1-control8.png",
+            "clock": 17960,
+            "colors": 3
+          },
+          {
+            "name": "control9",
+            "sha256": "4fbc1228ef647ea16c6f7dbfe9cd2e4a48042f485b8e7c14899f2c6a66fdf1e7",
+            "image": "1-control9.png",
+            "clock": 19160,
+            "colors": 3
+          },
+          {
+            "name": "controls",
+            "sha256": "4fbc1228ef647ea16c6f7dbfe9cd2e4a48042f485b8e7c14899f2c6a66fdf1e7",
+            "image": "1-controls.png",
+            "clock": 19160,
+            "colors": 3
+          }
+        ]
+      }
+    },
+    {
+      "sha256": "0837508c77a320973445041b1f5f0bb44da35faa1174fb198e85a758c423a7dd",
+      "title": "12530音乐客户端",
+      "storeCaseId": 28,
+      "id": 2,
+      "width": 240,
+      "height": 320,
+      "outcome": "no-input-response",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 2,
+      "controlChanges": 0,
+      "presentedFrames": 26,
+      "interactionVerified": false,
+      "distinctFrames": 3,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "9996c0b4fcbc5f16662fe0ceb0cac4d0f0210a5bfd3ca2b87d7e76e54628a571",
+          "image": "2-boot.png",
+          "clock": 4000,
+          "colors": 610
+        },
+        {
+          "name": "entry1",
+          "sha256": "a773633c2507babea83d2031cb3cd77129c0df9ddb18ac0631de8224bb25618e",
+          "image": "2-entry1.png",
+          "clock": 5040,
+          "colors": 578
+        },
+        {
+          "name": "entry2",
+          "sha256": "a773633c2507babea83d2031cb3cd77129c0df9ddb18ac0631de8224bb25618e",
+          "image": "2-entry2.png",
+          "clock": 6080,
+          "colors": 578
+        },
+        {
+          "name": "entry3",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-entry3.png",
+          "clock": 7120,
+          "colors": 295
+        },
+        {
+          "name": "entry4",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-entry4.png",
+          "clock": 8160,
+          "colors": 295
+        },
+        {
+          "name": "control1",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control1.png",
+          "clock": 9360,
+          "colors": 295
+        },
+        {
+          "name": "control2",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control2.png",
+          "clock": 10560,
+          "colors": 295
+        },
+        {
+          "name": "control3",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control3.png",
+          "clock": 11760,
+          "colors": 295
+        },
+        {
+          "name": "control4",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control4.png",
+          "clock": 12960,
+          "colors": 295
+        },
+        {
+          "name": "control5",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control5.png",
+          "clock": 14160,
+          "colors": 295
+        },
+        {
+          "name": "control6",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control6.png",
+          "clock": 15360,
+          "colors": 295
+        },
+        {
+          "name": "control7",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control7.png",
+          "clock": 16560,
+          "colors": 295
+        },
+        {
+          "name": "control8",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control8.png",
+          "clock": 17760,
+          "colors": 295
+        },
+        {
+          "name": "control9",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-control9.png",
+          "clock": 18960,
+          "colors": 295
+        },
+        {
+          "name": "controls",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-controls.png",
+          "clock": 18960,
+          "colors": 295
+        },
+        {
+          "name": "sustained",
+          "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+          "image": "2-sustained.png",
+          "clock": 78960,
+          "colors": 295
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 429,
+      "debugOutput": ""
+    },
+    {
+      "sha256": "6453aa344e08ed0ec59811a3d2f25792aa4d6961823f7a0fc7c4f7622a475f52",
+      "title": "Angry Birds",
+      "storeCaseId": 77,
+      "id": 3,
+      "width": 320,
+      "height": 480,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 13,
+      "controlChanges": 9,
+      "presentedFrames": 983,
+      "interactionVerified": false,
+      "distinctFrames": 194,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "a9c4d6a80fd0951218b30afd0bbcf424bec221b38626e9440553dd5047113b8f",
+          "image": "3-boot.png",
+          "clock": 4804,
+          "colors": 5165
+        },
+        {
+          "name": "entry1",
+          "sha256": "dc4b061f092054f64ea7081ad68e403fbde8f491e95329762339dc31dd80eb5f",
+          "image": "3-entry1.png",
+          "clock": 5844,
+          "colors": 5254
+        },
+        {
+          "name": "entry2",
+          "sha256": "692bcc70647e8b4fa9638e9fa9490cbd842e967278e60235ad67548836c7c83e",
+          "image": "3-entry2.png",
+          "clock": 6888,
+          "colors": 5070
+        },
+        {
+          "name": "entry3",
+          "sha256": "2f6e49329d2af81538dd8fdbabe5e7d2f6d0c2c1732a2cc7442d619dbc9ed691",
+          "image": "3-entry3.png",
+          "clock": 7937,
+          "colors": 5282
+        },
+        {
+          "name": "entry4",
+          "sha256": "49780faa6a45ac1479f311897308524c503769fb208a3f0427326d05f5f90591",
+          "image": "3-entry4.png",
+          "clock": 9001,
+          "colors": 5094
+        },
+        {
+          "name": "control1",
+          "sha256": "39391674265503917250936cc70460c24f2755ae77b602f93ef512fe784cccf1",
+          "image": "3-control1.png",
+          "clock": 10201,
+          "colors": 5118
+        },
+        {
+          "name": "control2",
+          "sha256": "8c771835dc55bf7ba5d986662ee7189d7445e95829deecf0a185cc47979fec4b",
+          "image": "3-control2.png",
+          "clock": 11404,
+          "colors": 5194
+        },
+        {
+          "name": "control3",
+          "sha256": "5ca29889d79f5eccea62010ccfdd1db1536ec1cb83aca7db17caa02cd1a3b5ab",
+          "image": "3-control3.png",
+          "clock": 12605,
+          "colors": 5014
+        },
+        {
+          "name": "control4",
+          "sha256": "9eb91a32a20be2b42da11d88170d8c38b9fae707097e5918bd19c1c898492b66",
+          "image": "3-control4.png",
+          "clock": 13805,
+          "colors": 5098
+        },
+        {
+          "name": "control5",
+          "sha256": "77c3e01390bbb33ffbcf71f09be91a3b9bc435648e0f5b22a800c83e180f0da3",
+          "image": "3-control5.png",
+          "clock": 15014,
+          "colors": 5195
+        },
+        {
+          "name": "control6",
+          "sha256": "92fc38ef4a4ebac7fb0f01691c207b94d1d2dd6359272b002c462b02a3f3fea0",
+          "image": "3-control6.png",
+          "clock": 16215,
+          "colors": 5034
+        },
+        {
+          "name": "control7",
+          "sha256": "919dbfe0426c26c0d855d07941b4ea3b47e9553fb912d19024574f3452b6cf34",
+          "image": "3-control7.png",
+          "clock": 17416,
+          "colors": 4979
+        },
+        {
+          "name": "control8",
+          "sha256": "10480b3cbc48ad50e6906a7480a5046fba5f5c17db280c73d4c2f0c2261abdc1",
+          "image": "3-control8.png",
+          "clock": 18617,
+          "colors": 5199
+        },
+        {
+          "name": "control9",
+          "sha256": "8f0d83e860468389f14a90b60d9f3bf639c2d09aca27eef808f4c18920b835c8",
+          "image": "3-control9.png",
+          "clock": 19817,
+          "colors": 5117
+        },
+        {
+          "name": "controls",
+          "sha256": "8f0d83e860468389f14a90b60d9f3bf639c2d09aca27eef808f4c18920b835c8",
+          "image": "3-controls.png",
+          "clock": 19817,
+          "colors": 5117
+        },
+        {
+          "name": "sustained",
+          "sha256": "df15d0fadeaa3d8c8a6f9f3ddb74f4b7926a8812a039e3658a02e5e3b62e12e0",
+          "image": "3-sustained.png",
+          "clock": 80399,
+          "colors": 5066
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 35076,
+      "debugOutput": ""
+    },
+    {
+      "sha256": "f8dc51d3e397722c24753b5b7d1f3a4c80d97938c4005c8f559c5f49a052e80e",
+      "title": "彩蝶少女",
+      "storeCaseId": 350,
+      "id": 4,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 4,
+      "controlChanges": 1,
+      "presentedFrames": 6,
+      "interactionVerified": false,
+      "distinctFrames": 4,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-boot.png",
+          "clock": 4000,
+          "colors": 2
+        },
+        {
+          "name": "entry1",
+          "sha256": "5cb8a62594ea9c64cfe6b6bda14105c5b1756eb43e44697cb02c0ca7499ce895",
+          "image": "4-entry1.png",
+          "clock": 5040,
+          "colors": 6
+        },
+        {
+          "name": "entry2",
+          "sha256": "0ca09828df814997e473ff71afdcdcddaed5fff61e9af69a9e058758f722b8f2",
+          "image": "4-entry2.png",
+          "clock": 6080,
+          "colors": 5
+        },
+        {
+          "name": "entry3",
+          "sha256": "bd4ef0287ed9722185aaf5cedf55eda8578e4a5f368b87a91f84907845e722d5",
+          "image": "4-entry3.png",
+          "clock": 7120,
+          "colors": 5
+        },
+        {
+          "name": "entry4",
+          "sha256": "bd4ef0287ed9722185aaf5cedf55eda8578e4a5f368b87a91f84907845e722d5",
+          "image": "4-entry4.png",
+          "clock": 8160,
+          "colors": 5
+        },
+        {
+          "name": "control1",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control1.png",
+          "clock": 9360,
+          "colors": 2
+        },
+        {
+          "name": "control2",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control2.png",
+          "clock": 10560,
+          "colors": 2
+        },
+        {
+          "name": "control3",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control3.png",
+          "clock": 11760,
+          "colors": 2
+        },
+        {
+          "name": "control4",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control4.png",
+          "clock": 12960,
+          "colors": 2
+        },
+        {
+          "name": "control5",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control5.png",
+          "clock": 14160,
+          "colors": 2
+        },
+        {
+          "name": "control6",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control6.png",
+          "clock": 15360,
+          "colors": 2
+        },
+        {
+          "name": "control7",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control7.png",
+          "clock": 16560,
+          "colors": 2
+        },
+        {
+          "name": "control8",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control8.png",
+          "clock": 17760,
+          "colors": 2
+        },
+        {
+          "name": "control9",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-control9.png",
+          "clock": 18960,
+          "colors": 2
+        },
+        {
+          "name": "controls",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-controls.png",
+          "clock": 18960,
+          "colors": 2
+        },
+        {
+          "name": "sustained",
+          "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+          "image": "4-sustained.png",
+          "clock": 78960,
+          "colors": 2
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 345,
+      "debugOutput": ""
+    },
+    {
+      "sha256": "1f643b41fdfbfadf368dec1c80037fa32f85891a0643fc07365e75ca859b2a62",
+      "title": "看图片浏览器",
+      "storeCaseId": 1116,
+      "id": 5,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 3,
+      "controlChanges": 2,
+      "presentedFrames": 10,
+      "interactionVerified": false,
+      "distinctFrames": 3,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "670397d085702033a48579717894e775df36cd05ae8eac8151f8a47350403f00",
+          "image": "5-boot.png",
+          "clock": 4500,
+          "colors": 11
+        },
+        {
+          "name": "entry1",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-entry1.png",
+          "clock": 5540,
+          "colors": 28
+        },
+        {
+          "name": "entry2",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-entry2.png",
+          "clock": 6580,
+          "colors": 28
+        },
+        {
+          "name": "entry3",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-entry3.png",
+          "clock": 7620,
+          "colors": 28
+        },
+        {
+          "name": "entry4",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-entry4.png",
+          "clock": 8660,
+          "colors": 28
+        },
+        {
+          "name": "control1",
+          "sha256": "5f4514b768bfe3f0a2fe5850f223ebd91ebc72926e417418db5e697ee3015ed7",
+          "image": "5-control1.png",
+          "clock": 9860,
+          "colors": 28
+        },
+        {
+          "name": "control2",
+          "sha256": "5f4514b768bfe3f0a2fe5850f223ebd91ebc72926e417418db5e697ee3015ed7",
+          "image": "5-control2.png",
+          "clock": 11060,
+          "colors": 28
+        },
+        {
+          "name": "control3",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control3.png",
+          "clock": 12260,
+          "colors": 28
+        },
+        {
+          "name": "control4",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control4.png",
+          "clock": 13460,
+          "colors": 28
+        },
+        {
+          "name": "control5",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control5.png",
+          "clock": 14660,
+          "colors": 28
+        },
+        {
+          "name": "control6",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control6.png",
+          "clock": 15860,
+          "colors": 28
+        },
+        {
+          "name": "control7",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control7.png",
+          "clock": 17060,
+          "colors": 28
+        },
+        {
+          "name": "control8",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control8.png",
+          "clock": 18260,
+          "colors": 28
+        },
+        {
+          "name": "control9",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-control9.png",
+          "clock": 19460,
+          "colors": 28
+        },
+        {
+          "name": "controls",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-controls.png",
+          "clock": 19460,
+          "colors": 28
+        },
+        {
+          "name": "sustained",
+          "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+          "image": "5-sustained.png",
+          "clock": 79460,
+          "colors": 28
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 352,
+      "debugOutput": ""
+    },
+    {
+      "sha256": "9fe4d4aeb0d0658cbc31b1c7887246db8a8af8a62ecf40a31a5c9a7b37e100d2",
+      "title": "人生重开模拟器",
+      "storeCaseId": 1683,
+      "id": 6,
+      "width": 240,
+      "height": 320,
+      "outcome": "no-input-response",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 1,
+      "controlChanges": 0,
+      "presentedFrames": 3,
+      "interactionVerified": false,
+      "distinctFrames": 2,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "1c48fcdf9b19b99e9022d2695fed40f0341206ee51435b619f6ae737bf6b4bb9",
+          "image": "6-boot.png",
+          "clock": 4200,
+          "colors": 5
+        },
+        {
+          "name": "entry1",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-entry1.png",
+          "clock": 5240,
+          "colors": 7
+        },
+        {
+          "name": "entry2",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-entry2.png",
+          "clock": 6280,
+          "colors": 7
+        },
+        {
+          "name": "entry3",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-entry3.png",
+          "clock": 7320,
+          "colors": 7
+        },
+        {
+          "name": "entry4",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-entry4.png",
+          "clock": 8360,
+          "colors": 7
+        },
+        {
+          "name": "control1",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control1.png",
+          "clock": 9560,
+          "colors": 7
+        },
+        {
+          "name": "control2",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control2.png",
+          "clock": 10760,
+          "colors": 7
+        },
+        {
+          "name": "control3",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control3.png",
+          "clock": 11960,
+          "colors": 7
+        },
+        {
+          "name": "control4",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control4.png",
+          "clock": 13160,
+          "colors": 7
+        },
+        {
+          "name": "control5",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control5.png",
+          "clock": 14360,
+          "colors": 7
+        },
+        {
+          "name": "control6",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control6.png",
+          "clock": 15560,
+          "colors": 7
+        },
+        {
+          "name": "control7",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control7.png",
+          "clock": 16760,
+          "colors": 7
+        },
+        {
+          "name": "control8",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control8.png",
+          "clock": 17960,
+          "colors": 7
+        },
+        {
+          "name": "control9",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-control9.png",
+          "clock": 19160,
+          "colors": 7
+        },
+        {
+          "name": "controls",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-controls.png",
+          "clock": 19160,
+          "colors": 7
+        },
+        {
+          "name": "sustained",
+          "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+          "image": "6-sustained.png",
+          "clock": 79160,
+          "colors": 7
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 1202,
+      "debugOutput": ""
+    },
+    {
+      "sha256": "eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7",
+      "title": "Tom猫",
+      "storeCaseId": 203,
+      "id": 7,
+      "outcome": "worker-timeout",
+      "error": "",
+      "elapsedMs": 120009,
+      "progress": {
+        "phase": "controls",
+        "ticks": 177,
+        "keysTested": 9,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-boot.png",
+            "clock": 4200,
+            "colors": 2958
+          },
+          {
+            "name": "entry1",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-entry1.png",
+            "clock": 5240,
+            "colors": 2958
+          },
+          {
+            "name": "entry2",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-entry2.png",
+            "clock": 6280,
+            "colors": 2958
+          },
+          {
+            "name": "entry3",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-entry3.png",
+            "clock": 7320,
+            "colors": 2958
+          },
+          {
+            "name": "entry4",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-entry4.png",
+            "clock": 8360,
+            "colors": 2958
+          },
+          {
+            "name": "control1",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-control1.png",
+            "clock": 9560,
+            "colors": 2958
+          },
+          {
+            "name": "control2",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-control2.png",
+            "clock": 10760,
+            "colors": 2958
+          },
+          {
+            "name": "control3",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-control3.png",
+            "clock": 11960,
+            "colors": 2958
+          },
+          {
+            "name": "control4",
+            "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+            "image": "7-control4.png",
+            "clock": 13160,
+            "colors": 2958
+          },
+          {
+            "name": "control5",
+            "sha256": "2be6de386b97214e6764fa8a51a933186ea24603f5bf819c059acb153061dde2",
+            "image": "7-control5.png",
+            "clock": 14360,
+            "colors": 2114
+          }
+        ]
+      }
+    },
+    {
+      "sha256": "945b5bae9a4c83bfdbb773346390c4573df706402307eaf917fc104132f3c2d5",
+      "title": "滚木块",
+      "storeCaseId": 806,
+      "id": 8,
+      "outcome": "worker-timeout",
+      "error": "",
+      "elapsedMs": 120007,
+      "progress": {
+        "phase": "entry",
+        "ticks": 102,
+        "keysTested": 4,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "9ab7127ec39d7dd0ce0c47115a82e0b84ab7aedb67e3db32bcb3ba70454edf9a",
+            "image": "8-boot.png",
+            "clock": 4200,
+            "colors": 3
+          },
+          {
+            "name": "entry1",
+            "sha256": "bb5d374b987d2431b26b2deecab4996135833986d723bc97938522bab5d324e7",
+            "image": "8-entry1.png",
+            "clock": 5240,
+            "colors": 5
+          },
+          {
+            "name": "entry2",
+            "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+            "image": "8-entry2.png",
+            "clock": 6280,
+            "colors": 20
+          },
+          {
+            "name": "entry3",
+            "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+            "image": "8-entry3.png",
+            "clock": 7320,
+            "colors": 20
+          },
+          {
+            "name": "entry4",
+            "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+            "image": "8-entry4.png",
+            "clock": 8360,
+            "colors": 20
+          }
+        ]
+      }
+    }
+  ]
+}

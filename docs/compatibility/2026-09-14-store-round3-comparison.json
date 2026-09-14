@@ -1,0 +1,2549 @@
+{
+  "total": 317,
+  "newlySmokePassed": [
+    197,
+    236,
+    603,
+    917
+  ],
+  "previouslyPassedRegressions": [],
+  "remaining": 313,
+  "results": [
+    {
+      "caseId": 3,
+      "label": "sky插件V7安装包",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 4,
+      "label": "sky字库V3安装包",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 5,
+      "label": "vmrp安装包",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 7,
+      "label": "冒泡",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 10,
+      "label": "听听音阅",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 11,
+      "label": "应用列表8.0",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 18,
+      "label": "斗象棋2026",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 31,
+      "label": "2012超级美眉连连看",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 39,
+      "label": "2048",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 41,
+      "label": "2048美化版XL",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 76,
+      "label": "a.bmp→a.jpg",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 81,
+      "label": "AV美女写真",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24ba7c (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 87,
+      "label": "CPU性能测试",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24cf22 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 95,
+      "label": "CS1.6特警先锋",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 98,
+      "label": "CS反恐风云",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 106,
+      "label": "DNF复仇者之怒",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 109,
+      "label": "DNF狂战之怒",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 110,
+      "label": "DNF欲望格斗",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 115,
+      "label": "Dota之超神屠夫",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 116,
+      "label": "Dota之超神屠夫",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 132,
+      "label": "MRP NES软件平台",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read application *G",
+      "diagnosis": "Lua GUI 与 _platEx(1221) 已补；需要平台预注册 m0 槽 *G，包未提供"
+    },
+    {
+      "caseId": 137,
+      "label": "MSN",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 138,
+      "label": "MSN",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 139,
+      "label": "MSN",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 144,
+      "label": "MTK魔法寿司_320x240",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x1e870a4 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "diagnosis": "读16越过主内存尾部；循环根因未确定，未扩大主内存掩盖越界"
+    },
+    {
+      "caseId": 145,
+      "label": "MTK魔法寿司_320x480",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x1e87098 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "diagnosis": "读16越过主内存尾部；循环根因未确定，未扩大主内存掩盖越界"
+    },
+    {
+      "caseId": 159,
+      "label": "NES积分-天蓝",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 160,
+      "label": "NES模拟器",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: attempt to call a non-function",
+      "diagnosis": "整图加载越过原错误；start.mr PC100 调用缺失的 _bmpInfo(30)，仍待实现真实来宾像素地址接口"
+    },
+    {
+      "caseId": 161,
+      "label": "nes模拟器XL版1.2",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 162,
+      "label": "QQ",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 163,
+      "label": "QQ",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 164,
+      "label": "QQ2010",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 165,
+      "label": "QQ2010",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 166,
+      "label": "QQ2010",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 170,
+      "label": "QQ2010（超级挂Q）",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 174,
+      "label": "QQ斗地主3.3正式版",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 178,
+      "label": "QQ空间",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 179,
+      "label": "QQ空间",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 183,
+      "label": "QQ手机软件管理",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 184,
+      "label": "QQ网游大厅",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 187,
+      "label": "QQ炫舞",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 188,
+      "label": "Q版飞车",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 192,
+      "label": "ram_scan",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 197,
+      "label": "RX管理器",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "diagnosis": "补齐平台 IO 内存；磁盘信息界面和持续运行已核验"
+    },
+    {
+      "caseId": 212,
+      "label": "xqc安装包2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 215,
+      "label": "ZCOM手机杂志",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 216,
+      "label": "“粽”想过61",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 217,
+      "label": "ＣＳ反恐特警",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 232,
+      "label": "爱上3D爱上图",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 233,
+      "label": "爱阅看书2.0",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free block: address=0x32d100 size=0x0 base=0x2965c8 end=0x3965c8",
+      "diagnosis": "来宾堆损坏，仍待定位"
+    },
+    {
+      "caseId": 236,
+      "label": "按键扫描实例",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "diagnosis": "补齐平台 IO 内存；按键窗口有画面变化，持续运行完成"
+    },
+    {
+      "caseId": 239,
+      "label": "暗黑穿越-真实杀戮",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 240,
+      "label": "暗黑穿越-真实杀戮",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 253,
+      "label": "傲剑OL",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 265,
+      "label": "八仙过海",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 266,
+      "label": "把美女灌醉",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 267,
+      "label": "把美女灌醉",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 268,
+      "label": "把美女灌醉",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 276,
+      "label": "百宝箱",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 279,
+      "label": "百家乐",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 295,
+      "label": "宝石迷阵",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 314,
+      "label": "避孕大作战",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 315,
+      "label": "便宜！绝对划算",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 321,
+      "label": "别踩白块",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 336,
+      "label": "捕鱼达人",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 337,
+      "label": "捕鱼达人",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 347,
+      "label": "猜奥运金牌得手机",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 349,
+      "label": "彩蛋大战",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 351,
+      "label": "彩虹QQ2014完整收藏版",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 366,
+      "label": "超级合金装备",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 396,
+      "label": "超爽绝杀大合辑",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read application *J",
+      "diagnosis": "Lua GUI 已补；需要平台预注册 m0 槽 *J，包未提供"
+    },
+    {
+      "caseId": 405,
+      "label": "成语大师",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 432,
+      "label": "穿越火线之飞虎队",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 451,
+      "label": "吹裙子",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 461,
+      "label": "存款计算器",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 465,
+      "label": "打小鸟",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 491,
+      "label": "大漠狂刀",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 498,
+      "label": "大师在线设计签名",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 500,
+      "label": "大雄约会放屁",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 506,
+      "label": "弹力球",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 523,
+      "label": "盗墓鬼吹灯笔记",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x262f62 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 543,
+      "label": "第十亿个幸运者",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 545,
+      "label": "第一次亲密接触",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 551,
+      "label": "调色板XL",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 553,
+      "label": "谍影重重Ⅱ",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 575,
+      "label": "毒蛇行动2-丛林之谜",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 577,
+      "label": "独孤九剑",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 583,
+      "label": "赌王之王-黄金城",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 589,
+      "label": "多款游戏限时免费",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 596,
+      "label": "夺命番茄",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 603,
+      "label": "俄罗斯方块",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "diagnosis": "整图加载兼容已修；短冒烟通过，较长操作仍触发 SetTile(0,11,21,0) 越界，不能算持续运行修复"
+    },
+    {
+      "caseId": 633,
+      "label": "放假啦疯狂游戏吧",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 640,
+      "label": "飞天忍者喵",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 643,
+      "label": "飞信",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 645,
+      "label": "飞信",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 659,
+      "label": "风流三国",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 665,
+      "label": "风云三国",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 673,
+      "label": "疯狂吧！光棍",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 674,
+      "label": "疯狂捕鱼",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 687,
+      "label": "疯狂的小鸟太空版",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 723,
+      "label": "父亲节抢楼送手机",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 726,
+      "label": "干爹的爱",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24c588 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 727,
+      "label": "干爹的爱",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x2976f4 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 734,
+      "label": "港式五张",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 752,
+      "label": "给力猫",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 753,
+      "label": "给力猫",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 755,
+      "label": "给力枪手连环杀",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 758,
+      "label": "更多精品游戏",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 768,
+      "label": "公交查询",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 782,
+      "label": "股票交易版",
+      "before": "runtime-error",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "自动识别 _start.mr；60 秒场景可操作并到登录界面，固定冒烟仍静态，在线功能未验证"
+    },
+    {
+      "caseId": 783,
+      "label": "怪蛋风暴_大屏版",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 801,
+      "label": "鬼手伏魔录",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 809,
+      "label": "国庆去哪儿",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 839,
+      "label": "核弹风暴",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 841,
+      "label": "和美女20次亲密接触",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 844,
+      "label": "合金弹头2013",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 845,
+      "label": "合金弹头2013",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 855,
+      "label": "黑暗传说之利器",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 858,
+      "label": "黑白棋AI",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 874,
+      "label": "华容道",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 880,
+      "label": "欢乐马戏团",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 882,
+      "label": "欢乐五一幸运抽奖",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 894,
+      "label": "幻想三国",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 895,
+      "label": "幻想三国online",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 901,
+      "label": "黄金矿工",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 908,
+      "label": "毁灭巫师",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 910,
+      "label": "会飞的汤姆猫",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 917,
+      "label": "魂之利刃",
+      "before": "runtime-error",
+      "after": "input-smoke-passed",
+      "error": null,
+      "diagnosis": "补齐 0x40000000 平台内存；进入战斗教学并完成持续运行"
+    },
+    {
+      "caseId": 918,
+      "label": "活动介绍",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 922,
+      "label": "火车订票",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 923,
+      "label": "火车订票",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 947,
+      "label": "激情冲动",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: MRP FileLen 124976 exceeds buffer 98304",
+      "diagnosis": "包长度或压缩数据异常，需可验证完整包"
+    },
+    {
+      "caseId": 960,
+      "label": "极品家丁-9527",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 967,
+      "label": "寄生兽",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 968,
+      "label": "寄生兽",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 975,
+      "label": "假日休闲乐逍遥",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read application *J",
+      "diagnosis": "Lua GUI 已补；需要平台预注册 m0 槽 *J，包未提供"
+    },
+    {
+      "caseId": 988,
+      "label": "剑侣情缘3美人如玉",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1004,
+      "label": "僵尸大暴走",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1018,
+      "label": "江南style骑马舞",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1021,
+      "label": "降龙十八掌",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1024,
+      "label": "接水管",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1040,
+      "label": "节日祝福语",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1062,
+      "label": "精品切水果",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1075,
+      "label": "经典泡泡龙",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 1078,
+      "label": "警花射击训练",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1081,
+      "label": "狙击精英",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1083,
+      "label": "狙击小日本",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1091,
+      "label": "绝命杀手斩龙刃",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1143,
+      "label": "快点网址导航",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1160,
+      "label": "来电助手",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 1190,
+      "label": "冷笑话大全",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1201,
+      "label": "恋爱气球",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: MRP FileLen 365325 exceeds buffer 331255",
+      "diagnosis": "包长度或压缩数据异常，需可验证完整包"
+    },
+    {
+      "caseId": 1220,
+      "label": "零距离触摸美女",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1225,
+      "label": "灵剑封魔录",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1285,
+      "label": "猫捉老鼠",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1286,
+      "label": "冒泡",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1287,
+      "label": "冒泡VIP游戏套餐",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1292,
+      "label": "冒泡看图",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1296,
+      "label": "冒泡平台",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1297,
+      "label": "冒泡棋牌",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1298,
+      "label": "冒泡棋牌",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1300,
+      "label": "冒泡软件魔盒",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "UnknownAbiError: unsupported sprintf format unterminated string",
+      "diagnosis": "真实第70次 sprintf %s/%s 的 guest 路径缺 NUL，扫描70000字节仍未终止；未截断或吞错"
+    },
+    {
+      "caseId": 1301,
+      "label": "冒泡社区",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1302,
+      "label": "冒泡社区安装",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1303,
+      "label": "冒泡视频交友",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1309,
+      "label": "冒泡听吧",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1310,
+      "label": "冒泡网",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1311,
+      "label": "冒泡网游",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1312,
+      "label": "冒泡音乐",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1315,
+      "label": "冒泡游戏商城",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1324,
+      "label": "冒泡浏览器安装",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1325,
+      "label": "冒泡浏览器安装",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1328,
+      "label": "冒险岛",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 1339,
+      "label": "美女3D飞车",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1350,
+      "label": "美女翻翻看",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x297372 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 1386,
+      "label": "梦幻封神",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1397,
+      "label": "梦幻西游-无敌战神",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "UnknownAbiError: unsupported sprintf format %",
+      "diagnosis": "固定冒烟仍为裸百分号错误；另一次短诊断提前退出，根因仍待定位"
+    },
+    {
+      "caseId": 1406,
+      "label": "免费抽奖|欢乐共享",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1408,
+      "label": "秒杀iPhone的游戏",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1410,
+      "label": "明星美女麻将馆",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free block: address=0x2a4a08 size=0x43005100 base=0x24b5c8 end=0x34b5c8",
+      "diagnosis": "来宾堆损坏，仍待定位"
+    },
+    {
+      "caseId": 1414,
+      "label": "名将三国OL",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1491,
+      "label": "内衣大盗",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1504,
+      "label": "年年有“愚”",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1511,
+      "label": "农民斗地主",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 1515,
+      "label": "怒火铁拳",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1516,
+      "label": "怒火铁拳",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1517,
+      "label": "怒火铁拳",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1526,
+      "label": "欧洲杯有奖竞猜",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1527,
+      "label": "排列数字测智商",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1560,
+      "label": "七夕“遇见爱”",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1561,
+      "label": "七夕冒泡送情意",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1565,
+      "label": "奇迹捕鱼",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1585,
+      "label": "抢！注册道具费全免",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1589,
+      "label": "抢登钓鱼岛",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1590,
+      "label": "抢登钓鱼岛",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1591,
+      "label": "抢滩登陆2012",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1604,
+      "label": "青春纪念册",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1616,
+      "label": "情趣高手",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1628,
+      "label": "趣拼高帅富",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1629,
+      "label": "趣拼图",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1630,
+      "label": "趣拼学生妹",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1631,
+      "label": "趣拼学生妹",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1681,
+      "label": "人人网",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1696,
+      "label": "忍者水果",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1697,
+      "label": "忍者水果",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1698,
+      "label": "忍者水果",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1699,
+      "label": "忍者水果",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1700,
+      "label": "忍者水果",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1703,
+      "label": "扔纸团",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1707,
+      "label": "如来神掌",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1714,
+      "label": "三国保钓战",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 1715,
+      "label": "三国大富翁",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1716,
+      "label": "三国大富翁",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1730,
+      "label": "三国猛将传",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1736,
+      "label": "三国纳妾记",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 1744,
+      "label": "三国英雄传",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unmapped at 0x24c5aa (arm_ext_call: GuestMemory map32 fault at 0xfffffffc)",
+      "diagnosis": "运行时或来宾故障仍待定位；保留原始异常"
+    },
+    {
+      "caseId": 1781,
+      "label": "蛇来运转大抽奖",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1799,
+      "label": "神马过年不寂寞",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1801,
+      "label": "神魔大陆",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1868,
+      "label": "侍魂之修罗斩",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 1880,
+      "label": "手机QQ",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 1883,
+      "label": "手机UC原版",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1889,
+      "label": "手机信号强度仪V3",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1891,
+      "label": "手机阅读",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 1895,
+      "label": "手写库01",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1896,
+      "label": "手写库02",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1897,
+      "label": "手写库03",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1898,
+      "label": "手写库04",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1901,
+      "label": "手信语音聊天",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1903,
+      "label": "暑期iPhone大礼包",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1904,
+      "label": "蜀山剑侠",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1908,
+      "label": "数学达人",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1915,
+      "label": "水果老虎机",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 1916,
+      "label": "水果梦工厂",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1924,
+      "label": "水晶之恋",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1928,
+      "label": "水浒对对碰",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1929,
+      "label": "水浒反殴传",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 1975,
+      "label": "贪吃小鳄鱼",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1976,
+      "label": "贪吃小鳄鱼",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 1998,
+      "label": "天龙八部",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2013,
+      "label": "天天打怪兽",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2014,
+      "label": "天天打折货到付款",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2024,
+      "label": "铁血抗日",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2025,
+      "label": "铁血抗日",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2028,
+      "label": "听听音阅贺岁版",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2029,
+      "label": "听听音阅贺岁版",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2034,
+      "label": "童年经典游戏合辑",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2036,
+      "label": "偷看美女",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2042,
+      "label": "途客行天下",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 2057,
+      "label": "吞食天地2",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x24cc72 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 2064,
+      "label": "玩手信赢乐phone",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2071,
+      "label": "万水千山粽是情",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2082,
+      "label": "网络时钟",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2098,
+      "label": "未来之英雄传奇",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2101,
+      "label": "我爱拼图安装包2",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2130,
+      "label": "五一带你玩转不停",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2145,
+      "label": "西游记OL",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2146,
+      "label": "西游记OL",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2164,
+      "label": "夏日MM连连看",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "Error: corrupt guest heap free list: base=2965c8 end=3e4f78 head=2005c0 node=52cb94 previousEnd=396968",
+      "diagnosis": "来宾堆损坏，仍待定位"
+    },
+    {
+      "caseId": 2165,
+      "label": "夏日Party",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2167,
+      "label": "夏日缤纷礼包",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2177,
+      "label": "仙剑问情",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2184,
+      "label": "仙魔逆唯我独尊",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2185,
+      "label": "仙魔逆唯我独尊",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2192,
+      "label": "限时抢购买一送一",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2225,
+      "label": "笑傲江湖",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2265,
+      "label": "新羊过河",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2271,
+      "label": "星河舰队",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2285,
+      "label": "幸运砸蛋",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2287,
+      "label": "性感美女找茬",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2294,
+      "label": "熊猫大乱斗",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2333,
+      "label": "炎龙骑士",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2342,
+      "label": "要钱不要命",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2345,
+      "label": "野人岛3",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2349,
+      "label": "夜袭鬼子营",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2354,
+      "label": "一毛钱手机抽回家",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2355,
+      "label": "一枪杀几人",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2359,
+      "label": "移动股票王",
+      "before": "runtime-error",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "自动识别 _start.mr；60 秒场景可操作并到登录界面，固定冒烟仍静态，在线功能未验证"
+    },
+    {
+      "caseId": 2360,
+      "label": "移动视线",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2364,
+      "label": "倚天屠龙绝情剑",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2380,
+      "label": "英汉字典",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t be run direct!",
+      "diagnosis": "包明确要求父启动平台，上下文未补齐"
+    },
+    {
+      "caseId": 2382,
+      "label": "英雄救美之狙击之神",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2391,
+      "label": "应用软件>>",
+      "before": "runtime-error",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "GUI 小写别名及 DSM 配置接口已补；显示更多游戏提示，未证明输入有效"
+    },
+    {
+      "caseId": 2399,
+      "label": "永远的冒险岛",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2405,
+      "label": "优化大师",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x1e90fcc (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 2407,
+      "label": "游戏布袋",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2408,
+      "label": "游戏猎手",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2409,
+      "label": "游戏中心",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2411,
+      "label": "愚人节泡妞利器",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2438,
+      "label": "缘分测试",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2442,
+      "label": "越狱吧吊丝",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "MrpFormatError: invalid deflate distance",
+      "diagnosis": "包长度或压缩数据异常，需可验证完整包"
+    },
+    {
+      "caseId": 2451,
+      "label": "宅人七天乐",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2462,
+      "label": "战国英雄传",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2465,
+      "label": "战神",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2468,
+      "label": "战神金刚",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2476,
+      "label": "战神之魂",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2481,
+      "label": "掌上e_mrp",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2485,
+      "label": "掌星汉字字典",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2486,
+      "label": "找回元素",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2508,
+      "label": "争霸三国",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2514,
+      "label": "正义英雄联盟-蝙蝠侠",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 2522,
+      "label": "植物大战僵尸官方版",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2543,
+      "label": "中秋:天涯共此时",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2565,
+      "label": "抓拍宝贝",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault unsupported at 0x24fda0 (arm_ext_call: unsupported Thumb insn at 0x24fda0 word=0xb8e0)",
+      "diagnosis": "运行时或来宾故障仍待定位；保留原始异常"
+    },
+    {
+      "caseId": 2568,
+      "label": "追忆童真那些年",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2571,
+      "label": "字体模块",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2577,
+      "label": "醉美人",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2601,
+      "label": "喋血双雄",
+      "before": "exited",
+      "after": "exited",
+      "error": "LuaRuntimeError: Exiting...",
+      "diagnosis": "来宾主动退出；正常流程与兼容故障尚未区分，不能算通过"
+    },
+    {
+      "caseId": 2606,
+      "label": "逍遥剑侠传",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2608,
+      "label": "缤纷双蛋激情约惠",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    },
+    {
+      "caseId": 2619,
+      "label": "鳄鱼爱洗澡",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cannot read start.mr",
+      "diagnosis": "此前逐包核验无 Lua 启动成员，不能独立启动的资源包"
+    },
+    {
+      "caseId": 2620,
+      "label": "鳄鱼洗澡",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "ExtFault: EXT fault abi-fault at 0x2a20a0 (arm_ext_call: budget exceeded)",
+      "diagnosis": "来宾指令预算超限，仍待定位，预算未提高"
+    },
+    {
+      "caseId": 2622,
+      "label": "魅惑浮生录",
+      "before": "runtime-error",
+      "after": "runtime-error",
+      "error": "LuaRuntimeError: cann`t find sdk key!",
+      "diagnosis": "缺 SDK 配置依赖，未提供替代授权数据"
+    },
+    {
+      "caseId": 2635,
+      "label": "[免费]冒泡棋牌",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2638,
+      "label": "[免费]冒泡社区安装",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2639,
+      "label": "[免费]冒泡网游",
+      "before": "black-screen",
+      "after": "black-screen",
+      "error": null,
+      "diagnosis": "无可确认的可见场景，根因仍待逐包核验"
+    },
+    {
+      "caseId": 2640,
+      "label": "[网游]无双三国",
+      "before": "static-frame",
+      "after": "static-frame",
+      "error": null,
+      "diagnosis": "固定键序无画面变化；真实入口、触屏或资源原因仍待逐包核验"
+    }
+  ]
+}

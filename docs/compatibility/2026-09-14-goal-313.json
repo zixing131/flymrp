@@ -1,0 +1,3807 @@
+{
+  "status": "in-progress",
+  "scope": 313,
+  "doneCheck": "实际启动、交互、持续运行有效，原通过项无回退；不以冒烟分类变化单独结案",
+  "latestSmokeSnapshot": "artifacts/compat-20260914/round4-full-native/results.json",
+  "extraKnownFailures": [
+    {
+      "caseId": 603,
+      "issue": "persistent SetTile out-of-bounds",
+      "resolved": true,
+      "status": "sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round4-tile-reviewed/results.json",
+        "outcome": "passed",
+        "ticks": 2487,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
+    }
+  ],
+  "results": [
+    {
+      "caseId": 3,
+      "label": "sky插件V7安装包",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 4,
+      "label": "sky字库V3安装包",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 5,
+      "label": "vmrp安装包",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 7,
+      "label": "冒泡",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 10,
+      "label": "听听音阅",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 11,
+      "label": "应用列表8.0",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 18,
+      "label": "斗象棋2026",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 31,
+      "label": "2012超级美眉连连看",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 39,
+      "label": "2048",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 41,
+      "label": "2048美化版XL",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 76,
+      "label": "a.bmp→a.jpg",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 81,
+      "label": "AV美女写真",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x24bbb4 (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 87,
+      "label": "CPU性能测试",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x24d05a (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 95,
+      "label": "CS1.6特警先锋",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 98,
+      "label": "CS反恐风云",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 106,
+      "label": "DNF复仇者之怒",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 109,
+      "label": "DNF狂战之怒",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 110,
+      "label": "DNF欲望格斗",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 1119,
+        "controlChanges": 9,
+        "error": null
+      }
+    },
+    {
+      "caseId": 115,
+      "label": "Dota之超神屠夫",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 116,
+      "label": "Dota之超神屠夫",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 132,
+      "label": "MRP NES软件平台",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cannot read application *G",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 137,
+      "label": "MSN",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 138,
+      "label": "MSN",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 139,
+      "label": "MSN",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 144,
+      "label": "MTK魔法寿司_320x240",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault unmapped at 0x1e870a4 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 145,
+      "label": "MTK魔法寿司_320x480",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault unmapped at 0x1e87098 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 159,
+      "label": "NES积分-天蓝",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 160,
+      "label": "NES模拟器",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 161,
+      "label": "nes模拟器XL版1.2",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 162,
+      "label": "QQ",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 163,
+      "label": "QQ",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 164,
+      "label": "QQ2010",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 165,
+      "label": "QQ2010",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 166,
+      "label": "QQ2010",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 170,
+      "label": "QQ2010（超级挂Q）",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 174,
+      "label": "QQ斗地主3.3正式版",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 178,
+      "label": "QQ空间",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 179,
+      "label": "QQ空间",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 183,
+      "label": "QQ手机软件管理",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 184,
+      "label": "QQ网游大厅",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 187,
+      "label": "QQ炫舞",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 188,
+      "label": "Q版飞车",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 192,
+      "label": "ram_scan",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 212,
+      "label": "xqc安装包2",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 215,
+      "label": "ZCOM手机杂志",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 216,
+      "label": "“粽”想过61",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 217,
+      "label": "ＣＳ反恐特警",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 232,
+      "label": "爱上3D爱上图",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 233,
+      "label": "爱阅看书2.0",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "Error: corrupt guest heap free block: address=0x32d238 size=0x32d240 base=0x296700 end=0x396700",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 239,
+      "label": "暗黑穿越-真实杀戮",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 240,
+      "label": "暗黑穿越-真实杀戮",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 253,
+      "label": "傲剑OL",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 265,
+      "label": "八仙过海",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 266,
+      "label": "把美女灌醉",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "sustained-verified-awaiting-full-regression",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
+        "outcome": "passed",
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "ticks": 985,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "89a046600e196b669f78870c3eac795cb6ab5e2fce033c3de55a471506943045",
+            "image": "2-boot.png",
+            "clock": 4800,
+            "colors": 335
+          },
+          {
+            "name": "entry1",
+            "sha256": "fe439df33e5134fbff300704fd543dda3acd15aa47bea5242f6a9b9e375b52eb",
+            "image": "2-entry1.png",
+            "clock": 5840,
+            "colors": 335
+          },
+          {
+            "name": "entry2",
+            "sha256": "fe439df33e5134fbff300704fd543dda3acd15aa47bea5242f6a9b9e375b52eb",
+            "image": "2-entry2.png",
+            "clock": 6880,
+            "colors": 335
+          },
+          {
+            "name": "control1",
+            "sha256": "0ffb48d527f5974d4f52d412f7beb69bdf11dadf15ac0da04625572c6f1237d5",
+            "image": "2-control1.png",
+            "clock": 7760,
+            "colors": 337
+          },
+          {
+            "name": "control2",
+            "sha256": "0ffb48d527f5974d4f52d412f7beb69bdf11dadf15ac0da04625572c6f1237d5",
+            "image": "2-control2.png",
+            "clock": 8640,
+            "colors": 337
+          },
+          {
+            "name": "control3",
+            "sha256": "0ffb48d527f5974d4f52d412f7beb69bdf11dadf15ac0da04625572c6f1237d5",
+            "image": "2-control3.png",
+            "clock": 9520,
+            "colors": 337
+          },
+          {
+            "name": "control4",
+            "sha256": "ffd312ebe9ab68511f8cd60a861c22383db5406eb669ae72172b61ab02cbe6f7",
+            "image": "2-control4.png",
+            "clock": 10400,
+            "colors": 347
+          },
+          {
+            "name": "control5",
+            "sha256": "e1893b52c5f5ec3e02092cc3fd9fb33f37a6f8011fc851a64c565f3182ab934d",
+            "image": "2-control5.png",
+            "clock": 11280,
+            "colors": 348
+          },
+          {
+            "name": "control6",
+            "sha256": "4725c65f1c00c40f7f94fa7f313f8547be77877d01fee1ccc7fb36ca8cee378f",
+            "image": "2-control6.png",
+            "clock": 12160,
+            "colors": 348
+          },
+          {
+            "name": "control7",
+            "sha256": "f0043eda4d320e2a3d407fbf97911e304548819d7f8587254a7cd17588da68b7",
+            "image": "2-control7.png",
+            "clock": 13040,
+            "colors": 348
+          },
+          {
+            "name": "control8",
+            "sha256": "54fbb3fe4da8f7d237a6aa5a4bacdb15e88ca3ccad6038f8612be8c1e7a750ac",
+            "image": "2-control8.png",
+            "clock": 13920,
+            "colors": 348
+          },
+          {
+            "name": "control9",
+            "sha256": "e42e4cb1f86a2b7a11669b60fd8a339d7c66f0048acef8641200d3afbb96fd80",
+            "image": "2-control9.png",
+            "clock": 14800,
+            "colors": 348
+          },
+          {
+            "name": "control10",
+            "sha256": "bc896489cf8561d9258f01525ee02cafda2f7500580103e76a24b0492c16ef4e",
+            "image": "2-control10.png",
+            "clock": 15760,
+            "colors": 359
+          },
+          {
+            "name": "control11",
+            "sha256": "bc896489cf8561d9258f01525ee02cafda2f7500580103e76a24b0492c16ef4e",
+            "image": "2-control11.png",
+            "clock": 16720,
+            "colors": 359
+          },
+          {
+            "name": "control12",
+            "sha256": "fe439df33e5134fbff300704fd543dda3acd15aa47bea5242f6a9b9e375b52eb",
+            "image": "2-control12.png",
+            "clock": 17680,
+            "colors": 335
+          },
+          {
+            "name": "control13",
+            "sha256": "fe439df33e5134fbff300704fd543dda3acd15aa47bea5242f6a9b9e375b52eb",
+            "image": "2-control13.png",
+            "clock": 18640,
+            "colors": 335
+          },
+          {
+            "name": "control14",
+            "sha256": "0ffb48d527f5974d4f52d412f7beb69bdf11dadf15ac0da04625572c6f1237d5",
+            "image": "2-control14.png",
+            "clock": 19600,
+            "colors": 337
+          },
+          {
+            "name": "controls",
+            "sha256": "0ffb48d527f5974d4f52d412f7beb69bdf11dadf15ac0da04625572c6f1237d5",
+            "image": "2-controls.png",
+            "clock": 19600,
+            "colors": 337
+          },
+          {
+            "name": "sustained",
+            "sha256": "bc896489cf8561d9258f01525ee02cafda2f7500580103e76a24b0492c16ef4e",
+            "image": "2-sustained.png",
+            "clock": 79600,
+            "colors": 359
+          }
+        ]
+      }
+    },
+    {
+      "caseId": 267,
+      "label": "把美女灌醉",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "sustained-verified-awaiting-full-regression",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
+        "outcome": "passed",
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "ticks": 985,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "31f21ff4b9d446b316b066801a0c0a837975ad9eb6e55f053e62c07c1cf0dd1f",
+            "image": "3-boot.png",
+            "clock": 4800,
+            "colors": 315
+          },
+          {
+            "name": "entry1",
+            "sha256": "bb341fc8a8147389351d95752a513a2faa5147cb14cb1bb54e74b5d303af3940",
+            "image": "3-entry1.png",
+            "clock": 5840,
+            "colors": 315
+          },
+          {
+            "name": "entry2",
+            "sha256": "bb341fc8a8147389351d95752a513a2faa5147cb14cb1bb54e74b5d303af3940",
+            "image": "3-entry2.png",
+            "clock": 6880,
+            "colors": 315
+          },
+          {
+            "name": "control1",
+            "sha256": "288426a1e76a2947af601aecbacf61a43e465cfec78d2911167616168f7f72fa",
+            "image": "3-control1.png",
+            "clock": 7760,
+            "colors": 315
+          },
+          {
+            "name": "control2",
+            "sha256": "288426a1e76a2947af601aecbacf61a43e465cfec78d2911167616168f7f72fa",
+            "image": "3-control2.png",
+            "clock": 8640,
+            "colors": 315
+          },
+          {
+            "name": "control3",
+            "sha256": "288426a1e76a2947af601aecbacf61a43e465cfec78d2911167616168f7f72fa",
+            "image": "3-control3.png",
+            "clock": 9520,
+            "colors": 315
+          },
+          {
+            "name": "control4",
+            "sha256": "ee26379f118ced9153a01f30fb1a05d888474fca3f2017d1f40be5ecbeeee027",
+            "image": "3-control4.png",
+            "clock": 10400,
+            "colors": 328
+          },
+          {
+            "name": "control5",
+            "sha256": "407ede725d1ce0aab44c03ebf242b37aa3413e8167d509128f0f35b382d4c712",
+            "image": "3-control5.png",
+            "clock": 11280,
+            "colors": 329
+          },
+          {
+            "name": "control6",
+            "sha256": "7a1cc6d13a44433a657d07cc57671f49c4eeb3bd5f197a2eee8fed011c6b6b96",
+            "image": "3-control6.png",
+            "clock": 12160,
+            "colors": 329
+          },
+          {
+            "name": "control7",
+            "sha256": "50790f13f4ec71dc9b8c621395f8ce1d07f28d332059f1138139b1cd06f201a1",
+            "image": "3-control7.png",
+            "clock": 13040,
+            "colors": 329
+          },
+          {
+            "name": "control8",
+            "sha256": "a1ed0121ea8ffe2f8afde6e6f63cc15cba87cd2c36280e9e0554b84fe2c50fc8",
+            "image": "3-control8.png",
+            "clock": 13920,
+            "colors": 329
+          },
+          {
+            "name": "control9",
+            "sha256": "5e4b4a83deb059b24e3d58f806c77edd7794227347ac2f4e1b52794234e69e8b",
+            "image": "3-control9.png",
+            "clock": 14800,
+            "colors": 329
+          },
+          {
+            "name": "control10",
+            "sha256": "2da9a7d88530567d4e8a1b8161e3af9e22a7cd7904182aedb83ea69f523ab897",
+            "image": "3-control10.png",
+            "clock": 15760,
+            "colors": 334
+          },
+          {
+            "name": "control11",
+            "sha256": "2da9a7d88530567d4e8a1b8161e3af9e22a7cd7904182aedb83ea69f523ab897",
+            "image": "3-control11.png",
+            "clock": 16720,
+            "colors": 334
+          },
+          {
+            "name": "control12",
+            "sha256": "bb341fc8a8147389351d95752a513a2faa5147cb14cb1bb54e74b5d303af3940",
+            "image": "3-control12.png",
+            "clock": 17680,
+            "colors": 315
+          },
+          {
+            "name": "control13",
+            "sha256": "bb341fc8a8147389351d95752a513a2faa5147cb14cb1bb54e74b5d303af3940",
+            "image": "3-control13.png",
+            "clock": 18640,
+            "colors": 315
+          },
+          {
+            "name": "control14",
+            "sha256": "288426a1e76a2947af601aecbacf61a43e465cfec78d2911167616168f7f72fa",
+            "image": "3-control14.png",
+            "clock": 19600,
+            "colors": 315
+          },
+          {
+            "name": "controls",
+            "sha256": "288426a1e76a2947af601aecbacf61a43e465cfec78d2911167616168f7f72fa",
+            "image": "3-controls.png",
+            "clock": 19600,
+            "colors": 315
+          },
+          {
+            "name": "sustained",
+            "sha256": "2da9a7d88530567d4e8a1b8161e3af9e22a7cd7904182aedb83ea69f523ab897",
+            "image": "3-sustained.png",
+            "clock": 79600,
+            "colors": 334
+          }
+        ]
+      }
+    },
+    {
+      "caseId": 268,
+      "label": "把美女灌醉",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 276,
+      "label": "百宝箱",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 279,
+      "label": "百家乐",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 295,
+      "label": "宝石迷阵",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 314,
+      "label": "避孕大作战",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 315,
+      "label": "便宜！绝对划算",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 321,
+      "label": "别踩白块",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 336,
+      "label": "捕鱼达人",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 337,
+      "label": "捕鱼达人",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 347,
+      "label": "猜奥运金牌得手机",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 349,
+      "label": "彩蛋大战",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 351,
+      "label": "彩虹QQ2014完整收藏版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 366,
+      "label": "超级合金装备",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 396,
+      "label": "超爽绝杀大合辑",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cannot read application *J",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 405,
+      "label": "成语大师",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 432,
+      "label": "穿越火线之飞虎队",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 451,
+      "label": "吹裙子",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 461,
+      "label": "存款计算器",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 465,
+      "label": "打小鸟",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "sustained-verified-awaiting-full-regression",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
+        "outcome": "passed",
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "ticks": 972,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "ad879f62b336b4761ed5bc2bf272bc0f44bcf5b1b79095d3b6f087f2de1c51c9",
+            "image": "5-boot.png",
+            "clock": 4800,
+            "colors": 268
+          },
+          {
+            "name": "entry1",
+            "sha256": "5f41bedc4481da2b2ef00d9c91ac75130eebad57b0ad3c8009d86901adaa4748",
+            "image": "5-entry1.png",
+            "clock": 5840,
+            "colors": 276
+          },
+          {
+            "name": "control1",
+            "sha256": "5f41bedc4481da2b2ef00d9c91ac75130eebad57b0ad3c8009d86901adaa4748",
+            "image": "5-control1.png",
+            "clock": 6720,
+            "colors": 276
+          },
+          {
+            "name": "control2",
+            "sha256": "f706ad3d85263a889e5da2b38fd4c58b5512073cf37f32e5412ae10a24019955",
+            "image": "5-control2.png",
+            "clock": 7600,
+            "colors": 301
+          },
+          {
+            "name": "control3",
+            "sha256": "d30a6da9aff4c84e58ef69861456e02106e830185d20a17c27a8abedf2c01443",
+            "image": "5-control3.png",
+            "clock": 8480,
+            "colors": 364
+          },
+          {
+            "name": "control4",
+            "sha256": "3e67b8d8c9d4b28e22e0785fcf0388e0bf195995e908e56ab43bf6d9572e2e13",
+            "image": "5-control4.png",
+            "clock": 9360,
+            "colors": 320
+          },
+          {
+            "name": "control5",
+            "sha256": "452cce965b05a408d64957a1279ac4b4ef8c585aa260da49bd9f7d55f7c8d5a8",
+            "image": "5-control5.png",
+            "clock": 10240,
+            "colors": 376
+          },
+          {
+            "name": "control6",
+            "sha256": "8d7bae0551fc2540d43d6bde47ff00dce4ecf3c96dd565f63fdca1631615e52d",
+            "image": "5-control6.png",
+            "clock": 11120,
+            "colors": 369
+          },
+          {
+            "name": "control7",
+            "sha256": "e6aa44b33b6386eb65c95277a323683fe5c8399e21f4454b40ab6469dcd155f0",
+            "image": "5-control7.png",
+            "clock": 12000,
+            "colors": 381
+          },
+          {
+            "name": "control8",
+            "sha256": "597877755c4fe797a032772f6244f482fb974e29ef4afa373f1becd860f69905",
+            "image": "5-control8.png",
+            "clock": 12880,
+            "colors": 412
+          },
+          {
+            "name": "control9",
+            "sha256": "16e50192a948f4422e3b02fbd2d14030fdd779a5e97ee3d5d639259fd4a033ad",
+            "image": "5-control9.png",
+            "clock": 13760,
+            "colors": 398
+          },
+          {
+            "name": "control10",
+            "sha256": "765daaf0ffd4494d72560d5d6e72d7a326ca96da9df4b89bf8d828a8eaf8a65c",
+            "image": "5-control10.png",
+            "clock": 14720,
+            "colors": 398
+          },
+          {
+            "name": "control11",
+            "sha256": "e0d94ca9a86ded14e8c48a0cc35ef3e535b3084a85746280b003c7a465fa9d7f",
+            "image": "5-control11.png",
+            "clock": 15680,
+            "colors": 381
+          },
+          {
+            "name": "control12",
+            "sha256": "2a161abcf96fea73d74951b67c176db0c8bee1176fc516f50797d949fa2f9d82",
+            "image": "5-control12.png",
+            "clock": 16640,
+            "colors": 404
+          },
+          {
+            "name": "control13",
+            "sha256": "e6a30d511c38b407be93b991091610117e194f036c7f598ff84837b65c28e574",
+            "image": "5-control13.png",
+            "clock": 17600,
+            "colors": 379
+          },
+          {
+            "name": "control14",
+            "sha256": "e2c87955deb17b28d5fd48ac233b9c7b9c54b17b01464a0fcbe164aa97c5d7fb",
+            "image": "5-control14.png",
+            "clock": 18560,
+            "colors": 397
+          },
+          {
+            "name": "controls",
+            "sha256": "e2c87955deb17b28d5fd48ac233b9c7b9c54b17b01464a0fcbe164aa97c5d7fb",
+            "image": "5-controls.png",
+            "clock": 18560,
+            "colors": 397
+          },
+          {
+            "name": "sustained",
+            "sha256": "a09818cfc00c8c4016f358367693c934c0e383beecdcd52b6b4e92da90200846",
+            "image": "5-sustained.png",
+            "clock": 78560,
+            "colors": 276
+          }
+        ]
+      }
+    },
+    {
+      "caseId": 491,
+      "label": "大漠狂刀",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 498,
+      "label": "大师在线设计签名",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 500,
+      "label": "大雄约会放屁",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 506,
+      "label": "弹力球",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 523,
+      "label": "盗墓鬼吹灯笔记",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x26309a (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 543,
+      "label": "第十亿个幸运者",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 545,
+      "label": "第一次亲密接触",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 551,
+      "label": "调色板XL",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 553,
+      "label": "谍影重重Ⅱ",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 575,
+      "label": "毒蛇行动2-丛林之谜",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 577,
+      "label": "独孤九剑",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 583,
+      "label": "赌王之王-黄金城",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 589,
+      "label": "多款游戏限时免费",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 596,
+      "label": "夺命番茄",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 633,
+      "label": "放假啦疯狂游戏吧",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 640,
+      "label": "飞天忍者喵",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 643,
+      "label": "飞信",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 645,
+      "label": "飞信",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 659,
+      "label": "风流三国",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 665,
+      "label": "风云三国",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 673,
+      "label": "疯狂吧！光棍",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 674,
+      "label": "疯狂捕鱼",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 687,
+      "label": "疯狂的小鸟太空版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 723,
+      "label": "父亲节抢楼送手机",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 726,
+      "label": "干爹的爱",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x24c6c0 (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 727,
+      "label": "干爹的爱",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x29782c (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 734,
+      "label": "港式五张",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 752,
+      "label": "给力猫",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 753,
+      "label": "给力猫",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 755,
+      "label": "给力枪手连环杀",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 758,
+      "label": "更多精品游戏",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 768,
+      "label": "公交查询",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 782,
+      "label": "股票交易版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 783,
+      "label": "怪蛋风暴_大屏版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 801,
+      "label": "鬼手伏魔录",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 809,
+      "label": "国庆去哪儿",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 839,
+      "label": "核弹风暴",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 841,
+      "label": "和美女20次亲密接触",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 844,
+      "label": "合金弹头2013",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 845,
+      "label": "合金弹头2013",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 855,
+      "label": "黑暗传说之利器",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 858,
+      "label": "黑白棋AI",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 874,
+      "label": "华容道",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 880,
+      "label": "欢乐马戏团",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 882,
+      "label": "欢乐五一幸运抽奖",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 894,
+      "label": "幻想三国",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 895,
+      "label": "幻想三国online",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 901,
+      "label": "黄金矿工",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 908,
+      "label": "毁灭巫师",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 910,
+      "label": "会飞的汤姆猫",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 918,
+      "label": "活动介绍",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 922,
+      "label": "火车订票",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 923,
+      "label": "火车订票",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 947,
+      "label": "激情冲动",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "MrpFormatError: MRP FileLen 124976 exceeds buffer 98304",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 960,
+      "label": "极品家丁-9527",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 967,
+      "label": "寄生兽",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 968,
+      "label": "寄生兽",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 975,
+      "label": "假日休闲乐逍遥",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cannot read application *J",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 988,
+      "label": "剑侣情缘3美人如玉",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1004,
+      "label": "僵尸大暴走",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1018,
+      "label": "江南style骑马舞",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "sustained-verified-awaiting-full-regression",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
+        "outcome": "passed",
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "ticks": 998,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "df0fa483ef95df576bc82d81c0a6cdbe94da7c6adaded7ce732b2310fcf56dfd",
+            "image": "7-boot.png",
+            "clock": 5088,
+            "colors": 31
+          },
+          {
+            "name": "entry1",
+            "sha256": "9c38d08c89af1b8b28c0fcfcc1ab68374629219956a9850bb5f0d034396c57bc",
+            "image": "7-entry1.png",
+            "clock": 6128,
+            "colors": 79
+          },
+          {
+            "name": "entry2",
+            "sha256": "355c2e5fc05ff43b30f5688cc23a8eef82cfdd0fc5357d57ab73df0fd30273f6",
+            "image": "7-entry2.png",
+            "clock": 7168,
+            "colors": 1000
+          },
+          {
+            "name": "entry3",
+            "sha256": "e8b60a6a4d8d92ffd335cfa9505c3e336d92ea1b9486f4bf297929c8ef87acb8",
+            "image": "7-entry3.png",
+            "clock": 8208,
+            "colors": 1448
+          },
+          {
+            "name": "control1",
+            "sha256": "e8b60a6a4d8d92ffd335cfa9505c3e336d92ea1b9486f4bf297929c8ef87acb8",
+            "image": "7-control1.png",
+            "clock": 9088,
+            "colors": 1448
+          },
+          {
+            "name": "control2",
+            "sha256": "abf3e9eb2d0ab31fdf866435ee481eda4eca34e5fc25a70207644458e660b9c1",
+            "image": "7-control2.png",
+            "clock": 9968,
+            "colors": 1478
+          },
+          {
+            "name": "control3",
+            "sha256": "0ada959e402810b5cce75ef4ce2b2e2c1491ac3ba6dba2933dc8bad2b9683878",
+            "image": "7-control3.png",
+            "clock": 10848,
+            "colors": 1480
+          },
+          {
+            "name": "control4",
+            "sha256": "99927638ba60f0325fe8907e2970f5bc0b8a3a4ed16c3090c3a257a332fb3b17",
+            "image": "7-control4.png",
+            "clock": 11728,
+            "colors": 1510
+          },
+          {
+            "name": "control5",
+            "sha256": "462ed45e29e30d4da0cb897892b964675178c76be4da4e50faa1c92211c58a89",
+            "image": "7-control5.png",
+            "clock": 12608,
+            "colors": 1540
+          },
+          {
+            "name": "control6",
+            "sha256": "0a7fd1eb34d45cce8a39cbc32d849e7ec7d03fdfade8998bb81fec10e3ca82b7",
+            "image": "7-control6.png",
+            "clock": 13488,
+            "colors": 1551
+          },
+          {
+            "name": "control7",
+            "sha256": "15fd4febb00d4f7056c1e59e18710adea07ded23dcb6d82337e5b8c507f4863a",
+            "image": "7-control7.png",
+            "clock": 14368,
+            "colors": 1581
+          },
+          {
+            "name": "control8",
+            "sha256": "5d3698559ce480361ad01f3459ee2940373c34672d597c089550f8d61ae16bec",
+            "image": "7-control8.png",
+            "clock": 15248,
+            "colors": 1580
+          },
+          {
+            "name": "control9",
+            "sha256": "922d2864fc16d522c7a39e636771b82f8727b93dc98ea1aaf456378f02f48926",
+            "image": "7-control9.png",
+            "clock": 16128,
+            "colors": 1585
+          },
+          {
+            "name": "control10",
+            "sha256": "c781744bf5cd7057182888fa0b437cc65f672a74e28f7da34a05e5b46889db8c",
+            "image": "7-control10.png",
+            "clock": 17088,
+            "colors": 1536
+          },
+          {
+            "name": "control11",
+            "sha256": "60e821a922d7b7c85da77c402004bceccf881cb8266c0727b84cd8727f2463ce",
+            "image": "7-control11.png",
+            "clock": 18048,
+            "colors": 1556
+          },
+          {
+            "name": "control12",
+            "sha256": "9bff4bffbeb5caa988d41d48875083230343b3c63a48f41bd5abd6198b56c2f8",
+            "image": "7-control12.png",
+            "clock": 19008,
+            "colors": 1568
+          },
+          {
+            "name": "control13",
+            "sha256": "14aa2d25c203867c6e41e4e6db93058f582a21b672b200b55d5abc860aa58156",
+            "image": "7-control13.png",
+            "clock": 19968,
+            "colors": 31
+          },
+          {
+            "name": "control14",
+            "sha256": "14aa2d25c203867c6e41e4e6db93058f582a21b672b200b55d5abc860aa58156",
+            "image": "7-control14.png",
+            "clock": 20928,
+            "colors": 31
+          },
+          {
+            "name": "controls",
+            "sha256": "14aa2d25c203867c6e41e4e6db93058f582a21b672b200b55d5abc860aa58156",
+            "image": "7-controls.png",
+            "clock": 20928,
+            "colors": 31
+          },
+          {
+            "name": "sustained",
+            "sha256": "14aa2d25c203867c6e41e4e6db93058f582a21b672b200b55d5abc860aa58156",
+            "image": "7-sustained.png",
+            "clock": 80928,
+            "colors": 31
+          }
+        ]
+      }
+    },
+    {
+      "caseId": 1021,
+      "label": "降龙十八掌",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1024,
+      "label": "接水管",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "sustained-verified-awaiting-full-regression",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
+        "outcome": "passed",
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "ticks": 972,
+        "checkpoints": [
+          {
+            "name": "boot",
+            "sha256": "6b0b9ebd9b9807dffb45140259606278bf6f744916bb620e424ba52bb97afa99",
+            "image": "8-boot.png",
+            "clock": 4800,
+            "colors": 894
+          },
+          {
+            "name": "entry1",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-entry1.png",
+            "clock": 5840,
+            "colors": 161
+          },
+          {
+            "name": "control1",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control1.png",
+            "clock": 6720,
+            "colors": 161
+          },
+          {
+            "name": "control2",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control2.png",
+            "clock": 7600,
+            "colors": 161
+          },
+          {
+            "name": "control3",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control3.png",
+            "clock": 8480,
+            "colors": 161
+          },
+          {
+            "name": "control4",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control4.png",
+            "clock": 9360,
+            "colors": 161
+          },
+          {
+            "name": "control5",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control5.png",
+            "clock": 10240,
+            "colors": 161
+          },
+          {
+            "name": "control6",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control6.png",
+            "clock": 11120,
+            "colors": 161
+          },
+          {
+            "name": "control7",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control7.png",
+            "clock": 12000,
+            "colors": 161
+          },
+          {
+            "name": "control8",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control8.png",
+            "clock": 12880,
+            "colors": 161
+          },
+          {
+            "name": "control9",
+            "sha256": "5e9271b35e8cf7806a74367706febe268fdd6872c89ff4be57a8ac38af8b3313",
+            "image": "8-control9.png",
+            "clock": 13760,
+            "colors": 161
+          },
+          {
+            "name": "control10",
+            "sha256": "6b0c6c4883ef81a4a4bfda50758416f0fe9c40f31464cde0ec92c801703a26c1",
+            "image": "8-control10.png",
+            "clock": 14720,
+            "colors": 161
+          },
+          {
+            "name": "control11",
+            "sha256": "772c41b9ce81ecc82e2bb9a7db18f639afcebea79f42c0412abcfa81cb2fa8dd",
+            "image": "8-control11.png",
+            "clock": 15680,
+            "colors": 1465
+          },
+          {
+            "name": "control12",
+            "sha256": "120a352323f908f2378e5479ea6621836751b097e653e52a3549e92995b185fd",
+            "image": "8-control12.png",
+            "clock": 16640,
+            "colors": 1465
+          },
+          {
+            "name": "control13",
+            "sha256": "c83e8261737ddb52fc7020fb7a98a90420a28b73cdb7d7acf0994ba1603567c2",
+            "image": "8-control13.png",
+            "clock": 17600,
+            "colors": 1465
+          },
+          {
+            "name": "control14",
+            "sha256": "fe4309beeda5c94782a39eb8179043e3b2cd7bbca0865da4285bfb169e78a154",
+            "image": "8-control14.png",
+            "clock": 18560,
+            "colors": 1465
+          },
+          {
+            "name": "controls",
+            "sha256": "fe4309beeda5c94782a39eb8179043e3b2cd7bbca0865da4285bfb169e78a154",
+            "image": "8-controls.png",
+            "clock": 18560,
+            "colors": 1465
+          },
+          {
+            "name": "sustained",
+            "sha256": "3068f703c4eeed3d3171a7d942f27700657bf54889a330f92012f14d6f6f45bb",
+            "image": "8-sustained.png",
+            "clock": 78560,
+            "colors": 1465
+          }
+        ]
+      }
+    },
+    {
+      "caseId": 1040,
+      "label": "节日祝福语",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1062,
+      "label": "精品切水果",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1075,
+      "label": "经典泡泡龙",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1078,
+      "label": "警花射击训练",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1081,
+      "label": "狙击精英",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1083,
+      "label": "狙击小日本",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1091,
+      "label": "绝命杀手斩龙刃",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1143,
+      "label": "快点网址导航",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "exited",
+        "presentedFrames": 0,
+        "controlChanges": 0,
+        "error": "LuaRuntimeError: Exiting..."
+      }
+    },
+    {
+      "caseId": 1160,
+      "label": "来电助手",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1190,
+      "label": "冷笑话大全",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1201,
+      "label": "恋爱气球",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "MrpFormatError: MRP FileLen 365325 exceeds buffer 331255",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1220,
+      "label": "零距离触摸美女",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1225,
+      "label": "灵剑封魔录",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1285,
+      "label": "猫捉老鼠",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1286,
+      "label": "冒泡",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1287,
+      "label": "冒泡VIP游戏套餐",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1292,
+      "label": "冒泡看图",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1296,
+      "label": "冒泡平台",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1297,
+      "label": "冒泡棋牌",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1298,
+      "label": "冒泡棋牌",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1300,
+      "label": "冒泡软件魔盒",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "MemoryFault: GuestMemory map8 fault at 0x2f2f2f2f",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1301,
+      "label": "冒泡社区",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1302,
+      "label": "冒泡社区安装",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1303,
+      "label": "冒泡视频交友",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1309,
+      "label": "冒泡听吧",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1310,
+      "label": "冒泡网",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1311,
+      "label": "冒泡网游",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1312,
+      "label": "冒泡音乐",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1315,
+      "label": "冒泡游戏商城",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1324,
+      "label": "冒泡浏览器安装",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 81,
+        "controlChanges": 6,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1325,
+      "label": "冒泡浏览器安装",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 81,
+        "controlChanges": 6,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1328,
+      "label": "冒险岛",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1339,
+      "label": "美女3D飞车",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1350,
+      "label": "美女翻翻看",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x2974aa (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1386,
+      "label": "梦幻封神",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1397,
+      "label": "梦幻西游-无敌战神",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "UnknownAbiError: unsupported sprintf format %",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1406,
+      "label": "免费抽奖|欢乐共享",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1408,
+      "label": "秒杀iPhone的游戏",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1410,
+      "label": "明星美女麻将馆",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "Error: corrupt guest heap free block: address=0x2a4b40 size=0x43005100 base=0x24b700 end=0x34b700",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1414,
+      "label": "名将三国OL",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1491,
+      "label": "内衣大盗",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1504,
+      "label": "年年有“愚”",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1511,
+      "label": "农民斗地主",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1515,
+      "label": "怒火铁拳",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1516,
+      "label": "怒火铁拳",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1517,
+      "label": "怒火铁拳",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1526,
+      "label": "欧洲杯有奖竞猜",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1527,
+      "label": "排列数字测智商",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1560,
+      "label": "七夕“遇见爱”",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1561,
+      "label": "七夕冒泡送情意",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1565,
+      "label": "奇迹捕鱼",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1585,
+      "label": "抢！注册道具费全免",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1589,
+      "label": "抢登钓鱼岛",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1590,
+      "label": "抢登钓鱼岛",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1591,
+      "label": "抢滩登陆2012",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1604,
+      "label": "青春纪念册",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1616,
+      "label": "情趣高手",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1628,
+      "label": "趣拼高帅富",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1629,
+      "label": "趣拼图",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1630,
+      "label": "趣拼学生妹",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1631,
+      "label": "趣拼学生妹",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1681,
+      "label": "人人网",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1696,
+      "label": "忍者水果",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1697,
+      "label": "忍者水果",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1698,
+      "label": "忍者水果",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1699,
+      "label": "忍者水果",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1700,
+      "label": "忍者水果",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1703,
+      "label": "扔纸团",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1707,
+      "label": "如来神掌",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1714,
+      "label": "三国保钓战",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1715,
+      "label": "三国大富翁",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1716,
+      "label": "三国大富翁",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1730,
+      "label": "三国猛将传",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1736,
+      "label": "三国纳妾记",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1744,
+      "label": "三国英雄传",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault unmapped at 0x24c6e2 (arm_ext_call: GuestMemory map32 fault at 0xfffffffc)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1781,
+      "label": "蛇来运转大抽奖",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1799,
+      "label": "神马过年不寂寞",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1801,
+      "label": "神魔大陆",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1868,
+      "label": "侍魂之修罗斩",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1880,
+      "label": "手机QQ",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1883,
+      "label": "手机UC原版",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "black-screen",
+        "presentedFrames": 0,
+        "controlChanges": 0,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1889,
+      "label": "手机信号强度仪V3",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1891,
+      "label": "手机阅读",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1895,
+      "label": "手写库01",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1896,
+      "label": "手写库02",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1897,
+      "label": "手写库03",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1898,
+      "label": "手写库04",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1901,
+      "label": "手信语音聊天",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1903,
+      "label": "暑期iPhone大礼包",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1904,
+      "label": "蜀山剑侠",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 1908,
+      "label": "数学达人",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1915,
+      "label": "水果老虎机",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1916,
+      "label": "水果梦工厂",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1924,
+      "label": "水晶之恋",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1928,
+      "label": "水浒对对碰",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1929,
+      "label": "水浒反殴传",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "exited",
+        "presentedFrames": 0,
+        "controlChanges": 0,
+        "error": "LuaRuntimeError: Exiting..."
+      }
+    },
+    {
+      "caseId": 1975,
+      "label": "贪吃小鳄鱼",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1976,
+      "label": "贪吃小鳄鱼",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 1998,
+      "label": "天龙八部",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2013,
+      "label": "天天打怪兽",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2014,
+      "label": "天天打折货到付款",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2024,
+      "label": "铁血抗日",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2025,
+      "label": "铁血抗日",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2028,
+      "label": "听听音阅贺岁版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2029,
+      "label": "听听音阅贺岁版",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2034,
+      "label": "童年经典游戏合辑",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2036,
+      "label": "偷看美女",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2042,
+      "label": "途客行天下",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2057,
+      "label": "吞食天地2",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x24cdb2 (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2064,
+      "label": "玩手信赢乐phone",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2071,
+      "label": "万水千山粽是情",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2082,
+      "label": "网络时钟",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2098,
+      "label": "未来之英雄传奇",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2101,
+      "label": "我爱拼图安装包2",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2130,
+      "label": "五一带你玩转不停",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2145,
+      "label": "西游记OL",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2146,
+      "label": "西游记OL",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2164,
+      "label": "夏日MM连连看",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "Error: corrupt guest heap free block: address=0x396700 size=0x0 base=0x296700 end=0x3e50d8",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2165,
+      "label": "夏日Party",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2167,
+      "label": "夏日缤纷礼包",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2177,
+      "label": "仙剑问情",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2184,
+      "label": "仙魔逆唯我独尊",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 1090,
+        "controlChanges": 9,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2185,
+      "label": "仙魔逆唯我独尊",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 1090,
+        "controlChanges": 9,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2192,
+      "label": "限时抢购买一送一",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2225,
+      "label": "笑傲江湖",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2265,
+      "label": "新羊过河",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2271,
+      "label": "星河舰队",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 920,
+        "controlChanges": 3,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2285,
+      "label": "幸运砸蛋",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2287,
+      "label": "性感美女找茬",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2294,
+      "label": "熊猫大乱斗",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2333,
+      "label": "炎龙骑士",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2342,
+      "label": "要钱不要命",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2345,
+      "label": "野人岛3",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2349,
+      "label": "夜袭鬼子营",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2354,
+      "label": "一毛钱手机抽回家",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2355,
+      "label": "一枪杀几人",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2359,
+      "label": "移动股票王",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2360,
+      "label": "移动视线",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "black-screen",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "black-screen",
+        "presentedFrames": 0,
+        "controlChanges": 0,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2364,
+      "label": "倚天屠龙绝情剑",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2380,
+      "label": "英汉字典",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "LuaRuntimeError: cann`t be run direct!",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2382,
+      "label": "英雄救美之狙击之神",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2391,
+      "label": "应用软件>>",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2399,
+      "label": "永远的冒险岛",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2405,
+      "label": "优化大师",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x1e90fcc (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2407,
+      "label": "游戏布袋",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2408,
+      "label": "游戏猎手",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2409,
+      "label": "游戏中心",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2411,
+      "label": "愚人节泡妞利器",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2438,
+      "label": "缘分测试",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2442,
+      "label": "越狱吧吊丝",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "MrpFormatError: invalid deflate distance",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2451,
+      "label": "宅人七天乐",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2462,
+      "label": "战国英雄传",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2465,
+      "label": "战神",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2468,
+      "label": "战神金刚",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2476,
+      "label": "战神之魂",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2481,
+      "label": "掌上e_mrp",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2485,
+      "label": "掌星汉字字典",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2486,
+      "label": "找回元素",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2508,
+      "label": "争霸三国",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2514,
+      "label": "正义英雄联盟-蝙蝠侠",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2522,
+      "label": "植物大战僵尸官方版",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2543,
+      "label": "中秋:天涯共此时",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2565,
+      "label": "抓拍宝贝",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2568,
+      "label": "追忆童真那些年",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2571,
+      "label": "字体模块",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2577,
+      "label": "醉美人",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2601,
+      "label": "喋血双雄",
+      "baselineSmoke": "exited",
+      "latestSmoke": "exited",
+      "latestError": "LuaRuntimeError: Exiting...",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2606,
+      "label": "逍遥剑侠传",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "static-frame",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2608,
+      "label": "缤纷双蛋激情约惠",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2619,
+      "label": "鳄鱼爱洗澡",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2620,
+      "label": "鳄鱼洗澡",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "runtime-error",
+      "latestError": "ExtFault: EXT fault abi-fault at 0x2a21d8 (arm_ext_call: budget exceeded)",
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2622,
+      "label": "魅惑浮生录",
+      "baselineSmoke": "runtime-error",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    },
+    {
+      "caseId": 2635,
+      "label": "[免费]冒泡棋牌",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2638,
+      "label": "[免费]冒泡社区安装",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 298,
+        "controlChanges": 4,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2639,
+      "label": "[免费]冒泡网游",
+      "baselineSmoke": "black-screen",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification",
+      "sustainedReview": {
+        "artifact": "artifacts/compat-20260914/round4-black-lifecycle/results.json",
+        "outcome": "needs-scene-review",
+        "presentedFrames": 297,
+        "controlChanges": 2,
+        "error": null
+      }
+    },
+    {
+      "caseId": 2640,
+      "label": "[网游]无双三国",
+      "baselineSmoke": "static-frame",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
+      "resolved": false,
+      "status": "needs-per-case-verification"
+    }
+  ],
+  "smokeRegressions": [
+    {
+      "caseId": 135,
+      "label": "mrp应用商店1.3",
+      "classification": "exited",
+      "error": "LuaRuntimeError: Exiting..."
+    },
+    {
+      "caseId": 632,
+      "label": "放大镜",
+      "classification": "static-frame",
+      "error": null
+    },
+    {
+      "caseId": 2390,
+      "label": "应用列表",
+      "classification": "exited",
+      "error": "LuaRuntimeError: Exiting..."
+    }
+  ],
+  "pendingFullRegression": null,
+  "missingResource480101": {
+    "scannedFiles": 33117,
+    "roots": [
+      "/Users/zixing/Downloads/mrp游戏大集结",
+      "/Users/zixing/Downloads/rxgj-main"
+    ],
+    "matches": 0,
+    "destination": "MNS/fish.bmp"
+  },
+  "workingDirectory": "/Users/zixing/Documents/zixing/github/flymrp",
+  "migrationNote": "2026-09-14 按用户要求迁移到 flymrp；历史 flymrp2 路径为指向此目录的兼容符号链接。原始测试证据保持不变。",
+  "original313LatestSmokePassed": 96
+}

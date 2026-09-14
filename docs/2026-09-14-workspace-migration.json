@@ -1,0 +1,30 @@
+{
+  "workingDirectory": "/Users/zixing/Documents/zixing/github/flymrp",
+  "sourceArchive": "/Users/zixing/Documents/zixing/github/flymrp-migration-backup-20260914/source-before",
+  "originalTargetBackup": "/Users/zixing/Documents/zixing/github/flymrp-migration-backup-20260914/target-before",
+  "verifiedSourceFiles": 32525,
+  "missingFiles": [],
+  "intentionalPathMetadataChanges": [
+    "docs/compatibility/2026-09-14-goal-313.json"
+  ],
+  "oldPathResolvesTo": "/Users/zixing/Documents/zixing/github/flymrp",
+  "gitHeadPreserved": "7fd2c8a4eefcc610c774ae8def60430bd3ab284c",
+  "originPreserved": "https://github.com/zixing131/flymrp.git",
+  "tests": {
+    "passed": 844,
+    "skipped": 1,
+    "filesPassed": 157
+  },
+  "typecheck": "passed",
+  "intentionalCodeChanges": [
+    "tools/edgeone/prepare-deploy.mjs: build a complete staging directory before replacing deploy; tolerate Finder metadata cleanup races"
+  ],
+  "build": "passed",
+  "deployment": {
+    "directory": "/Users/zixing/Documents/zixing/github/flymrp/artifacts/edgeone/deploy",
+    "verifiedDistFiles": 16547,
+    "blobRewrites": 73,
+    "maxFileBytes": 993913,
+    "status": "passed"
+  }
+}

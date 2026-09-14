@@ -1,0 +1,1849 @@
+{
+  "note": "Each run retains its own source hash, scenario hash and outcome. needs-scene-review is not automatically promoted to passed by manual screenshots.",
+  "runs": [
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "4c968a7aa0592d077b97dac53e1161654060940f16ddfede6a5f651c4975243c",
+      "manifestSha256": "00d7da703c458cb326f8d88320ef5373592f5960c777356cf167ca38996f7a58",
+      "scenarioSha256": null,
+      "startedAt": "2026-09-14T03:02:30.920Z",
+      "requiredCount": 8,
+      "selectedCount": 8,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "4b844097520cb8e5f6dd908df3a3080b8734df74cb6c5b61035ef5223a75f605",
+          "title": "见缝插针2025",
+          "storeCaseId": 22,
+          "id": 1,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 13,
+          "controlChanges": 9,
+          "presentedFrames": 940,
+          "interactionVerified": false,
+          "distinctFrames": 187,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "9ca269f3ef6907345fb71f66c0c251fe0f1ee63f0e4bf7d315ddfdee68ddba78",
+              "image": "1-boot.png",
+              "clock": 4200,
+              "colors": 274
+            },
+            {
+              "name": "entry1",
+              "sha256": "6b5cdb85ad488bafab388daf5ea90318fd3a0aa7ea474b1420213b3809628736",
+              "image": "1-entry1.png",
+              "clock": 5240,
+              "colors": 3
+            },
+            {
+              "name": "entry2",
+              "sha256": "88dfb721f7b68966a6012b7c89c39ab4b396d222a168f4e4c359b9894b2381dd",
+              "image": "1-entry2.png",
+              "clock": 6280,
+              "colors": 3
+            },
+            {
+              "name": "entry3",
+              "sha256": "c8f42a73806fe9dd28eb79b52ffc7fb4686a28fdcaff2dec24e94481c97ef691",
+              "image": "1-entry3.png",
+              "clock": 7320,
+              "colors": 3
+            },
+            {
+              "name": "entry4",
+              "sha256": "5e6b8b827ea43368113a86b9385cf46c9b44870091580b8614ffb549f8db59cf",
+              "image": "1-entry4.png",
+              "clock": 8360,
+              "colors": 3
+            },
+            {
+              "name": "control1",
+              "sha256": "001c3a9111e20ab40687fe8ebdbeddfd02a89ee0f40ee19e90bdde50ca19e685",
+              "image": "1-control1.png",
+              "clock": 9560,
+              "colors": 3
+            },
+            {
+              "name": "control2",
+              "sha256": "da29c23a8e7b41ceb17eec3cb07f4ae641ba3b8908365810cf3a30447cf2898a",
+              "image": "1-control2.png",
+              "clock": 10760,
+              "colors": 3
+            },
+            {
+              "name": "control3",
+              "sha256": "11af3e7f66e1ee872b9b0b2528ca8690c8cc381cd5cd6d8972013f6fad2c5e87",
+              "image": "1-control3.png",
+              "clock": 11960,
+              "colors": 3
+            },
+            {
+              "name": "control4",
+              "sha256": "621989b4e41c8fa89a1ceb1a2037ee1800a4d3fb99b5e329bf801d2b91fa0649",
+              "image": "1-control4.png",
+              "clock": 13160,
+              "colors": 3
+            },
+            {
+              "name": "control5",
+              "sha256": "8e365c394ba00bf79d9392ab18390419719906904f10bd786f871d290fec5e65",
+              "image": "1-control5.png",
+              "clock": 14360,
+              "colors": 3
+            },
+            {
+              "name": "control6",
+              "sha256": "247688e06df82cfed621e1c8888cf8442f1fb034705fd190d5e24e027f419946",
+              "image": "1-control6.png",
+              "clock": 15560,
+              "colors": 3
+            },
+            {
+              "name": "control7",
+              "sha256": "75e95613204402f8ad5d8696483ae6df26e22e530fe584e90da66eca9becaec4",
+              "image": "1-control7.png",
+              "clock": 16760,
+              "colors": 3
+            },
+            {
+              "name": "control8",
+              "sha256": "56e9225f1ca6388546906c985d316f03fa788faac9d86cd9d9b260bbebeaa9c4",
+              "image": "1-control8.png",
+              "clock": 17960,
+              "colors": 3
+            },
+            {
+              "name": "control9",
+              "sha256": "4fbc1228ef647ea16c6f7dbfe9cd2e4a48042f485b8e7c14899f2c6a66fdf1e7",
+              "image": "1-control9.png",
+              "clock": 19160,
+              "colors": 3
+            },
+            {
+              "name": "controls",
+              "sha256": "4fbc1228ef647ea16c6f7dbfe9cd2e4a48042f485b8e7c14899f2c6a66fdf1e7",
+              "image": "1-controls.png",
+              "clock": 19160,
+              "colors": 3
+            },
+            {
+              "name": "sustained",
+              "sha256": "04b3e6872b7b8874738e2ccfb433a0b6bea47cc60484c2b02f738cf5edc76b17",
+              "image": "1-sustained.png",
+              "clock": 79160,
+              "colors": 3
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 9445,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "0837508c77a320973445041b1f5f0bb44da35faa1174fb198e85a758c423a7dd",
+          "title": "12530音乐客户端",
+          "storeCaseId": 28,
+          "id": 2,
+          "width": 240,
+          "height": 320,
+          "outcome": "no-input-response",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 2,
+          "controlChanges": 0,
+          "presentedFrames": 26,
+          "interactionVerified": false,
+          "distinctFrames": 3,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "9996c0b4fcbc5f16662fe0ceb0cac4d0f0210a5bfd3ca2b87d7e76e54628a571",
+              "image": "2-boot.png",
+              "clock": 4000,
+              "colors": 610
+            },
+            {
+              "name": "entry1",
+              "sha256": "a773633c2507babea83d2031cb3cd77129c0df9ddb18ac0631de8224bb25618e",
+              "image": "2-entry1.png",
+              "clock": 5040,
+              "colors": 578
+            },
+            {
+              "name": "entry2",
+              "sha256": "a773633c2507babea83d2031cb3cd77129c0df9ddb18ac0631de8224bb25618e",
+              "image": "2-entry2.png",
+              "clock": 6080,
+              "colors": 578
+            },
+            {
+              "name": "entry3",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-entry3.png",
+              "clock": 7120,
+              "colors": 295
+            },
+            {
+              "name": "entry4",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-entry4.png",
+              "clock": 8160,
+              "colors": 295
+            },
+            {
+              "name": "control1",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control1.png",
+              "clock": 9360,
+              "colors": 295
+            },
+            {
+              "name": "control2",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control2.png",
+              "clock": 10560,
+              "colors": 295
+            },
+            {
+              "name": "control3",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control3.png",
+              "clock": 11760,
+              "colors": 295
+            },
+            {
+              "name": "control4",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control4.png",
+              "clock": 12960,
+              "colors": 295
+            },
+            {
+              "name": "control5",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control5.png",
+              "clock": 14160,
+              "colors": 295
+            },
+            {
+              "name": "control6",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control6.png",
+              "clock": 15360,
+              "colors": 295
+            },
+            {
+              "name": "control7",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control7.png",
+              "clock": 16560,
+              "colors": 295
+            },
+            {
+              "name": "control8",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control8.png",
+              "clock": 17760,
+              "colors": 295
+            },
+            {
+              "name": "control9",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-control9.png",
+              "clock": 18960,
+              "colors": 295
+            },
+            {
+              "name": "controls",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-controls.png",
+              "clock": 18960,
+              "colors": 295
+            },
+            {
+              "name": "sustained",
+              "sha256": "d84b10fa748c0def1519c4206baeaa09614eec17e441eab765cf9c9c24b11d4b",
+              "image": "2-sustained.png",
+              "clock": 78960,
+              "colors": 295
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 245,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "6453aa344e08ed0ec59811a3d2f25792aa4d6961823f7a0fc7c4f7622a475f52",
+          "title": "Angry Birds",
+          "storeCaseId": 77,
+          "id": 3,
+          "width": 320,
+          "height": 480,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 13,
+          "controlChanges": 9,
+          "presentedFrames": 983,
+          "interactionVerified": false,
+          "distinctFrames": 194,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "a9c4d6a80fd0951218b30afd0bbcf424bec221b38626e9440553dd5047113b8f",
+              "image": "3-boot.png",
+              "clock": 4804,
+              "colors": 5165
+            },
+            {
+              "name": "entry1",
+              "sha256": "dc4b061f092054f64ea7081ad68e403fbde8f491e95329762339dc31dd80eb5f",
+              "image": "3-entry1.png",
+              "clock": 5844,
+              "colors": 5254
+            },
+            {
+              "name": "entry2",
+              "sha256": "692bcc70647e8b4fa9638e9fa9490cbd842e967278e60235ad67548836c7c83e",
+              "image": "3-entry2.png",
+              "clock": 6888,
+              "colors": 5070
+            },
+            {
+              "name": "entry3",
+              "sha256": "2f6e49329d2af81538dd8fdbabe5e7d2f6d0c2c1732a2cc7442d619dbc9ed691",
+              "image": "3-entry3.png",
+              "clock": 7937,
+              "colors": 5282
+            },
+            {
+              "name": "entry4",
+              "sha256": "49780faa6a45ac1479f311897308524c503769fb208a3f0427326d05f5f90591",
+              "image": "3-entry4.png",
+              "clock": 9001,
+              "colors": 5094
+            },
+            {
+              "name": "control1",
+              "sha256": "39391674265503917250936cc70460c24f2755ae77b602f93ef512fe784cccf1",
+              "image": "3-control1.png",
+              "clock": 10201,
+              "colors": 5118
+            },
+            {
+              "name": "control2",
+              "sha256": "8c771835dc55bf7ba5d986662ee7189d7445e95829deecf0a185cc47979fec4b",
+              "image": "3-control2.png",
+              "clock": 11404,
+              "colors": 5194
+            },
+            {
+              "name": "control3",
+              "sha256": "5ca29889d79f5eccea62010ccfdd1db1536ec1cb83aca7db17caa02cd1a3b5ab",
+              "image": "3-control3.png",
+              "clock": 12605,
+              "colors": 5014
+            },
+            {
+              "name": "control4",
+              "sha256": "9eb91a32a20be2b42da11d88170d8c38b9fae707097e5918bd19c1c898492b66",
+              "image": "3-control4.png",
+              "clock": 13805,
+              "colors": 5098
+            },
+            {
+              "name": "control5",
+              "sha256": "77c3e01390bbb33ffbcf71f09be91a3b9bc435648e0f5b22a800c83e180f0da3",
+              "image": "3-control5.png",
+              "clock": 15014,
+              "colors": 5195
+            },
+            {
+              "name": "control6",
+              "sha256": "92fc38ef4a4ebac7fb0f01691c207b94d1d2dd6359272b002c462b02a3f3fea0",
+              "image": "3-control6.png",
+              "clock": 16215,
+              "colors": 5034
+            },
+            {
+              "name": "control7",
+              "sha256": "919dbfe0426c26c0d855d07941b4ea3b47e9553fb912d19024574f3452b6cf34",
+              "image": "3-control7.png",
+              "clock": 17416,
+              "colors": 4979
+            },
+            {
+              "name": "control8",
+              "sha256": "10480b3cbc48ad50e6906a7480a5046fba5f5c17db280c73d4c2f0c2261abdc1",
+              "image": "3-control8.png",
+              "clock": 18617,
+              "colors": 5199
+            },
+            {
+              "name": "control9",
+              "sha256": "8f0d83e860468389f14a90b60d9f3bf639c2d09aca27eef808f4c18920b835c8",
+              "image": "3-control9.png",
+              "clock": 19817,
+              "colors": 5117
+            },
+            {
+              "name": "controls",
+              "sha256": "8f0d83e860468389f14a90b60d9f3bf639c2d09aca27eef808f4c18920b835c8",
+              "image": "3-controls.png",
+              "clock": 19817,
+              "colors": 5117
+            },
+            {
+              "name": "sustained",
+              "sha256": "df15d0fadeaa3d8c8a6f9f3ddb74f4b7926a8812a039e3658a02e5e3b62e12e0",
+              "image": "3-sustained.png",
+              "clock": 80399,
+              "colors": 5066
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 20144,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "f8dc51d3e397722c24753b5b7d1f3a4c80d97938c4005c8f559c5f49a052e80e",
+          "title": "彩蝶少女",
+          "storeCaseId": 350,
+          "id": 4,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 4,
+          "controlChanges": 1,
+          "presentedFrames": 6,
+          "interactionVerified": false,
+          "distinctFrames": 4,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-boot.png",
+              "clock": 4000,
+              "colors": 2
+            },
+            {
+              "name": "entry1",
+              "sha256": "5cb8a62594ea9c64cfe6b6bda14105c5b1756eb43e44697cb02c0ca7499ce895",
+              "image": "4-entry1.png",
+              "clock": 5040,
+              "colors": 6
+            },
+            {
+              "name": "entry2",
+              "sha256": "0ca09828df814997e473ff71afdcdcddaed5fff61e9af69a9e058758f722b8f2",
+              "image": "4-entry2.png",
+              "clock": 6080,
+              "colors": 5
+            },
+            {
+              "name": "entry3",
+              "sha256": "bd4ef0287ed9722185aaf5cedf55eda8578e4a5f368b87a91f84907845e722d5",
+              "image": "4-entry3.png",
+              "clock": 7120,
+              "colors": 5
+            },
+            {
+              "name": "entry4",
+              "sha256": "bd4ef0287ed9722185aaf5cedf55eda8578e4a5f368b87a91f84907845e722d5",
+              "image": "4-entry4.png",
+              "clock": 8160,
+              "colors": 5
+            },
+            {
+              "name": "control1",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control1.png",
+              "clock": 9360,
+              "colors": 2
+            },
+            {
+              "name": "control2",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control2.png",
+              "clock": 10560,
+              "colors": 2
+            },
+            {
+              "name": "control3",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control3.png",
+              "clock": 11760,
+              "colors": 2
+            },
+            {
+              "name": "control4",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control4.png",
+              "clock": 12960,
+              "colors": 2
+            },
+            {
+              "name": "control5",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control5.png",
+              "clock": 14160,
+              "colors": 2
+            },
+            {
+              "name": "control6",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control6.png",
+              "clock": 15360,
+              "colors": 2
+            },
+            {
+              "name": "control7",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control7.png",
+              "clock": 16560,
+              "colors": 2
+            },
+            {
+              "name": "control8",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control8.png",
+              "clock": 17760,
+              "colors": 2
+            },
+            {
+              "name": "control9",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-control9.png",
+              "clock": 18960,
+              "colors": 2
+            },
+            {
+              "name": "controls",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-controls.png",
+              "clock": 18960,
+              "colors": 2
+            },
+            {
+              "name": "sustained",
+              "sha256": "e6307c134d6795ccaeda26795e9d54cbd4a204a6548a195c058b468317f26173",
+              "image": "4-sustained.png",
+              "clock": 78960,
+              "colors": 2
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 221,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "1f643b41fdfbfadf368dec1c80037fa32f85891a0643fc07365e75ca859b2a62",
+          "title": "看图片浏览器",
+          "storeCaseId": 1116,
+          "id": 5,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 3,
+          "controlChanges": 2,
+          "presentedFrames": 10,
+          "interactionVerified": false,
+          "distinctFrames": 3,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "670397d085702033a48579717894e775df36cd05ae8eac8151f8a47350403f00",
+              "image": "5-boot.png",
+              "clock": 4500,
+              "colors": 11
+            },
+            {
+              "name": "entry1",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-entry1.png",
+              "clock": 5540,
+              "colors": 28
+            },
+            {
+              "name": "entry2",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-entry2.png",
+              "clock": 6580,
+              "colors": 28
+            },
+            {
+              "name": "entry3",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-entry3.png",
+              "clock": 7620,
+              "colors": 28
+            },
+            {
+              "name": "entry4",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-entry4.png",
+              "clock": 8660,
+              "colors": 28
+            },
+            {
+              "name": "control1",
+              "sha256": "5f4514b768bfe3f0a2fe5850f223ebd91ebc72926e417418db5e697ee3015ed7",
+              "image": "5-control1.png",
+              "clock": 9860,
+              "colors": 28
+            },
+            {
+              "name": "control2",
+              "sha256": "5f4514b768bfe3f0a2fe5850f223ebd91ebc72926e417418db5e697ee3015ed7",
+              "image": "5-control2.png",
+              "clock": 11060,
+              "colors": 28
+            },
+            {
+              "name": "control3",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control3.png",
+              "clock": 12260,
+              "colors": 28
+            },
+            {
+              "name": "control4",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control4.png",
+              "clock": 13460,
+              "colors": 28
+            },
+            {
+              "name": "control5",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control5.png",
+              "clock": 14660,
+              "colors": 28
+            },
+            {
+              "name": "control6",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control6.png",
+              "clock": 15860,
+              "colors": 28
+            },
+            {
+              "name": "control7",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control7.png",
+              "clock": 17060,
+              "colors": 28
+            },
+            {
+              "name": "control8",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control8.png",
+              "clock": 18260,
+              "colors": 28
+            },
+            {
+              "name": "control9",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-control9.png",
+              "clock": 19460,
+              "colors": 28
+            },
+            {
+              "name": "controls",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-controls.png",
+              "clock": 19460,
+              "colors": 28
+            },
+            {
+              "name": "sustained",
+              "sha256": "2a4fa56b12e646e2257f03ebe8a0d612dff5ec1a20665aebb478b50e364e2956",
+              "image": "5-sustained.png",
+              "clock": 79460,
+              "colors": 28
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 184,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "9fe4d4aeb0d0658cbc31b1c7887246db8a8af8a62ecf40a31a5c9a7b37e100d2",
+          "title": "人生重开模拟器",
+          "storeCaseId": 1683,
+          "id": 6,
+          "width": 240,
+          "height": 320,
+          "outcome": "no-input-response",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 1,
+          "controlChanges": 0,
+          "presentedFrames": 3,
+          "interactionVerified": false,
+          "distinctFrames": 2,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "1c48fcdf9b19b99e9022d2695fed40f0341206ee51435b619f6ae737bf6b4bb9",
+              "image": "6-boot.png",
+              "clock": 4200,
+              "colors": 5
+            },
+            {
+              "name": "entry1",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-entry1.png",
+              "clock": 5240,
+              "colors": 7
+            },
+            {
+              "name": "entry2",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-entry2.png",
+              "clock": 6280,
+              "colors": 7
+            },
+            {
+              "name": "entry3",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-entry3.png",
+              "clock": 7320,
+              "colors": 7
+            },
+            {
+              "name": "entry4",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-entry4.png",
+              "clock": 8360,
+              "colors": 7
+            },
+            {
+              "name": "control1",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control1.png",
+              "clock": 9560,
+              "colors": 7
+            },
+            {
+              "name": "control2",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control2.png",
+              "clock": 10760,
+              "colors": 7
+            },
+            {
+              "name": "control3",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control3.png",
+              "clock": 11960,
+              "colors": 7
+            },
+            {
+              "name": "control4",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control4.png",
+              "clock": 13160,
+              "colors": 7
+            },
+            {
+              "name": "control5",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control5.png",
+              "clock": 14360,
+              "colors": 7
+            },
+            {
+              "name": "control6",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control6.png",
+              "clock": 15560,
+              "colors": 7
+            },
+            {
+              "name": "control7",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control7.png",
+              "clock": 16760,
+              "colors": 7
+            },
+            {
+              "name": "control8",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control8.png",
+              "clock": 17960,
+              "colors": 7
+            },
+            {
+              "name": "control9",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-control9.png",
+              "clock": 19160,
+              "colors": 7
+            },
+            {
+              "name": "controls",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-controls.png",
+              "clock": 19160,
+              "colors": 7
+            },
+            {
+              "name": "sustained",
+              "sha256": "71aef76a74bd9e700f3ea8d21e6440e7abfe5786462174fbb33b4b575ffc51a8",
+              "image": "6-sustained.png",
+              "clock": 79160,
+              "colors": 7
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 442,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "eb09acb556cc601bd3e3b54cdffb5d2abe9bff319ed323242939f102f8e725a7",
+          "title": "Tom猫",
+          "storeCaseId": 203,
+          "id": 7,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 987,
+          "keysTested": 13,
+          "inputChanges": 5,
+          "controlChanges": 5,
+          "presentedFrames": 50,
+          "interactionVerified": false,
+          "distinctFrames": 20,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-boot.png",
+              "clock": 4200,
+              "colors": 2958
+            },
+            {
+              "name": "entry1",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-entry1.png",
+              "clock": 5240,
+              "colors": 2958
+            },
+            {
+              "name": "entry2",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-entry2.png",
+              "clock": 6280,
+              "colors": 2958
+            },
+            {
+              "name": "entry3",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-entry3.png",
+              "clock": 7320,
+              "colors": 2958
+            },
+            {
+              "name": "entry4",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-entry4.png",
+              "clock": 8360,
+              "colors": 2958
+            },
+            {
+              "name": "control1",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-control1.png",
+              "clock": 9560,
+              "colors": 2958
+            },
+            {
+              "name": "control2",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-control2.png",
+              "clock": 10760,
+              "colors": 2958
+            },
+            {
+              "name": "control3",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-control3.png",
+              "clock": 11960,
+              "colors": 2958
+            },
+            {
+              "name": "control4",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-control4.png",
+              "clock": 13160,
+              "colors": 2958
+            },
+            {
+              "name": "control5",
+              "sha256": "2be6de386b97214e6764fa8a51a933186ea24603f5bf819c059acb153061dde2",
+              "image": "7-control5.png",
+              "clock": 14360,
+              "colors": 2114
+            },
+            {
+              "name": "control6",
+              "sha256": "980b7935a5926ea21c167c329d9197f4e63978be6d535582cd9f3e6d63989454",
+              "image": "7-control6.png",
+              "clock": 15560,
+              "colors": 1961
+            },
+            {
+              "name": "control7",
+              "sha256": "2b9cf931adcfe6b6bde3337fcf0118f795ddcf90bf795215e0741432e4722d2a",
+              "image": "7-control7.png",
+              "clock": 16760,
+              "colors": 1955
+            },
+            {
+              "name": "control8",
+              "sha256": "2821d451d228b6185d879604b2b1c82e786db633ef8a0538549c10706bdff49f",
+              "image": "7-control8.png",
+              "clock": 17960,
+              "colors": 1803
+            },
+            {
+              "name": "control9",
+              "sha256": "9c9f919261b6a66208094f147a8d1ce4ed08cdfeddc4dbfaa795bf5934d7c3ff",
+              "image": "7-control9.png",
+              "clock": 19160,
+              "colors": 1654
+            },
+            {
+              "name": "controls",
+              "sha256": "9c9f919261b6a66208094f147a8d1ce4ed08cdfeddc4dbfaa795bf5934d7c3ff",
+              "image": "7-controls.png",
+              "clock": 19160,
+              "colors": 1654
+            },
+            {
+              "name": "sustained",
+              "sha256": "bf7d6df5f6e29f25dc66c1c2709ed0be109a84cb7d7fb273010c46a44c795d79",
+              "image": "7-sustained.png",
+              "clock": 79160,
+              "colors": 2958
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 26124,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "945b5bae9a4c83bfdbb773346390c4573df706402307eaf917fc104132f3c2d5",
+          "title": "滚木块",
+          "storeCaseId": 806,
+          "id": 8,
+          "outcome": "worker-timeout",
+          "error": "",
+          "elapsedMs": 120005,
+          "progress": {
+            "phase": "controls",
+            "ticks": 237,
+            "keysTested": 13,
+            "checkpoints": [
+              {
+                "name": "boot",
+                "sha256": "9ab7127ec39d7dd0ce0c47115a82e0b84ab7aedb67e3db32bcb3ba70454edf9a",
+                "image": "8-boot.png",
+                "clock": 4200,
+                "colors": 3
+              },
+              {
+                "name": "entry1",
+                "sha256": "bb5d374b987d2431b26b2deecab4996135833986d723bc97938522bab5d324e7",
+                "image": "8-entry1.png",
+                "clock": 5240,
+                "colors": 5
+              },
+              {
+                "name": "entry2",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-entry2.png",
+                "clock": 6280,
+                "colors": 20
+              },
+              {
+                "name": "entry3",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-entry3.png",
+                "clock": 7320,
+                "colors": 20
+              },
+              {
+                "name": "entry4",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-entry4.png",
+                "clock": 8360,
+                "colors": 20
+              },
+              {
+                "name": "control1",
+                "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+                "image": "8-control1.png",
+                "clock": 9560,
+                "colors": 18
+              },
+              {
+                "name": "control2",
+                "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+                "image": "8-control2.png",
+                "clock": 10760,
+                "colors": 18
+              },
+              {
+                "name": "control3",
+                "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+                "image": "8-control3.png",
+                "clock": 11960,
+                "colors": 18
+              },
+              {
+                "name": "control4",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control4.png",
+                "clock": 13160,
+                "colors": 18
+              },
+              {
+                "name": "control5",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control5.png",
+                "clock": 14360,
+                "colors": 18
+              },
+              {
+                "name": "control6",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control6.png",
+                "clock": 15560,
+                "colors": 18
+              },
+              {
+                "name": "control7",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control7.png",
+                "clock": 16760,
+                "colors": 18
+              },
+              {
+                "name": "control8",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control8.png",
+                "clock": 17960,
+                "colors": 18
+              },
+              {
+                "name": "control9",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-control9.png",
+                "clock": 19160,
+                "colors": 18
+              },
+              {
+                "name": "controls",
+                "sha256": "864c8faf71429c6621445d44162917b8aa75a048033e873761544dbb2c2fc7a7",
+                "image": "8-controls.png",
+                "clock": 19160,
+                "colors": 18
+              }
+            ]
+          }
+        }
+      ],
+      "artifactRun": "second-detail"
+    },
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "03ab39899952f639d19ea970b6765680031cfdb5ca0ae8cc2e261d1f7952b007",
+      "manifestSha256": "00d7da703c458cb326f8d88320ef5373592f5960c777356cf167ca38996f7a58",
+      "scenarioSha256": "808d59055a829a04b96f0c7e2ec0472c4fd8d5aaf805d7a92dc190f6803437e3",
+      "startedAt": "2026-09-14T03:45:55.847Z",
+      "requiredCount": 8,
+      "selectedCount": 1,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "945b5bae9a4c83bfdbb773346390c4573df706402307eaf917fc104132f3c2d5",
+          "title": "滚木块",
+          "storeCaseId": 806,
+          "id": 8,
+          "outcome": "worker-timeout",
+          "error": "",
+          "elapsedMs": 120009,
+          "progress": {
+            "phase": "controls",
+            "ticks": 109,
+            "keysTested": 5,
+            "checkpoints": [
+              {
+                "name": "boot",
+                "sha256": "9ab7127ec39d7dd0ce0c47115a82e0b84ab7aedb67e3db32bcb3ba70454edf9a",
+                "image": "8-boot.png",
+                "clock": 4200,
+                "colors": 3
+              },
+              {
+                "name": "entry1",
+                "sha256": "bb5d374b987d2431b26b2deecab4996135833986d723bc97938522bab5d324e7",
+                "image": "8-entry1.png",
+                "clock": 5240,
+                "colors": 5
+              },
+              {
+                "name": "entry2",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-entry2.png",
+                "clock": 6280,
+                "colors": 20
+              },
+              {
+                "name": "control1",
+                "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+                "image": "8-control1.png",
+                "clock": 7160,
+                "colors": 18
+              },
+              {
+                "name": "control2",
+                "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+                "image": "8-control2.png",
+                "clock": 8040,
+                "colors": 18
+              },
+              {
+                "name": "control3",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-control3.png",
+                "clock": 8920,
+                "colors": 20
+              },
+              {
+                "name": "controls",
+                "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+                "image": "8-controls.png",
+                "clock": 8920,
+                "colors": 20
+              }
+            ]
+          }
+        }
+      ],
+      "artifactRun": "rollblock-idle"
+    },
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "76e5757c20ef649556cb73c088a12c4e48d5db94a88f7dbacf374bc000e7071d",
+      "manifestSha256": "00d7da703c458cb326f8d88320ef5373592f5960c777356cf167ca38996f7a58",
+      "scenarioSha256": "808d59055a829a04b96f0c7e2ec0472c4fd8d5aaf805d7a92dc190f6803437e3",
+      "startedAt": "2026-09-14T03:48:30.192Z",
+      "requiredCount": 8,
+      "selectedCount": 1,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "945b5bae9a4c83bfdbb773346390c4573df706402307eaf917fc104132f3c2d5",
+          "title": "滚木块",
+          "storeCaseId": 806,
+          "id": 8,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 859,
+          "keysTested": 5,
+          "inputChanges": 4,
+          "controlChanges": 2,
+          "presentedFrames": 860,
+          "interactionVerified": false,
+          "distinctFrames": 5,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "9ab7127ec39d7dd0ce0c47115a82e0b84ab7aedb67e3db32bcb3ba70454edf9a",
+              "image": "8-boot.png",
+              "clock": 4200,
+              "colors": 3
+            },
+            {
+              "name": "entry1",
+              "sha256": "bb5d374b987d2431b26b2deecab4996135833986d723bc97938522bab5d324e7",
+              "image": "8-entry1.png",
+              "clock": 5240,
+              "colors": 5
+            },
+            {
+              "name": "entry2",
+              "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+              "image": "8-entry2.png",
+              "clock": 6280,
+              "colors": 20
+            },
+            {
+              "name": "control1",
+              "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+              "image": "8-control1.png",
+              "clock": 7160,
+              "colors": 18
+            },
+            {
+              "name": "control2",
+              "sha256": "eac213e8afe979bf9395dcf4563e3b4f89c9feaf3e7f7de156c121de1beec0ad",
+              "image": "8-control2.png",
+              "clock": 8040,
+              "colors": 18
+            },
+            {
+              "name": "control3",
+              "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+              "image": "8-control3.png",
+              "clock": 8920,
+              "colors": 20
+            },
+            {
+              "name": "controls",
+              "sha256": "e7b0dc187b08d5d804035446a33e0d9a204525024e6038a09b0f87a793dde4bf",
+              "image": "8-controls.png",
+              "clock": 8920,
+              "colors": 20
+            },
+            {
+              "name": "sustained",
+              "sha256": "db09eaa1d6c220744496c67de9e3e5704edcf2db0e3327b9db0e306ede768011",
+              "image": "8-sustained.png",
+              "clock": 68920,
+              "colors": 16
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 115614,
+          "debugOutput": ""
+        }
+      ],
+      "artifactRun": "rollblock-page-cache"
+    },
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "03ab39899952f639d19ea970b6765680031cfdb5ca0ae8cc2e261d1f7952b007",
+      "manifestSha256": "d62d468b3de83c7cdd260b2e057d60e346ed9009d14d119cdd70d8ccd7f49179",
+      "scenarioSha256": "c74d80aae8681210e86aa14a3aea382f98d9a4059ae4714df4a2394c9c7bec1a",
+      "startedAt": "2026-09-14T03:35:32.154Z",
+      "requiredCount": 11,
+      "selectedCount": 2,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "11cc7ca9f726026beb79bf2e44189fb1151e35901a2f8a55daf3294e49c18677",
+          "storeCaseId": 29,
+          "title": "2010十二星座运势",
+          "id": 1,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 865,
+          "keysTested": 5,
+          "inputChanges": 3,
+          "controlChanges": 2,
+          "presentedFrames": 6,
+          "interactionVerified": false,
+          "distinctFrames": 3,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "2b91e98565ab30b651e1dac485acf4db6bbad8fd0c00500146712bbd295b16b6",
+              "image": "1-boot.png",
+              "clock": 4000,
+              "colors": 27
+            },
+            {
+              "name": "entry1",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-entry1.png",
+              "clock": 5040,
+              "colors": 28
+            },
+            {
+              "name": "control1",
+              "sha256": "822fe70feda819e8c6540698b16fd80f38d3a92e1a27304319569a7f4776c39a",
+              "image": "1-control1.png",
+              "clock": 6080,
+              "colors": 28
+            },
+            {
+              "name": "control2",
+              "sha256": "822fe70feda819e8c6540698b16fd80f38d3a92e1a27304319569a7f4776c39a",
+              "image": "1-control2.png",
+              "clock": 7120,
+              "colors": 28
+            },
+            {
+              "name": "control3",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-control3.png",
+              "clock": 8160,
+              "colors": 28
+            },
+            {
+              "name": "control4",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-control4.png",
+              "clock": 9200,
+              "colors": 28
+            },
+            {
+              "name": "controls",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-controls.png",
+              "clock": 9200,
+              "colors": 28
+            },
+            {
+              "name": "sustained",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-sustained.png",
+              "clock": 69200,
+              "colors": 28
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 162,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "10fc5a051d9cd2456429b9515cb0fcf9ba2a429867fe3b9fe3c046cc31725246",
+          "storeCaseId": 158,
+          "title": "NBA：超经典射篮",
+          "id": 2,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 865,
+          "keysTested": 5,
+          "inputChanges": 3,
+          "controlChanges": 2,
+          "presentedFrames": 6,
+          "interactionVerified": false,
+          "distinctFrames": 3,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "b80e15f1478daa8165bbf6ca16a65aa84663a87b6e08ed3b0d5c7a2ec2ede123",
+              "image": "2-boot.png",
+              "clock": 4000,
+              "colors": 27
+            },
+            {
+              "name": "entry1",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-entry1.png",
+              "clock": 5040,
+              "colors": 28
+            },
+            {
+              "name": "control1",
+              "sha256": "af4155b3d083a825869d26ebdafa9131e59c4e5e4c93fbe742d7ed1e3cdce74d",
+              "image": "2-control1.png",
+              "clock": 6080,
+              "colors": 28
+            },
+            {
+              "name": "control2",
+              "sha256": "af4155b3d083a825869d26ebdafa9131e59c4e5e4c93fbe742d7ed1e3cdce74d",
+              "image": "2-control2.png",
+              "clock": 7120,
+              "colors": 28
+            },
+            {
+              "name": "control3",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-control3.png",
+              "clock": 8160,
+              "colors": 28
+            },
+            {
+              "name": "control4",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-control4.png",
+              "clock": 9200,
+              "colors": 28
+            },
+            {
+              "name": "controls",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-controls.png",
+              "clock": 9200,
+              "colors": 28
+            },
+            {
+              "name": "sustained",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-sustained.png",
+              "clock": 69200,
+              "colors": 28
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 150,
+          "debugOutput": ""
+        }
+      ],
+      "artifactRun": "reader-scenes-v2"
+    },
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "03ab39899952f639d19ea970b6765680031cfdb5ca0ae8cc2e261d1f7952b007",
+      "manifestSha256": "d62d468b3de83c7cdd260b2e057d60e346ed9009d14d119cdd70d8ccd7f49179",
+      "scenarioSha256": "81016ce1333659af152e1e78ff62d1ed53515ea150b9a320f414ed7a43e0262f",
+      "startedAt": "2026-09-14T03:36:57.478Z",
+      "requiredCount": 11,
+      "selectedCount": 2,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "11cc7ca9f726026beb79bf2e44189fb1151e35901a2f8a55daf3294e49c18677",
+          "storeCaseId": 29,
+          "title": "2010十二星座运势",
+          "id": 1,
+          "width": 240,
+          "height": 320,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 865,
+          "keysTested": 5,
+          "inputChanges": 5,
+          "controlChanges": 2,
+          "presentedFrames": 11,
+          "interactionVerified": false,
+          "distinctFrames": 6,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "2b91e98565ab30b651e1dac485acf4db6bbad8fd0c00500146712bbd295b16b6",
+              "image": "1-boot.png",
+              "clock": 4000,
+              "colors": 27
+            },
+            {
+              "name": "entry1",
+              "sha256": "9c408c8beaabed3caae36fd3b60a29ef3a45db547694890ae8e203802ba82694",
+              "image": "1-entry1.png",
+              "clock": 5040,
+              "colors": 28
+            },
+            {
+              "name": "entry2",
+              "sha256": "822fe70feda819e8c6540698b16fd80f38d3a92e1a27304319569a7f4776c39a",
+              "image": "1-entry2.png",
+              "clock": 6080,
+              "colors": 28
+            },
+            {
+              "name": "entry3",
+              "sha256": "eb0da12e4b57fa02ab48513a01ed3b7b3ea87b436642c020b142c7500ee9ca8f",
+              "image": "1-entry3.png",
+              "clock": 7120,
+              "colors": 2289
+            },
+            {
+              "name": "control1",
+              "sha256": "fd4db066a3caa66ef4e622dc2e7e93446f5b84e067f50d9120a47924ce6c7c3f",
+              "image": "1-control1.png",
+              "clock": 8160,
+              "colors": 2218
+            },
+            {
+              "name": "control2",
+              "sha256": "de3b84f8c13cb5308e46bc784f8b8408bef4ca69afc21e2c5234d4b3b63314ff",
+              "image": "1-control2.png",
+              "clock": 9200,
+              "colors": 2289
+            },
+            {
+              "name": "controls",
+              "sha256": "de3b84f8c13cb5308e46bc784f8b8408bef4ca69afc21e2c5234d4b3b63314ff",
+              "image": "1-controls.png",
+              "clock": 9200,
+              "colors": 2289
+            },
+            {
+              "name": "sustained",
+              "sha256": "de3b84f8c13cb5308e46bc784f8b8408bef4ca69afc21e2c5234d4b3b63314ff",
+              "image": "1-sustained.png",
+              "clock": 69200,
+              "colors": 2289
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 431,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "10fc5a051d9cd2456429b9515cb0fcf9ba2a429867fe3b9fe3c046cc31725246",
+          "storeCaseId": 158,
+          "title": "NBA：超经典射篮",
+          "id": 2,
+          "width": 240,
+          "height": 320,
+          "outcome": "no-input-response",
+          "phase": "complete",
+          "error": null,
+          "ticks": 865,
+          "keysTested": 5,
+          "inputChanges": 3,
+          "controlChanges": 0,
+          "presentedFrames": 11,
+          "interactionVerified": false,
+          "distinctFrames": 4,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "b80e15f1478daa8165bbf6ca16a65aa84663a87b6e08ed3b0d5c7a2ec2ede123",
+              "image": "2-boot.png",
+              "clock": 4000,
+              "colors": 27
+            },
+            {
+              "name": "entry1",
+              "sha256": "658c79ee5c1e440990fdee684cec0e4e727adeb790d10b83e496f241478685cb",
+              "image": "2-entry1.png",
+              "clock": 5040,
+              "colors": 28
+            },
+            {
+              "name": "entry2",
+              "sha256": "af4155b3d083a825869d26ebdafa9131e59c4e5e4c93fbe742d7ed1e3cdce74d",
+              "image": "2-entry2.png",
+              "clock": 6080,
+              "colors": 28
+            },
+            {
+              "name": "entry3",
+              "sha256": "29c46c47273aae30ec58fde56f9372b014cc0055d4f3b1a8744493ffac899eca",
+              "image": "2-entry3.png",
+              "clock": 7120,
+              "colors": 1080
+            },
+            {
+              "name": "control1",
+              "sha256": "29c46c47273aae30ec58fde56f9372b014cc0055d4f3b1a8744493ffac899eca",
+              "image": "2-control1.png",
+              "clock": 8160,
+              "colors": 1080
+            },
+            {
+              "name": "control2",
+              "sha256": "29c46c47273aae30ec58fde56f9372b014cc0055d4f3b1a8744493ffac899eca",
+              "image": "2-control2.png",
+              "clock": 9200,
+              "colors": 1080
+            },
+            {
+              "name": "controls",
+              "sha256": "29c46c47273aae30ec58fde56f9372b014cc0055d4f3b1a8744493ffac899eca",
+              "image": "2-controls.png",
+              "clock": 9200,
+              "colors": 1080
+            },
+            {
+              "name": "sustained",
+              "sha256": "29c46c47273aae30ec58fde56f9372b014cc0055d4f3b1a8744493ffac899eca",
+              "image": "2-sustained.png",
+              "clock": 69200,
+              "colors": 1080
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 472,
+          "debugOutput": ""
+        }
+      ],
+      "artifactRun": "reader-content"
+    },
+    {
+      "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+      "workingDiffSha256": "c09ddd0973f62def5f5a5132013089df8a719a52ebe81191004390d84ee1ba11",
+      "manifestSha256": "d62d468b3de83c7cdd260b2e057d60e346ed9009d14d119cdd70d8ccd7f49179",
+      "scenarioSha256": "c74d80aae8681210e86aa14a3aea382f98d9a4059ae4714df4a2394c9c7bec1a",
+      "startedAt": "2026-09-14T03:53:24.180Z",
+      "requiredCount": 11,
+      "selectedCount": 2,
+      "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+      "complete": true,
+      "allPassed": false,
+      "results": [
+        {
+          "sha256": "7d16c1330c226f653ebfd54ce2b116135f4bb61fff03c0c528924aa87d0c88df",
+          "storeCaseId": 173,
+          "title": "QQDSM",
+          "id": 4,
+          "width": 240,
+          "height": 320,
+          "outcome": "runtime-error",
+          "phase": "entry",
+          "error": "LuaRuntimeError: attempt to index a non-table",
+          "ticks": 53,
+          "keysTested": 0,
+          "inputChanges": 0,
+          "controlChanges": 0,
+          "presentedFrames": 1,
+          "interactionVerified": false,
+          "distinctFrames": 1,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "6e7da4502e69d51c04b5f69b4fe83a6ecc8977c78ef19e0d9a11cb67ffe6b5eb",
+              "image": "4-boot.png",
+              "clock": 4000,
+              "colors": 308
+            },
+            {
+              "name": "failure",
+              "sha256": "6e7da4502e69d51c04b5f69b4fe83a6ecc8977c78ef19e0d9a11cb67ffe6b5eb",
+              "image": "4-failure.png",
+              "clock": 4320,
+              "colors": 308
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 235,
+          "debugOutput": ""
+        },
+        {
+          "sha256": "c9c8e300cb52087357b5fe29952a1cea8b29e8990ebd52b64673ccef90a94e0b",
+          "storeCaseId": 772,
+          "title": "孤军深入",
+          "id": 5,
+          "width": 176,
+          "height": 220,
+          "outcome": "needs-scene-review",
+          "phase": "complete",
+          "error": null,
+          "ticks": 865,
+          "keysTested": 5,
+          "inputChanges": 5,
+          "controlChanges": 4,
+          "presentedFrames": 408,
+          "interactionVerified": false,
+          "distinctFrames": 164,
+          "nonBlack": true,
+          "sceneVerified": false,
+          "checkpoints": [
+            {
+              "name": "boot",
+              "sha256": "a446a9e972b2b776d56900eb52dee2b782d735fefe4956ec4ac170906c2831e4",
+              "image": "5-boot.png",
+              "clock": 4000,
+              "colors": 5257
+            },
+            {
+              "name": "entry1",
+              "sha256": "30b61dead7d1b12b8e40c15fead85bc74f3bfaebd7948e76c0a7697711845591",
+              "image": "5-entry1.png",
+              "clock": 5040,
+              "colors": 504
+            },
+            {
+              "name": "control1",
+              "sha256": "829fa87ca9947b0df7200a494634644243aab2e52f845e3e5e8ff0e9ea2202d8",
+              "image": "5-control1.png",
+              "clock": 6080,
+              "colors": 504
+            },
+            {
+              "name": "control2",
+              "sha256": "0abced47a342b65b9a7cff68504655100e335761fdb6442df8a18d66c4b68d11",
+              "image": "5-control2.png",
+              "clock": 7120,
+              "colors": 504
+            },
+            {
+              "name": "control3",
+              "sha256": "2eb14802ad1eede74a3700cc1b6b0850b6ddd3d304e5d6067d4f1461ceb3f41f",
+              "image": "5-control3.png",
+              "clock": 8160,
+              "colors": 656
+            },
+            {
+              "name": "control4",
+              "sha256": "fae18b2c98b25f49121ae81abbf98fafe4beccf6543dc784eeedcfa110b59e98",
+              "image": "5-control4.png",
+              "clock": 9200,
+              "colors": 543
+            },
+            {
+              "name": "controls",
+              "sha256": "fae18b2c98b25f49121ae81abbf98fafe4beccf6543dc784eeedcfa110b59e98",
+              "image": "5-controls.png",
+              "clock": 9200,
+              "colors": 543
+            },
+            {
+              "name": "sustained",
+              "sha256": "fe88a734e82e42c7dba54d3590b531398fb0f49876cf0aefb6e181547d27f15a",
+              "image": "5-sustained.png",
+              "clock": 69200,
+              "colors": 1072
+            }
+          ],
+          "vibrationRequests": [],
+          "missingComponents": [],
+          "offlineServiceRequests": [],
+          "networkInterceptions": [],
+          "exited": false,
+          "unknownSlot": null,
+          "unknownEvents": [],
+          "elapsedMs": 1069,
+          "debugOutput": ""
+        }
+      ],
+      "artifactRun": "lua-api-final"
+    }
+  ]
+}

@@ -1,0 +1,1233 @@
+{
+  "revision": "da254f401b66c3a7ee8ca2580d866819dd32f462",
+  "workingDiffSha256": "1ccc0faaa8675fd791ab4003555e87cb044fa2fe39338472ecf9afbc0ca17b46",
+  "manifestSha256": "b2eb5af273360ed3f9257123056548396227986ac0b5ddc1006143c9575c31cd",
+  "scenarioSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "systemFilesSha256": {
+    "app240400/0/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/100/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/200/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/205/config.sav": "cc26b69ee5f63b4a28cf8b8b4e805faa6217742e961e3e44289f6a008168835e",
+    "app240400/205/dl.dlm": "d25a33906d71167f6b0de5184a7ec7cdebab1e988a93cea5a838fb2c1f414645",
+    "app240400/205/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/205/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/217/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/219/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/221/config.sav": "cc26b69ee5f63b4a28cf8b8b4e805faa6217742e961e3e44289f6a008168835e",
+    "app240400/221/fpd.sav": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "app240400/221/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/239/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/247/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/248/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/249/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/304/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/306/local.seg": "5a9529c3c3ff7cdc7332eab7c59f2396c1d714796adef4b57d1eb6f1e17ea3b8",
+    "app240400/CpuRuns_v2.mrp": "71ce3c63dba12af338f0d444bccf84d7dec4819fc3899bed2ebf193608be3a87",
+    "app240400/RX_v4450.mrp": "fac44cfd9f24a7f9580c928e3270cc74a56ef93c942593dafd90cd2db497041b",
+    "app240400/SaiApp_v1104.mrp": "13a559b23f1237e69e4c9f5673c1dde61d596fe8a1aad31f7da0ed55860209de",
+    "app240400/ad/monitor.sav": "67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450",
+    "app240400/cfg/localdir.sav": "7095b2d1b4c11b36a0d69d75291724dbacf4a1e4666dbcc4c59ac46cd969e3d6",
+    "app240400/cfg/location.sav": "7b28a42af75afb289938f809ba3119a86891dc0dbe5e73e179cd09e0e631cc11",
+    "app240400/cfg/payroot.itm": "66dd319d4fe834cd81ceff92e8309129e47d7f06d87f9aa959113c0214396dad",
+    "app240400/gwy.mrp": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f",
+    "app240400/sgm/rollmsg.dat": "c1584c693bf57bdf62db554272785774d4045ee6590bfb0b96590014935388cf",
+    "dsm_gm.mrp": "1f5521066b861d5bc1a749465b3b105fa7f747c4f6049aa9e203b22dcd7b9298",
+    "gwy/cardcharge.mrp": "57805f07edbe10ee6e4ce86cb6787de2eb1ce3928523e00816b8b5f64f61e773",
+    "gwy/directpay.mrp": "771a8aabf4ae6b883c3e82c40a6f94b49d8a90b9bbb450a27794e84eb6e2c590",
+    "gwy/dload.mrp": "d7847c6eac6e486db427f534ed4a4f11850a2eaa2a03fc235fed1be3c8b82fdf",
+    "gwy/font.mrp": "2d55879781068e484b80a38b8bf7d43a5cb5bf1c88056cc57d49a5f0258c19ef",
+    "gwy/gamelist.mrp": "4b24babfc82be19015fdf5eb9e2468c7ea030130f61f617a8644ab1e7bf7d956",
+    "gwy/gifs/ban_ng_hxsg1024.gif": "77be17af6a1cfbeafe05c74c81a0e45f7451706bbfcd8c56590907a7d2a103a2",
+    "gwy/gifs/gg_dj_jpdj.gif": "9bb7f448abc28a589e640fc115999b06ba087918903788939f6b1723889c429d",
+    "gwy/gifs/gg_mpsc1.gif": "62d1d351c5cb72d935432683e6baba28439fdad4a1d06574bff9788ce2a72896",
+    "gwy/gifs/gg_ng_ajol5.gif": "a2a3e4f561ac89996e8d7853bd910d59922fc0fecd9559c0d8d9bfc4d51da902",
+    "gwy/gifs/gg_ng_csj1.gif": "4b36aa2fd88e955c0029d2647ceaaee9dcc80154712f5af0e9d0cce2885aeb74",
+    "gwy/gifs/gg_ng_ddz01.gif": "930c1585d895898e65ca3a784f7b2534593cc86bdaffac857575f6d7adace8ca",
+    "gwy/gifs/gg_ng_flsg.gif": "c23d5f5d9e1a494f3063ec663efd02eb2e049d1a4712fca1c647c7099ce70796",
+    "gwy/gifs/gg_ng_gdyy01.gif": "8bb613073b9e34db8cffe690104ac68f9d7a602b8fe062840625d224b0a930fb",
+    "gwy/gifs/gg_ng_kdxy.gif": "84ee2f66f554916dd1386db1350f489d535704ad804132ebdc68566527826ff0",
+    "gwy/gifs/gg_ng_mpkj01.gif": "4ef45afcfdc66547193974f64253d3eaf5db58d9978135fb7087c89e02262941",
+    "gwy/gifs/gg_ng_sgmc3.gif": "2ed5b08c2497d0c3acb6c3d304a11d8cc2e3fb413b412dd9754b722c2fa7920a",
+    "gwy/gifs/gg_ng_sgqxz1.gif": "96cd87b641525aefa6dc9dc5324d9c30d444ec81f08c66907983127621c9dd92",
+    "gwy/gifs/gg_ng_sgzc3.gif": "a3555a47627248e78fbcaa830b3386dfe3b3f9178785373e5e55122269121d97",
+    "gwy/gifs/gg_ng_ssjx3.gif": "05bc32ddf8d327974103436c543d89d0a35174a7a3ecce68b69e4b35fa8fd2fb",
+    "gwy/gifs/gg_ng_sxz.gif": "523a2390bb3d3945c5f6c74513c8a7fcbcf6bcdf50469e198499b10185d0c1cf",
+    "gwy/gifs/gg_ng_tlbb12.gif": "78473e4fabfb404579199b38af1cb1da4de6efe104d1bba1f29915830a00aab8",
+    "gwy/gifs/gg_ng_tyol2.gif": "ccba82d7d157b8faf4747e0584530a6f79bd09699adc8b8090045ee9053dfc88",
+    "gwy/gifs/gg_ng_xaxc.gif": "7244d44328d4f0b1667a4ab573dba66b9050f90a33739515fd645aa0c3ac2ed6",
+    "gwy/gifs/gg_ng_xjwq.gif": "7d1a5c78a36b04e7efbedb5709ea02558e0a647db517bcefd3438e1d6694fc6a",
+    "gwy/gifs/gg_ng_xpsx01.gif": "8e24706c9a669c9fcf68cc89ea35e87b4f9f6ee8b82b6c124228829704e09aac",
+    "gwy/gifs/gg_ng_xyj1.gif": "3b0de4ad104cdf38bdd8b9cbdd549246013315e7d30a4e6297b0e26cf7e027fa",
+    "gwy/gifs/gg_ng_yhzx01.gif": "02dd627e81828093801dc979f0cb5c5d08a0cd4c858483bf93d3f510b9f334c3",
+    "gwy/gifs/gg_ng_yxlm.gif": "d094bf1df37bc76e9febbe8d96615fbb7d2d7239487c0914d03c61d98a96e92f",
+    "gwy/gifs/gg_ng_zd.gif": "7f5494251f6e41ecdebfac12e5ebdbfd5e5e1a310e40634e2bc1a8afa0d96e78",
+    "gwy/gifs/gg_ng_zsol04.gif": "8a93f84d9e7ce1e42a445563807018d3672dd7dd2432a9888a1e4fb5b5893371",
+    "gwy/gifs/gg_xblt.gif": "2e693b93f510564e5082b082d6602281da7e05c1b381f32fdd01cee83e78725a",
+    "gwy/gifs/gifdesc.info": "a84525762755e7cce64b90d0967753949e19a62e8ffa4bd1674a452f9efda552",
+    "gwy/gifs/gifinfo.idx1": "9536acb298eb0f2953d01fdad8fd7f147858d34f7003c852a6b829cb1d389af5",
+    "gwy/gifs/gifinfo.idx13": "eac49f8a28d5be1dec929f43efa1fc435264fe77fbdef15ef57481d22ba6fa0b",
+    "gwy/gifs/gifinfo.idx21": "7fadc524c5d55fd03a7a3fd251c613a63a00f76a02b20e5af87be781c63facfb",
+    "gwy/gifs/gifinfo.idx22": "e74fce5580818b0ada5ffd8ef45a2968781e026c6e67ba364698b067cf4463ff",
+    "gwy/gifs/gifinfo.idx23": "e441f03babb209231fc635e2cdacc835c696f25c2bdfaf843a07264d707bfb4e",
+    "gwy/gifs/gifinfo.idx29": "9c70166f24c3887bef3b62c1e655ac91b29074349d002a9c114432f1cb810085",
+    "gwy/gifs/gifinfo.idx34": "a032b60c93342907a706eccd1f2dcf0f3b50c077e1be020228aa80662cd0be0a",
+    "gwy/gifs/gifinfo.idx40": "e27fbb69cf2e4ad9d8b41867e8febc757b524888c77d207b1d4d66484c298875",
+    "gwy/gifs/gifinfo.idx41": "0ed96ac19935fbc38a7027aa4e9a172767b1132d555992028fb2776f9afd7c06",
+    "gwy/gifs/gifinfo.idx42": "f944a0a0aacba23075fcdc53ed6a71b5a8e0a0922fcc39846167935020d4ca49",
+    "gwy/gifs/gifinfo.idx5": "d274c68724c16245aa7826cdf1653c8f09f43c98efa18245f88d573f88a525af",
+    "gwy/gifs/gifinfo.idx53": "f85fd1f44bc86d6d7fb1145683353b45a76197a054836abcf8eef382f59413ab",
+    "gwy/gifs/gifinfo.idx55": "10512e36e574758309085587897e74347e335afc9b22f4b6499571e113045360",
+    "gwy/gifs/gifinfo.idx61": "2e067a02cf55d2472e27e3189b57697dc40aee34f65888af39135d3d342e2671",
+    "gwy/gifs/gifinfo.idx7": "63b368d819b3d9284a8df227dfd1495cc6f7d1d54e01be2a01cd0c4f537147db",
+    "gwy/gifs/gifinfo.idx71": "a5fbcdf2ff7de3052d265e750183aa98ea7145003895f4d4d2e0e285586abe66",
+    "gwy/gifs/gifinfo.idx72": "71f7cf81eeb836b543868740e4dcc8eff816e415fbe062b03cd8dd5cb3eec8cc",
+    "gwy/gifs/gifinfo.idx82": "ae959a7f58ed156746180045780742788d3b6cf7a23ac2e139256d04a06e4bea",
+    "gwy/gifs/gifinfo.idx84": "144bd519de5b4f2a751801d4af39084993607b7de99089bc612d451c77e11eb4",
+    "gwy/gifs/gifinfo.idx87": "7fa3a29c468781bd32016abf2b4dfa7ea1741ebde7f2dc4280ef4d619bb37fe2",
+    "gwy/gifs/gifinfo.idx93": "d4afa0a1674409793736e314f2b3bcd59d86fe6343c593d4672d367b30c7e830",
+    "gwy/gifs/gifinfo.idx96": "fa24afc0c560b1ba23f8381c906049b037c5160a2db351983dcada731c60f2e7",
+    "gwy/gifs/gifinfo.idx99": "b1f9fd439220cc95b443f1877224ab3ea3a357f2c29c863bf9142a22310d2c61",
+    "gwy/gifs/wyzq_xajh.gif": "c53385a835aa34a9d7fa641ea26e6cd18b3385db9ce564d9363f61d5222221e7",
+    "gwy/gui.mrp": "508a4867815dc7e00aa3dfc95fe41e691ae348e21a8cc02d18a7000d30dbc207",
+    "gwy/hotchat.mrp": "8b221c5bf0e8613457fbb16ae09e7a79e2753aeb912e360c36da1ce178663b4b",
+    "gwy/hxsg_cfg.bin": "d455a3a725d56376adda3579992c03b779f89bd407bb29463a73ca80411e63c1",
+    "gwy/pmsg.mrp": "dc678b3641ac4399ed83cebc6d8ee70bc4f16f796f738d2914d70fc16a93089a",
+    "gwy/reglogin.mrp": "70da238867c82023a516f26f539b4a36ebf885ba1449866ca6c82853202ced82",
+    "gwy/resmng.mrp": "9d036ac6c696442c4508d7076b671d94fa96868bd4df9593e33b515b34fbc060",
+    "gwy/rollscr.mrp": "2b61ab8f6cc52ba885204b38a37fb7e26f05308ce37337272c797d0011fcb709",
+    "gwy/sound/msg.mid": "4bd584ed65f38fd15fd9c127d582dcb857e443e55ca4b1a32d0f6e5a0bab226a",
+    "gwy/svrctrl.mrp": "211230b19ce05d028aeb81353165c32285a19f9f395988a84f14dc0270d1683c",
+    "gwy/vdload.mrp": "5089b4f9f5d90b0edd90d9fe8b8b59ba07e28c1c78b00518e9803abdf2942961",
+    "gwy.mrp": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f",
+    "menu.dat": "31102d73244e5df36565446b0b0e7342c0599d062c09c5e996935163d058369a",
+    "plugin240400/cookie.mrp": "25f2f967da4f4ce000dff98e9d44102928f181bb7a3bcaee203012e421d07f15",
+    "plugins/advbar.mrp": "902f604ab9db00f762f6548b19e03b60d8b83aa2b3bc4e5b7b7e3e71a00891b4",
+    "plugins/brwcore.mrp": "5f312bce40cad9570a9e49f5d6c6e96561251b7470391a6fe292c5eabfa426c4",
+    "plugins/brwgui.mrp": "2a8d5f001278db35e2cd6f40425cf8a0057a33d108c9f0fe14aa0e4553792686",
+    "plugins/brwmain.mrp": "7ec0ecda025f1d9bd6dfd9916b12fb1ca16dcfa21a59176d18448f2ee9be2425",
+    "plugins/brwshell.mrp": "1ca0da9b25a47b21ae0eb4600a5300b40e034f987378d39ddaf843991f55311d",
+    "plugins/cloudstorage.mrp": "ec1e09b830d387c473d723804c58cbca312048fc000c4d5bea470155ab84fba8",
+    "plugins/comment.mrp": "84013e5e8a9bc9bf81854a327a8fbefbe729db0ebdcb78d2047471ed22d2ffcf",
+    "plugins/embrw.mrp": "e2d1387205b12de6dd321f767486b0e6478ce82a305d224e88ede19c03a86241",
+    "plugins/flaengine.mrp": "e8cf02e024c451368f8d2dd8af868a287b4e2aa5f278c231a749c2f1920e5d0d",
+    "plugins/freecurr.mrp": "0d3254e1aa5d2a96f40bc8777b1e8e70a370b01b76311b4296a5556df6026346",
+    "plugins/netcfg.mrp": "be92dff1b25f046749ec4968254468adbf398faa1f27b18ad6629b27ebba3c85",
+    "plugins/netpay.mrp": "6f6d7f07d9751860bd77f76e4b844bf60332e6a36af1966ccb86eecdff3cfd4c",
+    "plugins/ongame.mrp": "13185d3a33ff69734830265b25a3b3f8818f676f39f8ae4145d56a1998334c9c",
+    "plugins/passport.mrp": "1d89ede966343bd808069e5cd2716c5ab33816679f730a438500963555d4dcc5",
+    "plugins/passpt.mrp": "1bca2613d6f2b64f3a199783b513001753153a78b65b8325b67dc56adf0677fb",
+    "plugins/player.mrp": "1f936ffa603c4da86a7bf555a05c249ef6c34155afa3a19ff952e2482b6bc1ff",
+    "plugins/smsend.mrp": "850aafce207a2f5cbd8b440639c0ea8df68c6f57c8e933af1dba1f4a84fdea5c",
+    "plugins/wbrwassist.mrp": "7ae5430281ec5d145f9f9f56be8a0ebc30fba0093a3e6c65b80da7e263eae70d",
+    "plugins/wbrwcore.mrp": "c2212ce5d958fd43f2876ddc111a9287b66663ab3bb59a3c32490f5382e58185",
+    "plugins/wbrwmain.mrp": "50af9e6e5b8e70a443eeaceb645b79a45bbd1e429cf40c0ff5458101643b7888",
+    "plugins/wbrwshell.mrp": "9f7782b93624c85fc483071877c7a0f72852c863eb3e6f39fa053d6611cb3d20",
+    "plugins/wembrw.mrp": "bae041742cbc081b2862b39508bf09bb0db2bf0b1c9b34e84c13b151e2f1d67c",
+    "plugins/xrecom.mrp": "33036e1ac9df054b3b5d39ff1b6af5766d46fc41a6cfe468aa9eda114923a378",
+    "system/1008.uni": "5e3515001810f6e25363a9152b4d449877aa24b38c17a9358b178af94c36e5e6",
+    "system/___sftmp.mrp": "0af958f7e12c0fde6d2f14692238b662ad0b27e2bd11dbf9c283fda8e0c822c3",
+    "system/font16.unf": "4c860840f78d0a003b49a8706e38fa6e7581f85f62d76a32a0837a352b61cf84",
+    "system/font16_t.unf": "8a634038ceb253a35887c99117d78cc7b6bf8784a5d5b685c64362569278b645",
+    "system/fonts12.bin": "717d361f5114bb02eef1b1b2027af74ab4dbd8c8632c0324326d3c39079984a9",
+    "system/fonts14.bin": "330ed6e0089fa1432c41df8832304aacbaa986fa8b7b80b162eac754aeb8e99d",
+    "system/fonts16.bin": "e1357b837238ab8612c9f4b9a96b5b86187844cb0da183313ede1bc6b2c5d5f8",
+    "system/fullSrc.sys": "ba8c9eac092a503e4fb70771c34a00c5bb651043de24db4d3525ebbb3ee7ff08",
+    "system/gb12.bin": "4ce246305464f82e98ffef2ff9f4bd39638bd89d02174bb397c04e0615c0a09b",
+    "system/gb12.uc2": "f8e9a443e28eecce3a99f0ebf26a197b1ef5e65bab5406054ff7e985d48274b3",
+    "system/gb12_uc2.adl": "3149a176488216bda8e4656c918962584c19d29fdde1a9e40c162e0da3a33bce",
+    "system/gb12c.uc2": "a4b0b69a1b5c83f57d6b531b915bc2902c7a2dfa54bd6f4097897a82b34f6a1c",
+    "system/gb12v2.adl": "05ff9a62aeea4d5c8a2a0c3d2a45fa086c478e2f9628f1bbe1cdb75f3a9b61ee",
+    "system/gb12v2.uc2": "728e3c78b4a7ebd11c3cdcec671a4c0c70d2cb03fe5f919ca0b4379ac74533f9",
+    "system/gb16.bin": "e1357b837238ab8612c9f4b9a96b5b86187844cb0da183313ede1bc6b2c5d5f8",
+    "system/gb16.uc2": "6a6d819025765b4b967aa9dd5c7efc5c86b06265b73a14db91869b22bf3d2dd5",
+    "system/gb16_mrpoid.uc2": "127d4b969b2e9385f3611b6eb9f7c1b72191b70dedb7b21cd0417f76ae368308",
+    "system/gb16_uc2.adl": "3149a176488216bda8e4656c918962584c19d29fdde1a9e40c162e0da3a33bce",
+    "system/statis.sys": "39f0b99e2a92e20a3dd23fdac9e6701d59fb22704227b40c3018e99badc40c24",
+    "system/sysinfo.dat": "ac0ad03db355fa3266c4456819fedaba65186bf59a2795725a83a445be857417",
+    "time.py.sys": "b8a8437e42cf68f3a3ac59475363c6c326b3304b6a437576cd5e9ea22260de6e",
+    "usrConfig": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+    "ydqtwo.mrp": "2b79762e5bd51780e20ebb0fb5a39872d2d9987db884f64f44044a5bc52a0684"
+  },
+  "startedAt": "2026-09-14T04:55:34.755Z",
+  "requiredCount": 8,
+  "selectedCount": 8,
+  "method": "frozen-content-presented-lcd-controls-60s-scene-review-v2",
+  "complete": true,
+  "allPassed": false,
+  "results": [
+    {
+      "path": "160-240x320.mrp",
+      "sha256": "cad727d3087daef4db9975f6227177d0ec119f9543aa06cdb809a44ce3e833cb",
+      "storeCaseId": 160,
+      "title": "NES模拟器",
+      "id": 1,
+      "width": 240,
+      "height": 320,
+      "outcome": "runtime-error",
+      "phase": "start",
+      "error": "LuaRuntimeError: attempt to call a non-function",
+      "ticks": 0,
+      "keysTested": 0,
+      "inputChanges": 0,
+      "controlChanges": 0,
+      "presentedFrames": 0,
+      "interactionVerified": false,
+      "distinctFrames": 0,
+      "nonBlack": false,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "failure",
+          "sha256": "0c5cc90b079d0d9c1ded1376357d23a9782a704a83e01731f50ccd162e246492",
+          "image": "1-failure.png",
+          "clock": 0,
+          "colors": 1
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 81,
+      "debugOutput": "",
+      "manualReview": "整图加载越过原错误；start.mr PC100 调用缺失的 _bmpInfo(30)，仍待实现真实来宾像素地址接口",
+      "reviewImage": "2026-09-14-round3-scenes/160-failure.png"
+    },
+    {
+      "path": "197-240x320.mrp",
+      "sha256": "16afceaaaddcf7e341d51b715bd4006bbb6be1ce020e2bd5cd16ffedc85f9182",
+      "storeCaseId": 197,
+      "title": "RX管理器",
+      "id": 2,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 6,
+      "controlChanges": 2,
+      "presentedFrames": 19,
+      "interactionVerified": false,
+      "distinctFrames": 8,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "b9eca42625325b11acf286b078028a38217ca0281fbb1a5f0b0cbc675d49ebb7",
+          "image": "2-boot.png",
+          "clock": 4000,
+          "colors": 301
+        },
+        {
+          "name": "entry1",
+          "sha256": "08effa3e9cf1725c46d1784f1e2c67f47b52d4d42ae72c9af4ca13f84c05dd54",
+          "image": "2-entry1.png",
+          "clock": 5040,
+          "colors": 304
+        },
+        {
+          "name": "entry2",
+          "sha256": "bb6088fcd408e2e837cf614b0c66bf70b05f68725ef01c3eda46edac094e307b",
+          "image": "2-entry2.png",
+          "clock": 6080,
+          "colors": 304
+        },
+        {
+          "name": "entry3",
+          "sha256": "df0018cbedb3fdc0ebe85f7e93ab2339a5987520c518e3ec5b5ee762ae5fdbab",
+          "image": "2-entry3.png",
+          "clock": 7120,
+          "colors": 306
+        },
+        {
+          "name": "entry4",
+          "sha256": "29c5b83bf7c48677a55c685ea1bc6cca7f6dabe97db54adfc56a751668319d73",
+          "image": "2-entry4.png",
+          "clock": 8160,
+          "colors": 327
+        },
+        {
+          "name": "control1",
+          "sha256": "973f519830f54c7c97446ef71ac0f6d9ff69db52f84c860c3e3e9bc4e3ef3365",
+          "image": "2-control1.png",
+          "clock": 9360,
+          "colors": 328
+        },
+        {
+          "name": "control2",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control2.png",
+          "clock": 10560,
+          "colors": 219
+        },
+        {
+          "name": "control3",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control3.png",
+          "clock": 11760,
+          "colors": 219
+        },
+        {
+          "name": "control4",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control4.png",
+          "clock": 12960,
+          "colors": 219
+        },
+        {
+          "name": "control5",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control5.png",
+          "clock": 14160,
+          "colors": 219
+        },
+        {
+          "name": "control6",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control6.png",
+          "clock": 15360,
+          "colors": 219
+        },
+        {
+          "name": "control7",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control7.png",
+          "clock": 16560,
+          "colors": 219
+        },
+        {
+          "name": "control8",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control8.png",
+          "clock": 17760,
+          "colors": 219
+        },
+        {
+          "name": "control9",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-control9.png",
+          "clock": 18960,
+          "colors": 219
+        },
+        {
+          "name": "controls",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-controls.png",
+          "clock": 18960,
+          "colors": 219
+        },
+        {
+          "name": "sustained",
+          "sha256": "14824e70dbf29522427746ffaed1df826250a866f22d0588a6f8fd92aa87352d",
+          "image": "2-sustained.png",
+          "clock": 78960,
+          "colors": 219
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 1175,
+      "debugOutput": "",
+      "manualReview": "补齐平台 IO 内存；磁盘信息界面和持续运行已核验",
+      "reviewImage": "2026-09-14-round3-scenes/197-sustained.png"
+    },
+    {
+      "path": "236-240x320.mrp",
+      "sha256": "a303960b94607b64c2cc9e412aa1c428e53cd83540854d44caf103ed61c6b6e5",
+      "storeCaseId": 236,
+      "title": "按键扫描实例",
+      "id": 3,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 7,
+      "controlChanges": 3,
+      "presentedFrames": 987,
+      "interactionVerified": false,
+      "distinctFrames": 13,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "a9d38e1be290e395ca56dce29707a9c209fe8da3930dc6b3bffcf8e2a64d9860",
+          "image": "3-boot.png",
+          "clock": 4000,
+          "colors": 3
+        },
+        {
+          "name": "entry1",
+          "sha256": "911432d7a2db506847d7859675ee82fd0698b5f2f3db9dceef93d76cbbdb253f",
+          "image": "3-entry1.png",
+          "clock": 5040,
+          "colors": 4
+        },
+        {
+          "name": "entry2",
+          "sha256": "77206be53a70b4317de8b3b798c6ce9520a5bb3c102f82d1c21e4e4ca9140c60",
+          "image": "3-entry2.png",
+          "clock": 6080,
+          "colors": 4
+        },
+        {
+          "name": "entry3",
+          "sha256": "5181b67d7e688d936811c8ba67641a9eb12f16eec1fd0145847af8de6bfcc8d1",
+          "image": "3-entry3.png",
+          "clock": 7120,
+          "colors": 4
+        },
+        {
+          "name": "entry4",
+          "sha256": "c7436e44a5b7f65e0df1dbb5251075d65ab0b75a617d935bd5e8577d3d197f2c",
+          "image": "3-entry4.png",
+          "clock": 8160,
+          "colors": 4
+        },
+        {
+          "name": "control1",
+          "sha256": "748772ad4e2d71a873910e94203ea6d2b93a61f43b943bac9ee1eef8a2b2a021",
+          "image": "3-control1.png",
+          "clock": 9360,
+          "colors": 4
+        },
+        {
+          "name": "control2",
+          "sha256": "2b02cdd2640bf0c9d894f87dc60b04df68120fb028bae5c04fac98ad73e46598",
+          "image": "3-control2.png",
+          "clock": 10560,
+          "colors": 4
+        },
+        {
+          "name": "control3",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control3.png",
+          "clock": 11760,
+          "colors": 2
+        },
+        {
+          "name": "control4",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control4.png",
+          "clock": 12960,
+          "colors": 2
+        },
+        {
+          "name": "control5",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control5.png",
+          "clock": 14160,
+          "colors": 2
+        },
+        {
+          "name": "control6",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control6.png",
+          "clock": 15360,
+          "colors": 2
+        },
+        {
+          "name": "control7",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control7.png",
+          "clock": 16560,
+          "colors": 2
+        },
+        {
+          "name": "control8",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control8.png",
+          "clock": 17760,
+          "colors": 2
+        },
+        {
+          "name": "control9",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-control9.png",
+          "clock": 18960,
+          "colors": 2
+        },
+        {
+          "name": "controls",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-controls.png",
+          "clock": 18960,
+          "colors": 2
+        },
+        {
+          "name": "sustained",
+          "sha256": "da8ba429d017e92f78d336b0a96315f7380faab285ccd12acffadfdac32acc62",
+          "image": "3-sustained.png",
+          "clock": 78960,
+          "colors": 2
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 991,
+      "debugOutput": "",
+      "manualReview": "补齐平台 IO 内存；按键窗口有画面变化，持续运行完成",
+      "reviewImage": "2026-09-14-round3-scenes/236-sustained.png"
+    },
+    {
+      "path": "603-240x320.mrp",
+      "sha256": "46d9f44fc6e51fcc3d6bb46a2c85d3e584b15614edb215c6e2ddc64a3138fd6a",
+      "storeCaseId": 603,
+      "title": "俄罗斯方块",
+      "id": 4,
+      "width": 240,
+      "height": 320,
+      "outcome": "runtime-error",
+      "phase": "sustained",
+      "error": "LuaRuntimeError: Tile cell out of bounds",
+      "ticks": 562,
+      "keysTested": 13,
+      "inputChanges": 13,
+      "controlChanges": 9,
+      "presentedFrames": 47,
+      "interactionVerified": false,
+      "distinctFrames": 36,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "6f039f87063f1051bacbec4e8aeb9239acde6d65bba0dac2757cdde3bf6ef60a",
+          "image": "4-boot.png",
+          "clock": 4000,
+          "colors": 1248
+        },
+        {
+          "name": "entry1",
+          "sha256": "68af9b99e4f98af36c9a2aa6e1fa3a9fa1418273925a09100b528218672f19d2",
+          "image": "4-entry1.png",
+          "clock": 5040,
+          "colors": 528
+        },
+        {
+          "name": "entry2",
+          "sha256": "5c3223357d207d751e36ef07041fa058e2d3da0a3a1930d9ad0967f6f30c0817",
+          "image": "4-entry2.png",
+          "clock": 6080,
+          "colors": 528
+        },
+        {
+          "name": "entry3",
+          "sha256": "b5f0862b8359e0007e8cedb5da6afa1374de4e1323f4363f61ba26a74a1ae65d",
+          "image": "4-entry3.png",
+          "clock": 7120,
+          "colors": 528
+        },
+        {
+          "name": "entry4",
+          "sha256": "0f018847fa5f94d237be31da65111896cb137f616241f3046d1813f5615d5c86",
+          "image": "4-entry4.png",
+          "clock": 8160,
+          "colors": 528
+        },
+        {
+          "name": "control1",
+          "sha256": "61609b8daae91265a12484815c164a5e08f38f1a1dfc928328d3888e27dc7c9b",
+          "image": "4-control1.png",
+          "clock": 9360,
+          "colors": 528
+        },
+        {
+          "name": "control2",
+          "sha256": "f8c922d28217964e13a768fd9452ec58ecb0d735b4bfa337ff9a09e6a9263ca9",
+          "image": "4-control2.png",
+          "clock": 10560,
+          "colors": 528
+        },
+        {
+          "name": "control3",
+          "sha256": "c4ccecdb779fc66551a08ca5f3c63fb250a267cbe5c4ead37ca27d12bb1d0d38",
+          "image": "4-control3.png",
+          "clock": 11760,
+          "colors": 536
+        },
+        {
+          "name": "control4",
+          "sha256": "c15dacd7dde18f6d23e95ac91737b91af39c9fc32291bd916dd8145fdc1fa0ef",
+          "image": "4-control4.png",
+          "clock": 12960,
+          "colors": 545
+        },
+        {
+          "name": "control5",
+          "sha256": "ff47a0a5848545d6aa7d54e31b78614ce1ed61305ecbb6396e9ff019449056df",
+          "image": "4-control5.png",
+          "clock": 14160,
+          "colors": 545
+        },
+        {
+          "name": "control6",
+          "sha256": "00bb35038e0f8a2da621caabdf47b46126c2b5dbcd82f0feafd5ac6cd8619d62",
+          "image": "4-control6.png",
+          "clock": 15360,
+          "colors": 545
+        },
+        {
+          "name": "control7",
+          "sha256": "18b9387ca72eabff80dd62ffcc9f7e6f8c5b21c98039714c843f3e203ad5d030",
+          "image": "4-control7.png",
+          "clock": 16560,
+          "colors": 536
+        },
+        {
+          "name": "control8",
+          "sha256": "7b6d528b5a7aa6c7abf592fd588b982f9a854682e8e91d1ced52fb8e7a7f54f8",
+          "image": "4-control8.png",
+          "clock": 17760,
+          "colors": 545
+        },
+        {
+          "name": "control9",
+          "sha256": "0933918c04abd8b1e1a77745aba9a3146f68f33d823f2a5494cfbe1d16a99ca6",
+          "image": "4-control9.png",
+          "clock": 18960,
+          "colors": 545
+        },
+        {
+          "name": "controls",
+          "sha256": "0933918c04abd8b1e1a77745aba9a3146f68f33d823f2a5494cfbe1d16a99ca6",
+          "image": "4-controls.png",
+          "clock": 18960,
+          "colors": 545
+        },
+        {
+          "name": "failure",
+          "sha256": "806bc2b4ab9d0591d77e0dfa3f2a1fc17bf8bc526fbd0e820ff8fd8be398a700",
+          "image": "4-failure.png",
+          "clock": 45040,
+          "colors": 545
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 350,
+      "debugOutput": "",
+      "manualReview": "整图加载兼容已修；短冒烟通过，较长操作仍触发 SetTile(0,11,21,0) 越界，不能算持续运行修复",
+      "reviewImage": "2026-09-14-round3-scenes/603-failure.png"
+    },
+    {
+      "path": "782-240x320.mrp",
+      "sha256": "562a9db0d8c1c51d50550e8a4593f4acd72b76be92cd74035ecfa0602f5ceb0f",
+      "storeCaseId": 782,
+      "title": "股票交易版",
+      "id": 5,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 8,
+      "controlChanges": 8,
+      "presentedFrames": 12,
+      "interactionVerified": false,
+      "distinctFrames": 8,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-boot.png",
+          "clock": 4000,
+          "colors": 7
+        },
+        {
+          "name": "entry1",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-entry1.png",
+          "clock": 5040,
+          "colors": 7
+        },
+        {
+          "name": "entry2",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-entry2.png",
+          "clock": 6080,
+          "colors": 7
+        },
+        {
+          "name": "entry3",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-entry3.png",
+          "clock": 7120,
+          "colors": 7
+        },
+        {
+          "name": "entry4",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-entry4.png",
+          "clock": 8160,
+          "colors": 7
+        },
+        {
+          "name": "control1",
+          "sha256": "a0cc4857561ad9ec3a6186048028276cbde0070c976ee511a8035b88b326d6c3",
+          "image": "5-control1.png",
+          "clock": 9360,
+          "colors": 7
+        },
+        {
+          "name": "control2",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "5-control2.png",
+          "clock": 10560,
+          "colors": 7
+        },
+        {
+          "name": "control3",
+          "sha256": "cf06f0d51be047888cc67dfab73c00a6005d9fc6298fd81d6b4ce99908a33cb3",
+          "image": "5-control3.png",
+          "clock": 11760,
+          "colors": 7
+        },
+        {
+          "name": "control4",
+          "sha256": "cf06f0d51be047888cc67dfab73c00a6005d9fc6298fd81d6b4ce99908a33cb3",
+          "image": "5-control4.png",
+          "clock": 12960,
+          "colors": 7
+        },
+        {
+          "name": "control5",
+          "sha256": "5ae463270b09b0e76d8b98b1ca15565b4fe9ecb963d37794fa1c1cf460d723c5",
+          "image": "5-control5.png",
+          "clock": 14160,
+          "colors": 7
+        },
+        {
+          "name": "control6",
+          "sha256": "8e80057ea2da91cf1c6714a3544f1d527c47789d53002b9b677a0598b1ea97fc",
+          "image": "5-control6.png",
+          "clock": 15360,
+          "colors": 7
+        },
+        {
+          "name": "control7",
+          "sha256": "d5aba159fb3d67419278819c74298071470816d637f06293ec17a261d8df41f6",
+          "image": "5-control7.png",
+          "clock": 16560,
+          "colors": 7
+        },
+        {
+          "name": "control8",
+          "sha256": "b0b9d582d63bfd1cc631f4c8d06268c7fc67df36598028ca2f67b04235b47143",
+          "image": "5-control8.png",
+          "clock": 17760,
+          "colors": 7
+        },
+        {
+          "name": "control9",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "5-control9.png",
+          "clock": 18960,
+          "colors": 7
+        },
+        {
+          "name": "controls",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "5-controls.png",
+          "clock": 18960,
+          "colors": 7
+        },
+        {
+          "name": "sustained",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "5-sustained.png",
+          "clock": 78960,
+          "colors": 7
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 647,
+      "debugOutput": "",
+      "manualReview": "自动识别 _start.mr；60 秒场景可操作并到登录界面，固定冒烟仍静态，在线功能未验证",
+      "reviewImage": "2026-09-14-round3-scenes/782-sustained.png"
+    },
+    {
+      "path": "917-240x320.mrp",
+      "sha256": "d43cb4b47fdd0417809ea2e20301290099de70b7321abf8eb2a7591a27e8bb14",
+      "storeCaseId": 917,
+      "title": "魂之利刃",
+      "id": 6,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 13,
+      "controlChanges": 9,
+      "presentedFrames": 987,
+      "interactionVerified": false,
+      "distinctFrames": 17,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "273267b3d86b43cd82a76756520bcb11b4765dfb9060a915984fff0efc21e533",
+          "image": "6-boot.png",
+          "clock": 4100,
+          "colors": 50
+        },
+        {
+          "name": "entry1",
+          "sha256": "8324b71028fd85346d1fdff524b9263875571b667e0a76bda1cc6730d0382409",
+          "image": "6-entry1.png",
+          "clock": 5140,
+          "colors": 64
+        },
+        {
+          "name": "entry2",
+          "sha256": "ed04ed567789ff3bcca014c560d6e2d062abe6e007b3b8435160ab19222aaa19",
+          "image": "6-entry2.png",
+          "clock": 6180,
+          "colors": 74
+        },
+        {
+          "name": "entry3",
+          "sha256": "1ab902c635f241725092aade51ac52f66de6effbf35ab032e6a68ae54459b0c1",
+          "image": "6-entry3.png",
+          "clock": 7220,
+          "colors": 323
+        },
+        {
+          "name": "entry4",
+          "sha256": "bcd45c9f8bf0ceb1bff00bca0ca4ec6a3e34573063acb76b5957b48cbd091cd8",
+          "image": "6-entry4.png",
+          "clock": 8260,
+          "colors": 198
+        },
+        {
+          "name": "control1",
+          "sha256": "88ae2242596a6e8d0a847a0ae43d3deac7087eb32a3ef8b76fb47b95daf71acd",
+          "image": "6-control1.png",
+          "clock": 9460,
+          "colors": 198
+        },
+        {
+          "name": "control2",
+          "sha256": "a6b8037f2ef3872ae62fc7028953fd4399068fdb35863e2fe6e93a409b16cbae",
+          "image": "6-control2.png",
+          "clock": 10660,
+          "colors": 198
+        },
+        {
+          "name": "control3",
+          "sha256": "32100329da41a938d292e91696388680ac23c1685516368da2d3d2c79d846048",
+          "image": "6-control3.png",
+          "clock": 11860,
+          "colors": 198
+        },
+        {
+          "name": "control4",
+          "sha256": "bcd45c9f8bf0ceb1bff00bca0ca4ec6a3e34573063acb76b5957b48cbd091cd8",
+          "image": "6-control4.png",
+          "clock": 13060,
+          "colors": 198
+        },
+        {
+          "name": "control5",
+          "sha256": "88ae2242596a6e8d0a847a0ae43d3deac7087eb32a3ef8b76fb47b95daf71acd",
+          "image": "6-control5.png",
+          "clock": 14260,
+          "colors": 198
+        },
+        {
+          "name": "control6",
+          "sha256": "a6b8037f2ef3872ae62fc7028953fd4399068fdb35863e2fe6e93a409b16cbae",
+          "image": "6-control6.png",
+          "clock": 15460,
+          "colors": 198
+        },
+        {
+          "name": "control7",
+          "sha256": "32100329da41a938d292e91696388680ac23c1685516368da2d3d2c79d846048",
+          "image": "6-control7.png",
+          "clock": 16660,
+          "colors": 198
+        },
+        {
+          "name": "control8",
+          "sha256": "bcd45c9f8bf0ceb1bff00bca0ca4ec6a3e34573063acb76b5957b48cbd091cd8",
+          "image": "6-control8.png",
+          "clock": 17860,
+          "colors": 198
+        },
+        {
+          "name": "control9",
+          "sha256": "231a422277b351b20561563f7a3e0133ebbf6b7821d130abcf3f3808af6074d1",
+          "image": "6-control9.png",
+          "clock": 19060,
+          "colors": 198
+        },
+        {
+          "name": "controls",
+          "sha256": "231a422277b351b20561563f7a3e0133ebbf6b7821d130abcf3f3808af6074d1",
+          "image": "6-controls.png",
+          "clock": 19060,
+          "colors": 198
+        },
+        {
+          "name": "sustained",
+          "sha256": "3a09fc5c88cc4abdf4aab0644053e2e548a6c6b6430790a38da6973f1a77a4ab",
+          "image": "6-sustained.png",
+          "clock": 79060,
+          "colors": 198
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [
+        "plugins/kbill.mrp",
+        "plugins/addons.mrp"
+      ],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 8330,
+      "debugOutput": "",
+      "manualReview": "补齐 0x40000000 平台内存；进入战斗教学并完成持续运行",
+      "reviewImage": "2026-09-14-round3-scenes/917-sustained.png"
+    },
+    {
+      "path": "2359-240x320.mrp",
+      "sha256": "64985a6142e039cca487d6a75649b12e67d998c90743449cbf3ea2cc14e6dcad",
+      "storeCaseId": 2359,
+      "title": "移动股票王",
+      "id": 7,
+      "width": 240,
+      "height": 320,
+      "outcome": "needs-scene-review",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 8,
+      "controlChanges": 8,
+      "presentedFrames": 12,
+      "interactionVerified": false,
+      "distinctFrames": 8,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-boot.png",
+          "clock": 4000,
+          "colors": 7
+        },
+        {
+          "name": "entry1",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-entry1.png",
+          "clock": 5040,
+          "colors": 7
+        },
+        {
+          "name": "entry2",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-entry2.png",
+          "clock": 6080,
+          "colors": 7
+        },
+        {
+          "name": "entry3",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-entry3.png",
+          "clock": 7120,
+          "colors": 7
+        },
+        {
+          "name": "entry4",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-entry4.png",
+          "clock": 8160,
+          "colors": 7
+        },
+        {
+          "name": "control1",
+          "sha256": "a0cc4857561ad9ec3a6186048028276cbde0070c976ee511a8035b88b326d6c3",
+          "image": "7-control1.png",
+          "clock": 9360,
+          "colors": 7
+        },
+        {
+          "name": "control2",
+          "sha256": "6172534d49f4fa77bbc5bccac2e77ee783188f01ba7379c9382928770055a247",
+          "image": "7-control2.png",
+          "clock": 10560,
+          "colors": 7
+        },
+        {
+          "name": "control3",
+          "sha256": "cf06f0d51be047888cc67dfab73c00a6005d9fc6298fd81d6b4ce99908a33cb3",
+          "image": "7-control3.png",
+          "clock": 11760,
+          "colors": 7
+        },
+        {
+          "name": "control4",
+          "sha256": "cf06f0d51be047888cc67dfab73c00a6005d9fc6298fd81d6b4ce99908a33cb3",
+          "image": "7-control4.png",
+          "clock": 12960,
+          "colors": 7
+        },
+        {
+          "name": "control5",
+          "sha256": "5ae463270b09b0e76d8b98b1ca15565b4fe9ecb963d37794fa1c1cf460d723c5",
+          "image": "7-control5.png",
+          "clock": 14160,
+          "colors": 7
+        },
+        {
+          "name": "control6",
+          "sha256": "8e80057ea2da91cf1c6714a3544f1d527c47789d53002b9b677a0598b1ea97fc",
+          "image": "7-control6.png",
+          "clock": 15360,
+          "colors": 7
+        },
+        {
+          "name": "control7",
+          "sha256": "d5aba159fb3d67419278819c74298071470816d637f06293ec17a261d8df41f6",
+          "image": "7-control7.png",
+          "clock": 16560,
+          "colors": 7
+        },
+        {
+          "name": "control8",
+          "sha256": "b0b9d582d63bfd1cc631f4c8d06268c7fc67df36598028ca2f67b04235b47143",
+          "image": "7-control8.png",
+          "clock": 17760,
+          "colors": 7
+        },
+        {
+          "name": "control9",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "7-control9.png",
+          "clock": 18960,
+          "colors": 7
+        },
+        {
+          "name": "controls",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "7-controls.png",
+          "clock": 18960,
+          "colors": 7
+        },
+        {
+          "name": "sustained",
+          "sha256": "56fd2f8d8550403b3447c0702e6c79a6bd25c2b9f342386fa49568683ad0e0c5",
+          "image": "7-sustained.png",
+          "clock": 78960,
+          "colors": 7
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 621,
+      "debugOutput": "",
+      "manualReview": "自动识别 _start.mr；60 秒场景可操作并到登录界面，固定冒烟仍静态，在线功能未验证",
+      "reviewImage": "2026-09-14-round3-scenes/2359-sustained.png"
+    },
+    {
+      "path": "2391-240x320.mrp",
+      "sha256": "87cb6c554bb130b17ba046fb651c00a49332d03ffd97e9c23805a8d8290a504c",
+      "storeCaseId": 2391,
+      "title": "应用软件>>",
+      "id": 8,
+      "width": 240,
+      "height": 320,
+      "outcome": "no-input-response",
+      "phase": "complete",
+      "error": null,
+      "ticks": 987,
+      "keysTested": 13,
+      "inputChanges": 0,
+      "controlChanges": 0,
+      "presentedFrames": 2,
+      "interactionVerified": false,
+      "distinctFrames": 1,
+      "nonBlack": true,
+      "sceneVerified": false,
+      "checkpoints": [
+        {
+          "name": "boot",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-boot.png",
+          "clock": 4000,
+          "colors": 5
+        },
+        {
+          "name": "entry1",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-entry1.png",
+          "clock": 5040,
+          "colors": 5
+        },
+        {
+          "name": "entry2",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-entry2.png",
+          "clock": 6080,
+          "colors": 5
+        },
+        {
+          "name": "entry3",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-entry3.png",
+          "clock": 7120,
+          "colors": 5
+        },
+        {
+          "name": "entry4",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-entry4.png",
+          "clock": 8160,
+          "colors": 5
+        },
+        {
+          "name": "control1",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control1.png",
+          "clock": 9360,
+          "colors": 5
+        },
+        {
+          "name": "control2",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control2.png",
+          "clock": 10560,
+          "colors": 5
+        },
+        {
+          "name": "control3",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control3.png",
+          "clock": 11760,
+          "colors": 5
+        },
+        {
+          "name": "control4",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control4.png",
+          "clock": 12960,
+          "colors": 5
+        },
+        {
+          "name": "control5",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control5.png",
+          "clock": 14160,
+          "colors": 5
+        },
+        {
+          "name": "control6",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control6.png",
+          "clock": 15360,
+          "colors": 5
+        },
+        {
+          "name": "control7",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control7.png",
+          "clock": 16560,
+          "colors": 5
+        },
+        {
+          "name": "control8",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control8.png",
+          "clock": 17760,
+          "colors": 5
+        },
+        {
+          "name": "control9",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-control9.png",
+          "clock": 18960,
+          "colors": 5
+        },
+        {
+          "name": "controls",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-controls.png",
+          "clock": 18960,
+          "colors": 5
+        },
+        {
+          "name": "sustained",
+          "sha256": "839e362e056e816a2fc76509791cb9f45445f3c6234cfe1b6d6df99bbaeddaa0",
+          "image": "8-sustained.png",
+          "clock": 78960,
+          "colors": 5
+        }
+      ],
+      "vibrationRequests": [],
+      "resourceFilesSha256": {},
+      "missingComponents": [],
+      "offlineServiceRequests": [],
+      "networkInterceptions": [],
+      "exited": false,
+      "unknownSlot": null,
+      "unknownEvents": [],
+      "elapsedMs": 359,
+      "debugOutput": "",
+      "manualReview": "GUI 小写别名及 DSM 配置接口已补；显示更多游戏提示，未证明输入有效",
+      "reviewImage": "2026-09-14-round3-scenes/2391-sustained.png"
+    }
+  ]
+}

@@ -2,9 +2,21 @@
 
 Browser-native Mythroad MRP runtime.
 
+2026-09-14：[在线商店 2640 项兼容性测试与修复报告](docs/compatibility/2026-09-14-store.md) · [剩余问题清单](docs/compatibility/2026-09-14-store-issues.md)。
+
+[第二轮：430 项复测、持续运行与声音修复](docs/compatibility/2026-09-14-store-round2.md)
+
+[第三轮：剩余 317 项复测与平台、GUI 修复](docs/compatibility/2026-09-14-store-round3.md)
+
+[第四轮：313 项持续复查进展](docs/compatibility/2026-09-14-store-round4-progress.md)
+
 本项目原创代码采用 **GNU Affero General Public License v3.0（AGPL-3.0-only）**，完整协议见 [LICENSE](LICENSE)。第三方依赖、字库、插件和游戏文件保留各自的权利与许可，不因本项目的协议声明而改为 AGPL；组件来源见 [assets/README.md](assets/README.md)。
 
-当前内置经典精选 100 个游戏文件，支持按名称或类型搜索，也可直接打开玩家本地的 MRP 文件。支持按键与触屏输入、自动/手动分辨率。已修复屏幕尺寸全局变量导致的清屏残留，并支持封装游戏使用的内存 MRP 和 EXT 加载。兼容性仍在完善，不能保证所有 MRP 正常运行。
+当前 fork 精选清单随生成配置变化（本次为 1 个《白跑分》），在线商店提供约 2600 个 MRP 应用，支持按名称或类型搜索，也可直接打开玩家本地的 MRP 文件。支持按键与触屏输入、自动/手动分辨率。已修复屏幕尺寸全局变量导致的清屏残留，并支持封装游戏使用的内存 MRP 和 EXT 加载。兼容性仍在完善，不能保证所有 MRP 正常运行。
+
+首页（目录页）默认打开 **在线商店** 分类：列表来自 `https://mrpstore.gddhy.net/api/list.json.gz`（gzip 压缩的 JSON，约 2600 个 MRP 应用，含图标、介绍、作者、分辨率与下载地址）。列表会缓存到浏览器 IndexedDB（`flymrp-store`）：再次打开先展示本地缓存、随后在后台请求 API 并写回缓存。点击条目后：桌面端在右侧（移动端在底部）展示该应用的信息与**下载进度**，下载完成后把 `.mrp` 存入 SD 卡 `games/store/` 并亮出“运行”按钮，由玩家点击后才交给网页内模拟器运行，不会直接跳转；已下载的条目再次点击直接显示“运行”。
+
+“全部/我的游戏”里的本地与内置 MRP 包会通过 `src/mrp/archive.ts` 读取包内 `appname`（应用名）用于展示，并用包内 `appid` 按 32 进制大写规则（同商店：`appid` → `0123456789ABCDEFGHIJKLMNOPQRSTUV`）拼出 `https://mrpstore.gddhy.net/mrp-icon/<32进制>.png` 尝试显示真实图标，图标不存在或加载失败时回退为原文件名首字符；包信息缓存在本地 IndexedDB，避免每次重复读取整个 MRP 文件。在线商店依赖 `DecompressionStream`，KaiOS 2.x（Firefox 48）等老内核不支持时该分类自动隐藏、首页退回“全部”。
 
 ```bash
 npm install
