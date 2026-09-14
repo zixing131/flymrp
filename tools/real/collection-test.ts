@@ -15,7 +15,7 @@ import { FrameCapture } from "./frame-capture.ts";
 import { inferScreenSize } from "../../src/mythroad/device-size.ts";
 
 type Game = { id: number; path: string; sha256: string; required?: boolean };
-type Action = ({ key: string } | { tap: [number, number] } | { swipe: [[number, number], [number, number]] }) & { hold?: number; wait?: number };
+type Action = (({ key: string } | { tap: [number, number] } | { swipe: [[number, number], [number, number]] }) & { hold?: number; wait?: number }) | { idle: number };
 type Scenario = { profile?: Partial<import("../../src/mythroad/profile.ts").DeviceProfile>; clock?: "deterministic" | "monotonic"; tickMs?: number; entry?: Action[]; controls?: Action[]; bootTicks?: number; tailTicks?: number; gameplaySha256?: string[]; controlSha256?: string[]; reviewNote?: string };
 const manifestPath = resolve(process.env.MRP_TEST_MANIFEST ?? "docs/compatibility/collection-100.json");
 const scenarioPath = resolve(process.env.MRP_TEST_SCENARIOS ?? "docs/compatibility/scenarios.json");
@@ -60,6 +60,7 @@ if(worker) {
   const distinct=new Set<string>();
   const fingerprint=()=>hash(new Uint8Array(display.pixels.buffer,display.pixels.byteOffset,display.pixels.byteLength));
   const checkpoints: {name:string;sha256:string;image:string;clock:number;colors:number}[]=[];
+  const inputCheckpoints = new Set<string>();
   const capture=(name:string)=>{
     const sha256=fingerprint(),image=`${game.id}-${name}.png`;
     writeFileSync(join(output,image),png(rt.screenW,rt.screenH,display.pixels));
@@ -68,6 +69,12 @@ if(worker) {
   };
   const tick=(count:number)=>{for(let i=0;i<count;i++){rt.advance(scenario.tickMs??80);for(let n=0;n<16&&rt.step();n++);if(rt.exited)throw new Error("guest exited");ticks++;if(ticks%5===0)distinct.add(fingerprint());}};
   const tap=(action:Action)=>{
+    // Observe timers or a queued release without injecting another input.
+    // Animation during an idle action is not evidence of working controls.
+    if ("idle" in action) {
+      if (!Number.isSafeInteger(action.idle) || action.idle < 0) throw new Error("idle must be a non-negative integer tick count");
+      tick(action.idle);return;
+    }
     const before=fingerprint();
     if ("swipe" in action) {
       const [from,to]=action.swipe, steps=Math.max(1,action.hold??3);
@@ -92,13 +99,16 @@ if(worker) {
     for(const [index,action] of entry.entries()){tap(action);capture(`entry${index+1}`);}
     phase="controls";
     const controls=scenario.controls??["UP","RIGHT","DOWN","LEFT","2","6","8","4","5"].map(key=>({key,hold:5,wait:10}));
-    for(const [index,action] of controls.entries()){tap(action);capture(`control${index+1}`);}
+    for(const [index,action] of controls.entries()){
+      tap(action);const name=`control${index+1}`;capture(name);
+      if (!("idle" in action)) inputCheckpoints.add(name);
+    }
     capture("controls");phase="sustained";
     tick(Math.max(scenario.tailTicks??0,Math.ceil(60000/(scenario.tickMs??80))));capture("sustained");phase="complete";
   } catch(e) {error=e instanceof Error?`${e.name}: ${e.message}`:String(e);capture("failure");}
   const nonBlack=display.pixels.some(p=>p!==0),expected=scenario.gameplaySha256??[];
   const sceneVerified=expected.length>0&&checkpoints.some(c=>expected.includes(c.sha256));
-  const interactionVerified=(scenario.controlSha256??[]).length>0&&checkpoints.some(c=>c.name.startsWith("control")&&scenario.controlSha256!.includes(c.sha256));
+  const interactionVerified=(scenario.controlSha256??[]).length>0&&checkpoints.some(c=>inputCheckpoints.has(c.name)&&scenario.controlSha256!.includes(c.sha256));
   const outcome=rt.exited?"exited":error?"runtime-error":!nonBlack?"black-screen":controlChanges===0?"no-input-response":(!sceneVerified||!interactionVerified)?"needs-scene-review":"passed";
   console.log(JSON.stringify({...game,...profile,outcome,phase,error,ticks,keysTested,inputChanges,controlChanges,presentedFrames:display.frames,interactionVerified,distinctFrames:distinct.size,nonBlack,sceneVerified,
     checkpoints,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??""}));

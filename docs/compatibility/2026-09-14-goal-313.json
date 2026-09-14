@@ -3028,6 +3028,12 @@
         "scoreAfter": 2,
         "restartEvidence": "artifacts/compat-20260914/round10-lifecycle/results.json",
         "note": "尝试重开时选择到离开游戏，尚未区分场景坐标与实现问题"
+      },
+      "round11Review": {
+        "status": "unresolved-restart-confirm-exits",
+        "artifact": "artifacts/compat-20260914/round11-confirm-down/results.json",
+        "scenario": "artifacts/compat-20260914/round11-probes/confirm-down.json",
+        "note": "纯等待后截图仍显示再来一次选中；按下确认后退出，修正第十轮误选离开游戏的推断。尚未定位具体实现缺陷。"
       }
     },
     {
