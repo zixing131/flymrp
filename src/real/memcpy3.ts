@@ -53,7 +53,7 @@ export const MEMCPY3 = {
   strcmpBlx: 0x01ea8fac,
   filePosBlx: 0x01ea8fda,
   fileLenBlx: 0x01ea8fec,
-  p: 0x0034b728,
+  p: 0x00a4b728,
   helper: 0x01ea5e9d,
   erRw: 0x0024b704,
   insnCount: 332,

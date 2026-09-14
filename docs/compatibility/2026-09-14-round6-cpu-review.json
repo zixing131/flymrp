@@ -1,0 +1,40 @@
+{
+  "caseId": 87,
+  "status": "manually-reviewed",
+  "rawArtifact": "artifacts/compat-20260914/round6-cpu-interactive/results.json",
+  "rawSha256": "44d7cc492785dbc8c065512676dd96a2c902972089a6e27f113481194ffdef95",
+  "clock": "monotonic performance.now, matching browser worker",
+  "criteria": [
+    "首次完整跑分五项均为正数",
+    "左软键重新跑分得到另一组完整分数",
+    "随后持续运行无异常"
+  ],
+  "scoreFields": [
+    "加法",
+    "快排",
+    "素数",
+    "刷屏",
+    "总分"
+  ],
+  "bootScores": [
+    1288119,
+    55,
+    314845,
+    12116,
+    1615135
+  ],
+  "restartScores": [
+    1354863,
+    59,
+    312166,
+    16941,
+    1683729
+  ],
+  "rawOutcome": "needs-scene-review",
+  "note": "实际计时分数随宿主速度变化，人工复核冻结截图；不改写原始结果，也不使用固定分数指纹。",
+  "screenshots": {
+    "1-boot.png": "27f606eb2d42866994e3488023134130ca47893824c3759cf70915cf893888ea",
+    "1-control1.png": "80b9173d6de6f7628bb4f144f3b9a435f9721dfec4479de1438e8413083016ec",
+    "1-sustained.png": "80b9173d6de6f7628bb4f144f3b9a435f9721dfec4479de1438e8413083016ec"
+  }
+}

@@ -6,6 +6,26 @@ import { MrTableBridge } from "../../src/mythroad/mr-table.ts";
 import { MythroadVfs } from "../../src/mythroad/vfs.ts";
 
 describe("shared Mythroad heap and framebuffer", () => {
+  it('keeps large unpacking buffers inside the advertised heap and reuses them after release', () => {
+    const ext = new ExtRuntime(), bridge = new MrTableBridge(ext, new MythroadVfs(), 'large-buffer');
+    bridge.install();
+    const get = (slot: number) => ext.mem.read32(ext.mem.read32(tableSlotAddr(slot)));
+    const base = get(108), end = get(110), bump = ext.heapTop;
+    expect(get(109)).toBe(8 * 1024 * 1024);
+    expect(end - base).toBe(get(109));
+    const size = 2 * 1024 * 1024;
+    for (let i = 0; i < 8; i++) {
+      const pointer = bridge.malloc(size);
+      expect(pointer).toBe(base);
+      expect(pointer + size).toBeLessThanOrEqual(end);
+      ext.mem.write32(pointer + size - 4, i);
+      expect(get(111)).toBe(get(109) - size);
+      bridge.free(pointer, size);
+      expect(get(111)).toBe(get(109));
+    }
+    expect(ext.heapTop).toBe(bump);
+    expect(bridge.liveAllocs()).toHaveLength(0);
+  });
   it('allows SDK destructor cleanup after free and reuses the block at the next ABI call', () => {
     const ext = new ExtRuntime(), bridge = new MrTableBridge(ext, new MythroadVfs(), 'destructor'); bridge.install();
     const pointer = bridge.malloc(16), code = ext.alloc(64);

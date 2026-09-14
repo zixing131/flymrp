@@ -37,7 +37,7 @@ describe("5-C.10H table[40] / mr_open forensics", () => {
     expect(r.cpu.cpsr).toBe(0x10);
     expect(r.cpu.tBit).toBe(0);
     expect(r.cpu.insnCount).toBe(221);
-    expect(r.p).toBe(0x0034b728);
+    expect(r.p).toBe(0x00a4b728);
     expect(r.erRw).toBe(0x0024b704);
 
     expect(r.r0Text).toBe(r.owner);

@@ -10,7 +10,7 @@ import { MythroadVfs } from "../../src/mythroad/vfs.ts";
 const REAL_APP = resolve(import.meta.dirname, "../fixtures/real/app.mrp");
 const THUMB_INIT = 0x01ea5e0c;
 const HELPER = 0x01ea5e9d;
-const P = 0x0034b728;
+const P = 0x00a4b728;
 const ER_RW = 0x0024b704;
 
 describe("5-C.5 isolated cfunction.ext init", () => {

@@ -32,10 +32,10 @@ describe("5-C.5 cfunction init / code-6 forensics", () => {
     expect(r.fault.kind).toBe("RETURN");
     expect(r.fault.faultPc).toBe(REAL_MRP_BASELINE.stopPc);
     expect(r.fault.r9).toBe(0x0024b704);
-    expect(r.fault.p).toBe(0x0034b728);
+    expect(r.fault.p).toBe(0x00a4b728);
     expect(r.fault.helper).toBe(0x01ea5e9d);
     expect(r.fault.erRw).toBe(0x0024b704);
-    expect(r.preCall?.route).toEqual({ p: 0x0034b728, helper: 0x01ea5e9d });
+    expect(r.preCall?.route).toEqual({ p: 0x00a4b728, helper: 0x01ea5e9d });
     expect(r.code6Call).toMatchObject({
       entered: true,
       kind: "return",

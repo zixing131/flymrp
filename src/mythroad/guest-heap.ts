@@ -9,7 +9,10 @@ export class GuestHeap {
   get head(): number { return this.ext.mem.read32(tableSlotAddr(146)); }
   get base(): number { return this.get(108); }
   get end(): number { return this.get(110); }
-  constructor(readonly ext: ExtRuntime, readonly size = 1024 * 1024) {
+  // Keep unpacking buffers in the guest-visible, reusable allocator. A 1 MiB
+  // arena forces larger titles into the separate EXT bump allocation region,
+  // whose blocks cannot participate in a vendor's temporary arena splice.
+  constructor(readonly ext: ExtRuntime, readonly size = 8 * 1024 * 1024) {
     this.initialBase = ext.alloc(size);
     this.set(108, this.initialBase);
     this.set(110, this.initialBase + size);

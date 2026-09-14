@@ -41,13 +41,13 @@ describe("5-C.10N table[1] mr_free ownership forensics", () => {
     expect(r.tempNameAlloc).toMatchObject({
       request: FREE1.table0Request,
       ret: FREE1.header,
-      headerAfterHandler: 1024 * 1024,
+      headerAfterHandler: 8 * 1024 * 1024,
     });
     expect(r.indexAlloc).toMatchObject({
       request: FREE1.indexTable0,
       ret: FREE1.indexHeader,
     });
-    expect(r.headerAfterTable0).toBe(1024 * 1024);
+    expect(r.headerAfterTable0).toBe(8 * 1024 * 1024);
     expect(r.headerAtTable1).toBe(FREE1.headerWord);
     expect(r.headerWriter).toBe("guest mrc_malloc wrap");
     expect(String.fromCharCode(...r.payloadBytes.slice(0, 12))).toBe("res_lang0.rc");

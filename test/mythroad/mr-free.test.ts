@@ -39,8 +39,8 @@ describe("5-C.10O table[1] first-fit mr_free", () => {
     expect(b.free(p, 132)).toBe(MR_SUCCESS);
     expect(b.liveAllocs()).toHaveLength(0);
     expect(b.allocs[0]).toMatchObject({ guestAddr: p, size: 132, alignedSize: 136, live: false });
-    expect(ext.mem.read32(p)).toBe(1024 * 1024);
-    expect(ext.mem.read32(p + 4)).toBe(1024 * 1024);
+    expect(ext.mem.read32(p)).toBe(8 * 1024 * 1024);
+    expect(ext.mem.read32(p + 4)).toBe(8 * 1024 * 1024);
   });
 
   it("NULL / unknown pointer / already-free return MR_SUCCESS without touching others", () => {

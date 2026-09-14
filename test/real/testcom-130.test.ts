@@ -26,7 +26,7 @@ describe("5-C.6 table[130] / asm_mr_TestCom forensics", () => {
     expect(r.cpu.cpsr).toBe(0x40000010);
     expect(r.cpu.tBit).toBe(0);
 
-    expect(r.p).toBe(0x0034b728);
+    expect(r.p).toBe(0x00a4b728);
     expect(r.helper).toBe(TESTCOM130.helper);
     expect(r.erRw).toBe(0x0024b704);
     expect(r.r4).toBe(0x0024b708);

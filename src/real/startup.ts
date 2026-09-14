@@ -49,7 +49,7 @@ export const REAL_MRP_BASELINE = {
   slot33: 33,
   slot17: 17,
   slot40: 40,
-  p: 0x0034b728,
+  p: 0x00a4b728,
   helper: 0x01ea5e9d,
   erRw: 0x0024b704,
   rwLen: 19952,
