@@ -127,7 +127,7 @@ describe("5-C.10G table[17] sprintf_ literal+%d ABI", () => {
     const { ext } = wire();
     const buf = ext.alloc(16);
     const fmt = ext.alloc(16);
-    const bad = ["%q", "%n", "%ls", "%*d", "%", "%9999d"];
+    const bad = ["%q", "%n", "%ls", "%*d", "%9999d"];
     for (const format of bad) {
       writeCString(ext, fmt, format);
       expect(() => call17(ext, buf, fmt, 0, 0)).toThrow(UnknownAbiError);
@@ -140,6 +140,21 @@ describe("5-C.10G table[17] sprintf_ literal+%d ABI", () => {
         expect(u.message.startsWith("unsupported sprintf format")).toBe(true);
       }
     }
+  });
+
+  it('matches legacy trailing-percent output without reading past the format terminator', () => {
+    const { ext } = wire();
+    const buf = ext.alloc(32), fmt = ext.alloc(32), text = ext.alloc(16);
+    writeCString(ext, text, '75');
+    writeCString(ext, fmt, 'HP:%s%');
+    // Adjacent data must not become another format string or consume R3.
+    writeCString(ext, fmt + 7, '%s');
+    const result = call17(ext, buf, fmt, text, 0xdeadbeef);
+    expect(result.r0).toBe(6);
+    expect(guestBytes(ext, buf, 7)).toEqual([72, 80, 58, 55, 53, 0, 0]);
+    writeCString(ext, fmt, '%%');
+    expect(call17(ext, buf, fmt, 0, 0).r0).toBe(1);
+    expect(readGuestCString(ext.mem, buf)).toBe('%');
   });
 
   it("formats pointers with the legacy 0x hexadecimal form", () => {

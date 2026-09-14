@@ -64,6 +64,10 @@ export function guestSprintf(
   };
   for (let i = 0; i < fmt.length;) {
     if (fmt[i] !== "%") { write(fmt[i++]); continue; }
+    // Legacy printf.c's default conversion emits the NUL following a bare
+    // trailing %. Preserve that byte and its return count, but stop at the
+    // format terminator instead of walking into unrelated guest memory.
+    if (i + 1 === fmt.length) { write("\0"); break; }
     const match = /^%([0-]?)(\d{0,4})(?:\.(\d{0,4}))?(l{0,2})([diuxXpscf%])/.exec(fmt.slice(i));
     // Legacy printf.c emits unknown bare specifiers without consuming an arg.
     if (!match && (fmt[i + 1] === 'm' || fmt.charCodeAt(i + 1) >= 128)) { write(fmt[i + 1]); i += 2; continue; }
