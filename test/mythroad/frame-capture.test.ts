@@ -38,6 +38,21 @@ describe("collection LCD capture", () => {
 });
 
 describe("copyLcdDirtyRect", () => {
+  it("clips negative dirty origins without expanding the presented rectangle", () => {
+    const lcd = new Uint16Array(9).fill(99);
+    const src = new Uint16Array([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    copyLcdDirtyRect(lcd, 3, 3, src, 3, 3, -1, -1, 3, 3);
+    expect([...lcd]).toEqual([1, 2, 99, 4, 5, 99, 99, 99, 99]);
+  });
+
+  it("does not present rectangles entirely outside the left or top edge", () => {
+    const lcd = new Uint16Array(9).fill(99);
+    const src = new Uint16Array(9).fill(1);
+    copyLcdDirtyRect(lcd, 3, 3, src, 3, 3, -3, 0, 2, 3);
+    copyLcdDirtyRect(lcd, 3, 3, src, 3, 3, 0, -3, 3, 2);
+    expect([...lcd]).toEqual(new Array(9).fill(99));
+  });
+
   it("leaves the HUD band alone when only the playfield is presented", () => {
     const lcd = new Uint16Array(8);
     const src = new Uint16Array([1, 1, 2, 2, 9, 9, 8, 8]);

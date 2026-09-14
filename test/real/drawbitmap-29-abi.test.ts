@@ -73,4 +73,19 @@ describe("table[29] mr_drawBitmap ABI", () => {
     expect(display.pixels[319 * 240]).toBe(0x07e0);
     expect(flushed).toEqual([[0, 256, 240, 64], [0, 0, 240, 256]]);
   });
+
+  it("clips a bitmap crossing all four LCD edges without dropping its last row or column", () => {
+    const { ext, bridge } = wire();
+    const w = 242, h = 322, bmp = ext.alloc(w * h * 2);
+    for (let row = 0; row < h; row++) {
+      for (let col = 0; col < w; col++) ext.mem.write16(bmp + (row * w + col) * 2, (row * w + col) & 0xffff);
+    }
+    const out = call29(ext, bmp, -1, -1, w, h);
+    expect(out.kind).toBe(ExtStopKind.Return);
+    for (let row = 0; row < 320; row++) {
+      for (let col = 0; col < 240; col++) {
+        expect(bridge.screen.pixels[row * 240 + col]).toBe(((row + 1) * w + col + 1) & 0xffff);
+      }
+    }
+  });
 });

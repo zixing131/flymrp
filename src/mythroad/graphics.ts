@@ -25,10 +25,13 @@ export function copyLcdDirtyRect(
   w: number,
   h: number,
 ): void {
-  const x0 = Math.max(0, x | 0);
-  const y0 = Math.max(0, y | 0);
-  const x1 = Math.min(lcdWidth, srcWidth, x0 + Math.max(0, w | 0));
-  const y1 = Math.min(lcdHeight, srcHeight, y0 + Math.max(0, h | 0));
+  const left = x | 0, top = y | 0;
+  const x0 = Math.max(0, left);
+  const y0 = Math.max(0, top);
+  // Clip both endpoints of the original rectangle. Moving a negative origin
+  // before adding its size would present pixels outside the requested area.
+  const x1 = Math.min(lcdWidth, srcWidth, left + Math.max(0, w | 0));
+  const y1 = Math.min(lcdHeight, srcHeight, top + Math.max(0, h | 0));
   if (x1 <= x0 || y1 <= y0) return;
   if (
     x0 === 0 && y0 === 0 && x1 === lcdWidth && y1 === lcdHeight &&

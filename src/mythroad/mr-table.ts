@@ -919,15 +919,11 @@ export class MrTableBridge {
       if (this.hooks.setScreen) this.hooks.setScreen(screen); else this.screen = screen;
     }
     if (bmp && bmp !== this.screenAddr) {
-      const maxW = Math.min(w, Math.max(0, screen.width - Math.max(x, 0)));
-      const maxH = Math.min(h, Math.max(0, screen.height - Math.max(y, 0)));
-      for (let row = 0; row < maxH; row++) {
-        const dy = y + row;
-        if (dy < 0 || dy >= screen.height) continue;
-        for (let col = 0; col < maxW; col++) {
-          const dx = x + col;
-          if (dx < 0 || dx >= screen.width) continue;
-          screen.pixels[dy * screen.width + dx] = mem.read16((bmp + (row * w + col) * 2) >>> 0);
+      const minX = Math.max(0, x), minY = Math.max(0, y);
+      const maxX = Math.min(screen.width, x + w), maxY = Math.min(screen.height, y + h);
+      for (let dy = minY; dy < maxY; dy++) {
+        for (let dx = minX; dx < maxX; dx++) {
+          screen.pixels[dy * screen.width + dx] = mem.read16((bmp + ((dy - y) * w + dx - x) * 2) >>> 0);
         }
       }
     }
