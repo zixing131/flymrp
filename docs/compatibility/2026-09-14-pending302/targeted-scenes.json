@@ -1,0 +1,1182 @@
+{
+  "55": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "78": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [],
+    "controls": [
+      {
+        "key": "RIGHT",
+        "hold": 30,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 30,
+        "wait": 10
+      },
+      {
+        "key": "RIGHT",
+        "hold": 30,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 30,
+        "wait": 10
+      },
+      {
+        "key": "RIGHT",
+        "hold": 30,
+        "wait": 10
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "100": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "118": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "128": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "131": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      }
+    ],
+    "controls": [
+      {
+        "key": "RIGHT",
+        "wait": 20
+      },
+      {
+        "key": "RIGHT",
+        "wait": 20
+      },
+      {
+        "key": "LEFT",
+        "wait": 20
+      },
+      {
+        "key": "DOWN",
+        "wait": 20
+      },
+      {
+        "key": "UP",
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "179": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "186": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          60,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          60,
+          200
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          200
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "187": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          60,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          60,
+          200
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          200
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "188": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          60,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          60,
+          200
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          200
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "189": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          60,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          100
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          60,
+          200
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          180,
+          200
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "196": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "202": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "206": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "234": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "240": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "253": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "258": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "260": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "281": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 20
+      },
+      {
+        "key": "1",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "284": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 3,
+        "wait": 20
+      }
+    ],
+    "controls": [
+      {
+        "swipe": [
+          [
+            51,
+            120
+          ],
+          [
+            218,
+            120
+          ]
+        ],
+        "hold": 20,
+        "wait": 30
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "292": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          37,
+          365
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  },
+  "296": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 3,
+        "wait": 20
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          58,
+          61
+        ],
+        "wait": 80
+      },
+      {
+        "swipe": [
+          [
+            90,
+            220
+          ],
+          [
+            220,
+            380
+          ]
+        ],
+        "hold": 20,
+        "wait": 40
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "逐项第一轮：生产时钟，键盘及触屏探针；必须另行核验实际场景，不自动结案。"
+  }
+}

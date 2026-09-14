@@ -56,6 +56,7 @@ if(worker) {
     // Timed benchmarks need the browser worker's clock; other scenarios retain
     // deterministic execution. This choice is frozen in scenarioSha256.
     monotonicTime:scenario.clock==="monotonic"?()=>performance.now():undefined});
+  const initialFiles = new Map([...rt.appFs.nodes].flatMap(([name,node]) => node.kind === "file" ? [[name,hash(node.bytes)] as const] : []));
   let phase="load",ticks=0,inputChanges=0,controlChanges=0,keysTested=0,error:string|null=null;
   const distinct=new Set<string>();
   const fingerprint=()=>hash(new Uint8Array(display.pixels.buffer,display.pixels.byteOffset,display.pixels.byteLength));
@@ -110,8 +111,14 @@ if(worker) {
   const sceneVerified=expected.length>0&&checkpoints.some(c=>expected.includes(c.sha256));
   const interactionVerified=(scenario.controlSha256??[]).length>0&&checkpoints.some(c=>inputCheckpoints.has(c.name)&&scenario.controlSha256!.includes(c.sha256));
   const outcome=rt.exited?"exited":error?"runtime-error":!nonBlack?"black-screen":controlChanges===0?"no-input-response":(!sceneVerified||!interactionVerified)?"needs-scene-review":"passed";
+  // Preserve installer/tool output evidence even when the guest exits normally.
+  const writtenFiles = [...rt.appFs.nodes].flatMap(([name,node]) => {
+    if (node.kind !== "file") return [];
+    const sha256 = hash(node.bytes);
+    return initialFiles.get(name) === sha256 ? [] : [{name, size:node.bytes.length, sha256}];
+  });
   console.log(JSON.stringify({...game,...profile,outcome,phase,error,ticks,keysTested,inputChanges,controlChanges,presentedFrames:display.frames,interactionVerified,distinctFrames:distinct.size,nonBlack,sceneVerified,
-    checkpoints,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??""}));
+    checkpoints,writtenFiles,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??""}));
 } else {
   const concurrency = Number(process.env.MRP_TEST_CONCURRENCY ?? 3);
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16) throw new Error("MRP_TEST_CONCURRENCY must be an integer from 1 to 16");

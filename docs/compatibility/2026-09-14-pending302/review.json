@@ -7,2719 +7,6043 @@
       "caseId": 3,
       "title": "sky插件V7安装包",
       "testId": 1,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-installer-output",
+      "note": "完成页显示skyV7插件放置完成；需验证实际写出的文件。",
+      "evidence": "artifacts/compat-20260914/pending302-first/1-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 738
+      }
     },
     {
       "caseId": 4,
       "title": "sky字库V3安装包",
       "testId": 2,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-installer-output",
+      "note": "完成页显示skyV3字库放置完成；需验证实际写出的文件。",
+      "evidence": "artifacts/compat-20260914/pending302-first/2-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 279
+      }
     },
     {
       "caseId": 5,
       "title": "vmrp安装包",
       "testId": 3,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-installer-output",
+      "note": "安装VMRP提示5秒后完成退出，正常自动退出候选；需验证产物。",
+      "evidence": "artifacts/compat-20260914/pending302-first/3-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "boot",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 1149
+      }
     },
     {
       "caseId": 7,
       "title": "冒泡",
       "testId": 4,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-storage-check",
+      "note": "启动对话框提示存储卡空间不足；确认后退出，需追查接口判定。",
+      "evidence": "artifacts/compat-20260914/pending302-first/4-boot.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 106,
+        "keysTested": 0,
+        "elapsedMs": 436
+      }
     },
     {
       "caseId": 10,
       "title": "听听音阅",
       "testId": 5,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration-or-content",
+      "note": "听听音阅显示软件未注册、音乐列表为空，主界面可见。",
+      "evidence": "artifacts/compat-20260914/pending302-first/5-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 528
+      }
     },
     {
       "caseId": 11,
       "title": "应用列表8.0",
       "testId": 6,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "start阶段退出且黑屏。",
+      "evidence": "artifacts/compat-20260914/pending302-first/6-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 18,
       "title": "斗象棋2026",
       "testId": 7,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "象棋完整棋盘可见但步数00；未验证走子。",
+      "evidence": "artifacts/compat-20260914/pending302-first/7-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1317
+      }
     },
     {
       "caseId": 31,
       "title": "2012超级美眉连连看",
       "testId": 8,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-handset-check",
+      "note": "明确显示本手机不支持此类应用。",
+      "evidence": "artifacts/compat-20260914/pending302-first/8-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 139
+      }
     },
     {
       "caseId": 76,
       "title": "a.bmp→a.jpg",
       "testId": 9,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-input-files",
+      "note": "BMP转JPG工具黑屏后退出，待核查需要的源图输入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/9-boot.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 123,
+        "keysTested": 1,
+        "elapsedMs": 72
+      }
     },
     {
       "caseId": 81,
       "title": "AV美女写真",
       "testId": 10,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-offline-service",
+      "note": "游戏注册页提示由于网络问题无法获取信息，请稍后重试。",
+      "evidence": "artifacts/compat-20260914/pending302-first/10-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3090
+      }
     },
     {
       "caseId": 95,
       "title": "CS1.6特警先锋",
       "testId": 11,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "已进入特警关卡对话；尚无移动或攻击证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/11-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 8543
+      }
     },
     {
       "caseId": 98,
       "title": "CS反恐风云",
       "testId": 12,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "提示继续游戏需要下载资源包，取消不能继续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/12-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1736
+      }
     },
     {
       "caseId": 106,
       "title": "DNF复仇者之怒",
       "testId": 13,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "尚无boot检查点，启动阶段退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/13-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 10
+      }
     },
     {
       "caseId": 109,
       "title": "DNF狂战之怒",
       "testId": 14,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "DNF狂战之怒停在开始游戏菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/14-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3585
+      }
     },
     {
       "caseId": 110,
       "title": "DNF欲望格斗",
       "testId": 15,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "DNF欲望格斗停在开始游戏菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/15-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 6753
+      }
     },
     {
       "caseId": 115,
       "title": "Dota之超神屠夫",
       "testId": 16,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "开场剧情右下继续，待进入关卡。",
+      "evidence": "artifacts/compat-20260914/pending302-first/16-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3444
+      }
     },
     {
       "caseId": 116,
       "title": "Dota之超神屠夫",
       "testId": 17,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "evidence": "artifacts/compat-20260914/pending302-first/17-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 138
+      }
     },
     {
       "caseId": 132,
       "title": "MRP NES软件平台",
       "testId": 18,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-builtin-package",
+      "note": "NES菜单跳转*G失败，缺少m0注册槽内容。",
+      "evidence": "artifacts/compat-20260914/pending302-first/18-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "entry",
+        "error": "LuaRuntimeError: cannot read application *G",
+        "ticks": 102,
+        "keysTested": 0,
+        "elapsedMs": 57
+      }
     },
     {
       "caseId": 137,
       "title": "MSN",
       "testId": 19,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/19-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 138,
       "title": "MSN",
       "testId": 20,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/20-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 139,
       "title": "MSN",
       "testId": 21,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络安装功能模块失败；缺appid480101包。",
+      "evidence": "artifacts/compat-20260914/pending302-first/21-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 315
+      }
     },
     {
       "caseId": 144,
       "title": "MTK魔法寿司_320x240",
       "testId": 22,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "map16读取0x200ffff越界。",
+      "evidence": "artifacts/compat-20260914/pending302-first/22-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "boot",
+        "error": "ExtFault: EXT fault unmapped at 0x1e870a4 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+        "ticks": 1,
+        "keysTested": 0,
+        "elapsedMs": 580
+      }
     },
     {
       "caseId": 145,
       "title": "MTK魔法寿司_320x480",
       "testId": 23,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "map16读取0x200ffff越界。",
+      "evidence": "artifacts/compat-20260914/pending302-first/23-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "boot",
+        "error": "ExtFault: EXT fault unmapped at 0x1e87098 (arm_ext_call: GuestMemory map16 fault at 0x200ffff)",
+        "ticks": 1,
+        "keysTested": 0,
+        "elapsedMs": 599
+      }
     },
     {
       "caseId": 159,
       "title": "NES积分-天蓝",
       "testId": 24,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "NES积分显示已赠送，待返回操作验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/24-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 63
+      }
     },
     {
       "caseId": 160,
       "title": "NES模拟器",
       "testId": 25,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-authorization",
+      "note": "NES模拟器显示未授权。",
+      "evidence": "artifacts/compat-20260914/pending302-first/25-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 95
+      }
     },
     {
       "caseId": 161,
       "title": "nes模拟器XL版1.2",
       "testId": 26,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "debugOutput Arithmetic exception: Divide By Zero。",
+      "evidence": "artifacts/compat-20260914/pending302-first/26-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 77
+      }
     },
     {
       "caseId": 162,
       "title": "QQ",
       "testId": 27,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络安装功能模块失败；缺appid480101包。",
+      "evidence": "artifacts/compat-20260914/pending302-first/27-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 276
+      }
     },
     {
       "caseId": 163,
       "title": "QQ",
       "testId": 28,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-login-service",
+      "note": "QQ登录界面，无有效在线登录证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/28-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 749
+      }
     },
     {
       "caseId": 164,
       "title": "QQ2010",
       "testId": 29,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/29-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 165,
       "title": "QQ2010",
       "testId": 30,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/30-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 166,
       "title": "QQ2010",
       "testId": 31,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/31-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 170,
       "title": "QQ2010（超级挂Q）",
       "testId": 32,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/32-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 174,
       "title": "QQ斗地主3.3正式版",
       "testId": 33,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/33-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 178,
       "title": "QQ空间",
       "testId": 34,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-or-entry",
+      "note": "浏览器接入点选择后请稍等并退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/34-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 139,
+        "keysTested": 1,
+        "elapsedMs": 152
+      }
     },
     {
       "caseId": 179,
       "title": "QQ空间",
       "testId": 35,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-or-entry",
+      "note": "浏览器接入点选择后请稍等并退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/35-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 139,
+        "keysTested": 1,
+        "elapsedMs": 167
+      }
     },
     {
       "caseId": 183,
       "title": "QQ手机软件管理",
       "testId": 36,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "文件管理器选择QQ2010，待实际打开验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/36-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 298
+      }
     },
     {
       "caseId": 184,
       "title": "QQ网游大厅",
       "testId": 37,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "evidence": "artifacts/compat-20260914/pending302-first/37-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 187,
       "title": "QQ炫舞",
       "testId": 38,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "提示下载最新应用超市。",
+      "evidence": "artifacts/compat-20260914/pending302-first/38-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1535
+      }
     },
     {
       "caseId": 188,
       "title": "Q版飞车",
       "testId": 39,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-offline-service",
+      "note": "网络问题无法获取注册信息。",
+      "evidence": "artifacts/compat-20260914/pending302-first/39-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 839
+      }
     },
     {
       "caseId": 192,
       "title": "ram_scan",
       "testId": 40,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "ram_scan显示All memset OK，待dump/继续扫描验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/40-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 907
+      }
     },
     {
       "caseId": 212,
       "title": "xqc安装包2",
       "testId": 41,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "进入文本编辑器跳转对话框，输入框含16666；需要核对文本编辑/保存操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/41-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1397
+      }
     },
     {
       "caseId": 215,
       "title": "ZCOM手机杂志",
       "testId": 42,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "ZCOM手机杂志一直显示正在加载中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/42-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 316
+      }
     },
     {
       "caseId": 216,
       "title": "“粽”想过61",
       "testId": 43,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-offline-service",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/43-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 264
+      }
     },
     {
       "caseId": 217,
       "title": "ＣＳ反恐特警",
       "testId": 44,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "声音询问页自带虚拟键盘，需要触屏选是/否。",
+      "evidence": "artifacts/compat-20260914/pending302-first/44-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 859
+      }
     },
     {
       "caseId": 232,
       "title": "爱上3D爱上图",
       "testId": 45,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "爱上3D图进入、设置、帮助菜单可见，待实际绘图操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/45-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 478
+      }
     },
     {
       "caseId": 233,
       "title": "爱阅看书2.0",
       "testId": 46,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "递归DNS失败后guest heap corruption，已知缺失服务。",
+      "evidence": "artifacts/compat-20260914/pending302-first/46-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "boot",
+        "error": "Error: corrupt guest heap free block: address=0x8a3658 size=0x2ad39c base=0x296700 end=0xa96700",
+        "ticks": 12,
+        "keysTested": 0,
+        "elapsedMs": 461
+      }
     },
     {
       "caseId": 239,
       "title": "暗黑穿越-真实杀戮",
       "testId": 47,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "进入战斗关卡开场对话，尚无攻击/移动证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/47-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 6218
+      }
     },
     {
       "caseId": 240,
       "title": "暗黑穿越-真实杀戮",
       "testId": 48,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "进入战斗关卡开场对话，尚无攻击/移动证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/48-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9840
+      }
     },
     {
       "caseId": 253,
       "title": "傲剑OL",
       "testId": 49,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "提示第一次安装，选择免费注册账号；在线服务依赖。",
+      "evidence": "artifacts/compat-20260914/pending302-first/49-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1353
+      }
     },
     {
       "caseId": 265,
       "title": "八仙过海",
       "testId": 50,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "询问是否退出游戏，可能探针触发了退出菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/50-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1103
+      }
     },
     {
       "caseId": 266,
       "title": "把美女灌醉",
       "testId": 51,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-replay-verification",
+      "note": "游戏进入失败结算：你输了，按这里或0键再来。",
+      "evidence": "artifacts/compat-20260914/pending302-first/51-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1660
+      }
     },
     {
       "caseId": 267,
       "title": "把美女灌醉",
       "testId": 52,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-replay-verification",
+      "note": "游戏进入失败结算：你输了，按这里或0键再来；边缘花屏暂缓。",
+      "evidence": "artifacts/compat-20260914/pending302-first/52-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1650
+      }
     },
     {
       "caseId": 268,
       "title": "把美女灌醉",
       "testId": 53,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "黑屏红字72%加载状态持续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/53-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1643
+      }
     },
     {
       "caseId": 276,
       "title": "百宝箱",
       "testId": 54,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块并退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/54-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 269
+      }
     },
     {
       "caseId": 279,
       "title": "百家乐",
       "testId": 55,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "百家乐主菜单注明5开始、8帮助、0排行，需定向入口，未确认退出原因。",
+      "evidence": "artifacts/compat-20260914/pending302-first/55-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 104,
+        "keysTested": 0,
+        "elapsedMs": 2002
+      }
     },
     {
       "caseId": 295,
       "title": "宝石迷阵",
       "testId": 56,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "宝石迷阵道具商店，未验证棋盘操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/56-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1894
+      }
     },
     {
       "caseId": 314,
       "title": "避孕大作战",
       "testId": 57,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "触屏消灭蝌蚪的操作提示，需实际点选验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/57-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 6702
+      }
     },
     {
       "caseId": 315,
       "title": "便宜！绝对划算",
       "testId": 58,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装/宣传页，提示摇一摇变换音乐列表，无实际内容。",
+      "evidence": "artifacts/compat-20260914/pending302-first/58-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 263
+      }
     },
     {
       "caseId": 336,
       "title": "捕鱼达人",
       "testId": 59,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "evidence": "artifacts/compat-20260914/pending302-first/59-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 601
+      }
     },
     {
       "caseId": 337,
       "title": "捕鱼达人",
       "testId": 60,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "evidence": "artifacts/compat-20260914/pending302-first/60-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 902
+      }
     },
     {
       "caseId": 347,
       "title": "猜奥运金牌得手机",
       "testId": 61,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "宣传安装中页面持续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/61-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 281
+      }
     },
     {
       "caseId": 349,
       "title": "彩蛋大战",
       "testId": 62,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "彩蛋大战卡通标题画面持续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/62-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1904
+      }
     },
     {
       "caseId": 351,
       "title": "彩虹QQ2014完整收藏版",
       "testId": 63,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-installer-workflow",
+      "note": "彩虹QQ2014安装程序，下一步/退出安装。",
+      "evidence": "artifacts/compat-20260914/pending302-first/63-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 922
+      }
     },
     {
       "caseId": 366,
       "title": "超级合金装备",
       "testId": 64,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "超级合金装备进入横版射击关卡，尚需有效控制核验。",
+      "evidence": "artifacts/compat-20260914/pending302-first/64-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5056
+      }
     },
     {
       "caseId": 396,
       "title": "超爽绝杀大合辑",
       "testId": 65,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-builtin-package",
+      "note": "存储卡已满/不支持提示，实际错误缺少*J注册槽。",
+      "evidence": "artifacts/compat-20260914/pending302-first/65-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "boot",
+        "error": "LuaRuntimeError: cannot read application *J",
+        "ticks": 53,
+        "keysTested": 0,
+        "elapsedMs": 170
+      }
     },
     {
       "caseId": 405,
       "title": "成语大师",
       "testId": 66,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "成语大师开始/帮助/音效菜单，待点击开始。",
+      "evidence": "artifacts/compat-20260914/pending302-first/66-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2095
+      }
     },
     {
       "caseId": 432,
       "title": "穿越火线之飞虎队",
       "testId": 67,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "触摸版声音询问，是/否。",
+      "evidence": "artifacts/compat-20260914/pending302-first/67-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2047
+      }
     },
     {
       "caseId": 451,
       "title": "吹裙子",
       "testId": 68,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "1键开始游戏但探针进入应用超市下载提示，需按1定向复核。",
+      "evidence": "artifacts/compat-20260914/pending302-first/68-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1845
+      }
     },
     {
       "caseId": 461,
       "title": "存款计算器",
       "testId": 69,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "存款计算器说明页，需真实计算输入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/69-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 347
+      }
     },
     {
       "caseId": 465,
       "title": "打小鸟",
       "testId": 70,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "射击场景得分0，尚无命中证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/70-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5898
+      }
     },
     {
       "caseId": 491,
       "title": "大漠狂刀",
       "testId": 71,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "大漠狂刀进入角色HP战斗场景，需验证移动/攻击。",
+      "evidence": "artifacts/compat-20260914/pending302-first/71-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5403
+      }
     },
     {
       "caseId": 498,
       "title": "大师在线设计签名",
       "testId": 72,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "明确cann`t be run direct!，缺父启动平台。",
+      "evidence": "artifacts/compat-20260914/pending302-first/72-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 500,
       "title": "大雄约会放屁",
       "testId": 73,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "声音询问摇1是、摇3否。",
+      "evidence": "artifacts/compat-20260914/pending302-first/73-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1394
+      }
     },
     {
       "caseId": 506,
       "title": "弹力球",
       "testId": 74,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "弹力球开始/帮助/排行/退出主菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/74-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3281
+      }
     },
     {
       "caseId": 523,
       "title": "盗墓鬼吹灯笔记",
       "testId": 75,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "释放资源中时预算超限，PC0x26309a。",
+      "evidence": "artifacts/compat-20260914/pending302-first/75-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "ExtFault: EXT fault abi-fault at 0x26309a (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 1765
+      }
     },
     {
       "caseId": 543,
       "title": "第十亿个幸运者",
       "testId": 76,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中音乐宣传页持续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/76-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 266
+      }
     },
     {
       "caseId": 545,
       "title": "第一次亲密接触",
       "testId": 77,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blank-output",
+      "note": "白屏无文字，需检查内容资源/入口。",
+      "evidence": "artifacts/compat-20260914/pending302-first/77-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 268
+      }
     },
     {
       "caseId": 551,
       "title": "调色板XL",
       "testId": 78,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "调色板ARGB滑杆，需验证颜色数值改变。",
+      "evidence": "artifacts/compat-20260914/pending302-first/78-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 424
+      }
     },
     {
       "caseId": 553,
       "title": "谍影重重Ⅱ",
       "testId": 79,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "横版剧情对白，需继续键后验证操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/79-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2518
+      }
     },
     {
       "caseId": 575,
       "title": "毒蛇行动2-丛林之谜",
       "testId": 80,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blank-output",
+      "note": "声音询问后最终黑屏，运行无异常，需场景复查。",
+      "evidence": "artifacts/compat-20260914/pending302-first/80-sustained.png",
+      "firstRun": {
+        "outcome": "black-screen",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1955
+      }
     },
     {
       "caseId": 577,
       "title": "独孤九剑",
       "testId": 81,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "黑屏退出，无debugOutput。",
+      "evidence": "artifacts/compat-20260914/pending302-first/81-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "boot",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 386
+      }
     },
     {
       "caseId": 583,
       "title": "赌王之王-黄金城",
       "testId": 82,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "赌王之王黄金城开始游戏菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/82-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2882
+      }
     },
     {
       "caseId": 589,
       "title": "多款游戏限时免费",
       "testId": 83,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "宣传音乐列表安装中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/83-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 265
+      }
     },
     {
       "caseId": 596,
       "title": "夺命番茄",
       "testId": 84,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "夺命番茄旋转主菜单，开始/说明/退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/84-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 15644
+      }
     },
     {
       "caseId": 633,
       "title": "放假啦疯狂游戏吧",
       "testId": 85,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "宣传音乐列表安装中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/85-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 270
+      }
     },
     {
       "caseId": 640,
       "title": "飞天忍者喵",
       "testId": 86,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "飞天忍者喵夜间平台场景30km/h，需有效操作核验。",
+      "evidence": "artifacts/compat-20260914/pending302-first/86-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4216
+      }
     },
     {
       "caseId": 643,
       "title": "飞信",
       "testId": 87,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "明确cann`t be run direct!。",
+      "evidence": "artifacts/compat-20260914/pending302-first/87-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 645,
       "title": "飞信",
       "testId": 88,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/88-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 271
+      }
     },
     {
       "caseId": 659,
       "title": "风流三国",
       "testId": 89,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡首次安装注册弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/89-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1359
+      }
     },
     {
       "caseId": 665,
       "title": "风云三国",
       "testId": 90,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "树林湖泊角色与对话框，待移动/继续输入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/90-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 7484
+      }
     },
     {
       "caseId": 673,
       "title": "疯狂吧！光棍",
       "testId": 91,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/91-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 269
+      }
     },
     {
       "caseId": 674,
       "title": "疯狂捕鱼",
       "testId": 92,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "疯狂捕鱼标题取消提示。",
+      "evidence": "artifacts/compat-20260914/pending302-first/92-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 966
+      }
     },
     {
       "caseId": 687,
       "title": "疯狂的小鸟太空版",
       "testId": 93,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "疯狂小鸟太空版开始/设置/退出菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/93-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5300
+      }
     },
     {
       "caseId": 723,
       "title": "父亲节抢楼送手机",
       "testId": 94,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "音乐列表安装宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/94-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 263
+      }
     },
     {
       "caseId": 726,
       "title": "干爹的爱",
       "testId": 95,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "下载资源中约70%，预算超限PC0x24c6c0。",
+      "evidence": "artifacts/compat-20260914/pending302-first/95-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "ExtFault: EXT fault abi-fault at 0x24c6c0 (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 1688
+      }
     },
     {
       "caseId": 727,
       "title": "干爹的爱",
       "testId": 96,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "下载资源中约45%，预算超限PC0x29782c。",
+      "evidence": "artifacts/compat-20260914/pending302-first/96-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "ExtFault: EXT fault abi-fault at 0x29782c (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 1652
+      }
     },
     {
       "caseId": 734,
       "title": "港式五张",
       "testId": 97,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡首次安装注册提示。",
+      "evidence": "artifacts/compat-20260914/pending302-first/97-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1450
+      }
     },
     {
       "caseId": 752,
       "title": "给力猫",
       "testId": 98,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "给力猫付费/取消体验弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/98-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1077
+      }
     },
     {
       "caseId": 753,
       "title": "给力猫",
       "testId": 99,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "给力猫下载提示。",
+      "evidence": "artifacts/compat-20260914/pending302-first/99-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1022
+      }
     },
     {
       "caseId": 755,
       "title": "给力枪手连环杀",
       "testId": 100,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "关卡1/13得分40射击场景，需确认输入因果和重开。",
+      "evidence": "artifacts/compat-20260914/pending302-first/100-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4776
+      }
     },
     {
       "caseId": 758,
       "title": "更多精品游戏",
       "testId": 101,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "黑屏请稍等后退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/101-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 139,
+        "keysTested": 1,
+        "elapsedMs": 152
+      }
     },
     {
       "caseId": 768,
       "title": "公交查询",
       "testId": 102,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-query-service",
+      "note": "公交查询上海起点终点搜索表单，尚无查询结果。",
+      "evidence": "artifacts/compat-20260914/pending302-first/102-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 298
+      }
     },
     {
       "caseId": 782,
       "title": "股票交易版",
       "testId": 103,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-login-service",
+      "note": "股票登录界面，未验证在线服务。",
+      "evidence": "artifacts/compat-20260914/pending302-first/103-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 270
+      }
     },
     {
       "caseId": 783,
       "title": "怪蛋风暴_大屏版",
       "testId": 104,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "怪蛋风暴开始/帮助/退出菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/104-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3238
+      }
     },
     {
       "caseId": 801,
       "title": "鬼手伏魔录",
       "testId": 105,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "鬼手伏魔录黑屏退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/105-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 12
+      }
     },
     {
       "caseId": 809,
       "title": "国庆去哪儿",
       "testId": 106,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络连接失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/106-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 273
+      }
     },
     {
       "caseId": 839,
       "title": "核弹风暴",
       "testId": 107,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "核弹风暴进入免费抽奖广告页，需查实际入口。",
+      "evidence": "artifacts/compat-20260914/pending302-first/107-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2546
+      }
     },
     {
       "caseId": 841,
       "title": "和美女20次亲密接触",
       "testId": 108,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中音乐宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/108-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 277
+      }
     },
     {
       "caseId": 844,
       "title": "合金弹头2013",
       "testId": 109,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "合金弹头提示下载资源包。",
+      "evidence": "artifacts/compat-20260914/pending302-first/109-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 948
+      }
     },
     {
       "caseId": 845,
       "title": "合金弹头2013",
       "testId": 110,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "合金弹头提示下载资源包。",
+      "evidence": "artifacts/compat-20260914/pending302-first/110-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2553
+      }
     },
     {
       "caseId": 855,
       "title": "黑暗传说之利器",
       "testId": 111,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "黑暗传说进入横版战斗场景，待攻击/移动核验。",
+      "evidence": "artifacts/compat-20260914/pending302-first/111-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3455
+      }
     },
     {
       "caseId": 880,
       "title": "欢乐马戏团",
       "testId": 112,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "欢乐马戏团教学关卡说明，需继续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/112-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2057
+      }
     },
     {
       "caseId": 882,
       "title": "欢乐五一幸运抽奖",
       "testId": 113,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络连接失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/113-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 273
+      }
     },
     {
       "caseId": 894,
       "title": "幻想三国",
       "testId": 114,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "幻想三国游戏加载中提示持续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/114-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1085
+      }
     },
     {
       "caseId": 895,
       "title": "幻想三国online",
       "testId": 115,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "幻想三国online注册账号选择弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/115-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1256
+      }
     },
     {
       "caseId": 901,
       "title": "黄金矿工",
       "testId": 116,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "evidence": "artifacts/compat-20260914/pending302-first/116-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 177
+      }
     },
     {
       "caseId": 908,
       "title": "毁灭巫师",
       "testId": 117,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "毁灭巫师关卡对白，待继续及攻击。",
+      "evidence": "artifacts/compat-20260914/pending302-first/117-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 7618
+      }
     },
     {
       "caseId": 910,
       "title": "会飞的汤姆猫",
       "testId": 118,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "会飞汤姆猫关卡1，分数6677/8000，需确认跳跃操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/118-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3416
+      }
     },
     {
       "caseId": 918,
       "title": "活动介绍",
       "testId": 119,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页无实际内容。",
+      "evidence": "artifacts/compat-20260914/pending302-first/119-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 525
+      }
     },
     {
       "caseId": 922,
       "title": "火车订票",
       "testId": 120,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-query-service",
+      "note": "火车订票起点终点搜索表单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/120-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 389
+      }
     },
     {
       "caseId": 923,
       "title": "火车订票",
       "testId": 121,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "明确cann`t be run direct!。",
+      "evidence": "artifacts/compat-20260914/pending302-first/121-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      }
     },
     {
       "caseId": 947,
       "title": "激情冲动",
       "testId": 122,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-truncated-package",
+      "note": "cfunction.ext超出实际包边界，保持拒绝。",
+      "evidence": "artifacts/compat-20260914/pending302-first/results.json",
+      "firstRun": {
+        "outcome": "worker-error",
+        "phase": null,
+        "error": "/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185\n    throw new MrpFormatError(\"invalid offset or compressed length\");\n          ^\n\nMrpFormatError: invalid offset or compressed length\n    at pushEntry (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185:11)\n    at parseIndex (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:220:5)\n    at MRPArchive.parse (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:123:7)\n    at <anonymous> (/Users/zixing/Documents/zixing/github/flymrp/tools/real/collection-test.ts:50:124)\n    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)\n    at async node:internal/modules/esm/loader:650:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v26.7.0\n",
+        "ticks": null,
+        "keysTested": null,
+        "elapsedMs": 107
+      }
     },
     {
       "caseId": 960,
       "title": "极品家丁-9527",
       "testId": 123,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "极品家丁开场剧情右下继续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/123-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2842
+      }
     },
     {
       "caseId": 967,
       "title": "寄生兽",
       "testId": 124,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blank-output",
+      "note": "寄生兽纯紫色画面，待进入玩法。",
+      "evidence": "artifacts/compat-20260914/pending302-first/124-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 7902
+      }
     },
     {
       "caseId": 968,
       "title": "寄生兽",
       "testId": 125,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "寄生兽进入剧情对话，待继续。",
+      "evidence": "artifacts/compat-20260914/pending302-first/125-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 8038
+      }
     },
     {
       "caseId": 975,
       "title": "假日休闲乐逍遥",
       "testId": 126,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-builtin-package",
+      "note": "无法读取*J，缺内置注册槽。",
+      "evidence": "artifacts/compat-20260914/pending302-first/126-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "boot",
+        "error": "LuaRuntimeError: cannot read application *J",
+        "ticks": 53,
+        "keysTested": 0,
+        "elapsedMs": 172
+      }
     },
     {
       "caseId": 988,
       "title": "剑侣情缘3美人如玉",
       "testId": 127,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "evidence": "artifacts/compat-20260914/pending302-first/127-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 138
+      }
     },
     {
       "caseId": 1004,
       "title": "僵尸大暴走",
       "testId": 128,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-replay-verification",
+      "note": "僵尸战斗场景进入游戏失败，需失败前控制及重开验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/128-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2959
+      }
     },
     {
       "caseId": 1018,
       "title": "江南style骑马舞",
       "testId": 129,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "主角形象选择，5确定。",
+      "evidence": "artifacts/compat-20260914/pending302-first/129-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1630
+      }
     },
     {
       "caseId": 1021,
       "title": "降龙十八掌",
       "testId": 130,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "首次安装注册弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/130-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1379
+      }
     },
     {
       "caseId": 1040,
       "title": "节日祝福语",
       "testId": 131,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "新年祝福内容、上一条下一条，需要翻页核验。",
+      "evidence": "artifacts/compat-20260914/pending302-first/131-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 10647
+      }
     },
     {
       "caseId": 1062,
       "title": "精品切水果",
       "testId": 132,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "切水果菜单注明按1开始、按3帮助。",
+      "evidence": "artifacts/compat-20260914/pending302-first/132-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2817
+      }
     },
     {
       "caseId": 1075,
       "title": "经典泡泡龙",
       "testId": 133,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "泡泡龙棋盘发射器，待发射及消除证据。",
+      "evidence": "artifacts/compat-20260914/pending302-first/133-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3472
+      }
     },
     {
       "caseId": 1078,
       "title": "警花射击训练",
       "testId": 134,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "警花射击训练开始/说明菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/134-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2585
+      }
     },
     {
       "caseId": 1081,
       "title": "狙击精英",
       "testId": 135,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "狙击镜训练，提示方向键或触屏移动镜头，待射击验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/135-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3340
+      }
     },
     {
       "caseId": 1083,
       "title": "狙击小日本",
       "testId": 136,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "声音询问是/否。",
+      "evidence": "artifacts/compat-20260914/pending302-first/136-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1967
+      }
     },
     {
       "caseId": 1091,
       "title": "绝命杀手斩龙刃",
       "testId": 137,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "横版关卡开场对白，未确认战斗输入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/137-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9250
+      }
     },
     {
       "caseId": 1143,
       "title": "快点网址导航",
       "testId": 138,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "黑屏退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/138-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 18
+      }
     },
     {
       "caseId": 1160,
       "title": "来电助手",
       "testId": 139,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-parent-platform",
+      "note": "cann`t be run direct!。",
+      "evidence": "artifacts/compat-20260914/pending302-first/139-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 1190,
       "title": "冷笑话大全",
       "testId": 140,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-tool-workflow",
+      "note": "冷笑话集中营首页目录，需要实际内容翻页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/140-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1355
+      }
     },
     {
       "caseId": 1201,
       "title": "恋爱气球",
       "testId": 141,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "feature-unresolved",
+      "note": "恋爱气球空白预览，已知主题设置失败，包解析修复不等于功能通过。",
+      "evidence": "artifacts/compat-20260914/pending302-first/141-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 385
+      }
     },
     {
       "caseId": 1220,
       "title": "零距离触摸美女",
       "testId": 142,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/142-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 271
+      }
     },
     {
       "caseId": 1225,
       "title": "灵剑封魔录",
       "testId": 143,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "灵剑封魔录战斗对白，需操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/143-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3320
+      }
     },
     {
       "caseId": 1285,
       "title": "猫捉老鼠",
       "testId": 144,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "猫捉老鼠静态菜单。",
+      "evidence": "artifacts/compat-20260914/pending302-first/144-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1566
+      }
     },
     {
       "caseId": 1286,
       "title": "冒泡",
       "testId": 145,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "我要冒泡正在退出请稍候。",
+      "evidence": "artifacts/compat-20260914/pending302-first/145-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 106,
+        "keysTested": 0,
+        "elapsedMs": 559
+      }
     },
     {
       "caseId": 1287,
       "title": "冒泡VIP游戏套餐",
       "testId": 146,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/146-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 278
+      }
     },
     {
       "caseId": 1292,
       "title": "冒泡看图",
       "testId": 147,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/147-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 544
+      }
     },
     {
       "caseId": 1296,
       "title": "冒泡平台",
       "testId": 148,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "冒泡正在退出下次再见。",
+      "evidence": "artifacts/compat-20260914/pending302-first/148-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 106,
+        "keysTested": 0,
+        "elapsedMs": 443
+      }
     },
     {
       "caseId": 1297,
       "title": "冒泡棋牌",
       "testId": 149,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/149-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1477
+      }
     },
     {
       "caseId": 1298,
       "title": "冒泡棋牌",
       "testId": 150,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/150-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1538
+      }
     },
     {
       "caseId": 1300,
       "title": "冒泡软件魔盒",
       "testId": 151,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "map8读取0x2f2f2f2f，路径递归问题。",
+      "evidence": "artifacts/compat-20260914/pending302-first/151-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "MemoryFault: GuestMemory map8 fault at 0x2f2f2f2f",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 51
+      }
     },
     {
       "caseId": 1301,
       "title": "冒泡社区",
       "testId": 152,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/152-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1426
+      }
     },
     {
       "caseId": 1302,
       "title": "冒泡社区安装",
       "testId": 153,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/153-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1450
+      }
     },
     {
       "caseId": 1303,
       "title": "冒泡视频交友",
       "testId": 154,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-configuration",
+      "note": "冒泡影音配置信息检查出错。",
+      "evidence": "artifacts/compat-20260914/pending302-first/154-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 101,
+        "keysTested": 0,
+        "elapsedMs": 468
+      }
     },
     {
       "caseId": 1309,
       "title": "冒泡听吧",
       "testId": 155,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "提示未插SIM卡或无网络。",
+      "evidence": "artifacts/compat-20260914/pending302-first/155-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 713
+      }
     },
     {
       "caseId": 1310,
       "title": "冒泡网",
       "testId": 156,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "investigate-start-exit",
+      "note": "请稍等后退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/156-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 140,
+        "keysTested": 1,
+        "elapsedMs": 245
+      }
     },
     {
       "caseId": 1311,
       "title": "冒泡网游",
       "testId": 157,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "冒泡网游首次注册弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/157-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1375
+      }
     },
     {
       "caseId": 1312,
       "title": "冒泡音乐",
       "testId": 158,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/158-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 527
+      }
     },
     {
       "caseId": 1315,
       "title": "冒泡游戏商城",
       "testId": 159,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/159-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 539
+      }
     },
     {
       "caseId": 1324,
       "title": "冒泡浏览器安装",
       "testId": 160,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "浏览器获取页面错误94。",
+      "evidence": "artifacts/compat-20260914/pending302-first/160-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1721
+      }
     },
     {
       "caseId": 1325,
       "title": "冒泡浏览器安装",
       "testId": 161,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-network-content",
+      "note": "浏览器获取页面错误94。",
+      "evidence": "artifacts/compat-20260914/pending302-first/161-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2011
+      }
     },
     {
       "caseId": 1328,
       "title": "冒险岛",
       "testId": 162,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "冒险岛关卡对白，待操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/162-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 6032
+      }
     },
     {
       "caseId": 1339,
       "title": "美女3D飞车",
       "testId": 163,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "美女3D飞车道具商店，待继续进入比赛。",
+      "evidence": "artifacts/compat-20260914/pending302-first/163-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1700
+      }
     },
     {
       "caseId": 1350,
       "title": "美女翻翻看",
       "testId": 164,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "释放资源中预算超限，PC0x2974aa。",
+      "evidence": "artifacts/compat-20260914/pending302-first/164-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "ExtFault: EXT fault abi-fault at 0x2974aa (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 1793
+      }
     },
     {
       "caseId": 1386,
       "title": "梦幻封神",
       "testId": 165,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-registration",
+      "note": "首次安装注册弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/165-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1268
+      }
     },
     {
       "caseId": 1406,
       "title": "免费抽奖|欢乐共享",
       "testId": 166,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/166-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 271
+      }
     },
     {
       "caseId": 1408,
       "title": "秒杀iPhone的游戏",
       "testId": 167,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/167-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 273
+      }
     },
     {
       "caseId": 1410,
       "title": "明星美女麻将馆",
       "testId": 168,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "runtime-failure",
+      "note": "麻将馆标题后堆链损坏，size0x43005100。",
+      "evidence": "artifacts/compat-20260914/pending302-first/168-failure.png",
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "entry",
+        "error": "Error: corrupt guest heap free block: address=0x2a4b40 size=0x43005100 base=0x24b700 end=0xa4b700",
+        "ticks": 124,
+        "keysTested": 1,
+        "elapsedMs": 352
+      }
     },
     {
       "caseId": 1414,
       "title": "名将三国OL",
       "testId": 169,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blank-output",
+      "note": "全黑，无实际场景。",
+      "evidence": "artifacts/compat-20260914/pending302-first/169-sustained.png",
+      "firstRun": {
+        "outcome": "black-screen",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1897
+      }
     },
     {
       "caseId": 1491,
       "title": "内衣大盗",
       "testId": 170,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-touch-entry",
+      "note": "内衣大盗是否开启音乐Y/N。",
+      "evidence": "artifacts/compat-20260914/pending302-first/170-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2084
+      }
     },
     {
       "caseId": 1504,
       "title": "年年有“愚”",
       "testId": 171,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/171-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 272
+      }
     },
     {
       "caseId": 1511,
       "title": "农民斗地主",
       "testId": 172,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "斗地主角色选择及是否使用控牌功能弹窗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/172-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 35686
+      }
     },
     {
       "caseId": 1515,
       "title": "怒火铁拳",
       "testId": 173,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，待战斗操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/173-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9119
+      }
     },
     {
       "caseId": 1516,
       "title": "怒火铁拳",
       "testId": 174,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，待战斗操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/174-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9194
+      }
     },
     {
       "caseId": 1517,
       "title": "怒火铁拳",
       "testId": 175,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，带触屏数字键盘，待战斗操作。",
+      "evidence": "artifacts/compat-20260914/pending302-first/175-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 12828
+      }
     },
     {
       "caseId": 1526,
       "title": "欧洲杯有奖竞猜",
       "testId": 176,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/176-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 271
+      }
     },
     {
       "caseId": 1560,
       "title": "七夕“遇见爱”",
       "testId": 177,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "evidence": "artifacts/compat-20260914/pending302-first/177-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 273
+      }
     },
     {
       "caseId": 1561,
       "title": "七夕冒泡送情意",
       "testId": 178,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/178-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 278
+      }
     },
     {
       "caseId": 1565,
       "title": "奇迹捕鱼",
       "testId": 179,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "needs-entry-retry",
+      "note": "奇迹捕鱼菜单注明1开始、5退出，原探针可能误退出。",
+      "evidence": "artifacts/compat-20260914/pending302-first/179-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 150,
+        "keysTested": 2,
+        "elapsedMs": 1895
+      }
     },
     {
       "caseId": 1585,
       "title": "抢！注册道具费全免",
       "testId": 180,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "evidence": "artifacts/compat-20260914/pending302-first/180-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 284
+      }
     },
     {
       "caseId": 1589,
       "title": "抢登钓鱼岛",
       "testId": 181,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9589
+      },
+      "disposition": "verify-gameplay",
+      "note": "横版战斗场景和对白，需实际战斗验证",
+      "evidence": "artifacts/compat-20260914/pending302-first/181-sustained.png"
     },
     {
       "caseId": 1590,
       "title": "抢登钓鱼岛",
       "testId": 182,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 10856
+      },
+      "disposition": "verify-gameplay",
+      "note": "横版战斗场景和对白，需实际战斗验证",
+      "evidence": "artifacts/compat-20260914/pending302-first/182-sustained.png"
     },
     {
       "caseId": 1591,
       "title": "抢滩登陆2012",
       "testId": 183,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 776
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "由于网络问题无法获取信息",
+      "evidence": "artifacts/compat-20260914/pending302-first/183-sustained.png"
     },
     {
       "caseId": 1604,
       "title": "青春纪念册",
       "testId": 184,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 277
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，联网失败退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/184-failure.png"
     },
     {
       "caseId": 1616,
       "title": "情趣高手",
       "testId": 185,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5112
+      },
+      "disposition": "entry-retry",
+      "note": "九宫格头像弹窗是否进入欣赏",
+      "evidence": "artifacts/compat-20260914/pending302-first/185-sustained.png"
     },
     {
       "caseId": 1628,
       "title": "趣拼高帅富",
       "testId": 186,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1976
+      },
+      "disposition": "entry-retry",
+      "note": "趣拼高帅富第1关开始按钮",
+      "evidence": "artifacts/compat-20260914/pending302-first/186-sustained.png"
     },
     {
       "caseId": 1629,
       "title": "趣拼图",
       "testId": 187,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2180
+      },
+      "disposition": "entry-retry",
+      "note": "趣拼图第1关开始入口",
+      "evidence": "artifacts/compat-20260914/pending302-first/187-sustained.png"
     },
     {
       "caseId": 1630,
       "title": "趣拼学生妹",
       "testId": 188,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1642
+      },
+      "disposition": "entry-retry",
+      "note": "趣拼学生妹第1关开始按钮",
+      "evidence": "artifacts/compat-20260914/pending302-first/188-sustained.png"
     },
     {
       "caseId": 1631,
       "title": "趣拼学生妹",
       "testId": 189,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1975
+      },
+      "disposition": "entry-retry",
+      "note": "趣拼学生妹第1关开始按钮",
+      "evidence": "artifacts/compat-20260914/pending302-first/189-sustained.png"
     },
     {
       "caseId": 1681,
       "title": "人人网",
       "testId": 190,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 535
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "人人网首次使用发送请求页面",
+      "evidence": "artifacts/compat-20260914/pending302-first/190-sustained.png"
     },
     {
       "caseId": 1696,
       "title": "忍者水果",
       "testId": 191,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4497
+      },
+      "disposition": "verify-gameplay",
+      "note": "忍者水果炸弹教学",
+      "evidence": "artifacts/compat-20260914/pending302-first/191-sustained.png"
     },
     {
       "caseId": 1697,
       "title": "忍者水果",
       "testId": 192,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2768
+      },
+      "disposition": "verify-gameplay",
+      "note": "忍者水果炸弹教学",
+      "evidence": "artifacts/compat-20260914/pending302-first/192-sustained.png"
     },
     {
       "caseId": 1698,
       "title": "忍者水果",
       "testId": 193,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3043
+      },
+      "disposition": "verify-gameplay",
+      "note": "忍者水果得分0菜鸟战士结算",
+      "evidence": "artifacts/compat-20260914/pending302-first/193-sustained.png"
     },
     {
       "caseId": 1699,
       "title": "忍者水果",
       "testId": 194,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3775
+      },
+      "disposition": "verify-gameplay",
+      "note": "忍者水果忍者刀教学",
+      "evidence": "artifacts/compat-20260914/pending302-first/194-sustained.png"
     },
     {
       "caseId": 1700,
       "title": "忍者水果",
       "testId": 195,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4689
+      },
+      "disposition": "verify-gameplay",
+      "note": "忍者水果划过水果教学",
+      "evidence": "artifacts/compat-20260914/pending302-first/195-sustained.png"
     },
     {
       "caseId": 1703,
       "title": "扔纸团",
       "testId": 196,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1379
+      },
+      "disposition": "entry-retry",
+      "note": "扔纸团开始游戏菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/196-sustained.png"
     },
     {
       "caseId": 1707,
       "title": "如来神掌",
       "testId": 197,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "controls",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 330,
+        "keysTested": 11,
+        "elapsedMs": 1076
+      },
+      "disposition": "entry-retry",
+      "note": "如来神掌菜单选中退出后退出，需定向开始",
+      "evidence": "artifacts/compat-20260914/pending302-first/197-failure.png"
     },
     {
       "caseId": 1714,
       "title": "三国保钓战",
       "testId": 198,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 972
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "连接服务器失败",
+      "evidence": "artifacts/compat-20260914/pending302-first/198-sustained.png"
     },
     {
       "caseId": 1715,
       "title": "三国大富翁",
       "testId": 199,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1946
+      },
+      "disposition": "entry-retry",
+      "note": "三国大富翁主角选择，左右选择圆键确定",
+      "evidence": "artifacts/compat-20260914/pending302-first/199-sustained.png"
     },
     {
       "caseId": 1716,
       "title": "三国大富翁",
       "testId": 200,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2227
+      },
+      "disposition": "entry-retry",
+      "note": "三国大富翁点击头像双击确定",
+      "evidence": "artifacts/compat-20260914/pending302-first/200-sustained.png"
     },
     {
       "caseId": 1730,
       "title": "三国猛将传",
       "testId": 201,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 138
+      },
+      "disposition": "unsupported-profile",
+      "note": "本手机不支持此类应用",
+      "evidence": "artifacts/compat-20260914/pending302-first/201-sustained.png"
     },
     {
       "caseId": 1736,
       "title": "三国纳妾记",
       "testId": 202,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4596
+      },
+      "disposition": "entry-retry",
+      "note": "三国纳妾记开始游戏标题页",
+      "evidence": "artifacts/compat-20260914/pending302-first/202-sustained.png"
     },
     {
       "caseId": 1781,
       "title": "蛇来运转大抽奖",
       "testId": 203,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 271
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/203-failure.png"
     },
     {
       "caseId": 1799,
       "title": "神马过年不寂寞",
       "testId": 204,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 267
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/204-failure.png"
     },
     {
       "caseId": 1801,
       "title": "神魔大陆",
       "testId": 205,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 10211
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "由于网络问题无法获取信息",
+      "evidence": "artifacts/compat-20260914/pending302-first/205-sustained.png"
     },
     {
       "caseId": 1868,
       "title": "侍魂之修罗斩",
       "testId": 206,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5101
+      },
+      "disposition": "entry-retry",
+      "note": "侍魂之修罗斩开始游戏标题页",
+      "evidence": "artifacts/compat-20260914/pending302-first/206-sustained.png"
     },
     {
       "caseId": 1880,
       "title": "手机QQ",
       "testId": 207,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 7
+      },
+      "disposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "evidence": "artifacts/compat-20260914/pending302-first/207-failure.png"
     },
     {
       "caseId": 1883,
       "title": "手机UC原版",
       "testId": 208,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "black-screen",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 389
+      },
+      "disposition": "black-screen",
+      "note": "持续黑屏",
+      "evidence": "artifacts/compat-20260914/pending302-first/208-sustained.png"
     },
     {
       "caseId": 1889,
       "title": "手机信号强度仪V3",
       "testId": 209,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 651
+      },
+      "disposition": "verify-device-function",
+      "note": "信号强度仪level3 band5 移动；需设备状态验证",
+      "evidence": "artifacts/compat-20260914/pending302-first/209-sustained.png"
     },
     {
       "caseId": 1891,
       "title": "手机阅读",
       "testId": 210,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 472
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "组件更新网络错误支持断点续传",
+      "evidence": "artifacts/compat-20260914/pending302-first/210-sustained.png"
     },
     {
       "caseId": 1895,
       "title": "手写库01",
       "testId": 211,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 14
+      },
+      "disposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/211-failure.png"
     },
     {
       "caseId": 1896,
       "title": "手写库02",
       "testId": 212,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 13
+      },
+      "disposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/212-failure.png"
     },
     {
       "caseId": 1897,
       "title": "手写库03",
       "testId": 213,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 15
+      },
+      "disposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/213-failure.png"
     },
     {
       "caseId": 1898,
       "title": "手写库04",
       "testId": 214,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 14
+      },
+      "disposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/214-failure.png"
     },
     {
       "caseId": 1901,
       "title": "手信语音聊天",
       "testId": 215,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 265
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中，缺失下载包",
+      "evidence": "artifacts/compat-20260914/pending302-first/215-sustained.png"
     },
     {
       "caseId": 1903,
       "title": "暑期iPhone大礼包",
       "testId": 216,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 265
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中Hi画面",
+      "evidence": "artifacts/compat-20260914/pending302-first/216-sustained.png"
     },
     {
       "caseId": 1904,
       "title": "蜀山剑侠",
       "testId": 217,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1330
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/217-sustained.png"
     },
     {
       "caseId": 1908,
       "title": "数学达人",
       "testId": 218,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2184
+      },
+      "disposition": "verify-gameplay",
+      "note": "数学达人再来一次/离开游戏弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/218-sustained.png"
     },
     {
       "caseId": 1915,
       "title": "水果老虎机",
       "testId": 219,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 104,
+        "keysTested": 0,
+        "elapsedMs": 1854
+      },
+      "disposition": "entry-retry",
+      "note": "水果老虎机菜单退出，需定向开始",
+      "evidence": "artifacts/compat-20260914/pending302-first/219-failure.png"
     },
     {
       "caseId": 1916,
       "title": "水果梦工厂",
       "testId": 220,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3745
+      },
+      "disposition": "entry-retry",
+      "note": "水果梦工厂开始帮助排名菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/220-sustained.png"
     },
     {
       "caseId": 1924,
       "title": "水晶之恋",
       "testId": 221,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2605
+      },
+      "disposition": "verify-gameplay",
+      "note": "人物换装服饰选择确认页面",
+      "evidence": "artifacts/compat-20260914/pending302-first/221-sustained.png"
     },
     {
       "caseId": 1928,
       "title": "水浒对对碰",
       "testId": 222,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3382
+      },
+      "disposition": "verify-gameplay",
+      "note": "水浒公孙胜剧情对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/222-sustained.png"
     },
     {
       "caseId": 1929,
       "title": "水浒反殴传",
       "testId": 223,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "boot",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 156
+      },
+      "disposition": "unexplained-exit",
+      "note": "黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/223-failure.png"
     },
     {
       "caseId": 1975,
       "title": "贪吃小鳄鱼",
       "testId": 224,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 5325
+      },
+      "disposition": "entry-retry",
+      "note": "贪吃小鳄鱼开始游戏菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/224-sustained.png"
     },
     {
       "caseId": 1976,
       "title": "贪吃小鳄鱼",
       "testId": 225,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 7446
+      },
+      "disposition": "entry-retry",
+      "note": "贪吃小鳄鱼开始游戏菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/225-sustained.png"
     },
     {
       "caseId": 1998,
       "title": "天龙八部",
       "testId": 226,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1338
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/226-sustained.png"
     },
     {
       "caseId": 2013,
       "title": "天天打怪兽",
       "testId": 227,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 8178
+      },
+      "disposition": "verify-gameplay",
+      "note": "横版战斗剧情对白",
+      "evidence": "artifacts/compat-20260914/pending302-first/227-sustained.png"
     },
     {
       "caseId": 2014,
       "title": "天天打折货到付款",
       "testId": 228,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 101,
+        "keysTested": 0,
+        "elapsedMs": 277
+      },
+      "disposition": "verify-function",
+      "note": "功能菜单精品手机/精品电脑等，需定向操作",
+      "evidence": "artifacts/compat-20260914/pending302-first/228-failure.png"
     },
     {
       "caseId": 2024,
       "title": "铁血抗日",
       "testId": 229,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3960
+      },
+      "disposition": "verify-gameplay",
+      "note": "火车日本兵剧情对白",
+      "evidence": "artifacts/compat-20260914/pending302-first/229-sustained.png"
     },
     {
       "caseId": 2025,
       "title": "铁血抗日",
       "testId": 230,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3886
+      },
+      "disposition": "verify-gameplay",
+      "note": "火车日本兵剧情对白",
+      "evidence": "artifacts/compat-20260914/pending302-first/230-sustained.png"
     },
     {
       "caseId": 2028,
       "title": "听听音阅贺岁版",
       "testId": 231,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 588
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "音乐列表电子书听听世界列表空",
+      "evidence": "artifacts/compat-20260914/pending302-first/231-sustained.png"
     },
     {
       "caseId": 2029,
       "title": "听听音阅贺岁版",
       "testId": 232,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 139,
+        "keysTested": 1,
+        "elapsedMs": 362
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "请稍等后退出，缺失下载包",
+      "evidence": "artifacts/compat-20260914/pending302-first/232-failure.png"
     },
     {
       "caseId": 2034,
       "title": "童年经典游戏合辑",
       "testId": 233,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 255
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "evidence": "artifacts/compat-20260914/pending302-first/233-sustained.png"
     },
     {
       "caseId": 2036,
       "title": "偷看美女",
       "testId": 234,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 12312
+      },
+      "disposition": "entry-retry",
+      "note": "是否开启音乐弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/234-sustained.png"
     },
     {
       "caseId": 2042,
       "title": "途客行天下",
       "testId": 235,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 9
+      },
+      "disposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "evidence": "artifacts/compat-20260914/pending302-first/235-failure.png"
     },
     {
       "caseId": 2057,
       "title": "吞食天地2",
       "testId": 236,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 2650,
+        "keysTested": 128,
+        "elapsedMs": 13578
+      },
+      "disposition": "verify-gameplay",
+      "note": "吞食天地2仍在刘备二弟剧情对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/236-sustained.png"
     },
     {
       "caseId": 2064,
       "title": "玩手信赢乐phone",
       "testId": 237,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 259
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "evidence": "artifacts/compat-20260914/pending302-first/237-sustained.png"
     },
     {
       "caseId": 2071,
       "title": "万水千山粽是情",
       "testId": 238,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 259
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/238-failure.png"
     },
     {
       "caseId": 2082,
       "title": "网络时钟",
       "testId": 239,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 145
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "联网失败请退出重试",
+      "evidence": "artifacts/compat-20260914/pending302-first/239-sustained.png"
     },
     {
       "caseId": 2098,
       "title": "未来之英雄传奇",
       "testId": 240,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3433
+      },
+      "disposition": "entry-retry",
+      "note": "是否开启音乐弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/240-sustained.png"
     },
     {
       "caseId": 2101,
       "title": "我爱拼图安装包2",
       "testId": 241,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1056
+      },
+      "disposition": "entry-retry",
+      "note": "难度易难设置页面",
+      "evidence": "artifacts/compat-20260914/pending302-first/241-sustained.png"
     },
     {
       "caseId": 2130,
       "title": "五一带你玩转不停",
       "testId": 242,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 264
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/242-failure.png"
     },
     {
       "caseId": 2145,
       "title": "西游记OL",
       "testId": 243,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1349
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/243-sustained.png"
     },
     {
       "caseId": 2146,
       "title": "西游记OL",
       "testId": 244,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1354
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/244-sustained.png"
     },
     {
       "caseId": 2165,
       "title": "夏日Party",
       "testId": 245,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 104,
+        "keysTested": 0,
+        "elapsedMs": 2015
+      },
+      "disposition": "entry-retry",
+      "note": "夏日Party菜单退出，需定向开始",
+      "evidence": "artifacts/compat-20260914/pending302-first/245-failure.png"
     },
     {
       "caseId": 2167,
       "title": "夏日缤纷礼包",
       "testId": 246,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 258
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "evidence": "artifacts/compat-20260914/pending302-first/246-sustained.png"
     },
     {
       "caseId": 2177,
       "title": "仙剑问情",
       "testId": 247,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1333
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/247-sustained.png"
     },
     {
       "caseId": 2184,
       "title": "仙魔逆唯我独尊",
       "testId": 248,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 8276
+      },
+      "disposition": "verify-gameplay",
+      "note": "仙魔剧情战斗对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/248-sustained.png"
     },
     {
       "caseId": 2185,
       "title": "仙魔逆唯我独尊",
       "testId": 249,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 8313
+      },
+      "disposition": "verify-gameplay",
+      "note": "仙魔剧情战斗对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/249-sustained.png"
     },
     {
       "caseId": 2192,
       "title": "限时抢购买一送一",
       "testId": 250,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 259
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "evidence": "artifacts/compat-20260914/pending302-first/250-sustained.png"
     },
     {
       "caseId": 2225,
       "title": "笑傲江湖",
       "testId": 251,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1212
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/251-sustained.png"
     },
     {
       "caseId": 2265,
       "title": "新羊过河",
       "testId": 252,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3711
+      },
+      "disposition": "verify-gameplay",
+      "note": "横向旋转玩法场景，需定向验证",
+      "evidence": "artifacts/compat-20260914/pending302-first/252-sustained.png"
     },
     {
       "caseId": 2271,
       "title": "星河舰队",
       "testId": 253,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3189
+      },
+      "disposition": "entry-retry",
+      "note": "星河舰队开始游戏菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/253-sustained.png"
     },
     {
       "caseId": 2285,
       "title": "幸运砸蛋",
       "testId": 254,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1344
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/254-sustained.png"
     },
     {
       "caseId": 2287,
       "title": "性感美女找茬",
       "testId": 255,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2899
+      },
+      "disposition": "verify-gameplay",
+      "note": "人物双图找茬界面，需实际操作",
+      "evidence": "artifacts/compat-20260914/pending302-first/255-sustained.png"
     },
     {
       "caseId": 2294,
       "title": "熊猫大乱斗",
       "testId": 256,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2411
+      },
+      "disposition": "entry-retry",
+      "note": "熊猫大乱斗继续游戏菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/256-sustained.png"
     },
     {
       "caseId": 2333,
       "title": "炎龙骑士",
       "testId": 257,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 164
+      },
+      "disposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "evidence": "artifacts/compat-20260914/pending302-first/257-failure.png"
     },
     {
       "caseId": 2342,
       "title": "要钱不要命",
       "testId": 258,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4823
+      },
+      "disposition": "entry-retry",
+      "note": "要钱不要命游戏开始标题页",
+      "evidence": "artifacts/compat-20260914/pending302-first/258-sustained.png"
     },
     {
       "caseId": 2345,
       "title": "野人岛3",
       "testId": 259,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 6243
+      },
+      "disposition": "verify-gameplay",
+      "note": "小提米村里大钟剧情对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/259-sustained.png"
     },
     {
       "caseId": 2349,
       "title": "夜袭鬼子营",
       "testId": 260,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1993
+      },
+      "disposition": "entry-retry",
+      "note": "是否开启声音弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/260-sustained.png"
     },
     {
       "caseId": 2354,
       "title": "一毛钱手机抽回家",
       "testId": 261,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 268
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "evidence": "artifacts/compat-20260914/pending302-first/261-sustained.png"
     },
     {
       "caseId": 2355,
       "title": "一枪杀几人",
       "testId": 262,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 3888
+      },
+      "disposition": "entry-retry",
+      "note": "射击游戏开始菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/262-sustained.png"
     },
     {
       "caseId": 2359,
       "title": "移动股票王",
       "testId": 263,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 231
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "用户名密码登录开通试用界面",
+      "evidence": "artifacts/compat-20260914/pending302-first/263-sustained.png"
     },
     {
       "caseId": 2360,
       "title": "移动视线",
       "testId": 264,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "black-screen",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "black-screen",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 64
+      },
+      "disposition": "black-screen",
+      "note": "持续黑屏",
+      "evidence": "artifacts/compat-20260914/pending302-first/264-sustained.png"
     },
     {
       "caseId": 2364,
       "title": "倚天屠龙绝情剑",
       "testId": 265,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "controls",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 330,
+        "keysTested": 11,
+        "elapsedMs": 1034
+      },
+      "disposition": "entry-retry",
+      "note": "倚天屠龙绝情剑菜单退出，需定向开始",
+      "evidence": "artifacts/compat-20260914/pending302-first/265-failure.png"
     },
     {
       "caseId": 2380,
       "title": "英汉字典",
       "testId": 266,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      },
+      "disposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "evidence": "artifacts/compat-20260914/pending302-first/266-failure.png"
     },
     {
       "caseId": 2382,
       "title": "英雄救美之狙击之神",
       "testId": 267,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 13085
+      },
+      "disposition": "entry-retry",
+      "note": "狙击游戏开始游戏帮助菜单",
+      "evidence": "artifacts/compat-20260914/pending302-first/267-sustained.png"
     },
     {
       "caseId": 2391,
       "title": "应用软件>>",
       "testId": 268,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 148
+      },
+      "disposition": "entry-retry",
+      "note": "点击更多游戏畅玩提示",
+      "evidence": "artifacts/compat-20260914/pending302-first/268-sustained.png"
     },
     {
       "caseId": 2399,
       "title": "永远的冒险岛",
       "testId": 269,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2261
+      },
+      "disposition": "verify-gameplay",
+      "note": "平台地图角色和收集物，需实际操作",
+      "evidence": "artifacts/compat-20260914/pending302-first/269-sustained.png"
     },
     {
       "caseId": 2405,
       "title": "优化大师",
       "testId": 270,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "runtime-error",
+        "phase": "start",
+        "error": "ExtFault: EXT fault abi-fault at 0x1e90fcc (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 15487
+      },
+      "disposition": "runtime-error",
+      "note": "优化大师启动budget exceeded PC1e90fcc",
+      "evidence": "artifacts/compat-20260914/pending302-first/270-failure.png"
     },
     {
       "caseId": 2407,
       "title": "游戏布袋",
       "testId": 271,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 259
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，缺失appid480101",
+      "evidence": "artifacts/compat-20260914/pending302-first/271-failure.png"
     },
     {
       "caseId": 2408,
       "title": "游戏猎手",
       "testId": 272,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 259
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "evidence": "artifacts/compat-20260914/pending302-first/272-sustained.png"
     },
     {
       "caseId": 2409,
       "title": "游戏中心",
       "testId": 273,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1330
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/273-sustained.png"
     },
     {
       "caseId": 2411,
       "title": "愚人节泡妞利器",
       "testId": 274,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 255
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "evidence": "artifacts/compat-20260914/pending302-first/274-sustained.png"
     },
     {
       "caseId": 2438,
       "title": "缘分测试",
       "testId": 275,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "entry",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 104,
+        "keysTested": 0,
+        "elapsedMs": 1249
+      },
+      "disposition": "verify-function",
+      "note": "缘分测试男女生日输入，需填写验证",
+      "evidence": "artifacts/compat-20260914/pending302-first/275-failure.png"
     },
     {
       "caseId": 2442,
       "title": "越狱吧吊丝",
       "testId": 276,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": true
+      "deferGraphicsFix": true,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1471,
+        "keysTested": 17,
+        "elapsedMs": 6118
+      },
+      "disposition": "graphics-deferred",
+      "note": "越狱吧吊丝场景花屏，依用户要求暂缓修复",
+      "evidence": "artifacts/compat-20260914/pending302-first/276-sustained.png"
     },
     {
       "caseId": 2451,
       "title": "宅人七天乐",
       "testId": 277,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 260
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，缺失appid480101",
+      "evidence": "artifacts/compat-20260914/pending302-first/277-failure.png"
     },
     {
       "caseId": 2462,
       "title": "战国英雄传",
       "testId": 278,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2308
+      },
+      "disposition": "verify-gameplay",
+      "note": "战国英雄传公孙牧云剧情对话",
+      "evidence": "artifacts/compat-20260914/pending302-first/278-sustained.png"
     },
     {
       "caseId": 2465,
       "title": "战神",
       "testId": 279,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1330
+      },
+      "disposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "evidence": "artifacts/compat-20260914/pending302-first/279-sustained.png"
     },
     {
       "caseId": 2468,
       "title": "战神金刚",
       "testId": 280,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 7329
+      },
+      "disposition": "verify-gameplay",
+      "note": "战神金刚还好赶上了剧情对白",
+      "evidence": "artifacts/compat-20260914/pending302-first/280-sustained.png"
     },
     {
       "caseId": 2476,
       "title": "战神之魂",
       "testId": 281,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "覆盖记录开始新游戏确认框；需明确选择是。",
+      "evidence": "artifacts/compat-20260914/pending302-first/281-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 4336
+      }
     },
     {
       "caseId": 2481,
       "title": "掌上e_mrp",
       "testId": 282,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-installer-output",
+      "note": "显示解包完成；需核实写入文件。",
+      "evidence": "artifacts/compat-20260914/pending302-first/282-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 174
+      }
     },
     {
       "caseId": 2485,
       "title": "掌星汉字字典",
       "testId": 283,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-function",
+      "note": "新华字典输入查询页，需输入汉字验证查询。",
+      "evidence": "artifacts/compat-20260914/pending302-first/283-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 456
+      }
     },
     {
       "caseId": 2486,
       "title": "找回元素",
       "testId": 284,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-gameplay",
+      "note": "教学提示手指滑动元素到小人身上过关；需定向拖动。",
+      "evidence": "artifacts/compat-20260914/pending302-first/284-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1559
+      }
     },
     {
       "caseId": 2508,
       "title": "争霸三国",
       "testId": 285,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "external-download",
+      "note": "下载提示推荐应用超市。",
+      "evidence": "artifacts/compat-20260914/pending302-first/285-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1960
+      }
     },
     {
       "caseId": 2514,
       "title": "正义英雄联盟-蝙蝠侠",
       "testId": 286,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-gameplay",
+      "note": "蝙蝠侠开篇剧情对话，需继续对话进入战斗。",
+      "evidence": "artifacts/compat-20260914/pending302-first/286-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 9126
+      }
     },
     {
       "caseId": 2522,
       "title": "植物大战僵尸官方版",
       "testId": 287,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "network-failure",
+      "note": "植物僵尸横屏提示网络连接失败。",
+      "evidence": "artifacts/compat-20260914/pending302-first/287-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 810
+      }
     },
     {
       "caseId": 2543,
       "title": "中秋:天涯共此时",
       "testId": 288,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/288-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 258
+      }
     },
     {
       "caseId": 2565,
       "title": "抓拍宝贝",
       "testId": 289,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-function",
+      "note": "抓拍宝贝选择连拍10/20/50张，需验证相机接口。",
+      "evidence": "artifacts/compat-20260914/pending302-first/289-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 703
+      }
     },
     {
       "caseId": 2568,
       "title": "追忆童真那些年",
       "testId": 290,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/290-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 259
+      }
     },
     {
       "caseId": 2571,
       "title": "字体模块",
       "testId": 291,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "module-context",
+      "note": "字体模块黑屏退出；需核实模块调用条件。",
+      "evidence": "artifacts/compat-20260914/pending302-first/291-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "start",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "keysTested": 0,
+        "elapsedMs": 8
+      }
     },
     {
       "caseId": 2577,
       "title": "醉美人",
       "testId": 292,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "醉美人菜单开始游戏/设置/帮助；需触摸开始。",
+      "evidence": "artifacts/compat-20260914/pending302-first/292-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2297
+      }
     },
     {
       "caseId": 2601,
       "title": "喋血双雄",
       "testId": 293,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "exited",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-gameplay",
+      "note": "喋血双雄街道剧情对话；尚未有效战斗验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/293-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2015
+      }
     },
     {
       "caseId": 2606,
       "title": "逍遥剑侠传",
       "testId": 294,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "static-frame",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "菜单选中退出游戏后退出；需要定向选择开始。",
+      "evidence": "artifacts/compat-20260914/pending302-first/294-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "controls",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 330,
+        "keysTested": 11,
+        "elapsedMs": 1033
+      }
     },
     {
       "caseId": 2608,
       "title": "缤纷双蛋激情约惠",
       "testId": 295,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "evidence": "artifacts/compat-20260914/pending302-first/295-failure.png",
+      "firstRun": {
+        "outcome": "exited",
+        "phase": "sustained",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 472,
+        "keysTested": 15,
+        "elapsedMs": 258
+      }
     },
     {
       "caseId": 2619,
       "title": "鳄鱼爱洗澡",
       "testId": 296,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "鳄鱼爱洗澡关卡选择，第一关已解锁；需定向进入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/296-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 2863
+      }
     },
     {
       "caseId": 2620,
       "title": "鳄鱼洗澡",
       "testId": 297,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "runtime-error",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "鳄鱼洗澡章节页0/18；需进入关卡验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/297-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1104,
+        "keysTested": 7,
+        "elapsedMs": 17600
+      }
     },
     {
       "caseId": 2622,
       "title": "魅惑浮生录",
       "testId": 298,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "verify-gameplay",
+      "note": "魅惑浮生录宫廷剧情对话，尚未有效玩法验证。",
+      "evidence": "artifacts/compat-20260914/pending302-first/298-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 15053
+      }
     },
     {
       "caseId": 2635,
       "title": "[免费]冒泡棋牌",
       "testId": 299,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "online-registration",
+      "note": "冒泡棋牌首次安装账号注册提示。",
+      "evidence": "artifacts/compat-20260914/pending302-first/299-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1434
+      }
     },
     {
       "caseId": 2638,
       "title": "[免费]冒泡社区安装",
       "testId": 300,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "online-registration",
+      "note": "冒泡社区首次安装账号注册提示。",
+      "evidence": "artifacts/compat-20260914/pending302-first/300-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1326
+      }
     },
     {
       "caseId": 2639,
       "title": "[免费]冒泡网游",
       "testId": 301,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "entry-retry",
+      "note": "网游列表笑傲OL/笑傲炫宠，需选择进入。",
+      "evidence": "artifacts/compat-20260914/pending302-first/301-sustained.png",
+      "firstRun": {
+        "outcome": "needs-scene-review",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 1534
+      }
     },
     {
       "caseId": 2640,
       "title": "[网游]无双三国",
       "testId": 302,
-      "status": "queued",
+      "status": "reviewed",
       "previousSmoke": "input-smoke-passed",
       "resolved": false,
-      "deferGraphicsFix": false
+      "deferGraphicsFix": false,
+      "disposition": "online-loading",
+      "note": "冒泡浏览器停留加载标识。",
+      "evidence": "artifacts/compat-20260914/pending302-first/302-sustained.png",
+      "firstRun": {
+        "outcome": "no-input-response",
+        "phase": "complete",
+        "error": null,
+        "ticks": 1174,
+        "keysTested": 15,
+        "elapsedMs": 497
+      }
     }
-  ]
+  ],
+  "firstRunComplete": true,
+  "firstRunConcurrency": 1
 }
