@@ -1931,8 +1931,8 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "sustained-verified-awaiting-full-regression",
+      "resolved": true,
+      "status": "sustained-verified",
       "sustainedReview": {
         "artifact": "artifacts/compat-20260914/round4-zero-reviewed/results.json",
         "outcome": "passed",
@@ -2071,6 +2071,16 @@
       "round9Review": {
         "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
         "status": "unresolved-needs-effective-gameplay-verification"
+      },
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round10-pipe-reviewed/results.json",
+        "outcome": "passed",
+        "ticks": 2690,
+        "virtualSeconds": 215.2,
+        "controlChanges": 2,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "note": "实际关卡内触屏旋转水管，持续运行无异常；未声称完成关卡"
       }
     },
     {
@@ -3010,6 +3020,14 @@
       "round9Review": {
         "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
         "status": "unresolved-needs-effective-gameplay-verification"
+      },
+      "round10Review": {
+        "status": "unresolved-restart-input-needs-verification",
+        "scoringEvidence": "artifacts/compat-20260914/round10-math-answer/results.json",
+        "scoreBefore": 0,
+        "scoreAfter": 2,
+        "restartEvidence": "artifacts/compat-20260914/round10-lifecycle/results.json",
+        "note": "尝试重开时选择到离开游戏，尚未区分场景坐标与实现问题"
       }
     },
     {
