@@ -919,7 +919,11 @@
       "latestSmoke": "static-frame",
       "latestError": null,
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "round9Review": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
+        "status": "unresolved-needs-effective-gameplay-verification"
+      }
     },
     {
       "caseId": 336,
@@ -1553,8 +1557,19 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-final/results.json",
+        "outcome": "passed",
+        "ticks": 2631,
+        "virtualSeconds": 210.48,
+        "controlChanges": 1,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "issue": "case-specific touch/key entry and board operation verified",
+        "note": "触屏C4落子及电脑应手，黑2白2→黑3白3"
+      }
     },
     {
       "caseId": 874,
@@ -1562,8 +1577,19 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-final/results.json",
+        "outcome": "passed",
+        "ticks": 2681,
+        "virtualSeconds": 214.48,
+        "controlChanges": 2,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "issue": "case-specific touch/key entry and board operation verified",
+        "note": "底部小兵滑至中间空位"
+      }
     },
     {
       "caseId": 880,
@@ -2041,6 +2067,10 @@
             "colors": 1465
           }
         ]
+      },
+      "round9Review": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
+        "status": "unresolved-needs-effective-gameplay-verification"
       }
     },
     {
@@ -2545,8 +2575,19 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-final/results.json",
+        "outcome": "passed",
+        "ticks": 2815,
+        "virtualSeconds": 225.2,
+        "controlChanges": 8,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "issue": "case-specific touch/key entry and board operation verified",
+        "note": "数字排列4,3/2,1→4,1/3,2"
+      }
     },
     {
       "caseId": 1560,
@@ -2965,7 +3006,11 @@
       "latestSmoke": "static-frame",
       "latestError": null,
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "round9Review": {
+        "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
+        "status": "unresolved-needs-effective-gameplay-verification"
+      }
     },
     {
       "caseId": 1915,
