@@ -3034,6 +3034,16 @@
         "artifact": "artifacts/compat-20260914/round11-confirm-down/results.json",
         "scenario": "artifacts/compat-20260914/round11-probes/confirm-down.json",
         "note": "纯等待后截图仍显示再来一次选中；按下确认后退出，修正第十轮误选离开游戏的推断。尚未定位具体实现缺陷。"
+      },
+      "round12Review": {
+        "status": "unresolved-guest-remainder-zero",
+        "artifact": "artifacts/compat-20260914/round12-math-operands/results.json",
+        "operandTrace": "artifacts/compat-20260914/round12-math-operands/divides.json",
+        "dividend": 17,
+        "divisor": 0,
+        "caller": "0x2c1bea",
+        "helper": "0x2bf4f0",
+        "note": "确认重开触发 native VM 取余零除数，helper 走异常退出路径；需追踪出题逻辑产生零值原因，不是已验证的主动离开。"
       }
     },
     {
