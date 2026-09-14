@@ -2,7 +2,7 @@
   "status": "in-progress",
   "scope": 313,
   "doneCheck": "实际启动、交互、持续运行有效，原通过项无回退；不以冒烟分类变化单独结案",
-  "latestSmokeSnapshot": "artifacts/compat-20260914/round8-full/results.json",
+  "latestSmokeSnapshot": "artifacts/compat-20260914/round13-full/results.json",
   "extraKnownFailures": [
     {
       "caseId": 603,
@@ -3044,6 +3044,11 @@
         "caller": "0x2c1bea",
         "helper": "0x2bf4f0",
         "note": "确认重开触发 native VM 取余零除数，helper 走异常退出路径；需追踪出题逻辑产生零值原因，不是已验证的主动离开。"
+      },
+      "round13Review": {
+        "artifact": "artifacts/compat-20260914/round13-math-operands/results.json",
+        "status": "unresolved-guest-remainder-zero",
+        "note": "修正 plat1211 重播种契约后仍复现17%0，未解决"
       }
     },
     {
