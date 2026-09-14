@@ -2,7 +2,7 @@
   "status": "in-progress",
   "scope": 313,
   "doneCheck": "实际启动、交互、持续运行有效，原通过项无回退；不以冒烟分类变化单独结案",
-  "latestSmokeSnapshot": "artifacts/compat-20260914/round7-full/results.json",
+  "latestSmokeSnapshot": "artifacts/compat-20260914/round8-full/results.json",
   "extraKnownFailures": [
     {
       "caseId": 603,
@@ -97,8 +97,19 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "touch-sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round8-2048-reviewed/results.json",
+        "outcome": "passed",
+        "ticks": 2780,
+        "virtualSeconds": 222.4,
+        "controlChanges": 12,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "requiredProfile": {},
+        "note": "触屏滑动合并并计分；按键冒烟分类保留"
+      }
     },
     {
       "caseId": 41,
@@ -106,8 +117,19 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "touch-sustained-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round8-2048-reviewed/results.json",
+        "outcome": "passed",
+        "ticks": 2768,
+        "virtualSeconds": 221.44,
+        "controlChanges": 12,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "requiredProfile": {},
+        "note": "触屏滑动合并并计分；按键冒烟分类保留"
+      }
     },
     {
       "caseId": 76,
@@ -2766,12 +2788,25 @@
       "baselineSmoke": "runtime-error",
       "latestSmoke": "runtime-error",
       "latestError": "ExtFault: EXT fault unmapped at 0x24c6e2 (arm_ext_call: GuestMemory map32 fault at 0xfffffffc)",
-      "resolved": false,
-      "status": "needs-per-case-verification",
+      "resolved": true,
+      "status": "configured-sustained-verified",
       "diagnosis": {
-        "status": "unresolved",
-        "issue": "null internal allocation used by copy and resource release wrapper",
+        "status": "configured-sustained-verified",
+        "issue": "800 KiB target minus public heap total becomes negative; use 512 KiB handset heap",
         "evidence": "artifacts/compat-20260914/round7-probes/1744-context.json"
+      },
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round8-1744-reviewed/results.json",
+        "outcome": "passed",
+        "ticks": 4129,
+        "virtualSeconds": 330.32,
+        "controlChanges": 8,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "requiredProfile": {
+          "guestHeapSize": 524288
+        },
+        "note": "显式512 KiB独立内存配置；默认冒烟仍失败"
       }
     },
     {

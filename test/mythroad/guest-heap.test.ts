@@ -1,11 +1,28 @@
 import { describe, expect, it } from "vitest";
 import { ExtRuntime } from "../../src/abi/runtime.ts";
 import { tableSlotAddr } from "../../src/abi/layout.ts";
+import { defaultProfile } from "../../src/mythroad/profile.ts";
 import { GuestHeap } from "../../src/mythroad/guest-heap.ts";
 import { MrTableBridge } from "../../src/mythroad/mr-table.ts";
 import { MythroadVfs } from "../../src/mythroad/vfs.ts";
 
 describe("shared Mythroad heap and framebuffer", () => {
+  it('advertises the explicitly selected handset heap through native globals', () => {
+    const ext = new ExtRuntime(), profile = defaultProfile({ guestHeapSize: 512 * 1024 });
+    const bridge = new MrTableBridge(ext, new MythroadVfs(), 'small-handset', { getProfile: () => profile });
+    bridge.install();
+    const read = (slot: number) => ext.mem.read32(ext.mem.read32(tableSlotAddr(slot)));
+    expect(read(109)).toBe(512 * 1024);
+    expect(read(110) - read(108)).toBe(512 * 1024);
+    const p = bridge.malloc(32768);
+    expect(p).toBe(read(108));
+    expect(read(111)).toBe(480 * 1024);
+    bridge.free(p, 32768);
+    expect(read(111)).toBe(512 * 1024);
+    for (const size of [-1, 0, 524289, Infinity, 16 * 1024 * 1024]) {
+      expect(() => defaultProfile({ guestHeapSize: size })).toThrow(RangeError);
+    }
+  });
   it('keeps large unpacking buffers inside the advertised heap and reuses them after release', () => {
     const ext = new ExtRuntime(), bridge = new MrTableBridge(ext, new MythroadVfs(), 'large-buffer');
     bridge.install();

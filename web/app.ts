@@ -12,7 +12,7 @@ import { BrowserAudio } from "./audio.ts";
 import { DOM_KEY, HeldKeys } from "./controls.ts";
 import { assetUrl, catalogHref, readGame, readLibrary } from "./library.ts";
 import { registerServiceWorker } from "./pwa.ts";
-import { playerScreenSize, readPref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
+import { playerScreenSize, playerHeapSize, readPref, writePref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
 import { readCachedStoreList, storeSdPath } from './mrp-store.ts';
 import { PRELOAD_SYSTEM_FILES, isSafeAssetPath, type PlayerFileSource } from "./remote-files.ts";
 import { optionalResourceJson } from './resource-json.ts';
@@ -259,7 +259,7 @@ async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: st
   titleEl.textContent = name.split("/").at(-1)!.replace(/\.mrp$/i, "");
   emptyScreen.hidden = true;
   const token = generation;
-  const profile = playerScreenSize(name, resolution.value, screen);
+  const profile = { ...playerScreenSize(name, resolution.value, screen), guestHeapSize: playerHeapSize(document.querySelector<HTMLSelectElement>("#heap-size")!.value) };
   audio.resume();
   void enableMotion();
   setStatus(`正在读取 ${name.split("/").at(-1)}…`);
@@ -486,13 +486,14 @@ function bindSelect(id: string, apply: (value: string) => void): void {
   const select = document.querySelector<HTMLSelectElement>(`#${id}`)!;
   try { const saved = readPref(id, currentGameKey); if (saved && Array.from(select.options).some(option => option.value === saved)) select.value = saved; } catch {}
   apply(select.value);
-  select.addEventListener('change', () => { storeSetting(id, select.value); apply(select.value); canvas.focus(); });
+  select.addEventListener('change', () => { writePref(id, select.value, currentGameKey); apply(select.value); canvas.focus(); });
 }
 bindSelect('zoom', fitScreen);
 bindSelect('speed', value => { speed = Number(value); });
 bindSelect('rotation', value => { releaseAll(); rotation = Number(value); fitScreen(); });
 bindSelect('keypad-side', value => keypad.classList.toggle('reverse', value === 'reverse'));
 bindSelect('resolution', () => {});
+bindSelect('heap-size', () => {});
 function rotate(delta: number): void { rotationSelect.value = String((rotation + delta + 4) % 4); rotationSelect.dispatchEvent(new Event('change')); }
 document.querySelector('#rotate-left')!.addEventListener('click', () => rotate(-1));
 document.querySelector('#rotate-right')!.addEventListener('click', () => rotate(1));

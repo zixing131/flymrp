@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { clockSlices, gamePrefKey, gameStem, prefKey, rotatedDirection, rotatedTilt, screenPoint } from "../../web/player-options.ts";
+import { playerHeapSize, clockSlices, gamePrefKey, gameStem, prefKey, rotatedDirection, rotatedTilt, screenPoint } from "../../web/player-options.ts";
 describe("player rotation and speed", () => {
   it("maps all four rotated display corners back to guest coordinates", () => {
     expect(screenPoint(0, 0, 240, 320, 0)).toEqual([0, 0]);
@@ -32,4 +32,9 @@ describe("player rotation and speed", () => {
     expect(gameStem("games/扫雷.mrp")).toBe("扫雷");
     expect(gamePrefKey("games/Mine.MRP", "speed")).toBe("flymrp.game.mine.speed");
   });
+});
+
+it("bounds stored memory choices and retains the default for invalid values", () => {
+  expect(playerHeapSize("512")).toBe(512 * 1024);
+  for (const value of [null, "", "NaN", "-1", "512.5", "999999"]) expect(playerHeapSize(value)).toBe(8 * 1024 * 1024);
 });

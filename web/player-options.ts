@@ -84,3 +84,9 @@ export function clearGamePrefs(game: string): void {
     for (const key of keys) localStorage.removeItem(key);
   } catch { /* storage is optional */ }
 }
+
+/** Bounded handset memory choices; stored preferences are untrusted. */
+export function playerHeapSize(value?: string | null): number {
+  const kib = Number(value);
+  return ([256, 512, 1024, 2048, 4096, 8192].includes(kib) ? kib : 8192) * 1024;
+}

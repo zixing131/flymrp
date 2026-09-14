@@ -59,13 +59,14 @@ let focusedName = '';
 let selected: Game | undefined;
 let sheetGame: Game | undefined;
 const kaios = applyKaiOS();
-const prefIds = ['resolution', 'zoom', 'midi-player', 'rotation', 'speed', 'keypad-side', 'show-fps'] as const;
+const prefIds = ['resolution', 'zoom', 'midi-player', 'rotation', 'speed', 'heap-size', 'keypad-side', 'show-fps'] as const;
 const gamePrefMap = [
   ['resolution', 'dsResolution', 'gsResolution'],
   ['zoom', 'dsZoom', 'gsZoom'],
   ['midi-player', 'dsMidi', 'gsMidi'],
   ['rotation', 'dsRotation', 'gsRotation'],
   ['speed', 'dsSpeed', 'gsSpeed'],
+  ['heap-size', 'dsHeap', 'gsHeap'],
   ['keypad-side', 'dsKeypad', 'gsKeypad'],
 ] as const;
 

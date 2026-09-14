@@ -296,7 +296,7 @@ export class MrTableBridge {
       this.ext.mem.write32(bitmap + 4, screen.pixels.byteLength);
       this.ext.mem.write32(bitmap + 12, this.screenAddr);
     }
-    this.heap ??= new GuestHeap(this.ext);
+    this.heap ??= new GuestHeap(this.ext, this.hooks.getProfile?.().guestHeapSize);
     for (const [slot, value] of [[92, screen.width], [93, screen.height], [94, 16]]) {
       this.ext.mem.write32(this.ext.mem.read32(tableSlotAddr(slot)), value);
     }

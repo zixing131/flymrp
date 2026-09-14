@@ -1,6 +1,6 @@
 import { MRPArchive } from "../../src/mrp/index.ts";
 import { EV_KEY } from "../../src/mythroad/events.ts";
-import { MR_MOUSE_DOWN, MR_MOUSE_UP } from "../../src/mythroad/constants.ts";
+import { MR_MOUSE_DOWN, MR_MOUSE_UP, MR_MOUSE_MOVE } from "../../src/mythroad/constants.ts";
 import { loadGameResourceFiles, loadLocalSystemFiles, systemFileHashes } from "../local-system-files.ts";
 import { SYSTEM_COMPONENTS } from "../../src/mythroad/system-components.ts";
 import { createHash } from "node:crypto";
@@ -15,7 +15,7 @@ import { FrameCapture } from "./frame-capture.ts";
 import { inferScreenSize } from "../../src/mythroad/device-size.ts";
 
 type Game = { id: number; path: string; sha256: string; required?: boolean };
-type Action = ({ key: string } | { tap: [number, number] }) & { hold?: number; wait?: number };
+type Action = ({ key: string } | { tap: [number, number] } | { swipe: [[number, number], [number, number]] }) & { hold?: number; wait?: number };
 type Scenario = { profile?: Partial<import("../../src/mythroad/profile.ts").DeviceProfile>; clock?: "deterministic" | "monotonic"; tickMs?: number; entry?: Action[]; controls?: Action[]; bootTicks?: number; tailTicks?: number; gameplaySha256?: string[]; controlSha256?: string[]; reviewNote?: string };
 const manifestPath = resolve(process.env.MRP_TEST_MANIFEST ?? "docs/compatibility/collection-100.json");
 const scenarioPath = resolve(process.env.MRP_TEST_SCENARIOS ?? "docs/compatibility/scenarios.json");
@@ -67,7 +67,23 @@ if(worker) {
     writeFileSync(join(output,`${game.id}-progress.json`),JSON.stringify({phase,ticks,keysTested,checkpoints}));
   };
   const tick=(count:number)=>{for(let i=0;i<count;i++){rt.advance(scenario.tickMs??80);for(let n=0;n<16&&rt.step();n++);if(rt.exited)throw new Error("guest exited");ticks++;if(ticks%5===0)distinct.add(fingerprint());}};
-  const tap=(action:Action)=>{const before=fingerprint();if ("tap" in action) rt.queueEvent(EV_KEY, MR_MOUSE_DOWN, ...action.tap); else rt.input.press(action.key);tick(action.hold??3);if ("tap" in action) rt.queueEvent(EV_KEY, MR_MOUSE_UP, ...action.tap); else rt.input.release(action.key);tick(action.wait??10);keysTested++;if(before!==fingerprint()){inputChanges++;if(phase==="controls")controlChanges++;}};
+  const tap=(action:Action)=>{
+    const before=fingerprint();
+    if ("swipe" in action) {
+      const [from,to]=action.swipe, steps=Math.max(1,action.hold??3);
+      rt.queueEvent(EV_KEY,MR_MOUSE_DOWN,...from);tick(1);
+      for(let i=1;i<=steps;i++) {
+        rt.queueEvent(EV_KEY,MR_MOUSE_MOVE,Math.round(from[0]+(to[0]-from[0])*i/steps),Math.round(from[1]+(to[1]-from[1])*i/steps));tick(1);
+      }
+      rt.queueEvent(EV_KEY,MR_MOUSE_UP,...to);
+    } else {
+      if ("tap" in action) rt.queueEvent(EV_KEY,MR_MOUSE_DOWN,...action.tap); else rt.input.press(action.key);
+      tick(action.hold??3);
+      if ("tap" in action) rt.queueEvent(EV_KEY,MR_MOUSE_UP,...action.tap); else rt.input.release(action.key);
+    }
+    tick(action.wait??10);keysTested++;
+    if(before!==fingerprint()){inputChanges++;if(phase==="controls")controlChanges++;}
+  };
   const startedAt=Date.now();
   try {
     rt.loadMrp(bytes);phase="start";rt.start();phase="boot";tick(scenario.bootTicks??50);capture("boot");

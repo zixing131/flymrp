@@ -18,6 +18,7 @@
     <div class="settings-heading"><h1>模拟器设置</h1><button id="close-settings" aria-label="关闭设置">×</button></div>
     <div class="transport"><button id="pause" disabled>暂停</button><button id="restart" disabled>重启</button><button id="screenshot">截图</button></div>
     <label class="setting">音量 <input id="volume" type="range" min="0" max="100" step="1" value="70" aria-label="音量" /><output id="volume-value">70%</output></label>
+    <label class="setting">运行内存（重启生效） <select id="heap-size"><option value="8192">8 MiB（默认）</option><option value="256">256 KiB</option><option value="512">512 KiB（旧机型）</option><option value="1024">1 MiB</option><option value="2048">2 MiB</option><option value="4096">4 MiB</option></select></label>
     <label class="setting">MIDI 播放器 <select id="midi-player"><option value="tinysynth">TinySynth · GM（推荐）</option><option value="simple">轻量方波</option></select></label>
     <label class="setting">画面缩放 <select id="zoom"><option value="auto">适应窗口</option><option value="1">1× 原始大小</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="3">3×</option><option value="4">4×</option></select></label>
     <label class="setting">画面方向 <select id="rotation"><option value="0">竖屏 · 0°</option><option value="1">向右 · 90°</option><option value="2">倒置 · 180°</option><option value="3">向左 · 270°</option></select></label>
