@@ -1,6 +1,6 @@
 {
   "scope": 302,
-  "status": "in-progress",
+  "status": "all-302-run-and-reviewed",
   "definition": "每项本轮独立运行和截图复核；发现缺陷修复验证；外部依赖和未知故障明确记录，不能把尝试运行当作兼容通过。",
   "results": [
     {
@@ -1640,8 +1640,8 @@
       "previousSmoke": "runtime-error",
       "resolved": false,
       "deferGraphicsFix": false,
-      "disposition": "runtime-failure",
-      "note": "释放资源中时预算超限，PC0x26309a。",
+      "disposition": "startup-fixed-needs-gameplay",
+      "note": "释放资源中时预算超限，PC0x26309a。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
       "evidence": "artifacts/compat-20260914/pending302-first/75-failure.png",
       "firstRun": {
         "outcome": "runtime-error",
@@ -1650,7 +1650,15 @@
         "ticks": 0,
         "keysTested": 0,
         "elapsedMs": 1765
-      }
+      },
+      "followups": [
+        {
+          "artifact": "artifacts/compat-20260914/pending302-budgetfix/results.json",
+          "outcome": "needs-scene-review",
+          "error": null,
+          "ticks": 1174
+        }
+      ]
     },
     {
       "caseId": 543,
@@ -2059,8 +2067,8 @@
       "previousSmoke": "runtime-error",
       "resolved": false,
       "deferGraphicsFix": false,
-      "disposition": "runtime-failure",
-      "note": "下载资源中约70%，预算超限PC0x24c6c0。",
+      "disposition": "startup-fixed-needs-gameplay",
+      "note": "下载资源中约70%，预算超限PC0x24c6c0。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
       "evidence": "artifacts/compat-20260914/pending302-first/95-failure.png",
       "firstRun": {
         "outcome": "runtime-error",
@@ -2069,7 +2077,15 @@
         "ticks": 0,
         "keysTested": 0,
         "elapsedMs": 1688
-      }
+      },
+      "followups": [
+        {
+          "artifact": "artifacts/compat-20260914/pending302-budgetfix/results.json",
+          "outcome": "needs-scene-review",
+          "error": null,
+          "ticks": 1174
+        }
+      ]
     },
     {
       "caseId": 727,
@@ -2089,7 +2105,15 @@
         "ticks": 0,
         "keysTested": 0,
         "elapsedMs": 1652
-      }
+      },
+      "followups": [
+        {
+          "artifact": "artifacts/compat-20260914/pending302-budgetfix/results.json",
+          "outcome": "runtime-error",
+          "error": "ExtFault: EXT fault abi-fault at 0x29d004 (arm_ext_call: budget exceeded)",
+          "ticks": 0
+        }
+      ]
     },
     {
       "caseId": 734,
@@ -3477,8 +3501,8 @@
       "previousSmoke": "runtime-error",
       "resolved": false,
       "deferGraphicsFix": false,
-      "disposition": "runtime-failure",
-      "note": "释放资源中预算超限，PC0x2974aa。",
+      "disposition": "startup-fixed-needs-gameplay",
+      "note": "释放资源中预算超限，PC0x2974aa。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
       "evidence": "artifacts/compat-20260914/pending302-first/164-failure.png",
       "firstRun": {
         "outcome": "runtime-error",
@@ -3487,7 +3511,15 @@
         "ticks": 0,
         "keysTested": 0,
         "elapsedMs": 1793
-      }
+      },
+      "followups": [
+        {
+          "artifact": "artifacts/compat-20260914/pending302-budgetfix/results.json",
+          "outcome": "no-input-response",
+          "error": null,
+          "ticks": 1174
+        }
+      ]
     },
     {
       "caseId": 1386,
@@ -5776,7 +5808,15 @@
       },
       "disposition": "runtime-error",
       "note": "优化大师启动budget exceeded PC1e90fcc",
-      "evidence": "artifacts/compat-20260914/pending302-first/270-failure.png"
+      "evidence": "artifacts/compat-20260914/pending302-first/270-failure.png",
+      "followups": [
+        {
+          "artifact": "artifacts/compat-20260914/pending302-budgetfix/results.json",
+          "outcome": "runtime-error",
+          "error": "ExtFault: EXT fault abi-fault at 0x10030 (arm_ext_call: execution deadline exceeded)",
+          "ticks": 0
+        }
+      ]
     },
     {
       "caseId": 2407,
@@ -6449,5 +6489,11 @@
   ],
   "firstRunComplete": true,
   "firstRunConcurrency": 1,
-  "verifiedCount": 8
+  "verifiedCount": 8,
+  "remainingFunctionalVerification": 294,
+  "budgetRegression": {
+    "artifact": "artifacts/compat-20260914/pending302-budget-regression/results.json",
+    "count": 16,
+    "allPassed": true
+  }
 }

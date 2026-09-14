@@ -1,0 +1,1957 @@
+{
+  "1": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [],
+    "controls": [
+      {
+        "tap": [
+          71,
+          89
+        ],
+        "hold": 1,
+        "wait": 30
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "f24c502874d009cbe78513aaca17fc64b243c8c63b5163dd56aa7b9730ce05fe"
+    ],
+    "controlSha256": [
+      "f24c502874d009cbe78513aaca17fc64b243c8c63b5163dd56aa7b9730ce05fe"
+    ],
+    "reviewNote": "触屏在C4落子，电脑应手后棋子数量从黑2白2变为黑3白3；原探索中的键盘输入本身没有作用。"
+  },
+  "2": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [
+      {
+        "tap": [
+          120,
+          75
+        ],
+        "hold": 1,
+        "wait": 30
+      },
+      {
+        "tap": [
+          30,
+          39
+        ],
+        "hold": 2,
+        "wait": 10
+      }
+    ],
+    "controls": [
+      {
+        "swipe": [
+          [
+            37,
+            137
+          ],
+          [
+            62,
+            137
+          ]
+        ],
+        "hold": 3,
+        "wait": 15
+      },
+      {
+        "swipe": [
+          [
+            112,
+            137
+          ],
+          [
+            87,
+            137
+          ]
+        ],
+        "hold": 3,
+        "wait": 15
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "ceb8e3339d5c56bc26cfa8fe88be8ce592a4f063b5a643166b7081b42be319ab"
+    ],
+    "controlSha256": [
+      "ceb8e3339d5c56bc26cfa8fe88be8ce592a4f063b5a643166b7081b42be319ab"
+    ],
+    "reviewNote": "华容道最底部两侧小兵滑动至中间空位，棋盘位置实际改变。"
+  },
+  "3": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [
+      {
+        "key": "1",
+        "hold": 1,
+        "wait": 30
+      },
+      {
+        "key": "RIGHT",
+        "hold": 2,
+        "wait": 20
+      },
+      {
+        "key": "DOWN",
+        "hold": 2,
+        "wait": 20
+      },
+      {
+        "key": "LEFT",
+        "hold": 2,
+        "wait": 20
+      },
+      {
+        "key": "UP",
+        "hold": 2,
+        "wait": 20
+      }
+    ],
+    "controls": [
+      {
+        "key": "5",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "RIGHT",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "LEFT",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 2,
+        "wait": 10
+      },
+      {
+        "key": "UP",
+        "hold": 2,
+        "wait": 10
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "a6a7204cc77ba53309734f8b36c12f674957307eb4004f54aa58c043982f2599"
+    ],
+    "controlSha256": [
+      "a6a7204cc77ba53309734f8b36c12f674957307eb4004f54aa58c043982f2599"
+    ],
+    "reviewNote": "数字排列经操作从4,3/2,1变化为4,1/3,2；不是只有光标或倒计时变化。"
+  },
+  "4": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [
+      {
+        "tap": [
+          120,
+          136
+        ],
+        "hold": 2,
+        "wait": 10
+      }
+    ],
+    "controls": [
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "1a4391734c40d1ae92daf1eea8a7a0bbdcf1aebee62c25df82959a305e6f543b"
+    ],
+    "controlSha256": [
+      "1a4391734c40d1ae92daf1eea8a7a0bbdcf1aebee62c25df82959a305e6f543b"
+    ],
+    "reviewNote": "已目视确认触屏滑动导致数字合并和得分；最终分数 64，不将单纯动画计作交互。"
+  },
+  "5": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [],
+    "controls": [
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            70,
+            170
+          ],
+          [
+            175,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            100
+          ],
+          [
+            120,
+            220
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            175,
+            170
+          ],
+          [
+            70,
+            170
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "swipe": [
+          [
+            120,
+            220
+          ],
+          [
+            120,
+            100
+          ]
+        ],
+        "hold": 3,
+        "wait": 10
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "be25016b0cee14fc22afcbfdce048c34d01ea784af875634ee5c85a3b4d53771"
+    ],
+    "controlSha256": [
+      "be25016b0cee14fc22afcbfdce048c34d01ea784af875634ee5c85a3b4d53771"
+    ],
+    "reviewNote": "已目视确认触屏滑动导致数字合并和得分；最终分数 36，不将单纯动画计作交互。"
+  },
+  "6": {
+    "profile": {
+      "width": 240,
+      "height": 320,
+      "guestHeapSize": 524288
+    },
+    "bootTicks": 200,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 100
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 100
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 100
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 100
+      },
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "UP",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "RIGHT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "DOWN",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "LEFT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "RIGHT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "DOWN",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "LEFT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "UP",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      }
+    ],
+    "controls": [
+      {
+        "key": "6",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "7",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "9",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 10,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "1a8a524c5b3b1e171e04d16f3eab8e32b06e3b700500c8194173e5ab00f7ae2b",
+      "e84fcc7099a117c53979a3ce9c20dc9b00250a4c67507b88125e9cd24268b570"
+    ],
+    "controlSha256": [
+      "1a8a524c5b3b1e171e04d16f3eab8e32b06e3b700500c8194173e5ab00f7ae2b",
+      "e84fcc7099a117c53979a3ce9c20dc9b00250a4c67507b88125e9cd24268b570"
+    ],
+    "reviewNote": "512 KiB 运行内存下进入新人入营实际战斗教学，按6前移角色约x112、按4后移约x83，教程推进到冲刺说明；此证据不声称通关或全部攻击动作完成。"
+  },
+  "7": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [
+      {
+        "tap": [
+          120,
+          228
+        ],
+        "hold": 1,
+        "wait": 30
+      },
+      {
+        "tap": [
+          120,
+          160
+        ],
+        "hold": 2,
+        "wait": 15
+      },
+      {
+        "tap": [
+          120,
+          160
+        ],
+        "hold": 2,
+        "wait": 15
+      },
+      {
+        "tap": [
+          120,
+          160
+        ],
+        "hold": 2,
+        "wait": 15
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          68,
+          28
+        ],
+        "hold": 1,
+        "wait": 3
+      },
+      {
+        "tap": [
+          93,
+          78
+        ],
+        "hold": 1,
+        "wait": 3
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "69a4a0690d87bd75c1a8ceaeb5d24d089e082a190f7518edf1f963ea75c21325"
+    ],
+    "controlSha256": [
+      "69a4a0690d87bd75c1a8ceaeb5d24d089e082a190f7518edf1f963ea75c21325"
+    ],
+    "reviewNote": "实际关卡左上方水管由弯管向下形态旋转为横向形态；计时和关卡保持运行，不是教学翻页。"
+  },
+  "8": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 200,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 50
+      }
+    ],
+    "controls": [
+      {
+        "key": "DOWN",
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "key": "RIGHT",
+        "hold": 3,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 3,
+        "wait": 10
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "8db82990e3bf1f055d4db3e1af0dbcfe93db0b88fc5a16b317b72ac6b0922273",
+      "e156d641ee946b3d3c999dd87493990573cd677541c31eb32cb32a801148ee49"
+    ],
+    "controlSha256": [
+      "e156d641ee946b3d3c999dd87493990573cd677541c31eb32cb32a801148ee49"
+    ],
+    "reviewNote": "已目视确认棋盘下移三格选择相邻两只虾，5/右/5 后两格消失，分数从 0 变为 20。"
+  },
+  "9": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 30,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "FIRE",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "FIRE",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "UP",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "RIGHT",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "DOWN",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "LEFT",
+        "hold": 2,
+        "wait": 2
+      },
+      {
+        "key": "5",
+        "hold": 2,
+        "wait": 2500
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 12
+      }
+    ],
+    "controls": [
+      {
+        "key": "0",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "RIGHT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "RIGHT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "LEFT",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "UP",
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 2500,
+    "gameplaySha256": [
+      "5d0f396f5930795cec59416dc796d9a0bdc7251148fa960d58cf58ffe732bbfa",
+      "eb72f5408721f92ea406772e6a8dba3cce0711211df9beae15237eff32d82697"
+    ],
+    "controlSha256": [
+      "5d0f396f5930795cec59416dc796d9a0bdc7251148fa960d58cf58ffe732bbfa",
+      "aa32cdc36bef127c28afaf10819faea4a584f4d3ba7057a419a7fb5a31719c5a"
+    ],
+    "reviewNote": "目视确认 0 键变身进入攻击教学，后续 5 键攻击及移动推进剧情；持续 436 秒虚拟时间无异常。"
+  },
+  "10": {
+    "gameplaySha256": [
+      "61609b8daae91265a12484815c164a5e08f38f1a1dfc928328d3888e27dc7c9b"
+    ],
+    "controlSha256": [
+      "61609b8daae91265a12484815c164a5e08f38f1a1dfc928328d3888e27dc7c9b"
+    ],
+    "tailTicks": 2250,
+    "reviewNote": "棋盘、下落方块和下一块预览均有效，按键后方块变化；验证8字节地图分配对齐后180秒持续运行"
+  },
+  "11": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "entry": [
+      {
+        "tap": [
+          24,
+          40
+        ],
+        "hold": 1,
+        "wait": 1
+      }
+    ],
+    "controls": [
+      {
+        "idle": 40
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          216,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          216,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          216,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          216,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          72,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          216,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          24,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "tap": [
+          120,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 18
+      },
+      {
+        "idle": 100
+      },
+      {
+        "key": "SOFTLEFT",
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "tap": [
+          168,
+          40
+        ],
+        "hold": 1,
+        "wait": 1
+      },
+      {
+        "idle": 40
+      },
+      {
+        "tap": [
+          168,
+          220
+        ],
+        "hold": 1,
+        "wait": 1
+      }
+    ],
+    "tailTicks": 750,
+    "gameplaySha256": [
+      "b649999fce2fb0f57193cb90d08b978dedfc98974dcd58c788a9f47bc5435c7d"
+    ],
+    "controlSha256": [
+      "8d0a6ebb66956c4a3171e611763674f3c4b9a4f6f458660f11dec7be61465185"
+    ],
+    "reviewNote": "第一局连续命中45块超过一分钟，正常漏块结算；左软键重开，第二局再次命中得1分。"
+  },
+  "12": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [],
+    "controls": [
+      {
+        "swipe": [
+          [
+            17,
+            205
+          ],
+          [
+            180,
+            205
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "swipe": [
+          [
+            17,
+            245
+          ],
+          [
+            180,
+            245
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "swipe": [
+          [
+            17,
+            285
+          ],
+          [
+            180,
+            285
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "50de39a3a2758eb3d910a0d130579de90ee4c6ea29070dc92b8d9ac538bde8c1"
+    ],
+    "controlSha256": [
+      "f67335a984f3376d89a1a3ae0947f195eda44fa5766f0adc03a79857a1a565ef",
+      "a85038c318c8a01d79c59b538ad63f55ce3b4798c717407b60d05a9ff4612a01",
+      "50de39a3a2758eb3d910a0d130579de90ee4c6ea29070dc92b8d9ac538bde8c1"
+    ]
+  },
+  "13": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "3a6029d63fdcd8077aeb2eae0fcf2eb0f2d4b84ab40712a7884d9a076ae751f5"
+    ],
+    "controlSha256": [
+      "8f4fd4c40a9c1e837b5a2ad8efcdbe467d62faf28d91adcbc643cac5dca3a686",
+      "a9b26f5f4a1dcafbe1d98e9a91a72b675cff8302cb1154b4bd9f57393e9eb7e6",
+      "a9b26f5f4a1dcafbe1d98e9a91a72b675cff8302cb1154b4bd9f57393e9eb7e6",
+      "ca567b132a96d081699f8d47ad373f6d0ed9a3e4505022433cd89c5cf5e4df13",
+      "b20a208e786d1f7aae7ac469a2bd50aafd2cf44133c029a0a7d198880af3ef21",
+      "3a6029d63fdcd8077aeb2eae0fcf2eb0f2d4b84ab40712a7884d9a076ae751f5"
+    ]
+  },
+  "14": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "9e9877635ea09d27fa1247995c0357f37a1da13ee47d35802767a710405d1a1b"
+    ],
+    "controlSha256": [
+      "37b38c8d2e687ef83018badc1077e97bab5f4e47add92706b6104a3a748aec10",
+      "4e0440191e0503ee38c990ccb63c09797f30385650829fffc9ca9ce129e2a478",
+      "4e0440191e0503ee38c990ccb63c09797f30385650829fffc9ca9ce129e2a478",
+      "642e1382fd07baffd583d4df0b9573305c8f7f32c3ecde9bf59bb101feddde92",
+      "13945e2eafad03618667f62cf914b99bdc8f765395d316b3e7e22316ae1ee303",
+      "9e9877635ea09d27fa1247995c0357f37a1da13ee47d35802767a710405d1a1b"
+    ]
+  },
+  "15": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "f5cf3306c7fbcf5d70eb9387ef4daa30e5b8dd2ddc7ee0c36b7df7362d676fca"
+    ],
+    "controlSha256": [
+      "a6ef902caf3b8427c99a2ff8a1a5eb861d81f6e4a74c748ec5a0459115219a2f",
+      "4f4337e214c7af9654b0c9e35b18607c27a5beb4bd2ca40b086d01d6626dd268",
+      "5a66dd5f6da4f112005644e95e4c856bacd500a684b95c0af172c2ed0ff0b70f",
+      "4a2c45cf1b20db9f01729dcc55bb5cd7acfe7fc79e6795deb35995c4bbbd0829",
+      "4a2c45cf1b20db9f01729dcc55bb5cd7acfe7fc79e6795deb35995c4bbbd0829",
+      "f5cf3306c7fbcf5d70eb9387ef4daa30e5b8dd2ddc7ee0c36b7df7362d676fca"
+    ]
+  },
+  "16": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "7e1452df6421cb4c9d3a1a54ee4f261557290d0d59f576fa6170dd0ba451c5e3"
+    ],
+    "controlSha256": [
+      "4568e1307b62ebc5595d2eb6401ec011f5b1b713240f4f35e62d5e07d952f570",
+      "cb47cde22e6f68c46f6b4de33adcc1530da4053fe56b7e5b19c1f1725f4fbd60",
+      "cb47cde22e6f68c46f6b4de33adcc1530da4053fe56b7e5b19c1f1725f4fbd60",
+      "d852efb81e16db0fcd610909d9263c537df95984d28693c7b5fc185f13572b6f",
+      "eb45b5c4437d4613dd06c05d274435727368bc5035cfb3e302d892958a3989a5",
+      "7e1452df6421cb4c9d3a1a54ee4f261557290d0d59f576fa6170dd0ba451c5e3"
+    ]
+  }
+}

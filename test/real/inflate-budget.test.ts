@@ -19,9 +19,9 @@ import { wordsToBytes } from "../helpers/ext-asm.ts";
 const REAL_APP = resolve(import.meta.dirname, "../fixtures/real/app.mrp");
 
 describe("5-C.10Q forensic ARM insn watchdog", () => {
-  it("production default is a finite 128M watchdog, not a slice", () => {
-    expect(DEFAULT_INSN_BUDGET).toBe(128_000_000);
-    expect(MAX_INSN_BUDGET).toBe(128_000_000);
+  it("production default is a finite 256M watchdog, not a slice", () => {
+    expect(DEFAULT_INSN_BUDGET).toBe(256_000_000);
+    expect(MAX_INSN_BUDGET).toBe(256_000_000);
     expect(FORENSIC_BUDGET_CEILING).toBe(20_000_000);
     expect(REAL_MRP_BASELINE.insnBudget).toBe(DEFAULT_INSN_BUDGET);
   });
@@ -36,7 +36,7 @@ describe("5-C.10Q forensic ARM insn watchdog", () => {
     expect(out.pc).toBe(dest);
     expect(out.detail).toBe("budget exceeded");
     expect(rt.cpu.insnCount).toBe(64);
-    expect(DEFAULT_INSN_BUDGET).toBe(128_000_000);
+    expect(DEFAULT_INSN_BUDGET).toBe(256_000_000);
   });
 
   it("budget stop PC 0x01ea1ee8 is Thumb inside the memcpy2 caller", () => {
@@ -54,7 +54,7 @@ describe("5-C.10Q forensic ARM insn watchdog", () => {
   it("low forensic budget hits ARM_INSN_BUDGET at the 1M landmark", () => {
     const bytes = new Uint8Array(readFileSync(REAL_APP));
     const r = runInflateBudget(bytes, { budget: 1_000_000 });
-    expect(r.productionDefaultBudget).toBe(128_000_000);
+    expect(r.productionDefaultBudget).toBe(256_000_000);
     expect(r.budget).toBe(1_000_000);
     expect(r.thrown).toBe(ARM_INSN_BUDGET_THROWN);
     expect(r.insnCount).toBe(1_000_000);

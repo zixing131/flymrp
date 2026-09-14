@@ -1,0 +1,138 @@
+[
+  {
+    "id": 75,
+    "budget": 256000000,
+    "error": "",
+    "calls": [
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 13
+      },
+      {
+        "pc": 31981636,
+        "code": 1,
+        "kind": "return",
+        "insn": 34
+      },
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 54
+      },
+      {
+        "pc": 31981744,
+        "code": 6,
+        "kind": "return",
+        "insn": 70
+      },
+      {
+        "pc": 31981744,
+        "code": 0,
+        "kind": "return",
+        "insn": 128056648
+      },
+      {
+        "pc": 31981744,
+        "code": 1,
+        "kind": "return",
+        "insn": 2307
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "budget": 256000000,
+    "error": "",
+    "calls": [
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 54
+      },
+      {
+        "pc": 31981744,
+        "code": 6,
+        "kind": "return",
+        "insn": 70
+      },
+      {
+        "pc": 31981744,
+        "code": 0,
+        "kind": "return",
+        "insn": 168928009
+      },
+      {
+        "pc": 31981744,
+        "code": 1,
+        "kind": "return",
+        "insn": 2200
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "budget": 256000000,
+    "error": "ExtFault: EXT fault abi-fault at 0x252004 (arm_ext_call: budget exceeded)",
+    "calls": [
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 54
+      },
+      {
+        "pc": 31981744,
+        "code": 6,
+        "kind": "return",
+        "insn": 70
+      },
+      {
+        "pc": 31981744,
+        "code": 0,
+        "kind": "abi-fault",
+        "insn": 256000000
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "budget": 256000000,
+    "error": "",
+    "calls": [
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 13
+      },
+      {
+        "pc": 31981636,
+        "code": 1,
+        "kind": "return",
+        "insn": 34
+      },
+      {
+        "pc": 31981576,
+        "kind": "return",
+        "insn": 54
+      },
+      {
+        "pc": 31981744,
+        "code": 6,
+        "kind": "return",
+        "insn": 70
+      },
+      {
+        "pc": 31981744,
+        "code": 0,
+        "kind": "return",
+        "insn": 131326022
+      },
+      {
+        "pc": 31981744,
+        "code": 1,
+        "kind": "return",
+        "insn": 517
+      }
+    ]
+  }
+]

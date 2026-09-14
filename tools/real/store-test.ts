@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { spawn, execFileSync } from 'node:child_process';
+import { DEFAULT_INSN_BUDGET } from '../../src/abi/runtime.ts';
 
 const [manifestArg, rootArg, outputArg] = process.argv.slice(2);
 if (!manifestArg || !rootArg || !outputArg) throw new Error('Usage: store-test.ts manifest.json game-root output-dir');
@@ -22,7 +23,7 @@ mkdirSync(join(output, 'cases'), { recursive: true });
 const cache = join(resolve(manifestPath, '..'), 'packages');
 mkdirSync(cache, { recursive: true });
 const settings = {
-  MRP_COARSE_INSN_BUDGET: '128000000', MRP_COARSE_BOOT_TICKS: '30',
+  MRP_COARSE_INSN_BUDGET: String(DEFAULT_INSN_BUDGET), MRP_COARSE_BOOT_TICKS: '30',
   MRP_COARSE_KEYS: 'SOFTLEFT,FIRE,FIRE,UP,RIGHT,DOWN,LEFT,5',
   MRP_COARSE_TAIL_TICKS: '30', MRP_COARSE_RESOURCES: '1',
   MRP_RESOURCE_DIR: process.env.MRP_RESOURCE_DIR ?? join(root, 'mythroad_res'),

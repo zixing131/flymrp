@@ -1,0 +1,100 @@
+{
+  "games": [
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b1781fd05f95ef58fe07d7831bbd508d.mrp",
+      "sha256": "89b911d61625ceb41979e8b5174e623c0dd8856afbb982539d2bcc2bf17b63ed",
+      "storeCaseId": 858,
+      "title": "黑白棋AI"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/31b4678673548ea850e0087086edea26.mrp",
+      "sha256": "bac980440627a015a7de59697b8946df76e93e00afa6f6a83eca8bafacc714c4",
+      "storeCaseId": 874,
+      "title": "华容道"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ad9f9abef44666a688c08bd626141c7b.mrp",
+      "sha256": "e1857ae80ddd50d28531f49bba51f6949ee9011639fb8a92354165a39b00d446",
+      "storeCaseId": 1527,
+      "title": "排列数字测智商"
+    },
+    {
+      "path": "mythroad_res/qqlist8240x320/2048.mrp",
+      "sha256": "e7ae37991b0db919ce84bdda12c14c722490338e896ffdb12e9c77184bcabbbb",
+      "storeCaseId": 39,
+      "title": "2048"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/770e00a7147313541385074f9c225e38.mrp",
+      "sha256": "bd658cb24691d328fb6b27b58ea6d5f8c7ce0cc46b53103d528652b137d2054c",
+      "storeCaseId": 41,
+      "title": "2048美化版XL"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/101797ab163609eb298d559fc1e949c8.mrp",
+      "sha256": "b7216847b0e310656e8ca285bbc8e42f5e20fd6c385da3c8651868274a071d01",
+      "storeCaseId": 1744,
+      "title": "三国英雄传"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/61e31de0088b9b9c633532ee99f06450.mrp",
+      "sha256": "35a246eba453065f9c8a2a1b5620045ac444cf1b6dabdcdba53136d4d1441527",
+      "storeCaseId": 1024,
+      "title": "接水管"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gxrllk.mrp",
+      "sha256": "b1749530ee9ab6a262bebb22428eedab13680ea56fee6f1bfc1720ce491f0b98",
+      "storeCaseId": 2164,
+      "title": "夏日MM连连看"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/740c4b7da3453a4e2056a5b12bf0bc56.mrp",
+      "sha256": "3c66517c6a18ba69fce32229128a782f69be3e002d7542ba712115a837fc4ecb",
+      "storeCaseId": 1397,
+      "title": "梦幻西游-无敌战神"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/round3-scene-packages/603-240x320.mrp",
+      "sha256": "46d9f44fc6e51fcc3d6bb46a2c85d3e584b15614edb215c6e2ddc64a3138fd6a",
+      "storeCaseId": 603,
+      "title": "俄罗斯方块"
+    },
+    {
+      "path": "mythroad_res/qqlist8240x320/bcbk.mrp",
+      "sha256": "40bcdff9d6a34f1a015fabc4167679cc915a271c603477e8775ee299e36cea7d",
+      "storeCaseId": 321,
+      "title": "别踩白块"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/da7610404a0d4a8952e9ec58a7fd8b32.mrp",
+      "sha256": "047957a34f28510ad3fc72189d820c0a17f8149a5a352d8a451338d12f47f384",
+      "storeCaseId": 551,
+      "title": "调色板XL"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ophboy.mrp",
+      "sha256": "d03e1d58a4a0c9fd30860553a377d00f3d9db2740a438958defc59477ec150ec",
+      "storeCaseId": 1628,
+      "title": "趣拼高帅富"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opyiqu.mrp",
+      "sha256": "909dc139eb0b61e4c77cd6307880e82bfaa1df980983c4261c25329461ec0c5b",
+      "storeCaseId": 1629,
+      "title": "趣拼图"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/01d696853c30b5f200ae29c9b282a2d1.mrp",
+      "sha256": "9c6956531a70e1de74b3211aa0679ee81ea24c2a63a56c08706aca0830a216ad",
+      "storeCaseId": 1630,
+      "title": "趣拼学生妹"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opgrrl.mrp",
+      "sha256": "919712359f84661ae00a0dedaa1ef65b338dc263821321a1c71c27e9a587c5b0",
+      "storeCaseId": 1631,
+      "title": "趣拼学生妹"
+    }
+  ]
+}

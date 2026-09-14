@@ -29,7 +29,7 @@ describe("5-C.10R post-inflate startup gate", () => {
     expect(existsSync(REAL_APP)).toBe(true);
     const bytes = new Uint8Array(readFileSync(REAL_APP));
     const r = runPostInflateStartup(bytes, { budget: 1_000_000 });
-    expect(DEFAULT_INSN_BUDGET).toBe(128_000_000);
+    expect(DEFAULT_INSN_BUDGET).toBe(256_000_000);
     expect(r.watchdog).toBe(1_000_000);
     expect(r.thrown).toBe(ARM_INSN_BUDGET_THROWN);
     expect(r.insnCount).toBe(1_000_000);
