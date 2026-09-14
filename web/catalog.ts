@@ -582,6 +582,35 @@ function uiButton(label: string, primary: boolean, onClick: () => void): HTMLBut
   return btn;
 }
 
+let storeSettingsId = 0;
+/** Use the existing per-game controls and the same saved-file key as the player. */
+function buildStoreSettings(app: StoreApp): HTMLElement {
+  const section = document.createElement('section');
+  const heading = document.createElement('div');
+  heading.className = 'detail-settings-title';
+  heading.textContent = '独立运行设置';
+  const hint = document.createElement('p');
+  hint.className = 'store-ui-meta';
+  hint.textContent = '仅对当前游戏生效，未单独设置的选项使用全局设置。更改后自动保存。';
+  const form = document.querySelector<HTMLElement>('#detailSettingsForm')!.cloneNode(true) as HTMLElement;
+  const path = storeSdPath(app);
+  const controls = gamePrefMap.map(([name, id]) => ({ name, select: form.querySelector<HTMLSelectElement>(`#${id}`)! }));
+  const reset = form.querySelector<HTMLButtonElement>('#dsReset')!;
+  const save = form.querySelector<HTMLButtonElement>('#dsSave')!;
+  const prefix = `store-settings-${++storeSettingsId}-`;
+  // Desktop and mobile can coexist; labels must address their own controls.
+  for (const el of [form, ...Array.from(form.querySelectorAll<HTMLElement>('[id]'))]) el.id = prefix + el.id;
+  for (const label of Array.from(form.querySelectorAll<HTMLLabelElement>('label[for]'))) label.htmlFor = prefix + label.htmlFor;
+  const fill = () => { for (const { name, select } of controls) select.value = readGamePref(path, name); };
+  const persist = () => { for (const { name, select } of controls) writePref(name, select.value, path); };
+  for (const { name, select } of controls) select.addEventListener('change', () => writePref(name, select.value, path));
+  save.addEventListener('click', persist);
+  reset.addEventListener('click', () => { clearGamePrefs(path); fill(); });
+  fill();
+  section.append(heading, hint, form);
+  return section;
+}
+
 function buildStoreUi(app: StoreApp): HTMLElement {
   const state = dlState(app);
   const root = document.createElement('div');
@@ -652,6 +681,7 @@ function buildStoreUi(app: StoreApp): HTMLElement {
   // downloading / saving 期间不展示按钮，避免重复下载
 
   root.append(head, desc, progress, status, actions);
+  if (state.status === 'done' || installedStore.has(storeSdPath(app))) root.append(buildStoreSettings(app));
   return root;
 }
 
