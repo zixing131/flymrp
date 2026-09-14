@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" /><meta name="theme-color" content="#f5f5f5" /><title>flymrp · 模拟器</title><link rel="stylesheet" href="./main.css" /><link rel="stylesheet" href="./kaios.css" /></head>
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" /><meta name="theme-color" content="#f5f5f5" /><link rel="manifest" href="./manifest.json" /><link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" /><link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png" /><link rel="apple-touch-icon" sizes="192x192" href="./icons/icon-192.png" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><meta name="apple-mobile-web-app-title" content="flymrp" /><title>flymrp · 模拟器</title><link rel="stylesheet" href="./main.css" /><link rel="stylesheet" href="./kaios.css" /></head>
 <body>
   <header class="player-bar" aria-label="模拟器控制栏">
     <button id="back" class="icon-button" aria-label="返回游戏库" title="返回游戏库"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><strong id="game-title">MRP</strong><span id="fps">— FPS</span>
@@ -23,7 +23,7 @@
     <label class="setting">画面方向 <select id="rotation"><option value="0">竖屏 · 0°</option><option value="1">向右 · 90°</option><option value="2">倒置 · 180°</option><option value="3">向左 · 270°</option></select></label>
     <label class="setting">显示 FPS <input id="show-fps" type="checkbox" checked /></label>
     <label class="setting">键盘位置 <select id="keypad-side"><option value="normal">方向键在左</option><option value="reverse">方向键在右</option></select></label>
-    <label class="setting">屏幕分辨率 <select id="resolution"><option value="auto">自动识别</option><option>176x220</option><option>240x320</option><option>240x400</option><option>320x240</option><option>320x480</option><option>480x320</option></select></label>
+    <label class="setting">屏幕分辨率 <select id="resolution"><option value="auto">自动识别</option><option>128x128</option><option>128x160</option><option>176x220</option><option>240x320</option><option>240x400</option><option>320x240</option><option>320x480</option><option>480x320</option><option>272x480</option><option>480x800</option></select></label>
     <p class="hint">分辨率在下次加载时生效；缩放会限制在窗口范围内。加速效果取决于设备性能。</p>
     <details id="sd-panel"><summary>虚拟 SD 卡</summary>
       <p class="hint">根目录对应手机的 mythroad。上传 MP3、存档或数据文件，应用即可读取。游戏内写入的存档也会留在此浏览器，刷新或重进后仍在；同名文件会覆盖。</p>

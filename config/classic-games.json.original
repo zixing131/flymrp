@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "description": "精选 100 个游戏文件：按玩法挑选，包含用户指定的版本。此清单不是兼容性通过证明；两份星辰劫按用户要求保留。",
+  "games": [
+    {
+      "path": "mrpoid2在线商城所有游戏/俄罗斯方块_1004.mrp",
+      "title": "俄罗斯方块",
+      "category": "益智休闲",
+      "sha256": "c910c554c33af9d3602413e559461e861a26b2a3f2844f1e08c816201b35db97"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/3D解谜俄罗斯.mrp",
+      "title": "3D解谜俄罗斯",
+      "category": "益智休闲",
+      "sha256": "9c94bbe6daf33702cafa74f28f2f4a9eec8e59fdf06470e2b184057aa711fd9d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/扫雷.mrp",
+      "title": "扫雷",
+      "category": "益智休闲",
+      "sha256": "4ac6bae80d4c4b6002d07a9e77dc65ccb88a90adbe526b68612693a8c4a175cc"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/推箱子（nes版）.mrp",
+      "title": "推箱子",
+      "category": "益智休闲",
+      "sha256": "bbb35122e36159c9535bcac554aa6057e42cfd7ea04753d67d7c1d076b36467d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/经典泡泡龙_1001.mrp",
+      "title": "经典泡泡龙",
+      "category": "益智休闲",
+      "sha256": "8a5c5bf8164dc15871194ded740926c8cafa1ba06ea9ec038936e0e44e863f25"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/祖玛.mrp",
+      "title": "祖玛",
+      "category": "益智休闲",
+      "sha256": "7ba192db1e7632fe859bf027ef612af88caa5f981623d1d123bea95c97aa19e5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/祖玛终极版.mrp",
+      "title": "祖玛终极版",
+      "category": "益智休闲",
+      "sha256": "78d50fbe710a8ed9e59917a5f6728c1b6720ef36107eea90378fc5a003ade33f"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/童话梦幻祖玛.mrp",
+      "title": "童话梦幻祖玛",
+      "category": "益智休闲",
+      "sha256": "0645da0252b38693c36664aa4bb7bf101b00ff462c2077ff4bf018c75afb2fb1"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/黄金矿工.mrp",
+      "title": "黄金矿工",
+      "category": "益智休闲",
+      "sha256": "8d002ca91158345a38bf8c5572496e843f4f9de78dfa5fbce4730a04944906f4"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/黄金矿工盗墓记.mrp",
+      "title": "黄金矿工盗墓记",
+      "category": "益智休闲",
+      "sha256": "1c16d668d0d1c50eaf7bf19e27bda0d5aab4437443b1b5d61ac61f0f738b0872"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/新黄金矿工2012-道具版.mrp",
+      "title": "新黄金矿工2012-道具版",
+      "category": "益智休闲",
+      "sha256": "eeb2615e220030829ef7beee97f97f6214e333a3dc49a2080f527037d2ba061d"
+    },
+    {
+      "path": "mrp社区群资源/mrp240x320/雪人兄弟.mrp",
+      "title": "雪人兄弟",
+      "category": "街机动作",
+      "sha256": "30975b2fc12c2ec3a37deddadfb9160957bc06f333e8f9766fb32d34d9ec0611"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/贪吃蛇大战葫芦娃.mrp",
+      "title": "贪吃蛇大战葫芦娃",
+      "category": "益智休闲",
+      "sha256": "cf334699190feec61595c57ed71ad6c87250e74f6b3c3ff5cfc72b4ca0540689"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/梦幻宝石 版本二.mrp",
+      "title": "梦幻宝石",
+      "category": "益智休闲",
+      "sha256": "95105bc9504d64397e561221797b45098ab9f4775ce51de7712c718a45fd0aa2"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/宝贝连连看.mrp",
+      "title": "宝贝连连看",
+      "category": "益智休闲",
+      "sha256": "6c7b9fbd5366b06c36f81d80b4aaf0000485ce97a5c146eb9cb360ff790782c5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/清凉海滩连连看.mrp",
+      "title": "清凉海滩连连看",
+      "category": "益智休闲",
+      "sha256": "7e2ce9c07cad3955c54f6f4d1a46290ffb9153b94f3081547ccfb98f34facacc"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/口袋西游对对碰.mrp",
+      "title": "口袋西游对对碰",
+      "category": "益智休闲",
+      "sha256": "38a0e5b96a4af2430fc07fa8bf08c5805a5972d67d6151a9cce78c410f60d048"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/忍者水果.mrp",
+      "title": "忍者水果",
+      "category": "益智休闲",
+      "sha256": "f85b78a4ec8cebdced8a8f6232752b07fd74a3dd47da52432309a0aa2d7d73e5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/愤怒的小鸡.mrp",
+      "title": "愤怒的小鸡",
+      "category": "益智休闲",
+      "sha256": "4740bb6f0aae5e2f8fa72553281d82800094a5d71c5f47bd077f363ffc4cbf05"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/炸弹超人.mrp",
+      "title": "炸弹超人",
+      "category": "益智休闲",
+      "sha256": "f9f97bb8cbbad607b161a65a849c34173220c3b0d9a15cb3dfb38e5701e72600"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/魂斗罗1代.mrp",
+      "title": "魂斗罗1代",
+      "category": "街机动作",
+      "sha256": "1ddf75ca208da66a5006d93fd5c1ed8afbbe87a23f3fe46025c93b4d9989de08"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/魂斗罗4.mrp",
+      "title": "魂斗罗4",
+      "category": "街机动作",
+      "sha256": "80bd8bb1baad5ae4b26fe663f1ed5a95d31b52185fcdcf52abdb920219d078a7"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/超级魂斗罗.mrp",
+      "title": "超级魂斗罗",
+      "category": "街机动作",
+      "sha256": "78cce6af37f010356bff8e17e897789222065d74389dd7c96350d653d0bd6556"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/合金弹头.mrp",
+      "title": "合金弹头",
+      "category": "街机动作",
+      "sha256": "2eb45605d3baca2d661b3df4fe2e62245e7dc03038edd611f6905ae7561ec61b"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/合金弹头MAX.mrp",
+      "title": "合金弹头MAX",
+      "category": "街机动作",
+      "sha256": "d1e56605f07d312097dc3c789e806c1c83a9ec8f40d033eed96cce07ed538061"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/超级合金装备.mrp",
+      "title": "超级合金装备",
+      "category": "街机动作",
+      "sha256": "047e0d92c7f985cefc2b69352f019f4e6ce81efdce38649784c5ae647dee28fb"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/冒险岛_1002.mrp",
+      "title": "冒险岛",
+      "category": "街机动作",
+      "sha256": "9296c1fd251582731498db5c6f2d552347d1a2ec83d87229e170cc5f83a88856"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/冒险岛-枫之谷_1001.mrp",
+      "title": "冒险岛·枫之谷",
+      "category": "街机动作",
+      "sha256": "f6aaf8a22a05670947e070ce300a763065b836b26b195407839b6b2ebc6833a5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/天空冒险岛.mrp",
+      "title": "天空冒险岛",
+      "category": "街机动作",
+      "sha256": "658296e15c435a1bf7780d1e02f95683341bd2592243acc4fb3e564a5ad1c889"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/玛丽公主大冒险.mrp",
+      "title": "玛丽公主大冒险",
+      "category": "街机动作",
+      "sha256": "8b620ab9564fbd77ef2352a56d00cc592f4725b904db1179a759849c00de5943"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/忍者龙剑传.mrp",
+      "title": "忍者龙剑传",
+      "category": "街机动作",
+      "sha256": "223472b97bced53aaa2f4ad47a7987a9156385047025d880ec8b2ba2babd9647"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/忍者神龟MAX.mrp",
+      "title": "忍者神龟MAX",
+      "category": "街机动作",
+      "sha256": "cf72790fe507e0b9ad6b6db53df38b38ffb1bc622438ed6324becc2fb5726989"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/超级忍者神龟.mrp",
+      "title": "超级忍者神龟",
+      "category": "街机动作",
+      "sha256": "82692b2f93dbd07495e4b4356f304958a25887a1cde8046ecd4fbfd3416aa1d1"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/拳皇-拳王争霸.mrp",
+      "title": "拳皇-拳王争霸",
+      "category": "街机动作",
+      "sha256": "3f2b2db1ee3373ff67e2feeee062128353cfc2d361d5e4da75a0b3a3051f70f2"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/拳皇Q战.mrp",
+      "title": "拳皇Q战",
+      "category": "街机动作",
+      "sha256": "e122ff7c75d247384580d5fb0fd506f70453bc3bb04ea961df748e3a0d8a697b"
+    },
+    {
+      "path": "240×320游戏大全/大屏动作格斗/已破-美游双截龙_大屏动作格斗.mrp",
+      "title": "双截龙",
+      "category": "街机动作",
+      "sha256": "e729102269a439ba4e36cf73ee49bc914f59c6b1c1e6f85268facec09239f4bf"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/拳皇２０１２.mrp",
+      "title": "拳皇２０１２",
+      "category": "街机动作",
+      "sha256": "c134bc6390901d94d5f47ea419b3068dfbc1a3ef09a79e407707fbb95cc32c5b"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/火影忍者-究极觉醒.mrp",
+      "title": "火影忍者-究极觉醒",
+      "category": "街机动作",
+      "sha256": "ba52810af7bae6366eca005db65709d7862a780b8c01b3e7170415ea7e1f2b07"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/火影忍者_九尾传说.mrp",
+      "title": "火影忍者_九尾传说",
+      "category": "街机动作",
+      "sha256": "0d2e6f66acca62fcafe7596d7c336c97ba0a3cabf0084f9d06cad3f56f4c06dc"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/火影忍者２.mrp",
+      "title": "火影忍者２",
+      "category": "街机动作",
+      "sha256": "bc458c7064aad59331ac297e653d707627c6bd75d3e3cee6e75d78a889f3ed38"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/西游记-豪华珍藏版_1002.mrp",
+      "title": "西游记·豪华珍藏版",
+      "category": "角色策略",
+      "sha256": "0e76cc79563b4fa41416bd2fa433688aca88e65abb39463a216bdb77f6eb378d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/真三国无双.mrp",
+      "title": "真三国无双",
+      "category": "街机动作",
+      "sha256": "574486b916af9285424e01c7a3a3691103b3ce48479e8e41a4957a67fab63cb9"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/真三国无双战记.mrp",
+      "title": "真三国无双战记",
+      "category": "街机动作",
+      "sha256": "c53574346b302a7085200949a5244fdb8ce3f977e4387f88c9e5ecc95b3fc062"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国猛将.mrp",
+      "title": "三国猛将",
+      "category": "街机动作",
+      "sha256": "a2a312c5dd9d9a69a1e83ab97680a0725c533351e539d20de42ef1d514297615"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/狂战三国赵云传.mrp",
+      "title": "狂战三国赵云传",
+      "category": "街机动作",
+      "sha256": "28fdbe846b00bd06db3f618f328940aebf1d7964feb38fdc88f24b58fb93e23d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/雷电1944.mrp",
+      "title": "雷电1944",
+      "category": "飞行射击",
+      "sha256": "0c03ffd647b1edb5292bb7f7a4afc5688306987240cafa3e6f31849b3e9fc0a4"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/雷电-傲气雄鹰.mrp",
+      "title": "雷电-傲气雄鹰",
+      "category": "飞行射击",
+      "sha256": "c942e189cd21ee5f84a71a56d7e854cc19fde197aa7bd80cb2d0af4ea7ee7a1e"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/雷电战机x超级版.mrp",
+      "title": "雷电战机x超级版",
+      "category": "飞行射击",
+      "sha256": "0fe89923f11bd1323ea9f89c7c78344f62aa53edc71d98e638cabc08dda3f977"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/二战坦克风云.mrp",
+      "title": "二战坦克风云",
+      "category": "飞行射击",
+      "sha256": "f26b88578800cfd25dc1805037eda4047e416cf220e7ef2fc46176057a587a03"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/二战风云2-坦克大战.mrp",
+      "title": "二战风云2-坦克大战",
+      "category": "飞行射击",
+      "sha256": "24317739acd9d0cdf39d0c087269bd1f77b1af829fbe09e6e3a8f2b63a91e36d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/坦克大战2008.mrp",
+      "title": "坦克大战2008",
+      "category": "飞行射击",
+      "sha256": "000e65e0f4bcbc19812baccca429e292ca14f78c4e736cd48e93ae4db21507e1"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/坦克大战终极版.mrp",
+      "title": "坦克大战终极版",
+      "category": "飞行射击",
+      "sha256": "a8e0919d2e0bdcaf187ca7b84cda8d2e089ebbc3db8c76ec0d1efc8be70e3cd0"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/疯狂小坦克.mrp",
+      "title": "疯狂小坦克",
+      "category": "飞行射击",
+      "sha256": "6b685176fb5d3d5c01f38c1d78d19f2792ed487572e32a6628947977d9744ed5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/超级坦克大战.mrp",
+      "title": "超级坦克大战",
+      "category": "飞行射击",
+      "sha256": "aa058f8ac06e7ad4f092b087d170657b7108a66596d3003a980e1a11631706b4"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三角洲之魂斗罗.mrp",
+      "title": "三角洲之魂斗罗",
+      "category": "飞行射击",
+      "sha256": "506055ab7b4be41d5dee4ad26be8d3007b6cb44284a32d10a6149f607c9788db"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/中国象棋大师.mrp",
+      "title": "中国象棋大师",
+      "category": "棋牌运动",
+      "sha256": "6013969264d61060211bb0cdab6f59fc4e633c57b5934b387414a150ca1fdff9"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/四人斗地主.mrp",
+      "title": "四人斗地主",
+      "category": "棋牌运动",
+      "sha256": "e4ac363d63dcc6a5f6767a0df36631e08ca8bb7a9c23cf028e2b2ba74f3764dc"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/斗地主.mrp",
+      "title": "斗地主",
+      "category": "棋牌运动",
+      "sha256": "2a8efebbe39d756d989286cb9e16fdc2574e99c910a252d23d9ac201a6590a81"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/斗地主千王之王.mrp",
+      "title": "斗地主千王之王",
+      "category": "棋牌运动",
+      "sha256": "7d3808a241dc3eb832ebf20c16ea59896b02bc796e8ac50b6e847820a7f91bdf"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/开心麻将.mrp",
+      "title": "开心麻将",
+      "category": "棋牌运动",
+      "sha256": "baca595420cb3a21f019eb4bd8964f317be94ec4a52db2e05da9e431ed2ce2f9"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/疯狂台球.mrp",
+      "title": "疯狂台球",
+      "category": "棋牌运动",
+      "sha256": "25996c185f0b389589001d57e476fc16a8a2155bcbcf1876502c4652af48058a"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/疯狂台球挑战赛.mrp",
+      "title": "疯狂台球挑战赛",
+      "category": "棋牌运动",
+      "sha256": "dcbf76bfb36246b9cd973d0b6ff05139f43ef428ea750771dde04124e2d4eb67"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/极品飞车.mrp",
+      "title": "极品飞车",
+      "category": "棋牌运动",
+      "sha256": "a7eec5b10134c1b2f5d8d8aa3d6305d1f0bea062cfeb75d5c214aa26d522231e"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/极速飞车.mrp",
+      "title": "极速飞车",
+      "category": "棋牌运动",
+      "sha256": "13deda148470134e713cf3f43ae18cc8c4c4a3ee77b39702fc7ededa1fc9e1f6"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/天天爱飞车.mrp",
+      "title": "天天爱飞车",
+      "category": "棋牌运动",
+      "sha256": "1ddc7a90b0b17a9d2cc5fd68408d1156e5559fdfcf7e28edf288d0b8680868db"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/跑跑卡丁车.mrp",
+      "title": "跑跑卡丁车",
+      "category": "棋牌运动",
+      "sha256": "ff2feb719b24e4d8ac863ce020789bdeac3cadabc1cad47d59c36501a04faa42"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/跑跑卡丁车西游版.mrp",
+      "title": "跑跑卡丁车西游版",
+      "category": "棋牌运动",
+      "sha256": "6a3658bc40c6b7bfd3b50de3ef516ade48dea99d367276580f13ba8d29ed29ce"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/神兽传说.mrp",
+      "title": "神兽传说",
+      "category": "角色策略",
+      "sha256": "048840f460e2587391f5bc6d0093a1dcdba7694b22bafda6bdb8d9773c1f12ab"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/新神兽传说使命召唤.mrp",
+      "title": "新神兽传说使命召唤",
+      "category": "角色策略",
+      "sha256": "132432a6adb0cfcbc44874d1bb7218b3a3acd30afe24a155dc3921b4dfca9e4c"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/轩辕战记-天之痕_1000.mrp",
+      "title": "轩辕战记·天之痕",
+      "category": "角色策略",
+      "sha256": "136c61d597d1a2beb45ce3c5d819cd604ee0eca9104267dac52f55d0f56f1afd"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/轩辕剑.mrp",
+      "title": "轩辕剑",
+      "category": "角色策略",
+      "sha256": "69aca9045c2511783af54864ad664bcd446be9a35b4dcadf50173ddc3e0645b7"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/轩辕剑之苍龙劫.mrp",
+      "title": "轩辕剑之苍龙劫",
+      "category": "角色策略",
+      "sha256": "4088f675ee14c0b0de8ae63b3265053544e6987486efea8943b0919893fc189d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/轩辕传奇.mrp",
+      "title": "轩辕传奇",
+      "category": "角色策略",
+      "sha256": "b491490e8c81e12392b02fc739d474f83395efb6352053676fb07c417ab711ef"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/金庸群侠传.mrp",
+      "title": "金庸群侠传",
+      "category": "角色策略",
+      "sha256": "f8c9a86b9105ec57cec10f19d091db0401a03bb95294e3d32666731031b24ef1"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/金庸武林传.mrp",
+      "title": "金庸武林传",
+      "category": "角色策略",
+      "sha256": "c7519395223b9a230a16823405dc132fbdc7fc603ed2536d8d6a1c61b8f6ccab"
+    },
+    {
+      "path": "240×320游戏大全/大屏动作格斗/已破-首发雅游狂斩三国_大屏动作格斗.mrp",
+      "title": "狂斩三国",
+      "category": "街机动作",
+      "sha256": "13e2339989b078307de1fa808572770907a4b5ae35ff7829134c5285b0c7effa"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/宠物王国4白金.mrp",
+      "title": "宠物王国4白金",
+      "category": "角色策略",
+      "sha256": "a358b1219ffc18e990bfd2ffbe9af822b925994ccafaf9b9832a93593664738d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/宠物宝贝.mrp",
+      "title": "宠物宝贝",
+      "category": "角色策略",
+      "sha256": "d4515addcd8b3f9eaf7539bd743bd6fdc3b8ce936a9169bd72b36b9b1847e7a8"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/口袋灵兽.mrp",
+      "title": "口袋灵兽",
+      "category": "角色策略",
+      "sha256": "84da292a828c49ff1d2d2967f7a04d86b9c602551b366a9f43afe5adefa6de63"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/方块连连看_1000.mrp",
+      "title": "方块连连看",
+      "category": "益智休闲",
+      "sha256": "9de1a4d2c41073a1ea2f6556e52609be148e610d4d9d09379c79171b12fb0c5e"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/勇者传说.mrp",
+      "title": "勇者传说",
+      "category": "角色策略",
+      "sha256": "eb0bfaed6f9b0ebdc0e101ff9376039dde973d890caa210da1ca9b220fb00e4d"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/最终幻想之水晶塔防.mrp",
+      "title": "最终幻想之水晶塔防",
+      "category": "角色策略",
+      "sha256": "0c0839af2dceafb7fa385cc289cdaf4568979bf82dc492a4f10da4e62a2acf31"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国志.mrp",
+      "title": "三国志",
+      "category": "角色策略",
+      "sha256": "864208dfd2afa53cc522f67cb7857bb908d3af9c97d69ad2845e3356dd16cd09"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国志吞食天地.mrp",
+      "title": "三国志吞食天地",
+      "category": "角色策略",
+      "sha256": "29bb47c14e99f966096a6fc6cfafe82761266d243bce266df3e651f826e7a6c9"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国志群英会.mrp",
+      "title": "三国志群英会",
+      "category": "角色策略",
+      "sha256": "fea7b8d6105682e8f7f8cabc580b25a0a5f222917c192436edd585810c0be080"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国赵云传.mrp",
+      "title": "三国赵云传",
+      "category": "角色策略",
+      "sha256": "adbb1719cf27d7d07c6745cc64024236fcd9e46c7b8782a1b558fde81e6bff2a"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/三国大富翁.mrp",
+      "title": "三国大富翁",
+      "category": "角色策略",
+      "sha256": "214d4f0bc17b9f6a50ac2626825a22bee1db974ddbb51e817b59f7296d30814e"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/热血三国.mrp",
+      "title": "热血三国",
+      "category": "角色策略",
+      "sha256": "2bb36b807174f8dc5f7b9423aef29c40deca69ace64125a498bb1b208f275ee5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/爆笑三国.mrp",
+      "title": "爆笑三国",
+      "category": "角色策略",
+      "sha256": "c05d3e6f09352f1dcf75fd3ab90810447e0a81b59724aceaa27bceea949d3c61"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/植物大战僵尸.mrp",
+      "title": "植物大战僵尸",
+      "category": "角色策略",
+      "sha256": "e20e97fa54bb7eb5bbfb3ab1ec4e29b84a0569bfc4fa9ff40e30000e400f8d90"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/植物大战僵尸夜间版.mrp",
+      "title": "植物大战僵尸夜间版",
+      "category": "角色策略",
+      "sha256": "d57727524353c25feecd7a3eff52994f6fe6fae3d26806009ed67598e1c95de5"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/植物僵尸2.mrp",
+      "title": "植物僵尸2",
+      "category": "角色策略",
+      "sha256": "e31a96d9859dcab1ddffb35cdd46ebe889cc7f6130782918bbedbce711619780"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/植物保卫战.mrp",
+      "title": "植物保卫战",
+      "category": "角色策略",
+      "sha256": "0748e4ffcff05684b49475b26c37ff36c2b299935c76d8d5188ceb4bff5ef820"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/真西游记.mrp",
+      "title": "真西游记",
+      "category": "角色策略",
+      "sha256": "7a251b341c6d4be9bb4dd29fa8119f2c645b53c3c23c27a7473f06197a413134"
+    },
+    {
+      "path": "神兽传说3-v1001-240x320.mrp",
+      "title": "神兽传说3",
+      "category": "指定收藏",
+      "sha256": "387370ef6e12fe5e59852184daa6ac9b5e147be2f0ca1a297d367c3eee1ec60a"
+    },
+    {
+      "path": "干柴烈火美女剑-v1003-240x320.mrp",
+      "title": "干柴烈火美女剑",
+      "category": "指定收藏",
+      "sha256": "2fa806a77d0c0eae9d7cc9c719fd8f085cfa5f39d5a0a00c3ca593c77b0e166a"
+    },
+    {
+      "path": "仙剑尘缘录-星辰劫_1002.mrp",
+      "title": "仙剑尘缘录·星辰劫",
+      "category": "指定收藏",
+      "sha256": "4bfe0db400d6c2735f1cd615a9f5d0e4b7482a1d704537bd87d7b4159713a6cf"
+    },
+    {
+      "path": "已破-仙剑尘缘录星辰劫_大屏策略角色.mrp",
+      "title": "仙剑尘缘录·星辰劫（大屏版）",
+      "category": "指定收藏",
+      "sha256": "4bfe0db400d6c2735f1cd615a9f5d0e4b7482a1d704537bd87d7b4159713a6cf"
+    },
+    {
+      "path": "240×320游戏大全/大屏策略角色/_已破-美游神剑破千军_大屏策略角色.mrp",
+      "title": "神剑破千军",
+      "category": "指定收藏",
+      "sha256": "ac05c1d9c1e0888fd069db130e22e526057fabe81784635a2b08d65b122b4de8"
+    },
+    {
+      "path": "240×320游戏大全/大屏动作格斗/免费-积创变形金刚_大屏动作格斗.mrp",
+      "title": "变形金刚",
+      "category": "指定收藏",
+      "sha256": "dbf0076c1b6183a23d66d5af3121ef6ca84818d5abedbb5b955f49d955898730"
+    }
+  ]
+}

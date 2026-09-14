@@ -9,13 +9,21 @@
     "test:watch": "vitest",
     "test:games": "tsx tools/real/batch-test.ts",
     "test:coarse": "tsx tools/real/coarse-all.ts",
+    "store:manifest": "tsx tools/real/store-manifest.ts",
+    "test:store": "tsx tools/real/store-test.ts",
     "build": "vite build --config web/vite.config.ts && tsx tools/check-dist.ts",
+    "games:generate": "tsx tools/generate-classic-games.ts",
     "build:kaios": "vite build --config web/vite.kaios.ts && tsx tools/kaios-package.ts",
     "bench": "tsx bench/run.ts",
     "inspect": "tsx tools/real/inspect.ts",
     "start": "vite --config web/vite.config.ts --host 127.0.0.1 --open",
     "typecheck": "tsc --noEmit",
-    "test:collection": "tsx tools/real/collection-test.ts"
+    "test:collection": "tsx tools/real/collection-test.ts",
+    "build:edgeone": "VITE_MRP_STORE_ORIGIN=/blob npm run build",
+    "upload:edgeone": "node tools/edgeone/upload.mjs",
+    "prepare:edgeone": "node tools/edgeone/prepare-deploy.mjs",
+    "chunk:edgeone": "node tools/edgeone/chunk-large.mjs",
+    "verify:edgeone": "tsx tools/edgeone/verify-download.ts"
   },
   "engines": {
     "node": ">=20"
@@ -29,6 +37,7 @@
   },
   "license": "AGPL-3.0-only",
   "dependencies": {
+    "@edgeone/pages-blob": "^0.0.16",
     "@types/jpeg-js": "^0.3.0",
     "jpeg-js": "^0.4.4",
     "webaudio-tinysynth": "1.1.3"

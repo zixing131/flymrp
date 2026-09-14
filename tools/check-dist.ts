@@ -6,7 +6,7 @@ import { fileSha256, listMrpFiles, type PublishedGame } from "./static-files.ts"
 const output = resolve("dist");
 const games: PublishedGame[] = JSON.parse(await readFile(join(output, "games/index.json"), "utf8"));
 const files = await listMrpFiles(join(output, "games"));
-if (games.length !== 100 || files.length !== 100) throw new Error("发布目录必须恰好包含 100 个精选游戏，不能残留旧游戏。");
+if (games.length !== classics.games.length || files.length !== classics.games.length) throw new Error(`发布目录必须恰好包含 ${classics.games.length} 个精选游戏（当前 ${games.length} 个，目录文件 ${files.length} 个），不能残留旧游戏。`);
 for (const [index, expected] of classics.games.entries()) {
   const game = games[index];
   if (!game || game.name !== expected.path || game.sha256 !== expected.sha256 ||
@@ -25,4 +25,4 @@ async function measure(dir: string): Promise<void> {
 await measure(output);
 // Leave headroom below GitHub Pages' 1 GB published-site limit.
 if (bytes > 900_000_000) throw new Error(`发布目录 ${(bytes / 1e6).toFixed(1)} MB，超过项目的 900 MB 发布预算。请精简资源或清理旧构建。`);
-console.log(`静态发布检查通过：100 个精选游戏，dist 共 ${(bytes / 1e6).toFixed(1)} MB（预算 900 MB）。`);
+console.log(`静态发布检查通过：${games.length} 个精选游戏，dist 共 ${(bytes / 1e6).toFixed(1)} MB（预算 900 MB）。`);

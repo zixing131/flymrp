@@ -1,3 +1,4 @@
+import { fetchFileBytes } from './chunk-download.ts';
 import './kaios-polyfill.ts';
 import { setupSdPanel } from './sd-panel.ts';
 import { listSdFiles, readSdFile, removeSdFile, saveSdFile } from './sd-card.ts';
@@ -6,13 +7,15 @@ import { SYSTEM_COMPONENTS } from "../src/mythroad/system-components.ts";
 import { MRPArchive } from "../src/mrp/index.ts";
 import { PlayerClient } from "./player-client.ts";
 import { MR_MOUSE_DOWN, MR_MOUSE_UP, MR_MOUSE_MOVE } from "../src/mythroad/constants.ts";
-import { inferScreenSize } from "../src/mythroad/device-size.ts";
 import { EV_KEY } from "../src/mythroad/events.ts";
 import { BrowserAudio } from "./audio.ts";
 import { DOM_KEY, HeldKeys } from "./controls.ts";
 import { assetUrl, catalogHref, readGame, readLibrary } from "./library.ts";
-import { readPref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
+import { registerServiceWorker } from "./pwa.ts";
+import { playerScreenSize, readPref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
+import { readCachedStoreList, storeSdPath } from './mrp-store.ts';
 import { PRELOAD_SYSTEM_FILES, isSafeAssetPath, type PlayerFileSource } from "./remote-files.ts";
+import { optionalResourceJson } from './resource-json.ts';
 
 let rotation = 0, speed = 1;
 const editorDialog = document.querySelector<HTMLDialogElement>("#guest-editor")!;
@@ -33,7 +36,7 @@ const emptyScreen = document.querySelector<HTMLElement>("#empty-screen")!;
 let paused = false;
 let frames = 0;
 let fpsStart = 0;
-let lastGame: { name: string; read: () => Promise<ArrayBuffer> } | null = null;
+let lastGame: { name: string; read: () => Promise<ArrayBuffer>; screen?: string } | null = null;
 const audio = new BrowserAudio();
 const midiPlayer = document.querySelector<HTMLSelectElement>("#midi-player")!;
 const kaios = applyKaiOS({ fullscreen: true });
@@ -195,9 +198,7 @@ async function ensureFont(): Promise<void> {
   if (PRELOAD_SYSTEM_FILES.every(name => systemFiles[name])) return;
   fontPromise ??= (async () => {
     await Promise.all(PRELOAD_SYSTEM_FILES.map(async name => {
-      const res = await fetch(assetUrl(name));
-      if (!res.ok) throw new Error(`缺少运行组件 ${name}`);
-      systemFiles[name] = new Uint8Array(await res.arrayBuffer());
+      systemFiles[name] = await fetchFileBytes(assetUrl(name));
     }));
   })().catch(e => { fontPromise = null; throw e; });
   await fontPromise;
@@ -239,25 +240,26 @@ async function loadResourceCatalog(packName: string): Promise<string[]> {
     }
   }
   const grouped = await fetch(assetUrl(`mythroad_res/groups/${encodeURIComponent(stem)}.json`));
-  if (grouped.ok) return namesOf(await grouped.json());
+  const group = await optionalResourceJson(grouped);
+  if (group !== null) return namesOf(group);
   resourceIndex ??= (async () => {
     const index = await fetch(assetUrl("mythroad_res/index.json"));
-    if (!index.ok) return {};
-    const groups = (await index.json() as { groups?: Record<string, unknown> }).groups ?? {};
+    const data = await optionalResourceJson(index) as { groups?: Record<string, unknown> } | null;
+    const groups = data?.groups ?? {};
     const mapped: Record<string, string[]> = {};
     for (const [name, files] of Object.entries(groups)) mapped[name] = namesOf(files);
     return mapped;
   })().catch(error => { resourceIndex = null; throw error; });
   return (await resourceIndex)[stem] ?? [];
 }
-async function start(name: string, read: () => Promise<ArrayBuffer>): Promise<void> {
+async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: string): Promise<void> {
   stop(true);
-  lastGame = { name, read };
+  lastGame = { name, read, screen };
   restartBtn.disabled = false;
   titleEl.textContent = name.split("/").at(-1)!.replace(/\.mrp$/i, "");
   emptyScreen.hidden = true;
   const token = generation;
-  const profile = resolution.value === "auto" ? inferScreenSize(name) : inferScreenSize(resolution.value);
+  const profile = playerScreenSize(name, resolution.value, screen);
   audio.resume();
   void enableMotion();
   setStatus(`正在读取 ${name.split("/").at(-1)}…`);
@@ -326,7 +328,7 @@ pauseBtn.addEventListener("click", () => {
     setStatus(paused ? "已暂停" : "运行中");
   } catch (e) { fail(e, session.rt); }
 });
-restartBtn.addEventListener("click", () => { if (lastGame) void start(lastGame.name, lastGame.read); });
+restartBtn.addEventListener("click", () => { if (lastGame) void start(lastGame.name, lastGame.read, lastGame.screen); });
 const drawer = document.querySelector<HTMLElement>("#game-drawer")!;
 const libraryToggle = document.querySelector<HTMLButtonElement>("#library-toggle")!;
 function setDrawer(open: boolean): void { drawer.hidden = !open; libraryToggle.setAttribute("aria-expanded", String(open)); syncPlayerKaiOS(); }
@@ -598,11 +600,18 @@ document.querySelector('#screenshot')!.addEventListener('click', () => {
 });
 document.querySelector('#back')!.addEventListener('click', () => goLibrary());
 window.addEventListener('pagehide', () => stop(true));
+// PWA：播放器页同样注册 Service Worker（离线可用、触发版本更新检查）。
+// 采用 "quiet" 策略：新版本激活时不自动刷新，避免打断正在运行的游戏；
+// 返回目录页时由目录页的 reload 行为完成刷新。
+registerServiceWorker("quiet");
 if (localPath) void (async () => {
   try {
     const file = await readSdFile(localPath);
     if (!file) throw new Error('此浏览器中找不到本地游戏，请返回首页重新选择文件。');
-    await start(file.path.split('/').at(-1)!, async () => new Uint8Array(file.bytes).buffer);
+    // Old downloads predate SD metadata; recover their hint from the cached store.
+    const cached = !file.resolution && !pageQuery.get('scr') ? await readCachedStoreList() : null;
+    const screen = pageQuery.get('scr') || file.resolution || cached?.apps.find(app => storeSdPath(app) === localPath)?.scr;
+    await start(file.path.split('/').at(-1)!, async () => new Uint8Array(file.bytes).buffer, screen);
   } catch (error) { fail(error); }
 })();
 else if (selectedName) void (async () => {

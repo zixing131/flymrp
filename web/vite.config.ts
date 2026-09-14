@@ -5,6 +5,7 @@ import { localSystem } from "./local-system.ts";
 import { localGames } from "./local-games.ts";
 import { gameBuild } from "./game-build.ts";
 import { resourceBuild } from "./resource-build.ts";
+import { pwaBuild } from "./pwa-build.ts";
 
 const root = dirname(fileURLToPath(import.meta.url));
 export default defineConfig(({ mode, command }) => {
@@ -15,7 +16,7 @@ export default defineConfig(({ mode, command }) => {
   return {
     root, base: "./", build: { outDir: resolve(root, "../dist"), emptyOutDir: false,
       rollupOptions: { input: { index: resolve(root, "index.html"), main: resolve(root, "main.html"), about: resolve(root, "about.html") } } }, publicDir: resolve(root, "../assets"),
-    plugins: [localGames(gameDir), localSystem(systemDir), localSystem(resourceDir, true), resourceBuild(resourceDir), gameBuild(gameDir)],
+    plugins: [localGames(gameDir), localSystem(systemDir), localSystem(resourceDir, true), resourceBuild(resourceDir), gameBuild(gameDir), pwaBuild()],
     server: { host: "127.0.0.1", port: 5173, strictPort: false, open: "/", fs: { allow: [resolve(root, "..")] } },
   };
 });

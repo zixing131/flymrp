@@ -1,0 +1,6 @@
+{
+  "name": "flymrp",
+  "buildCommand": "npm run build:edgeone",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci"
+}

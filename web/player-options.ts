@@ -1,3 +1,17 @@
+import { inferScreenSize } from '../src/mythroad/device-size.ts';
+
+/** Explicit handset metadata, bounded before allocating a guest framebuffer. */
+export function parseScreenSize(value?: string | null): { width: number; height: number } | null {
+  const match = value?.trim().match(/^(\d{2,3})[x×](\d{2,3})$/i);
+  if (!match) return null;
+  const width = Number(match[1]), height = Number(match[2]);
+  return width >= 32 && height >= 32 && width <= 800 && height <= 800 ? { width, height } : null;
+}
+
+export function playerScreenSize(name: string, setting: string, metadata?: string | null): { width: number; height: number } {
+  return (setting !== 'auto' ? parseScreenSize(setting) : null) ?? parseScreenSize(metadata) ?? inferScreenSize(name);
+}
+
 export function rotatedDirection(key: string, rotation: number): string {
   const directions = ['UP', 'RIGHT', 'DOWN', 'LEFT'];
   const index = directions.indexOf(key);

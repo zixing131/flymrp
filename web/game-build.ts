@@ -12,7 +12,7 @@ export function gameBuild(directory: string | undefined, selection?: readonly Se
     configResolved(config) { output = resolve(config.root, config.build.outDir, "games"); },
     async closeBundle() {
       if (!directory) return;
-      if (!selection && classics.games.length !== 100) throw new Error("精选游戏清单必须恰好包含 100 个游戏。");
+      if (!selection && !classics.games.length) throw new Error("精选游戏清单不能为空。");
       if (selection && !selection.length) throw new Error("游戏清单不能为空。");
       const { games: published, copied, skipped, removed } = await publishGames(directory, output, games);
       await mkdir(output, { recursive: true });

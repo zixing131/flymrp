@@ -1,3 +1,4 @@
+import { CHUNK_TYPE, parseChunkManifest, chunkUrl, checkChunk } from './chunk-download.ts';
 /** Handset files required before the guest starts. Everything else is fetched on first read. */
 export const PRELOAD_SYSTEM_FILES = ["system/gb16.uc2"] as const;
 
@@ -26,12 +27,28 @@ export function isBundledGameResource(path: string): boolean {
 
 export function fetchAssetBytes(url: string): Uint8Array | null {
   try {
+    const request = (target: string): { bytes: Uint8Array; chunked: boolean } => {
     const xhr = new (XMLHttpRequest as { new (opts?: { mozSystem?: boolean }): XMLHttpRequest })({ mozSystem: true });
-    xhr.open("GET", url, false);
+    xhr.open("GET", target, false);
     xhr.responseType = "arraybuffer";
     xhr.send();
-    if (xhr.status !== 200 || !(xhr.response instanceof ArrayBuffer)) return null;
-    return new Uint8Array(xhr.response);
+    if (xhr.status !== 200 || !(xhr.response instanceof ArrayBuffer)) throw new Error('Asset download failed');
+    return { bytes: new Uint8Array(xhr.response), chunked: xhr.getResponseHeader?.('Content-Type')?.split(';')[0] === CHUNK_TYPE };
+    };
+    const first = request(url);
+    if (!first.chunked) return first.bytes;
+    const manifest = parseChunkManifest(JSON.parse(new TextDecoder().decode(first.bytes)));
+    const out = new Uint8Array(manifest.size); let offset = 0;
+    for (const part of manifest.parts) {
+      let bytes: Uint8Array | undefined;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try { bytes = request(chunkUrl(part.key, url)).bytes; checkChunk(bytes, part); break; }
+        catch (e) { if (attempt === 2) throw e; }
+      }
+      out.set(bytes!, offset); offset += bytes!.length;
+    }
+    checkChunk(out, manifest);
+    return out;
   } catch {
     return null;
   }

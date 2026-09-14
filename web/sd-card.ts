@@ -1,5 +1,5 @@
 /** Uploaded SD files stay on this browser; no upload endpoint is involved. */
-export type SdFile = { path: string; bytes: Uint8Array; modified: number };
+export type SdFile = { path: string; bytes: Uint8Array; modified: number; resolution?: string };
 export function sdPath(directory: string, filename: string): string {
   const parts = `${directory}/${filename}`.replace(/\\/g, '/').split('/').filter(p => p && p !== '.');
   if (!parts.length || parts.some(p => p === '..' || /[:\x00-\x1f]/.test(p))) throw new Error('请使用 SD 卡内的相对目录，例如 music；不能包含 .. 或盘符');
