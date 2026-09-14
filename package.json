@@ -23,7 +23,8 @@
     "upload:edgeone": "node tools/edgeone/upload.mjs",
     "prepare:edgeone": "node tools/edgeone/prepare-deploy.mjs",
     "chunk:edgeone": "node tools/edgeone/chunk-large.mjs",
-    "verify:edgeone": "tsx tools/edgeone/verify-download.ts"
+    "verify:edgeone": "tsx tools/edgeone/verify-download.ts",
+    "upload:edgeone:runtime": "node tools/edgeone/upload-runtime.mjs"
   },
   "engines": {
     "node": ">=20"

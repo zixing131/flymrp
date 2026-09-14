@@ -7,11 +7,11 @@ const store=getStore({name:'my-store',projectId,token,consistency:'strong'});
 const hash=(b,a='sha256')=>createHash(a).update(b).digest('hex');
 const games=JSON.parse(await readFile('artifacts/compat-20260914/store-manifest.json','utf8')).games;
 const rows=(await readFile('artifacts/edgeone/uploaded.jsonl','utf8')).trim().split('\n').map(JSON.parse);
-const large=[...new Map(rows.filter(r=>r.projectId===projectId&&r.bytes>2000000).map(r=>[r.key,r])).values()];
+const large=[...new Map(rows.filter(r=>r.projectId===projectId).map(r=>[r.key,r])).values()].filter(r=>r.bytes>2000000);
 const map={}, verified=new Set();
 for(const r of large){
  const game=games.find(g=>g.down.replace(/^\//,'')===r.key);
- const path=r.kind==='mrp' ? game.localPath || `artifacts/compat-20260914/packages/${game.md5}.mrp` : r.kind==='large' ? `dist/${r.key.slice('runtime/'.length)}` : `artifacts/edgeone/downloads/${r.key}`;
+ const path=r.kind==='mrp' ? game.localPath || `artifacts/compat-20260914/packages/${game.md5}.mrp` : r.key.startsWith('runtime/') ? `dist/${r.key.slice('runtime/'.length)}` : `artifacts/edgeone/downloads/${r.key}`;
  const bytes=await readFile(path);if(hash(bytes)!==r.sha256) throw new Error(`Source changed: ${r.key}`);
  const parts=[];
  for(let offset=0,index=0;offset<bytes.length;offset+=1900000,index++){

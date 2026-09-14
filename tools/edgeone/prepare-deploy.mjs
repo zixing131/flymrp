@@ -1,8 +1,11 @@
 /** Prepare a direct-upload folder; remove only large files verified in Blob. */
-import { readFile, writeFile, cp, rm, open, mkdtemp, rename } from 'node:fs/promises';
+import { readFile, writeFile, cp, rm, open, mkdtemp, rename, stat, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { resolve } from 'node:path';
+import { resolve, relative, dirname } from 'node:path';
 import chunks from '../../blob-config/chunks.js';
+import { runtimeAssets, isRuntimeAsset } from './runtime-assets.mjs';
+import { build } from 'esbuild';
+import { execFileSync } from 'node:child_process';
 const lock = await open('artifacts/edgeone/prepare.lock', 'wx');
 try {
 const destination = resolve('artifacts/edgeone/deploy');
@@ -19,25 +22,39 @@ for (const [key, record] of records) {
   if (!verified || verified.sha256 !== part.sha256 || verified.bytes !== part.size || part.size > 1900000) throw new Error(`Unverified chunk: ${part.key}`);
  }
 }
-// Complete a new tree before replacing the visible deployment directory.
-// This also avoids Finder recreating .DS_Store while an open folder is deleted.
-const output = await mkdtemp(`${destination}-staging-`);
-await cp('dist',output,{recursive:true,filter:source=>!source.endsWith('/.DS_Store')});
-await cp('edge-functions',`${output}/edge-functions`,{recursive:true});
-await cp('blob-config',`${output}/blob-config`,{recursive:true});
-const rewrites=[];
-for(const [key,record] of records) {
- if(record.projectId !== summary.projectId || record.kind !== 'large' || !key.startsWith('runtime/')) continue;
- const name=key.slice('runtime/'.length);
- if(name.split('/').some(p=>!p||p==='.'||p==='..')) throw new Error('Invalid upload journal path');
- const local=await readFile(`dist/${name}`);
- if(createHash('sha256').update(local).digest('hex') !== record.sha256) throw new Error(`Re-upload changed large file: ${name}`);
- rewrites.push({source:`/${name}`,destination:`/blob/${key}`});
- await rm(`${output}/${name}`);
+const names = await runtimeAssets();
+const ruleMap = new Map();
+for (const name of names) {
+ const key = `runtime/${name}`, record = records.get(key);
+ const bytes = await readFile(`dist/${name}`);
+ if (!record || record.projectId !== summary.projectId || createHash('sha256').update(bytes).digest('hex') !== record.sha256) throw new Error(`Upload runtime asset first: ${name}`);
+ const prefix = name.includes('/') ? name.split('/')[0] : name;
+ ruleMap.set(prefix, name.includes('/')
+  ? {source:`/${prefix}/*`,destination:`/blob/runtime/${prefix}/:splat`}
+  : {source:`/${name}`,destination:`/blob/runtime/${name}`});
 }
+const rewrites = [...ruleMap.values()];
 if(rewrites.length>100) throw new Error('EdgeOne supports at most 100 rewrites');
-await writeFile(`${output}/edgeone.json`,JSON.stringify({name:'flymrp',rewrites},null,2)+'\n');
-await writeFile(`${output}/package.json`,JSON.stringify({private:true,type:'module',dependencies:{'@edgeone/pages-blob':'0.0.16'}},null,2)+'\n');
+// Copy only the app shell; never copy handset data just to delete it afterward.
+const output = await mkdtemp(`${destination}-staging-`);
+await cp('dist',output,{recursive:true,filter:source=>{
+ const name=relative('dist',source).replaceAll('\\','/');
+ if (!name) return true;
+ if (name.split('/').some(p=>p.startsWith('.')) || name==='README.md') return false;
+ if (['assets','icons','licenses'].includes(name.split('/')[0])) return true;
+ return !isRuntimeAsset(name);
+}});
+await mkdir(`${output}/edge-functions/blob`,{recursive:true});
+// Console direct uploads do not run npm install. Bundle all imports locally,
+// retaining the SDK's platform deploy-credential placeholder/environment fallback.
+const bundled = await build({metafile:true,entryPoints:['edge-functions/blob/[[path]].js'],outfile:`${output}/edge-functions/blob/[[path]].js`,bundle:true,platform:'browser',format:'esm',target:'es2022'});
+if(Object.values(bundled.metafile.outputs).some(file=>file.imports.length)) throw new Error('Deployment function has unresolved imports');
+await writeFile(`${output}/edgeone.json`,JSON.stringify({rewrites},null,2)+'\n');
+await writeFile(`${output}/package.json`,JSON.stringify({private:true,type:'module'})+'\n');
+const zipTemporary=`${output}.zip`;
+execFileSync('zip',['-q','-r',zipTemporary,'.','-x','*.DS_Store'],{cwd:output});
+const zipBytes=(await stat(zipTemporary)).size;
+if(zipBytes>=25000000) { await rm(zipTemporary); throw new Error(`Deployment ZIP exceeds 25 MB: ${zipBytes}`); }
 const previous = `${destination}-previous-${Date.now()}`;
 let hadPrevious = false;
 try { await rename(destination, previous); hadPrevious = true; }
@@ -48,7 +65,10 @@ if (hadPrevious) {
  try { await rm(previous, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }); }
  catch { console.warn(`New deployment is ready; old generated folder retained: ${previous}`); }
 }
-console.log(JSON.stringify({output:destination,blobRewrites:rewrites.length}));
+const zipPath=resolve(dirname(destination),'flymrp-edgeone.zip');
+await rename(zipTemporary,zipPath);
+await writeFile(resolve(dirname(destination),'package-summary.json'),JSON.stringify({output:destination,zipPath,zipBytes,runtimeFiles:names.length,blobRewrites:rewrites.length},null,2)+'\n');
+console.log(JSON.stringify({output:destination,zipPath,zipBytes,runtimeFiles:names.length,blobRewrites:rewrites.length}));
 
 } finally {
  await lock.close();
