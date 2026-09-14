@@ -1,3 +1,4 @@
+import { runtimeAssetUrl } from './runtime-asset-url.ts';
 import { CHUNK_TYPE, parseChunkManifest, chunkUrl, checkChunk } from './chunk-download.ts';
 /** Handset files required before the guest starts. Everything else is fetched on first read. */
 export const PRELOAD_SYSTEM_FILES = ["system/gb16.uc2"] as const;
@@ -13,11 +14,11 @@ export function encodeAssetPath(name: string): string {
 }
 
 export function assetUrlFrom(base: string, path: string): string {
-  return new URL(encodeAssetPath(path), base).href;
+  return runtimeAssetUrl(encodeAssetPath(path), base);
 }
 
 export function resourceAssetUrl(base: string, path: string): string {
-  return new URL(`mythroad_res/${encodeAssetPath(path)}`, base).href;
+  return runtimeAssetUrl(`mythroad_res/${encodeAssetPath(path)}`, base);
 }
 
 export function isBundledGameResource(path: string): boolean {

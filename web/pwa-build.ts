@@ -62,7 +62,7 @@ export function pwaBuild(): Plugin {
       // 3) 预缓存列表：仅核心壳 + vite 产物 + 图标 + 游戏索引。
       //    系统组件（system/gwy/plugins/app240400 等）与 games/*.mrp、
       //    mythroad_res/** 按需请求时缓存，避免安装时一次性下载大量资源。
-      const precache = ["./", "./index.html", "./main.html", "./about.html", "./manifest.json", "./build-version.json", "./games/index.json"];
+      const precache = ["./", "./index.html", "./main.html", "./about.html", "./manifest.json", "./build-version.json", process.env.VITE_MRP_STORE_ORIGIN === "/blob" ? "/blob/runtime/games/index.json" : "./games/index.json"];
       const shellFiles: string[] = [];
       await walk(output, "", (rel, isDir) => {
         if (isDir) return;

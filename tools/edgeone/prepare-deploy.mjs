@@ -49,6 +49,19 @@ await mkdir(`${output}/edge-functions/blob`,{recursive:true});
 // retaining the SDK's platform deploy-credential placeholder/environment fallback.
 const bundled = await build({metafile:true,entryPoints:['edge-functions/blob/[[path]].js'],outfile:`${output}/edge-functions/blob/[[path]].js`,bundle:true,platform:'browser',format:'esm',target:'es2022'});
 if(Object.values(bundled.metafile.outputs).some(file=>file.imports.length)) throw new Error('Deployment function has unresolved imports');
+// Physical function routes also support old URLs when console rewrites are ignored.
+for (const rule of rewrites) {
+ const alias = rule.source.endsWith('/*') ? `${rule.source.slice(1,-2)}/[[path]].js` : `${rule.source.slice(1)}.js`;
+ const file = `${output}/edge-functions/${alias}`;
+ await mkdir(dirname(file),{recursive:true});
+ await writeFile(file, `export function onRequest({request}) {
+  if (!['GET','HEAD'].includes(request.method)) return new Response('Method not allowed',{status:405});
+  const url=new URL(request.url);
+  url.pathname='/blob/runtime'+url.pathname;
+  return Response.redirect(url.href,307);
+}
+`);
+}
 await writeFile(`${output}/edgeone.json`,JSON.stringify({rewrites},null,2)+'\n');
 await writeFile(`${output}/package.json`,JSON.stringify({private:true,type:'module'})+'\n');
 const zipTemporary=`${output}.zip`;

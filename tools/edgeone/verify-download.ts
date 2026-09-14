@@ -14,12 +14,15 @@ const map=JSON.parse(await readFile('artifacts/edgeone/chunks-summary.json','utf
 let maxResponseBytes=0;const requests:{path:string;bytes:number;status:number}[]=[];
 const server=createServer(async(req,res)=>{
  try{
-  let route=decodeURIComponent(req.url!);
-  for(const rule of rewrites) {
-   if(rule.source.endsWith('*') && route.startsWith(rule.source.slice(0,-1))) { route=rule.destination.replace(':splat',route.slice(rule.source.length-1)); break; }
-   if(route===rule.source) { route=rule.destination; break; }
+  const route=new URL(req.url!,`http://${req.headers.host}`).pathname;
+  let handler=onRequest;
+  if(!route.startsWith('/blob/')) {
+   const rule=rewrites.find(rule=>rule.source.endsWith('/*') ? route.startsWith(rule.source.slice(0,-1)) : route===rule.source);
+   if(!rule)throw new Error(`No physical route: ${route}`);
+   const alias=rule.source.endsWith('/*') ? `${rule.source.slice(1,-2)}/[[path]].js` : `${rule.source.slice(1)}.js`;
+   handler=(await import(pathToFileURL(resolve('artifacts/edgeone/deploy/edge-functions',alias)).href)).onRequest;
   }
-  const response=await onRequest({request:new Request(`http://127.0.0.1${route}`,{method:req.method})});
+  const response=await handler({request:new Request(`http://${req.headers.host}${req.url}`,{method:req.method})});
   const bytes=Buffer.from(await response.arrayBuffer());maxResponseBytes=Math.max(maxResponseBytes,bytes.length);
   requests.push({path:req.url!,bytes:bytes.length,status:response.status});
   res.writeHead(response.status,Object.fromEntries(response.headers));res.end(bytes);

@@ -1,6 +1,7 @@
+import { runtimeAssetUrl } from './runtime-asset-url.ts';
 import { fetchFileBytes } from './chunk-download.ts';
 export type Game = { id: number; name: string; sha256?: string; title?: string; category?: string; size?: number; local?: boolean; resolution?: string };
-export const assetUrl = (path: string): string => new URL(path, document.baseURI).href;
+export const assetUrl = (path: string): string => runtimeAssetUrl(path, document.baseURI);
 export function isMrpFilename(name: string): boolean {
   const base = name.replace(/\\/g, "/").split("/");
   return /\.mrp$/i.test(base[base.length - 1] || name);
