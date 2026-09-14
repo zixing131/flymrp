@@ -74,6 +74,28 @@ describe("5-A-1/2 MRPArchive", () => {
     expect(() => MRPArchive.parse(cut)).toThrow(MrpFormatError);
   });
 
+  it("accepts a stale larger FileLen when the full index and every resource remain present", () => {
+    const bytes = buildMrp([{ name: "start.mr", data: enc("hello"), gzip: true }]);
+    const reported = bytes.length + 34070;
+    new DataView(bytes.buffer).setUint32(8, reported, true);
+    const archive = MRPArchive.parse(bytes);
+    expect(archive.header.fileLen).toBe(reported);
+    expect(Array.from(archive.readFile("start.mr"))).toEqual(Array.from(enc("hello")));
+  });
+
+  it("still rejects missing payload bytes with a larger declared FileLen", () => {
+    const bytes = buildMrp([{ name: "start.mr", data: enc("hello") }]);
+    expect(() => MRPArchive.parse(bytes.subarray(0, bytes.length - 1))).toThrow(MrpFormatError);
+  });
+
+  it("rejects a missing index tail even when an early zero could terminate parsing", () => {
+    const bytes = buildMrp([{ name: "start.mr", data: enc("hello") }]);
+    const view = new DataView(bytes.buffer);
+    view.setUint32(4, bytes.length + 100, true);
+    view.setUint32(240, 0, true);
+    expect(() => MRPArchive.parse(bytes)).toThrow(MrpFormatError);
+  });
+
   it("invalid offset", () => {
     const ok = buildMrp([{ name: "x", data: enc("yy") }]);
     const bad = ok.slice();

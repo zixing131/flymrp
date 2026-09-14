@@ -93,7 +93,13 @@ export class MRPArchive {
     const fileLen = rd32(data, 8);
     const listStart = data.length >= 16 ? rd32(data, 12) : HEADER_SIZE;
     const size = data.length;
-    if (fileLen !== 0 && fileLen !== size && fileLen > size) {
+    const dataStart = fileStart + 8;
+    // Modified indexed packs can retain the original total length (e.g.
+    // 恋爱气球). Native reads validate individual resources, not physical EOF
+    // against this metadata. Require the complete index and all its payloads
+    // within the actual buffer below; sequential packs keep the strict check.
+    const indexed = fileStart > 232 && listStart >= 16 && listStart <= dataStart;
+    if (fileLen > size && !indexed) {
       throw new MrpFormatError(`MRP FileLen ${fileLen} exceeds buffer ${size}`);
     }
     const bound = fileLen !== 0 && fileLen < size ? fileLen : size;
@@ -111,7 +117,6 @@ export class MRPArchive {
       description: data.length >= 192 ? cstr(data, 128, 64) : "",
     };
 
-    const dataStart = (fileStart + 8) >>> 0;
     const entries: MrpEntry[] = [];
 
     if (fileStart > 232 && listStart >= 16 && listStart <= dataStart) {
@@ -197,6 +202,7 @@ function parseIndex(
   bound: number,
   entries: MrpEntry[],
 ): void {
+  if (dataStart > bound) throw new MrpFormatError("truncated MRP index");
   let pos = listStart;
   while (pos < dataStart) {
     if (pos + 4 > dataStart) throw new MrpFormatError("truncated entry");
