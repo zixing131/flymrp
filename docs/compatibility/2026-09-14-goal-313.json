@@ -918,11 +918,21 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification",
+      "resolved": true,
+      "status": "touch-sustained-verified",
       "round9Review": {
         "artifact": "artifacts/compat-20260914/round9-puzzles-play/results.json",
         "status": "unresolved-needs-effective-gameplay-verification"
+      },
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/round14-321-resumed/results.json",
+        "outcome": "passed",
+        "ticks": 1938,
+        "virtualSeconds": 155.04,
+        "controlChanges": 48,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "note": "第一局连续命中45块（首末命中间70.4秒），漏块后正常结算45分；左软键重开后第二局得1分。触屏操作复核，非运行时修改；保留默认按键冒烟分类。"
       }
     },
     {
