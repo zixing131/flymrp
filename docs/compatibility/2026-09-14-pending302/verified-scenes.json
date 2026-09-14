@@ -1,0 +1,361 @@
+{
+  "78": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [],
+    "controls": [
+      {
+        "swipe": [
+          [
+            17,
+            205
+          ],
+          [
+            180,
+            205
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "swipe": [
+          [
+            17,
+            245
+          ],
+          [
+            180,
+            245
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      },
+      {
+        "swipe": [
+          [
+            17,
+            285
+          ],
+          [
+            180,
+            285
+          ]
+        ],
+        "hold": 10,
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "50de39a3a2758eb3d910a0d130579de90ee4c6ea29070dc92b8d9ac538bde8c1"
+    ],
+    "controlSha256": [
+      "f67335a984f3376d89a1a3ae0947f195eda44fa5766f0adc03a79857a1a565ef",
+      "a85038c318c8a01d79c59b538ad63f55ce3b4798c717407b60d05a9ff4612a01",
+      "50de39a3a2758eb3d910a0d130579de90ee4c6ea29070dc92b8d9ac538bde8c1"
+    ]
+  },
+  "186": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "3a6029d63fdcd8077aeb2eae0fcf2eb0f2d4b84ab40712a7884d9a076ae751f5"
+    ],
+    "controlSha256": [
+      "8f4fd4c40a9c1e837b5a2ad8efcdbe467d62faf28d91adcbc643cac5dca3a686",
+      "a9b26f5f4a1dcafbe1d98e9a91a72b675cff8302cb1154b4bd9f57393e9eb7e6",
+      "a9b26f5f4a1dcafbe1d98e9a91a72b675cff8302cb1154b4bd9f57393e9eb7e6",
+      "ca567b132a96d081699f8d47ad373f6d0ed9a3e4505022433cd89c5cf5e4df13",
+      "b20a208e786d1f7aae7ac469a2bd50aafd2cf44133c029a0a7d198880af3ef21",
+      "3a6029d63fdcd8077aeb2eae0fcf2eb0f2d4b84ab40712a7884d9a076ae751f5"
+    ]
+  },
+  "187": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "9e9877635ea09d27fa1247995c0357f37a1da13ee47d35802767a710405d1a1b"
+    ],
+    "controlSha256": [
+      "37b38c8d2e687ef83018badc1077e97bab5f4e47add92706b6104a3a748aec10",
+      "4e0440191e0503ee38c990ccb63c09797f30385650829fffc9ca9ce129e2a478",
+      "4e0440191e0503ee38c990ccb63c09797f30385650829fffc9ca9ce129e2a478",
+      "642e1382fd07baffd583d4df0b9573305c8f7f32c3ecde9bf59bb101feddde92",
+      "13945e2eafad03618667f62cf914b99bdc8f765395d316b3e7e22316ae1ee303",
+      "9e9877635ea09d27fa1247995c0357f37a1da13ee47d35802767a710405d1a1b"
+    ]
+  },
+  "188": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          120,
+          285
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "f5cf3306c7fbcf5d70eb9387ef4daa30e5b8dd2ddc7ee0c36b7df7362d676fca"
+    ],
+    "controlSha256": [
+      "a6ef902caf3b8427c99a2ff8a1a5eb861d81f6e4a74c748ec5a0459115219a2f",
+      "4f4337e214c7af9654b0c9e35b18607c27a5beb4bd2ca40b086d01d6626dd268",
+      "5a66dd5f6da4f112005644e95e4c856bacd500a684b95c0af172c2ed0ff0b70f",
+      "4a2c45cf1b20db9f01729dcc55bb5cd7acfe7fc79e6795deb35995c4bbbd0829",
+      "4a2c45cf1b20db9f01729dcc55bb5cd7acfe7fc79e6795deb35995c4bbbd0829",
+      "f5cf3306c7fbcf5d70eb9387ef4daa30e5b8dd2ddc7ee0c36b7df7362d676fca"
+    ]
+  },
+  "189": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          160,
+          405
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          120,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          130
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          210
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          290
+        ],
+        "wait": 20
+      },
+      {
+        "tap": [
+          200,
+          290
+        ],
+        "wait": 20
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "实际截图核验：调色板RGB拖动变色/拼图图块移动且步数增加，持续60秒",
+    "gameplaySha256": [
+      "7e1452df6421cb4c9d3a1a54ee4f261557290d0d59f576fa6170dd0ba451c5e3"
+    ],
+    "controlSha256": [
+      "4568e1307b62ebc5595d2eb6401ec011f5b1b713240f4f35e62d5e07d952f570",
+      "cb47cde22e6f68c46f6b4de33adcc1530da4053fe56b7e5b19c1f1725f4fbd60",
+      "cb47cde22e6f68c46f6b4de33adcc1530da4053fe56b7e5b19c1f1725f4fbd60",
+      "d852efb81e16db0fcd610909d9263c537df95984d28693c7b5fc185f13572b6f",
+      "eb45b5c4437d4613dd06c05d274435727368bc5035cfb3e302d892958a3989a5",
+      "7e1452df6421cb4c9d3a1a54ee4f261557290d0d59f576fa6170dd0ba451c5e3"
+    ]
+  }
+}

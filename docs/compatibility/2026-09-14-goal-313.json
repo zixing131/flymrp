@@ -25,8 +25,50 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "installer-output-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-installers/results.json",
+        "outputComparison": "artifacts/compat-20260914/pending302-diagnostics/installer-matches.json",
+        "matches": [
+          {
+            "name": "plugins/netpay.mrp",
+            "size": 130221,
+            "sha256": "bb8fe9ca0fbd0eb55c9d772b4a7c1a75caf2f91837f723b498473070f815b5d6",
+            "resource": "netpay.bin"
+          },
+          {
+            "name": "plugins/freecurr.mrp",
+            "size": 37077,
+            "sha256": "16b3e9085f25207d313f3137d14a3e35507a38f77923e129436c687292b4cac6",
+            "resource": "freecurr.bin"
+          },
+          {
+            "name": "plugins/flaengine.mrp",
+            "size": 103213,
+            "sha256": "2212c5bffd441fafecf18ffe25f0cc184074eac72a95956f105c7b4f2f218976",
+            "resource": "flaengine.bin"
+          },
+          {
+            "name": "system/fonts16.tsf",
+            "size": 399063,
+            "sha256": "336ce20ea25e93110d3e57a5495a6d7d804f41214c1bd247bb74be918f68699b",
+            "resource": "fonts16.tsf"
+          },
+          {
+            "name": "plugins/smsend.mrp",
+            "size": 32604,
+            "sha256": "631a91e7d2c9122feb77f846619fa544cd50e96a1ce4bb9f18a671bd7324ef76",
+            "resource": "smsend.bin"
+          },
+          {
+            "name": "plugins/advbar.mrp",
+            "size": 43901,
+            "sha256": "644ef4335a12b8c7a375ab510140e8e8561734569847f8a451e33efc8ff17857",
+            "resource": "advbar.bin"
+          }
+        ]
+      }
     },
     {
       "caseId": 4,
@@ -34,8 +76,31 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "installer-output-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-installers/results.json",
+        "outputComparison": "artifacts/compat-20260914/pending302-diagnostics/installer-matches.json",
+        "matches": [
+          {
+            "name": "system/ntp/termsync.sys",
+            "size": 465,
+            "sha256": "1d86a99f006dba773ccfd295c2d91ad2505f7cac1b1f429b0e806d6d231193ac",
+            "resource": "termsync.sys"
+          },
+          {
+            "name": "system/ntp/adisk.sys",
+            "size": 66,
+            "sha256": "c769b5d4e3c17304d1317c4ceecc32c631c6f051ee1a3c0298c68ec6b057e14d",
+            "resource": "adisk.sys"
+          }
+        ],
+        "assembledFont": {
+          "source": "gb121.uc2 through gb1224.uc2 concatenated",
+          "size": 1179630,
+          "sha256": "f8e9a443e28eecce3a99f0ebf26a197b1ef5e65bab5406054ff7e985d48274b3"
+        }
+      }
     },
     {
       "caseId": 5,
@@ -43,8 +108,80 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "exited",
       "latestError": "LuaRuntimeError: Exiting...",
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "installer-output-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-installers/results.json",
+        "outputComparison": "artifacts/compat-20260914/pending302-diagnostics/installer-matches.json",
+        "matches": [
+          {
+            "name": "box.mrp",
+            "size": 50434,
+            "sha256": "4b137f7994e0afda5b388858923c2cc31a26767fb0d56ebcbe880efcc01e030d",
+            "resource": "box.m"
+          },
+          {
+            "name": "dodge.mrp",
+            "size": 56544,
+            "sha256": "39c61442b911b586a91124051c3c58c94203de3b862844e262b1d1628235d08f",
+            "resource": "dodge.m"
+          },
+          {
+            "name": "down.mrp",
+            "size": 45033,
+            "sha256": "de5c4df7cc467b21abaf807fa94a265fdba3d240662c2e101cfe60d5922cf2ef",
+            "resource": "down.m"
+          },
+          {
+            "name": "mirror.mrp",
+            "size": 61021,
+            "sha256": "9351f6007f2216511dcef6a43553fe1f6d4c3d86f6e68032a42cc8f8a1929b0d",
+            "resource": "mirror.m"
+          },
+          {
+            "name": "pet.mrp",
+            "size": 66363,
+            "sha256": "4a8f959b2d2bc0be105d2f12dbb43d1e612b4a3819214f8e746f0c8c595f7682",
+            "resource": "pet.m"
+          },
+          {
+            "name": "shot.mrp",
+            "size": 100742,
+            "sha256": "c9c8e300cb52087357b5fe29952a1cea8b29e8990ebd52b64673ccef90a94e0b",
+            "resource": "shot.m"
+          },
+          {
+            "name": "start.mrp",
+            "size": 38111,
+            "sha256": "8722f054a69080c069f4075aa5b4faf2963cae8d2e6758e1765c710061b848a7",
+            "resource": "start.m"
+          },
+          {
+            "name": "tetris.mrp",
+            "size": 41327,
+            "sha256": "46d9f44fc6e51fcc3d6bb46a2c85d3e584b15614edb215c6e2ddc64a3138fd6a",
+            "resource": "tetris.m"
+          },
+          {
+            "name": "system/tab_gb2ucs_8140_fe4f.dat",
+            "size": 87164,
+            "sha256": "79c04e81994eba3061156e3b92490ef4d668488040ba591c63e77b3df54997ad",
+            "resource": "tab_gb2ucs.dat"
+          },
+          {
+            "name": "system/ucs2gb_4e00_9fa5.dat",
+            "size": 41804,
+            "sha256": "b3aefabc81441317b0b5c5b983adf6633ddecca01b42808828c9522f9a2fc02e",
+            "resource": "ucs2gb.dat"
+          },
+          {
+            "name": "vmrp.mrp",
+            "size": 209192,
+            "sha256": "669a7582e365c115e1579684dfc6145ad6bf78499f4ef20453e98e2603cc0736",
+            "resource": "vmrp.m"
+          }
+        ]
+      }
     },
     {
       "caseId": 7,
@@ -1257,8 +1394,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-verified/results.json",
+        "outcome": "passed",
+        "ticks": 943,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 553,
@@ -2721,8 +2865,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-verified/results.json",
+        "outcome": "passed",
+        "ticks": 1021,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1629,
@@ -2730,8 +2881,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-verified/results.json",
+        "outcome": "passed",
+        "ticks": 1021,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1630,
@@ -2739,8 +2897,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-verified/results.json",
+        "outcome": "passed",
+        "ticks": 1021,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1631,
@@ -2748,8 +2913,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260914/pending302-verified/results.json",
+        "outcome": "passed",
+        "ticks": 1021,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1681,
