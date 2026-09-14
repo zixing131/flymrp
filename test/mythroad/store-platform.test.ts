@@ -4,6 +4,22 @@ import { EXT_STOP_ADDR, stackTop, tableSlotAddr } from '../../src/abi/layout.ts'
 import { ExtStopKind } from '../../src/abi/fault.ts';
 import { MrTableBridge, MythroadVfs, MR_IGNORE } from '../../src/mythroad/index.ts';
 function wire() {const ext=new ExtRuntime();const bridge=new MrTableBridge(ext,new MythroadVfs(),'store');bridge.install();return {ext,bridge};}
+it('reseeds MR_GET_RAND from handset time and shares the resulting state with mr_rand', () => {
+  const {ext,bridge}=wire();
+  const rand=()=>ext.runGuest(tableSlotAddr(20),{lr:EXT_STOP_ADDR}).r0;
+  bridge.clock=1234;
+  const first=bridge.plat(1211,10000), next=rand();
+  rand();
+  expect(bridge.plat(1211,10000)).toBe(first);
+  expect(rand()).toBe(next);
+  bridge.clock=5678;
+  const later=bridge.plat(1211,10000);
+  expect(later).not.toBe(first);
+  expect(later).toBeGreaterThanOrEqual(1000);
+  expect(later).toBeLessThan(11000);
+  bridge.clock=1234;
+  expect(bridge.plat(1211,10000)).toBe(first);
+});
 it('returns MR_IGNORE for observed optional platform probes without fabricating output', () => {
   const {ext,bridge}=wire();const out=ext.alloc(8);ext.mem.fill(out,0x55,8);
   for(const code of [1004,1112,1401,1402,1404,2600,4200,458753,458755]) expect(bridge.platEx(ext.mem,Uint32Array.from([code,0,0,out,out+4,0]))).toBe(MR_IGNORE);

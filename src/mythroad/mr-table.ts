@@ -1268,7 +1268,9 @@ export class MrTableBridge {
     if (code === 1211) {
       const n = param | 0;
       if (n <= 0) return MR_FAILED;
-      this.randSeed = lcgNext(this.randSeed ?? (this.hooks.getProfile?.() ?? defaultProfile()).randSeed);
+      // dsm.c MR_GET_RAND calls srand(mr_getTime()) before rand(). The
+      // reseed also changes the generator subsequently used by table[20].
+      this.randSeed = lcgNext(this.pollTime());
       return MR_PLAT_VALUE_BASE + ((this.randSeed >>> 16) & 0x7fff) % n;
     }
     if (code === 1231) {
