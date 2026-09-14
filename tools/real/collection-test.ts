@@ -16,7 +16,7 @@ import { inferScreenSize } from "../../src/mythroad/device-size.ts";
 
 type Game = { id: number; path: string; sha256: string; required?: boolean };
 type Action = ({ key: string } | { tap: [number, number] }) & { hold?: number; wait?: number };
-type Scenario = { tickMs?: number; entry?: Action[]; controls?: Action[]; bootTicks?: number; tailTicks?: number; gameplaySha256?: string[]; controlSha256?: string[]; reviewNote?: string };
+type Scenario = { profile?: Partial<import("../../src/mythroad/profile.ts").DeviceProfile>; tickMs?: number; entry?: Action[]; controls?: Action[]; bootTicks?: number; tailTicks?: number; gameplaySha256?: string[]; controlSha256?: string[]; reviewNote?: string };
 const manifestPath = resolve(process.env.MRP_TEST_MANIFEST ?? "docs/compatibility/collection-100.json");
 const scenarioPath = resolve(process.env.MRP_TEST_SCENARIOS ?? "docs/compatibility/scenarios.json");
 const manifest = JSON.parse(readFileSync(manifestPath,"utf8"));
@@ -45,7 +45,7 @@ if(worker) {
   const game=allGames.find(g=>g.id===Number(args[1])); if(!game) throw new Error("unknown manifest id");
   const path=join(root,game.path),bytes=readFileSync(path);
   if(hash(bytes)!==game.sha256) throw new Error("game content differs from frozen manifest");
-  const scenario=scenarios[String(game.id)]??{},profile=inferScreenSize(game.path);
+  const scenario=scenarios[String(game.id)]??{},profile={...inferScreenSize(game.path),...scenario.profile};
   loadGb16Uc2(readFileSync("assets/system/gb16.uc2"));
   const resourceFiles = await loadGameResourceFiles(process.env.MRP_RESOURCE_DIR ?? join(root, "mythroad_res"), MRPArchive.parse(bytes).header.filename);
   const systemFiles = { ...Object.fromEntries(SYSTEM_COMPONENTS.map(name => [name, readFileSync(`assets/${name}`)])), ...await loadLocalSystemFiles(process.env.MRP_TEST_PRODUCTION ? undefined : localSystemDirectory) };

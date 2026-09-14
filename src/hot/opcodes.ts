@@ -75,6 +75,8 @@ export const enum Op {
   MOVT,
   NOP,
   DSP_MUL,
+  LDRD,
+  STRD,
   UNDEF = 255,
 }
 
@@ -178,6 +180,8 @@ OP_NAMES[Op.SMULL] = "SMULL";
 OP_NAMES[Op.SMLAL] = "SMLAL";
 OP_NAMES[Op.LDR] = "LDR";
 OP_NAMES[Op.STR] = "STR";
+OP_NAMES[Op.LDRD] = "LDRD";
+OP_NAMES[Op.STRD] = "STRD";
 OP_NAMES[Op.LDRB] = "LDRB";
 OP_NAMES[Op.STRB] = "STRB";
 OP_NAMES[Op.LDRH] = "LDRH";

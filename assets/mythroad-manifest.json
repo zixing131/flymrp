@@ -1,5 +1,5 @@
 {
-  "source": "用户提供的 mrp游戏大集结/mythroad 目录",
+  "source": "用户提供的 mrp游戏大集结/mythroad 目录及 MRP游戏软件合集3426合一/ydqtwo.mrp；第四轮增加用户集合中的 msbase.mrp 与 kbill.mrp、mscore.mrp 与 mythroad_res/plugins/addons.mrp",
   "files": [
     {
       "path": "app240400/0/fpd.sav",
@@ -140,6 +140,11 @@
       "path": "dsm_gm.mrp",
       "size": 314340,
       "sha256": "1f5521066b861d5bc1a749465b3b105fa7f747c4f6049aa9e203b22dcd7b9298"
+    },
+    {
+      "path": "gwy.mrp",
+      "size": 56345,
+      "sha256": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f"
     },
     {
       "path": "gwy/cardcharge.mrp",
@@ -472,11 +477,6 @@
       "sha256": "5089b4f9f5d90b0edd90d9fe8b8b59ba07e28c1c78b00518e9803abdf2942961"
     },
     {
-      "path": "gwy.mrp",
-      "size": 56345,
-      "sha256": "b14af30084dbe62879304f429eb989a9a9d6d703d8bb996e659963876fbe993f"
-    },
-    {
       "path": "menu.dat",
       "size": 24,
       "sha256": "31102d73244e5df36565446b0b0e7342c0599d062c09c5e996935163d058369a"
@@ -485,6 +485,11 @@
       "path": "plugin240400/cookie.mrp",
       "size": 298307,
       "sha256": "25f2f967da4f4ce000dff98e9d44102928f181bb7a3bcaee203012e421d07f15"
+    },
+    {
+      "path": "plugins/addons.mrp",
+      "size": 1202,
+      "sha256": "d2f158c25e78c57e3d9e54564ba07739dc54e7802eaaab5dc327a4e892788ddb"
     },
     {
       "path": "plugins/advbar.mrp",
@@ -535,6 +540,21 @@
       "path": "plugins/freecurr.mrp",
       "size": 37037,
       "sha256": "0d3254e1aa5d2a96f40bc8777b1e8e70a370b01b76311b4296a5556df6026346"
+    },
+    {
+      "path": "plugins/kbill.mrp",
+      "size": 31306,
+      "sha256": "bd9b7e8fc17ec68ead4971b6ea95eb26ae9067ad35b581227052a5e2fd3bb3c5"
+    },
+    {
+      "path": "plugins/msbase.mrp",
+      "size": 29118,
+      "sha256": "1cdd728c69c909e4e193a97c1b1e68406c97c11c7a3cacfdd35eb484a1d7a5f5"
+    },
+    {
+      "path": "plugins/mscore.mrp",
+      "size": 74413,
+      "sha256": "a8e965e5b243490e7c46f4cc118430c01a07f256e827b0823619f1af72ec892a"
     },
     {
       "path": "plugins/netcfg.mrp",
@@ -710,6 +730,11 @@
       "path": "usrConfig",
       "size": 40,
       "sha256": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb"
+    },
+    {
+      "path": "ydqtwo.mrp",
+      "size": 69149,
+      "sha256": "2b79762e5bd51780e20ebb0fb5a39872d2d9987db884f64f44044a5bc52a0684"
     }
   ]
 }

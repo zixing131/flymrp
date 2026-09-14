@@ -272,6 +272,19 @@ function decodeExtraLs(word: number, cond: number, out: Uint32Array, idx: number
   const sh = (word >>> 5) & 3;
   let op = Op.UNDEF;
   if (sh === 1) op = l ? Op.LDRH : Op.STRH;
+  else if (!l && (sh === 2 || sh === 3)) {
+    // ARMv5TE doubleword transfers use L=0; L=1 remains LDRSB/LDRSH.
+    const rm = word & 15;
+    const writeback = w || !p;
+    if ((rd & 1) || rd >= 14 || (!p && w) ||
+        (writeback && (rn === 15 || rn === rd || rn === rd + 1)) ||
+        (!i && (rm === 15 || (word & 0xf00) !== 0 || (sh === 2 && (rm === rd || rm === rd + 1)))) ||
+        (sh === 3 && rn === 15)) {
+      undef(out, idx, cond, word);
+      return;
+    }
+    op = sh === 2 ? Op.LDRD : Op.STRD;
+  }
   else if (sh === 2 && l) op = Op.LDRSB;
   else if (sh === 3 && l) op = Op.LDRSH;
   else {

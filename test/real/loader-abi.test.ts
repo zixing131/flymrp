@@ -20,7 +20,7 @@ describe("5-C.5 real loader chain", () => {
     expect(cf).toBeTruthy();
     expect(cf!.length).toBe(220596);
     expect(rt.ext?.codeLen).toBe(220596);
-    expect(rt.ext?.owners.wrapper.p).toBe(0x0034b5c8);
+    expect(rt.ext?.owners.wrapper.p).toBe(0x0034b728);
     expect(rt.ext?.owners.wrapper.helper).toBe(0x01ea5e9d);
 
     const loads = tr.records.filter((r) => r.operation === "ext_load_return");

@@ -18,6 +18,10 @@ function tblNum(rt: MythroadRuntime, field: string): number {
 }
 
 describe("5-B system info", () => {
+  it('uses the SDK identity by default while preserving explicit handset profiles', () => {
+    expect(new MythroadRuntime().profile.hsman).toBe('sdk');
+    expect(new MythroadRuntime({profile:{hsman:'custom'}}).profile.hsman).toBe('custom');
+  });
   it("GetSysInfo scrw/scrh from DeviceProfile", () => {
     const rt = new MythroadRuntime({ profile: { width: 128, height: 160 } });
     rt.lua.runCold(

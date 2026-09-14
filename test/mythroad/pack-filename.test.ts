@@ -27,7 +27,7 @@ describe("5-C.10I table[100] / pack_filename data slot", () => {
 
     const addr = rt.packFilenameAddr();
     expect(addr).toBe(rt.mem.read32(tableSlotAddr(PACK_FILENAME_SLOT)) >>> 0);
-    expect(addr).toBe(0x002002c8);
+    expect(addr).toBe(0x00200400);
     expect(guestBytes(rt, addr).every((b) => b === 0)).toBe(true);
     expect(readGuestCString(rt.mem, addr, MR_MAX_FILENAME_SIZE)).toBe("");
   });

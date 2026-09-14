@@ -31,11 +31,11 @@ describe("5-C.5 cfunction init / code-6 forensics", () => {
     expect(r.fault.slot).toBe(80);
     expect(r.fault.kind).toBe("RETURN");
     expect(r.fault.faultPc).toBe(REAL_MRP_BASELINE.stopPc);
-    expect(r.fault.r9).toBe(0x0024b5cc);
-    expect(r.fault.p).toBe(0x0034b5c8);
+    expect(r.fault.r9).toBe(0x0024b704);
+    expect(r.fault.p).toBe(0x0034b728);
     expect(r.fault.helper).toBe(0x01ea5e9d);
-    expect(r.fault.erRw).toBe(0x0024b5cc);
-    expect(r.preCall?.route).toEqual({ p: 0x0034b5c8, helper: 0x01ea5e9d });
+    expect(r.fault.erRw).toBe(0x0024b704);
+    expect(r.preCall?.route).toEqual({ p: 0x0034b728, helper: 0x01ea5e9d });
     expect(r.code6Call).toMatchObject({
       entered: true,
       kind: "return",
@@ -43,7 +43,7 @@ describe("5-C.5 cfunction init / code-6 forensics", () => {
       helper: 0x01ea5e9d,
       firstPc: 0x01ea5e9c,
       tBit: 1,
-      r9: 0x0024b5cc,
+      r9: 0x0024b704,
       erRwWord10: 0x7b0,
       erRwWord20: 0,
     });

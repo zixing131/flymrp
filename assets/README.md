@@ -17,4 +17,15 @@
 
 用户已授权将游戏集合 `mythroad/` 中的有效文件复制进 Git 并用于生产构建。根目录结构直接映射为来宾文件系统路径，完整清单、大小和 SHA-256 见 [mythroad-manifest.json](mythroad-manifest.json)。排除 `.DS_Store` 等隐藏系统文件。
 
-该快照包含 142 个文件，包括 `system/` 字库、`plugins/` 通用插件、`gwy/` 资源和 `app240400/` 已有数据；保留原字节和文件名。Vite 将其复制到生产输出目录，网页按清单加载，无需依赖开发服务器上的用户目录。第三方资源不因项目采用 AGPL-3.0 而被重新许可。
+清单记录所有文件，包括 `system/` 字库、`plugins/` 通用插件、`gwy/` 资源和 `app240400/` 已有数据；保留原字节和文件名。Vite 将其复制到生产输出目录，网页按清单加载，无需依赖开发服务器上的用户目录。第三方资源不因项目采用 AGPL-3.0 而被重新许可。
+
+- `ydqtwo.mrp`：来自用户集合 `MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/ydqtwo.mrp` 的共享阅读器，69,149 字节，SHA-256 `2b79762e5bd51780e20ebb0fb5a39872d2d9987db884f64f44044a5bc52a0684`。用于旧图文包的 `_loadPack`/`dofile` 加载链，保留原始字节；不是模拟成功的空组件。
+
+## 第四轮补充（持续验证中）
+
+- `plugins/msbase.mrp`：用户集合 `mrp资源2218个文件（无中文命名）/171875_2301250msbase.mrp`，29118 字节，SHA-256 `1cdd728c69c909e4e193a97c1b1e68406c97c11c7a3cacfdd35eb484a1d7a5f5`。保持原始字节。
+- `plugins/mscore.mrp`：用户集合 `MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/mscore.mrp`，74413 字节，SHA-256 `a8e965e5b243490e7c46f4cc118430c01a07f256e827b0823619f1af72ec892a`。保持原始字节。
+- `plugins/kbill.mrp`：用户集合 `MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/kbill.mrp`，31306 字节，SHA-256 `bd9b7e8fc17ec68ead4971b6ea95eb26ae9067ad35b581227052a5e2fd3bb3c5`。保持原始字节。
+- `plugins/addons.mrp`：用户集合 `mythroad_res/plugins/addons.mrp`，1202 字节，SHA-256 `d2f158c25e78c57e3d9e54564ba07739dc54e7802eaaab5dc327a4e892788ddb`。保持原始字节。
+
+`msbase`（appid 499990/version 1001）与 `mscore`（499991/1009）加入原始包下载映射，真实安装器已逐次收到它们；后续 appid 480101 仍缺失，尚不能宣称该安装链完成。`addons.mrp` 是集合中原有的编码资源，不按普通 MRPG 文件强行解析或重打包。

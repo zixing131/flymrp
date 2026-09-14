@@ -27,6 +27,7 @@ export class LuaState {
   base = 1;
   strings: string[] = [""];
   intern = new Map<string, number>();
+  private mutableStrings = new Set<number>();
   tables: LuaTable[] = [null as unknown as LuaTable];
   closures: Closure[] = [null as unknown as Closure];
   natives: NativeFunction[] = [null as unknown as NativeFunction];
@@ -100,6 +101,21 @@ export class LuaState {
     this.stats.interns++;
     return id;
   }
+
+  /** Handset string.new buffers have identity and must never be interned. */
+  newMutableString(s: string): number {
+    const id = this.strings.length;
+    this.strings.push(s);
+    this.mutableStrings.add(id);
+    return id;
+  }
+
+  replaceString(id: number, value: string): void {
+    if (!this.mutableStrings.has(id)) throw new LuaRuntimeError('mutable string.new buffer expected');
+    this.strings[id] = value;
+  }
+
+  isMutableString(id: number): boolean { return this.mutableStrings.has(id); }
 
   newTable(): number {
     const t = new LuaTable();

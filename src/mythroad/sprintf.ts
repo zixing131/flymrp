@@ -12,7 +12,7 @@ import { UnknownAbiError } from "../err/errors.ts";
 import type { GuestMemory } from "../hot/memory.ts";
 
 /** Bound on format walk. Unterminated format is an ABI error, not silent truncate. */
-export const SPRINTF_FORMAT_MAX = 256;
+export const SPRINTF_FORMAT_MAX = 4096;
 
 export type SprintfVararg = (index: number) => number;
 
@@ -64,25 +64,35 @@ export function guestSprintf(
   };
   for (let i = 0; i < fmt.length;) {
     if (fmt[i] !== "%") { write(fmt[i++]); continue; }
-    const match = /^%([0-]?)(\d{0,4})(l{0,2})([diuxXpsc%])/.exec(fmt.slice(i));
+    const match = /^%([0-]?)(\d{0,4})(?:\.(\d{0,4}))?(l{0,2})([diuxXpscf%])/.exec(fmt.slice(i));
+    // Legacy printf.c emits unknown bare specifiers without consuming an arg.
+    if (!match && (fmt[i + 1] === 'm' || fmt.charCodeAt(i + 1) >= 128)) { write(fmt[i + 1]); i += 2; continue; }
     if (!match) unsupported(fmt.slice(i, i + 2));
     i += match[0].length;
-    const [, flag, widthText, length, spec] = match;
+    const [, flag, widthText, precisionText, length, spec] = match;
+    const precision = precisionText === undefined ? undefined : Number(precisionText || 0);
+    if (precision !== undefined && precision > 4096) unsupported('precision too large');
     // ARM's ILP32 long is one word. AAPCS long long is an aligned pair;
     // sprintf's first vararg is R2, so even vararg indices are aligned.
-    if (length && !"diuxX".includes(spec)) unsupported(match[0]);
+    if (length && !"diuxX".includes(spec) && !(length === 'l' && spec === 'f')) unsupported(match[0]);
     const width = Number(widthText || 0);
     if (width > 4096) unsupported("width too large");
     if (spec === "%") { write("%"); continue; }
-    if (length === "ll") vi = (vi + 1) & ~1;
+    if (length === "ll" || spec === 'f') vi = (vi + 1) & ~1;
     const value = nextVararg(vi++) >>> 0;
-    const wideHi = length === "ll" ? nextVararg(vi++) >>> 0 : 0;
+    const wideHi = length === "ll" || spec === 'f' ? nextVararg(vi++) >>> 0 : 0;
     let piece = "";
-    if (length === "ll") {
+    if (spec === 'f') {
+      if ((precision ?? 6) > 100) unsupported('float precision too large');
+      const view = new DataView(new ArrayBuffer(8));
+      view.setUint32(0, value, true); view.setUint32(4, wideHi, true);
+      const n = view.getFloat64(0, true);
+      piece = Number.isNaN(n) ? 'nan' : n === Infinity ? 'inf' : n === -Infinity ? '-inf' : n.toFixed(precision ?? 6);
+    } else if (length === "ll") {
       piece = formatU64(wideHi, value, spec);
     } else if (spec === "s") {
       if (value) {
-        for (let j = 0; ; j++) {
+        for (let j = 0; precision === undefined || j < precision; j++) {
           const b = mem.read8((value + j) >>> 0);
           if (!b) break;
           if (j >= 65536) unsupported("unterminated string");
@@ -95,8 +105,14 @@ export function guestSprintf(
     else if (spec === "u") piece = String(value);
     else piece = value.toString(16);
     if (spec === "X") piece = piece.toUpperCase();
+    if (precision !== undefined && 'diuxX'.includes(spec)) {
+      const negative = piece.startsWith('-');
+      let digits = negative ? piece.slice(1) : piece;
+      if (digits === '0' && precision === 0) digits = '';
+      piece = (negative ? '-' : '') + digits.padStart(precision, '0');
+    }
     if (flag === "-") piece = padAlign(piece, width, " ", true);
-    else if (flag === "0" && spec !== "s" && spec !== "c") {
+    else if (flag === "0" && precision === undefined && spec !== "s" && spec !== "c") {
       piece = piece.charAt(0) === "-" ? "-" + padAlign(piece.slice(1), Math.max(0, width - 1), "0", false) : padAlign(piece, width, "0", false);
     } else piece = padAlign(piece, width, " ", false);
     write(piece);
@@ -132,6 +148,8 @@ export function guestPrintf(
     let width = 0;
     let zeroPad = false;
     let spec = mem.read8((fmt + i) >>> 0) & 0xff;
+    const leftAlign = spec === 0x2d;
+    if (leftAlign) spec = mem.read8((fmt + ++i) >>> 0) & 0xff;
     zeroPad = spec === 0x30;
     while (spec >= 0x30 && spec <= 0x39) {
       width = width * 10 + (spec - 0x30);
@@ -177,7 +195,7 @@ export function guestPrintf(
     }
     if (width > piece.length) {
       const pad = zeroPad && ![0x73, 0x63, 0x25].includes(spec) ? "0" : " ";
-      piece = pad === "0" && piece.charAt(0) === "-"
+      piece = leftAlign ? padAlign(piece, width, ' ', true) : pad === "0" && piece.charAt(0) === "-"
         ? "-" + padAlign(piece.slice(1), width - 1, pad, false) : padAlign(piece, width, pad, false);
     }
     out += piece;

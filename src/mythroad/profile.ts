@@ -36,7 +36,9 @@ export function defaultProfile(over: Partial<DeviceProfile> = {}): DeviceProfile
     width: 240,
     height: 320,
     vmver: 1968,
-    hsman: "flymrp",
+    // Legacy SDK launchers explicitly recognize this emulated environment.
+    // A caller-supplied handset identity still wins through the override below.
+    hsman: "sdk",
     hstype: "stage5b",
     IMEI: "0000000000000000",
     IMSI: "0000000000000000",

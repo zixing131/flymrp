@@ -51,7 +51,7 @@ describe("table[35] mr_getUserInfo ABI", () => {
     expect(readGuestCString(ext.mem, info, 16)).toBe("000000000000000");
     expect(ext.mem.read8((info + 15) >>> 0)).toBe(0);
     expect(readGuestCString(ext.mem, (info + 16) >>> 0, 16)).toBe("000000000000000");
-    expect(readGuestCString(ext.mem, (info + 32) >>> 0, 8)).toBe("flymrp");
+    expect(readGuestCString(ext.mem, (info + 32) >>> 0, 8)).toBe("sdk");
     expect(readGuestCString(ext.mem, (info + 40) >>> 0, 8)).toBe("stage5b");
     expect(ext.mem.read32((info + 48) >>> 0)).toBe(packedUserInfoVer(1));
     expect(packedUserInfoVer(1)).toBe(MR_USERINFO_VER_BASE + 2 * 10000 + 180);

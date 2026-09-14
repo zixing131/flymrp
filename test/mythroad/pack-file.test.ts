@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { EXT_PLATFORM_MEM_ADDR, EXT_STOP_ADDR, tableSlotAddr } from "../../src/abi/layout.ts";
+import { EXT_PLATFORM_MEM_ADDR, EXT_PLATFORM_MEM_SIZE, EXT_STOP_ADDR, tableSlotAddr } from "../../src/abi/layout.ts";
 import { ExtRuntime } from "../../src/abi/runtime.ts";
 import { ExtStopKind } from "../../src/abi/fault.ts";
 import { UnknownAbiError } from "../../src/err/errors.ts";
@@ -182,9 +182,9 @@ describe("5-C.10K current-pack read-only file backend", () => {
     const { ext, bridge } = wirePack();
     const name = putName(ext, PACK);
     expect(callSlot(ext, 40, name, MR_FILE_RDONLY).r0).toBe(1);
-    expect(() => bridge.files.read(ext.mem, 1, EXT_PLATFORM_MEM_ADDR, 2)).toThrow(MemoryFault);
+    expect(() => bridge.files.read(ext.mem, 1, EXT_PLATFORM_MEM_ADDR + EXT_PLATFORM_MEM_SIZE, 2)).toThrow(MemoryFault);
     expect(bridge.files.peek(1)?.pos).toBe(0);
-    const out = callSlot(ext, 44, 1, EXT_PLATFORM_MEM_ADDR, 2);
+    const out = callSlot(ext, 44, 1, EXT_PLATFORM_MEM_ADDR + EXT_PLATFORM_MEM_SIZE, 2);
     expect(out.kind).toBe(ExtStopKind.Unmapped);
     expect(out.kind).not.toBe(ExtStopKind.Return);
   });
@@ -231,7 +231,7 @@ describe("5-C.10K current-pack read-only file backend", () => {
     const buf = ext.alloc(16);
     expect(callSlot(ext, 44, 1, buf, 16).r0).toBe(16);
     expect(guestBytes(ext, buf, 16)).toEqual([...bytes.subarray(0, 16)]);
-    expect(rt.vfs.exists(PACK)).toBe(false);
+    expect(rt.vfs.exists(PACK)).toBe(true);
   });
 
   it("reports mr_ferrno as MR_FAILED like rxgj dsm.c", () => {

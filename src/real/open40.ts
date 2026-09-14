@@ -37,7 +37,7 @@ export const OPEN40 = {
   consumerOpen: 0x01ea8e8e,
   consumerBl: 0x01ea8e92,
   consumerAfter: 0x01ea8e96,
-  filename: 0x002002c8,
+  filename: 0x00200400,
   sprintfBuf: 0x01e7ff74,
   sprintfText: "res_lang0.rc",
   mode: MR_FILE_RDONLY,

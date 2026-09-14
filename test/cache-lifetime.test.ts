@@ -30,3 +30,20 @@ it("stops an executing block when the guest rewrites its upcoming instruction", 
   cpu.r[0]=0xe3a01007;mem.onWrite=(addr,size)=>cache.invalidate(addr,size);
   run(cpu,3);expect(cpu.r[1]).toBe(7);
 });
+
+it('invalidates a block spanning pages and updates overlapping regions once per write', () => {
+  const {cpu,mem}=makeCpu(0x1ffc,0),cache=new BlockCache();cpu.cache=cache;
+  const first=cache.addRegion(0x1000,0x1000), overlap=cache.addRegion(0x1ff0,0x40);
+  putArm(mem,0x1ffc,[0xe3a00001,0xe3a01002,0xe12fff1e]);
+  run(cpu,2);const id=cache.lookupId(0x1ffc,0);expect(id).toBeGreaterThan(0);
+  const block=cache.pool[id]!;
+  mem.onWrite=(addr,size)=>cache.invalidate(addr,size);
+  // Instruction lies on a page beyond the block's starting region.
+  mem.write32(0x2000,0xe3a01007);expect(block.valid).toBe(false);
+  cpu.r[15]=0x1ffc;run(cpu,2);expect(cpu.r[1]).toBe(7);
+  const a=first.generation,b=overlap.generation;
+  cache.invalidate(0x1ffc,8);
+  expect(first.generation).toBe(a+1);expect(overlap.generation).toBe(b+1);
+  cache.invalidate(0x8000,8);
+  expect(first.generation).toBe(a+1);expect(overlap.generation).toBe(b+1);
+});

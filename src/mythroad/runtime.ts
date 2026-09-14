@@ -103,6 +103,7 @@ export class MythroadRuntime {
   readonly workPath = new WorkPath();
   readonly appFs = new AppFileSystem();
   private readonly knownPacks = new Map<string, Uint8Array>();
+  private nativeEntry = false;
   private returnApp: { pack: string; entry: string } | null = null;
   private ramPack: Uint8Array | null = null;
   readonly userFiles = new AppFileSystem();
@@ -184,8 +185,11 @@ export class MythroadRuntime {
     this.screenH = this.profile.height;
     this.screen = new ScreenBuffer(this.screenW, this.screenH);
     this.randSeed = this.profile.randSeed;
-    this.vfs.readExternal = name => this.appFs.file(name);
-    this.vfs.existsExternal = name => this.appFs.info(name) === MR_IS_FILE;
+    // Lua file.open uses the same installed package name as ARM mr_open.
+    // Package introspection (version/header reads) must see the actual bytes,
+    // even when the browser loaded them directly rather than from the SD card.
+    this.vfs.readExternal = name => this.appFs.file(name) ?? this.knownPacks.get(this.appFs.normalize(name)) ?? null;
+    this.vfs.existsExternal = name => this.appFs.info(name) === MR_IS_FILE || this.knownPacks.has(this.appFs.normalize(name));
     this.systemFiles = opts.systemFiles ?? {};
     this.appFs.readMissing = opts.loadSystemFile;
     this.resourceFiles.readMissing = opts.loadResourceFile;
@@ -295,18 +299,47 @@ export class MythroadRuntime {
     }
   }
 
-  start(entry = MR_START_FILE): void {
+  start(entry?: string): void {
     if (!this.archive) throw new LuaRuntimeError("no MRP loaded");
+    // A small set of packaged launchers uses the legacy underscored entry.
+    // Explicit entry requests remain exact, and normal start.mr wins if both exist.
+    if (entry === undefined) {
+      const files = this.archive.listFiles();
+      entry = files.includes(MR_START_FILE) ? MR_START_FILE : files.includes('_start.mr') ? '_start.mr' : files.includes('cfunction.ext') ? 'cfunction.ext' : MR_START_FILE;
+    }
     this.state = MR_STATE_RUN;
     this.exited = false;
     this.lua.L.setGlobal("_mr_entry", TAG_STRING, this.lua.L.internStr(this.entry));
     this.lua.L.setGlobal("_mr_param", TAG_STRING, this.lua.L.internStr(this.param));
     const chunk = this.vfs.readFile(entry);
     if (!chunk) throw new LuaRuntimeError(`cannot read ${entry}`);
-    try { this.lua.runBytes(chunk); } catch (error) { if (!(error instanceof AppReturn)) throw error; }
+    try { this.runEntry(entry, chunk); } catch (error) { if (!(error instanceof AppReturn)) throw error; }
     if (this.timers.state === MR_TIMER_STATE_IDLE && this.lua.hasGlobalFn("dealtimer")) {
       this.timers.start(this.clock, 100, "dealtimer", this.state);
     }
+  }
+
+  /** Native-only DSM packages use mr_doExt rather than the Lua chunk loader. */
+  private runEntry(name: string, bytes: Uint8Array): void {
+    this.nativeEntry = name.toLowerCase().endsWith('.ext');
+    if (!this.nativeEntry) { this.lua.runBytes(bytes); return; }
+    const ext = new ExtRuntime();
+    this.bindExt(ext);
+    this.bi |= 1;
+    const loaded = ext.load(bytes, { loadCode: 0 });
+    if (loaded.kind !== 'return' || loaded.ret !== 0)
+      throw new ExtFault(loaded.kind === 'return' ? 'abi-fault' : loaded.kind, loaded.pc ?? 0, `native entry load returned ${loaded.ret}`);
+    const source = ext.alloc(bytes.length);
+    ext.mem.load(source, bytes);
+    const info = new Uint8Array(16), view = new DataView(info.buffer);
+    const pack = this.archive!;
+    view.setUint32(0, pack.header.appid, true);
+    view.setUint32(4, pack.header.version, true);
+    const invoke = (code: number, input?: Uint8Array) => {
+      const out = input ? ext.arm_ext_call(code, input) : ext.arm_ext_call(code, undefined, source, this.profile.vmver);
+      if (out.kind !== 'return') throw new ExtFault(out.kind, out.pc ?? 0, `native entry ${code}: ${out.detail ?? ''}`);
+    };
+    invoke(6); invoke(8, info); invoke(0);
   }
 
   canRun(): boolean {
@@ -382,6 +415,18 @@ export class MythroadRuntime {
     if (bytes) this.knownPacks.set(this.appFs.normalize(this.packName), bytes);
   }
 
+  /** _loadPack changes the resource namespace without restarting Lua/timers. */
+  selectReadPack(name: string): string {
+    const bytes = name === '$' ? this.ramPack : this.appFs.file(name) ?? this.knownPacks.get(this.appFs.normalize(name)) ?? this.vfs.readFile(name);
+    if (!bytes) throw new LuaRuntimeError(`cannot load package ${name}`);
+    const archive = MRPArchive.parse(bytes), previous = this.packName;
+    this.saveCurrentPack();
+    this.archive = archive; this.vfs.attach(archive); this.packName = name;
+    this.knownPacks.set(this.appFs.normalize(name), bytes);
+    this.ext?.setPackTableName(name);
+    return previous;
+  }
+
   setReturnApp(pack: string, entry = MR_START_FILE): void {
     this.returnApp = pack ? { pack, entry } : null;
     this.mrTable?.syncReturnApp();
@@ -421,7 +466,7 @@ export class MythroadRuntime {
     const name = this.pendingStartFile || MR_START_FILE;
     const chunk = this.vfs.readFile(name);
     if (!chunk) throw new LuaRuntimeError(`cannot read ${name}`);
-    try { this.lua.runBytes(chunk); } catch (error) { if (!(error instanceof AppReturn)) throw error; }
+    try { this.runEntry(name, chunk); } catch (error) { if (!(error instanceof AppReturn)) throw error; }
     if (this.timers.state === MR_TIMER_STATE_IDLE && this.lua.hasGlobalFn("dealtimer")) {
       this.timers.start(this.clock, 100, "dealtimer", this.state);
     }
@@ -436,6 +481,12 @@ export class MythroadRuntime {
     }
   }
 
+  private dispatchNativeLifecycle(code: number): void {
+    if (!this.ext) return;
+    const out = this.ext.arm_ext_call(code, new Uint8Array());
+    if (out.kind !== 'return') throw new ExtFault(out.kind, out.pc ?? 0, `native lifecycle ${code}: ${out.detail ?? ''}`);
+  }
+
   pause(): number {
     if (this.state === MR_STATE_RESTART) {
       this.timers.stop();
@@ -444,6 +495,7 @@ export class MythroadRuntime {
     if (this.state === MR_STATE_RUN) this.state = MR_STATE_PAUSE;
     else return MR_IGNORE;
     if (this.lua.hasGlobalFn("suspend")) this.lua.callGlobal("suspend");
+    else if (this.nativeEntry) this.dispatchNativeLifecycle(4);
     if (!this.timers.runWithoutPause) this.timers.suspend();
     return MR_SUCCESS;
   }
@@ -456,6 +508,7 @@ export class MythroadRuntime {
     if (this.state === MR_STATE_PAUSE) this.state = MR_STATE_RUN;
     else return MR_IGNORE;
     if (this.lua.hasGlobalFn("resume")) this.lua.callGlobal("resume");
+    else if (this.nativeEntry) this.dispatchNativeLifecycle(5);
     this.timers.resume(this.clock);
     return MR_SUCCESS;
   }
@@ -496,6 +549,14 @@ export class MythroadRuntime {
       onExit: exitGuest,
       getTimer: () => this.timers,
       getMrState: () => this.state,
+      setMrState: (state, pack, entry) => {
+        if (state === MR_STATE_RESTART) {
+          this.pendingPack = pack;
+          this.pendingStartFile = entry;
+          this.pendingParam = this.param;
+        }
+        this.state = state;
+      },
       getPack: () => (this.archive ? { name: this.packName, bytes: this.archive.data } : null),
       getProfile: () => this.profile,
       getScreen: () => this.screen,

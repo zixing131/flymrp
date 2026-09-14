@@ -27,12 +27,12 @@ describe("5-C.10F table[17] / sprintf_ forensics", () => {
     expect(r.cpu.r[3]).toBe(SPRINTF17.stub);
     expect(r.cpu.r[4]).toBe(0);
     expect(r.cpu.r[5]).toBe(SPRINTF17.buffer);
-    expect(r.cpu.r9).toBe(0x0024b5cc);
+    expect(r.cpu.r9).toBe(0x0024b704);
     expect(r.cpu.cpsr).toBe(0x10);
     expect(r.cpu.tBit).toBe(0);
     expect(r.cpu.insnCount).toBe(183);
-    expect(r.p).toBe(0x0034b5c8);
-    expect(r.erRw).toBe(0x0024b5cc);
+    expect(r.p).toBe(0x0034b728);
+    expect(r.erRw).toBe(0x0024b704);
 
     expect(r.format).toBe(SPRINTF17.formatText);
     expect(r.formatAscii).toBe(true);

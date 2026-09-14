@@ -55,3 +55,17 @@ describe("4-H code cache / self-modifying code", () => {
     expect(rt.cache.findRegion(a)!.generation).toBe(otherGen);
   });
 });
+
+it('caches heap-relocated code and invalidates compiled blocks on ordinary writes', () => {
+  const rt = new ExtRuntime(), dest = rt.alloc(8192) + 4096;
+  // No pokeCode/addCodeRegion: this is the malloc/memcpy loader path.
+  rt.mem.load(dest, wordsToBytes([armDpImm(OP_MOV, 0, 0, 0, 3), armBx(14)]));
+  for(let i=0;i<40;i++) expect(rt.runGuest(dest).r0).toBe(3);
+  const id = rt.cache.lookupId(dest, 0), block = rt.cache.pool[id]!;
+  expect(block.compiled).not.toBeNull();
+  expect(rt.cache.misses).toBe(1);
+  rt.mem.write32(dest, armDpImm(OP_MOV, 0, 0, 0, 8));
+  expect(block.valid).toBe(false);
+  expect(rt.runGuest(dest).r0).toBe(8);
+  expect(rt.cache.misses).toBe(2);
+});

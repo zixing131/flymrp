@@ -1,5 +1,6 @@
 import { add64, smul64, umul64 } from "../abi/u64.ts";
 import { ARMCPU, CpuTrap, UnsupportedInsn } from "./cpu.ts";
+import { MemoryFault } from './memory.ts';
 import { decodeAt, insnSize } from "./decode.ts";
 import { addFlags, conditionPassed, nz, subFlags } from "./flags.ts";
 import {
@@ -235,6 +236,20 @@ function loadStore(
   const wbAddr = sum;
 
   switch (op) {
+    case Op.LDRD:
+    case Op.STRD: {
+      // Select the permitted word-aligned implementation. Unlike LDR, these
+      // accesses must never use ARMv5's unaligned rotated-word semantics.
+      if (addr & 3) throw new MemoryFault(addr, 'alignment', 8);
+      if (op === Op.LDRD) {
+        const low = cpu.mem.read32(addr), high = cpu.mem.read32((addr + 4) >>> 0);
+        cpu.r[rd] = low; cpu.r[rd + 1] = high;
+      } else {
+        cpu.mem.write32(addr, cpu.r[rd]);
+        cpu.mem.write32((addr + 4) >>> 0, cpu.r[rd + 1]);
+      }
+      break;
+    }
     case Op.LDR:
       writeReg(cpu, rd, cpu.mem.read32Armv5(addr), instPC, rd === 15);
       break;
@@ -444,6 +459,8 @@ export function execPacked(
     case Op.STRH:
     case Op.LDRSB:
     case Op.LDRSH:
+    case Op.LDRD:
+    case Op.STRD:
       loadStore(cpu, instPC, u.op, u.rd, u.rn, u.rm, u.shiftType, u.aux, w1);
       break;
     case Op.LDM:

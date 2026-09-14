@@ -127,3 +127,42 @@ describe("5-C string library", () => {
     expect(vm.L.strings[vm.L.nums[0]!]!).toBe("xx");
   });
 });
+
+it('formats handset user-agent hex bytes and standard integer/string fields', () => {
+  const vm = new LuaVM();
+  invokeField(vm, 'string', 'format', ['%02x:%04X:%+.4d:%-6.3s:%%', 15, 255, -12, 'hello']);
+  expect(vm.L.strings[vm.L.nums[0]]).toBe('0f:00FF:-0012:hel   :%');
+  expect(() => invokeField(vm, 'string', 'format', ['%d', 'not a number'])).toThrow('number expected');
+  expect(() => invokeField(vm, 'string', 'format', ['%d'])).toThrow('missing argument');
+});
+
+it('keeps mutable handset buffers independent and supports bounded overlapping updates', () => {
+  const vm = new LuaVM(), L = vm.L, table = L.tables[L.getGlobal('string').num];
+  const invoke = (name: string, values: {tag:number;num:number}[]) => {
+    L.base=1; L.top=1; values.forEach(v=>L.pushSlot(v));
+    const fn=L.closures[table.getStr(L.internStr(name)).num];
+    if(!fn.isC)throw Error('native expected');
+    const count=fn.fn(L);return count?L.slot(L.top-count):null;
+  };
+  const num=(n:number)=>({tag:TAG_NUMBER,num:n}),str=(id:number)=>({tag:TAG_STRING,num:id});
+  const a=invoke('new',[num(4)])!,b=invoke('new',[num(4)])!;
+  expect(a.num).not.toBe(b.num);
+  const interned=L.internStr('\0'.repeat(4));
+  invoke('set',[a,num(-1),num(65)]);
+  expect(L.strings[a.num]).toBe('\0\0\0A');expect(L.strings[b.num]).toBe('\0'.repeat(4));expect(L.strings[interned]).toBe('\0'.repeat(4));
+  invoke('update',[a,str(L.internStr('abcd'))]);
+  invoke('update',[a,a,num(2),num(1),num(3)]);
+  expect(L.strings[a.num]).toBe('aabc');
+  expect(()=>invoke('set',[a,num(0),num(1)])).toThrow('overflow');
+  const literal = L.internStr('abcd');
+  expect(()=>invoke('set',[str(literal),num(1),num(90)])).toThrow('mutable');
+  expect(()=>invoke('update',[str(literal),a])).toThrow('mutable');
+  expect(L.strings[literal]).toBe('abcd');
+  expect(L.internStr('abcd')).toBe(literal);
+  const slice = invoke('sub', [a,num(2),num(3)])!;
+  invoke('set', [slice,num(1),num(90)]);
+  expect(L.strings[slice.num]).toBe('Zb');
+  expect(L.strings[a.num]).toBe('aabc');
+  invoke('update',[a,str(L.internStr('xy')),num(1),num(1),num(4)]);
+  expect(L.strings[a.num]).toBe('xybc');
+});

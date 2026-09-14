@@ -21,10 +21,12 @@ export const EXT_CHUNK_MAGIC = 0x7fd8_54eb;
 export const EXT_LOW_TABLE_SIZE = 0x1_0000;
 
 export const EXT_PLATFORM_MEM_ADDR = 0x4000_0000;
+export const EXT_PLATFORM_MEM_SIZE = 2 * 1024 * 1024;
 export const EXT_SCRRAM_ADDR = 0x5000_0000;
 export const EXT_EXECUTOR_META_ADDR = 0x7000_0000;
 export const EXT_VFD_BASE = 0x7fff_0000;
 export const EXT_PLATFORM_IO_MEM_ADDR = 0x8000_0000;
+export const EXT_PLATFORM_IO_MEM_SIZE = 18 * 1024 * 1024;
 export const EXT_PLATFORM_ALT_MEM_ADDR = 0xa000_0000;
 
 export const AEX_P_ER_RW_OFF = 0x00;

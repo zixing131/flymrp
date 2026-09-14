@@ -28,7 +28,7 @@ describe("4-B EXT guest memory layout", () => {
     expect(mem.read32(EXT_STACK_ADDR)).toBe(2);
     expect(mem.read32(EXT_CODE_ADDR)).toBe(3);
     expect(mem.inRam(EXT_CODE_ADDR, 4)).toBe(true);
-    expect(() => mem.read32(0x4000_0000)).toThrow(MemoryFault);
+    expect(() => mem.read32(0x4020_0000)).toThrow(MemoryFault);
     expect(EXT_LOW_TABLE_SIZE).toBe(0x1_0000);
   });
 

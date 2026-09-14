@@ -18,7 +18,7 @@ import { FILE_ABI_SLOTS, OPEN40 } from "../../src/real/open40.ts";
 const REAL_APP = resolve(import.meta.dirname, "../fixtures/real/app.mrp");
 
 describe("5-C.10J current-pack file ABI forensics", () => {
-  it("static CFG after table[40] is read/seek/close; production now stops at table[1]", () => {
+  it("static CFG after table[40] is read/seek/close; current runtime exposes the file handlers", () => {
     const bytes = new Uint8Array(readFileSync(REAL_APP));
     const r = runFileChainForensics(bytes);
 
@@ -37,7 +37,7 @@ describe("5-C.10J current-pack file ABI forensics", () => {
     expect(r.handlers[43]).toBe(true);
     expect(r.handlers[44]).toBe(true);
     expect(r.handlers[45]).toBe(true);
-    for (const s of NOT_REQUIRED_STARTUP_FILE_SLOTS) expect(r.handlers[s]).toBe(s !== 39);
+    for (const s of NOT_REQUIRED_STARTUP_FILE_SLOTS) expect(r.handlers[s]).toBe(true);
     expect(r.handlers[14]).toBe(true);
     expect(r.handlers[0]).toBe(true);
     expect(r.handlers[1]).toBe(true);
@@ -73,7 +73,7 @@ describe("5-C.10J current-pack file ABI forensics", () => {
     expect(r.fileStart).toBeGreaterThan(FILECHAIN.newStyleMin);
     expect(r.listStart).toBe(240);
     expect(r.indexLen).toBe(5728 + 8 - 240);
-    expect(r.vfsHasPackName).toBe(false);
+    expect(r.vfsHasPackName).toBe(true);
     expect(r.vfsHasResLang).toBe(true);
     expect(r.vfsHasResLangAsPack).toBe(false);
     expect(r.design).toBe("SUPPORTED DESIGN / INFERRED COMPATIBLE");
@@ -84,14 +84,14 @@ describe("5-C.10J current-pack file ABI forensics", () => {
     expect(MINIMAL_STARTUP_FILE_SLOTS).toEqual([40, 44, 45, 41, 43]);
   });
 
-  it("does not register file slots 40-53 on a production runtime", () => {
+  it("exposes current package bytes to both Lua and ARM file APIs", () => {
     const rt = new MythroadRuntime();
     expect(rt.ext).toBeNull();
     const bytes = new Uint8Array(readFileSync(REAL_APP));
     rt.loadMrp(bytes);
     expect(rt.mrp?.data).toBe(bytes);
     expect(rt.packName).toBe(rt.mrp?.header.filename);
-    expect(rt.vfs.exists(rt.packName)).toBe(false);
+    expect(rt.vfs.exists(rt.packName)).toBe(true);
     expect(rt.vfs.exists("res_lang0.rc")).toBe(true);
     expect(MRPArchive.parse(bytes).data).toBe(bytes);
   });

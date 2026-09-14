@@ -63,6 +63,8 @@ function endsBlock(w0: number): boolean {
 
 export class BlockCache {
   compileBlocks = true;
+  /** Enable only when all guest/host writes invalidate this cache. */
+  cacheUnregisteredCode = false;
   readonly regions: ExecRegion[] = [];
   lastRegion: ExecRegion | null = null;
   readonly pool: Array<BasicBlock | null> = [null];
@@ -72,6 +74,8 @@ export class BlockCache {
   private nextVictim = 1;
   /** Index only pages containing decoded code; ordinary data writes are O(1). */
   private readonly codePages = new Map<number, Set<number>>();
+  /** Region metadata is indexed too: stack/data writes must not scan every module. */
+  private readonly regionPages = new Map<number, ExecRegion[]>();
 
   addRegion(base: number, len: number): ExecRegion {
     base >>>= 0;
@@ -87,6 +91,11 @@ export class BlockCache {
       blockIdThumb: new Uint32Array(len >>> 1),
     };
     this.regions.push(region);
+    for (let page = base >>> 12; page <= Math.floor((base + len - 1) / 4096); page++) {
+      let regions = this.regionPages.get(page);
+      if (!regions) this.regionPages.set(page, regions = []);
+      regions.push(region);
+    }
     this.lastRegion = region;
     return region;
   }
@@ -130,7 +139,6 @@ export class BlockCache {
   getOrDecode(cpu: ARMCPU): BasicBlock {
     const pc = cpu.r[15] >>> 0;
     const thumb = cpu.t;
-    const region = this.findRegion(pc);
     const id = this.lookupId(pc, thumb);
     if (id !== 0) {
       const b = this.pool[id];
@@ -167,7 +175,9 @@ export class BlockCache {
       cur = (cur + size) >>> 0;
       if (stop) break;
     }
-    const region = this.findRegion(pc);
+    // Handset loaders relocate executable code with ordinary malloc/memcpy.
+    // Register a small page only after instruction fetch/decode has succeeded.
+    const region = this.findRegion(pc) ?? (this.cacheUnregisteredCode ? this.addRegion((pc & ~4095) >>> 0, 4096) : null);
     const block: BasicBlock = {
       guestPC: pc,
       endPC: cur,
@@ -246,10 +256,17 @@ export class BlockCache {
   invalidate(base: number, len: number): void {
     if (len <= 0) return;
     const end = base + len;
-    for (const region of this.regions) {
-      if (region.base < end && region.base + region.len > base) region.generation = (region.generation + 1) >>> 0 || 1;
-    }
-    for (let page = base >>> 12; page <= Math.floor((end - 1) / 4096); page++) {
+    const firstPage = base >>> 12, lastPage = Math.floor((end - 1) / 4096);
+    // A multi-page write can encounter the same region more than once.
+    const changed = firstPage === lastPage ? null : new Set<ExecRegion>();
+    for (let page = firstPage; page <= lastPage; page++) {
+      const regions = this.regionPages.get(page);
+      if (regions) for (const region of regions) {
+        if (region.base < end && region.base + region.len > base && !changed?.has(region)) {
+          region.generation = (region.generation + 1) >>> 0 || 1;
+          changed?.add(region);
+        }
+      }
       const ids = this.codePages.get(page);
       if (!ids) continue;
       for (const id of ids) {

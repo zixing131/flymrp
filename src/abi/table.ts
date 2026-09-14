@@ -25,6 +25,8 @@ function range(lo: number, hi: number): number[] {
 
 /** Native arrays must not alias adjacent globals when guests write them. */
 export function dataSlotAllocSize(n: number): number {
+  if (n === 23) return 78 * 4; // _mr_c_internal_table
+  if (n === 24) return 4 * 4; // mr_c_port_table
   if ([PACK_FILENAME_SLOT, 101, 102, 103, 138].includes(n)) return MR_MAX_FILENAME_SIZE;
   if (n === 95) return 31 * 16; // mr_bitmapSt, including screen bitmap
   if (n === 96) return 3 * 20; // mr_tileSt

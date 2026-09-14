@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EXT_CODE_ADDR, EXT_MEM_SIZE, EXT_PLATFORM_MEM_ADDR, EXT_STACK_ADDR, EXT_STOP_ADDR, tableSlotAddr } from "../../src/abi/layout.ts";
+import { EXT_CODE_ADDR, EXT_MEM_SIZE, EXT_PLATFORM_MEM_ADDR, EXT_PLATFORM_MEM_SIZE, EXT_STACK_ADDR, EXT_STOP_ADDR, tableSlotAddr } from "../../src/abi/layout.ts";
 import { ExtRuntime } from "../../src/abi/runtime.ts";
 import { ExtStopKind } from "../../src/abi/fault.ts";
 import { MemoryFault } from "../../src/hot/memory.ts";
@@ -166,8 +166,8 @@ describe("5-C.5 table[14] memset", () => {
   it("unmapped dest is a MemoryFault / Unmapped, not a guessed success", () => {
     const ext = new ExtRuntime();
     const b = wire(ext);
-    expect(() => b.memset(ext.mem, EXT_PLATFORM_MEM_ADDR, 0, 4)).toThrow(MemoryFault);
-    const out = runMemset(ext, EXT_PLATFORM_MEM_ADDR, 0, 8);
+    expect(() => b.memset(ext.mem, EXT_PLATFORM_MEM_ADDR + EXT_PLATFORM_MEM_SIZE, 0, 4)).toThrow(MemoryFault);
+    const out = runMemset(ext, EXT_PLATFORM_MEM_ADDR + EXT_PLATFORM_MEM_SIZE, 0, 8);
     expect(out.kind).toBe(ExtStopKind.Unmapped);
   });
 

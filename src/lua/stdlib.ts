@@ -1,5 +1,5 @@
 import { LuaRuntimeError, NativeAbiError, UnknownAbiError } from "../err/errors.ts";
-import { LuaState } from "./state.ts";
+import { LuaState, parseIntStr } from "./state.ts";
 import { LuaTable } from "./table.ts";
 import {
   NativeFunction,
@@ -50,6 +50,7 @@ function installBase(L: LuaState): void {
   L.register("_iPairs", ipairsFn);
   L.register("_rawEq", rawequalFn);
   L.register("pcall", protectedCall);
+  L.register("_pCall", protectedCall);
 }
 
 function protectedCall(L: LuaState): number {
@@ -95,12 +96,74 @@ function installString(L: LuaState): void {
   put("char", strChar);
   put("rep", strRep);
   put("byte", strByte);
+  put("format", strFormat);
+  put('new', Ls => {
+    const n = Ls.toNumber(Ls.checkArg(1));
+    if (n < 0 || n > 16_777_216) throw new LuaRuntimeError('string.new size overflow');
+    const id = Ls.newMutableString('\0'.repeat(n));
+    Ls.grow(1); Ls.setStr(Ls.top++, id); return 1;
+  });
+  put('set', Ls => {
+    const { s, id } = Ls.checkString(1), position = Ls.toNumber(Ls.checkArg(2));
+    const offset = position < 0 ? s.length + position : position - 1;
+    const value = Ls.toNumber(Ls.checkArg(3)) & 255;
+    if (offset < 0 || offset >= s.length) throw new LuaRuntimeError('set overflow');
+    Ls.replaceString(id, s.slice(0, offset) + String.fromCharCode(value) + s.slice(offset + 1)); return 0;
+  });
+  put('update', Ls => {
+    const { s, id } = Ls.checkString(1), src = Ls.checkString(2).s;
+    const pos = (n: number, len: number) => n < 0 ? len + n : n - 1;
+    const offset = pos(Ls.optNumber(3, 1), s.length), start = pos(Ls.optNumber(4, 1), src.length), end = pos(Ls.optNumber(5, src.length), src.length);
+    if (offset < 0 || offset > s.length || start < 0 || start > src.length || end < start - 1) throw new LuaRuntimeError('update overflow');
+    // Handset readers request a full buffer even for a shorter final line.
+    // slice clamps to the available source bytes instead of reading past it.
+    const piece = src.slice(start, end + 1).slice(0, s.length - offset);
+    Ls.replaceString(id, s.slice(0, offset) + piece + s.slice(offset + piece.length)); return 0;
+  });
   put("find", strFind);
   put("subV", strSubV);
   put("pack", strPack);
   put("unpack", strUnpack);
   put("packLen", strPackLen);
   L.setGlobal("string", TAG_TABLE, id);
+}
+
+/** Lua's integer/string formatting; MRP numbers are signed 32-bit integers. */
+function strFormat(L: LuaState): number {
+  const fmt = L.checkString(1).s;
+  let arg = 2, output = '';
+  for (let i = 0; i < fmt.length;) {
+    if (fmt[i] !== '%') { output += fmt[i++]; continue; }
+    if (fmt[i + 1] === '%') { output += '%'; i += 2; continue; }
+    const match = /^%([-+ #0]*)(\d{0,3})(?:\.(\d{0,3}))?([cdiouxXs])/.exec(fmt.slice(i));
+    if (!match) throw new LuaRuntimeError(`unsupported string.format ${fmt.slice(i, i + 2)}`);
+    const [,flags,widthText,precisionText,spec] = match;
+    const width = Number(widthText || 0), precision = precisionText === undefined ? undefined : Number(precisionText || 0);
+    let text: string, sign = '';
+    if (spec === 's') { text = L.checkLString(arg++).s; if (precision !== undefined) text = text.slice(0, precision); }
+    else {
+      const slot = L.checkArg(arg++);
+      const n = L.tags[slot] === TAG_NUMBER ? L.nums[slot] : L.tags[slot] === TAG_STRING ? parseIntStr(L.strings[L.nums[slot]]) : null;
+      if (n === null) throw new NativeAbiError('string.format number expected');
+      if (spec === 'c') text = String.fromCharCode(n & 255);
+      else {
+        const signed = spec === 'd' || spec === 'i';
+        const value = signed ? Math.abs(n) : n >>> 0;
+        text = value.toString(spec === 'o' ? 8 : spec === 'x' || spec === 'X' ? 16 : 10);
+        if (spec === 'X') text = text.toUpperCase();
+        if (precision === 0 && !value) text = '';
+        if (precision !== undefined) text = text.padStart(precision, '0');
+        if (signed) sign = n < 0 ? '-' : flags.includes('+') ? '+' : flags.includes(' ') ? ' ' : '';
+        else if (flags.includes('#') && value) sign = spec === 'x' ? '0x' : spec === 'X' ? '0X' : spec === 'o' && !text.startsWith('0') ? '0' : '';
+      }
+    }
+    const left = flags.includes('-'), zero = flags.includes('0') && !left && precision === undefined && !'sc'.includes(spec);
+    const padded = zero ? sign + text.padStart(Math.max(0, width - sign.length), '0') : sign + text;
+    output += left ? padded.padEnd(width, ' ') : padded.padStart(width, ' ');
+    if (output.length > 1_048_576) throw new LuaRuntimeError('string.format result too large');
+    i += match[0].length;
+  }
+  L.pushString(output); return 1;
 }
 
 function installTable(L: LuaState): void {
@@ -120,6 +183,8 @@ function installTable(L: LuaState): void {
   put("pairs", tabPairs);
   put("iPairs", ipairsFn);
   put("sort", tabSort);
+  put('foreachi', tabForeachi);
+  put('foreach', tabForeach);
   L.setGlobal("table", TAG_TABLE, id);
 }
 
@@ -311,13 +376,16 @@ function wstrlen(s: string): number {
 }
 
 function strSub(L: LuaState): number {
-  const s = L.checkLString(1).s;
+  const { s, id } = L.checkLString(1);
   const start = posrelat(L.optNumber(2, 1) | 0, s.length);
   const end = posrelat(L.optNumber(3, -1) | 0, s.length);
   let i = start < 1 ? 1 : start;
   let j = end > s.length ? s.length : end;
-  if (i <= j) L.pushString(s.slice(i - 1, j));
-  else L.pushString("");
+  const value = i <= j ? s.slice(i - 1, j) : '';
+  // Reader scripts slice their string.new work buffers, then update the slice.
+  // Keep these buffers separate from shared bytecode/name constants.
+  if (L.isMutableString(id)) { L.grow(1); L.setStr(L.top++, L.newMutableString(value)); }
+  else L.pushString(value);
   return 1;
 }
 
@@ -742,6 +810,36 @@ function strPackLen(L: LuaState): number {
 function tabGetn(L: LuaState): number {
   L.pushInteger(L.checkTable(1).getn(L.keyN));
   return 1;
+}
+
+function tabForeachi(L: LuaState): number {
+  const table = L.checkTable(1), fn = L.slot(L.checkAny(2));
+  if (fn.tag !== TAG_FUNCTION) throw new NativeAbiError('function expected');
+  const count = table.getn(L.keyN);
+  for (let i = 1; i <= count; i++) {
+    const top = L.top;
+    L.pushSlot(fn); L.pushInteger(i); L.pushSlot(table.getNum(i));
+    requireCall().call(L, top, 1);
+    if (L.tags[top] !== TAG_NIL) return 1;
+    L.top = top;
+  }
+  return 0;
+}
+
+function tabForeach(L: LuaState): number {
+  const table = L.checkTable(1), fn = L.slot(L.checkAny(2));
+  if (fn.tag !== TAG_FUNCTION) throw new NativeAbiError('function expected');
+  let key = { tag: TAG_NIL, num: 0 };
+  for (;;) {
+    const pair = table.next(key.tag, key.num);
+    if (!pair) return 0;
+    key = pair.k;
+    const top = L.top;
+    L.pushSlot(fn); L.pushSlot(pair.k); L.pushSlot(pair.v);
+    requireCall().call(L, top, 1);
+    if (L.tags[top] !== TAG_NIL) return 1;
+    L.top = top;
+  }
 }
 
 function tabSetn(L: LuaState): number {

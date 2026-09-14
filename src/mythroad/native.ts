@@ -1,5 +1,8 @@
 import { diskSpace } from "./work-path.ts";
-import { LuaRuntimeError, NativeAbiError, VfsError } from "../err/errors.ts";
+import { installLuaGui } from './lua-gui.ts';
+import { makeBitmapInfo } from './lua-bitmap-info.ts';
+import { LegacyConfig } from './legacy-config.ts';
+import { LuaChunkFormatError, LuaRuntimeError, NativeAbiError, VfsError } from "../err/errors.ts";
 import { LuaState } from "../lua/state.ts";
 import { TAG_NUMBER, TAG_TABLE, TAG_STRING, TAG_NIL, type NativeFunction } from "../lua/types.ts";
 import {
@@ -34,6 +37,7 @@ import type { MythroadRuntime } from "./runtime.ts";
 export function installNatives(rt: MythroadRuntime): void {
   const L = rt.lua.L;
   const reg = (name: string, fn: NativeFunction) => L.register(name, fn);
+  installLuaGui(rt);
 
   const c2u: NativeFunction = Ls => {
     const chars = gbkBytesToUcs2(binToBytes(Ls.checkString(1).s.split('\0')[0]));
@@ -45,11 +49,17 @@ export function installNatives(rt: MythroadRuntime): void {
   reg("_strCom", rt.strCom);
   reg("TestCom1", rt.strCom);
   reg("GetNetworkID", Ls => { Ls.pushInteger(MR_NET_ID_MOBILE); return 1; });
+  const phone = L.newTable();
+  L.setTableFn(phone, 'getNetID', Ls => { Ls.pushInteger(MR_NET_ID_MOBILE); return 1; });
+  L.setGlobal('phone', TAG_TABLE, phone);
   // mythroad.c MRF_platEx returns (binary output, platform status). Old Lua
   // games query the four little-endian font metric bytes before drawing menus.
   reg("_platEx", (Ls) => {
     const code = Ls.optNumber(1, 0) | 0;
     if (code === 1201) { Ls.pushString(new Uint8Array([16, 16, 8, 16])); Ls.pushInteger(MR_SUCCESS); return 2; }
+    // The reference DSM port returns MR_IGNORE for keypad/title probes
+    // and the legacy vendor probe 2200 (no case in its platform switch).
+    if (code === 1210 || code === 1221 || code === 2200) { Ls.pushString(''); Ls.pushInteger(MR_IGNORE); return 2; }
     if (code === 1204) {
       const input = Ls.checkString(2).s;
       const status = rt.workPath.switch(input);
@@ -106,6 +116,15 @@ export function installNatives(rt: MythroadRuntime): void {
     rt.lua.runBytes(bytes);
     return Ls.top - top;
   });
+  reg('loadfile', Ls => {
+    const name = Ls.checkString(1).s, bytes = rt.vfs.readFile(name);
+    if (!bytes) { Ls.pushNil(); Ls.pushString(`cannot read ${name}`); return 2; }
+    try { rt.lua.loadBytes(bytes); return 1; }
+    catch (error) {
+      if (!(error instanceof LuaChunkFormatError)) throw error;
+      Ls.pushNil(); Ls.pushString(error.message); return 2;
+    }
+  });
   reg("_textWidth", (Ls) => {
     const unicode = Ls.optNumber(2, 0) !== 0;
     const slot = Ls.checkArg(1);
@@ -147,6 +166,7 @@ export function installNatives(rt: MythroadRuntime): void {
   const drawText = makeDrawText(rt);
   reg("_drawText", drawText);
   reg("DrawText", drawText);
+  reg("_drawTextEx", makeDrawTextEx(rt));
   const drawRect = makeDrawRect(rt);
   reg("_drawRect", drawRect);
   reg("DrawRect", drawRect);
@@ -169,11 +189,30 @@ export function installNatives(rt: MythroadRuntime): void {
   reg("DrawPoint", point);
 
   reg("BitmapLoad", makeBitmapLoad(rt));
+  reg("_bmpInfo", makeBitmapInfo(rt));
   reg("BitmapShow", makeBitmapShow(rt));
   reg("BitmapNew", makeBitmapNew(rt));
   reg("BitmapDraw", makeBitmapDraw(rt));
+  reg('BmGetScr', Ls => {
+    const i = Ls.optNumber(1, 0) & 0xffff;
+    if (i >= BITMAPMAX) throw new LuaRuntimeError(`BmGetScr:index ${i} invalid!`);
+    rt.bitmaps[i] = { w: rt.screenW, h: rt.screenH, loaded: true, name: '', pixels: rt.screen.pixels.slice() };
+    return 0;
+  });
   reg("SpriteSet", makeSpriteSet(rt));
   reg("SpriteDraw", makeSpriteDraw(rt));
+  reg('SpriteCheck', Ls => {
+    const i = Ls.optNumber(1, 0) & 0xffff, frame = Ls.optNumber(2, 0) & 0xffff;
+    const bitmap = rt.bitmaps[i], h = rt.sprites[i]?.h ?? 0;
+    if (i >= SPRITEMAX || !bitmap?.pixels || h <= 0) throw new LuaRuntimeError('SpriteCheck: invalid sprite');
+    const offset = frame * bitmap.w * h;
+    if (offset + bitmap.w * h > bitmap.pixels.length) throw new LuaRuntimeError('SpriteCheck: frame bounds exceeded');
+    const rgb = Ls.optNumber(5, 0) >>> 0;
+    Ls.pushInteger(rt.screen.bitmapCheck(index => bitmap.pixels![offset + index],
+      Ls.optNumber(3, 0) << 16 >> 16, Ls.optNumber(4, 0) << 16 >> 16,
+      bitmap.w, h, bitmap.pixels[0], makeRgb565((rgb >>> 16) & 255, (rgb >>> 8) & 255, rgb & 255)));
+    return 1;
+  });
   reg("TileSet", makeTileSet(rt));
   reg("TileSetRect", makeTileSetRect(rt));
   reg("TileDraw", makeTileDraw(rt));
@@ -184,13 +223,14 @@ export function installNatives(rt: MythroadRuntime): void {
     if (i >= TILEMAX || !tile) throw new LuaRuntimeError("TileLoad: invalid tile");
     const bytes = rt.vfs.readFile(Ls.checkString(2).s);
     if (!bytes || bytes.length !== tile.w * tile.h * 2) throw new LuaRuntimeError("TileLoad: map size mismatch");
-    tile.cells = pixels565(bytes); return 0;
+    tile.cells = allocatedTileCells(tile.w, tile.h);
+    tile.cells.set(pixels565(bytes)); return 0;
   });
   reg("TileShift", Ls => {
     const tile = rt.tiles[Ls.optNumber(1, 0) & 0xffff], mode = Ls.optNumber(2, 0) & 0xffff;
     if (!tile?.cells) throw new LuaRuntimeError("TileShift: missing map");
     const cells = tile.cells, w = tile.w, h = tile.h;
-    if (mode === 0) cells.copyWithin(0, w);
+    if (mode === 0) cells.copyWithin(0, w, w * h);
     else if (mode === 1) cells.copyWithin(w, 0, w * (h - 1));
     else if (mode === 2 || mode === 3) for (let y = 0; y < h; y++) {
       const start = y * w;
@@ -221,6 +261,11 @@ export function installNatives(rt: MythroadRuntime): void {
   const runFile = makeRunFile(rt);
   reg("RunFile", runFile);
   reg("_runFile", runFile);
+  reg('_loadPack', Ls => { Ls.pushString(rt.selectReadPack(Ls.checkString(1).s)); return 1; });
+  // Alternate names exported by the same reference C functions.
+  for (const [alias, name] of [['_bmpLoad','BitmapLoad'],['_bmpShow','BitmapShow'],['_bmpNew','BitmapNew'],['_bmpDraw','BitmapDraw'],['_bmpGetScr','BmGetScr']]) {
+    const fn = L.getGlobal(name); L.setGlobal(alias, fn.tag, fn.num);
+  }
 
   const exitFn = makeExit(rt);
   reg("Exit", exitFn);
@@ -243,6 +288,7 @@ export function installNatives(rt: MythroadRuntime): void {
 }
 
 function makeCom(rt: MythroadRuntime): NativeFunction {
+  const config = new LegacyConfig(() => rt.appFs.file('dsm.cfg'), bytes => rt.setUserFile('dsm.cfg',bytes));
   return (L) => {
     const a0 = L.optNumber(1, 0) | 0;
     const a1 = L.optNumber(2, 0) | 0;
@@ -293,6 +339,21 @@ function makeCom(rt: MythroadRuntime): NativeFunction {
         rt.screenH = a1;
         break;
       }
+      case 407:
+        rt.timers.runWithoutPause = a1;
+        break;
+      case 500: ret = config.load(); break;
+      case 501: {
+        const bytes = config.get(a1,L.optNumber(3,0)|0);
+        if (bytes) L.pushString(bytes); else L.pushNil();
+        return 1;
+      }
+      case 502: {
+        const length=L.optNumber(3,0)|0, bytes=binToBytes(L.checkString(4).s);
+        ret=length<0||length>bytes.length?MR_FAILED:config.set(a1,bytes.subarray(0,length));break;
+      }
+      case 503: ret=config.bytes[5];break;
+      case 504: ret=config.save();break;
       case 3629:
         if (a1 === 2913) rt.bi |= MR_FLAGS_BI;
         break;
@@ -389,6 +450,42 @@ function makeDrawText(rt: MythroadRuntime): NativeFunction {
   };
 }
 
+/** mythroad.c MRF_DrawTextEx: rectangle dimensions, wrapping and UCS-2 byte offset. */
+function makeDrawTextEx(rt: MythroadRuntime): NativeFunction {
+  return L => {
+    const bytes = binToBytes(L.optString(1, ""));
+    const i16 = (n: number) => (n << 16) >> 16;
+    const x = i16(L.optNumber(2, 0)), y = i16(L.optNumber(3, 0));
+    // The reference renderer uses x/y as origin, rather than rect.x/rect.y.
+    const w = i16(L.optNumber(6, 0)), h = i16(L.optNumber(7, 0));
+    const r = L.optNumber(8, 0) & 255, g = L.optNumber(9, 0) & 255, b = L.optNumber(10, 0) & 255;
+    const flag = L.optNumber(11, 3) | 0;
+    const chars = flag & 1 ? Array.from({ length: bytes.length >> 1 }, (_, i) => bytes[i * 2] << 8 | bytes[i * 2 + 1]) : gbkBytesToUcs2(bytes);
+    let cx = x & 0xffff, cy = y & 0xffff, lineHeight = 0, end = 0, i = 0;
+    for (; i < chars.length && chars[i]; i++) {
+      const ch = chars[i], glyph = gb16Glyph(ch === 10 || ch === 13 ? 32 : ch);
+      if (flag & 2) {
+        if (cx + glyph.width > x + w || ch === 10) {
+          if (cy + lineHeight < y + h) end = i * 2;
+          cx = x & 0xffff; cy = (cy + lineHeight + 2) & 0xffff; lineHeight = 0;
+          if (cy > y + h) break;
+        }
+        lineHeight = Math.max(lineHeight, glyph.height);
+      } else {
+        if (cx > x + w || ch === 10) break;
+        if (cx + glyph.width > x + w) end = i * 2;
+      }
+      if (ch === 10 || ch === 13) continue;
+      rt.screen.drawGlyph(cx, cy, Math.max(0, Math.min(glyph.width, x + w - cx)), Math.max(0, Math.min(glyph.height, y + h - cy)), glyph.bits, r, g, b);
+      cx = (cx + glyph.width) & 0xffff;
+    }
+    if (i === chars.length || !chars[i]) {
+      if (flag & 2 ? cy + lineHeight < y + h : cx <= x + w) end = i * 2;
+    }
+    L.pushInteger(end); return 1;
+  };
+}
+
 function makeDrawRect(rt: MythroadRuntime): NativeFunction {
   return (L) => {
     const x = L.optNumber(1, 0) | 0;
@@ -439,6 +536,10 @@ function makeDispUpEx(rt: MythroadRuntime): NativeFunction {
 
 function makeEff(rt: MythroadRuntime): NativeFunction {
   return (L) => {
+    rt.screen.effSetCon(
+      L.optNumber(1, 0), L.optNumber(2, 0), L.optNumber(3, 0), L.optNumber(4, 0),
+      L.optNumber(5, 0), L.optNumber(6, 0), L.optNumber(7, 0),
+    );
     rt.gfx.effSetCon(
       L.optNumber(1, 0) | 0,
       L.optNumber(2, 0) | 0,
@@ -687,11 +788,12 @@ function installSysLib(rt: MythroadRuntime, sysInfo: NativeFunction, dt: NativeF
   };
   L.setTableFn(id, 'rm', remove); L.setTableFn(id, 'remove', remove);
   for (const [name, operation] of [['mkDir', 'mkdir'], ['rmDir', 'rmdir']] as const) {
-    L.setTableFn(id, name, Ls => {
+    const fn: NativeFunction = Ls => {
       const path = Ls.checkString(1).s;
       if (rt.appFs[operation](path) === MR_SUCCESS) { Ls.pushBoolean(true); return 1; }
       Ls.pushNil(); Ls.pushString(`file err: ${path}: 2`); Ls.pushInteger(2); return 3;
-    });
+    };
+    L.setTableFn(id, name, fn); L.setTableFn(id, operation, fn);
   }
   const searches = new Map<number, string[]>();
   let nextSearch = 1;
@@ -778,10 +880,14 @@ function makeBitmapLoad(rt: MythroadRuntime): NativeFunction {
     const bytes = rt.vfs.readFile(filename);
     if (!bytes) throw new LuaRuntimeError(`BitmapLoad ${i}:cannot read "${filename}"!`);
     const source = pixels565(bytes), stride = maxw || w;
-    if (x < 0 || y < 0 || w < 0 || h < 0 || x + w > stride || (y + h - 1) * stride + x + w > source.length) throw new LuaRuntimeError("BitmapLoad: image bounds exceed resource");
     const pixels = checkedPixels(w, h);
-    for (let row = 0; row < h; row++) pixels.set(source.subarray((y + row) * stride + x, (y + row) * stride + x + w), row * w);
-    rt.bitmaps[i] = { w, h, loaded: true, name: filename, pixels };
+    // MRF_BitmapLoad retains the raw file for whole-image loads, even when
+    // its declared height exceeds the available rows. Keep those bytes only;
+    // bitmap readers already bound accesses with a zero fallback.
+    const wholeImage = x === 0 && y === 0 && w === maxw;
+    if (!wholeImage && (x < 0 || y < 0 || x + w > stride || (y + h - 1) * stride + x + w > source.length)) throw new LuaRuntimeError("BitmapLoad: image bounds exceed resource");
+    if (!wholeImage) for (let row = 0; row < h; row++) pixels.set(source.subarray((y + row) * stride + x, (y + row) * stride + x + w), row * w);
+    rt.bitmaps[i] = { w, h, loaded: true, name: filename, pixels: wholeImage ? source : pixels };
     rt.gfx.image({ op: "image", sub: "load", i, filename, x, y, w, h, maxw });
     return 0;
   };
@@ -886,7 +992,7 @@ function makeTileSet(rt: MythroadRuntime): NativeFunction {
     const h = L.optNumber(5, 0) | 0;
     const tileh = L.optNumber(6, 0) | 0;
     const old = rt.tiles[i];
-    const cells = old?.cells?.length === w * h ? old.cells : checkedPixels(w, h);
+    const cells = old?.cells && old.w * old.h === w * h ? old.cells : allocatedTileCells(w, h);
     rt.tiles[i] = { x, y, w, h, tileh, x1: old?.x1 ?? 0, y1: old?.y1 ?? 0, x2: old?.x2 ?? rt.screenW, y2: old?.y2 ?? rt.screenH, cells };
     rt.gfx.tile({ op: "tile", sub: "set", i, x, y, w, h, tileh });
     return 0;
@@ -944,11 +1050,16 @@ function pixels565(bytes: Uint8Array): Uint16Array {
   for (let i = 0; i < pixels.length; i++) pixels[i] = bytes[i * 2] | bytes[i * 2 + 1] << 8;
   return pixels;
 }
+/** mr_malloc rounds map allocations to 8 bytes (rxgj mem.c realLGmemSize). */
+function allocatedTileCells(w: number, h: number): Uint16Array {
+  const logical = checkedPixels(w, h);
+  return new Uint16Array(Math.ceil(logical.byteLength / 8) * 4);
+}
 function makeTileCell(rt: MythroadRuntime, write: boolean): NativeFunction {
   return L => {
     const i = L.optNumber(1, 0) & 0xffff, x = L.optNumber(2, 0) & 0xffff, y = L.optNumber(3, 0) & 0xffff;
     const tile = rt.tiles[i];
-    if (i >= TILEMAX || !tile?.cells || x >= tile.w || y >= tile.h) throw new LuaRuntimeError('Tile cell out of bounds');
+    if (i >= TILEMAX || !tile?.cells || x > tile.w || y > tile.h || y * tile.w + x >= tile.cells.length) throw new LuaRuntimeError('Tile cell out of bounds');
     if (write) { tile.cells[y * tile.w + x] = L.optNumber(4, 0) & 0xffff; return 0; }
     L.pushInteger((tile.cells[y * tile.w + x] << 16) >> 16); return 1;
   };

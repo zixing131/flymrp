@@ -1,3 +1,4 @@
+import { NativeLifecycle } from "./native-lifecycle.ts";
 import { WorkPath, diskSpace } from './work-path.ts';
 import { NativeUi } from "./native-ui.ts";
 import { NativeEditor, type EditState } from "./native-editor.ts";
@@ -258,6 +259,7 @@ export class MrTableBridge {
       onUnknownAbi?: (info: { family: string; code: string | number; message: string }) => void;
       getTimer?: () => MythroadTimer;
       getMrState?: () => number;
+      setMrState?: (state: number, pack: string, entry: string) => void;
     } = {},
   ) {
     this.appFs = hooks.appFs ?? new AppFileSystem();
@@ -299,7 +301,11 @@ export class MrTableBridge {
       this.ext.mem.write32(this.ext.mem.read32(tableSlotAddr(slot)), value);
     }
     this.ext.registerHandler(0, (_cpu, _mem, args) => this.malloc(args[0]! >>> 0));
-    this.ext.onHostBoundary = () => this.recycleRetiredBlocks();
+    const lifecycle = new NativeLifecycle(this.ext, this.hooks.getTimer?.() ?? this.localTimer,
+      () => this.hooks.getMrState?.() ?? MR_STATE_RUN,
+      (state, pack, entry) => this.hooks.setMrState?.(state, pack, entry));
+    this.ext.onHostBoundary = () => { lifecycle.consume(); this.recycleRetiredBlocks(); };
+    this.ext.onGuestBoundary = () => lifecycle.publish();
     this.ext.registerHandler(1, (_cpu, _mem, args) => {
       const record = this.liveAllocations.get(args[0]);
       if (record) {
@@ -506,6 +512,14 @@ export class MrTableBridge {
     // during startup.  The browser has no handset service, so acknowledge it
     // with the platform's ignore result instead of aborting the game.
     this.ext.registerHandler(128, () => MR_IGNORE);
+    // rxgj mr_connectWAP is a void notification, with no host navigation.
+    this.ext.registerHandler(62, () => MR_SUCCESS);
+    this.ext.registerHandler(129, (cpu, mem, args) => {
+      const sp = cpu.r[13] >>> 0;
+      this.drawingScreen().effSetCon(args[0], args[1], args[2], args[3],
+        mem.read32(sp), mem.read32(sp + 4), mem.read32(sp + 8));
+      return MR_SUCCESS;
+    });
     this.ext.registerHandler(113, (_cpu, mem, args) => guestMd5Init(mem, args[0]));
     this.ext.registerHandler(114, (_cpu, mem, args) => guestMd5Append(mem, args[0], args[1], args[2]));
     this.ext.registerHandler(115, (_cpu, mem, args) => guestMd5Finish(mem, args[0], args[1]));
@@ -664,6 +678,9 @@ export class MrTableBridge {
       const p = this.ext.alloc(32); if (!p) return MR_FAILED; mem.fill(p, 0, 32); mem.write32(output, p); mem.write32(outputLen, 32); return MR_SUCCESS;
     }
     if (code === 1307) return MR_IGNORE;
+    // Observed store probes follow dsm.c's optional-platform default. Do not
+    // invent output pointers or advertise an unavailable native service.
+    if ([1004, 1112, 1401, 1402, 1404, 2600, 4200, 0x70001, 0x70003].includes(code)) return MR_IGNORE;
     if (code === 4033) return MR_SUCCESS;
     if (code === MR_SWITCHPATH) return this.switchPath(mem, input, inputLen, output, outputLen);
     if (code === 3002) {
@@ -1231,6 +1248,7 @@ export class MrTableBridge {
   }
 
   plat(code: number, param: number): number {
+    if (code === 1006 || code === 2500 || code === 2506 || code === 3012) return MR_IGNORE;
     if (code === 101) {
       if (param < 0 || param > 3) return MR_IGNORE;
       const profile = this.hooks.getProfile?.() ?? defaultProfile();

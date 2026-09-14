@@ -15,6 +15,7 @@ import { inferScreenSize } from "../../src/mythroad/device-size.ts";
 import { loadGameResourceFiles, loadLocalSystemFiles } from "../local-system-files.ts";
 import { SYSTEM_COMPONENTS } from "../../src/mythroad/system-components.ts";
 import { MRPArchive } from "../../src/mrp/index.ts";
+import { FrameCapture } from "./frame-capture.ts";
 
 type Result = {
   path: string;
@@ -62,23 +63,27 @@ async function runGame(path: string, gameRoot: string, systemFiles: Record<strin
   const startedAt = Date.now();
   let bytes: Uint8Array | null = null;
   let rt: MythroadRuntime | null = null;
+  let presented: FrameCapture | null = null;
   let phase = "load";
   let error: string | null = null;
   let inputChanges = 0;
   const frames = new Set<string>();
   try {
     bytes = new Uint8Array(readFileSync(path));
-    const profile = inferScreenSize(path);
+    const screen = process.env.MRP_COARSE_SCREEN?.match(/^(\d{2,3})x(\d{2,3})$/);
+    const profile = screen ? { width: Number(screen[1]), height: Number(screen[2]) } : inferScreenSize(path);
     const archive = MRPArchive.parse(bytes);
     // The exhaustive pass is intentionally load-only. Resource directories can
     // contain millions of bytes; detailed regression reloads them for suspects.
     const resourceFiles = process.env.MRP_COARSE_RESOURCES === "1"
-      ? await loadGameResourceFiles(join(gameRoot, "mythroad_res"), archive.header.filename)
+      ? await loadGameResourceFiles(process.env.MRP_RESOURCE_DIR ?? join(gameRoot, "mythroad_res"), archive.header.filename)
       : {};
     // Keep malformed or intentionally looping modules from blocking the
     // exhaustive pass; detailed regression uses the normal production budget.
-    rt = new MythroadRuntime({ profile, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles });
-    const fingerprint = () => hash(new Uint8Array(rt!.screen.pixels.buffer, rt!.screen.pixels.byteOffset, rt!.screen.pixels.byteLength));
+    const display = new FrameCapture(() => rt!.screen, profile.width, profile.height);
+    rt = new MythroadRuntime({ profile, graphics: display, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles });
+    const fingerprint = () => hash(new Uint8Array(display.pixels.buffer, display.pixels.byteOffset, display.pixels.byteLength));
+    presented = display;
     const tick = (count: number) => {
       for (let i = 0; i < count; i++) {
         rt!.advance(80);
@@ -101,6 +106,8 @@ async function runGame(path: string, gameRoot: string, systemFiles: Record<strin
       tick(2);
       if (before !== fingerprint()) inputChanges++;
     }
+    phase = "sustained";
+    tick(Number(process.env.MRP_COARSE_TAIL_TICKS ?? 0));
     phase = "complete";
   } catch (e) {
     error = e instanceof Error ? `${e.name}: ${e.message}` : String(e);
@@ -108,12 +115,12 @@ async function runGame(path: string, gameRoot: string, systemFiles: Record<strin
   return {
     path: relative(gameRoot, path),
     sha256: bytes ? hash(bytes) : undefined,
-    classification: rt?.exited ? "exited" : error ? "runtime-error" : !(rt?.screen.pixels.some(p => p !== 0)) ? "black-screen" : inputChanges ? "input-smoke-passed" : "static-frame",
+    classification: rt?.exited ? "exited" : error ? "runtime-error" : !(presented?.pixels.some(p => p !== 0)) ? "black-screen" : inputChanges ? "input-smoke-passed" : "static-frame",
     phase,
     error,
     unknownSlot: rt?.unknownRequiredSlot ?? null,
     unknownEvents: rt?.unknownEvents ?? [],
-    nonBlack: rt ? rt.screen.pixels.some(p => p !== 0) : false,
+    nonBlack: presented?.pixels.some(p => p !== 0) ?? false,
     distinctFrames: frames.size,
     inputChanges,
     elapsedMs: Date.now() - startedAt,

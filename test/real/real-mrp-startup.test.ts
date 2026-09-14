@@ -296,7 +296,7 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
     expect(fp.headerMatch).toBe(true);
     expect(fp.indexMatch).toBe(true);
     expect(fp.firstSeekNewPos).toBe(240);
-    expect(fp.payloadDest).toBe(0x002503c4);
+    expect(fp.payloadDest).toBe(0x002504fc);
     expect(fp.payloadMatch).toBe(true);
     expect(fp.closeRet).toBe(0);
     expect(r.stage5d).toBe("STARTED");
@@ -333,7 +333,7 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
     expect(reads[0]!.return).toBe(16);
     expect(reads[1]!.return).toBe(5496);
     expect(reads[2]!.return).toBe(17174);
-    expect(reads[2]!.arguments[1]).toBe(0x002503c4);
+    expect(reads[2]!.arguments[1]).toBe(0x002504fc);
     expect(reads.slice(3, 10).map((h) => h.return)).toEqual([11, 24, 4, 4, 4, 20, 20]);
     expect(r.mrTable.hits.filter((h) => h.slot === 45).slice(0, 9).map((h) => h.return)).toEqual([0, 0, 0, 0, 0, 0, 0, 0, 0]);
     expect(r.mrTable.hits.find((h) => h.slot === 41)?.return).toBe(0);
@@ -343,7 +343,7 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
     const first3 = r.execution.memcpy3[0];
     expect(first3).toMatchObject({
       dst: 0x01e7ff34,
-      src: 0x002503c4,
+      src: 0x002504fc,
       count: 4,
       ret: 0x01e7ff34,
     });
@@ -352,10 +352,10 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
 
     const name3 = r.execution.memcpy3[1];
     expect(name3).toMatchObject({
-      dst: 0x00251944,
-      src: 0x002503c8,
+      dst: 0x00251a7c,
+      src: 0x00250500,
       count: 9,
-      ret: 0x00251944,
+      ret: 0x00251a7c,
     });
     expect(String.fromCharCode(...name3!.dstBytes.slice(0, 8))).toBe("start.mr");
     expect(name3!.dstBytes[8]).toBe(0);
@@ -377,15 +377,15 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
     expect(r.execution.directory.names.slice(0, 3)).toEqual(["start.mr", "mrc_loader.ext", "res_lang0.rc"]);
     expect(r.execution.directory.visited).toBeGreaterThanOrEqual(3);
     expect(r.execution.table1).toMatchObject({
-      r0: 0x00251940,
+      r0: 0x00251a78,
       r1: 132,
       headerWord: 128,
-      userPtr: 0x00251944,
+      userPtr: 0x00251a7c,
       ret: 0,
       returnConsumer: "none",
     });
     expect(r.execution.table1?.registryMatch).toMatchObject({
-      guestAddr: 0x00251940,
+      guestAddr: 0x00251a78,
       size: 132,
       alignedSize: 136,
       matchesR0: true,
@@ -394,14 +394,14 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
     });
     expect(r.execution.table1Calls.length).toBeGreaterThanOrEqual(2);
     expect(r.execution.table1Calls[1]).toMatchObject({
-      r0: 0x002503c0,
+      r0: 0x002504f8,
       r1: 5500,
       headerWord: 5496,
-      userPtr: 0x002503c4,
+      userPtr: 0x002504fc,
       ret: 0,
     });
     expect(r.execution.table1Calls[1]?.registryMatch).toMatchObject({
-      guestAddr: 0x002503c0,
+      guestAddr: 0x002504f8,
       size: 5500,
       alignedSize: 5504,
       matchesR0: true,
@@ -412,8 +412,8 @@ describe("5-C.10Q real MRP startup after guest inflate", () => {
       name: "res_lang0.rc",
       filePos: 7065,
       fileLen: 17174,
-      payloadAddr: 0x002503c4,
-      rawAlloc: 0x002503c0,
+      payloadAddr: 0x002504fc,
+      rawAlloc: 0x002504f8,
       payloadMatch: true,
       closed: true,
       closeRet: 0,

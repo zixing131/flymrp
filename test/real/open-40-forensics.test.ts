@@ -33,12 +33,12 @@ describe("5-C.10H table[40] / mr_open forensics", () => {
     expect(r.cpu.r[2]).toBe(OPEN40.stub);
     expect(r.cpu.r[5]).toBe(OPEN40.filename);
     expect(r.cpu.r[6]).toBe(OPEN40.sprintfBuf);
-    expect(r.cpu.r9).toBe(0x0024b5cc);
+    expect(r.cpu.r9).toBe(0x0024b704);
     expect(r.cpu.cpsr).toBe(0x10);
     expect(r.cpu.tBit).toBe(0);
     expect(r.cpu.insnCount).toBe(221);
-    expect(r.p).toBe(0x0034b5c8);
-    expect(r.erRw).toBe(0x0024b5cc);
+    expect(r.p).toBe(0x0034b728);
+    expect(r.erRw).toBe(0x0024b704);
 
     expect(r.r0Text).toBe(r.owner);
     expect(r.r0Text).not.toBe("");

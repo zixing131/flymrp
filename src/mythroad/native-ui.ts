@@ -14,20 +14,21 @@ export class NativeUi {
   private width = 240;
   private height = 320;
   constructor(private readonly mem: GuestMemory, private readonly changed: () => void, private readonly event: (type: number, value: number) => void) {}
-  private read(p: number): string {
+  private read(p: number | string): string {
+    if (typeof p === 'string') return p;
     if (!p) return '';
     let text = '';
     for (let i = 0; i < 4096; i++) { const ch = this.mem.read8(p + i * 2) << 8 | this.mem.read8(p + i * 2 + 1); if (!ch) break; text += String.fromCharCode(ch); }
     return text;
   }
-  create(kind: View['kind'], title: number, text = 0, buttons = 0): number {
+  create(kind: View['kind'], title: number | string, text: number | string = 0, buttons = 0): number {
     if (this.views.size >= 64) return MR_FAILED;
     const view: View = { handle: this.nextHandle++, kind, title: this.read(title), text: this.read(text), items: [], selected: 0, buttons, scroll: 0 };
     this.views.set(view.handle, view);
     if (kind !== 'menu') { this.active = view; this.changed(); }
     return view.handle;
   }
-  setItem(handle: number, text: number, index: number): number {
+  setItem(handle: number, text: number | string, index: number): number {
     const view = this.views.get(handle);
     if (!view || view.kind !== 'menu' || index < 0 || index >= 256) return MR_FAILED;
     view.items[index] = this.read(text); if (this.active === view) this.changed(); return MR_SUCCESS;
@@ -40,11 +41,16 @@ export class NativeUi {
     const view = this.views.get(handle); if (!view) return MR_IGNORE;
     this.views.delete(handle); if (this.active === view) { this.active = null; this.changed(); } return MR_SUCCESS;
   }
-  refresh(handle: number, title: number, text: number, buttons?: number): number {
+  refresh(handle: number, title: number | string, text: number | string, buttons?: number): number {
     const view = this.views.get(handle); if (!view) return MR_FAILED;
     view.title = this.read(title); view.text = this.read(text); view.scroll = 0;
-    if (buttons !== undefined) view.buttons = buttons;
+    if (buttons !== undefined && buttons !== -1) view.buttons = buttons;
     return this.show(handle);
+  }
+  focus(handle: number, index: number): number {
+    const view = this.views.get(handle);
+    if (!view || view.kind !== 'menu' || index < 0 || index >= view.items.length) return MR_FAILED;
+    view.selected = index; if (this.active === view) this.changed(); return MR_SUCCESS;
   }
   key(type: number, key: number, y = 0): boolean {
     if (type === 1 && this.swallowRelease === key) { this.swallowRelease = null; return true; }

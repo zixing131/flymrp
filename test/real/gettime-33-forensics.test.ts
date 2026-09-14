@@ -25,14 +25,14 @@ describe("5-C.10D table[33] / asm_mr_getTime forensics", () => {
     expect(r.cpu.r[1]).toBe(0);
     expect(r.cpu.r[2]).toBe(0);
     expect(r.cpu.r[3]).toBe(0);
-    expect(r.cpu.r[6]).toBe(0x0034b5c8);
-    expect(r.cpu.r[7]).toBe(0x0024b5cc);
-    expect(r.cpu.r9).toBe(0x0024b5cc);
+    expect(r.cpu.r[6]).toBe(0x0034b728);
+    expect(r.cpu.r[7]).toBe(0x0024b704);
+    expect(r.cpu.r9).toBe(0x0024b704);
     expect(r.cpu.cpsr).toBe(0x10);
     expect(r.cpu.tBit).toBe(0);
     expect(r.cpu.insnCount).toBe(145);
-    expect(r.p).toBe(0x0034b5c8);
-    expect(r.erRw).toBe(0x0024b5cc);
+    expect(r.p).toBe(0x0034b728);
+    expect(r.erRw).toBe(0x0024b704);
     expect(r.helper).toBe(0x01ea5e9d);
 
     expect(r.encodings.wrapBlx).toBe(GETTIME33.enc.wrapBlx);

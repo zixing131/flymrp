@@ -78,6 +78,21 @@ export class ScreenBuffer {
     this.pixels = pixels ?? new Uint16Array(width * height);
   }
 
+  /** SDK _mr_EffSetCon: signed int16 rectangle/gains, RGB565 scaled by 256. */
+  effSetCon(x: number, y: number, w: number, h: number, perr: number, perg: number, perb: number): void {
+    x = asI16(x); y = asI16(y); w = asI16(w); h = asI16(h);
+    perr = asI16(perr); perg = asI16(perg); perb = asI16(perb);
+    const maxX = Math.min(this.width, x + w), maxY = Math.min(this.height, y + h);
+    for (let dy = Math.max(0, y); dy < maxY; dy++) {
+      for (let dx = Math.max(0, x); dx < maxX; dx++) {
+        const offset = dy * this.width + dx, old = this.pixels[offset];
+        this.pixels[offset] = (((Math.imul(old & 0xf800, perr) >>> 8) & 0xf800) |
+          ((Math.imul(old & 0x07e0, perg) >>> 8) & 0x07e0) |
+          ((Math.imul(old & 0x001f, perb) >>> 8) & 0x001f));
+      }
+    }
+  }
+
   /**
    * C `_DrawPoint`: clip then write one RGB565 pixel.
    * Out of bounds is a no-op. `native` is already RGB565, not 8-bit RGB.

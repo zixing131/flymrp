@@ -11,7 +11,7 @@ export class NativeEditor {
   constructor(private readonly mem: GuestMemory, private readonly alloc: (size: number) => number,
     private readonly changed: (state: EditState | null) => void = () => {},
     private readonly completed: (accepted: boolean) => void = () => {}) {}
-  create(title: number, text: number, type: number, maxLength: number): number {
+  create(title: number | string, text: number | string, type: number, maxLength: number): number {
     if (this.entries.size >= 16 || ![0,1,2,3].includes(type) || !Number.isInteger(maxLength) || maxLength < 1 || maxLength > 4096) return MR_FAILED;
     const state = { handle: this.nextHandle++, title: this.read(title,256), text: this.read(text,maxLength), type, maxLength, pointer: this.alloc((maxLength+1)*2) };
     if (!state.pointer) return MR_FAILED;
@@ -41,7 +41,8 @@ export class NativeEditor {
     return true;
   }
   private notify(): void { this.changed(this.active ? { ...this.active } : null); }
-  private read(p: number,max: number): string {
+  private read(p: number | string,max: number): string {
+    if(typeof p === 'string') return p.split('\0',1)[0].slice(0,max);
     if(!p)return '';let s='';for(let i=0;i<max;i++){const n=(this.mem.read8(p+i*2)<<8)|this.mem.read8(p+i*2+1);if(!n)break;s+=String.fromCharCode(n);}return s;
   }
   private write(state: EditState & {pointer:number}): void {

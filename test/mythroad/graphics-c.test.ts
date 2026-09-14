@@ -62,7 +62,23 @@ describe("5-C graphics command recording", () => {
     expect(rt.screen.pixels[10 * 240 + 12]).toBe(0);
     callName(rt, 'TileShift', [0, 2]);
     expect(rt.tiles[0]!.cells![0]).toBe(1023);
-    expect(() => callName(rt, 'SetTile', [0, 2, 0, 1])).toThrow('Tile cell out of bounds');
+    expect(() => callName(rt, 'SetTile', [0, 3, 0, 1])).toThrow('Tile cell out of bounds');
+  });
+
+  it('retains the native map allocation padding without shifting it into visible cells', () => {
+    const { rt } = gfx();
+    callName(rt, 'TileSet', [0, 0, 0, 11, 22, 1]);
+    expect(rt.tiles[0]!.cells!.byteLength).toBe(488);
+    callName(rt, 'SetTile', [0, 11, 21, 1234]);
+    expect(rt.tiles[0]!.cells![242]).toBe(1234);
+    const cells = rt.tiles[0]!.cells;
+    callName(rt, 'TileSet', [0, 0, 0, 11, 22, 1]);
+    expect(rt.tiles[0]!.cells).toBe(cells);
+    callName(rt, 'TileShift', [0, 0]);
+    expect(rt.tiles[0]!.cells![231]).toBe(0);
+    expect(rt.tiles[0]!.cells![242]).toBe(1234);
+    expect(() => callName(rt, 'SetTile', [0, 2, 22, 9])).toThrow('Tile cell out of bounds');
+    expect(() => callName(rt, 'SetTile', [0, 12, 0, 9])).toThrow('Tile cell out of bounds');
   });
 
   it('copies a bitmap through the 8.8 affine transform into a drawable destination', () => {

@@ -49,9 +49,9 @@ export const REAL_MRP_BASELINE = {
   slot33: 33,
   slot17: 17,
   slot40: 40,
-  p: 0x0034b5c8,
+  p: 0x0034b728,
   helper: 0x01ea5e9d,
-  erRw: 0x0024b5cc,
+  erRw: 0x0024b704,
   rwLen: 19952,
   stub130: 0x00010208,
   stub38: 0x00010098,
@@ -133,7 +133,7 @@ export const REAL_MRP_BASELINE = {
   sprintfReturn: 12,
   consumer: 0x01ea8cdc,
   packFilenameSlot: PACK_FILENAME_SLOT,
-  packFilenameAddr: 0x002002c8,
+  packFilenameAddr: 0x00200400,
   packFilenameBytes: MR_MAX_FILENAME_SIZE,
 } as const;
 

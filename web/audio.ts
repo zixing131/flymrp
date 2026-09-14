@@ -9,6 +9,7 @@ import {
 } from "../src/mythroad/index.ts";
 import TinySynth from "webaudio-tinysynth";
 import { parseMidi } from "./midi.ts";
+import { decodeImaWav } from "../src/mythroad/ima-wav.ts";
 
 type Voice = { stop: () => void };
 type HtmlAudio = HTMLAudioElement & { mozAudioChannelType?: string };
@@ -163,6 +164,14 @@ export class BrowserAudio {
 
   private async playDecoded(ctx: AudioContext, type: number, data: Uint8Array, loop: boolean, request: symbol, positionMs = 0): Promise<void> {
     try {
+      const ima = type === MR_SOUND_WAV ? decodeImaWav(data) : null;
+      if (ima) {
+        if (!ima.channels[0].length) return;
+        const buffer = ctx.createBuffer(ima.channels.length, ima.channels[0].length, ima.sampleRate);
+        ima.channels.forEach((channel, i) => buffer.getChannelData(i).set(channel));
+        if (this.requests.get(type) === request) this.startBuffer(ctx, type, buffer, loop, positionMs);
+        return;
+      }
       const copy = new ArrayBuffer(data.length);
       new Uint8Array(copy).set(data);
       const buf = await ctx.decodeAudioData(copy);

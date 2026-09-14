@@ -11,6 +11,10 @@ import {
   EXT_HEAP_ADDR,
   EXT_LOW_TABLE_SIZE,
   EXT_MEM_SIZE,
+  EXT_PLATFORM_IO_MEM_ADDR,
+  EXT_PLATFORM_IO_MEM_SIZE,
+  EXT_PLATFORM_MEM_ADDR,
+  EXT_PLATFORM_MEM_SIZE,
   EXT_STACK_ADDR,
   EXT_STOP_ADDR,
   EXT_TABLE_ADDR,
@@ -37,6 +41,9 @@ export const MAX_INSN_BUDGET = 128_000_000;
 export function createExtMemory(): GuestMemory {
   const mem = new GuestMemory(EXT_BASE_ADDR, EXT_MEM_SIZE);
   mem.map(0, EXT_LOW_TABLE_SIZE);
+  // Reference platform ROM/MMIO state band, independent of ordinary guest RAM.
+  mem.map(EXT_PLATFORM_IO_MEM_ADDR, EXT_PLATFORM_IO_MEM_SIZE);
+  mem.map(EXT_PLATFORM_MEM_ADDR, EXT_PLATFORM_MEM_SIZE);
   return mem;
 }
 
@@ -86,11 +93,14 @@ export class ExtRuntime {
   onExtCall: ((code: number, out: ExtCallResult) => void) | null = null;
   /** Commit deferred host bookkeeping before the next ABI call or guest return. */
   onHostBoundary: (() => void) | null = null;
+  /** Synchronize native data globals when host code resumes guest execution. */
+  onGuestBoundary: (() => void) | null = null;
 
   constructor() {
     this.mem = createExtMemory();
     this.cpu = new ARMCPU(this.mem);
     this.cache = new BlockCache();
+    this.cache.cacheUnregisteredCode = true;
     this.cpu.cache = this.cache;
     this.cpu.onBeforeFetch = (cpu) => this.intercept(cpu);
     this.cpu.onSvc = (cpu, immediate) => {
@@ -335,6 +345,7 @@ export class ExtRuntime {
       lr?: number;
     } = {},
   ): ExtCallResult {
+    this.onGuestBoundary?.();
     this.guestCallSerial++;
     const thumb = (regs.thumb ?? (start & 1)) & 1;
     const pc = (start & ~1) >>> 0;
@@ -425,12 +436,14 @@ export class ExtRuntime {
       this.onHostBoundary?.();
       this.bridgeCalls++;
       this.table.dispatch(cpu, this.mem, (EXT_TABLE_ADDR + pc) >>> 0);
+      this.onGuestBoundary?.();
       return true;
     }
     if (pc >= EXT_TABLE_ADDR && pc < EXT_TABLE_ADDR + EXT_TABLE_COUNT * 4) {
       this.onHostBoundary?.();
       this.bridgeCalls++;
       this.table.dispatch(cpu, this.mem, pc);
+      this.onGuestBoundary?.();
       return true;
     }
     this.maybeSwitchOwner(cpu, pc);

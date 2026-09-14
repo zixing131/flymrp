@@ -41,6 +41,9 @@
     "490144": "plugins/wbrwshell.mrp",
     "490140": "plugins/wembrw.mrp",
     "490044": "plugins/xrecom.mrp",
-    "1": "system/___sftmp.mrp"
+    "1": "system/___sftmp.mrp",
+    "499990": "plugins/msbase.mrp",
+    "480020": "plugins/kbill.mrp",
+    "499991": "plugins/mscore.mrp"
   }
 }
