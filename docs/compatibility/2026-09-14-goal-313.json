@@ -2,7 +2,7 @@
   "status": "in-progress",
   "scope": 313,
   "doneCheck": "实际启动、交互、持续运行有效，原通过项无回退；不以冒烟分类变化单独结案",
-  "latestSmokeSnapshot": "artifacts/compat-20260914/round15-full/results.json",
+  "latestSmokeSnapshot": "artifacts/compat-20260914/round16-full/results.json",
   "extraKnownFailures": [
     {
       "caseId": 603,
@@ -249,7 +249,12 @@
       "latestSmoke": "runtime-error",
       "latestError": "LuaRuntimeError: cannot read application *G",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "diagnosis": {
+        "status": "unresolved-missing-builtin-package",
+        "issue": "依赖未提供的原生m0注册槽 *G；不能以当前包或普通系统资源冒充。",
+        "evidence": "docs/compatibility/2026-09-14-store-round3.md"
+      }
     },
     {
       "caseId": 137,
@@ -996,7 +1001,12 @@
       "latestSmoke": "runtime-error",
       "latestError": "LuaRuntimeError: cannot read application *J",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "diagnosis": {
+        "status": "unresolved-missing-builtin-package",
+        "issue": "依赖未提供的原生m0注册槽 *J；不能以当前包或普通系统资源冒充。",
+        "evidence": "docs/compatibility/2026-09-14-store-round3.md"
+      }
     },
     {
       "caseId": 405,
@@ -1703,9 +1713,14 @@
       "label": "激情冲动",
       "baselineSmoke": "runtime-error",
       "latestSmoke": "runtime-error",
-      "latestError": "MrpFormatError: MRP FileLen 124976 exceeds buffer 98304",
+      "latestError": "MrpFormatError: invalid offset or compressed length",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "diagnosis": {
+        "status": "unresolved-truncated-package",
+        "issue": "cfunction.ext offset84891 length40085，超出实际98304字节包；仍拒绝加载。",
+        "evidence": "artifacts/compat-20260914/round16-length/results.json"
+      }
     },
     {
       "caseId": 960,
@@ -1741,7 +1756,12 @@
       "latestSmoke": "runtime-error",
       "latestError": "LuaRuntimeError: cannot read application *J",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "diagnosis": {
+        "status": "unresolved-missing-builtin-package",
+        "issue": "依赖未提供的原生m0注册槽 *J；不能以当前包或普通系统资源冒充。",
+        "evidence": "docs/compatibility/2026-09-14-store-round3.md"
+      }
     },
     {
       "caseId": 988,
@@ -2194,10 +2214,15 @@
       "caseId": 1201,
       "label": "恋爱气球",
       "baselineSmoke": "runtime-error",
-      "latestSmoke": "runtime-error",
-      "latestError": "MrpFormatError: MRP FileLen 365325 exceeds buffer 331255",
+      "latestSmoke": "input-smoke-passed",
+      "latestError": null,
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "diagnosis": {
+        "status": "loader-fixed-feature-unresolved",
+        "issue": "陈旧FileLen导致加载被拒绝；索引及9个资源完整，解析已修复。设为主题仍显示设置失败。",
+        "evidence": "artifacts/compat-20260914/round16-length/results.json"
+      }
     },
     {
       "caseId": 1220,
@@ -3235,7 +3260,12 @@
       "latestSmoke": "runtime-error",
       "latestError": "ExtFault: EXT fault abi-fault at 0x24cdb2 (arm_ext_call: budget exceeded)",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "round16Review": {
+        "status": "unresolved-needs-effective-gameplay-verification",
+        "artifact": "artifacts/compat-20260914/round16-rpg-long/results.json",
+        "note": "生产时钟可启动，推进多段开场对话，尚未确认自由移动或战斗操作。"
+      }
     },
     {
       "caseId": 2064,
@@ -3887,7 +3917,12 @@
       "latestSmoke": "runtime-error",
       "latestError": "ExtFault: EXT fault abi-fault at 0x2a21d8 (arm_ext_call: budget exceeded)",
       "resolved": false,
-      "status": "needs-per-case-verification"
+      "status": "needs-per-case-verification",
+      "round16Review": {
+        "status": "unresolved-needs-effective-gameplay-verification",
+        "artifact": "artifacts/compat-20260914/round16-croc-level/results.json",
+        "note": "生产时钟和触屏能进入章节选择，尚无有效关卡操作证据。"
+      }
     },
     {
       "caseId": 2622,
@@ -3997,5 +4032,5 @@
   },
   "workingDirectory": "/Users/zixing/Documents/zixing/github/flymrp",
   "migrationNote": "2026-09-14 按用户要求迁移到 flymrp；历史 flymrp2 路径为指向此目录的兼容符号链接。原始测试证据保持不变。",
-  "original313LatestSmokePassed": 99
+  "original313LatestSmokePassed": 100
 }
