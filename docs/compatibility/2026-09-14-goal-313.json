@@ -2,7 +2,7 @@
   "status": "in-progress",
   "scope": 313,
   "doneCheck": "实际启动、交互、持续运行有效，原通过项无回退；不以冒烟分类变化单独结案",
-  "latestSmokeSnapshot": "artifacts/compat-20260914/round13-full/results.json",
+  "latestSmokeSnapshot": "artifacts/compat-20260914/round15-full/results.json",
   "extraKnownFailures": [
     {
       "caseId": 603,
