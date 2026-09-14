@@ -1,0 +1,2725 @@
+{
+  "scope": 302,
+  "status": "in-progress",
+  "definition": "每项本轮独立运行和截图复核；发现缺陷修复验证；外部依赖和未知故障明确记录，不能把尝试运行当作兼容通过。",
+  "results": [
+    {
+      "caseId": 3,
+      "title": "sky插件V7安装包",
+      "testId": 1,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 4,
+      "title": "sky字库V3安装包",
+      "testId": 2,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 5,
+      "title": "vmrp安装包",
+      "testId": 3,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 7,
+      "title": "冒泡",
+      "testId": 4,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 10,
+      "title": "听听音阅",
+      "testId": 5,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 11,
+      "title": "应用列表8.0",
+      "testId": 6,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 18,
+      "title": "斗象棋2026",
+      "testId": 7,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 31,
+      "title": "2012超级美眉连连看",
+      "testId": 8,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 76,
+      "title": "a.bmp→a.jpg",
+      "testId": 9,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 81,
+      "title": "AV美女写真",
+      "testId": 10,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 95,
+      "title": "CS1.6特警先锋",
+      "testId": 11,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 98,
+      "title": "CS反恐风云",
+      "testId": 12,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 106,
+      "title": "DNF复仇者之怒",
+      "testId": 13,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 109,
+      "title": "DNF狂战之怒",
+      "testId": 14,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 110,
+      "title": "DNF欲望格斗",
+      "testId": 15,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 115,
+      "title": "Dota之超神屠夫",
+      "testId": 16,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 116,
+      "title": "Dota之超神屠夫",
+      "testId": 17,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 132,
+      "title": "MRP NES软件平台",
+      "testId": 18,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 137,
+      "title": "MSN",
+      "testId": 19,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 138,
+      "title": "MSN",
+      "testId": 20,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 139,
+      "title": "MSN",
+      "testId": 21,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 144,
+      "title": "MTK魔法寿司_320x240",
+      "testId": 22,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 145,
+      "title": "MTK魔法寿司_320x480",
+      "testId": 23,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 159,
+      "title": "NES积分-天蓝",
+      "testId": 24,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 160,
+      "title": "NES模拟器",
+      "testId": 25,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 161,
+      "title": "nes模拟器XL版1.2",
+      "testId": 26,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 162,
+      "title": "QQ",
+      "testId": 27,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 163,
+      "title": "QQ",
+      "testId": 28,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 164,
+      "title": "QQ2010",
+      "testId": 29,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 165,
+      "title": "QQ2010",
+      "testId": 30,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 166,
+      "title": "QQ2010",
+      "testId": 31,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 170,
+      "title": "QQ2010（超级挂Q）",
+      "testId": 32,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 174,
+      "title": "QQ斗地主3.3正式版",
+      "testId": 33,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 178,
+      "title": "QQ空间",
+      "testId": 34,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 179,
+      "title": "QQ空间",
+      "testId": 35,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 183,
+      "title": "QQ手机软件管理",
+      "testId": 36,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 184,
+      "title": "QQ网游大厅",
+      "testId": 37,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 187,
+      "title": "QQ炫舞",
+      "testId": 38,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 188,
+      "title": "Q版飞车",
+      "testId": 39,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 192,
+      "title": "ram_scan",
+      "testId": 40,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 212,
+      "title": "xqc安装包2",
+      "testId": 41,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 215,
+      "title": "ZCOM手机杂志",
+      "testId": 42,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 216,
+      "title": "“粽”想过61",
+      "testId": 43,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 217,
+      "title": "ＣＳ反恐特警",
+      "testId": 44,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 232,
+      "title": "爱上3D爱上图",
+      "testId": 45,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 233,
+      "title": "爱阅看书2.0",
+      "testId": 46,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 239,
+      "title": "暗黑穿越-真实杀戮",
+      "testId": 47,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 240,
+      "title": "暗黑穿越-真实杀戮",
+      "testId": 48,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 253,
+      "title": "傲剑OL",
+      "testId": 49,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 265,
+      "title": "八仙过海",
+      "testId": 50,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 266,
+      "title": "把美女灌醉",
+      "testId": 51,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 267,
+      "title": "把美女灌醉",
+      "testId": 52,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 268,
+      "title": "把美女灌醉",
+      "testId": 53,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 276,
+      "title": "百宝箱",
+      "testId": 54,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 279,
+      "title": "百家乐",
+      "testId": 55,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 295,
+      "title": "宝石迷阵",
+      "testId": 56,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 314,
+      "title": "避孕大作战",
+      "testId": 57,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 315,
+      "title": "便宜！绝对划算",
+      "testId": 58,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 336,
+      "title": "捕鱼达人",
+      "testId": 59,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 337,
+      "title": "捕鱼达人",
+      "testId": 60,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 347,
+      "title": "猜奥运金牌得手机",
+      "testId": 61,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 349,
+      "title": "彩蛋大战",
+      "testId": 62,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 351,
+      "title": "彩虹QQ2014完整收藏版",
+      "testId": 63,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 366,
+      "title": "超级合金装备",
+      "testId": 64,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 396,
+      "title": "超爽绝杀大合辑",
+      "testId": 65,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 405,
+      "title": "成语大师",
+      "testId": 66,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 432,
+      "title": "穿越火线之飞虎队",
+      "testId": 67,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 451,
+      "title": "吹裙子",
+      "testId": 68,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 461,
+      "title": "存款计算器",
+      "testId": 69,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 465,
+      "title": "打小鸟",
+      "testId": 70,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 491,
+      "title": "大漠狂刀",
+      "testId": 71,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 498,
+      "title": "大师在线设计签名",
+      "testId": 72,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 500,
+      "title": "大雄约会放屁",
+      "testId": 73,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 506,
+      "title": "弹力球",
+      "testId": 74,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 523,
+      "title": "盗墓鬼吹灯笔记",
+      "testId": 75,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 543,
+      "title": "第十亿个幸运者",
+      "testId": 76,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 545,
+      "title": "第一次亲密接触",
+      "testId": 77,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 551,
+      "title": "调色板XL",
+      "testId": 78,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 553,
+      "title": "谍影重重Ⅱ",
+      "testId": 79,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 575,
+      "title": "毒蛇行动2-丛林之谜",
+      "testId": 80,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 577,
+      "title": "独孤九剑",
+      "testId": 81,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 583,
+      "title": "赌王之王-黄金城",
+      "testId": 82,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 589,
+      "title": "多款游戏限时免费",
+      "testId": 83,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 596,
+      "title": "夺命番茄",
+      "testId": 84,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 633,
+      "title": "放假啦疯狂游戏吧",
+      "testId": 85,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 640,
+      "title": "飞天忍者喵",
+      "testId": 86,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 643,
+      "title": "飞信",
+      "testId": 87,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 645,
+      "title": "飞信",
+      "testId": 88,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 659,
+      "title": "风流三国",
+      "testId": 89,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 665,
+      "title": "风云三国",
+      "testId": 90,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 673,
+      "title": "疯狂吧！光棍",
+      "testId": 91,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 674,
+      "title": "疯狂捕鱼",
+      "testId": 92,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 687,
+      "title": "疯狂的小鸟太空版",
+      "testId": 93,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 723,
+      "title": "父亲节抢楼送手机",
+      "testId": 94,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 726,
+      "title": "干爹的爱",
+      "testId": 95,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 727,
+      "title": "干爹的爱",
+      "testId": 96,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 734,
+      "title": "港式五张",
+      "testId": 97,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 752,
+      "title": "给力猫",
+      "testId": 98,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 753,
+      "title": "给力猫",
+      "testId": 99,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 755,
+      "title": "给力枪手连环杀",
+      "testId": 100,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 758,
+      "title": "更多精品游戏",
+      "testId": 101,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 768,
+      "title": "公交查询",
+      "testId": 102,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 782,
+      "title": "股票交易版",
+      "testId": 103,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 783,
+      "title": "怪蛋风暴_大屏版",
+      "testId": 104,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 801,
+      "title": "鬼手伏魔录",
+      "testId": 105,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 809,
+      "title": "国庆去哪儿",
+      "testId": 106,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 839,
+      "title": "核弹风暴",
+      "testId": 107,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 841,
+      "title": "和美女20次亲密接触",
+      "testId": 108,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 844,
+      "title": "合金弹头2013",
+      "testId": 109,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 845,
+      "title": "合金弹头2013",
+      "testId": 110,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 855,
+      "title": "黑暗传说之利器",
+      "testId": 111,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 880,
+      "title": "欢乐马戏团",
+      "testId": 112,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 882,
+      "title": "欢乐五一幸运抽奖",
+      "testId": 113,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 894,
+      "title": "幻想三国",
+      "testId": 114,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 895,
+      "title": "幻想三国online",
+      "testId": 115,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 901,
+      "title": "黄金矿工",
+      "testId": 116,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 908,
+      "title": "毁灭巫师",
+      "testId": 117,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 910,
+      "title": "会飞的汤姆猫",
+      "testId": 118,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 918,
+      "title": "活动介绍",
+      "testId": 119,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 922,
+      "title": "火车订票",
+      "testId": 120,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 923,
+      "title": "火车订票",
+      "testId": 121,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 947,
+      "title": "激情冲动",
+      "testId": 122,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 960,
+      "title": "极品家丁-9527",
+      "testId": 123,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 967,
+      "title": "寄生兽",
+      "testId": 124,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 968,
+      "title": "寄生兽",
+      "testId": 125,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 975,
+      "title": "假日休闲乐逍遥",
+      "testId": 126,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 988,
+      "title": "剑侣情缘3美人如玉",
+      "testId": 127,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1004,
+      "title": "僵尸大暴走",
+      "testId": 128,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1018,
+      "title": "江南style骑马舞",
+      "testId": 129,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1021,
+      "title": "降龙十八掌",
+      "testId": 130,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1040,
+      "title": "节日祝福语",
+      "testId": 131,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1062,
+      "title": "精品切水果",
+      "testId": 132,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1075,
+      "title": "经典泡泡龙",
+      "testId": 133,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1078,
+      "title": "警花射击训练",
+      "testId": 134,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1081,
+      "title": "狙击精英",
+      "testId": 135,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1083,
+      "title": "狙击小日本",
+      "testId": 136,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1091,
+      "title": "绝命杀手斩龙刃",
+      "testId": 137,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1143,
+      "title": "快点网址导航",
+      "testId": 138,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1160,
+      "title": "来电助手",
+      "testId": 139,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1190,
+      "title": "冷笑话大全",
+      "testId": 140,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1201,
+      "title": "恋爱气球",
+      "testId": 141,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1220,
+      "title": "零距离触摸美女",
+      "testId": 142,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1225,
+      "title": "灵剑封魔录",
+      "testId": 143,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1285,
+      "title": "猫捉老鼠",
+      "testId": 144,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1286,
+      "title": "冒泡",
+      "testId": 145,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1287,
+      "title": "冒泡VIP游戏套餐",
+      "testId": 146,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1292,
+      "title": "冒泡看图",
+      "testId": 147,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1296,
+      "title": "冒泡平台",
+      "testId": 148,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1297,
+      "title": "冒泡棋牌",
+      "testId": 149,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1298,
+      "title": "冒泡棋牌",
+      "testId": 150,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1300,
+      "title": "冒泡软件魔盒",
+      "testId": 151,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1301,
+      "title": "冒泡社区",
+      "testId": 152,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1302,
+      "title": "冒泡社区安装",
+      "testId": 153,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1303,
+      "title": "冒泡视频交友",
+      "testId": 154,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1309,
+      "title": "冒泡听吧",
+      "testId": 155,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1310,
+      "title": "冒泡网",
+      "testId": 156,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1311,
+      "title": "冒泡网游",
+      "testId": 157,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1312,
+      "title": "冒泡音乐",
+      "testId": 158,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1315,
+      "title": "冒泡游戏商城",
+      "testId": 159,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1324,
+      "title": "冒泡浏览器安装",
+      "testId": 160,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1325,
+      "title": "冒泡浏览器安装",
+      "testId": 161,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1328,
+      "title": "冒险岛",
+      "testId": 162,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1339,
+      "title": "美女3D飞车",
+      "testId": 163,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1350,
+      "title": "美女翻翻看",
+      "testId": 164,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1386,
+      "title": "梦幻封神",
+      "testId": 165,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1406,
+      "title": "免费抽奖|欢乐共享",
+      "testId": 166,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1408,
+      "title": "秒杀iPhone的游戏",
+      "testId": 167,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1410,
+      "title": "明星美女麻将馆",
+      "testId": 168,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1414,
+      "title": "名将三国OL",
+      "testId": 169,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1491,
+      "title": "内衣大盗",
+      "testId": 170,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1504,
+      "title": "年年有“愚”",
+      "testId": 171,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1511,
+      "title": "农民斗地主",
+      "testId": 172,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1515,
+      "title": "怒火铁拳",
+      "testId": 173,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1516,
+      "title": "怒火铁拳",
+      "testId": 174,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1517,
+      "title": "怒火铁拳",
+      "testId": 175,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1526,
+      "title": "欧洲杯有奖竞猜",
+      "testId": 176,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1560,
+      "title": "七夕“遇见爱”",
+      "testId": 177,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1561,
+      "title": "七夕冒泡送情意",
+      "testId": 178,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1565,
+      "title": "奇迹捕鱼",
+      "testId": 179,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1585,
+      "title": "抢！注册道具费全免",
+      "testId": 180,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1589,
+      "title": "抢登钓鱼岛",
+      "testId": 181,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1590,
+      "title": "抢登钓鱼岛",
+      "testId": 182,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1591,
+      "title": "抢滩登陆2012",
+      "testId": 183,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1604,
+      "title": "青春纪念册",
+      "testId": 184,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1616,
+      "title": "情趣高手",
+      "testId": 185,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1628,
+      "title": "趣拼高帅富",
+      "testId": 186,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1629,
+      "title": "趣拼图",
+      "testId": 187,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1630,
+      "title": "趣拼学生妹",
+      "testId": 188,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1631,
+      "title": "趣拼学生妹",
+      "testId": 189,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1681,
+      "title": "人人网",
+      "testId": 190,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1696,
+      "title": "忍者水果",
+      "testId": 191,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1697,
+      "title": "忍者水果",
+      "testId": 192,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1698,
+      "title": "忍者水果",
+      "testId": 193,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1699,
+      "title": "忍者水果",
+      "testId": 194,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1700,
+      "title": "忍者水果",
+      "testId": 195,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1703,
+      "title": "扔纸团",
+      "testId": 196,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1707,
+      "title": "如来神掌",
+      "testId": 197,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1714,
+      "title": "三国保钓战",
+      "testId": 198,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1715,
+      "title": "三国大富翁",
+      "testId": 199,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1716,
+      "title": "三国大富翁",
+      "testId": 200,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1730,
+      "title": "三国猛将传",
+      "testId": 201,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1736,
+      "title": "三国纳妾记",
+      "testId": 202,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1781,
+      "title": "蛇来运转大抽奖",
+      "testId": 203,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1799,
+      "title": "神马过年不寂寞",
+      "testId": 204,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1801,
+      "title": "神魔大陆",
+      "testId": 205,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1868,
+      "title": "侍魂之修罗斩",
+      "testId": 206,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1880,
+      "title": "手机QQ",
+      "testId": 207,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1883,
+      "title": "手机UC原版",
+      "testId": 208,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1889,
+      "title": "手机信号强度仪V3",
+      "testId": 209,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1891,
+      "title": "手机阅读",
+      "testId": 210,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1895,
+      "title": "手写库01",
+      "testId": 211,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1896,
+      "title": "手写库02",
+      "testId": 212,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1897,
+      "title": "手写库03",
+      "testId": 213,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1898,
+      "title": "手写库04",
+      "testId": 214,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1901,
+      "title": "手信语音聊天",
+      "testId": 215,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1903,
+      "title": "暑期iPhone大礼包",
+      "testId": 216,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1904,
+      "title": "蜀山剑侠",
+      "testId": 217,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1908,
+      "title": "数学达人",
+      "testId": 218,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1915,
+      "title": "水果老虎机",
+      "testId": 219,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1916,
+      "title": "水果梦工厂",
+      "testId": 220,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1924,
+      "title": "水晶之恋",
+      "testId": 221,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1928,
+      "title": "水浒对对碰",
+      "testId": 222,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1929,
+      "title": "水浒反殴传",
+      "testId": 223,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1975,
+      "title": "贪吃小鳄鱼",
+      "testId": 224,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1976,
+      "title": "贪吃小鳄鱼",
+      "testId": 225,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 1998,
+      "title": "天龙八部",
+      "testId": 226,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2013,
+      "title": "天天打怪兽",
+      "testId": 227,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2014,
+      "title": "天天打折货到付款",
+      "testId": 228,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2024,
+      "title": "铁血抗日",
+      "testId": 229,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2025,
+      "title": "铁血抗日",
+      "testId": 230,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2028,
+      "title": "听听音阅贺岁版",
+      "testId": 231,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2029,
+      "title": "听听音阅贺岁版",
+      "testId": 232,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2034,
+      "title": "童年经典游戏合辑",
+      "testId": 233,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2036,
+      "title": "偷看美女",
+      "testId": 234,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2042,
+      "title": "途客行天下",
+      "testId": 235,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2057,
+      "title": "吞食天地2",
+      "testId": 236,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2064,
+      "title": "玩手信赢乐phone",
+      "testId": 237,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2071,
+      "title": "万水千山粽是情",
+      "testId": 238,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2082,
+      "title": "网络时钟",
+      "testId": 239,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2098,
+      "title": "未来之英雄传奇",
+      "testId": 240,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2101,
+      "title": "我爱拼图安装包2",
+      "testId": 241,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2130,
+      "title": "五一带你玩转不停",
+      "testId": 242,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2145,
+      "title": "西游记OL",
+      "testId": 243,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2146,
+      "title": "西游记OL",
+      "testId": 244,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2165,
+      "title": "夏日Party",
+      "testId": 245,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2167,
+      "title": "夏日缤纷礼包",
+      "testId": 246,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2177,
+      "title": "仙剑问情",
+      "testId": 247,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2184,
+      "title": "仙魔逆唯我独尊",
+      "testId": 248,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2185,
+      "title": "仙魔逆唯我独尊",
+      "testId": 249,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2192,
+      "title": "限时抢购买一送一",
+      "testId": 250,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2225,
+      "title": "笑傲江湖",
+      "testId": 251,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2265,
+      "title": "新羊过河",
+      "testId": 252,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2271,
+      "title": "星河舰队",
+      "testId": 253,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2285,
+      "title": "幸运砸蛋",
+      "testId": 254,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2287,
+      "title": "性感美女找茬",
+      "testId": 255,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2294,
+      "title": "熊猫大乱斗",
+      "testId": 256,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2333,
+      "title": "炎龙骑士",
+      "testId": 257,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2342,
+      "title": "要钱不要命",
+      "testId": 258,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2345,
+      "title": "野人岛3",
+      "testId": 259,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2349,
+      "title": "夜袭鬼子营",
+      "testId": 260,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2354,
+      "title": "一毛钱手机抽回家",
+      "testId": 261,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2355,
+      "title": "一枪杀几人",
+      "testId": 262,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2359,
+      "title": "移动股票王",
+      "testId": 263,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2360,
+      "title": "移动视线",
+      "testId": 264,
+      "status": "queued",
+      "previousSmoke": "black-screen",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2364,
+      "title": "倚天屠龙绝情剑",
+      "testId": 265,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2380,
+      "title": "英汉字典",
+      "testId": 266,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2382,
+      "title": "英雄救美之狙击之神",
+      "testId": 267,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2391,
+      "title": "应用软件>>",
+      "testId": 268,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2399,
+      "title": "永远的冒险岛",
+      "testId": 269,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2405,
+      "title": "优化大师",
+      "testId": 270,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2407,
+      "title": "游戏布袋",
+      "testId": 271,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2408,
+      "title": "游戏猎手",
+      "testId": 272,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2409,
+      "title": "游戏中心",
+      "testId": 273,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2411,
+      "title": "愚人节泡妞利器",
+      "testId": 274,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2438,
+      "title": "缘分测试",
+      "testId": 275,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2442,
+      "title": "越狱吧吊丝",
+      "testId": 276,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": true
+    },
+    {
+      "caseId": 2451,
+      "title": "宅人七天乐",
+      "testId": 277,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2462,
+      "title": "战国英雄传",
+      "testId": 278,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2465,
+      "title": "战神",
+      "testId": 279,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2468,
+      "title": "战神金刚",
+      "testId": 280,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2476,
+      "title": "战神之魂",
+      "testId": 281,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2481,
+      "title": "掌上e_mrp",
+      "testId": 282,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2485,
+      "title": "掌星汉字字典",
+      "testId": 283,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2486,
+      "title": "找回元素",
+      "testId": 284,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2508,
+      "title": "争霸三国",
+      "testId": 285,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2514,
+      "title": "正义英雄联盟-蝙蝠侠",
+      "testId": 286,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2522,
+      "title": "植物大战僵尸官方版",
+      "testId": 287,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2543,
+      "title": "中秋:天涯共此时",
+      "testId": 288,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2565,
+      "title": "抓拍宝贝",
+      "testId": 289,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2568,
+      "title": "追忆童真那些年",
+      "testId": 290,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2571,
+      "title": "字体模块",
+      "testId": 291,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2577,
+      "title": "醉美人",
+      "testId": 292,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2601,
+      "title": "喋血双雄",
+      "testId": 293,
+      "status": "queued",
+      "previousSmoke": "exited",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2606,
+      "title": "逍遥剑侠传",
+      "testId": 294,
+      "status": "queued",
+      "previousSmoke": "static-frame",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2608,
+      "title": "缤纷双蛋激情约惠",
+      "testId": 295,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2619,
+      "title": "鳄鱼爱洗澡",
+      "testId": 296,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2620,
+      "title": "鳄鱼洗澡",
+      "testId": 297,
+      "status": "queued",
+      "previousSmoke": "runtime-error",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2622,
+      "title": "魅惑浮生录",
+      "testId": 298,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2635,
+      "title": "[免费]冒泡棋牌",
+      "testId": 299,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2638,
+      "title": "[免费]冒泡社区安装",
+      "testId": 300,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2639,
+      "title": "[免费]冒泡网游",
+      "testId": 301,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    },
+    {
+      "caseId": 2640,
+      "title": "[网游]无双三国",
+      "testId": 302,
+      "status": "queued",
+      "previousSmoke": "input-smoke-passed",
+      "resolved": false,
+      "deferGraphicsFix": false
+    }
+  ]
+}

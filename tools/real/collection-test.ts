@@ -113,6 +113,8 @@ if(worker) {
   console.log(JSON.stringify({...game,...profile,outcome,phase,error,ticks,keysTested,inputChanges,controlChanges,presentedFrames:display.frames,interactionVerified,distinctFrames:distinct.size,nonBlack,sceneVerified,
     checkpoints,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??""}));
 } else {
+  const concurrency = Number(process.env.MRP_TEST_CONCURRENCY ?? 3);
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16) throw new Error("MRP_TEST_CONCURRENCY must be an integer from 1 to 16");
   const onlyArg=args.find(a=>a.startsWith("--only="));
   const only=onlyArg?new Set(onlyArg.slice(7).split(",").map(Number)):null;
   const games=only?allGames.filter(g=>only.has(g.id)):allGames;
@@ -121,7 +123,7 @@ if(worker) {
   const diff=execFileSync("git",["diff"],{encoding:"utf8"});
   const meta={revision,workingDiffSha256:hash(diff),manifestSha256:hash(readFileSync(manifestPath)),scenarioSha256:existsSync(scenarioPath)?hash(readFileSync(scenarioPath)):null,
     systemFilesSha256:systemFileHashes({ ...Object.fromEntries(SYSTEM_COMPONENTS.map(name=>[name,readFileSync(`assets/${name}`)])), ...await loadLocalSystemFiles(process.env.MRP_TEST_PRODUCTION ? undefined : localSystemDirectory) }),
-    startedAt:new Date().toISOString(),requiredCount:allGames.length,selectedCount:games.length,method:"frozen-content-presented-lcd-controls-60s-scene-review-v2"};
+    startedAt:new Date().toISOString(),requiredCount:allGames.length,selectedCount:games.length,concurrency,method:"frozen-content-presented-lcd-controls-60s-scene-review-v2"};
   const results: any[]=[];
   const save=()=>writeFileSync(join(output,"results.json"),JSON.stringify({...meta,complete:results.length===games.length,
     allPassed:results.length===allGames.length&&results.every(r=>r.outcome==="passed"),results:[...results].sort((a,b)=>a.id-b.id)},null,2)+"\n");
@@ -142,6 +144,6 @@ if(worker) {
       results.push(row);save();console.log(`[${results.length}/${games.length}] #${game.id} ${basename(game.path)}: ${row.outcome}${row.error?` ${row.error}`:""}`);resolveDone();
     });
   });
-  await Promise.all(Array.from({length:3},async()=>{while(next<games.length){const game=games[next++];await runOne(game);}}));
+  await Promise.all(Array.from({length:concurrency},async()=>{while(next<games.length){const game=games[next++];await runOne(game);}}));
   process.exitCode=results.length===allGames.length&&results.every(r=>r.outcome==="passed")?0:1;
 }
