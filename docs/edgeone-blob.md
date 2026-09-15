@@ -27,10 +27,11 @@ API token 仅通过环境变量或仓库外私有文件读取。首次上传完�
 EDGEONE_TOKEN_FILE=/path/to/private-token npm run upload:edgeone -- --resources
 ```
 
-构建后更新所有运行资源，再生成分片、ZIP 和验证：
+完整构建仍写入 `dist/`，用于上传运行时资源；EdgeOne 壳构建单独写入 `dist-edgeone/`，用于部署。两者都完成后，再更新运行时资源、生成分片和 ZIP：
 
 ```sh
-MRP_GAME_DIR=./mrpfile MRP_RESOURCE_DIR=/path/to/mythroad_res npm run build:edgeone
+MRP_GAME_DIR=./mrpfile MRP_RESOURCE_DIR=/path/to/mythroad_res npm run build
+npm run build:edgeone
 EDGEONE_TOKEN_FILE=/path/to/private-token npm run upload:edgeone:runtime
 EDGEONE_TOKEN_FILE=/path/to/private-token npm run chunk:edgeone
 npm run prepare:edgeone

@@ -8,6 +8,8 @@ import { build } from 'esbuild';
 import { execFileSync } from 'node:child_process';
 const lock = await open('artifacts/edgeone/prepare.lock', 'wx');
 try {
+const runtimeOutput = resolve(process.env.MRP_RUNTIME_DIST_DIR || 'dist');
+const shellOutput = resolve(process.env.MRP_SHELL_DIST_DIR || 'dist-edgeone');
 const destination = resolve('artifacts/edgeone/deploy');
 const summary = JSON.parse(await readFile('artifacts/edgeone/summary.json','utf8'));
 if(summary.failures.length || summary.missing.length || summary.verified !== 3926) throw new Error('Finish and verify all MRP/icon uploads first');
@@ -26,7 +28,7 @@ const names = await runtimeAssets();
 const ruleMap = new Map();
 for (const name of names) {
  const key = `runtime/${name}`, record = records.get(key);
- const bytes = await readFile(`dist/${name}`);
+ const bytes = await readFile(`${runtimeOutput}/${name}`);
  if (!record || record.projectId !== summary.projectId || createHash('sha256').update(bytes).digest('hex') !== record.sha256) throw new Error(`Upload runtime asset first: ${name}`);
  const prefix = name.includes('/') ? name.split('/')[0] : name;
  ruleMap.set(prefix, name.includes('/')
@@ -37,8 +39,8 @@ const rewrites = [...ruleMap.values()];
 if(rewrites.length>100) throw new Error('EdgeOne supports at most 100 rewrites');
 // Copy only the app shell; never copy handset data just to delete it afterward.
 const output = await mkdtemp(`${destination}-staging-`);
-await cp('dist',output,{recursive:true,filter:source=>{
- const name=relative('dist',source).replaceAll('\\','/');
+await cp(shellOutput,output,{recursive:true,filter:source=>{
+ const name=relative(shellOutput,source).replaceAll('\\','/');
  if (!name) return true;
  if (name.split('/').some(p=>p.startsWith('.')) || name==='README.md') return false;
  if (['assets','icons','licenses'].includes(name.split('/')[0])) return true;
