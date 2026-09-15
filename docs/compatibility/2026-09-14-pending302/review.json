@@ -2825,11 +2825,11 @@
       "caseId": 1040,
       "title": "节日祝福语",
       "testId": 131,
-      "status": "reviewed",
+      "status": "function-verified",
       "previousSmoke": "exited",
-      "resolved": false,
+      "resolved": true,
       "deferGraphicsFix": false,
-      "disposition": "needs-tool-workflow",
+      "disposition": "verified",
       "note": "新年祝福内容、上一条下一条，需要翻页核验。",
       "evidence": "artifacts/compat-20260914/pending302-first/131-sustained.png",
       "firstRun": {
@@ -2850,8 +2850,25 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/131-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/131-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "passed",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/131-sustained.png"
         }
-      ]
+      ],
+      "verification": {
+        "artifact": "artifacts/compat-20260915/followup2/results.json",
+        "outcome": "passed",
+        "ticks": 1034,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1062,
@@ -3830,6 +3847,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/179-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/179-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/179-sustained.png"
         }
       ]
     },
@@ -4385,6 +4412,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/202-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/202-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/202-sustained.png"
         }
       ]
     },
@@ -4477,6 +4514,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/206-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/206-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/206-sustained.png"
         }
       ]
     },
@@ -5049,6 +5096,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/234-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/234-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/234-sustained.png"
         }
       ]
     },
@@ -5181,6 +5238,11 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted2/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted2/240-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/240-sustained.png"
         }
       ]
     },
@@ -5560,6 +5622,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/258-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "no-input-response",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/258-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/258-sustained.png"
         }
       ]
     },
@@ -5607,6 +5679,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/260-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/260-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/260-sustained.png"
         }
       ]
     },
@@ -6042,6 +6124,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/281-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/281-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/281-sustained.png"
         }
       ]
     },
@@ -6089,11 +6181,11 @@
       "caseId": 2486,
       "title": "找回元素",
       "testId": 284,
-      "status": "reviewed",
+      "status": "function-verified",
       "previousSmoke": "static-frame",
-      "resolved": false,
+      "resolved": true,
       "deferGraphicsFix": false,
-      "disposition": "verify-gameplay",
+      "disposition": "verified",
       "note": "教学提示手指滑动元素到小人身上过关；需定向拖动。",
       "evidence": "artifacts/compat-20260914/pending302-first/284-sustained.png",
       "firstRun": {
@@ -6109,8 +6201,25 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/284-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/284-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "passed",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/284-sustained.png"
         }
-      ]
+      ],
+      "verification": {
+        "artifact": "artifacts/compat-20260915/followup2/results.json",
+        "outcome": "passed",
+        "ticks": 1071,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 2508,
@@ -6276,6 +6385,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "no-input-response",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/292-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/292-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/292-sustained.png"
         }
       ]
     },
@@ -6363,6 +6482,16 @@
           "artifact": "artifacts/compat-20260914/pending302-targeted1/results.json",
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260914/pending302-targeted1/296-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup1/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup1/296-sustained.png"
+        },
+        {
+          "artifact": "artifacts/compat-20260915/followup2/results.json",
+          "outcome": "needs-scene-review",
+          "lastScreenshot": "artifacts/compat-20260915/followup2/296-sustained.png"
         }
       ]
     },
@@ -6489,8 +6618,8 @@
   ],
   "firstRunComplete": true,
   "firstRunConcurrency": 1,
-  "verifiedCount": 8,
-  "remainingFunctionalVerification": 294,
+  "verifiedCount": 10,
+  "remainingFunctionalVerification": 292,
   "budgetRegression": {
     "artifact": "artifacts/compat-20260914/pending302-budget-regression/results.json",
     "count": 16,

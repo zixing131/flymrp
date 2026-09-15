@@ -2263,8 +2263,15 @@
       "baselineSmoke": "exited",
       "latestSmoke": "exited",
       "latestError": "LuaRuntimeError: Exiting...",
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260915/followup2/results.json",
+        "outcome": "passed",
+        "ticks": 1034,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 1062,
@@ -3971,8 +3978,15 @@
       "baselineSmoke": "static-frame",
       "latestSmoke": "static-frame",
       "latestError": null,
-      "resolved": false,
-      "status": "needs-per-case-verification"
+      "resolved": true,
+      "status": "function-verified",
+      "evidence": {
+        "artifact": "artifacts/compat-20260915/followup2/results.json",
+        "outcome": "passed",
+        "ticks": 1071,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 2508,
