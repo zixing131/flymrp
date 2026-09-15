@@ -68,7 +68,7 @@ describe("collection string and platform ABI",()=>{
     const {ext,bridge,str}=setup();const out=ext.alloc(4),len=ext.alloc(4);
     expect(bridge.platEx(ext.mem,new Uint32Array([1305,str("b:"),2,out,len]))).toBe(0);
     expect(ext.mem.read32(len)).toBe(16);const p=ext.mem.read32(out);
-    expect([0,4,8,12].map(o=>ext.mem.read32(p+o))).toEqual([95,1024,77,1024]);
+    expect([0,4,8,12].map(o=>ext.mem.read32(p+o))).toEqual([1874,1048576,1873,1048576]);
     expect(bridge.platEx(ext.mem,new Uint32Array([1305,str("z:"),2,out,len]))).toBe(1);
     expect(ext.mem.read32(out)).toBe(p);
   });

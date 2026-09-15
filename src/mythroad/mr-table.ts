@@ -680,7 +680,7 @@ export class MrTableBridge {
     if (code === 1307) return MR_IGNORE;
     // Observed store probes follow dsm.c's optional-platform default. Do not
     // invent output pointers or advertise an unavailable native service.
-    if ([1004, 1112, 1401, 1402, 1404, 2600, 4200, 0x70001, 0x70003].includes(code)) return MR_IGNORE;
+    if ([106, 1004, 1112, 1401, 1402, 1404, 2600, 4200, 0x70001, 0x70003].includes(code)) return MR_IGNORE;
     if (code === 4033) return MR_SUCCESS;
     if (code === MR_SWITCHPATH) return this.switchPath(mem, input, inputLen, output, outputLen);
     if (code === 3002) {

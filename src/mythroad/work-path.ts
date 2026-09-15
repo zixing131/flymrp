@@ -20,11 +20,14 @@ export class WorkPath {
   }
 }
 
-/** DSM virtual drive geometry: total × unit, available × unit. */
+/** Virtual drive geometry: total × unit, available × unit.
+ * Launchers select B as their storage card. The reference port's 77 KiB B
+ * stub rejects them before initialization; B and C use our nominal SD size.
+ */
 export function diskSpace(drive: string): number[] | null {
   switch (drive.charAt(0).toUpperCase()) {
     case 'A': return [1722, 1024, 1271, 1024];
-    case 'B': return [95, 1024, 77, 1024];
+    case 'B':
     case 'C': return [1874, 1048576, 1873, 1048576];
     default: return null;
   }
