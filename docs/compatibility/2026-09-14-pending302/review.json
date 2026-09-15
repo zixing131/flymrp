@@ -5083,9 +5083,9 @@
       "caseId": 2036,
       "title": "偷看美女",
       "testId": 234,
-      "status": "reviewed",
+      "status": "function-verified",
       "previousSmoke": "static-frame",
-      "resolved": false,
+      "resolved": true,
       "deferGraphicsFix": false,
       "firstRun": {
         "outcome": "no-input-response",
@@ -5095,8 +5095,8 @@
         "keysTested": 15,
         "elapsedMs": 12312
       },
-      "disposition": "entry-retry",
-      "note": "是否开启音乐弹窗",
+      "disposition": "verified",
+      "note": "洗牌、开牌并找出不同牌，出现成功提示。",
       "evidence": "artifacts/compat-20260914/pending302-first/234-sustained.png",
       "followups": [
         {
@@ -5119,7 +5119,14 @@
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260915/followup2/234-sustained.png"
         }
-      ]
+      ],
+      "verification": {
+        "artifact": "artifacts/compat-20260915/followup5/results.json",
+        "outcome": "passed",
+        "ticks": 2818,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 2042,
@@ -5614,9 +5621,9 @@
       "caseId": 2342,
       "title": "要钱不要命",
       "testId": 258,
-      "status": "reviewed",
+      "status": "function-verified",
       "previousSmoke": "static-frame",
-      "resolved": false,
+      "resolved": true,
       "deferGraphicsFix": false,
       "firstRun": {
         "outcome": "needs-scene-review",
@@ -5626,8 +5633,8 @@
         "keysTested": 15,
         "elapsedMs": 4823
       },
-      "disposition": "entry-retry",
-      "note": "要钱不要命游戏开始标题页",
+      "disposition": "verified",
+      "note": "重新开始、左右移动及触屏起跳，收集金币12，最终19金币277分；独立回归。",
       "evidence": "artifacts/compat-20260914/pending302-first/258-sustained.png",
       "followups": [
         {
@@ -5645,7 +5652,14 @@
           "outcome": "needs-scene-review",
           "lastScreenshot": "artifacts/compat-20260915/followup2/258-sustained.png"
         }
-      ]
+      ],
+      "verification": {
+        "artifact": "artifacts/compat-20260915/followup5/results.json",
+        "outcome": "passed",
+        "ticks": 2590,
+        "sceneVerified": true,
+        "interactionVerified": true
+      }
     },
     {
       "caseId": 2345,
@@ -6630,8 +6644,8 @@
   ],
   "firstRunComplete": true,
   "firstRunConcurrency": 1,
-  "verifiedCount": 11,
-  "remainingFunctionalVerification": 291,
+  "verifiedCount": 13,
+  "remainingFunctionalVerification": 289,
   "budgetRegression": {
     "artifact": "artifacts/compat-20260914/pending302-budget-regression/results.json",
     "count": 16,
