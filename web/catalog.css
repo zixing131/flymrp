@@ -124,6 +124,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 4px 10px;
 }
 .section-hint { font-size: 13px; color: var(--miuix-on-surface-tertiary); padding: 0 4px 12px; }
+.sd-upload-label { display: block; margin: 0 4px 6px; font-size: 13px; color: var(--miuix-on-surface-secondary); }
+.sd-upload-directory {
+  box-sizing: border-box; width: 100%; margin: 0 0 12px; padding: 10px 12px;
+  border: 1px solid var(--miuix-divider); border-radius: var(--miuix-radius-btn);
+  background: transparent; color: var(--miuix-on-surface); font: inherit;
+}
+.sd-upload-directory:focus { outline: 2px solid var(--miuix-primary-light); border-color: var(--miuix-primary); }
+.sd-upload-status { min-height: 1.3em; padding-bottom: 0; }
 
 .search-bar {
   display: flex; align-items: center; gap: 10px;

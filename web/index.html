@@ -175,6 +175,17 @@
       </div>
 
       <div class="section-card">
+        <div class="section-title">虚拟 SD 卡文件</div>
+        <p class="section-hint">选择目标目录后上传文件。目录不存在时会自动创建，文件只保存在当前浏览器。</p>
+        <label class="sd-upload-label" for="sd-upload-directory">目标目录</label>
+        <input class="sd-upload-directory" id="sd-upload-directory" value="music" placeholder="例如 music 或 games/data" autocomplete="off" spellcheck="false" />
+        <div class="button-group">
+          <button type="button" class="btn btn-primary" id="choose-sd-files">选择并上传文件</button>
+        </div>
+        <p class="section-hint sd-upload-status" id="sd-upload-status" aria-live="polite"></p>
+      </div>
+
+      <div class="section-card">
         <div class="footer-links">
           <a href="https://github.com/zixing131/flymrp">项目源码</a>
           <a href="./about.html">关于作者</a>
@@ -370,6 +381,7 @@
   </div>
   <input id="local-file" type="file" accept=".mrp,.MRP" style="visibility:hidden;display:none" />
   <input id="config-file" type="file" accept="application/json,.json" style="visibility:hidden;display:none" />
+  <input id="sd-upload-files" type="file" multiple style="visibility:hidden;display:none" />
   <script type="module" src="./catalog.ts"></script>
 </body>
 </html>

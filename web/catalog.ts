@@ -14,6 +14,9 @@ const count = document.querySelector<HTMLElement>('#library-count')!;
 const categories = document.querySelector<HTMLElement>('#categories')!;
 const localFile = document.querySelector<HTMLInputElement>('#local-file')!;
 const configFile = document.querySelector<HTMLInputElement>('#config-file')!;
+const sdUploadFiles = document.querySelector<HTMLInputElement>('#sd-upload-files')!;
+const sdUploadDirectory = document.querySelector<HTMLInputElement>('#sd-upload-directory')!;
+const sdUploadStatus = document.querySelector<HTMLElement>('#sd-upload-status')!;
 const empty = document.querySelector<HTMLElement>('#empty')!;
 const fab = document.querySelector<HTMLButtonElement>('#fab')!;
 const overlay = document.querySelector<HTMLElement>('#actionSheetOverlay')!;
@@ -938,10 +941,36 @@ function onPickedFile(input: HTMLInputElement): void {
   void installMrp(file, file.name).catch(failInstall).then(() => { input.disabled = false; });
 }
 
+async function uploadFilesToSd(input: HTMLInputElement): Promise<void> {
+  const files = Array.from(input.files ?? []);
+  input.value = '';
+  if (!files.length) return;
+  input.disabled = true;
+  let saved = 0;
+  const directory = sdUploadDirectory.value.trim();
+  try {
+    for (const file of files) {
+      const path = sdPath(directory, file.name);
+      const bytes = await readBlobBytes(file);
+      await saveSdFile({ path, bytes, modified: file.lastModified || Date.now() });
+      saved++;
+    }
+    const target = directory || '根目录';
+    sdUploadStatus.textContent = `已上传 ${saved} 个文件到 ${target}；目标目录不存在时已自动创建。`;
+    if (files.some(file => isMrpFilename(file.name) && sdPath(directory, file.name).startsWith('games/'))) void load();
+  } catch (error) {
+    sdUploadStatus.textContent = `已上传 ${saved} 个文件，其余上传失败：${errorText(error)}`;
+  } finally {
+    input.disabled = false;
+  }
+}
+
 search.addEventListener('input', render);
 document.querySelector('#refresh-library')!.addEventListener('click', () => { void load(); });
 document.querySelector('#choose-local')!.addEventListener('click', pickLocalMrp);
 document.querySelector('#open-player')!.addEventListener('click', () => { location.assign('./main.html'); });
+document.querySelector('#choose-sd-files')!.addEventListener('click', () => { sdUploadFiles.value = ''; sdUploadFiles.click(); });
+sdUploadFiles.addEventListener('change', () => { void uploadFilesToSd(sdUploadFiles); });
 document.querySelector('#export-config')!.addEventListener('click', exportConfig);
 document.querySelector('#import-config')!.addEventListener('click', () => { configFile.value = ''; configFile.click(); });
 configFile.addEventListener('change', event => {
