@@ -30,6 +30,10 @@ it('enumerates immediate EFS children with independent search handles and bounde
   bridge.appFs.mkdir('empty'); bridge.appFs.mkdir('mythroadfoo');
   const buf = ext.alloc(64);
   const handle = bridge.findStart('c:\\mythroad\\games\\', buf, 64);
+  expect(readGuestCString(ext.mem, buf)).toBe('.');
+  expect(bridge.findNext(handle, buf, 64)).toBe(MR_SUCCESS);
+  expect(readGuestCString(ext.mem, buf)).toBe('..');
+  expect(bridge.findNext(handle, buf, 64)).toBe(MR_SUCCESS);
   expect(readGuestCString(ext.mem, buf)).toBe('a.bin');
   expect(bridge.findNext(handle, buf, 64)).toBe(MR_SUCCESS);
   expect(readGuestCString(ext.mem, buf)).toBe('sub');
@@ -38,7 +42,11 @@ it('enumerates immediate EFS children with independent search handles and bounde
   expect(bridge.findStart('missing', buf, 64)).toBe(MR_FAILED);
   expect(bridge.findStart('mythroadfoo', buf, 64)).toBeGreaterThan(0);
   const empty = bridge.findStart('empty', buf, 64);
-  expect(empty).toBeGreaterThan(0); expect(ext.mem.read8(buf)).toBe(0);
+  expect(empty).toBeGreaterThan(0); expect(readGuestCString(ext.mem, buf)).toBe('.');
+  expect(bridge.findNext(empty, buf, 64)).toBe(MR_SUCCESS);
+  expect(readGuestCString(ext.mem, buf)).toBe('..');
+  expect(bridge.findNext(empty, buf, 64)).toBe(MR_FAILED);
+  expect(ext.mem.read8(buf)).toBe(0);
   expect(ext.runGuest(tableSlotAddr(53), { r0: handle }).r0).toBe(0);
   expect(bridge.findNext(handle, buf, 64)).toBe(MR_FAILED);
 });

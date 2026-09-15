@@ -1356,7 +1356,7 @@ export class MrTableBridge {
    */
   findStart(name: string, buffer: number, length: number): number {
     const pack = this.hooks.getPack?.();
-    const names = this.appFs.list(name, pack ? [pack.name] : []);
+    const names = this.appFs.findEntries(name, pack ? [pack.name] : []);
     if (!names) return MR_FAILED;
     const handle = this.nextSearch++;
     this.searches.set(handle, { names, index: 0 });

@@ -1,0 +1,15 @@
+# 294项后续修复：目录枚举
+
+## 软件魔盒 #1300
+
+旧实现省略目录的`.`和`..`。空目录findStart返回有效句柄和空文件名；软件魔盒把空名称当作子目录递归，构造`appbox/plug////...`，最终指针被0x2f字节覆盖并崩溃。
+
+原生依据：本地rxgj-main的src/file_lib.c:375直接返回系统readdir结果，native_dsm_funcs.c:251转发该名称，mythroad/dsm.c:1646打开目录并取首项。原生包含`.`与`..`，空目录不会把空字符串作为首项。
+
+现在ARM和Lua的find接口共享AppFileSystem.findEntries，包含点目录项；普通文件列表保持只返回真实子项。对应空目录、GBK文件名和Lua遍历测试更新。隔离对照和正式代码均不再触发非法指针，写出8个appbox文件后退出安装流程。主功能尚在验证，不以安装退出当完整通过。
+
+860项测试通过、1项跳过；16项既有功能场景串行回归全部passed；类型检查通过。真实证据目录：artifacts/compat-20260915/appbox-fixed、directory-regression。
+
+## 明星美女麻将馆 #1410
+
+已定位UCS2写溢出：guest在0x1e93f1c转换字符串，首次计数遇到NUL后申请24字节；写入循环遇到非法高位字节后跳过后继NUL，继续读写，覆盖0x2a4b40空闲块。调用者0x1e9c36c把一段大端UCS2说明文本当GBK传给文字测量函数。当前证据指向guest内的编码/边界问题，未通过扩大堆或忽略堆校验掩盖；尚未结案。CPU、寄存器和内存写入记录见artifacts/compat-20260915/diagnostics/heap-1410.json。

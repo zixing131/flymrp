@@ -57,6 +57,14 @@ export class AppFileSystem {
     return [...children].sort();
   }
 
+  /** Native opendir/readdir exposes dot entries, including in an empty directory.
+   * Keep the plain child list separate for host resource catalogs and pickers.
+   */
+  findEntries(name: string, extraPaths: string[] = []): string[] | null {
+    const children = this.list(name, extraPaths);
+    return children === null ? null : ['.', '..', ...children];
+  }
+
   info(name: string): number | null {
     const key = this.normalize(name);
     if (!key) return null;

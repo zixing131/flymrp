@@ -16,7 +16,9 @@ it('exposes uploaded files to ARM and Lua readers, directory scans, and new EXT 
   expect(fd).toBeGreaterThan(0);
   const dest = rt.ext!.alloc(32); expect(bridge.files.read(mem, fd, dest, 4)).toBe(4);
   expect(mem.slice(dest,4)).toEqual(new Uint8Array([0x49,0x44,0x33,7]));
-  expect(bridge.findStart('c:/mythroad/music',dest,32)).toBeGreaterThanOrEqual(0);
+  const search = bridge.findStart('c:/mythroad/music',dest,32);
+  expect(search).toBeGreaterThanOrEqual(0);
+  bridge.findNext(search,dest,32); bridge.findNext(search,dest,32);
   expect(new TextDecoder('gbk').decode(mem.slice(dest,8))).toBe('测试.mp3');
   const luaFd = rt.vfs.open(guestName, MR_FILE_RDONLY);
   expect(rt.vfs.read(luaFd,4)[0]).toBe(0x49);

@@ -12,7 +12,11 @@ describe('Lua launcher storage', () => {
     rt.setUserFile('games/a.mrp', new Uint8Array([1]));
     invokeField(rt.lua, 'sys', 'findstart', ['games'], 2);
     const handle = rt.lua.L.nums[0]; expect(handle).toBeGreaterThan(0);
-    expect(rt.lua.L.strings[rt.lua.L.nums[1]]).toBe('a.mrp');
+    expect(rt.lua.L.strings[rt.lua.L.nums[1]]).toBe('.');
+    invokeField(rt.lua, 'sys', 'findnext', [handle]);
+    expect(rt.lua.L.strings[rt.lua.L.nums[0]]).toBe('..');
+    invokeField(rt.lua, 'sys', 'findnext', [handle]);
+    expect(rt.lua.L.strings[rt.lua.L.nums[0]]).toBe('a.mrp');
     invokeField(rt.lua, 'sys', 'findnext', [handle]); expect(rt.lua.L.tags[0]).toBe(TAG_NIL);
     invokeField(rt.lua, 'sys', 'findstop', [handle]); expect(rt.lua.L.nums[0]).toBe(MR_SUCCESS);
     invokeField(rt.lua, 'sys', 'rmDir', ['games'], 3); expect(rt.lua.L.tags[0]).toBe(TAG_NIL);

@@ -799,7 +799,7 @@ function installSysLib(rt: MythroadRuntime, sysInfo: NativeFunction, dt: NativeF
   let nextSearch = 1;
   const pushName = (Ls: LuaState, name: string) => Ls.pushString(ucs2ToGbk(Array.from(name, c => c.charCodeAt(0))));
   const findStart: NativeFunction = Ls => {
-    const names = rt.appFs.list(Ls.checkString(1).s, [rt.packName]);
+    const names = rt.appFs.findEntries(Ls.checkString(1).s, [rt.packName]);
     if (!names) { Ls.pushInteger(MR_FAILED); Ls.pushString(''); return 2; }
     const handle = nextSearch++; searches.set(handle, names);
     Ls.pushInteger(handle); pushName(Ls, names.shift() ?? ''); return 2;
