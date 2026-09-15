@@ -73,9 +73,12 @@ it('uses actual elapsed time for synchronous calls and keeps host-event gaps sep
 });
 
 it('retains explicit instruction budgets and a wall-clock deadline for endless code', () => {
-  const ext = new ExtRuntime(); const code = ext.alloc(64); ext.mem.write32(code,0xeafffffe);
+  const ext = new ExtRuntime(); ext.guestSliceTracing = true; const code = ext.alloc(64); ext.mem.write32(code,0xeafffffe);
   ext.insnBudget=32; ext.monotonicTime=()=>0;
   const bounded=ext.runGuest(code); expect(bounded.detail).toBe('budget exceeded'); expect(bounded.insnCount).toBe(32);
+  expect(ext.guestSlices).toHaveLength(1);
+  expect(ext.guestSlices[0]).toMatchObject({insnCount:32,pc:code,clockProgress:0});
   let now=0; ext.monotonicTime=()=>now+=30001;
   expect(ext.runGuest(code).detail).toBe('execution deadline exceeded');
+  expect(ext.guestSlices).toHaveLength(1);
 });

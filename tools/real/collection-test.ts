@@ -58,7 +58,8 @@ if(worker) {
   const rt: MythroadRuntime=new MythroadRuntime({profile,abiMode:"strict",systemFiles,resourceFiles,graphics:display,onVibrate:ms=>vibrationRequests.push(ms),
     // Timed benchmarks need the browser worker's clock; other scenarios retain
     // deterministic execution. This choice is frozen in scenarioSha256.
-    monotonicTime:scenario.clock==="monotonic"?()=>performance.now():undefined});
+    monotonicTime:scenario.clock==="monotonic"?()=>performance.now():undefined,
+    traceGuestSlices:process.env.MRP_TEST_GUEST_SLICES==="1"});
   const initialFiles = new Map([...rt.appFs.nodes].flatMap(([name,node]) => node.kind === "file" ? [[name,hash(node.bytes)] as const] : []));
   let phase="load",ticks=0,inputChanges=0,controlChanges=0,keysTested=0,error:string|null=null;
   const distinct=new Set<string>();
@@ -124,8 +125,9 @@ if(worker) {
     const sha256 = hash(node.bytes);
     return initialFiles.get(name) === sha256 ? [] : [{name, size:node.bytes.length, sha256}];
   });
+  const guestDiagnostics=process.env.MRP_TEST_GUEST_SLICES==="1"?{guestSlices:rt.ext?.guestSlices??[]}:{};
   console.log(JSON.stringify({...game,...profile,outcome,phase,error,ticks,keysTested,inputChanges,controlChanges,presentedFrames:display.frames,interactionVerified,distinctFrames:distinct.size,nonBlack,sceneVerified,
-    checkpoints,writtenFiles,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??""}));
+    checkpoints,writtenFiles,vibrationRequests,resourceFilesSha256:systemFileHashes(resourceFiles),missingComponents:[...(rt.mrTable?.missingComponents??[])],offlineServiceRequests:rt.mrTable?.offlineNetwork.requests??[],networkInterceptions:rt.mrTable?.offlineNetwork.interceptions??[],exited:rt.exited,unknownSlot:rt.unknownRequiredSlot,unknownEvents:rt.unknownEvents,elapsedMs:Date.now()-startedAt,debugOutput:rt.ext?.debugOutput??"",...guestDiagnostics}));
 } else {
   const concurrency = Number(process.env.MRP_TEST_CONCURRENCY ?? 3);
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 16) throw new Error("MRP_TEST_CONCURRENCY must be an integer from 1 to 16");

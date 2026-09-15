@@ -3912,7 +3912,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/270-failure.png",
       "previousDisposition": "runtime-error",
-      "note": "优化大师启动budget exceeded PC1e90fcc；入口补测切换bytewise模式仍失败，未采用该模式作为修复。",
+      "note": "优化大师启动时在客体解压循环0x1e90fa8-0x1e91024停滞：输出位置r7已到2MiB边界，回引用r10=2MiB-513、剩余长度r8=3，但本轮复制长度r6=0，循环不再前进；30秒deadline在该循环内终止。切换bytewise模式无效，未提高watchdog掩盖客体死循环。",
       "profile": {},
       "entryRun": {
         "outcome": "runtime-error",

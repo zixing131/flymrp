@@ -64,6 +64,16 @@ export type LoadResult = {
   kind: ExtStopKind;
 };
 
+export type GuestSliceSample = {
+  insnCount: number;
+  pc: number;
+  lr: number;
+  thumb: number;
+  cpsr: number;
+  clockProgress: number;
+  regs: number[];
+};
+
 function align2(n: number): number {
   return (n + 1) & ~1;
 }
@@ -88,6 +98,9 @@ export class ExtRuntime {
   lastKind: ExtStopKind = ExtStopKind.Return;
   bridgeCalls = 0;
   guestCallSerial = 0;
+  /** Recent million-instruction boundaries for diagnosing bounded long calls. */
+  readonly guestSlices: GuestSliceSample[] = [];
+  guestSliceTracing = false;
   debugOutput = "";
   guestExitCode: number | null = null;
   onGuestExit: (() => void) | null = null;
@@ -348,6 +361,7 @@ export class ExtRuntime {
   ): ExtCallResult {
     this.onGuestBoundary?.();
     this.guestCallSerial++;
+    this.guestSlices.length = 0;
     const thumb = (regs.thumb ?? (start & 1)) & 1;
     const pc = (start & ~1) >>> 0;
     this.cpu.reset(pc, thumb);
@@ -371,6 +385,18 @@ export class ExtRuntime {
         for (;;) {
           const slice = Math.min(remaining, 1_000_000);
           run(this.cpu, slice);
+          if (this.guestSliceTracing) {
+            this.guestSlices.push({
+              insnCount: this.cpu.insnCount - startCount,
+              pc: this.cpu.r[15] >>> 0,
+              lr: this.cpu.r[14] >>> 0,
+              thumb: this.cpu.t & 1,
+              cpsr: this.cpu.cpsr >>> 0,
+              clockProgress: this.synchronousClockProgress,
+              regs: Array.from(this.cpu.r, value => value >>> 0),
+            });
+            if (this.guestSlices.length > 256) this.guestSlices.shift();
+          }
           if (this.cpu.halted) break;
           remaining -= slice;
           if (this.monotonicTime() >= deadline) return this.finish(ExtStopKind.AbiFault, "execution deadline exceeded");

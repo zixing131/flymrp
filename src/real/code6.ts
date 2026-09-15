@@ -248,7 +248,7 @@ function snapCpu(ext: ExtRuntime): CpuSnap {
   };
 }
 
-function formatInsn(pc: number, word: number): string {
+export function formatInsn(pc: number, word: number): string {
   decodeArm(word, PACK, 0);
   const u = unpackW0(PACK[0]!);
   const name = OP_NAMES[u.op] ?? `op${u.op}`;
