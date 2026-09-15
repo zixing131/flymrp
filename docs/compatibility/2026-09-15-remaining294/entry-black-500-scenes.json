@@ -1,0 +1,9 @@
+{
+  "9": { "profile": { "width": 320, "height": 480 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长 BMP 转 JPG 工具启动等待，不注入文件或按键。" },
+  "77": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长空白启动画面等待。" },
+  "208": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长空白启动画面等待。" },
+  "211": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长黑屏启动画面等待。" },
+  "212": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长黑屏启动画面等待。" },
+  "213": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长黑屏启动画面等待。" },
+  "214": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 500, "entry": [], "reviewNote": "仅延长黑屏启动画面等待。" }
+}

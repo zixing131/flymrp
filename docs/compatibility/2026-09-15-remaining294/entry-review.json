@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 180,
-  "remainingEntryVerification": 133,
+  "entryVerifiedCount": 181,
+  "remainingEntryVerification": 132,
   "results": [
     {
       "testId": 1,
@@ -3034,17 +3034,17 @@
       "testId": 208,
       "caseId": 1883,
       "title": "手机UC原版",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/208-entry.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-black-500/208-entry.png",
       "previousDisposition": "black-screen",
-      "note": "持续黑屏",
+      "note": "延长启动至500 ticks后进入 UC 浏览器主页，显示书签、新闻、贴吧、个人和菜单；按入口标准停止。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 500,
+        "artifact": "artifacts/compat-20260915/entry-black-500/results.json"
       }
     },
     {
