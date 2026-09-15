@@ -22,7 +22,7 @@ it('reseeds MR_GET_RAND from handset time and shares the resulting state with mr
 });
 it('returns MR_IGNORE for observed optional platform probes without fabricating output', () => {
   const {ext,bridge}=wire();const out=ext.alloc(8);ext.mem.fill(out,0x55,8);
-  for(const code of [106,1004,1112,1401,1402,1404,2600,4200,458753,458755]) expect(bridge.platEx(ext.mem,Uint32Array.from([code,0,0,out,out+4,0]))).toBe(MR_IGNORE);
+  for(const code of [106,1004,1112,1210,1401,1402,1404,2600,4200,458753,458755]) expect(bridge.platEx(ext.mem,Uint32Array.from([code,0,0,out,out+4,0]))).toBe(MR_IGNORE);
   for(const code of [1006,2500,2506,3012]) expect(bridge.plat(code,0)).toBe(MR_IGNORE);
   expect([...ext.mem.slice(out,8)]).toEqual(Array(8).fill(0x55));
   expect(()=>bridge.platEx(ext.mem,Uint32Array.from([0x12345678,0,0,0,0,0]))).toThrow('unsupported');

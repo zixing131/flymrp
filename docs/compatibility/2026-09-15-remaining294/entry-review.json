@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 178,
-  "remainingEntryVerification": 135,
+  "entryVerifiedCount": 179,
+  "remainingEntryVerification": 134,
   "results": [
     {
       "testId": 1,
@@ -76,11 +76,11 @@
       "testId": 6,
       "caseId": 11,
       "title": "应用列表8.0",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/6-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/nul-keymap-entry/6-entry.png",
       "previousDisposition": "investigate-start-exit",
-      "note": "start阶段退出且黑屏。",
+      "note": "修复_strCom 601/602的C字符串文件名及可选键盘映射查询1210后，进入文件/应用列表主页。",
       "profile": {},
       "entryRun": {
         "outcome": "exited",
@@ -187,7 +187,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/13-failure.png",
       "previousDisposition": "investigate-start-exit",
-      "note": "尚无boot检查点，启动阶段退出。",
+      "note": "首个start.mr加载mrc_loader.ext，但冻结包不含该文件；在进入原生扩展前返回-1并Exit。包内重复start.mr未擅自改为后项优先。",
       "profile": {},
       "entryRun": {
         "outcome": "exited",
@@ -1545,7 +1545,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/105-failure.png",
       "previousDisposition": "investigate-start-exit",
-      "note": "鬼手伏魔录黑屏退出。",
+      "note": "首个start.mr加载mrc_loader.ext，但冻结包不含该文件；在进入原生扩展前返回-1并Exit。包内重复start.mr未擅自改为后项优先。",
       "profile": {},
       "entryRun": {
         "outcome": "exited",

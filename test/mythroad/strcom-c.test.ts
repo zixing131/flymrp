@@ -116,6 +116,19 @@ describe("5-C _strCom / _com", () => {
     expect(rt.lua.L.strings[rt.lua.L.nums[0]!]!).toBe("ab");
   });
 
+  it.each([601, 602])("%i terminates resource filenames at NUL", (code) => {
+    const rt = new MythroadRuntime();
+    rt.loadMrp(buildMrp([{ name: "logo.ext", data: bin("A\0B") }]));
+    rt.lua.runCold(proto({
+      maxstack: 4,
+      k: [ks("_strCom"), kn(code), ks("logo.ext\0ignored")],
+      code: [CREATE_ABx(OP_GETGLOBAL, 0, 0), CREATE_ABx(OP_LOADK, 1, 1),
+        CREATE_ABx(OP_LOADK, 2, 2), CREATE_ABC(OP_CALL, 0, 3, 2), CREATE_ABC(OP_RETURN, 0, 2, 0)],
+    }));
+    if (code === 601) expect(rt.lua.L.strings[rt.lua.L.nums[0]!]!).toBe("A\0B");
+    else { expect(rt.lua.L.tags[0]).toBe(TAG_NUMBER); expect(rt.lua.L.nums[0]).toBe(0); }
+  });
+
   it("601 still reads resource", () => {
     const rt = new MythroadRuntime();
     rt.loadMrp(buildMrp([{ name: "a.txt", data: bin("Z") }]));

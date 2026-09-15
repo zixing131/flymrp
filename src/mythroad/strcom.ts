@@ -42,7 +42,8 @@ export function createStrCom(ctx: {
         ctx.setReturnApp?.(L.checkString(2).s, L.top > L.base + 2 ? L.checkString(3).s : 'start.mr');
         return 0;
       case 601: {
-        const data = ctx.getVfs().readFile(L.checkString(2).s);
+        // _mr_readFile takes a C filename, even when Lua supplies a binary string.
+        const data = ctx.getVfs().readFile(L.checkString(2).s.split("\0", 1)[0]!);
         if (!data) {
           L.pushNil();
           return 1;
@@ -51,7 +52,7 @@ export function createStrCom(ctx: {
         return 1;
       }
       case 602: {
-        if (!ctx.getVfs().exists(L.checkString(2).s)) L.pushNil();
+        if (!ctx.getVfs().exists(L.checkString(2).s.split("\0", 1)[0]!)) L.pushNil();
         else L.pushInteger(MR_SUCCESS);
         return 1;
       }
