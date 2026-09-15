@@ -1,0 +1,16 @@
+{
+  "42": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "58": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "61": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "76": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "83": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "85": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "94": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "108": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "114": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "146": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "167": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "176": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "178": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" },
+  "180": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 200, "entry": [], "reviewNote": "只延长启动等待，确认是否离开加载页。" }
+}

@@ -1,0 +1,15 @@
+{
+  "49": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "89": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "97": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "115": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "130": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "149": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "150": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "152": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "153": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "157": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "165": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "299": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" },
+  "300": { "profile": { "width": 240, "height": 320 }, "clock": "monotonic", "bootTicks": 80, "entry": [{ "key": "SOFTRIGHT", "wait": 40 }], "reviewNote": "仅关闭首次注册提示，确认本地首页后停止。" }
+}
