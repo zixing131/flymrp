@@ -5,7 +5,7 @@ import type { NetworkRules } from "./network-rules.ts";
 import { ExtFault, type ExtCallResult } from "../abi/fault.ts";
 import { DEFAULT_INSN_BUDGET, ExtRuntime, MAX_INSN_BUDGET } from "../abi/runtime.ts";
 import { LuaRuntimeError, UnknownAbiError } from "../err/errors.ts";
-import { TAG_STRING } from "../lua/types.ts";
+import { TAG_NUMBER, TAG_STRING } from "../lua/types.ts";
 import { LuaVM } from "../lua/vm.ts";
 import { MRPArchive } from "../mrp/archive.ts";
 import {
@@ -309,6 +309,9 @@ export class MythroadRuntime {
     }
     this.state = MR_STATE_RUN;
     this.exited = false;
+    // Legacy launcher scripts reject direct starts unless the parent DSM
+    // runtime has set this fixed sentinel before loading `start.mr`.
+    this.lua.L.setGlobal("_nes3ShP7SwK0", TAG_NUMBER, 370);
     this.lua.L.setGlobal("_mr_entry", TAG_STRING, this.lua.L.internStr(this.entry));
     this.lua.L.setGlobal("_mr_param", TAG_STRING, this.lua.L.internStr(this.param));
     const chunk = this.vfs.readFile(entry);

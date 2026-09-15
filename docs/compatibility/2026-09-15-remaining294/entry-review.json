@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 181,
-  "remainingEntryVerification": 132,
+  "entryVerifiedCount": 193,
+  "remainingEntryVerification": 120,
   "results": [
     {
       "testId": 1,
@@ -267,34 +267,34 @@
       "testId": 19,
       "caseId": 137,
       "title": "MSN",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/19-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/19-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
       "testId": 20,
       "caseId": 138,
       "title": "MSN",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/20-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/20-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "脚本明确cann`t be run direct!",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -435,68 +435,68 @@
       "testId": 29,
       "caseId": 164,
       "title": "QQ2010",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/29-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/29-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
       "testId": 30,
       "caseId": 165,
       "title": "QQ2010",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/30-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/30-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "脚本明确cann`t be run direct!",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
       "testId": 31,
       "caseId": 166,
       "title": "QQ2010",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/31-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/31-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "脚本明确cann`t be run direct!",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
       "testId": 32,
       "caseId": 170,
       "title": "QQ2010（超级挂Q）",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/32-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/32-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "脚本明确cann`t be run direct!",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -565,17 +565,17 @@
       "testId": 37,
       "caseId": 184,
       "title": "QQ网游大厅",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/37-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/37-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "脚本明确cann`t be run direct!",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -1052,17 +1052,17 @@
       "testId": 72,
       "caseId": 498,
       "title": "大师在线设计签名",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/72-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/72-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "明确cann`t be run direct!，缺父启动平台。",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -1789,17 +1789,17 @@
       "testId": 121,
       "caseId": 923,
       "title": "火车订票",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/121-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/121-entry.png",
       "previousDisposition": "blocked-parent-platform",
-      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -3017,17 +3017,17 @@
       "testId": 207,
       "caseId": 1880,
       "title": "手机QQ",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/207-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/207-entry.png",
       "previousDisposition": "missing-parent-context",
-      "note": "cann`t be run direct，黑屏",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -3415,17 +3415,17 @@
       "testId": 235,
       "caseId": 2042,
       "title": "途客行天下",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/235-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/235-entry.png",
       "previousDisposition": "missing-parent-context",
-      "note": "cann`t be run direct，黑屏",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {
@@ -3852,17 +3852,17 @@
       "testId": 266,
       "caseId": 2380,
       "title": "英汉字典",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/266-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/parent-runtime/266-entry.png",
       "previousDisposition": "missing-parent-context",
-      "note": "cann`t be run direct，黑屏",
+      "note": "运行时补齐旧宿主固定启动标记后进入本地登录页或功能主页；未提交账号、未访问网络内容。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "LuaRuntimeError: cann`t be run direct!",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/parent-runtime/results.json"
       }
     },
     {

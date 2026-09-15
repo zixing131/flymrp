@@ -98,6 +98,14 @@ describe("5-B start.mr runtime", () => {
     expect(rt.lua.L.strings[e.num]).toBe("_dsm");
   });
 
+  it("start supplies the legacy parent-launch sentinel", () => {
+    const rt = new MythroadRuntime();
+    rt.loadMrp(buildMrp([{ name: "start.mr", data: fixtureStartMr() }]));
+    rt.start();
+    const sentinel = rt.lua.L.getGlobal("_nes3ShP7SwK0");
+    expect(sentinel.num).toBe(370);
+  });
+
   it("dealtimer present auto-starts 100ms timer", () => {
     const rt = new MythroadRuntime();
     rt.lua.register("dealtimer", () => 0);
