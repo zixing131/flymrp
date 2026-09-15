@@ -4500,16 +4500,16 @@
   "entryRunComplete": true,
   "entryRunCount": 174,
   "latestRegression": {
-    "artifact": "artifacts/compat-20260915/remaining134/results.json",
+    "artifact": "artifacts/compat-20260915/remaining120-after-parent/results.json",
     "complete": true,
-    "selectedCount": 134,
+    "selectedCount": 120,
     "concurrency": 1,
-    "revision": "01a824019745ba5aa0e5f13551f1f21e2d900d89",
+    "revision": "eeb5808",
     "outcomes": {
-      "entry-review": 101,
-      "black-screen": 2,
+      "entry-review": 102,
       "exited": 12,
-      "runtime-error": 18,
+      "runtime-error": 3,
+      "black-screen": 2,
       "worker-error": 1
     }
   }
