@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 177,
-  "remainingEntryVerification": 136,
+  "entryVerifiedCount": 178,
+  "remainingEntryVerification": 135,
   "results": [
     {
       "testId": 1,
@@ -704,7 +704,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/46-failure.png",
       "previousDisposition": "runtime-failure",
-      "note": "递归DNS失败后guest heap corruption，已知缺失服务。",
+      "note": "递归DNS失败后guest heap corruption，已知缺失服务。；入口补测切换bytewise模式仍失败，未采用该模式作为修复。",
       "profile": {},
       "entryRun": {
         "outcome": "runtime-error",
@@ -1164,11 +1164,11 @@
       "testId": 80,
       "caseId": 575,
       "title": "毒蛇行动2-丛林之谜",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/80-failure.png",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts4/80-entry.png",
       "previousDisposition": "blank-output",
-      "note": "声音询问后最终黑屏，运行无异常，需场景复查。",
+      "note": "默认ARMv5模式等待启动并确认音乐提示后进入“开始游戏”菜单；立即停止。",
       "profile": {},
       "entryRun": {
         "outcome": "black-screen",
@@ -1404,7 +1404,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/96-failure.png",
       "previousDisposition": "runtime-failure",
-      "note": "下载资源中约45%，预算超限PC0x29782c。",
+      "note": "下载资源中约45%，预算超限PC0x29782c。；入口补测切换bytewise模式仍失败，未采用该模式作为修复。",
       "profile": {},
       "entryRun": {
         "outcome": "runtime-error",
@@ -3912,7 +3912,7 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/270-failure.png",
       "previousDisposition": "runtime-error",
-      "note": "优化大师启动budget exceeded PC1e90fcc",
+      "note": "优化大师启动budget exceeded PC1e90fcc；入口补测切换bytewise模式仍失败，未采用该模式作为修复。",
       "profile": {},
       "entryRun": {
         "outcome": "runtime-error",
