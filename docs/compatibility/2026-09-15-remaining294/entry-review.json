@@ -4500,11 +4500,11 @@
   "entryRunComplete": true,
   "entryRunCount": 174,
   "latestRegression": {
-    "artifact": "artifacts/compat-20260915/remaining120-after-parent/results.json",
+    "artifact": "artifacts/compat-20260915/remaining120-final/results.json",
     "complete": true,
     "selectedCount": 120,
     "concurrency": 1,
-    "revision": "eeb5808",
+    "revision": "8e9f371",
     "outcomes": {
       "entry-review": 102,
       "exited": 12,
