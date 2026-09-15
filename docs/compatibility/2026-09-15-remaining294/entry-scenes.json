@@ -346,8 +346,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "静态宣传页补测一次确认键；不进入长时交互。"
   },
   "59": {
     "profile": {
@@ -356,8 +356,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "静态标题页补测一次确认键；不进入长时交互。"
   },
   "60": {
     "profile": {
@@ -366,8 +366,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "静态标题页补测一次确认键；不进入长时交互。"
   },
   "61": {
     "profile": {
@@ -536,8 +536,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "静态标题页补测一次确认键；不进入长时交互。"
   },
   "94": {
     "profile": {
@@ -575,9 +575,9 @@
       "height": 320
     },
     "clock": "monotonic",
-    "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "bootTicks": 120,
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "安装动画后补测一次确认键；不进入长时交互。"
   },
   "99": {
     "profile": {
@@ -1536,8 +1536,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "更多游戏提示补测一次确认键；不进入长时交互。"
   },
   "270": {
     "profile": {

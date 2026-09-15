@@ -858,15 +858,15 @@
       "title": "便宜！绝对划算",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/58-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/58-entry.png",
       "previousDisposition": "blocked-loading",
-      "note": "安装/宣传页，提示摇一摇变换音乐列表，无实际内容。",
+      "note": "一次确认键仅从白页切换到“安装中……”宣传图，无实际内容。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
@@ -875,15 +875,15 @@
       "title": "捕鱼达人",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/59-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/59-entry.png",
       "previousDisposition": "needs-touch-entry",
-      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "note": "一次确认键无画面变化，仍为捕鱼达人竖屏标题及取消提示。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
@@ -892,15 +892,15 @@
       "title": "捕鱼达人",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/60-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/60-entry.png",
       "previousDisposition": "needs-touch-entry",
-      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "note": "一次确认键无画面变化，仍为捕鱼达人竖屏标题及取消提示。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
@@ -1346,15 +1346,15 @@
       "title": "疯狂捕鱼",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/92-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/92-entry.png",
       "previousDisposition": "needs-touch-entry",
-      "note": "疯狂捕鱼标题取消提示。",
+      "note": "一次确认键无画面变化，仍为疯狂捕鱼标题取消提示。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
@@ -1436,15 +1436,15 @@
       "title": "给力猫",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/98-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/98-entry.png",
       "previousDisposition": "blocked-registration",
-      "note": "120ticks仍为安装动画，随后短确认操作未确认正常完整主界面；不计通过。证据entry-prompts5/98-boot.png和98-entry.png。",
+      "note": "120 ticks 后一次确认键只改变“正在安装，请稍等...”动画；未出现正常完整主界面，不计通过。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 130,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
@@ -3882,15 +3882,15 @@
       "title": "应用软件>>",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/268-entry.png",
+      "evidence": "artifacts/compat-20260915/static-confirmation/268-entry.png",
       "previousDisposition": "entry-retry",
-      "note": "点击更多游戏畅玩提示",
+      "note": "一次确认键无画面变化，仍为更多游戏畅玩提示。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/static-confirmation/results.json"
       }
     },
     {
