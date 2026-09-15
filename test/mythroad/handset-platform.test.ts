@@ -3,7 +3,8 @@ import { ExtRuntime } from '../../src/abi/runtime.ts';
 import { tableSlotAddr } from '../../src/abi/layout.ts';
 import { MrTableBridge, readGuestCString, writeFixedCString } from '../../src/mythroad/mr-table.ts';
 import { MythroadVfs } from '../../src/mythroad/vfs.ts';
-import { MR_FAILED, MR_SUCCESS } from '../../src/mythroad/constants.ts';
+import { MR_FAILED, MR_SUCCESS, MR_IS_DIR } from '../../src/mythroad/constants.ts';
+import { AppFileSystem } from '../../src/mythroad/app-fs.ts';
 
 it('compares strings in the fixed C locale through strcoll', () => {
   const ext = new ExtRuntime(), bridge = new MrTableBridge(ext, new MythroadVfs(), 'strcoll'); bridge.install();
@@ -49,6 +50,23 @@ it('enumerates immediate EFS children with independent search handles and bounde
   expect(ext.mem.read8(buf)).toBe(0);
   expect(ext.runGuest(tableSlotAddr(53), { r0: handle }).r0).toBe(0);
   expect(bridge.findNext(handle, buf, 64)).toBe(MR_FAILED);
+});
+
+it('opens parent and current directory entries without creating duplicate file identities', () => {
+  const fs = new AppFileSystem();
+  fs.createFile('games/sub/save', true);
+  fs.replace('games/sub/save', new Uint8Array([7]));
+  expect(fs.info('games/sub/.')).toBe(MR_IS_DIR);
+  expect(fs.info('games/sub/..')).toBe(MR_IS_DIR);
+  expect(fs.info('games/..')).toBe(MR_IS_DIR);
+  expect(fs.file('c:\\mythroad\\games\\sub\\..\\sub\\save')).toEqual(new Uint8Array([7]));
+  expect(fs.findEntries('games/sub/..')).toEqual(['.', '..', 'sub']);
+  fs.mkdir('.hidden');
+  expect(fs.findEntries('.hidden')).toEqual(['.', '..']);
+  expect(fs.rename('games/./sub/save', 'games/sub/../save')).toBe(MR_SUCCESS);
+  expect(fs.file('games/save')).toEqual(new Uint8Array([7]));
+  expect(fs.file('games/sub/save')).toBeNull();
+  expect(fs.file('../../')).toBeNull();
 });
 
 it('presents a guest-selected logical canvas at its real stride and restores LCD orientation', () => {

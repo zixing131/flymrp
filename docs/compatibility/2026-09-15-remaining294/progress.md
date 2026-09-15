@@ -17,3 +17,11 @@
 ## 功能补测
 
 12项第一轮定向操作和11项第二轮均串行完成。#1040节日祝福语验证连续下一条/上一条导航，#2486找回元素完成第一关并进入第二关；已审阅画面独立回归均passed并持续60秒。原313项累计结案21项，剩余292项。软件魔盒主功能仍待验证，其安装流程修复未计入结案。
+
+## 父目录路径与后续验证
+
+点目录项需要真实可访问。补齐路径中的`.`/`..`折叠，目录info对工作目录返回MR_IS_DIR，保留`.hidden`字面名称。原生get_filename（dsm.c:1053）对空名称拼接dsmWorkPath，因此空名称也是目录而非不存在的文件。新增父目录访问、重命名和ABI目录类型测试。862项测试通过、1项跳过。
+
+软件魔盒的安装后主包为appbox/plug/opxrjmh.mrp。在保留安装文件的新运行时中启动它，可进入更多软件/精品软件/我的软件及菜单。在线目录请求proxy.51mrp.com/page2未匹配本地离线资源，持续重试；未伪造服务数据，因此在线功能未结案。完整运行1785 ticks、115104ms，无运行异常；证据appbox-child、appbox-enter、appbox-tabs和diagnostics/appbox-installed-files.json。
+
+合并原302项与此前11项为313项串行回归，使用regression313-manifest.json和regression313-scenes.json。补入已核实的按键/触屏操作，仍以每项实际功能证据结案；运行结果写入artifacts/compat-20260915/regression313。

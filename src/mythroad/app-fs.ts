@@ -28,8 +28,16 @@ export class AppFileSystem {
     if (/[\x80-\xff]/.test(name) && !/[^\x00-\xff]/.test(name)) {
       name = new TextDecoder('gbk').decode(Uint8Array.from(name, c => c.charCodeAt(0)));
     }
-    return name.replace(/\\/g, "/").replace(/\/+/g, "/").toLowerCase()
+    const path = name.replace(/\\/g, "/").replace(/\/+/g, "/").toLowerCase()
       .replace(/^(?:c:)?\/?mythroad(?:\/|$)/, '').replace(/^\.\//, '').replace(/^\/+|\/+$/g, '');
+    const parts: string[] = [];
+    for (const part of path.split('/')) {
+      if (!part || part === '.') continue;
+      if (part === '..') {
+        if (parts.length && !/^[a-z]:$/.test(parts[parts.length - 1]!)) parts.pop();
+      } else parts.push(part);
+    }
+    return parts.join('/');
   }
 
   clear(): void {
@@ -45,7 +53,7 @@ export class AppFileSystem {
   }
 
   list(name: string, extraPaths: string[] = []): string[] | null {
-    const key = this.normalize(name).replace(/^c:\//i, '').replace(/^\.\/?/, '');
+    const key = this.normalize(name).replace(/^c:\//i, '');
     const prefix = key ? key + '/' : '';
     const children = new Set<string>();
     for (const path of [...this.nodes.keys(), ...this.remotes, ...extraPaths.map(p => this.normalize(p))]) {
@@ -67,7 +75,7 @@ export class AppFileSystem {
 
   info(name: string): number | null {
     const key = this.normalize(name);
-    if (!key) return null;
+    if (!key) return MR_IS_DIR;
     const node = this.nodes.get(key);
     if (node) return node.kind === "dir" ? MR_IS_DIR : MR_IS_FILE;
     return this.remotes.has(key) ? MR_IS_FILE : null;
@@ -87,6 +95,7 @@ export class AppFileSystem {
 
   file(name: string): Uint8Array | null {
     const key = this.normalize(name);
+    if (!key) return null;
     const node = this.nodes.get(key);
     if (node?.kind === "file") return node.bytes;
     if (node?.kind === "dir") return null;

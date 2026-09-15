@@ -1,0 +1,1882 @@
+{
+  "games": [
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/cda81002990a83f22cd1caf092984ffd.mrp",
+      "sha256": "ecc0a17e49c720af978e3198ae32bf3326880ae6b840fa01ce92a9b4aaaa0581",
+      "storeCaseId": 3,
+      "title": "sky插件V7安装包"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/c50c052b56b48ebccf1261f31a42690a.mrp",
+      "sha256": "5c6c26d61776229005d0183cbb6777a912d58c2d379be49a08ad5cd778322bd9",
+      "storeCaseId": 4,
+      "title": "sky字库V3安装包"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/dd9728e2d41c9c51e18f32b8e5da0dab.mrp",
+      "sha256": "c98db7e9631e04237c5a2af7e7b885d70631c4bd196d67c6794dd91b12281f84",
+      "storeCaseId": 5,
+      "title": "vmrp安装包"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/冒泡组件/cookie.mrp",
+      "sha256": "25f2f967da4f4ce000dff98e9d44102928f181bb7a3bcaee203012e421d07f15",
+      "storeCaseId": 7,
+      "title": "冒泡"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/103218_2246440opttyy.mrp",
+      "sha256": "77ce0f199dd7354904ee1890e278e2626035bc5bd9d77974351a0fd21580aa48",
+      "storeCaseId": 10,
+      "title": "听听音阅"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/879f70851253183d2a94fa52c0228ae2.mrp",
+      "sha256": "f22ef2ce21d78d1ee93747de2b6720f05e5a3be3fe2506daa80661a4b35faf45",
+      "storeCaseId": 11,
+      "title": "应用列表8.0"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/6e491b7d7e2733102f985a9bbfd13c55.mrp",
+      "sha256": "7e9efaea49169ff1defbcc17fe75e0a9eba483518bf571f5eca88a05d0904f93",
+      "storeCaseId": 18,
+      "title": "斗象棋2026"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d22da71dbe58e584f35bee5238ad2ad7.mrp",
+      "sha256": "e73093d7ef3b9c1ca753f5638591dd333d3a64a8121588b491c1a7c0197e1c2d",
+      "storeCaseId": 31,
+      "title": "2012超级美眉连连看"
+    },
+    {
+      "path": "240×320游戏大全/软件类/开发bmp转jpg图片软件_开发资源.mrp",
+      "sha256": "021dfd1cafe68cbcbead90fb822c0019e37f2d6187944258b951b5d39b0689a8",
+      "storeCaseId": 76,
+      "title": "a.bmp→a.jpg"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/c23e088936c0b9aec6c8349f6be482d7.mrp",
+      "sha256": "4acfc6e8077617e3e0702b80e6519c45da0a5f327e2d1ad6cee160af5bce48c6",
+      "storeCaseId": 81,
+      "title": "AV美女写真"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/52e556c230ce27975cfa54cfd753e361.mrp",
+      "sha256": "fe139bd23e6eb1e2b5cee31be3e948436454e03f17a892302a7ae1e564a99eb0",
+      "storeCaseId": 95,
+      "title": "CS1.6特警先锋"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gfkfy.mrp",
+      "sha256": "299a65c9dd8058ea90ede135dabe765d3e2a61aa6d334e0523f86d6bf343b74a",
+      "storeCaseId": 98,
+      "title": "CS反恐风云"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gfczzn.mrp",
+      "sha256": "b1c1daa419d0ab4496992c5bc9ff7f81e580c7842124945af69dbb57cdd40a7e",
+      "storeCaseId": 106,
+      "title": "DNF复仇者之怒"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gkzzn.mrp",
+      "sha256": "9a06b2610a62dc344a102469c07709ab41475da866470cfbe65860877f392e1d",
+      "storeCaseId": 109,
+      "title": "DNF狂战之怒"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/24a78fcb280e1550070f08c84e418b9b.mrp",
+      "sha256": "698d111c715103919ede869ae429d40ae98b052a22a2d00c87fd27ce6c647d83",
+      "storeCaseId": 110,
+      "title": "DNF欲望格斗"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/9386d847c8b662b2da1ab2e85098403a.mrp",
+      "sha256": "1885e199684671f664c071e1f48f24b8011d2da720462fe5205d06f82ebc05f9",
+      "storeCaseId": 115,
+      "title": "Dota之超神屠夫"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/63153f1e6ed12e24e1fd93c377d7a48b.mrp",
+      "sha256": "4958b127ab5b0f85b7822e3ea5f4b6c20ce5fee710d6dc9d80e0b6e4ddca7525",
+      "storeCaseId": 116,
+      "title": "Dota之超神屠夫"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/23709_1118170193ƽ.mrp",
+      "sha256": "9d4fb1bc6b9869dacf41e936813418d616160b003f5806df693f3cd044ef0c19",
+      "storeCaseId": 132,
+      "title": "MRP NES软件平台"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/msn.mrp",
+      "sha256": "1473b1320edec3a5908a96b283a3d92dbf17da28cf23f82d505a9b562516835c",
+      "storeCaseId": 137,
+      "title": "MSN"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5d0e4e03fb563c78b62163d5a480a178.mrp",
+      "sha256": "358ce9892e81d3cbda863317a097ee630782233921fdc68beb4fb47e446f05bd",
+      "storeCaseId": 138,
+      "title": "MSN"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/msn.mrp",
+      "sha256": "845a4a11923fecc79890c52d2d9d00ea01cf24d57f16c535d23d3d92866f5a93",
+      "storeCaseId": 139,
+      "title": "MSN"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/8cffb31c17c42bc55f9f3a839bcdf009.mrp",
+      "sha256": "46c8cbbc521b7945838e772be53d4e2058ab6bf162db169f8aea8265f705bba3",
+      "storeCaseId": 144,
+      "title": "MTK魔法寿司_320x240"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/eaa4ecb7de09a9230cca74c41b41d390.mrp",
+      "sha256": "a7b91a9afd4be051839ac534a548f09e07c02448ad85c3da18eac60b4b7083bb",
+      "storeCaseId": 145,
+      "title": "MTK魔法寿司_320x480"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4a49e8c36016ba4d1043d4ce6879e349.mrp",
+      "sha256": "285476af047ddf43b7d1af813264c6dccdef0a651611aedb1141cac59c3396a9",
+      "storeCaseId": 159,
+      "title": "NES积分-天蓝"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/8920c6a45caba20efe6da65a4ecb61d6.mrp",
+      "sha256": "cad727d3087daef4db9975f6227177d0ec119f9543aa06cdb809a44ce3e833cb",
+      "storeCaseId": 160,
+      "title": "NES模拟器"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/182630_2124290xlnes.mrp",
+      "sha256": "b0086558dcb73ab0cc8947ae31cc8101d4a1d6e98a2a73e9bd7c7a9ec582fd7d",
+      "storeCaseId": 161,
+      "title": "nes模拟器XL版1.2"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/0d85f944a402a72370a1d3946167a086.mrp",
+      "sha256": "58992a59f6e49a8c3fa2ed557d489186ea78aa384686c9eaab8b07292fae0aa5",
+      "storeCaseId": 162,
+      "title": "QQ"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/qq200.mrp",
+      "sha256": "7a478bdcb9c1e72b46a32a8379b5345b3d7e5422e97703bf2b436906f8881a73",
+      "storeCaseId": 163,
+      "title": "QQ"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/qq2008.mrp",
+      "sha256": "df659c1120c26c10460e3d421a4e5373ed1b352fa0800f91a3ce738d4114712c",
+      "storeCaseId": 164,
+      "title": "QQ2010"
+    },
+    {
+      "path": "cookie曲奇游戏中心列表所有游戏240×320（无中文命名）/qq2008.mrp",
+      "sha256": "9515e01548d2ec645805fcdcae32415d871b8c23dd78916cef62040fd6015170",
+      "storeCaseId": 165,
+      "title": "QQ2010"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ac648f79c6392e1a10d646137e5fa66d.mrp",
+      "sha256": "51ffd60bf29fdd439ee15a84c443b01ce20b934175ded72f9dbeddfa9b16c19b",
+      "storeCaseId": 166,
+      "title": "QQ2010"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f20689c7d50cbbc528f065b184953b32.mrp",
+      "sha256": "fe926c7e2e94be79c1535a0b5459663bb881ee3e77461d63fb0145cb0e9c43c8",
+      "storeCaseId": 170,
+      "title": "QQ2010（超级挂Q）"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ff85e4354e97b19717c540c2d56d7f01.mrp",
+      "sha256": "8836d27ea5f44b5904451aeacde244bfb72d093c772b2d8b36be3bb98e869076",
+      "storeCaseId": 174,
+      "title": "QQ斗地主3.3正式版"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a41df0777c29b74795b810b6b3f857c8.mrp",
+      "sha256": "621d74f28534a10dea449b850f16174699bd2a3a55e0082727f59966ac1ac149",
+      "storeCaseId": 178,
+      "title": "QQ空间"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/tqzone.mrp",
+      "sha256": "2b3889b7cdc656f220f364e74fabdb325edf545625a75d22b752e29dcde4057b",
+      "storeCaseId": 179,
+      "title": "QQ空间"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/64864ec9f43c13ca22643d4ed97ccf60.mrp",
+      "sha256": "a2aaf9e1421f3a9d2a878dd240e4e88d0f4dfbb171bb43d85abbd5dc92ac6b79",
+      "storeCaseId": 183,
+      "title": "QQ手机软件管理"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/qqgh.mrp",
+      "sha256": "9f32e9e90bd456a8bd3b43647911ea28cf9f0313c28a9fe74fdb9b52de1fa68f",
+      "storeCaseId": 184,
+      "title": "QQ网游大厅"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/45a79eeff9ad1a1ef5c4432dd502fab2.mrp",
+      "sha256": "bca49cfdfc6206053850f932002ecf2799025f573bcee4c566a927045cbb7a2d",
+      "storeCaseId": 187,
+      "title": "QQ炫舞"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5eed46ccde604ae2a9ffefe85df29da7.mrp",
+      "sha256": "314bcc2ee46bd5b3419701c13c7e49a31399908f65deb6f41e7bb6768f7c163a",
+      "storeCaseId": 188,
+      "title": "Q版飞车"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/148675_1013000game.mrp",
+      "sha256": "f56bf379099db6ae1ba1fcddb6a907bc70e2cc5b7a94916af9de54a443a380a5",
+      "storeCaseId": 192,
+      "title": "ram_scan"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/103ca253ce609e4268d8700f72041137.mrp",
+      "sha256": "c23f4aa82329e8437d8365ea28f66dc53279a4036554ffb4190d6147d1eeb587",
+      "storeCaseId": 212,
+      "title": "xqc安装包2"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a27060eaa7ce96981b712e70934d4965.mrp",
+      "sha256": "8c9511eb3d0599bfb78ec4eedaea9d64e837f5719687f9311e27c04ac36d2e6c",
+      "storeCaseId": 215,
+      "title": "ZCOM手机杂志"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1f852b1ca978bea046eff23bbea4ad2e.mrp",
+      "sha256": "e1f16d62d60aa5396d0bd13a7700a0ed0c09f5df26f040f69b43a262089f9982",
+      "storeCaseId": 216,
+      "title": "“粽”想过61"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/01131383aaf5528a2aeee03074fa3e58.mrp",
+      "sha256": "6df0178f6fb683a85af2ad166137643560121f05a6fd7dc5407b8ee2208ebaf1",
+      "storeCaseId": 217,
+      "title": "ＣＳ反恐特警"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ai3d.mrp",
+      "sha256": "f21f33e74d639cc97d44525be7936a112fe7f6e2da88b5c45801372788c83e55",
+      "storeCaseId": 232,
+      "title": "爱上3D爱上图"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opayks.mrp",
+      "sha256": "f084d0cd0137b2ae7f43039b33dac272870a046161657ac08c5ce376a99ed50b",
+      "storeCaseId": 233,
+      "title": "爱阅看书2.0"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4a8a3ac014a436d92620e497f5dab9ea.mrp",
+      "sha256": "a0e20469ae64e8f8d7bc30567fa537bf788cb5dd9fba58b2ce026628b39d360b",
+      "storeCaseId": 239,
+      "title": "暗黑穿越-真实杀戮"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gahcy.mrp",
+      "sha256": "5eca5a6100ad9b4c484fb3705327a103f6b89c5eff976f882eda21e6feba0852",
+      "storeCaseId": 240,
+      "title": "暗黑穿越-真实杀戮"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/ajss.mrp",
+      "sha256": "6f8d34540da6837477b39c5a691f8976bd9a6c463389f76554fc824b50c2b0f9",
+      "storeCaseId": 253,
+      "title": "傲剑OL"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/69131c0ffdfadda1346d47ea76dc88f0.mrp",
+      "sha256": "21c44c652b4787cffdaf1fba387f87723064faaec18c0a28a8a822e9769fe5f4",
+      "storeCaseId": 265,
+      "title": "八仙过海"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/fe7686548c0a6e243eb4da50d05070fa.mrp",
+      "sha256": "c40974719d5111348c8f14c1b45a243e978fd6ebd1d91c8ec105ee1cf83e4dec",
+      "storeCaseId": 266,
+      "title": "把美女灌醉"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b4d2272e4419c61d4081741ec81c51a0.mrp",
+      "sha256": "431e5c56f6da5307d5c96e18035dd9cae55c1952e7a8e2aa21504e0d15172d05",
+      "storeCaseId": 267,
+      "title": "把美女灌醉"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opmmaa.mrp",
+      "sha256": "7191410f5b63a71e604bd702df55407d2e281d84a7c46e9188d00f51a4ebc9ae",
+      "storeCaseId": 268,
+      "title": "把美女灌醉"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f1eba0866f7713dcc30c9cddf44ad128.mrp",
+      "sha256": "bf08aa30e0b0110ac52e00cc182dcd0cf568056fcc19ef67c5351c5b10c28c51",
+      "storeCaseId": 276,
+      "title": "百宝箱"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opbacc.mrp",
+      "sha256": "43e11fab41fae0183069e82d8a5a665a54136bb04c295756e6b1b3665d00468f",
+      "storeCaseId": 279,
+      "title": "百家乐"
+    },
+    {
+      "path": "240×320游戏大全/大屏棋牌休闲/令牌-五款新FLASH游戏_大屏棋牌休闲.mrp",
+      "sha256": "206c6b87c62dcefd5dd872b3918860170989e23d94e8603f280dddc2ee5629c5",
+      "storeCaseId": 295,
+      "title": "宝石迷阵"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gbydzz.mrp",
+      "sha256": "1366746ceb61969a5535c49e4e87eff037657288c6ea2dd6deb93402613f471d",
+      "storeCaseId": 314,
+      "title": "避孕大作战"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/6793f037be728770621fae991994dc8a.mrp",
+      "sha256": "3a7f156f896d5c797cbfd4f9442dc367549bfce3e263fd5b93da868643a9457b",
+      "storeCaseId": 315,
+      "title": "便宜！绝对划算"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5242efcf378385087915fde6e719b3c7.mrp",
+      "sha256": "dbdbda48e1955fb7be8e595b425100bf2acb767459fb9a5f3695e86a1adc88a9",
+      "storeCaseId": 336,
+      "title": "捕鱼达人"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/bydr.mrp",
+      "sha256": "9c23de273a8e1c72179fde3a562db319a4b84b1cf24ac7806d94fc4b848f498a",
+      "storeCaseId": 337,
+      "title": "捕鱼达人"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a66041a4e9614da4aaf3e724707b4a64.mrp",
+      "sha256": "16422d1e9f4dd42ece01b1faa78f9fafdaf59b515e48e64759a4ce25b22a368a",
+      "storeCaseId": 347,
+      "title": "猜奥运金牌得手机"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opcddz.mrp",
+      "sha256": "f84079f61a91adca45b45a04c9d729821beb23d40a80b91ba0efce9a25494823",
+      "storeCaseId": 349,
+      "title": "彩蛋大战"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/182630_1627126彩虹qq2014_3in1完整收藏版.mrp",
+      "sha256": "84bb7ff3bc660c345736d632d43739a6d77bc42bef1160451381e302832ae7ff",
+      "storeCaseId": 351,
+      "title": "彩虹QQ2014完整收藏版"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gcjhj.mrp",
+      "sha256": "9d5ff2e38818f0359b0455985db0dc77dd42a275fb3c131eccb57abc8bcc3cca",
+      "storeCaseId": 366,
+      "title": "超级合金装备"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/超爽绝杀大合辑.mrp",
+      "sha256": "49a89bbaed2236e988090d3d4b8401d938a1bd50a57ea7bb63f1cbdf94fef1e5",
+      "storeCaseId": 396,
+      "title": "超爽绝杀大合辑"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opcyds.mrp",
+      "sha256": "b772dce13a807c188c286c2ae6bbc3639cc7bb0342c6070da9e7c05db8352f9e",
+      "storeCaseId": 405,
+      "title": "成语大师"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opcyhx.mrp",
+      "sha256": "fe11215726bbab11560a8db95bd73c97396bb08ddf73c55a2ea0678c9afdbd28",
+      "storeCaseId": 432,
+      "title": "穿越火线之飞虎队"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/088ebd7aeab3493338fefde00d069cf4.mrp",
+      "sha256": "9fe9e6711565c17d4cdfcf61d33cce38f801297bb5da16c32ae3887a8109bcbd",
+      "storeCaseId": 451,
+      "title": "吹裙子"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opckjs.mrp",
+      "sha256": "ec8192f53b46f28fb05053ca6024df4754d634db947c16884957ea9287390de0",
+      "storeCaseId": 461,
+      "title": "存款计算器"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ca5ae1a92775c344058ccadebbf74e64.mrp",
+      "sha256": "bd56398faa4bc1f44b1de36f18c49d67e8f90ceb74c082e84a15ec68a98faae3",
+      "storeCaseId": 465,
+      "title": "打小鸟"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gdmkd.mrp",
+      "sha256": "2965fdfdea962f7820f19d6b90a997c472957199447bf3fc85404fc59424ae23",
+      "storeCaseId": 491,
+      "title": "大漠狂刀"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/e8aa2132c2c40351a22b588e4f2f8dff.mrp",
+      "sha256": "50c6d9a8c854e31248d5e78bac999a2e63bf1bc34e5066f239dee74369ec8aca",
+      "storeCaseId": 498,
+      "title": "大师在线设计签名"
+    },
+    {
+      "path": "mrp未上传商城游戏/大雄约会放屁.mrp",
+      "sha256": "40ebe3d54cdb8cfcd61c76bdc7cfbcdec7a369b59ff7ee6efb47af3f6f0c8e78",
+      "storeCaseId": 500,
+      "title": "大雄约会放屁"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opbbll.mrp",
+      "sha256": "3fc95737ac6aa48d2658770f34ee279b7b9bdd5353b26631bcce4a0e2d5a5b6b",
+      "storeCaseId": 506,
+      "title": "弹力球"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gdmbj.mrp",
+      "sha256": "72dc78ea06e843669cc352666c779e1a2c315eeb8ae2647a66190b997a621f22",
+      "storeCaseId": 523,
+      "title": "盗墓鬼吹灯笔记"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/719ec639db451f12330787cd46e64acf.mrp",
+      "sha256": "2f18586f5436e9363bcac2d2d3725d836d44c1dca581a2146d752999dd0479fc",
+      "storeCaseId": 543,
+      "title": "第十亿个幸运者"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/cd40a1b1f5434db8592d6f487b08e7db.mrp",
+      "sha256": "194ee621b9105cf56cf7fd3ce663e5e0ab66d65812e320fe66689a092caef3f4",
+      "storeCaseId": 545,
+      "title": "第一次亲密接触"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/da7610404a0d4a8952e9ec58a7fd8b32.mrp",
+      "sha256": "047957a34f28510ad3fc72189d820c0a17f8149a5a352d8a451338d12f47f384",
+      "storeCaseId": 551,
+      "title": "调色板XL"
+    },
+    {
+      "path": "mrp未上传商城游戏/谍影重重Ⅱ.mrp",
+      "sha256": "7312804c749925e17ea2d2681eeacfcb9ca3d97449d3f14eb6e96118bb378138",
+      "storeCaseId": 553,
+      "title": "谍影重重Ⅱ"
+    },
+    {
+      "path": "240×320游戏大全/大屏飞行射击/正版-毒蛇行动2丛林之谜_大屏飞行射击_.mrp",
+      "sha256": "06921f8c5f7557bbb76bec5a5789ce5e9af819a451e6bd4f6d6ce9687172b14a",
+      "storeCaseId": 575,
+      "title": "毒蛇行动2-丛林之谜"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/fa64e0961dd221106ef1ba2017998272.mrp",
+      "sha256": "cdfa0bfb857721b5806afb0646327dedce08d5d2e51043e4a05c36a34922914a",
+      "storeCaseId": 577,
+      "title": "独孤九剑"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gdwzw.mrp",
+      "sha256": "b301b9c271b0aba56e61e1ddba09d927f2983e5ca8a94da90dc407ed5ed3e045",
+      "storeCaseId": 583,
+      "title": "赌王之王-黄金城"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d82144c91e9ccdce402593471ad50f24.mrp",
+      "sha256": "3c40370ab8ff49ddb1b0891a7f8d14ca30b7efb81e5ab54302751384b0917f8c",
+      "storeCaseId": 589,
+      "title": "多款游戏限时免费"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opdmfq.mrp",
+      "sha256": "9c16a10b065890b0f61c2c351e53a8dd923faa3fe44ec5701b2efc2aa2817a05",
+      "storeCaseId": 596,
+      "title": "夺命番茄"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7e93f4d03a5b4bcc71f2b89020396608.mrp",
+      "sha256": "07d2b3729adce1fd0f55be9150ddc326058c38c0e3ddb01c3044b98982bc9ddf",
+      "storeCaseId": 633,
+      "title": "放假啦疯狂游戏吧"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gftrzm.mrp",
+      "sha256": "1f40fef4b500bda527924a73938548afb290a059e52f0cc9541a00f4e6baee24",
+      "storeCaseId": 640,
+      "title": "飞天忍者喵"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f16e1694acb12775144414c7ae84e27e.mrp",
+      "sha256": "1f99843cf3ec11ed400d259e13e00a3b9b9bbc44452299e1698f1c919d0c6df0",
+      "storeCaseId": 643,
+      "title": "飞信"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/04eb906a292bd349c0d4abc6da05cd00.mrp",
+      "sha256": "e1b606ca026f6b71fb0d4f4475a5564b8ecf58ed13082d7b7ea5e7d3ad513c25",
+      "storeCaseId": 645,
+      "title": "飞信"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/sgmj.mrp",
+      "sha256": "deff828e4663fd36b3eabdd4038f33742b550f33d3a9fd27c25715a0f09b2e89",
+      "storeCaseId": 659,
+      "title": "风流三国"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3195e5496333c86a5cecdff65e1adad2.mrp",
+      "sha256": "607228c49f0d8b65a0bbfa105e589f447c0658291b9b95359c2b346f346fc209",
+      "storeCaseId": 665,
+      "title": "风云三国"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/715b97c39792c05e69ebea4bc80c1940.mrp",
+      "sha256": "5b97628148e270e850478700766cb58b8380705a109d102641ebb7b80ebaf418",
+      "storeCaseId": 673,
+      "title": "疯狂吧！光棍"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/otabydr.mrp",
+      "sha256": "4a2f54cd81debca5f11eec890f46febded07ed80f8cbb40a4f583da27e4d7196",
+      "storeCaseId": 674,
+      "title": "疯狂捕鱼"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/tkxn.mrp",
+      "sha256": "b7c8dec4e67755c4ec3ffbcf4a53891fef3dcd51489d98392cd033825bea0ff2",
+      "storeCaseId": 687,
+      "title": "疯狂的小鸟太空版"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/01112232cc4763c2c610b1bbfcd72320.mrp",
+      "sha256": "268191b06e8dfb642450ebfceccb0f9479feaafc07154803e62a2373545320fa",
+      "storeCaseId": 723,
+      "title": "父亲节抢楼送手机"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/dcc7afb12f0cec7ed7d0b1265807e549.mrp",
+      "sha256": "03458eb0578bcd0dd198d47976f7f90fe3bed95ddbc2c61fb3ea39272643436c",
+      "storeCaseId": 726,
+      "title": "干爹的爱"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ggdda.mrp",
+      "sha256": "6522d626cac1b7f26e93e2f2e65d3889994904a08e82c8efde91783a71fa2586",
+      "storeCaseId": 727,
+      "title": "干爹的爱"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gangwu.mrp",
+      "sha256": "7640753b4e54eb64ac766e42f59d4e03039d72e7ecd55890b0448fc3092e1504",
+      "storeCaseId": 734,
+      "title": "港式五张"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7d50483fb4d6ee2e539da3ea9f1054c9.mrp",
+      "sha256": "d9d655c0f765b1330ec54c54ca89c26cc61e3e8777bedd7774ee656b5a918a37",
+      "storeCaseId": 752,
+      "title": "给力猫"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7a692885dadbd5c675759178c4f2f6f9.mrp",
+      "sha256": "a7c4b37ac557fb7592b55ad6423dddaea14f6b421c37d031634095b331cf76e5",
+      "storeCaseId": 753,
+      "title": "给力猫"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d52f2fad768e094a3f58a26816bfec2e.mrp",
+      "sha256": "4624338a5b7f7fb81ec8b8154e1dca24b7d68343cc947e92df3438b6e6637d96",
+      "storeCaseId": 755,
+      "title": "给力枪手连环杀"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/wapdjjp.mrp",
+      "sha256": "6790610d453189cf519c6698c9b1afa0c007ccebf8e32df82d14f11be0403b47",
+      "storeCaseId": 758,
+      "title": "更多精品游戏"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4cb2183843c9ac1d4d4517adf3b6081a.mrp",
+      "sha256": "de698566d2e77370263e0fa685ade6b9607065c3e5718a710fcca2e6e7984989",
+      "storeCaseId": 768,
+      "title": "公交查询"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/58a418cd7673542d5d1f8e8d21913a65.mrp",
+      "sha256": "562a9db0d8c1c51d50550e8a4593f4acd72b76be92cd74035ecfa0602f5ceb0f",
+      "storeCaseId": 782,
+      "title": "股票交易版"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opeggf.mrp",
+      "sha256": "3febca8d33187a509265834d87a277375e1f73af7ce8440428a018892204b99a",
+      "storeCaseId": 783,
+      "title": "怪蛋风暴_大屏版"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ggsfml.mrp",
+      "sha256": "8ab5f200ccdc038c2309e53793d0f1fcd9737f0b040e3dc9ab3b6188afb18bf6",
+      "storeCaseId": 801,
+      "title": "鬼手伏魔录"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/449204f7b671d41692d9f983c7b02606.mrp",
+      "sha256": "a3a7cc9f91827deebea24fc24bbdacc09f67c512212e9502bb748b9b3ec721a2",
+      "storeCaseId": 809,
+      "title": "国庆去哪儿"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opfkjm.mrp",
+      "sha256": "74211f55951f2938d1eedd46bfb5c81f140f8cd20e4a23cd49c728b775fdb8e0",
+      "storeCaseId": 839,
+      "title": "核弹风暴"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ce284ef8d14465d014e27c30d50aded2.mrp",
+      "sha256": "eb7a9abe224a1be99f212f3e9e5989d8b4a0ecfd9ae01f86c5c925ab6e6146e7",
+      "storeCaseId": 841,
+      "title": "和美女20次亲密接触"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/ghjdtd.mrp",
+      "sha256": "1d234f19e5a68f05b9beb5aa2afd2760dad1f72f7b6c3904d9e081576edd4bd4",
+      "storeCaseId": 844,
+      "title": "合金弹头2013"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ghjdtd.mrp",
+      "sha256": "aa359f3d27bba8d54a63475c18b3bf9dceebb5616672057ba47f46e73b345e4c",
+      "storeCaseId": 845,
+      "title": "合金弹头2013"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1e26b20cdb21dd9cf95ca66cf5ee2f5d.mrp",
+      "sha256": "01c496984fcc94d914cfae196c4511a8671ec11d24464e52c9be3257b50001cf",
+      "storeCaseId": 855,
+      "title": "黑暗传说之利器"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1dc855a1351bc22fd2efa91fb2f90e74.mrp",
+      "sha256": "a6b7b21b97b2892a79c6461732ba75a2aff6b751f26b7dfa8407426aa1b190f5",
+      "storeCaseId": 880,
+      "title": "欢乐马戏团"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/082126624f6a1e9db0388e42eca4c84c.mrp",
+      "sha256": "4310c4a925f7eda3a7e078b7c7d59d61f52a0245d7eb2405c27110ba081a76a5",
+      "storeCaseId": 882,
+      "title": "欢乐五一幸运抽奖"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/87485_0920200sanguo.mrp",
+      "sha256": "bcbac32ad7567e1112f0c15db6c8aae9752bfe4faf2f2492f5665e7332c51702",
+      "storeCaseId": 894,
+      "title": "幻想三国"
+    },
+    {
+      "path": "cookie曲奇游戏中心列表所有游戏240×320（无中文命名）/hxsg1.mrp",
+      "sha256": "a3a3ecfd9e9292c90ffb1be97b1290383850ba9d65454f6ece323ffa01ddc91a",
+      "storeCaseId": 895,
+      "title": "幻想三国online"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a9b23ffc3daba84dcd429a9ae90e2465.mrp",
+      "sha256": "b0b92c9de49ac996c2cc36eb646d5598b142a7211cb12a6f51073b384a23e6d5",
+      "storeCaseId": 901,
+      "title": "黄金矿工"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/8c536f8d627c4b2c8763310c74171fe0.mrp",
+      "sha256": "58a07975e2e2d1c43ecc117a1bcb388463208045771ee221b71bf964856253c4",
+      "storeCaseId": 908,
+      "title": "毁灭巫师"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/ghftmm.mrp",
+      "sha256": "f3480db5e06a2434202e8831b797f8fc28dec96b9f7396b220ff9022d727ab80",
+      "storeCaseId": 910,
+      "title": "会飞的汤姆猫"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/c70a79349530a404bd1f0129bb53b266.mrp",
+      "sha256": "b8f2c0c17c5e67e84ff3e8f764f9709c3e7fe0ed5416ef99284b595e92de8ae7",
+      "storeCaseId": 918,
+      "title": "活动介绍"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/648734eaceb9632ab2bcefe85cd06134.mrp",
+      "sha256": "36407bb3b3f5016918296cdc8ef5a3195d8fd27f17d8978958653f91f717ce92",
+      "storeCaseId": 922,
+      "title": "火车订票"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f0cec678e0916219c1fcd4045ba24dac.mrp",
+      "sha256": "2e3da172f90e8e68cdc1c7a05cb30fb15727dd66b3f7a06ad4a28d78869f61f0",
+      "storeCaseId": 923,
+      "title": "火车订票"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gjqcd.mrp",
+      "sha256": "219332efaea5184f6c2da7779fc35404690b378e4083818245e491dc1f47c67e",
+      "storeCaseId": 947,
+      "title": "激情冲动"
+    },
+    {
+      "path": "cookie曲奇游戏中心列表所有游戏240×320（无中文命名）/gjpjd.mrp",
+      "sha256": "dffd26cf9e4a8fae3194c106b8bbcc5d11e89423513017fc27b293d4bf06d008",
+      "storeCaseId": 960,
+      "title": "极品家丁-9527"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/29be0e91adc43d6f550df1e92d2cc7cd.mrp",
+      "sha256": "3af8f7b6b3e74231bc5dc2e6388721fc65ad5a89455bdd2feb12bc0f942a45b7",
+      "storeCaseId": 967,
+      "title": "寄生兽"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ab1a2b8f0a7cf6eb0cb8fe0a013ab0ab.mrp",
+      "sha256": "628536c8e87ae65ec307a0332472c81c9069820209a9b9685cb6acc6b36dd962",
+      "storeCaseId": 968,
+      "title": "寄生兽"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f58809c002382ead0619f9e2eb11da62.mrp",
+      "sha256": "5e96056c36afd9f5e9f000a4d02775df71ad24b6fc823d736e33714a0024580f",
+      "storeCaseId": 975,
+      "title": "假日休闲乐逍遥"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/df8ed715de1c36384121b2e7ad42002e.mrp",
+      "sha256": "70745a80f2a1eb064fbf5a0e8014b2b744f38e6e3220718570a42ca380dd8527",
+      "storeCaseId": 988,
+      "title": "剑侣情缘3美人如玉"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gjsdbz.mrp",
+      "sha256": "428a02be4641ebec5eff018db9fd70ee0dd784bf81296501e1773a2080c23634",
+      "storeCaseId": 1004,
+      "title": "僵尸大暴走"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/659877407b90aa737024301aa3b8188f.mrp",
+      "sha256": "213c4194a4be77aaf8a42c56feb77c3ed86f4e3acfc5c77c88c419ce241f9ed5",
+      "storeCaseId": 1018,
+      "title": "江南style骑马舞"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/xlsbb.mrp",
+      "sha256": "a205a2b7c8b88e77d1e42a27c9ea4f3c2f1dd4eb838f690faca881e0f3e08adf",
+      "storeCaseId": 1021,
+      "title": "降龙十八掌"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/fd5c97cda4b4c44403fddab29b9c4b47.mrp",
+      "sha256": "45bfee7808137387fc198185ad0ce6fb92e786ddc88519c2f3bebb59fa2ddbf4",
+      "storeCaseId": 1040,
+      "title": "节日祝福语"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opjpsg.mrp",
+      "sha256": "e18ef735ced18ca2c30af52bfac02fc3188bca72957c67e307f792f9d1c3cc58",
+      "storeCaseId": 1062,
+      "title": "精品切水果"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gjdppl.mrp",
+      "sha256": "c03d6ff0d8ce6a2a214c6cd8a9c6b0c738bd09f7e34e5ebc93527cc188aebae5",
+      "storeCaseId": 1075,
+      "title": "经典泡泡龙"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b275bbc404422f81d0a2f081e568da31.mrp",
+      "sha256": "01be2798d092e1a17071dfa9a0e626d1034ddb459790acbd5045877f1344c998",
+      "storeCaseId": 1078,
+      "title": "警花射击训练"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gjjjy.mrp",
+      "sha256": "2a990f690b7155389ca78cee43efe491158abde8c837e55d147a7936f2ec4a73",
+      "storeCaseId": 1081,
+      "title": "狙击精英"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opjzrb.mrp",
+      "sha256": "b66d0188e0d1aa085d323fd4f282572edcda6c254ec864ae07a5304fff18b476",
+      "storeCaseId": 1083,
+      "title": "狙击小日本"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f059cea39844ca1f99873832db893733.mrp",
+      "sha256": "0a543858d6d2e56a72b929cb1ecc40b099ff95c917c3ee6d537ca63dd4a13807",
+      "storeCaseId": 1091,
+      "title": "绝命杀手斩龙刃"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a1340bcbc89592cc1efa63e8d66ef0fc.mrp",
+      "sha256": "8a59827f3583872b26379bb892b9d2c24ae9c78d802e5304380792a5d7f3bf9c",
+      "storeCaseId": 1143,
+      "title": "快点网址导航"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/14f6762aa1bc45989685887137632d1c.mrp",
+      "sha256": "f28e938c35e95168813412a177b5cdba3f27df732750dc0d0e016f83bf55ff46",
+      "storeCaseId": 1160,
+      "title": "来电助手"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/03c5e4ad11aab94896700cbb7d99b695.mrp",
+      "sha256": "c7eb219b7029405af879dbdebd4432eb7593ce74627d7ff4617a0d9c22ac1a09",
+      "storeCaseId": 1190,
+      "title": "冷笑话大全"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/642481aa4feb5ce0ae60a12bcbc7f9ba.mrp",
+      "sha256": "1ae6b28a2c9dc0e8ee6ad0492751ea7e11c77bfeb0b9513f3934ab4e09d5cdb4",
+      "storeCaseId": 1201,
+      "title": "恋爱气球"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/66bac72da423d5ba58cafae69f60e0d0.mrp",
+      "sha256": "a1f5bffd4f6721ea375b917c61e9adc7ea1e5c517865f7e11e6f65d7d745f563",
+      "storeCaseId": 1220,
+      "title": "零距离触摸美女"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4675637bcaa436310a27c6a7b32bf616.mrp",
+      "sha256": "16af83126024c6ae01c310b6f9cb552fb294a946e526cbc17f50924be3ecfd87",
+      "storeCaseId": 1225,
+      "title": "灵剑封魔录"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4b3daa3c370d1107d511a00896c1fbdb.mrp",
+      "sha256": "7f089ce4904f01c4ad162690b7da3e97885a41d8a113f601b88670e2620f7f6b",
+      "storeCaseId": 1285,
+      "title": "猫捉老鼠"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/bc8f9cd1494f8d3b3975d6e5e92a51fc.mrp",
+      "sha256": "10a7d9d7cbf942d0c29855e33f7e4bbb943df8f6b485b0542214dc91679a6614",
+      "storeCaseId": 1286,
+      "title": "冒泡"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/435e8570bc4356725da1c50031d5dcbd.mrp",
+      "sha256": "6196739f372332aae09c20b0bb1169c5f7770714d26e9f2848f7e9ae1b8cc3c9",
+      "storeCaseId": 1287,
+      "title": "冒泡VIP游戏套餐"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b3f83dd6db263f1ad75b88ac553531f2.mrp",
+      "sha256": "f2c012d71525a5df77d384f2b5e8c059be324f92595dde64e7dcfa1b633b2959",
+      "storeCaseId": 1292,
+      "title": "冒泡看图"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/943a9df381e27adaee5c2b7af9545e7f.mrp",
+      "sha256": "492996034cd8c21b8ec80ddceebdcc10b07bfebd6a1e26421b4d39c387a2fa6e",
+      "storeCaseId": 1296,
+      "title": "冒泡平台"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/cfd4df865dbe063877b4c5539ead5291.mrp",
+      "sha256": "c526a2eb98905bbd363d8b29b372a667aca0eda30e0d20534e764f71aadf0489",
+      "storeCaseId": 1297,
+      "title": "冒泡棋牌"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/mrpcc.mrp",
+      "sha256": "8f3e2f3729980cec7d296181c5838b9e3db1156dbae6e2d7d6a54a5d02693a5e",
+      "storeCaseId": 1298,
+      "title": "冒泡棋牌"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/opzrjmh.mrp",
+      "sha256": "226a013bf76d3efab41240fa5147046d25157bd62c5defd74677830c6eaebc20",
+      "storeCaseId": 1300,
+      "title": "冒泡软件魔盒"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/9bdccd09b020197a780d067e1c86478b.mrp",
+      "sha256": "bd9f6448338222c85c401c0a32a8c95dd0dae2f814582c7c11d2e555e7f04d8d",
+      "storeCaseId": 1301,
+      "title": "冒泡社区"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f9ed9701930345c46aa79a8149788c80.mrp",
+      "sha256": "34fed48205f9bf8f2ce2817a808fa4cd4638def69307879047d24e1b0a76bbc7",
+      "storeCaseId": 1302,
+      "title": "冒泡社区安装"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/06ac93c547dc060b368e0ce106ee1f70.mrp",
+      "sha256": "f4ee2b90e1f0bd7d6ca3a06fd7c315c11c2f454a03a4651ad29428f72a6a2a85",
+      "storeCaseId": 1303,
+      "title": "冒泡视频交友"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f61064ac89454ac9d022901d44f8273d.mrp",
+      "sha256": "e22e2f277086cf719c0bb83377e6a33f194654d41c863d864a2b9adc91e08c1b",
+      "storeCaseId": 1309,
+      "title": "冒泡听吧"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/de9f58f3f4704c21813b960589869fb6.mrp",
+      "sha256": "f541f79da05170200b7c513e4400aea8977b71b272207cfafa846e866734548d",
+      "storeCaseId": 1310,
+      "title": "冒泡网"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d2641fe9a6f1d8f43ce9609365009508.mrp",
+      "sha256": "310be84b0d5e2df514d00637d99565c96f3327a0a6fd16297912b3c11e1e6cc5",
+      "storeCaseId": 1311,
+      "title": "冒泡网游"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1baf93262847a07767284388b89d2db3.mrp",
+      "sha256": "dfb97fbd448561f868719629a0a4964f8cb0139cfc305a05e68026d60e555a80",
+      "storeCaseId": 1312,
+      "title": "冒泡音乐"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/2e1114e5048d2b8b6aecede7346fcebc.mrp",
+      "sha256": "2650b661f61776cadaa68c0c1d8dc5d5ae626a376c62ceec6edefde17735a0ac",
+      "storeCaseId": 1315,
+      "title": "冒泡游戏商城"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/49740_1103560wbrwaz.mrp",
+      "sha256": "08bd770d3f474ba1b1deba9430c9a46501529380cb706aa95f25f65d4b308dff",
+      "storeCaseId": 1324,
+      "title": "冒泡浏览器安装"
+    },
+    {
+      "path": "240×320游戏大全/软件类/通用冒泡浏览器3305版_网络浏览.mrp",
+      "sha256": "cadc5a254125ac6f1fc68910d9e6c30d4cd153a6aedc36e260f9e93e3b6580ee",
+      "storeCaseId": 1325,
+      "title": "冒泡浏览器安装"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gmxdc.mrp",
+      "sha256": "0ef041ce5471c28f120441bd585bb1b2ced4e8652edea27360f033949682a48f",
+      "storeCaseId": 1328,
+      "title": "冒险岛"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1a7069947c46f1bffae467490d470bb3.mrp",
+      "sha256": "93120835335cd62699a1fb57934403f5447e0349577d20b8c094e71750611492",
+      "storeCaseId": 1339,
+      "title": "美女3D飞车"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gmnffk.mrp",
+      "sha256": "67ebf7259ee3ea443f66788f8a1e177f368a769917ad2df7a727aa7a0ff5e40d",
+      "storeCaseId": 1350,
+      "title": "美女翻翻看"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/484d31666e682b1b121e24a82fb2a662.mrp",
+      "sha256": "fd898cb3a7baaa754fceed1690dbec939928267311210da55d596eb876d43134",
+      "storeCaseId": 1386,
+      "title": "梦幻封神"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1ac8e06df8e9d35b7d307b21642182ff.mrp",
+      "sha256": "c7b8abc2c182d912cd474a44fc18618bf23a5e5fd5dc44c8702f4ef474ed6d8b",
+      "storeCaseId": 1406,
+      "title": "免费抽奖|欢乐共享"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/eb5c7a3ece08aa88f4704e13a4518b9d.mrp",
+      "sha256": "860731e221eba7f3e65f6fbfee063e2bb04456ec9e6fdd527d3ca31b3005ca56",
+      "storeCaseId": 1408,
+      "title": "秒杀iPhone的游戏"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/cf3cae04628e37cdd32bd9b7d0718362.mrp",
+      "sha256": "b472b37ebc943f6cdb3863278668a5c9c8f35d40c8d71f8d9c241499f73d499a",
+      "storeCaseId": 1410,
+      "title": "明星美女麻将馆"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/eaad25a94a5a75e3c4d070f90398cd15.mrp",
+      "sha256": "56f023048fefa85d2a9046bcadba2463854267acfd028d1afd926b806a1c74f5",
+      "storeCaseId": 1414,
+      "title": "名将三国OL"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a6d69ac858e7fd2b85bd605da2901a12.mrp",
+      "sha256": "976ef3b6962623d48116810f261f8129ccac0fb77a229c771e18823289bdcad8",
+      "storeCaseId": 1491,
+      "title": "内衣大盗"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/638c7075cf3cde43659a0bd545a354a8.mrp",
+      "sha256": "f7db7d737ab0afe1e3f9b93e44272e7adaa269f88fe3759f81b11ab557403791",
+      "storeCaseId": 1504,
+      "title": "年年有“愚”"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gnmddz.mrp",
+      "sha256": "bec49141626ae43ee09c24a21a9a7c976f9f316246e1db48f8ed5b3adb2eeaf4",
+      "storeCaseId": 1511,
+      "title": "农民斗地主"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/109428_1320040gnhtq.mrp",
+      "sha256": "ed122f97d11b7aea56c7050be05ff207de97373714f7e0d53d0d7947dff464fd",
+      "storeCaseId": 1515,
+      "title": "怒火铁拳"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/16381c9add2c916a536ae8526c2cac42.mrp",
+      "sha256": "2971e429c013c2962b77381639421754af64895af554f6e20d06a79e79006bbd",
+      "storeCaseId": 1516,
+      "title": "怒火铁拳"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gnhtq.mrp",
+      "sha256": "173fe2107a57523f1474dc7fc616a48af912ddb43a815d6f3d02f7bbb87a6121",
+      "storeCaseId": 1517,
+      "title": "怒火铁拳"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/8c2e67b60d14b902ff5f489bf25ba094.mrp",
+      "sha256": "5c34c1ba306768699f226c066fcd9eb205755e3b0304f85c994828dea4b68b61",
+      "storeCaseId": 1526,
+      "title": "欧洲杯有奖竞猜"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/54d2896c9fa0d7606773ebd03f71c36d.mrp",
+      "sha256": "5849ec702dc176fafb8261a14c43ac510dcc70a7fddb479269eca4b5b9a4a486",
+      "storeCaseId": 1560,
+      "title": "七夕“遇见爱”"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/890b9279225c0c4c6e6d8c3c32280bc4.mrp",
+      "sha256": "27a300f7a5d5850e86b06cfae96067c1f8f30ec89063d7ebb3f7d0abe0efa625",
+      "storeCaseId": 1561,
+      "title": "七夕冒泡送情意"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opbydp.mrp",
+      "sha256": "89e2432f9059ce689372130997d1208787eac3844c5a2b475685179775ee9c86",
+      "storeCaseId": 1565,
+      "title": "奇迹捕鱼"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/56beb74a35805b231e016177af6f0752.mrp",
+      "sha256": "10363a01612a39e3a1d8efc382a25d3e7b11246f90ec9fe36d22b1ee96b971e9",
+      "storeCaseId": 1585,
+      "title": "抢！注册道具费全免"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gqddyd.mrp",
+      "sha256": "018302eb61f21a5a72931b95c65d2b1faf17671a9531e2358cac70c04e76232a",
+      "storeCaseId": 1589,
+      "title": "抢登钓鱼岛"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gqddyd.mrp",
+      "sha256": "9c7f3b74e330b58f7c9f4b4b11628c64292ad6ea82fc5437e36c14664f2dfc40",
+      "storeCaseId": 1590,
+      "title": "抢登钓鱼岛"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gctdl.mrp",
+      "sha256": "85f1ba4bb6fa185db343d8d7add96c6c1d9a2db5c80fc98ded3ea02fd57d395c",
+      "storeCaseId": 1591,
+      "title": "抢滩登陆2012"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/msqcjnc.mrp",
+      "sha256": "a22460e679f29e7c19aab4eea04e9eb36f1a842d2910b9d6c4a2983773f67775",
+      "storeCaseId": 1604,
+      "title": "青春纪念册"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ea1bf9ec3c68dc12a56f3349f5b76db6.mrp",
+      "sha256": "0e7906f39c3b826ff4cc9ec56df3870c71a30356c3bb489365761b31ab1ef08f",
+      "storeCaseId": 1616,
+      "title": "情趣高手"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/ophboy.mrp",
+      "sha256": "d03e1d58a4a0c9fd30860553a377d00f3d9db2740a438958defc59477ec150ec",
+      "storeCaseId": 1628,
+      "title": "趣拼高帅富"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opyiqu.mrp",
+      "sha256": "909dc139eb0b61e4c77cd6307880e82bfaa1df980983c4261c25329461ec0c5b",
+      "storeCaseId": 1629,
+      "title": "趣拼图"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/01d696853c30b5f200ae29c9b282a2d1.mrp",
+      "sha256": "9c6956531a70e1de74b3211aa0679ee81ea24c2a63a56c08706aca0830a216ad",
+      "storeCaseId": 1630,
+      "title": "趣拼学生妹"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opgrrl.mrp",
+      "sha256": "919712359f84661ae00a0dedaa1ef65b338dc263821321a1c71c27e9a587c5b0",
+      "storeCaseId": 1631,
+      "title": "趣拼学生妹"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/182630_0035570人人网客户端.mrp",
+      "sha256": "1051c4aaca0d2894cb777333aa9123f80ef6f93540c00d88dde942524a5081df",
+      "storeCaseId": 1681,
+      "title": "人人网"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/grzsgb.mrp",
+      "sha256": "150e9b63a5226b3f545fd1d9a47ffd58ac872719b894363a0e472ae36f93731a",
+      "storeCaseId": 1696,
+      "title": "忍者水果"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f90b857999d5a445af313fcea9819617.mrp",
+      "sha256": "c9e761b8dd38e5c59551b9401ef292a2fc63e6330b53a9cacabc1ef01bd6a718",
+      "storeCaseId": 1697,
+      "title": "忍者水果"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b7554b4e0fe0c0b90e40ba2a2fcbefaa.mrp",
+      "sha256": "74d1d24283c79baa4326683ab0e136bd66d4b98bbf5aca54ef7bca79892e7e89",
+      "storeCaseId": 1698,
+      "title": "忍者水果"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/010a4cdd32f3f63fd92bf651bc1c1618.mrp",
+      "sha256": "d356a3f6a079f7c8197e7315dbce7af44ad6dde2bd332542ff43b8b3121127de",
+      "storeCaseId": 1699,
+      "title": "忍者水果"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b93ad498910ac70f3ecf2b57bfb8b3cb.mrp",
+      "sha256": "beb68b0c1c86a5598b2552ee5cd6d4f2977e0cf53228bf9f404ea30573a9eba9",
+      "storeCaseId": 1700,
+      "title": "忍者水果"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/490a607c4cef630002d43b2b4910fd06.mrp",
+      "sha256": "540c37ee425bc013fe76ec9eccd6d8b07d932044fc589750c5ce78877e6618b5",
+      "storeCaseId": 1703,
+      "title": "扔纸团"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/START_GRLSZ_MTK_650K_240X320_24_5N_IT_V1003_110316.mrp",
+      "sha256": "f363d7c7b9975ced7eb2f2abfbc210ea60eb398207f5c3ab61d70d9e70497626",
+      "storeCaseId": 1707,
+      "title": "如来神掌"
+    },
+    {
+      "path": "240×320游戏大全/大屏棋牌休闲/正版-首发三国保钓战_大屏棋牌休闲.mrp",
+      "sha256": "04dad6a6db13e50070deb05fe9fecebeb9fe20f44a6865ddc5222ade83a1e9a1",
+      "storeCaseId": 1714,
+      "title": "三国保钓战"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gsgdfw.mrp",
+      "sha256": "214d4f0bc17b9f6a50ac2626825a22bee1db974ddbb51e817b59f7296d30814e",
+      "storeCaseId": 1715,
+      "title": "三国大富翁"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gsgdfw.mrp",
+      "sha256": "e7ff5d6dd323a360c95823cdd317bd5af38bdd3eeaf7909a4b8745ae808c0974",
+      "storeCaseId": 1716,
+      "title": "三国大富翁"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/08ddddeb855cd55cf27488353ceed9b8.mrp",
+      "sha256": "5a6bd233c9b4d978f377015da9fdd6813ffea9597122cf2b4e37a5664159b0a8",
+      "storeCaseId": 1730,
+      "title": "三国猛将传"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gsgnq.mrp",
+      "sha256": "8f68831851169a7dc8fa5a5582e3eca1daf06ef021cb6bd6c284bb8f61a1adf6",
+      "storeCaseId": 1736,
+      "title": "三国纳妾记"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1543303ffc2f4d291730dd867d4f77b3.mrp",
+      "sha256": "a310c3acea061da2da54683b93b41ff1f94653f5443cda79268d79dba7bf8cd0",
+      "storeCaseId": 1781,
+      "title": "蛇来运转大抽奖"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5b93c7ded50520d2fb44866f3a9acc31.mrp",
+      "sha256": "6c2ddb8e02348e61821bfac9a5298cf751356357c3a027794e84d60823df6659",
+      "storeCaseId": 1799,
+      "title": "神马过年不寂寞"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d481a9830d383f725de2821846bc6642.mrp",
+      "sha256": "faa29fbe229e186552da7b6ae305ecd1b6db485773d8ba110e0679c906d92ad6",
+      "storeCaseId": 1801,
+      "title": "神魔大陆"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gshzxl.mrp",
+      "sha256": "2551bb7ff5b00be2d6203b80ffa828f296d0a763f1b59f0c4288f379344937f9",
+      "storeCaseId": 1868,
+      "title": "侍魂之修罗斩"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/58e565e03257282b8d512929bf38f132.mrp",
+      "sha256": "1b930351cade245aef03a6a12261a6982cf969a93717362f8cee62b3c480b068",
+      "storeCaseId": 1880,
+      "title": "手机QQ"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/e9936d995ff956d5e2f4e9f2e6e08395.mrp",
+      "sha256": "fcfa2538d0687b7c8499a8c4c747344b44807a2360418cbfb9def731a6ba89b5",
+      "storeCaseId": 1883,
+      "title": "手机UC原版"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/6d53cd5afbbd4d0183fff20675e84b49.mrp",
+      "sha256": "051577de8fd1f89f5b0c5502ac354f7ff9014e08ec8ffed40757cb001d7f5e4d",
+      "storeCaseId": 1889,
+      "title": "手机信号强度仪V3"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/cmread.mrp",
+      "sha256": "eb0942773d92ccf34cfb99cc2c3c979ad3cb4ebf9fccb3e1ddfcc7ee4c8e4019",
+      "storeCaseId": 1891,
+      "title": "手机阅读"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a0430226085f32fa9773b67055b64bee.mrp",
+      "sha256": "3b5ca5f5609484ef54cfeef6ec575c908341028ddbf6157230d9db262145a824",
+      "storeCaseId": 1895,
+      "title": "手写库01"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/647567e570c8a94f549a44f8cc819058.mrp",
+      "sha256": "cff65856b94c3c34b288da8a24865241f6706383685fc4139f7b88902efe5a21",
+      "storeCaseId": 1896,
+      "title": "手写库02"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/c4a5ac99a553f6fe1fb2cd9abbd8c33f.mrp",
+      "sha256": "fc5853641aa92f9da581401872b35c73ef70b927e6e06ec14b8febdb13c529dd",
+      "storeCaseId": 1897,
+      "title": "手写库03"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ab7ca57f7af7c882a3f373e20f43aee6.mrp",
+      "sha256": "07df40fc276ec253cdbe4c8f5d2ceaae182f2cfb85034b155b96f52682979d85",
+      "storeCaseId": 1898,
+      "title": "手写库04"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1f8d418a5c21fa3aae3690290b787e29.mrp",
+      "sha256": "c6fc57ac2a36315328af333427c72d2a3953f999e4d33360c04e8c1f1ade8dd2",
+      "storeCaseId": 1901,
+      "title": "手信语音聊天"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/bcb7e8dc935e6c677acd2298c355ac69.mrp",
+      "sha256": "980de65a9990a8abcd1e1096fa7aad60430bcba1b10f07d73c3172014c714561",
+      "storeCaseId": 1903,
+      "title": "暑期iPhone大礼包"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/2586ba3844d705f21d9ab96a626cba49.mrp",
+      "sha256": "91344e6a6f9df5747cfc4f507c97cafc637d80efb1b24799dbfe56334f952bf7",
+      "storeCaseId": 1904,
+      "title": "蜀山剑侠"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opsxdr.mrp",
+      "sha256": "8d950b6d9d3c36eb517f39d985111cf5bac49c51705ff399f6a70e4c1844a044",
+      "storeCaseId": 1908,
+      "title": "数学达人"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opftbc.mrp",
+      "sha256": "d3c4204966d824a42ac214dc64c803dbe6d954b1bdeaaa3a0d595f947864e135",
+      "storeCaseId": 1915,
+      "title": "水果老虎机"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opfrtd.mrp",
+      "sha256": "812a55cda0e682c896fbb384fa40a2424b5ad534fa710ee11da2fff31b2f8b8b",
+      "storeCaseId": 1916,
+      "title": "水果梦工厂"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/38be222741569b975d44f18e839f601a.mrp",
+      "sha256": "f2d1520a18f3a45f78c5b3e6891d8e20a5db69b258dcfa07994489936e346374",
+      "storeCaseId": 1924,
+      "title": "水晶之恋"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5e97f50581e19c130e2a4ea623726824.mrp",
+      "sha256": "a02fa62c28f0392f7a38b6535182f8a943bced0a714d71508231f538a5940d91",
+      "storeCaseId": 1928,
+      "title": "水浒对对碰"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/443fa5acc5111dccfa2cbe0b27a89246.mrp",
+      "sha256": "6f2c2a4903f7c8f224007fa62a01639d9617aaeae2be92863b464d1c8ec480ac",
+      "storeCaseId": 1929,
+      "title": "水浒反殴传"
+    },
+    {
+      "path": "mrp未上传商城游戏/贪吃小鳄鱼.mrp",
+      "sha256": "eb636dc3733d245da0386557682efc62c342b8f2391b88b47696325c4a56b7d2",
+      "storeCaseId": 1975,
+      "title": "贪吃小鳄鱼"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/optcey.mrp",
+      "sha256": "2eda5825cae07b91d69a0fbccd2ace6a5d6eccf3e6d870b2dce00d9937532b27",
+      "storeCaseId": 1976,
+      "title": "贪吃小鳄鱼"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/tlbb.mrp",
+      "sha256": "a2fd98e8cb95200cb51fcce977a74976a26e1a75153f050706a45b12579c0529",
+      "storeCaseId": 1998,
+      "title": "天龙八部"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/gttdgs.mrp",
+      "sha256": "01c31567ad41edd6aa3581ce2e99f54c9ddeab017b1c3f4bcf0a501945a8c1d8",
+      "storeCaseId": 2013,
+      "title": "天天打怪兽"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/672c090ac4d57a624be456cbd6dd2776.mrp",
+      "sha256": "6ec0d440fb8aafb7f195413ffc3be528aa2bc16ed7ef8b5c048bfc34d39cd3f4",
+      "storeCaseId": 2014,
+      "title": "天天打折货到付款"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/71bc8598885770006b7033cbbc6b54aa.mrp",
+      "sha256": "3d54fc066e7ca9d39c25ab300d88039e4c59284a948ee2b8dc1ec443cfb9c6f3",
+      "storeCaseId": 2024,
+      "title": "铁血抗日"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/178d0f7ce0c9d64e00618dfd08fcc7ab.mrp",
+      "sha256": "d1048fbf24bf587f050854b5cc5fa14cf527e07c68be0e00aa5ad9c89ddea8ee",
+      "storeCaseId": 2025,
+      "title": "铁血抗日"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opttyy.mrp",
+      "sha256": "d4da3effaf86764bddd88f5076918e7a5d2a068636dbdb1776c8cd31d992c564",
+      "storeCaseId": 2028,
+      "title": "听听音阅贺岁版"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opttyy贺岁.mrp",
+      "sha256": "f7fe8e71600681a50fb1d7c76a49ad97088b38cb3a70b735bc6c8a1509fd881c",
+      "storeCaseId": 2029,
+      "title": "听听音阅贺岁版"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/49737217f65b186ce4c87570143c9094.mrp",
+      "sha256": "7a01bdcc201fbaf7cc5dc73237ee71c90cef25920f7fb393ed121963f37efac3",
+      "storeCaseId": 2034,
+      "title": "童年经典游戏合辑"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gtkmn.mrp",
+      "sha256": "f9220ddcd7ad6ff90572b3d1b081e1c4f8a05b8a8a25304dfc64d372e6bc65c9",
+      "storeCaseId": 2036,
+      "title": "偷看美女"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/054f58a5e8fcf8646f38a650f1c7e586.mrp",
+      "sha256": "0b7fcd6f52ea29c93cf1ba7b56a74265ce3fa2d4eb83f8db514c64fa6bbcf8ba",
+      "storeCaseId": 2042,
+      "title": "途客行天下"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/吞食天地2.mrp",
+      "sha256": "31af94186887462c47672ef1de1cc184d779a98a3998a1c381bb74679007d29d",
+      "storeCaseId": 2057,
+      "title": "吞食天地2"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/4343770dd615190cf72a16dc748e65fd.mrp",
+      "sha256": "34892ee46e3b36be519752e98af2b1d53ccd399fc1506aa870f0f0b8cead020d",
+      "storeCaseId": 2064,
+      "title": "玩手信赢乐phone"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/79a1917a431072cc9064c8bccf1a7ea5.mrp",
+      "sha256": "5b94bdde35c9ce5bd151ab40e1ac6251b00edb9cf3be9a20c18a897ea6663b38",
+      "storeCaseId": 2071,
+      "title": "万水千山粽是情"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/71420c52251de0e4438d3ef1765ada9d.mrp",
+      "sha256": "d1160ecc4a9450f24267892bfabc25cf50053609bf8f811b0c0edef556d308f7",
+      "storeCaseId": 2082,
+      "title": "网络时钟"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3ea72d34d6d9cccdeb6b048bbf5c863c.mrp",
+      "sha256": "c8822ff44620968f0b30297e72dbfe6edf6cc0316e715e25544aecb7c6dfda9c",
+      "storeCaseId": 2098,
+      "title": "未来之英雄传奇"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3e703fc2d35730ebcfa287508612e178.mrp",
+      "sha256": "5bbbea7b6e9a5dc78d8caf0fee1c0cdbe2aabef54f02b6a7d5e38853c4ac2073",
+      "storeCaseId": 2101,
+      "title": "我爱拼图安装包2"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/70dba3ade10fdc7be1bcef06b46c2425.mrp",
+      "sha256": "6ab900fe20cf9455c99a098f07b745d7408a176abc816f71e1a2780b03b6b501",
+      "storeCaseId": 2130,
+      "title": "五一带你玩转不停"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/xyol.mrp",
+      "sha256": "36689b4b4a334724ddd21d6f6fd319d8de5449ccf37d9414b48a6bcfbe7052f1",
+      "storeCaseId": 2145,
+      "title": "西游记OL"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/6e89edcb3c616841ca7537ae123345d7.mrp",
+      "sha256": "1580de40de5c267e9a09eda483bad5adc88459f09f9cb362b483a88aacf294b1",
+      "storeCaseId": 2146,
+      "title": "西游记OL"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opsmpt.mrp",
+      "sha256": "60586f5de27bbe80b3210ff19184a10d83d2587806be18ecc893f074e643bbb1",
+      "storeCaseId": 2165,
+      "title": "夏日Party"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/030b785a60c8d62ce21f7a00930fc150.mrp",
+      "sha256": "a34c68e704b6325e9614096bdf21cc636f1ca625a47d24726afa2ad48c4d2661",
+      "storeCaseId": 2167,
+      "title": "夏日缤纷礼包"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/193425_1239060wxjwq.mrp",
+      "sha256": "38f5967e7843c85ec6dc43af5394b0671aaa2346480bcb32021a8ebdff695bd7",
+      "storeCaseId": 2177,
+      "title": "仙剑问情"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/485d44427e7ce210c8ff4206bffa3af1.mrp",
+      "sha256": "435d9a322619d057c9965f131eeb4e719bfb178a7efcd3d708d30e80d05e9f72",
+      "storeCaseId": 2184,
+      "title": "仙魔逆唯我独尊"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b2593526eb12aa5d0b20f652738c68ad.mrp",
+      "sha256": "a81a0acd7527f2735444e227c3342a9b0228be04e445d8656066b0506b25bb85",
+      "storeCaseId": 2185,
+      "title": "仙魔逆唯我独尊"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/cfc7cf0ddf4c9b129f87e70258a6a6bb.mrp",
+      "sha256": "7a9cc0b43860ce74bccf61fe6f56fd0781d88e50c3fdda578af77d780f49ba75",
+      "storeCaseId": 2192,
+      "title": "限时抢购买一送一"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/485135633cb1eeb6f4cfd1cc5516bd0d.mrp",
+      "sha256": "1cf9e1f3ff0f94c4baf1a9d275605a7ef87bb116834ef9337e56a51a2fb93591",
+      "storeCaseId": 2225,
+      "title": "笑傲江湖"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b982ded8c84c2c4bf37a7f78d03b01ef.mrp",
+      "sha256": "ef745a7cd79e818073b3f899b1ce4e245f6c70a75f29deee06fa6bc08e30301e",
+      "storeCaseId": 2265,
+      "title": "新羊过河"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/9a023a6ddc0c92c0726ef414b17b69db.mrp",
+      "sha256": "c83912c41efb7d68cd95df0546870cab5564043b83c895f92b5e956a293659e8",
+      "storeCaseId": 2271,
+      "title": "星河舰队"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/c15171a40ea4cd2ddc4c84af06600e0d.mrp",
+      "sha256": "6d2a45ccac32db6f307f0a6ea53fb4231c5bccd10ecd5301073a9004b598511f",
+      "storeCaseId": 2285,
+      "title": "幸运砸蛋"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3f92da1e2e1d266e4042c873b6e5f797.mrp",
+      "sha256": "b2575a1fb76405b87de098990b196fc6c5437a1059761ec79dde332d21e8d906",
+      "storeCaseId": 2287,
+      "title": "性感美女找茬"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/f29bea6f6e9b9d280380fcf367b0c99d.mrp",
+      "sha256": "8a0d57d6952412cb9bf7ca21766b0a7831ccf8de90aded3cebef2bcb5b32c0e8",
+      "storeCaseId": 2294,
+      "title": "熊猫大乱斗"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/5f3720edcfb69577fcc8d61c2b2e7c51.mrp",
+      "sha256": "5b83f87526ef21976dd8959efcb1a6308ae427c56ae5d82bfd0276d1aa8b9ea9",
+      "storeCaseId": 2333,
+      "title": "炎龙骑士"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gyqbym.mrp",
+      "sha256": "0572710a920ae51cc7dcb98d89d6be3f38941a106a2fe4a963972348e7745d47",
+      "storeCaseId": 2342,
+      "title": "要钱不要命"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1eb476d90c5f3130ff9a4d333a2e1d5f.mrp",
+      "sha256": "c0fa53c5b9501c279c78d65bdca498a5400a3987b66aad882aa4dc4f9e651be6",
+      "storeCaseId": 2345,
+      "title": "野人岛3"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opyxgz.mrp",
+      "sha256": "06ed6a4f515dd4578a45b0844c3d7fe4ff91fb8ca43379d4499cd309ae25ce76",
+      "storeCaseId": 2349,
+      "title": "夜袭鬼子营"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/69949b9c341056bdbcc3331ee8d57609.mrp",
+      "sha256": "785261e51d9c3726d982116fb9676037416fdeba2d5f117043e80de9370d121e",
+      "storeCaseId": 2354,
+      "title": "一毛钱手机抽回家"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opqsjr.mrp",
+      "sha256": "6f4d88e4787d68297e6683d4527bad179ab2a8a958a3b3a2cbb7fd89d411b354",
+      "storeCaseId": 2355,
+      "title": "一枪杀几人"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/309b21a4d305aec98fce039c88e9ec01.mrp",
+      "sha256": "64985a6142e039cca487d6a75649b12e67d998c90743449cbf3ea2cc14e6dcad",
+      "storeCaseId": 2359,
+      "title": "移动股票王"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/1934bba5fe66fd726559b062a7b4025d.mrp",
+      "sha256": "d92f764bcca62989bfd8a9ffdd1c6f44d56161b2f1ebbdaed46fc7c15d4c1f47",
+      "storeCaseId": 2360,
+      "title": "移动视线"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ea7bf687da23b2b92a9366254f392842.mrp",
+      "sha256": "164d4fc6ff209d214d7638219ce3a71900374b0c3a5007dc60f5bae9c40ebc5b",
+      "storeCaseId": 2364,
+      "title": "倚天屠龙绝情剑"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3d573fea8f444810cefdf444e89a73c2.mrp",
+      "sha256": "cf4d08a48082d746351c13f3f547c65628c1ed9852b9edf1e2b6df1372b17f32",
+      "storeCaseId": 2380,
+      "title": "英汉字典"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/65069ced1ff1b7ec845771ed2c4e4803.mrp",
+      "sha256": "64064bbd4329c7efcab6f6d4f5a993d0b9818bc54a72e415377cc63a740b6f07",
+      "storeCaseId": 2382,
+      "title": "英雄救美之狙击之神"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/215362_1234170yyrj.mrp",
+      "sha256": "87cb6c554bb130b17ba046fb651c00a49332d03ffd97e9c23805a8d8290a504c",
+      "storeCaseId": 2391,
+      "title": "应用软件>>"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/fa1dde713ce1744cd7f3496e27a737e3.mrp",
+      "sha256": "34b47db68764a5bf11b3f6bc290cb7ffa156de10281e6817636d14fe03348098",
+      "storeCaseId": 2399,
+      "title": "永远的冒险岛"
+    },
+    {
+      "path": "240×320游戏大全/软件类/开发MRP优化大师公测_列表驱动.mrp",
+      "sha256": "87fca7ae316aaf31c90b5ee251789ed1ebf5dd735f806aaf5aaf6c7be243329f",
+      "storeCaseId": 2405,
+      "title": "优化大师"
+    },
+    {
+      "path": "mythroad_res/qqlist8240x320/bd.mrp",
+      "sha256": "60b6638017cfc505654241b86f7f121cca636cc6e5ba95da7c9cac92550a3290",
+      "storeCaseId": 2407,
+      "title": "游戏布袋"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b47d8bd04e64ff21fae298e93f56b4d5.mrp",
+      "sha256": "d15a880e86aef32acadb57d9fa78a7b0498817cfa8d8e044da24c45c6086d81f",
+      "storeCaseId": 2408,
+      "title": "游戏猎手"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/3eaf6aa0afcb82db59ac951b0b00eede.mrp",
+      "sha256": "9e5804770e155fd5c15baed26711801cf904415c872748493c13699f374bbad5",
+      "storeCaseId": 2409,
+      "title": "游戏中心"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b42561310ed07f90e4838e692185a8c9.mrp",
+      "sha256": "9904973ab1f89781d3897472d35706dbe504b2b39b662e6d18e3fb2ca99c017e",
+      "storeCaseId": 2411,
+      "title": "愚人节泡妞利器"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opyfcs.mrp",
+      "sha256": "f3a0e8247daa44f1dd8951cdf69f48ba2166f27e007713506a67c1576915c3b3",
+      "storeCaseId": 2438,
+      "title": "缘分测试"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/9eade5faeb957ab6c76e27494581a50a.mrp",
+      "sha256": "4273894a28a424dd4daf29886fd226382f4ce2356c10d243536a8b7ecdacc878",
+      "storeCaseId": 2442,
+      "title": "越狱吧吊丝"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b3daecd751e77a5f153f0933fd826978.mrp",
+      "sha256": "02dc3ced380d06b7c69f6105113292a6d421a69a60c7037fe54f7180c35d7cfa",
+      "storeCaseId": 2451,
+      "title": "宅人七天乐"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/73f41587a04d4c472ec5ae716e4fe925.mrp",
+      "sha256": "848404b54e92bdc09ba57d93beac91f56ccf17f3c03face059f5c81003536f8f",
+      "storeCaseId": 2462,
+      "title": "战国英雄传"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/zsol.mrp",
+      "sha256": "ba6a49ab9cfadcead5f0aea638ba4f9f1be7449d9c0734aae39f44a519df619b",
+      "storeCaseId": 2465,
+      "title": "战神"
+    },
+    {
+      "path": "mrpoid2在线商城所有游戏/战神金刚.mrp",
+      "sha256": "09e783af9673ed5291dc04c105dd64c600f6b2fd7abc8758bdbc672a2f3a5f3e",
+      "storeCaseId": 2468,
+      "title": "战神金刚"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/01bd74cacf362ba2b53050e2029afed7.mrp",
+      "sha256": "91823d6d77c5b8ac605d8a33d4fd4674181529607be452703ea0a8ae5b04bb82",
+      "storeCaseId": 2476,
+      "title": "战神之魂"
+    },
+    {
+      "path": "MRP游戏软件合集3426合一（内容杂乱，多数无中文命名）/226755_2245420ge_mrp.mrp",
+      "sha256": "b267314f5e71f35bbd77d4a8e7f2041c022231bedeb924f30c1ae168529236f8",
+      "storeCaseId": 2481,
+      "title": "掌上e_mrp"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/9b72be61067c69a15fccaf43cb71d440.mrp",
+      "sha256": "421a13a2312126e20ef07878991e5cd36a42dd11db3cb9197605a531337fd801",
+      "storeCaseId": 2485,
+      "title": "掌星汉字字典"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7673d30aa8dddaa5293b14d6ebdb96c4.mrp",
+      "sha256": "4b45d118b8dbdcbbc88a131b4353194647cd5ec1cc57b64bbb0286e1d6161138",
+      "storeCaseId": 2486,
+      "title": "找回元素"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/e1b89ea7dd047819df2bf4fc27edb81f.mrp",
+      "sha256": "82232251f2c14fcf92e18b0aca850d62f3c5c20f3d2365152d4c8e19e3d314cf",
+      "storeCaseId": 2508,
+      "title": "争霸三国"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gzyyxlm.mrp",
+      "sha256": "d2939efa4cdd9abe143ce4ae422eb4d18e3e014b5e0ca5985febc34ba2456de4",
+      "storeCaseId": 2514,
+      "title": "正义英雄联盟-蝙蝠侠"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/otapvz.mrp",
+      "sha256": "5e734582180c526b019005d9bde490cf54a08dee780f490b91cd800391f7e2ae",
+      "storeCaseId": 2522,
+      "title": "植物大战僵尸官方版"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b22cae7f8abffeeac653c80b1e5a4fc2.mrp",
+      "sha256": "91930763dc6a67a51cf3bf16c19b8e436cded16aa80eb59f175d66111fcbbdda",
+      "storeCaseId": 2543,
+      "title": "中秋:天涯共此时"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/55d3852ffcf0c05ba75732f6ed815919.mrp",
+      "sha256": "321f5933a8f5c2848e5b1dea0d78cba1ab05e4037adc1e39e6683b1bd5ee298c",
+      "storeCaseId": 2565,
+      "title": "抓拍宝贝"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7d92413e76d21439c9e06d38a646af12.mrp",
+      "sha256": "3dcfb3d7e75b47e8d5c60b90a9bd51c75d9751410de0643c08bbb679085e6e37",
+      "storeCaseId": 2568,
+      "title": "追忆童真那些年"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/6e66c068a13c74b7a0f995cc14e20cf9.mrp",
+      "sha256": "5a2ead20721b1bfaae634fecb398459c2f610e39d53874b63958e44597dd4c39",
+      "storeCaseId": 2571,
+      "title": "字体模块"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/opzjmr.mrp",
+      "sha256": "542fda7c8f900c54e6e91677c05d136454ccbcaf99a87aba8dc4108627e26219",
+      "storeCaseId": 2577,
+      "title": "醉美人"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/d4c589fdb623793c1acb1877344a3199.mrp",
+      "sha256": "0b76c264bfc9d6eeb3ff537a5ee40f8997c624fe3cc87c60e604f46e6ae6531b",
+      "storeCaseId": 2601,
+      "title": "喋血双雄"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/7b5a58ac6e52104fe9540e84e34a747e.mrp",
+      "sha256": "b641cbda38004a60d5bfcb4687fed8ca19e15acf1b2b9e471d80551bc2520eaa",
+      "storeCaseId": 2606,
+      "title": "逍遥剑侠传"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/26199c7a4cc268261671972ec3fbf6eb.mrp",
+      "sha256": "e7595bf5f591c5aec66375e8b14626d2e521415e8a4874fe20ebb095f12a1b23",
+      "storeCaseId": 2608,
+      "title": "缤纷双蛋激情约惠"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/geyaxz.mrp",
+      "sha256": "bbe0ef0b4e7de214d8c7d40b940f7db3df9364144edc6da2aa97f5664529e9f3",
+      "storeCaseId": 2619,
+      "title": "鳄鱼爱洗澡"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/geyxz.mrp",
+      "sha256": "f0a0075941de2a04601eb24b99feddd14149b43129b4fa4a413db8984fd90889",
+      "storeCaseId": 2620,
+      "title": "鳄鱼洗澡"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gmhfsl.mrp",
+      "sha256": "b3ea3a38bea6f4f36ca606c4f3713c3589912cdc142b1a44bd526e5a479f1241",
+      "storeCaseId": 2622,
+      "title": "魅惑浮生录"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/mpqp.mrp",
+      "sha256": "162abf4ae29667014ce731f7373576a986133bbae64361ba9f449c7923e9456b",
+      "storeCaseId": 2635,
+      "title": "[免费]冒泡棋牌"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/gwyaz.mrp",
+      "sha256": "797412268c1401872fa2ab072bbac7f41cacf432ddbd5e4bb91befb00455220b",
+      "storeCaseId": 2638,
+      "title": "[免费]冒泡社区安装"
+    },
+    {
+      "path": "240×400分辨率游戏（无中文命名）/hxsg.mrp",
+      "sha256": "3c38c246127dfb34fcbacb9323d9020033a3f239496d73014585216210d63204",
+      "storeCaseId": 2639,
+      "title": "[免费]冒泡网游"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/a6f6b1aefedf5453d441bd7b6ad8dbd5.mrp",
+      "sha256": "97308250ea06d042915274749ca60ee5855d7ee8be747ddcfe7875591150ed4e",
+      "storeCaseId": 2640,
+      "title": "[网游]无双三国"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/b1781fd05f95ef58fe07d7831bbd508d.mrp",
+      "sha256": "89b911d61625ceb41979e8b5174e623c0dd8856afbb982539d2bcc2bf17b63ed",
+      "storeCaseId": 858,
+      "title": "黑白棋AI"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/31b4678673548ea850e0087086edea26.mrp",
+      "sha256": "bac980440627a015a7de59697b8946df76e93e00afa6f6a83eca8bafacc714c4",
+      "storeCaseId": 874,
+      "title": "华容道"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/ad9f9abef44666a688c08bd626141c7b.mrp",
+      "sha256": "e1857ae80ddd50d28531f49bba51f6949ee9011639fb8a92354165a39b00d446",
+      "storeCaseId": 1527,
+      "title": "排列数字测智商"
+    },
+    {
+      "path": "mythroad_res/qqlist8240x320/2048.mrp",
+      "sha256": "e7ae37991b0db919ce84bdda12c14c722490338e896ffdb12e9c77184bcabbbb",
+      "storeCaseId": 39,
+      "title": "2048"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/770e00a7147313541385074f9c225e38.mrp",
+      "sha256": "bd658cb24691d328fb6b27b58ea6d5f8c7ce0cc46b53103d528652b137d2054c",
+      "storeCaseId": 41,
+      "title": "2048美化版XL"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/101797ab163609eb298d559fc1e949c8.mrp",
+      "sha256": "b7216847b0e310656e8ca285bbc8e42f5e20fd6c385da3c8651868274a071d01",
+      "storeCaseId": 1744,
+      "title": "三国英雄传"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/61e31de0088b9b9c633532ee99f06450.mrp",
+      "sha256": "35a246eba453065f9c8a2a1b5620045ac444cf1b6dabdcdba53136d4d1441527",
+      "storeCaseId": 1024,
+      "title": "接水管"
+    },
+    {
+      "path": "320×480分辨率游戏（无中文明命名）/已破解/gxrllk.mrp",
+      "sha256": "b1749530ee9ab6a262bebb22428eedab13680ea56fee6f1bfc1720ce491f0b98",
+      "storeCaseId": 2164,
+      "title": "夏日MM连连看"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/packages/740c4b7da3453a4e2056a5b12bf0bc56.mrp",
+      "sha256": "3c66517c6a18ba69fce32229128a782f69be3e002d7542ba712115a837fc4ecb",
+      "storeCaseId": 1397,
+      "title": "梦幻西游-无敌战神"
+    },
+    {
+      "path": "../../Documents/zixing/github/flymrp/artifacts/compat-20260914/round3-scene-packages/603-240x320.mrp",
+      "sha256": "46d9f44fc6e51fcc3d6bb46a2c85d3e584b15614edb215c6e2ddc64a3138fd6a",
+      "storeCaseId": 603,
+      "title": "俄罗斯方块"
+    },
+    {
+      "path": "mythroad_res/qqlist8240x320/bcbk.mrp",
+      "sha256": "40bcdff9d6a34f1a015fabc4167679cc915a271c603477e8775ee299e36cea7d",
+      "storeCaseId": 321,
+      "title": "别踩白块"
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { EXT_STOP_ADDR, stackTop, tableSlotAddr } from "../../src/abi/layout.ts";
 import { ExtRuntime } from "../../src/abi/runtime.ts";
 import { ExtStopKind } from "../../src/abi/fault.ts";
-import { MR_IS_FILE, MR_IS_INVALID } from "../../src/mythroad/constants.ts";
+import { MR_IS_FILE, MR_IS_INVALID, MR_IS_DIR } from "../../src/mythroad/constants.ts";
 import { MrTableBridge } from "../../src/mythroad/index.ts";
 import { MythroadVfs } from "../../src/mythroad/vfs.ts";
 
@@ -42,11 +42,21 @@ describe("table[42] mr_info ABI", () => {
 
   it("LIVE dbglog.txt and archive members are MR_IS_INVALID", () => {
     const { ext, bridge } = wire();
-    for (const name of ["dbglog.txt", "gsidbak", "res_lang0.rc", ""]) {
+    for (const name of ["dbglog.txt", "gsidbak", "res_lang0.rc"]) {
       const p = ext.alloc(32);
       writeCString(ext, p, name);
       expect(call42(ext, p).r0).toBe(MR_IS_INVALID);
       expect(bridge.lastInfo).toBe(name);
+    }
+  });
+
+  it("resolves an empty name and dot paths to the working directory", () => {
+    const { ext, bridge } = wire();
+    bridge.appFs.mkdir('games');
+    for (const name of ['', '.', 'games/..']) {
+      const p = ext.alloc(32);
+      writeCString(ext, p, name);
+      expect(call42(ext, p).r0).toBe(MR_IS_DIR);
     }
   });
 });
