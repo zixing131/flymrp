@@ -528,6 +528,7 @@ export class MythroadRuntime {
       this.mrTable = null;
       return;
     }
+    rt.mem.wordLoadMode = this.profile.wordLoadMode;
     const owner = this.packName || "ext";
     const exitGuest = () => this.exitGuest();
     rt.onGuestExit = exitGuest;

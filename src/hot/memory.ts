@@ -36,6 +36,8 @@ export type MapRegion = {
 const MAX_MAP = 64 * 1024 * 1024;
 
 export class GuestMemory {
+  /** Optional LDR compatibility for ports with packed, unaligned word data. */
+  wordLoadMode: "armv5" | "bytewise" = "armv5";
   /** Primary window used by the interpreter fast path. */
   readonly ramBase: number;
   readonly ramSize: number;
@@ -258,6 +260,11 @@ export class GuestMemory {
     const word = this.read32(align);
     if (rot === 0) return word;
     return ((word >>> rot) | (word << (32 - rot))) >>> 0;
+  }
+
+  /** LDR policy only; ABI memory reads and legacy SWP retain their own semantics. */
+  read32Ldr(addr: number): number {
+    return this.wordLoadMode === "bytewise" ? this.read32(addr) : this.read32Armv5(addr);
   }
 
   /** Fill a range. Used by tests and later memset. */

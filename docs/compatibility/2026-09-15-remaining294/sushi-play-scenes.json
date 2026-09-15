@@ -1,0 +1,58 @@
+{
+  "22": {
+    "profile": {
+      "width": 320,
+      "height": 240,
+      "wordLoadMode": "bytewise"
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [],
+    "controls": [
+      {
+        "tap": [
+          189,
+          77
+        ],
+        "wait": 3
+      },
+      {
+        "tap": [
+          189,
+          105
+        ],
+        "wait": 30
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "从启动棋盘直接交换第7列第3/4格，形成三连；需检查得分及棋盘变化。"
+  },
+  "23": {
+    "profile": {
+      "width": 320,
+      "height": 480,
+      "wordLoadMode": "bytewise"
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [],
+    "controls": [
+      {
+        "tap": [
+          255,
+          195
+        ],
+        "wait": 3
+      },
+      {
+        "tap": [
+          255,
+          233
+        ],
+        "wait": 30
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "从启动棋盘直接交换第7列第3/4格，形成三连；需检查得分及棋盘变化。"
+  }
+}

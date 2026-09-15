@@ -27,6 +27,8 @@ export type DeviceProfile = {
   randSeed: number;
   /** Guest-visible native heap capacity; older titles may require a small handset heap. */
   guestHeapSize: number;
+  /** LDR compatibility only, not a claim to emulate a different CPU architecture. */
+  wordLoadMode: "armv5" | "bytewise";
   memMin: number;
   memTop: number;
   memLeft: number;
@@ -34,6 +36,7 @@ export type DeviceProfile = {
 
 export function defaultProfile(over: Partial<DeviceProfile> = {}): DeviceProfile {
   const { datetime, ...rest } = over;
+  if (over.wordLoadMode !== undefined && over.wordLoadMode !== "armv5" && over.wordLoadMode !== "bytewise") throw new RangeError("wordLoadMode must be armv5 or bytewise");
   if (over.guestHeapSize !== undefined && (!Number.isInteger(over.guestHeapSize) || over.guestHeapSize < 256 * 1024 || over.guestHeapSize > 8 * 1024 * 1024 || over.guestHeapSize % 8 !== 0)) throw new RangeError("guestHeapSize must be aligned and between 256 KiB and 8 MiB");
   return {
     width: 240,
@@ -55,6 +58,7 @@ export function defaultProfile(over: Partial<DeviceProfile> = {}): DeviceProfile
     datetime: { year: 2011, month: 1, day: 1, hour: 16, minute: 0, second: 0, ...datetime },
     randSeed: 1,
     guestHeapSize: 8 * 1024 * 1024,
+    wordLoadMode: "armv5",
     memMin: 0,
     memTop: 1024 * 1024,
     memLeft: 512 * 1024,

@@ -64,7 +64,7 @@ export function compileBlock(block: BasicBlock): CompiledBlock {
       const offset = u.aux & 1 ? `((r[${u.rm}]<<${w1 & 31})>>>0)` : String(w1 >>> 0);
       body = `a=r[${u.rn}];b=(a${add ? '+' : '-'}${offset})>>>0;v=${pre ? 'b' : 'a'};`;
       const access: Record<number, string> = {
-        [Op.LDR]:`r[${u.rd}]=m.read32Armv5(v);`, [Op.STR]:`m.write32(v&~3,r[${u.rd}]);`,
+        [Op.LDR]:`r[${u.rd}]=m.read32Ldr(v);`, [Op.STR]:`m.write32(v&~3,r[${u.rd}]);`,
         [Op.LDRB]:`r[${u.rd}]=m.read8(v);`, [Op.STRB]:`m.write8(v,r[${u.rd}]);`,
         [Op.LDRH]:`r[${u.rd}]=m.read16(v);`, [Op.STRH]:`m.write16(v&~1,r[${u.rd}]);`,
         [Op.LDRSB]:`r[${u.rd}]=(m.read8(v)<<24)>>24;`, [Op.LDRSH]:`r[${u.rd}]=(m.read16(v)<<16)>>16;`,

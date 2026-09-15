@@ -12,7 +12,7 @@ import { BrowserAudio } from "./audio.ts";
 import { DOM_KEY, HeldKeys } from "./controls.ts";
 import { assetUrl, catalogHref, readGame, readLibrary } from "./library.ts";
 import { registerServiceWorker } from "./pwa.ts";
-import { playerScreenSize, playerHeapSize, readPref, writePref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
+import { playerScreenSize, playerHeapSize, playerWordLoadMode, readPref, writePref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
 import { readCachedStoreList, storeSdPath } from './mrp-store.ts';
 import { PRELOAD_SYSTEM_FILES, isSafeAssetPath, type PlayerFileSource } from "./remote-files.ts";
 import { optionalResourceJson } from './resource-json.ts';
@@ -259,7 +259,7 @@ async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: st
   titleEl.textContent = name.split("/").at(-1)!.replace(/\.mrp$/i, "");
   emptyScreen.hidden = true;
   const token = generation;
-  const profile = { ...playerScreenSize(name, resolution.value, screen), guestHeapSize: playerHeapSize(document.querySelector<HTMLSelectElement>("#heap-size")!.value) };
+  const profile = { ...playerScreenSize(name, resolution.value, screen), guestHeapSize: playerHeapSize(document.querySelector<HTMLSelectElement>("#heap-size")!.value), wordLoadMode: playerWordLoadMode(document.querySelector<HTMLSelectElement>("#word-load-mode")!.value) };
   audio.resume();
   void enableMotion();
   setStatus(`正在读取 ${name.split("/").at(-1)}…`);
@@ -494,6 +494,7 @@ bindSelect('rotation', value => { releaseAll(); rotation = Number(value); fitScr
 bindSelect('keypad-side', value => keypad.classList.toggle('reverse', value === 'reverse'));
 bindSelect('resolution', () => {});
 bindSelect('heap-size', () => {});
+bindSelect('word-load-mode', () => {});
 function rotate(delta: number): void { rotationSelect.value = String((rotation + delta + 4) % 4); rotationSelect.dispatchEvent(new Event('change')); }
 document.querySelector('#rotate-left')!.addEventListener('click', () => rotate(-1));
 document.querySelector('#rotate-right')!.addEventListener('click', () => rotate(1));

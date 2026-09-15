@@ -134,6 +134,7 @@
           </select>
         </div>
         <div class="pref-item"><label class="pref-label" for="heap-size">运行内存</label><select id="heap-size"><option value="8192">8 MiB（默认）</option><option value="256">256 KiB</option><option value="512">512 KiB（旧机型）</option><option value="1024">1 MiB</option><option value="2048">2 MiB</option><option value="4096">4 MiB</option></select></div>
+        <div class="pref-item"><label class="pref-label" for="word-load-mode">内存读取</label><select id="word-load-mode"><option value="armv5">经典（默认）</option><option value="bytewise">连续读取（移植游戏）</option></select></div>
         <div class="pref-item">
           <label class="pref-label" for="speed">运行倍速</label>
           <select id="speed">
@@ -253,6 +254,7 @@
           </select>
         </div>
         <div class="pref-item"><label class="pref-label" for="dsHeap">运行内存</label><select id="dsHeap"><option value="">游戏默认/全局</option><option value="8192">8 MiB（默认）</option><option value="256">256 KiB</option><option value="512">512 KiB（旧机型）</option><option value="1024">1 MiB</option><option value="2048">2 MiB</option><option value="4096">4 MiB</option></select></div>
+        <div class="pref-item"><label class="pref-label" for="dsWordLoad">内存读取</label><select id="dsWordLoad"><option value="">游戏默认/全局</option><option value="armv5">经典（默认）</option><option value="bytewise">连续读取（移植游戏）</option></select></div>
         <div class="pref-item">
           <label class="pref-label" for="dsSpeed">运行倍速</label>
           <select id="dsSpeed">
@@ -318,6 +320,7 @@
       <div class="gs-row"><label for="gsMidi">音乐播放器</label><select id="gsMidi"><option value="">游戏默认/全局</option><option value="tinysynth">TinySynth · GM</option><option value="simple">轻量方波</option></select></div>
       <div class="gs-row"><label for="gsRotation">屏幕旋转</label><select id="gsRotation"><option value="">游戏默认/全局</option><option value="0">不旋转</option><option value="1">右转</option><option value="2">倒置</option><option value="3">左转</option></select></div>
       <div class="gs-row"><label for="gsHeap">运行内存</label><select id="gsHeap"><option value="">游戏默认/全局</option><option value="8192">8 MiB（默认）</option><option value="256">256 KiB</option><option value="512">512 KiB（旧机型）</option><option value="1024">1 MiB</option><option value="2048">2 MiB</option><option value="4096">4 MiB</option></select></div>
+        <div class="gs-row"><label class="pref-label" for="gsWordLoad">内存读取</label><select id="gsWordLoad"><option value="">游戏默认/全局</option><option value="armv5">经典（默认）</option><option value="bytewise">连续读取（移植游戏）</option></select></div>
       <div class="gs-row"><label for="gsSpeed">运行倍速</label><select id="gsSpeed"><option value="">游戏默认/全局</option><option value="0.5">0.5×</option><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="3">3×</option><option value="4">4×</option></select></div>
       <div class="gs-row"><label for="gsKeypad">键盘位置</label><select id="gsKeypad"><option value="">游戏默认/全局</option><option value="normal">方向键在左</option><option value="reverse">方向键在右</option></select></div>
       <div class="gs-buttons">

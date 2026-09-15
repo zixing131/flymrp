@@ -251,7 +251,7 @@ function loadStore(
       break;
     }
     case Op.LDR:
-      writeReg(cpu, rd, cpu.mem.read32Armv5(addr), instPC, rd === 15);
+      writeReg(cpu, rd, cpu.mem.read32Ldr(addr), instPC, rd === 15);
       break;
     case Op.STR: {
       const val = rd === 15 ? (instPC + (cpu.t ? 4 : 12)) >>> 0 : cpu.r[rd] >>> 0;
