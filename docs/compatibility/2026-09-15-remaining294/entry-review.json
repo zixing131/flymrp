@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 193,
-  "remainingEntryVerification": 120,
+  "entryVerifiedCount": 194,
+  "remainingEntryVerification": 119,
   "results": [
     {
       "testId": 1,
@@ -2063,17 +2063,17 @@
       "testId": 141,
       "caseId": 1201,
       "title": "恋爱气球",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/141-entry.png",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/menu-softkey/141-entry1.png",
       "previousDisposition": "feature-unresolved",
-      "note": "恋爱气球空白预览，已知主题设置失败，包解析修复不等于功能通过。",
+      "note": "按菜单软键后进入本地主题工具菜单（设为主题、恢复默认）；按当前入口标准通过。设为主题仍受旧宿主主题能力限制。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/menu-softkey/results.json"
       }
     },
     {

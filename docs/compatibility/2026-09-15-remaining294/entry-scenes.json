@@ -836,8 +836,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"SOFTLEFT","wait":10},{"key":"FIRE","wait":10}],
+    "reviewNote": "空白预览页按菜单软键并确认“设为主题”一次；不进入长时交互。"
   },
   "142": {
     "profile": {
@@ -1536,8 +1536,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [{"key":"FIRE","wait":10}],
-    "reviewNote": "更多游戏提示补测一次确认键；不进入长时交互。"
+    "entry": [{"key":"FIRE","wait":10},{"key":"SOFTLEFT","wait":10}],
+    "reviewNote": "更多游戏提示补测确认键及界面确定软键；不进入长时交互。"
   },
   "270": {
     "profile": {
