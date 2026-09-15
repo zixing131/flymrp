@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 179,
-  "remainingEntryVerification": 134,
+  "entryVerifiedCount": 180,
+  "remainingEntryVerification": 133,
   "results": [
     {
       "testId": 1,
@@ -59,17 +59,17 @@
       "testId": 5,
       "caseId": 10,
       "title": "听听音阅",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/5-entry.png",
+      "entryVerified": true,
+      "status": "entered-with-limitations",
+      "evidence": "artifacts/compat-20260915/remaining134/5-entry.png",
       "previousDisposition": "blocked-registration-or-content",
-      "note": "听听音阅显示软件未注册、音乐列表为空，主界面可见。",
+      "note": "已显示听听音阅主页及音乐列表/电子书/听听世界页签；仅按入口标准通过。软件未注册及空内容列表仍存在，未验证内容服务。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -114,7 +114,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -131,7 +131,7 @@
         "outcome": "black-screen",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -193,7 +193,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -243,7 +243,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -277,7 +277,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -294,7 +294,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -311,7 +311,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -377,7 +377,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -394,7 +394,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -411,7 +411,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -428,7 +428,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -445,7 +445,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -462,7 +462,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -479,7 +479,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -496,7 +496,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -513,7 +513,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -575,7 +575,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -648,7 +648,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -665,7 +665,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -710,7 +710,7 @@
         "outcome": "runtime-error",
         "error": "Error: corrupt guest heap free block: address=0x8a3658 size=0x2ad39c base=0x296700 end=0xa96700",
         "ticks": 12,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -749,7 +749,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -816,7 +816,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -866,7 +866,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -883,7 +883,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -900,7 +900,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -917,7 +917,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -967,7 +967,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1062,7 +1062,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1118,7 +1118,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1135,7 +1135,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1191,7 +1191,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1219,7 +1219,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1247,7 +1247,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1275,7 +1275,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1292,7 +1292,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1309,7 +1309,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1337,7 +1337,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1354,7 +1354,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1382,7 +1382,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1410,7 +1410,7 @@
         "outcome": "runtime-error",
         "error": "ExtFault: EXT fault abi-fault at 0x29d004 (arm_ext_call: budget exceeded)",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1427,7 +1427,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1438,13 +1438,13 @@
       "status": "blocked-or-prompt",
       "evidence": "artifacts/compat-20260915/entry/98-entry.png",
       "previousDisposition": "blocked-registration",
-      "note": "给力猫付费/取消体验弹窗。",
+      "note": "120ticks仍为安装动画，随后短确认操作未确认正常完整主界面；不计通过。证据entry-prompts5/98-boot.png和98-entry.png。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1461,7 +1461,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1523,7 +1523,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1551,7 +1551,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1568,7 +1568,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1602,7 +1602,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1675,7 +1675,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1692,7 +1692,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1709,7 +1709,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1726,7 +1726,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1765,7 +1765,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1799,7 +1799,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1816,7 +1816,7 @@
         "outcome": "worker-error",
         "error": "/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185\n    throw new MrpFormatError(\"invalid offset or compressed length\");\n          ^\n\nMrpFormatError: invalid offset or compressed length\n    at pushEntry (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185:11)\n    at parseIndex (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:220:5)\n    at MRPArchive.parse (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:123:7)\n    at <anonymous> (/Users/zixing/Documents/zixing/github/flymrp/tools/real/collection-test.ts:53:124)\n    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)\n    at async node:internal/modules/esm/loader:650:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v26.7.0\n",
         "ticks": null,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1872,7 +1872,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1889,7 +1889,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -1928,7 +1928,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2028,7 +2028,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2045,7 +2045,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2073,7 +2073,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2090,7 +2090,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2146,7 +2146,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2163,7 +2163,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2197,7 +2197,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2214,7 +2214,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2248,7 +2248,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2265,7 +2265,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2282,7 +2282,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2299,7 +2299,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2333,7 +2333,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2350,7 +2350,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2367,7 +2367,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2451,7 +2451,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2468,7 +2468,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2485,7 +2485,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2553,7 +2553,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2614,7 +2614,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2631,7 +2631,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2648,7 +2648,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2676,7 +2676,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2732,7 +2732,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2804,7 +2804,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2898,7 +2898,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2937,7 +2937,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2965,7 +2965,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -2982,7 +2982,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3027,7 +3027,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3044,7 +3044,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3072,7 +3072,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3089,7 +3089,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3106,7 +3106,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3123,7 +3123,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3140,7 +3140,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3157,7 +3157,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3174,7 +3174,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3191,7 +3191,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3263,7 +3263,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3302,7 +3302,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3397,7 +3397,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3425,7 +3425,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3453,7 +3453,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3470,7 +3470,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3487,7 +3487,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3526,7 +3526,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3543,7 +3543,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3560,7 +3560,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3588,7 +3588,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3605,7 +3605,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3644,7 +3644,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3661,7 +3661,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3700,7 +3700,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3739,7 +3739,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3789,7 +3789,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3817,7 +3817,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3834,7 +3834,7 @@
         "outcome": "black-screen",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3862,7 +3862,7 @@
         "outcome": "runtime-error",
         "error": "LuaRuntimeError: cann`t be run direct!",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3890,7 +3890,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3916,9 +3916,9 @@
       "profile": {},
       "entryRun": {
         "outcome": "runtime-error",
-        "error": "ExtFault: EXT fault abi-fault at 0x1e90fc0 (arm_ext_call: execution deadline exceeded)",
+        "error": "ExtFault: EXT fault abi-fault at 0x10030 (arm_ext_call: execution deadline exceeded)",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3935,7 +3935,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3952,7 +3952,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3969,7 +3969,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -3986,7 +3986,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4014,7 +4014,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4031,7 +4031,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4059,7 +4059,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4165,7 +4165,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4182,7 +4182,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4210,7 +4210,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4227,7 +4227,7 @@
         "outcome": "exited",
         "error": "LuaRuntimeError: Exiting...",
         "ticks": 0,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4277,7 +4277,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4327,7 +4327,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4344,7 +4344,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4372,7 +4372,7 @@
         "outcome": "entry-review",
         "error": null,
         "ticks": 30,
-        "artifact": "artifacts/compat-20260915/entry/results.json"
+        "artifact": "artifacts/compat-20260915/remaining134/results.json"
       }
     },
     {
@@ -4498,5 +4498,19 @@
     }
   ],
   "entryRunComplete": true,
-  "entryRunCount": 174
+  "entryRunCount": 174,
+  "latestRegression": {
+    "artifact": "artifacts/compat-20260915/remaining134/results.json",
+    "complete": true,
+    "selectedCount": 134,
+    "concurrency": 1,
+    "revision": "01a824019745ba5aa0e5f13551f1f21e2d900d89",
+    "outcomes": {
+      "entry-review": 101,
+      "black-screen": 2,
+      "exited": 12,
+      "runtime-error": 18,
+      "worker-error": 1
+    }
+  }
 }

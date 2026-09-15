@@ -1,0 +1,20 @@
+{
+  "98": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 120,
+    "entry": [
+      {
+        "tap": [
+          165,
+          282
+        ],
+        "wait": 30
+      }
+    ],
+    "reviewNote": "仅关闭已知注册提示，不点击付费；确认正常入口即停止。"
+  }
+}
