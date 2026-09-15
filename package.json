@@ -19,7 +19,7 @@
     "start": "vite --config web/vite.config.ts --host 127.0.0.1 --open",
     "typecheck": "tsc --noEmit",
     "test:collection": "tsx tools/real/collection-test.ts",
-    "build:edgeone": "VITE_MRP_STORE_ORIGIN=/blob npm run build",
+    "build:edgeone": "VITE_MRP_STORE_ORIGIN=/blob MRP_REMOTE_ASSETS=1 MRP_DIST_DIR=dist-edgeone npm run build",
     "upload:edgeone": "node tools/edgeone/upload.mjs",
     "prepare:edgeone": "node tools/edgeone/prepare-deploy.mjs",
     "chunk:edgeone": "node tools/edgeone/chunk-large.mjs",

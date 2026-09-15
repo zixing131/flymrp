@@ -3,15 +3,18 @@ import { join, resolve } from "node:path";
 import classics from "../config/classic-games.json";
 import { fileSha256, listMrpFiles, type PublishedGame } from "./static-files.ts";
 
-const output = resolve("dist");
-const games: PublishedGame[] = JSON.parse(await readFile(join(output, "games/index.json"), "utf8"));
-const files = await listMrpFiles(join(output, "games"));
-if (games.length !== classics.games.length || files.length !== classics.games.length) throw new Error(`发布目录必须恰好包含 ${classics.games.length} 个精选游戏（当前 ${games.length} 个，目录文件 ${files.length} 个），不能残留旧游戏。`);
-for (const [index, expected] of classics.games.entries()) {
-  const game = games[index];
-  if (!game || game.name !== expected.path || game.sha256 !== expected.sha256 ||
-      await fileSha256(join(output, "games", expected.path)) !== expected.sha256)
-    throw new Error(`发布游戏与精选清单不一致：${expected.path}`);
+const remoteAssets = process.env.MRP_REMOTE_ASSETS === "1";
+const output = resolve(process.env.MRP_DIST_DIR ?? (remoteAssets ? "dist-edgeone" : "dist"));
+if (!remoteAssets) {
+  const games: PublishedGame[] = JSON.parse(await readFile(join(output, "games/index.json"), "utf8"));
+  const files = await listMrpFiles(join(output, "games"));
+  if (games.length !== classics.games.length || files.length !== classics.games.length) throw new Error(`发布目录必须恰好包含 ${classics.games.length} 个精选游戏（当前 ${games.length} 个，目录文件 ${files.length} 个），不能残留旧游戏。`);
+  for (const [index, expected] of classics.games.entries()) {
+    const game = games[index];
+    if (!game || game.name !== expected.path || game.sha256 !== expected.sha256 ||
+        await fileSha256(join(output, "games", expected.path)) !== expected.sha256)
+      throw new Error(`发布游戏与精选清单不一致：${expected.path}`);
+  }
 }
 let bytes = 0;
 async function measure(dir: string): Promise<void> {
@@ -23,6 +26,21 @@ async function measure(dir: string): Promise<void> {
   }
 }
 await measure(output);
-// Leave headroom below GitHub Pages' 1 GB published-site limit.
-if (bytes > 900_000_000) throw new Error(`发布目录 ${(bytes / 1e6).toFixed(1)} MB，超过项目的 900 MB 发布预算。请精简资源或清理旧构建。`);
-console.log(`静态发布检查通过：${games.length} 个精选游戏，dist 共 ${(bytes / 1e6).toFixed(1)} MB（预算 900 MB）。`);
+if (remoteAssets) {
+  for (const directory of ["games", "mythroad_res", "system", "plugins", "app240400", "gwy"]) {
+    try {
+      await stat(join(output, directory));
+      throw new Error(`EdgeOne 前端壳不应包含本地资源目录：${directory}`);
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+    }
+  }
+  const serviceWorker = await readFile(join(output, "sw.js"), "utf8");
+  if (!serviceWorker.includes("/blob/runtime/games/index.json")) throw new Error("EdgeOne 前端壳未预缓存 Blob 游戏索引。");
+  if (bytes > 2_000_000) throw new Error(`EdgeOne 前端壳 ${(bytes / 1e6).toFixed(1)} MB，超过 2 MB 预算。`);
+  console.log(`EdgeOne 前端壳检查通过：${(bytes / 1e3).toFixed(0)} KB，运行时资源从 /blob 按需加载。`);
+} else {
+  // Leave headroom below GitHub Pages' 1 GB published-site limit.
+  if (bytes > 900_000_000) throw new Error(`发布目录 ${(bytes / 1e6).toFixed(1)} MB，超过项目的 900 MB 发布预算。请精简资源或清理旧构建。`);
+  console.log(`静态发布检查通过：${classics.games.length} 个精选游戏，dist 共 ${(bytes / 1e6).toFixed(1)} MB（预算 900 MB）。`);
+}
