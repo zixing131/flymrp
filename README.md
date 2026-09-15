@@ -45,6 +45,51 @@ MRP_GAME_DIR='/path/to/mrp-games' MRP_RESOURCE_DIR='/path/to/mythroad_res' ./bui
 
 将整个 `dist/` 作为 GitHub Pages 的发布产物或上传其他静态托管即可，支持 `/flymrp/` 等子目录，不需要 Node 服务。GitHub Actions 无法读取你电脑上的 `/Users/...` 目录；当前流程应先在本机执行 `./build.sh` 生成完整产物，再发布产物，不能仅把源码推到 Pages 就自动获得游戏文件。
 
+## 构建完整静态站与 EdgeOne 前端壳
+
+`dist/` 是完整静态站，包含精选游戏、手持机运行时和 `mythroad_res` 资源；它用于本地/普通静态托管，也作为上传 EdgeOne Blob 运行时数据的源目录。先准备游戏与资源目录，再执行：
+
+```bash
+MRP_GAME_DIR='/path/to/mrp-games' \
+MRP_RESOURCE_DIR='/path/to/mythroad_res' \
+npm run build
+```
+
+构建完成后，`dist/` 中应有 `games/`、`system/`、`plugins/` 和 `mythroad_res/`。这一步会验证精选游戏清单和发布目录大小。
+
+EdgeOne 使用分离的轻量前端壳。`npm run build:edgeone` 会生成 `dist-edgeone/`，不复制游戏、字体、插件、系统文件或游戏资源；这些内容在生产环境从同域 `/blob/runtime/` 按需下载。前端壳通常约数百 KB：
+
+```bash
+npm run build:edgeone
+```
+
+要生成可直接上传到 EdgeOne Pages 的 ZIP，需要先完成上面的完整构建，再构建前端壳并打包：
+
+```bash
+# 1. 生成完整运行时源，供 Blob 上传和 SHA-256 校验使用
+MRP_GAME_DIR='/path/to/mrp-games' \
+MRP_RESOURCE_DIR='/path/to/mythroad_res' \
+npm run build
+
+# 2. 生成数百 KB 的网页壳
+npm run build:edgeone
+
+# 3. 生成带 Edge Functions 的部署 ZIP
+npm run prepare:edgeone
+```
+
+最终文件为 `artifacts/edgeone/flymrp-edgeone.zip`。它包含 `dist-edgeone/` 的网页壳、`edge-functions/blob/[[path]].js` 分片/Blob 中间件和兼容路由函数，不包含大型运行时资源。部署时上传整个 ZIP，而不是单独上传 `dist-edgeone/`。
+
+首次部署或运行时资源变更时，先将完整 `dist/` 的资源上传到 Blob、再生成分片描述，最后打包并上传 ZIP：
+
+```bash
+EDGEONE_TOKEN_FILE='/path/to/private-token' npm run upload:edgeone:runtime
+EDGEONE_TOKEN_FILE='/path/to/private-token' npm run chunk:edgeone
+npm run prepare:edgeone
+```
+
+`upload:edgeone:runtime` 与 `chunk:edgeone` 仅读取完整 `dist/`；`prepare:edgeone` 仅读取 `dist-edgeone/` 作为网页壳，并校验 `dist/` 的运行时文件已经成功上传。部署配置在 [edgeone.json](edgeone.json)，更完整的 Blob 验证与排错说明见 [docs/edgeone-blob.md](docs/edgeone-blob.md)。
+
 玩家通过“打开 MRP 文件”选择任意本地游戏即可运行，不受精选清单限制。该文件只在浏览器中读取，不上传到服务器；兼容性和缺少资源仍可能影响运行。
 
 `index.html` 是独立游戏展示页，`main.html` 在播放器中执行游戏，也可直接打开后选择本地文件。界面与方向/数字键盘参考 myjump 的 javasrc：设置中提供音量与静音、旋转、实际画面刷新 FPS、自动适配或指定缩放、0.5–4 倍速、暂停、重启、截图、键盘左右布局和全屏。旋转后方向键及触屏坐标同步调整；显示、声音和速度偏好保存在浏览器中。
