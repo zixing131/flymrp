@@ -167,9 +167,9 @@ function stop(keepStatus = false): void {
 }
 function fail(e: unknown, rt?: PlayerClient): void {
   const exited = Boolean(rt?.exited) || (e instanceof Error && (e.message === "游戏已退出" || e.message === "Exiting..."));
+  if (exited) { goLibrary(); return; }
   stop(true);
-  if (kaios && exited) { goLibrary(); return; }
-  setStatus(exited ? "游戏已退出，可重新加载。" : `运行失败：${e instanceof Error ? e.message : String(e)}`, !exited);
+  setStatus(`运行失败：${e instanceof Error ? e.message : String(e)}`, true);
 }
 function frame(now: number): void {
   const s = session;
@@ -180,9 +180,7 @@ function frame(now: number): void {
     s.rt.tick(now - s.last, speed);
     s.last = now;
     if (s.rt.exited) {
-      stop(true);
-      if (kaios) { goLibrary(); return; }
-      setStatus("游戏已退出，可重新加载。");
+      goLibrary();
       return;
     }
     if (now >= s.nextHud) {
