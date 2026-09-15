@@ -1,0 +1,76 @@
+{
+  "44": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 150,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 100
+      },
+      {
+        "key": "FIRE",
+        "wait": 30
+      }
+    ],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "169": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 150,
+    "entry": [
+      {
+        "tap": [
+          20,
+          308
+        ],
+        "wait": 50
+      },
+      {
+        "key": "FIRE",
+        "wait": 30
+      }
+    ],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "183": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 200,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 50
+      }
+    ],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "205": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 200,
+    "entry": [
+      {
+        "tap": [
+          60,
+          192
+        ],
+        "wait": 50
+      }
+    ],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  }
+}

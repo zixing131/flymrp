@@ -1,0 +1,1742 @@
+{
+  "4": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "5": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "6": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "8": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "9": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "10": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "12": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "13": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "17": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "18": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "19": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "20": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "21": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "25": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "26": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "27": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "28": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "29": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "30": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "31": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "32": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "33": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "34": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "35": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "37": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "38": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "39": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "42": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "43": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "44": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "46": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "49": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "53": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "54": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "58": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "59": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "60": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "61": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "65": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "67": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "68": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "72": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "73": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "76": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "77": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "80": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "81": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "83": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "85": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "87": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "88": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "89": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "91": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "92": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "94": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "96": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "97": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "98": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "99": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "101": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "102": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "103": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "105": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "106": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "107": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "108": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "109": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "110": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "113": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "114": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "115": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "116": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "119": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "120": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "121": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "122": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "124": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "126": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "127": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "130": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "136": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "138": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "139": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "141": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "142": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "145": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "146": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "147": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "148": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "149": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "150": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "151": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "152": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "153": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "154": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "155": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "156": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "157": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "158": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "159": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "160": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "161": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "165": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "166": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "167": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "168": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "169": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "170": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "171": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "176": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "177": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "178": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "180": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "183": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "184": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "190": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "198": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "201": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "203": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "204": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "205": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "207": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "208": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "210": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "211": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "212": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "213": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "214": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "215": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "216": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "217": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "223": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "226": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "231": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "232": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "233": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "235": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "237": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "238": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "239": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "242": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "243": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "244": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "246": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "247": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "250": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "251": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "254": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "257": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "261": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "263": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "264": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "266": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "268": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "270": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "271": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "272": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "273": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "274": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "276": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "277": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "279": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "282": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "285": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "287": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "288": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "290": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "291": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "295": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "299": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "300": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "302": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": [],
+    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+  },
+  "22": {
+    "profile": {
+      "width": 320,
+      "height": 240,
+      "wordLoadMode": "bytewise"
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": []
+  },
+  "23": {
+    "profile": {
+      "width": 320,
+      "height": 480,
+      "wordLoadMode": "bytewise"
+    },
+    "clock": "monotonic",
+    "bootTicks": 30,
+    "entry": []
+  }
+}

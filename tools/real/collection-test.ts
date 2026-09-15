@@ -19,6 +19,9 @@ type Action = (({ key: string } | { tap: [number, number] } | { swipe: [[number,
 type Scenario = { profile?: Partial<import("../../src/mythroad/profile.ts").DeviceProfile>; clock?: "deterministic" | "monotonic"; tickMs?: number; entry?: Action[]; controls?: Action[]; bootTicks?: number; tailTicks?: number; gameplaySha256?: string[]; controlSha256?: string[]; reviewNote?: string };
 const manifestPath = resolve(process.env.MRP_TEST_MANIFEST ?? "docs/compatibility/collection-100.json");
 const scenarioPath = resolve(process.env.MRP_TEST_SCENARIOS ?? "docs/compatibility/scenarios.json");
+const verificationMode = process.env.MRP_TEST_MODE ?? "functional";
+if (verificationMode !== "functional" && verificationMode !== "entry") throw new Error("MRP_TEST_MODE must be functional or entry");
+const entryOnly = verificationMode === "entry";
 const manifest = JSON.parse(readFileSync(manifestPath,"utf8"));
 const allGames: Game[] = manifest.games ? manifest.games.map((game: Game, index: number) => ({ ...game, id: index + 1 })) : [...manifest.requiredGames,...manifest.selected];
 const scenarios: Record<string, Scenario> = existsSync(scenarioPath) ? JSON.parse(readFileSync(scenarioPath,"utf8")) : {};
@@ -96,21 +99,25 @@ if(worker) {
   try {
     rt.loadMrp(bytes);phase="start";rt.start();phase="boot";tick(scenario.bootTicks??50);capture("boot");
     phase="entry";
-    const entry=scenario.entry??[{key:"SOFTLEFT"},{key:"FIRE"},{key:"FIRE"},{key:"FIRE"}];
+    const entry=scenario.entry??(entryOnly?[]:[{key:"SOFTLEFT"},{key:"FIRE"},{key:"FIRE"},{key:"FIRE"}]);
     for(const [index,action] of entry.entries()){tap(action);capture(`entry${index+1}`);}
     phase="controls";
-    const controls=scenario.controls??["UP","RIGHT","DOWN","LEFT","2","6","8","4","5"].map(key=>({key,hold:5,wait:10}));
+    const controls=entryOnly?[]:scenario.controls??["UP","RIGHT","DOWN","LEFT","2","6","8","4","5"].map(key=>({key,hold:5,wait:10}));
     for(const [index,action] of controls.entries()){
       tap(action);const name=`control${index+1}`;capture(name);
       if (!("idle" in action)) inputCheckpoints.add(name);
     }
-    capture("controls");phase="sustained";
-    tick(Math.max(scenario.tailTicks??0,Math.ceil(60000/(scenario.tickMs??80))));capture("sustained");phase="complete";
+    if (entryOnly) capture("entry");
+    else {
+      capture("controls");phase="sustained";
+      tick(Math.max(scenario.tailTicks??0,Math.ceil(60000/(scenario.tickMs??80))));capture("sustained");
+    }
+    phase="complete";
   } catch(e) {error=e instanceof Error?`${e.name}: ${e.message}`:String(e);capture("failure");}
   const nonBlack=display.pixels.some(p=>p!==0),expected=scenario.gameplaySha256??[];
   const sceneVerified=expected.length>0&&checkpoints.some(c=>expected.includes(c.sha256));
   const interactionVerified=(scenario.controlSha256??[]).length>0&&checkpoints.some(c=>inputCheckpoints.has(c.name)&&scenario.controlSha256!.includes(c.sha256));
-  const outcome=rt.exited?"exited":error?"runtime-error":!nonBlack?"black-screen":controlChanges===0?"no-input-response":(!sceneVerified||!interactionVerified)?"needs-scene-review":"passed";
+  const outcome=rt.exited?"exited":error?"runtime-error":!nonBlack?"black-screen":entryOnly?"entry-review":controlChanges===0?"no-input-response":(!sceneVerified||!interactionVerified)?"needs-scene-review":"passed";
   // Preserve installer/tool output evidence even when the guest exits normally.
   const writtenFiles = [...rt.appFs.nodes].flatMap(([name,node]) => {
     if (node.kind !== "file") return [];
@@ -130,7 +137,7 @@ if(worker) {
   const diff=execFileSync("git",["diff"],{encoding:"utf8"});
   const meta={revision,workingDiffSha256:hash(diff),manifestSha256:hash(readFileSync(manifestPath)),scenarioSha256:existsSync(scenarioPath)?hash(readFileSync(scenarioPath)):null,
     systemFilesSha256:systemFileHashes({ ...Object.fromEntries(SYSTEM_COMPONENTS.map(name=>[name,readFileSync(`assets/${name}`)])), ...await loadLocalSystemFiles(process.env.MRP_TEST_PRODUCTION ? undefined : localSystemDirectory) }),
-    startedAt:new Date().toISOString(),requiredCount:allGames.length,selectedCount:games.length,concurrency,method:"frozen-content-presented-lcd-controls-60s-scene-review-v2"};
+    startedAt:new Date().toISOString(),requiredCount:allGames.length,selectedCount:games.length,concurrency,verificationMode,method:entryOnly?"frozen-content-startup-review-v1":"frozen-content-presented-lcd-controls-60s-scene-review-v2"};
   const results: any[]=[];
   const save=()=>writeFileSync(join(output,"results.json"),JSON.stringify({...meta,complete:results.length===games.length,
     allPassed:results.length===allGames.length&&results.every(r=>r.outcome==="passed"),results:[...results].sort((a,b)=>a.id-b.id)},null,2)+"\n");

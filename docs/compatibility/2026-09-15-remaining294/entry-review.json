@@ -1,0 +1,4502 @@
+{
+  "scope": 313,
+  "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
+  "sourceFunctionalVerifiedCount": 24,
+  "entryVerifiedCount": 177,
+  "remainingEntryVerification": 136,
+  "results": [
+    {
+      "testId": 1,
+      "caseId": 3,
+      "title": "sky插件V7安装包",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/1-sustained.png",
+      "previousDisposition": "verified",
+      "note": "完成页显示skyV7插件放置完成；需验证实际写出的文件。",
+      "profile": {}
+    },
+    {
+      "testId": 2,
+      "caseId": 4,
+      "title": "sky字库V3安装包",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/2-sustained.png",
+      "previousDisposition": "verified",
+      "note": "完成页显示skyV3字库放置完成；需验证实际写出的文件。",
+      "profile": {}
+    },
+    {
+      "testId": 3,
+      "caseId": 5,
+      "title": "vmrp安装包",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/3-failure.png",
+      "previousDisposition": "verified",
+      "note": "安装VMRP提示5秒后完成退出，正常自动退出候选；需验证产物。",
+      "profile": {}
+    },
+    {
+      "testId": 4,
+      "caseId": 7,
+      "title": "冒泡",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/storage-fixed/4-entry.png",
+      "previousDisposition": "investigate-storage-check",
+      "note": "已确认进入冒泡首页；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 5,
+      "caseId": 10,
+      "title": "听听音阅",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/5-entry.png",
+      "previousDisposition": "blocked-registration-or-content",
+      "note": "听听音阅显示软件未注册、音乐列表为空，主界面可见。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 6,
+      "caseId": 11,
+      "title": "应用列表8.0",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/6-failure.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "start阶段退出且黑屏。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 7,
+      "caseId": 18,
+      "title": "斗象棋2026",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/7-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "象棋完整棋盘可见但步数00；未验证走子。",
+      "profile": {}
+    },
+    {
+      "testId": 8,
+      "caseId": 31,
+      "title": "2012超级美眉连连看",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/8-entry.png",
+      "previousDisposition": "blocked-handset-check",
+      "note": "明确显示本手机不支持此类应用。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 9,
+      "caseId": 76,
+      "title": "a.bmp→a.jpg",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/9-failure.png",
+      "previousDisposition": "needs-input-files",
+      "note": "BMP转JPG工具黑屏后退出，待核查需要的源图输入。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "black-screen",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 10,
+      "caseId": 81,
+      "title": "AV美女写真",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry-prompts/10-entry.png",
+      "previousDisposition": "blocked-offline-service",
+      "note": "通过音效确认进入开始游戏菜单；不再验证玩法。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 11,
+      "caseId": 95,
+      "title": "CS1.6特警先锋",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/11-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "已进入特警关卡对话；尚无移动或攻击证据。",
+      "profile": {}
+    },
+    {
+      "testId": 12,
+      "caseId": 98,
+      "title": "CS反恐风云",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/12-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "已确认进入开始菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 13,
+      "caseId": 106,
+      "title": "DNF复仇者之怒",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/13-failure.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "尚无boot检查点，启动阶段退出。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 14,
+      "caseId": 109,
+      "title": "DNF狂战之怒",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/14-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "DNF狂战之怒停在开始游戏菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 15,
+      "caseId": 110,
+      "title": "DNF欲望格斗",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/15-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "DNF欲望格斗停在开始游戏菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 16,
+      "caseId": 115,
+      "title": "Dota之超神屠夫",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/16-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "开场剧情右下继续，待进入关卡。",
+      "profile": {}
+    },
+    {
+      "testId": 17,
+      "caseId": 116,
+      "title": "Dota之超神屠夫",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/17-entry.png",
+      "previousDisposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 18,
+      "caseId": 132,
+      "title": "MRP NES软件平台",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/18-entry.png",
+      "previousDisposition": "blocked-builtin-package",
+      "note": "NES模拟器主页",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 19,
+      "caseId": 137,
+      "title": "MSN",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/19-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 20,
+      "caseId": 138,
+      "title": "MSN",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/20-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 21,
+      "caseId": 139,
+      "title": "MSN",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/21-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络安装功能模块失败；缺appid480101包。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 22,
+      "caseId": 144,
+      "title": "MTK魔法寿司_320x240",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/sushi-play/22-boot.png",
+      "previousDisposition": "runtime-failure",
+      "note": "map16读取0x200ffff越界。",
+      "profile": {
+        "wordLoadMode": "bytewise"
+      },
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 23,
+      "caseId": 145,
+      "title": "MTK魔法寿司_320x480",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/sushi-play/23-boot.png",
+      "previousDisposition": "runtime-failure",
+      "note": "map16读取0x200ffff越界。",
+      "profile": {
+        "wordLoadMode": "bytewise"
+      },
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 24,
+      "caseId": 159,
+      "title": "NES积分-天蓝",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/24-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "NES积分显示已赠送，待返回操作验证。",
+      "profile": {}
+    },
+    {
+      "testId": 25,
+      "caseId": 160,
+      "title": "NES模拟器",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/25-entry.png",
+      "previousDisposition": "blocked-authorization",
+      "note": "NES模拟器显示未授权。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 26,
+      "caseId": 161,
+      "title": "nes模拟器XL版1.2",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/26-failure.png",
+      "previousDisposition": "runtime-failure",
+      "note": "debugOutput Arithmetic exception: Divide By Zero。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 27,
+      "caseId": 162,
+      "title": "QQ",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/27-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络安装功能模块失败；缺appid480101包。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 28,
+      "caseId": 163,
+      "title": "QQ",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/28-entry.png",
+      "previousDisposition": "blocked-login-service",
+      "note": "QQ登录界面，无有效在线登录证据。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 29,
+      "caseId": 164,
+      "title": "QQ2010",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/29-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 30,
+      "caseId": 165,
+      "title": "QQ2010",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/30-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 31,
+      "caseId": 166,
+      "title": "QQ2010",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/31-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 32,
+      "caseId": 170,
+      "title": "QQ2010（超级挂Q）",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/32-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 33,
+      "caseId": 174,
+      "title": "QQ斗地主3.3正式版",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/33-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 34,
+      "caseId": 178,
+      "title": "QQ空间",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/34-entry.png",
+      "previousDisposition": "blocked-network-or-entry",
+      "note": "浏览器接入点菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 35,
+      "caseId": 179,
+      "title": "QQ空间",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/35-entry.png",
+      "previousDisposition": "blocked-network-or-entry",
+      "note": "浏览器接入点菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 36,
+      "caseId": 183,
+      "title": "QQ手机软件管理",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/36-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "文件管理器选择QQ2010，待实际打开验证。",
+      "profile": {}
+    },
+    {
+      "testId": 37,
+      "caseId": 184,
+      "title": "QQ网游大厅",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/37-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "脚本明确cann`t be run direct!",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 38,
+      "caseId": 187,
+      "title": "QQ炫舞",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/38-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "正常开始游戏菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 39,
+      "caseId": 188,
+      "title": "Q版飞车",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/39-entry.png",
+      "previousDisposition": "blocked-offline-service",
+      "note": "已确认进入剧情模式选择菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 40,
+      "caseId": 192,
+      "title": "ram_scan",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/40-sustained.png",
+      "previousDisposition": "verified",
+      "note": "完成4MiB dump文件写出、返回及8MiB扫描100%成功，独立场景回归passed。",
+      "profile": {}
+    },
+    {
+      "testId": 41,
+      "caseId": 212,
+      "title": "xqc安装包2",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/41-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "进入文本编辑器跳转对话框，输入框含16666；需要核对文本编辑/保存操作。",
+      "profile": {}
+    },
+    {
+      "testId": 42,
+      "caseId": 215,
+      "title": "ZCOM手机杂志",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/42-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "ZCOM手机杂志一直显示正在加载中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 43,
+      "caseId": 216,
+      "title": "“粽”想过61",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/43-entry.png",
+      "previousDisposition": "blocked-offline-service",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 44,
+      "caseId": 217,
+      "title": "ＣＳ反恐特警",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts3/44-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "已确认进入新游戏、读取游戏和设置菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 45,
+      "caseId": 232,
+      "title": "爱上3D爱上图",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/45-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "爱上3D图进入、设置、帮助菜单可见，待实际绘图操作。",
+      "profile": {}
+    },
+    {
+      "testId": 46,
+      "caseId": 233,
+      "title": "爱阅看书2.0",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/46-failure.png",
+      "previousDisposition": "runtime-failure",
+      "note": "递归DNS失败后guest heap corruption，已知缺失服务。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "Error: corrupt guest heap free block: address=0x8a3658 size=0x2ad39c base=0x296700 end=0xa96700",
+        "ticks": 12,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 47,
+      "caseId": 239,
+      "title": "暗黑穿越-真实杀戮",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/47-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "进入战斗关卡开场对话，尚无攻击/移动证据。",
+      "profile": {}
+    },
+    {
+      "testId": 48,
+      "caseId": 240,
+      "title": "暗黑穿越-真实杀戮",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/48-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "进入战斗关卡开场对话，尚无攻击/移动证据。",
+      "profile": {}
+    },
+    {
+      "testId": 49,
+      "caseId": 253,
+      "title": "傲剑OL",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/49-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "提示第一次安装，选择免费注册账号；在线服务依赖。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 50,
+      "caseId": 265,
+      "title": "八仙过海",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/50-sustained.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "询问是否退出游戏，可能探针触发了退出菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 51,
+      "caseId": 266,
+      "title": "把美女灌醉",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/51-sustained.png",
+      "previousDisposition": "needs-replay-verification",
+      "note": "游戏进入失败结算：你输了，按这里或0键再来。",
+      "profile": {}
+    },
+    {
+      "testId": 52,
+      "caseId": 267,
+      "title": "把美女灌醉",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/52-sustained.png",
+      "previousDisposition": "needs-replay-verification",
+      "note": "游戏进入失败结算：你输了，按这里或0键再来；边缘花屏暂缓。",
+      "profile": {}
+    },
+    {
+      "testId": 53,
+      "caseId": 268,
+      "title": "把美女灌醉",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/53-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "正常游戏开始界面",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 54,
+      "caseId": 276,
+      "title": "百宝箱",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/54-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块并退出。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 55,
+      "caseId": 279,
+      "title": "百家乐",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/55-failure.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "百家乐主菜单注明5开始、8帮助、0排行，需定向入口，未确认退出原因。",
+      "profile": {}
+    },
+    {
+      "testId": 56,
+      "caseId": 295,
+      "title": "宝石迷阵",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/56-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "宝石迷阵道具商店，未验证棋盘操作。",
+      "profile": {}
+    },
+    {
+      "testId": 57,
+      "caseId": 314,
+      "title": "避孕大作战",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/57-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "触屏消灭蝌蚪的操作提示，需实际点选验证。",
+      "profile": {}
+    },
+    {
+      "testId": 58,
+      "caseId": 315,
+      "title": "便宜！绝对划算",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/58-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装/宣传页，提示摇一摇变换音乐列表，无实际内容。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 59,
+      "caseId": 336,
+      "title": "捕鱼达人",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/59-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 60,
+      "caseId": 337,
+      "title": "捕鱼达人",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/60-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "捕鱼达人竖屏标题及取消提示，静态。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 61,
+      "caseId": 347,
+      "title": "猜奥运金牌得手机",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/61-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "宣传安装中页面持续。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 62,
+      "caseId": 349,
+      "title": "彩蛋大战",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/62-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "彩蛋大战卡通标题画面持续。",
+      "profile": {}
+    },
+    {
+      "testId": 63,
+      "caseId": 351,
+      "title": "彩虹QQ2014完整收藏版",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/63-sustained.png",
+      "previousDisposition": "needs-installer-workflow",
+      "note": "彩虹QQ2014安装程序，下一步/退出安装。",
+      "profile": {}
+    },
+    {
+      "testId": 64,
+      "caseId": 366,
+      "title": "超级合金装备",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/64-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "超级合金装备进入横版射击关卡，尚需有效控制核验。",
+      "profile": {}
+    },
+    {
+      "testId": 65,
+      "caseId": 396,
+      "title": "超爽绝杀大合辑",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/65-entry.png",
+      "previousDisposition": "blocked-builtin-package",
+      "note": "存储卡已满/不支持提示，实际错误缺少*J注册槽。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 66,
+      "caseId": 405,
+      "title": "成语大师",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/66-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "成语大师开始/帮助/音效菜单，待点击开始。",
+      "profile": {}
+    },
+    {
+      "testId": 67,
+      "caseId": 432,
+      "title": "穿越火线之飞虎队",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry-prompts/67-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "通过音效确认进入开始游戏菜单；不再验证玩法。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 68,
+      "caseId": 451,
+      "title": "吹裙子",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/68-entry.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "正常开始游戏菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 69,
+      "caseId": 461,
+      "title": "存款计算器",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/69-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "存款计算器说明页，需真实计算输入。",
+      "profile": {}
+    },
+    {
+      "testId": 70,
+      "caseId": 465,
+      "title": "打小鸟",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/70-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "射击场景得分0，尚无命中证据。",
+      "profile": {}
+    },
+    {
+      "testId": 71,
+      "caseId": 491,
+      "title": "大漠狂刀",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/71-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "大漠狂刀进入角色HP战斗场景，需验证移动/攻击。",
+      "profile": {}
+    },
+    {
+      "testId": 72,
+      "caseId": 498,
+      "title": "大师在线设计签名",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/72-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "明确cann`t be run direct!，缺父启动平台。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 73,
+      "caseId": 500,
+      "title": "大雄约会放屁",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/73-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "正常开始游戏菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 74,
+      "caseId": 506,
+      "title": "弹力球",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/74-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "弹力球开始/帮助/排行/退出主菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 75,
+      "caseId": 523,
+      "title": "盗墓鬼吹灯笔记",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/75-failure.png",
+      "previousDisposition": "startup-fixed-needs-gameplay",
+      "note": "释放资源中时预算超限，PC0x26309a。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
+      "profile": {}
+    },
+    {
+      "testId": 76,
+      "caseId": 543,
+      "title": "第十亿个幸运者",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/76-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中音乐宣传页持续。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 77,
+      "caseId": 545,
+      "title": "第一次亲密接触",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/77-entry.png",
+      "previousDisposition": "blank-output",
+      "note": "白屏无文字，需检查内容资源/入口。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 78,
+      "caseId": 551,
+      "title": "调色板XL",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/78-sustained.png",
+      "previousDisposition": "verified",
+      "note": "调色板ARGB滑杆，需验证颜色数值改变。",
+      "profile": {}
+    },
+    {
+      "testId": 79,
+      "caseId": 553,
+      "title": "谍影重重Ⅱ",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/79-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "横版剧情对白，需继续键后验证操作。",
+      "profile": {}
+    },
+    {
+      "testId": 80,
+      "caseId": 575,
+      "title": "毒蛇行动2-丛林之谜",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/80-failure.png",
+      "previousDisposition": "blank-output",
+      "note": "声音询问后最终黑屏，运行无异常，需场景复查。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "black-screen",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 81,
+      "caseId": 577,
+      "title": "独孤九剑",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/81-failure.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "黑屏退出，无debugOutput。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 82,
+      "caseId": 583,
+      "title": "赌王之王-黄金城",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/82-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "赌王之王黄金城开始游戏菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 83,
+      "caseId": 589,
+      "title": "多款游戏限时免费",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/83-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "宣传音乐列表安装中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 84,
+      "caseId": 596,
+      "title": "夺命番茄",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/84-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "夺命番茄旋转主菜单，开始/说明/退出。",
+      "profile": {}
+    },
+    {
+      "testId": 85,
+      "caseId": 633,
+      "title": "放假啦疯狂游戏吧",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/85-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "宣传音乐列表安装中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 86,
+      "caseId": 640,
+      "title": "飞天忍者喵",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/86-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "飞天忍者喵夜间平台场景30km/h，需有效操作核验。",
+      "profile": {}
+    },
+    {
+      "testId": 87,
+      "caseId": 643,
+      "title": "飞信",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/87-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "明确cann`t be run direct!。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 88,
+      "caseId": 645,
+      "title": "飞信",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/88-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 89,
+      "caseId": 659,
+      "title": "风流三国",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/89-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡首次安装注册弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 90,
+      "caseId": 665,
+      "title": "风云三国",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/90-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "树林湖泊角色与对话框，待移动/继续输入。",
+      "profile": {}
+    },
+    {
+      "testId": 91,
+      "caseId": 673,
+      "title": "疯狂吧！光棍",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/91-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "连接网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 92,
+      "caseId": 674,
+      "title": "疯狂捕鱼",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/92-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "疯狂捕鱼标题取消提示。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 93,
+      "caseId": 687,
+      "title": "疯狂的小鸟太空版",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/93-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "疯狂小鸟太空版开始/设置/退出菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 94,
+      "caseId": 723,
+      "title": "父亲节抢楼送手机",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/94-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "音乐列表安装宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 95,
+      "caseId": 726,
+      "title": "干爹的爱",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/95-failure.png",
+      "previousDisposition": "startup-fixed-needs-gameplay",
+      "note": "下载资源中约70%，预算超限PC0x24c6c0。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
+      "profile": {}
+    },
+    {
+      "testId": 96,
+      "caseId": 727,
+      "title": "干爹的爱",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/96-failure.png",
+      "previousDisposition": "runtime-failure",
+      "note": "下载资源中约45%，预算超限PC0x29782c。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "ExtFault: EXT fault abi-fault at 0x29d004 (arm_ext_call: budget exceeded)",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 97,
+      "caseId": 734,
+      "title": "港式五张",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/97-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡首次安装注册提示。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 98,
+      "caseId": 752,
+      "title": "给力猫",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/98-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "给力猫付费/取消体验弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 99,
+      "caseId": 753,
+      "title": "给力猫",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/99-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "给力猫下载提示。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 100,
+      "caseId": 755,
+      "title": "给力枪手连环杀",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/100-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "关卡1/13得分40射击场景，需确认输入因果和重开。",
+      "profile": {}
+    },
+    {
+      "testId": 101,
+      "caseId": 758,
+      "title": "更多精品游戏",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/101-entry.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "浏览器接入点菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 102,
+      "caseId": 768,
+      "title": "公交查询",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/102-entry.png",
+      "previousDisposition": "blocked-query-service",
+      "note": "公交查询主界面",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 103,
+      "caseId": 782,
+      "title": "股票交易版",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/103-entry.png",
+      "previousDisposition": "blocked-login-service",
+      "note": "股票登录界面，未验证在线服务。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 104,
+      "caseId": 783,
+      "title": "怪蛋风暴_大屏版",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/104-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "怪蛋风暴开始/帮助/退出菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 105,
+      "caseId": 801,
+      "title": "鬼手伏魔录",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/105-failure.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "鬼手伏魔录黑屏退出。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 106,
+      "caseId": 809,
+      "title": "国庆去哪儿",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/106-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络连接失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 107,
+      "caseId": 839,
+      "title": "核弹风暴",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/107-entry.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "核弹风暴主菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 108,
+      "caseId": 841,
+      "title": "和美女20次亲密接触",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/108-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中音乐宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 109,
+      "caseId": 844,
+      "title": "合金弹头2013",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry-prompts/109-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "通过音效确认进入开始游戏菜单；不再验证玩法。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 110,
+      "caseId": 845,
+      "title": "合金弹头2013",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry-prompts/110-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "通过音效确认进入开始游戏菜单；不再验证玩法。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 111,
+      "caseId": 855,
+      "title": "黑暗传说之利器",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/111-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "黑暗传说进入横版战斗场景，待攻击/移动核验。",
+      "profile": {}
+    },
+    {
+      "testId": 112,
+      "caseId": 880,
+      "title": "欢乐马戏团",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/112-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "欢乐马戏团教学关卡说明，需继续。",
+      "profile": {}
+    },
+    {
+      "testId": 113,
+      "caseId": 882,
+      "title": "欢乐五一幸运抽奖",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/113-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络连接失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 114,
+      "caseId": 894,
+      "title": "幻想三国",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/114-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "幻想三国游戏加载中提示持续。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 115,
+      "caseId": 895,
+      "title": "幻想三国online",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/115-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "幻想三国online注册账号选择弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 116,
+      "caseId": 901,
+      "title": "黄金矿工",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/116-entry.png",
+      "previousDisposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 117,
+      "caseId": 908,
+      "title": "毁灭巫师",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/117-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "毁灭巫师关卡对白，待继续及攻击。",
+      "profile": {}
+    },
+    {
+      "testId": 118,
+      "caseId": 910,
+      "title": "会飞的汤姆猫",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/118-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "会飞汤姆猫关卡1，分数6677/8000，需确认跳跃操作。",
+      "profile": {}
+    },
+    {
+      "testId": 119,
+      "caseId": 918,
+      "title": "活动介绍",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/119-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页无实际内容。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 120,
+      "caseId": 922,
+      "title": "火车订票",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/120-entry.png",
+      "previousDisposition": "blocked-query-service",
+      "note": "火车订票工具首页",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 121,
+      "caseId": 923,
+      "title": "火车订票",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/121-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "start.mr 在调用原生扩展前检查宿主全局 _nes3ShP7SwK0 == 370，不满足则主动报 cann`t be run direct!；需要原始宿主启动上下文。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 122,
+      "caseId": 947,
+      "title": "激情冲动",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/122-failure.png",
+      "previousDisposition": "blocked-truncated-package",
+      "note": "源包实际98304字节，头部声明124976字节；cfunction.ext 尾部缺26672字节。其他副本版本不同，未替换冻结样本。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "worker-error",
+        "error": "/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185\n    throw new MrpFormatError(\"invalid offset or compressed length\");\n          ^\n\nMrpFormatError: invalid offset or compressed length\n    at pushEntry (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:185:11)\n    at parseIndex (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:220:5)\n    at MRPArchive.parse (/Users/zixing/Documents/zixing/github/flymrp/src/mrp/archive.ts:123:7)\n    at <anonymous> (/Users/zixing/Documents/zixing/github/flymrp/tools/real/collection-test.ts:53:124)\n    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)\n    at async node:internal/modules/esm/loader:650:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v26.7.0\n",
+        "ticks": null,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 123,
+      "caseId": 960,
+      "title": "极品家丁-9527",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/123-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "极品家丁开场剧情右下继续。",
+      "profile": {}
+    },
+    {
+      "testId": 124,
+      "caseId": 967,
+      "title": "寄生兽",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/124-entry.png",
+      "previousDisposition": "blank-output",
+      "note": "已确认进入开始游戏菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 125,
+      "caseId": 968,
+      "title": "寄生兽",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/125-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "寄生兽进入剧情对话，待继续。",
+      "profile": {}
+    },
+    {
+      "testId": 126,
+      "caseId": 975,
+      "title": "假日休闲乐逍遥",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/126-entry.png",
+      "previousDisposition": "blocked-builtin-package",
+      "note": "无法读取*J，缺内置注册槽。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 127,
+      "caseId": 988,
+      "title": "剑侣情缘3美人如玉",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/127-entry.png",
+      "previousDisposition": "blocked-handset-check",
+      "note": "本手机不支持此类应用。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 128,
+      "caseId": 1004,
+      "title": "僵尸大暴走",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/128-sustained.png",
+      "previousDisposition": "needs-replay-verification",
+      "note": "僵尸战斗场景进入游戏失败，需失败前控制及重开验证。",
+      "profile": {}
+    },
+    {
+      "testId": 129,
+      "caseId": 1018,
+      "title": "江南style骑马舞",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/129-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "主角形象选择，5确定。",
+      "profile": {}
+    },
+    {
+      "testId": 130,
+      "caseId": 1021,
+      "title": "降龙十八掌",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/130-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "首次安装注册弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 131,
+      "caseId": 1040,
+      "title": "节日祝福语",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/131-sustained.png",
+      "previousDisposition": "verified",
+      "note": "新年祝福内容、上一条下一条，需要翻页核验。",
+      "profile": {}
+    },
+    {
+      "testId": 132,
+      "caseId": 1062,
+      "title": "精品切水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/132-sustained.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "切水果菜单注明按1开始、按3帮助。",
+      "profile": {}
+    },
+    {
+      "testId": 133,
+      "caseId": 1075,
+      "title": "经典泡泡龙",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/133-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "泡泡龙棋盘发射器，待发射及消除证据。",
+      "profile": {}
+    },
+    {
+      "testId": 134,
+      "caseId": 1078,
+      "title": "警花射击训练",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/134-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "警花射击训练开始/说明菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 135,
+      "caseId": 1081,
+      "title": "狙击精英",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/135-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "狙击镜训练，提示方向键或触屏移动镜头，待射击验证。",
+      "profile": {}
+    },
+    {
+      "testId": 136,
+      "caseId": 1083,
+      "title": "狙击小日本",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/136-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "已确认进入开始游戏、战绩和说明菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 137,
+      "caseId": 1091,
+      "title": "绝命杀手斩龙刃",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/137-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "横版关卡开场对白，未确认战斗输入。",
+      "profile": {}
+    },
+    {
+      "testId": 138,
+      "caseId": 1143,
+      "title": "快点网址导航",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/138-failure.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "黑屏退出。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 139,
+      "caseId": 1160,
+      "title": "来电助手",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/139-failure.png",
+      "previousDisposition": "blocked-parent-platform",
+      "note": "cann`t be run direct!。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 140,
+      "caseId": 1190,
+      "title": "冷笑话大全",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/140-sustained.png",
+      "previousDisposition": "needs-tool-workflow",
+      "note": "冷笑话集中营首页目录，需要实际内容翻页。",
+      "profile": {}
+    },
+    {
+      "testId": 141,
+      "caseId": 1201,
+      "title": "恋爱气球",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/141-entry.png",
+      "previousDisposition": "feature-unresolved",
+      "note": "恋爱气球空白预览，已知主题设置失败，包解析修复不等于功能通过。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 142,
+      "caseId": 1220,
+      "title": "零距离触摸美女",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/142-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 143,
+      "caseId": 1225,
+      "title": "灵剑封魔录",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/143-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "灵剑封魔录战斗对白，需操作。",
+      "profile": {}
+    },
+    {
+      "testId": 144,
+      "caseId": 1285,
+      "title": "猫捉老鼠",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/144-sustained.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "猫捉老鼠静态菜单。",
+      "profile": {}
+    },
+    {
+      "testId": 145,
+      "caseId": 1286,
+      "title": "冒泡",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/storage-fixed/145-entry.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "已确认进入冒泡首页；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 146,
+      "caseId": 1287,
+      "title": "冒泡VIP游戏套餐",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/146-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 147,
+      "caseId": 1292,
+      "title": "冒泡看图",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/147-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 148,
+      "caseId": 1296,
+      "title": "冒泡平台",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/storage-fixed/148-entry.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "已确认进入冒泡平台首页；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 149,
+      "caseId": 1297,
+      "title": "冒泡棋牌",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/149-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 150,
+      "caseId": 1298,
+      "title": "冒泡棋牌",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/150-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 151,
+      "caseId": 1300,
+      "title": "冒泡软件魔盒",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/appbox-tabs/1-entry18.png",
+      "previousDisposition": "runtime-failure",
+      "note": "修复目录枚举后完成安装并进入软件魔盒子程序主页；在线内容仍依赖外部服务。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 152,
+      "caseId": 1301,
+      "title": "冒泡社区",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/152-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 153,
+      "caseId": 1302,
+      "title": "冒泡社区安装",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/153-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "我爱冒泡注册更新弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 154,
+      "caseId": 1303,
+      "title": "冒泡视频交友",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/154-entry.png",
+      "previousDisposition": "blocked-configuration",
+      "note": "冒泡影音配置信息检查出错。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 155,
+      "caseId": 1309,
+      "title": "冒泡听吧",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/155-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "提示未插SIM卡或无网络。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 156,
+      "caseId": 1310,
+      "title": "冒泡网",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/156-entry.png",
+      "previousDisposition": "investigate-start-exit",
+      "note": "浏览器接入点菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 157,
+      "caseId": 1311,
+      "title": "冒泡网游",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/157-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "冒泡网游首次注册弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 158,
+      "caseId": 1312,
+      "title": "冒泡音乐",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/158-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 159,
+      "caseId": 1315,
+      "title": "冒泡游戏商城",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/159-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "冒泡浏览器欢迎页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 160,
+      "caseId": 1324,
+      "title": "冒泡浏览器安装",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/160-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "浏览器工具首页",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 161,
+      "caseId": 1325,
+      "title": "冒泡浏览器安装",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/161-entry.png",
+      "previousDisposition": "blocked-network-content",
+      "note": "浏览器工具首页",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 162,
+      "caseId": 1328,
+      "title": "冒险岛",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/162-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "冒险岛关卡对白，待操作。",
+      "profile": {}
+    },
+    {
+      "testId": 163,
+      "caseId": 1339,
+      "title": "美女3D飞车",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/163-sustained.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "美女3D飞车道具商店，待继续进入比赛。",
+      "profile": {}
+    },
+    {
+      "testId": 164,
+      "caseId": 1350,
+      "title": "美女翻翻看",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/164-failure.png",
+      "previousDisposition": "startup-fixed-needs-gameplay",
+      "note": "释放资源中预算超限，PC0x2974aa。；256M预算后启动及持续运行正常，完整玩法仍待验证。",
+      "profile": {}
+    },
+    {
+      "testId": 165,
+      "caseId": 1386,
+      "title": "梦幻封神",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/165-entry.png",
+      "previousDisposition": "blocked-registration",
+      "note": "首次安装注册弹窗。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 166,
+      "caseId": 1406,
+      "title": "免费抽奖|欢乐共享",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/166-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 167,
+      "caseId": 1408,
+      "title": "秒杀iPhone的游戏",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/167-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 168,
+      "caseId": 1410,
+      "title": "明星美女麻将馆",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry-prompts/168-entry.png",
+      "previousDisposition": "runtime-failure",
+      "note": "通过音效确认进入开始游戏菜单；不再验证玩法。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 169,
+      "caseId": 1414,
+      "title": "名将三国OL",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts3/169-entry.png",
+      "previousDisposition": "blank-output",
+      "note": "已确认进入进入游戏和继续菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 170,
+      "caseId": 1491,
+      "title": "内衣大盗",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/170-entry.png",
+      "previousDisposition": "needs-touch-entry",
+      "note": "已确认进入帮助、开始、音乐和退出菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 171,
+      "caseId": 1504,
+      "title": "年年有“愚”",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/171-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 172,
+      "caseId": 1511,
+      "title": "农民斗地主",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/172-sustained.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "斗地主角色选择及是否使用控牌功能弹窗。",
+      "profile": {}
+    },
+    {
+      "testId": 173,
+      "caseId": 1515,
+      "title": "怒火铁拳",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/173-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，待战斗操作。",
+      "profile": {}
+    },
+    {
+      "testId": 174,
+      "caseId": 1516,
+      "title": "怒火铁拳",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/174-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，待战斗操作。",
+      "profile": {}
+    },
+    {
+      "testId": 175,
+      "caseId": 1517,
+      "title": "怒火铁拳",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/175-sustained.png",
+      "previousDisposition": "needs-gameplay-input",
+      "note": "怒火铁拳进入对白，带触屏数字键盘，待战斗操作。",
+      "profile": {}
+    },
+    {
+      "testId": 176,
+      "caseId": 1526,
+      "title": "欧洲杯有奖竞猜",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/176-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 177,
+      "caseId": 1560,
+      "title": "七夕“遇见爱”",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/177-entry.png",
+      "previousDisposition": "blocked-resource-download",
+      "note": "网络失败无法安装功能模块。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 178,
+      "caseId": 1561,
+      "title": "七夕冒泡送情意",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/178-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 179,
+      "caseId": 1565,
+      "title": "奇迹捕鱼",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/179-failure.png",
+      "previousDisposition": "needs-entry-retry",
+      "note": "奇迹捕鱼菜单注明1开始、5退出，原探针可能误退出。",
+      "profile": {}
+    },
+    {
+      "testId": 180,
+      "caseId": 1585,
+      "title": "抢！注册道具费全免",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/180-entry.png",
+      "previousDisposition": "blocked-loading",
+      "note": "安装中宣传页。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 181,
+      "caseId": 1589,
+      "title": "抢登钓鱼岛",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/181-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "横版战斗场景和对白，需实际战斗验证",
+      "profile": {}
+    },
+    {
+      "testId": 182,
+      "caseId": 1590,
+      "title": "抢登钓鱼岛",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/182-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "横版战斗场景和对白，需实际战斗验证",
+      "profile": {}
+    },
+    {
+      "testId": 183,
+      "caseId": 1591,
+      "title": "抢滩登陆2012",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts3/183-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "已确认进入关卡模式选择菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 184,
+      "caseId": 1604,
+      "title": "青春纪念册",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/184-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，联网失败退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 185,
+      "caseId": 1616,
+      "title": "情趣高手",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/185-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "九宫格头像弹窗是否进入欣赏",
+      "profile": {}
+    },
+    {
+      "testId": 186,
+      "caseId": 1628,
+      "title": "趣拼高帅富",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/186-sustained.png",
+      "previousDisposition": "verified",
+      "note": "趣拼高帅富第1关开始按钮",
+      "profile": {}
+    },
+    {
+      "testId": 187,
+      "caseId": 1629,
+      "title": "趣拼图",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/187-sustained.png",
+      "previousDisposition": "verified",
+      "note": "趣拼图第1关开始入口",
+      "profile": {}
+    },
+    {
+      "testId": 188,
+      "caseId": 1630,
+      "title": "趣拼学生妹",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/188-sustained.png",
+      "previousDisposition": "verified",
+      "note": "趣拼学生妹第1关开始按钮",
+      "profile": {}
+    },
+    {
+      "testId": 189,
+      "caseId": 1631,
+      "title": "趣拼学生妹",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/189-sustained.png",
+      "previousDisposition": "verified",
+      "note": "趣拼学生妹第1关开始按钮",
+      "profile": {}
+    },
+    {
+      "testId": 190,
+      "caseId": 1681,
+      "title": "人人网",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/190-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "人人网首次使用发送请求页面",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 191,
+      "caseId": 1696,
+      "title": "忍者水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/191-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "忍者水果炸弹教学",
+      "profile": {}
+    },
+    {
+      "testId": 192,
+      "caseId": 1697,
+      "title": "忍者水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/192-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "忍者水果炸弹教学",
+      "profile": {}
+    },
+    {
+      "testId": 193,
+      "caseId": 1698,
+      "title": "忍者水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/193-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "忍者水果得分0菜鸟战士结算",
+      "profile": {}
+    },
+    {
+      "testId": 194,
+      "caseId": 1699,
+      "title": "忍者水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/194-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "忍者水果忍者刀教学",
+      "profile": {}
+    },
+    {
+      "testId": 195,
+      "caseId": 1700,
+      "title": "忍者水果",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/195-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "忍者水果划过水果教学",
+      "profile": {}
+    },
+    {
+      "testId": 196,
+      "caseId": 1703,
+      "title": "扔纸团",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/196-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "扔纸团开始游戏菜单",
+      "profile": {}
+    },
+    {
+      "testId": 197,
+      "caseId": 1707,
+      "title": "如来神掌",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/197-failure.png",
+      "previousDisposition": "entry-retry",
+      "note": "如来神掌菜单选中退出后退出，需定向开始",
+      "profile": {}
+    },
+    {
+      "testId": 198,
+      "caseId": 1714,
+      "title": "三国保钓战",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/198-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "连接服务器失败",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 199,
+      "caseId": 1715,
+      "title": "三国大富翁",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/199-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "三国大富翁主角选择，左右选择圆键确定",
+      "profile": {}
+    },
+    {
+      "testId": 200,
+      "caseId": 1716,
+      "title": "三国大富翁",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/200-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "三国大富翁点击头像双击确定",
+      "profile": {}
+    },
+    {
+      "testId": 201,
+      "caseId": 1730,
+      "title": "三国猛将传",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/201-entry.png",
+      "previousDisposition": "unsupported-profile",
+      "note": "本手机不支持此类应用",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 202,
+      "caseId": 1736,
+      "title": "三国纳妾记",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/202-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "三国纳妾记开始游戏标题页",
+      "profile": {}
+    },
+    {
+      "testId": 203,
+      "caseId": 1781,
+      "title": "蛇来运转大抽奖",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/203-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 204,
+      "caseId": 1799,
+      "title": "神马过年不寂寞",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/204-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 205,
+      "caseId": 1801,
+      "title": "神魔大陆",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts3/205-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "已确认进入开始旅程菜单；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 206,
+      "caseId": 1868,
+      "title": "侍魂之修罗斩",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/206-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "侍魂之修罗斩开始游戏标题页",
+      "profile": {}
+    },
+    {
+      "testId": 207,
+      "caseId": 1880,
+      "title": "手机QQ",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/207-failure.png",
+      "previousDisposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 208,
+      "caseId": 1883,
+      "title": "手机UC原版",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/208-entry.png",
+      "previousDisposition": "black-screen",
+      "note": "持续黑屏",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 209,
+      "caseId": 1889,
+      "title": "手机信号强度仪V3",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/209-sustained.png",
+      "previousDisposition": "verify-device-function",
+      "note": "信号强度仪level3 band5 移动；需设备状态验证",
+      "profile": {}
+    },
+    {
+      "testId": 210,
+      "caseId": 1891,
+      "title": "手机阅读",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/210-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "组件更新网络错误支持断点续传",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 211,
+      "caseId": 1895,
+      "title": "手写库01",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/211-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 212,
+      "caseId": 1896,
+      "title": "手写库02",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/212-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 213,
+      "caseId": 1897,
+      "title": "手写库03",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/213-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 214,
+      "caseId": 1898,
+      "title": "手写库04",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/214-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 215,
+      "caseId": 1901,
+      "title": "手信语音聊天",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/215-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中，缺失下载包",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 216,
+      "caseId": 1903,
+      "title": "暑期iPhone大礼包",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/216-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中Hi画面",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 217,
+      "caseId": 1904,
+      "title": "蜀山剑侠",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/217-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 218,
+      "caseId": 1908,
+      "title": "数学达人",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/218-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "数学达人再来一次/离开游戏弹窗",
+      "profile": {}
+    },
+    {
+      "testId": 219,
+      "caseId": 1915,
+      "title": "水果老虎机",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/219-failure.png",
+      "previousDisposition": "entry-retry",
+      "note": "水果老虎机菜单退出，需定向开始",
+      "profile": {}
+    },
+    {
+      "testId": 220,
+      "caseId": 1916,
+      "title": "水果梦工厂",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/220-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "水果梦工厂开始帮助排名菜单",
+      "profile": {}
+    },
+    {
+      "testId": 221,
+      "caseId": 1924,
+      "title": "水晶之恋",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/221-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "人物换装服饰选择确认页面",
+      "profile": {}
+    },
+    {
+      "testId": 222,
+      "caseId": 1928,
+      "title": "水浒对对碰",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/222-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "水浒公孙胜剧情对话",
+      "profile": {}
+    },
+    {
+      "testId": 223,
+      "caseId": 1929,
+      "title": "水浒反殴传",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/223-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 224,
+      "caseId": 1975,
+      "title": "贪吃小鳄鱼",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/224-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "贪吃小鳄鱼开始游戏菜单",
+      "profile": {}
+    },
+    {
+      "testId": 225,
+      "caseId": 1976,
+      "title": "贪吃小鳄鱼",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/225-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "贪吃小鳄鱼开始游戏菜单",
+      "profile": {}
+    },
+    {
+      "testId": 226,
+      "caseId": 1998,
+      "title": "天龙八部",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/226-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 227,
+      "caseId": 2013,
+      "title": "天天打怪兽",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/227-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "横版战斗剧情对白",
+      "profile": {}
+    },
+    {
+      "testId": 228,
+      "caseId": 2014,
+      "title": "天天打折货到付款",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/228-failure.png",
+      "previousDisposition": "verify-function",
+      "note": "功能菜单精品手机/精品电脑等，需定向操作",
+      "profile": {}
+    },
+    {
+      "testId": 229,
+      "caseId": 2024,
+      "title": "铁血抗日",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/229-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "火车日本兵剧情对白",
+      "profile": {}
+    },
+    {
+      "testId": 230,
+      "caseId": 2025,
+      "title": "铁血抗日",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/230-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "火车日本兵剧情对白",
+      "profile": {}
+    },
+    {
+      "testId": 231,
+      "caseId": 2028,
+      "title": "听听音阅贺岁版",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/231-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "音乐工具主页",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 232,
+      "caseId": 2029,
+      "title": "听听音阅贺岁版",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/232-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "浏览器接入点菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 233,
+      "caseId": 2034,
+      "title": "童年经典游戏合辑",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/233-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 234,
+      "caseId": 2036,
+      "title": "偷看美女",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/234-sustained.png",
+      "previousDisposition": "verified",
+      "note": "洗牌、开牌并找出不同牌，出现成功提示。",
+      "profile": {}
+    },
+    {
+      "testId": 235,
+      "caseId": 2042,
+      "title": "途客行天下",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/235-failure.png",
+      "previousDisposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 236,
+      "caseId": 2057,
+      "title": "吞食天地2",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/236-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "吞食天地2仍在刘备二弟剧情对话",
+      "profile": {}
+    },
+    {
+      "testId": 237,
+      "caseId": 2064,
+      "title": "玩手信赢乐phone",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/237-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 238,
+      "caseId": 2071,
+      "title": "万水千山粽是情",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/238-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 239,
+      "caseId": 2082,
+      "title": "网络时钟",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/239-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "联网失败请退出重试",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 240,
+      "caseId": 2098,
+      "title": "未来之英雄传奇",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/240-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "是否开启音乐弹窗",
+      "profile": {}
+    },
+    {
+      "testId": 241,
+      "caseId": 2101,
+      "title": "我爱拼图安装包2",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/241-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "难度易难设置页面",
+      "profile": {}
+    },
+    {
+      "testId": 242,
+      "caseId": 2130,
+      "title": "五一带你玩转不停",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/242-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块联网失败退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 243,
+      "caseId": 2145,
+      "title": "西游记OL",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/243-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 244,
+      "caseId": 2146,
+      "title": "西游记OL",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/244-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 245,
+      "caseId": 2165,
+      "title": "夏日Party",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/245-failure.png",
+      "previousDisposition": "entry-retry",
+      "note": "夏日Party菜单退出，需定向开始",
+      "profile": {}
+    },
+    {
+      "testId": 246,
+      "caseId": 2167,
+      "title": "夏日缤纷礼包",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/246-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 247,
+      "caseId": 2177,
+      "title": "仙剑问情",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/247-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 248,
+      "caseId": 2184,
+      "title": "仙魔逆唯我独尊",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/248-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "仙魔剧情战斗对话",
+      "profile": {}
+    },
+    {
+      "testId": 249,
+      "caseId": 2185,
+      "title": "仙魔逆唯我独尊",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/249-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "仙魔剧情战斗对话",
+      "profile": {}
+    },
+    {
+      "testId": 250,
+      "caseId": 2192,
+      "title": "限时抢购买一送一",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/250-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中摇一摇广告",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 251,
+      "caseId": 2225,
+      "title": "笑傲江湖",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/251-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 252,
+      "caseId": 2265,
+      "title": "新羊过河",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/252-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "横向旋转玩法场景，需定向验证",
+      "profile": {}
+    },
+    {
+      "testId": 253,
+      "caseId": 2271,
+      "title": "星河舰队",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/253-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "星河舰队开始游戏菜单",
+      "profile": {}
+    },
+    {
+      "testId": 254,
+      "caseId": 2285,
+      "title": "幸运砸蛋",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/254-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 255,
+      "caseId": 2287,
+      "title": "性感美女找茬",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/255-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "人物双图找茬界面，需实际操作",
+      "profile": {}
+    },
+    {
+      "testId": 256,
+      "caseId": 2294,
+      "title": "熊猫大乱斗",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/256-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "熊猫大乱斗继续游戏菜单",
+      "profile": {}
+    },
+    {
+      "testId": 257,
+      "caseId": 2333,
+      "title": "炎龙骑士",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/257-failure.png",
+      "previousDisposition": "unexplained-exit",
+      "note": "启动黑屏退出",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 258,
+      "caseId": 2342,
+      "title": "要钱不要命",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/258-sustained.png",
+      "previousDisposition": "verified",
+      "note": "重新开始、左右移动及触屏起跳，收集金币12，最终19金币277分；独立回归。",
+      "profile": {}
+    },
+    {
+      "testId": 259,
+      "caseId": 2345,
+      "title": "野人岛3",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/259-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "小提米村里大钟剧情对话",
+      "profile": {}
+    },
+    {
+      "testId": 260,
+      "caseId": 2349,
+      "title": "夜袭鬼子营",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/260-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "是否开启声音弹窗",
+      "profile": {}
+    },
+    {
+      "testId": 261,
+      "caseId": 2354,
+      "title": "一毛钱手机抽回家",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/261-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 262,
+      "caseId": 2355,
+      "title": "一枪杀几人",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/262-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "射击游戏开始菜单",
+      "profile": {}
+    },
+    {
+      "testId": 263,
+      "caseId": 2359,
+      "title": "移动股票王",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/263-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "用户名密码登录开通试用界面",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 264,
+      "caseId": 2360,
+      "title": "移动视线",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/264-failure.png",
+      "previousDisposition": "black-screen",
+      "note": "持续黑屏",
+      "profile": {},
+      "entryRun": {
+        "outcome": "black-screen",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 265,
+      "caseId": 2364,
+      "title": "倚天屠龙绝情剑",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/265-failure.png",
+      "previousDisposition": "entry-retry",
+      "note": "倚天屠龙绝情剑菜单退出，需定向开始",
+      "profile": {}
+    },
+    {
+      "testId": 266,
+      "caseId": 2380,
+      "title": "英汉字典",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/266-failure.png",
+      "previousDisposition": "missing-parent-context",
+      "note": "cann`t be run direct，黑屏",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "LuaRuntimeError: cann`t be run direct!",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 267,
+      "caseId": 2382,
+      "title": "英雄救美之狙击之神",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/267-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "狙击游戏开始游戏帮助菜单",
+      "profile": {}
+    },
+    {
+      "testId": 268,
+      "caseId": 2391,
+      "title": "应用软件>>",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/268-entry.png",
+      "previousDisposition": "entry-retry",
+      "note": "点击更多游戏畅玩提示",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 269,
+      "caseId": 2399,
+      "title": "永远的冒险岛",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/269-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "平台地图角色和收集物，需实际操作",
+      "profile": {}
+    },
+    {
+      "testId": 270,
+      "caseId": 2405,
+      "title": "优化大师",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/270-failure.png",
+      "previousDisposition": "runtime-error",
+      "note": "优化大师启动budget exceeded PC1e90fcc",
+      "profile": {},
+      "entryRun": {
+        "outcome": "runtime-error",
+        "error": "ExtFault: EXT fault abi-fault at 0x1e90fc0 (arm_ext_call: execution deadline exceeded)",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 271,
+      "caseId": 2407,
+      "title": "游戏布袋",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/271-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，缺失appid480101",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 272,
+      "caseId": 2408,
+      "title": "游戏猎手",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/272-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 273,
+      "caseId": 2409,
+      "title": "游戏中心",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/273-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 274,
+      "caseId": 2411,
+      "title": "愚人节泡妞利器",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/274-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "安装中缺失appid480101",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 275,
+      "caseId": 2438,
+      "title": "缘分测试",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/275-failure.png",
+      "previousDisposition": "verify-function",
+      "note": "缘分测试男女生日输入，需填写验证",
+      "profile": {}
+    },
+    {
+      "testId": 276,
+      "caseId": 2442,
+      "title": "越狱吧吊丝",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/276-entry.png",
+      "previousDisposition": "graphics-deferred",
+      "note": "越狱吧吊丝场景花屏，依用户要求暂缓修复",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 277,
+      "caseId": 2451,
+      "title": "宅人七天乐",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/277-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "无法安装功能模块，缺失appid480101",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 278,
+      "caseId": 2462,
+      "title": "战国英雄传",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/278-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "战国英雄传公孙牧云剧情对话",
+      "profile": {}
+    },
+    {
+      "testId": 279,
+      "caseId": 2465,
+      "title": "战神",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/279-entry.png",
+      "previousDisposition": "network-or-external-dependency",
+      "note": "首次安装注册账号弹窗",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 280,
+      "caseId": 2468,
+      "title": "战神金刚",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/280-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "战神金刚还好赶上了剧情对白",
+      "profile": {}
+    },
+    {
+      "testId": 281,
+      "caseId": 2476,
+      "title": "战神之魂",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/281-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "覆盖记录开始新游戏确认框；需明确选择是。",
+      "profile": {}
+    },
+    {
+      "testId": 282,
+      "caseId": 2481,
+      "title": "掌上e_mrp",
+      "entryVerified": true,
+      "status": "entered",
+      "evidence": "artifacts/compat-20260915/entry-prompts2/282-entry.png",
+      "previousDisposition": "verify-installer-output",
+      "note": "已确认进入打包/解包工具主页；按最新要求停止玩法测试。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 283,
+      "caseId": 2485,
+      "title": "掌星汉字字典",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/283-sustained.png",
+      "previousDisposition": "verify-function",
+      "note": "新华字典输入查询页，需输入汉字验证查询。",
+      "profile": {}
+    },
+    {
+      "testId": 284,
+      "caseId": 2486,
+      "title": "找回元素",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/284-sustained.png",
+      "previousDisposition": "verified",
+      "note": "教学提示手指滑动元素到小人身上过关；需定向拖动。",
+      "profile": {}
+    },
+    {
+      "testId": 285,
+      "caseId": 2508,
+      "title": "争霸三国",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/entry/285-entry.png",
+      "previousDisposition": "external-download",
+      "note": "宇璇三国主菜单",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 286,
+      "caseId": 2514,
+      "title": "正义英雄联盟-蝙蝠侠",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/286-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "蝙蝠侠开篇剧情对话，需继续对话进入战斗。",
+      "profile": {}
+    },
+    {
+      "testId": 287,
+      "caseId": 2522,
+      "title": "植物大战僵尸官方版",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/287-entry.png",
+      "previousDisposition": "network-failure",
+      "note": "植物僵尸横屏提示网络连接失败。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 288,
+      "caseId": 2543,
+      "title": "中秋:天涯共此时",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/288-entry.png",
+      "previousDisposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 289,
+      "caseId": 2565,
+      "title": "抓拍宝贝",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/289-sustained.png",
+      "previousDisposition": "verify-function",
+      "note": "抓拍宝贝选择连拍10/20/50张，需验证相机接口。",
+      "profile": {}
+    },
+    {
+      "testId": 290,
+      "caseId": 2568,
+      "title": "追忆童真那些年",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/290-entry.png",
+      "previousDisposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 291,
+      "caseId": 2571,
+      "title": "字体模块",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/291-failure.png",
+      "previousDisposition": "module-context",
+      "note": "字体模块黑屏退出；需核实模块调用条件。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "exited",
+        "error": "LuaRuntimeError: Exiting...",
+        "ticks": 0,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 292,
+      "caseId": 2577,
+      "title": "醉美人",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/292-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "醉美人菜单开始游戏/设置/帮助；需触摸开始。",
+      "profile": {}
+    },
+    {
+      "testId": 293,
+      "caseId": 2601,
+      "title": "喋血双雄",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/293-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "喋血双雄街道剧情对话；尚未有效战斗验证。",
+      "profile": {}
+    },
+    {
+      "testId": 294,
+      "caseId": 2606,
+      "title": "逍遥剑侠传",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/294-failure.png",
+      "previousDisposition": "entry-retry",
+      "note": "菜单选中退出游戏后退出；需要定向选择开始。",
+      "profile": {}
+    },
+    {
+      "testId": 295,
+      "caseId": 2608,
+      "title": "缤纷双蛋激情约惠",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/295-entry.png",
+      "previousDisposition": "external-download",
+      "note": "连接网络失败，无法安装功能模块，退出中。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 296,
+      "caseId": 2619,
+      "title": "鳄鱼爱洗澡",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/296-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "鳄鱼爱洗澡关卡选择，第一关已解锁；需定向进入。",
+      "profile": {}
+    },
+    {
+      "testId": 297,
+      "caseId": 2620,
+      "title": "鳄鱼洗澡",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/297-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "鳄鱼洗澡章节页0/18；需进入关卡验证。",
+      "profile": {}
+    },
+    {
+      "testId": 298,
+      "caseId": 2622,
+      "title": "魅惑浮生录",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/298-sustained.png",
+      "previousDisposition": "verify-gameplay",
+      "note": "魅惑浮生录宫廷剧情对话，尚未有效玩法验证。",
+      "profile": {}
+    },
+    {
+      "testId": 299,
+      "caseId": 2635,
+      "title": "[免费]冒泡棋牌",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/299-entry.png",
+      "previousDisposition": "online-registration",
+      "note": "冒泡棋牌首次安装账号注册提示。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 300,
+      "caseId": 2638,
+      "title": "[免费]冒泡社区安装",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/300-entry.png",
+      "previousDisposition": "online-registration",
+      "note": "冒泡社区首次安装账号注册提示。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 301,
+      "caseId": 2639,
+      "title": "[免费]冒泡网游",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260914/pending302-first/301-sustained.png",
+      "previousDisposition": "entry-retry",
+      "note": "网游列表笑傲OL/笑傲炫宠，需选择进入。",
+      "profile": {}
+    },
+    {
+      "testId": 302,
+      "caseId": 2640,
+      "title": "[网游]无双三国",
+      "entryVerified": false,
+      "status": "blocked-or-prompt",
+      "evidence": "artifacts/compat-20260915/entry/302-entry.png",
+      "previousDisposition": "online-loading",
+      "note": "冒泡浏览器停留加载标识。",
+      "profile": {},
+      "entryRun": {
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 30,
+        "artifact": "artifacts/compat-20260915/entry/results.json"
+      }
+    },
+    {
+      "testId": 303,
+      "caseId": 858,
+      "title": "黑白棋AI",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 304,
+      "caseId": 874,
+      "title": "华容道",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 305,
+      "caseId": 1527,
+      "title": "排列数字测智商",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 306,
+      "caseId": 39,
+      "title": "2048",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 307,
+      "caseId": 41,
+      "title": "2048美化版XL",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 308,
+      "caseId": 1744,
+      "title": "三国英雄传",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 309,
+      "caseId": 1024,
+      "title": "接水管",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 310,
+      "caseId": 2164,
+      "title": "夏日MM连连看",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 311,
+      "caseId": 1397,
+      "title": "梦幻西游-无敌战神",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 312,
+      "caseId": 603,
+      "title": "俄罗斯方块",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    },
+    {
+      "testId": 313,
+      "caseId": 321,
+      "title": "别踩白块",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20260915/regression313/results.json",
+      "previousDisposition": null,
+      "note": "此前已完整功能验证",
+      "profile": {}
+    }
+  ],
+  "entryRunComplete": true,
+  "entryRunCount": 174
+}
