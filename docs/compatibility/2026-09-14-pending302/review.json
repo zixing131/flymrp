@@ -924,12 +924,12 @@
       "caseId": 192,
       "title": "ram_scan",
       "testId": 40,
-      "status": "reviewed",
+      "status": "function-verified",
       "previousSmoke": "static-frame",
-      "resolved": false,
+      "resolved": true,
       "deferGraphicsFix": false,
-      "disposition": "needs-tool-workflow",
-      "note": "ram_scan显示All memset OK，待dump/继续扫描验证。",
+      "disposition": "verified",
+      "note": "完成4MiB dump文件写出、返回及8MiB扫描100%成功，独立场景回归passed。",
       "evidence": "artifacts/compat-20260914/pending302-first/40-sustained.png",
       "firstRun": {
         "outcome": "needs-scene-review",
@@ -938,6 +938,18 @@
         "ticks": 1174,
         "keysTested": 15,
         "elapsedMs": 907
+      },
+      "verification": {
+        "artifact": "artifacts/compat-20260915/followup4/results.json",
+        "outcome": "passed",
+        "ticks": 2222,
+        "sceneVerified": true,
+        "interactionVerified": true,
+        "writtenFile": {
+          "name": "ram_cache/dump_file00.dump",
+          "size": 4194304,
+          "sha256": "e1621cded613dc0b01da7eb33e7cd4a0a046758de8efd1a2484959610c6b61db"
+        }
       }
     },
     {
@@ -6618,8 +6630,8 @@
   ],
   "firstRunComplete": true,
   "firstRunConcurrency": 1,
-  "verifiedCount": 10,
-  "remainingFunctionalVerification": 292,
+  "verifiedCount": 11,
+  "remainingFunctionalVerification": 291,
   "budgetRegression": {
     "artifact": "artifacts/compat-20260914/pending302-budget-regression/results.json",
     "count": 16,

@@ -25,3 +25,11 @@
 软件魔盒的安装后主包为appbox/plug/opxrjmh.mrp。在保留安装文件的新运行时中启动它，可进入更多软件/精品软件/我的软件及菜单。在线目录请求proxy.51mrp.com/page2未匹配本地离线资源，持续重试；未伪造服务数据，因此在线功能未结案。完整运行1785 ticks、115104ms，无运行异常；证据appbox-child、appbox-enter、appbox-tabs和diagnostics/appbox-installed-files.json。
 
 合并原302项与此前11项为313项串行回归，使用regression313-manifest.json和regression313-scenes.json。补入已核实的按键/触屏操作，仍以每项实际功能证据结案；运行结果写入artifacts/compat-20260915/regression313。
+
+## 全313项串行回归及RAM工具
+
+313/313运行完成，18项已有场景断言全部passed；原3项安装器仍以输出文件证据验证。其余135项needs-scene-review、77项no-input-response、56项exited、24项runtime-error、2项black-screen、1项损坏包解析worker-error，均未凭分类自动结案。完整汇总regression313-review.json。
+
+ram_scan #192补测完成4MiB dump文件写入、返回工具首页及8MiB扫描至100% All memset OK；followup3实画面复核，followup4独立回归passed并持续60秒。累计22项验证，剩余291项。
+
+象棋 #18正确落子后触发电脑思考阶段256M指令预算错误，现场followup3/7-failure.png，仍未结案。夜袭画面变化目前来自动画，未验证弹药消耗，不计通过。

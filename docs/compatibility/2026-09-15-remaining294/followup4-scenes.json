@@ -1,0 +1,640 @@
+{
+  "40": {
+    "profile": {
+      "width": 240,
+      "height": 320
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "FIRE",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "key": "UP",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "RIGHT",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "DOWN",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "LEFT",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "2",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "6",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "8",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "4",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "key": "5",
+        "hold": 10,
+        "wait": 10
+      },
+      {
+        "tap": [
+          120,
+          160
+        ],
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "tap": [
+          120,
+          106
+        ],
+        "hold": 3,
+        "wait": 20
+      },
+      {
+        "swipe": [
+          [
+            80,
+            106
+          ],
+          [
+            160,
+            213
+          ]
+        ],
+        "hold": 8,
+        "wait": 20
+      },
+      {
+        "tap": [
+          35,
+          309
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          215,
+          309
+        ],
+        "wait": 30
+      },
+      {
+        "idle": 750
+      }
+    ],
+    "controls": [
+      {
+        "key": "SOFTRIGHT",
+        "hold": 3,
+        "wait": 30
+      },
+      {
+        "key": "1",
+        "hold": 3,
+        "wait": 60
+      },
+      {
+        "key": "SOFTRIGHT",
+        "hold": 3,
+        "wait": 30
+      },
+      {
+        "key": "2",
+        "hold": 3,
+        "wait": 100
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "核验dump结束画面、4MiB输出及8MiB扫描100%完成，独立回归。",
+    "gameplaySha256": [
+      "ab263accfd8bbbee1984591cbe779e835d363a355ea05a7eec656fa5959e47c5",
+      "260ff613e6e5bb379b04fb470783c36b2c26da1cd3d19637cb9ac554e01229cc"
+    ],
+    "controlSha256": [
+      "ab263accfd8bbbee1984591cbe779e835d363a355ea05a7eec656fa5959e47c5",
+      "260ff613e6e5bb379b04fb470783c36b2c26da1cd3d19637cb9ac554e01229cc"
+    ]
+  },
+  "55": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "bootTicks": 100,
+    "clock": "monotonic",
+    "entry": [
+      {
+        "tap": [
+          60,
+          105
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "key": "1",
+        "wait": 10
+      },
+      {
+        "key": "6",
+        "wait": 80
+      },
+      {
+        "key": "5",
+        "wait": 10
+      },
+      {
+        "key": "6",
+        "wait": 80
+      }
+    ],
+    "tailTicks": 750,
+    "reviewNote": "取消原广泛按键以免触发退出；只用实际可见控件继续操作。"
+  },
+  "258": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 100,
+    "tailTicks": 750,
+    "entry": [
+      {
+        "key": "SOFTLEFT",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "4",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "6",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "2",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "8",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "hold": 5,
+        "wait": 20
+      },
+      {
+        "tap": [
+          160,
+          448
+        ],
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "tap": [
+          160,
+          448
+        ],
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "idle": 750
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          150,
+          238
+        ],
+        "wait": 2
+      },
+      {
+        "key": "LEFT",
+        "hold": 12,
+        "wait": 2
+      },
+      {
+        "key": "RIGHT",
+        "hold": 12,
+        "wait": 2
+      },
+      {
+        "tap": [
+          60,
+          400
+        ],
+        "wait": 2
+      },
+      {
+        "tap": [
+          270,
+          400
+        ],
+        "wait": 2
+      },
+      {
+        "key": "LEFT",
+        "hold": 20,
+        "wait": 2
+      },
+      {
+        "key": "RIGHT",
+        "hold": 20,
+        "wait": 2
+      }
+    ],
+    "reviewNote": "根据上一轮实际截图继续功能操作；需审阅结果并独立验证，未自动结案。"
+  },
+  "234": {
+    "profile": {
+      "width": 320,
+      "height": 480
+    },
+    "clock": "monotonic",
+    "bootTicks": 100,
+    "tailTicks": 750,
+    "entry": [
+      {
+        "tap": [
+          35,
+          455
+        ],
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "tap": [
+          159,
+          423
+        ],
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "tap": [
+          58,
+          88
+        ],
+        "wait": 30
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "key": "5",
+        "wait": 20
+      },
+      {
+        "idle": 750
+      },
+      {
+        "tap": [
+          165,
+          455
+        ],
+        "wait": 80
+      },
+      {
+        "tap": [
+          58,
+          50
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          160,
+          50
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          265,
+          50
+        ],
+        "wait": 30
+      }
+    ],
+    "controls": [
+      {
+        "tap": [
+          35,
+          375
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          58,
+          50
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          95,
+          375
+        ],
+        "wait": 30
+      },
+      {
+        "tap": [
+          160,
+          155
+        ],
+        "wait": 30
+      }
+    ],
+    "reviewNote": "根据上一轮实际截图继续功能操作；需审阅结果并独立验证，未自动结案。"
+  }
+}
