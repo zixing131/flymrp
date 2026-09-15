@@ -1127,15 +1127,15 @@
       "title": "第一次亲密接触",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/77-entry.png",
+      "evidence": "artifacts/compat-20260915/welcome-confirmation/77-entry.png",
       "previousDisposition": "blank-output",
-      "note": "白屏无文字，需检查内容资源/入口。",
+      "note": "一次确认键仅切换到“安装中……”宣传图，无本地内容入口。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/welcome-confirmation/results.json"
       }
     },
     {
@@ -1757,15 +1757,15 @@
       "title": "活动介绍",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/119-entry.png",
+      "evidence": "artifacts/compat-20260915/welcome-confirmation/119-entry.png",
       "previousDisposition": "blocked-network-content",
-      "note": "冒泡浏览器欢迎页无实际内容。",
+      "note": "一次确认键进入“正在发送请求……”页面，仍依赖网络内容。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/welcome-confirmation/results.json"
       }
     },
     {
@@ -2155,15 +2155,15 @@
       "title": "冒泡看图",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/147-entry.png",
+      "evidence": "artifacts/compat-20260915/welcome-confirmation/147-entry.png",
       "previousDisposition": "blocked-network-content",
-      "note": "冒泡浏览器欢迎页。",
+      "note": "一次确认键进入“正在发送请求……”页面，仍依赖网络内容。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/welcome-confirmation/results.json"
       }
     },
     {
@@ -2342,15 +2342,15 @@
       "title": "冒泡音乐",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/158-entry.png",
+      "evidence": "artifacts/compat-20260915/welcome-confirmation/158-entry.png",
       "previousDisposition": "blocked-network-content",
-      "note": "冒泡浏览器欢迎页。",
+      "note": "一次确认键进入“正在发送请求……”页面，仍依赖网络内容。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/welcome-confirmation/results.json"
       }
     },
     {
@@ -2359,15 +2359,15 @@
       "title": "冒泡游戏商城",
       "entryVerified": false,
       "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/159-entry.png",
+      "evidence": "artifacts/compat-20260915/welcome-confirmation/159-entry.png",
       "previousDisposition": "blocked-network-content",
-      "note": "冒泡浏览器欢迎页。",
+      "note": "一次确认键进入“正在发送请求……”页面，仍依赖网络内容。",
       "profile": {},
       "entryRun": {
         "outcome": "entry-review",
         "error": null,
-        "ticks": 30,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "ticks": 40,
+        "artifact": "artifacts/compat-20260915/welcome-confirmation/results.json"
       }
     },
     {

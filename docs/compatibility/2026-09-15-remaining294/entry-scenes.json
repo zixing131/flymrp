@@ -446,8 +446,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "本地安装器页补测一次确认键；不进入长时交互。"
   },
   "80": {
     "profile": {
@@ -726,8 +726,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "浏览器欢迎页补测一次确认键；不进入长时交互。"
   },
   "120": {
     "profile": {
@@ -876,8 +876,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "浏览器欢迎页补测一次确认键；不进入长时交互。"
   },
   "148": {
     "profile": {
@@ -986,8 +986,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "浏览器欢迎页补测一次确认键；不进入长时交互。"
   },
   "159": {
     "profile": {
@@ -996,8 +996,8 @@
     },
     "clock": "monotonic",
     "bootTicks": 30,
-    "entry": [],
-    "reviewNote": "只查启动画面，先不注入可能退出/跳商店的通用按键。"
+    "entry": [{"key":"FIRE","wait":10}],
+    "reviewNote": "浏览器欢迎页补测一次确认键；不进入长时交互。"
   },
   "160": {
     "profile": {
