@@ -3,7 +3,7 @@ import { readdir } from 'node:fs/promises';
 export function isRuntimeAsset(name) {
   if(name.split('/').some(part=>part.startsWith('.'))) return false;
   if(name.startsWith('assets/') || name.startsWith('icons/') || name.startsWith('licenses/')) return false;
-  return !['index.html','main.html','about.html','manifest.json','sw.js','build-version.json','README.md'].includes(name);
+  return !['index.html','main.html','about.html','manifest.json','sw.js','build-version.json','README.md','catalog.js','player.js','player.worker.js'].includes(name);
 }
 export async function runtimeAssets(root='dist') {
  const files=[];

@@ -365,21 +365,41 @@ libraryToggle.addEventListener("click", () => setDrawer(drawer.hidden));
 document.querySelector("#theme")!.addEventListener("click", () => {
   document.documentElement.dataset.theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
 });
+type FullscreenDocument = Document & {
+  webkitFullscreenElement?: Element | null;
+  mozFullScreenElement?: Element | null;
+  webkitExitFullscreen?: () => void | Promise<void>;
+};
+type FullscreenElement = HTMLElement & { webkitRequestFullscreen?: () => void | Promise<void> };
+function fullscreenElement(): Element | null {
+  const doc = document as FullscreenDocument;
+  return document.fullscreenElement || doc.webkitFullscreenElement || doc.mozFullScreenElement || null;
+}
 document.querySelector("#fullscreen")!.addEventListener("click", async () => {
   try {
-    if (document.fullscreenElement) await document.exitFullscreen();
-    else await document.documentElement.requestFullscreen();
+    const doc = document as FullscreenDocument;
+    const root = document.documentElement as FullscreenElement;
+    if (fullscreenElement()) {
+      const exit = document.exitFullscreen?.bind(document) ?? doc.webkitExitFullscreen?.bind(doc);
+      if (!exit) throw new Error("fullscreen");
+      await exit();
+    } else {
+      const enter = root.requestFullscreen?.bind(root) ?? root.webkitRequestFullscreen?.bind(root);
+      if (!enter) throw new Error("fullscreen");
+      await enter();
+    }
   } catch { setStatus("此浏览器暂不支持全屏，可隐藏虚拟键盘扩大画面。"); }
 });
 function syncFullscreenButton(): void {
   const button = document.querySelector<HTMLButtonElement>("#fullscreen")!;
-  const on = Boolean(document.fullscreenElement || (document as Document & { mozFullScreenElement?: Element | null }).mozFullScreenElement);
+  const on = Boolean(fullscreenElement());
   button.setAttribute("aria-pressed", String(on));
   button.setAttribute("aria-label", on ? "退出全屏" : "全屏");
   button.title = on ? "退出全屏" : "进入全屏";
   fitScreen();
 }
 document.addEventListener("fullscreenchange", syncFullscreenButton);
+document.addEventListener("webkitfullscreenchange", syncFullscreenButton);
 document.addEventListener("mozfullscreenchange", syncFullscreenButton);
 window.addEventListener("keydown", ev => {
   if (!session || paused || !drawer.hidden || dialogIsOpen(editorDialog) || (ev.target instanceof HTMLElement && ev.target.closest("input, select, textarea, button, summary"))) return;

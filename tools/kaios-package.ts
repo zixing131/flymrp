@@ -1,12 +1,11 @@
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { deflateSync } from "node:zlib";
-import { readFile, readdir, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { build } from "esbuild";
 import kaiosGames from "../config/kaios-games.json";
-import { parenthesizeYields } from "./kaios-yield.ts";
+import { writeClassicShell } from "./es5-bundle.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const out = join(root, "dist-kaios");
@@ -63,64 +62,11 @@ function iconPng(size: number): Buffer {
   });
 }
 
-function rewriteHtml(html: string, script: string): string {
-  // Vite leaves type=module in <head> (deferred). A classic script there
-  // runs before <body> and catalog/player querySelector returns null.
-  return html
-    .replace(/<script[^>]*pagead2[^>]*>\s*<\/script>/gi, "")
-    .replace(/<link rel="modulepreload"[^>]*>/g, "")
-    .replace(/<script type="module"[^>]*src="[^"]+"[^>]*><\/script>/, "")
-    .replace(/\s+crossorigin(="[^"]*")?/g, "")
-    .replace(/<\/body>/i, `<script src="./${script}"></script>\n</body>`);
-}
-
-// Must sit outside the player/catalog IIFE. esbuild hoists helpers such as
-// `var g1 = Object.getOwnPropertyDescriptors` before any in-bundle polyfill.
-const KAIOS_PRELUDE = `${await readFile(join(root, "web/kaios-es5-shims.js"), "utf8")}\n`;
-
-async function bundle(entry: string, outfile: string): Promise<void> {
-  await build({
-    entryPoints: [entry],
-    bundle: true,
-    format: "iife",
-    target: "firefox48",
-    supported: {
-      "const-and-let": true,
-      "for-of": true,
-      "default-argument": true,
-      "destructuring": true,
-      "rest-argument": true,
-      "array-spread": true,
-      "template-literal": true,
-      "arrow": true,
-      "class": true,
-      "generator": true,
-    },
-    platform: "browser",
-    outfile,
-    minify: true,
-    sourcemap: false,
-    banner: { js: KAIOS_PRELUDE },
-    logOverride: { "empty-import-meta": "silent" },
-    define: { "import.meta.env.KAIOS": "true", "import.meta.env.PROD": "true", "import.meta.env.DEV": "false" },
-  });
-  const js = await readFile(outfile, "utf8");
-  await writeFile(outfile, parenthesizeYields(js));
-}
-
-const indexHtml = await readFile(join(out, "index.html"), "utf8");
-const mainHtml = await readFile(join(out, "main.html"), "utf8");
-const indexEntry = indexHtml.match(/<script type="module"[^>]*src="([^"]+)"/)?.[1];
-const mainEntry = mainHtml.match(/<script type="module"[^>]*src="([^"]+)"/)?.[1];
-if (!indexEntry || !mainEntry) throw new Error("KaiOS 构建结果里找不到入口脚本。");
-await bundle(join(out, indexEntry), join(out, "catalog.js"));
-await bundle(join(out, mainEntry), join(out, "player.js"));
-const assets = await readdir(join(out, "assets"));
-const worker = assets.find(name => name.startsWith("player.worker") && name.endsWith(".js"));
-if (!worker) throw new Error("KaiOS 构建结果里找不到 player.worker。");
-await bundle(join(out, "assets", worker), join(out, "player.worker.js"));
-await writeFile(join(out, "index.html"), rewriteHtml(indexHtml, "catalog.js"));
-await writeFile(join(out, "main.html"), rewriteHtml(mainHtml, "player.js"));
+await writeClassicShell(out, {
+  label: "KaiOS 构建",
+  stripAds: true,
+  define: { "import.meta.env.KAIOS": "true", "import.meta.env.PROD": "true", "import.meta.env.DEV": "false" },
+});
 await writeFile(join(out, "icon-56.png"), iconPng(56));
 await writeFile(join(out, "icon-128.png"), iconPng(128));
 await writeFile(join(out, "manifest.webapp"), `${JSON.stringify({

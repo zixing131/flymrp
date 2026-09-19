@@ -930,7 +930,7 @@ function switchTab(tabName: string): void {
   document.querySelector('#desktopDetail')!.classList.toggle('hidden', hideDetail);
   document.querySelector('#topAppBar')!.classList.toggle('no-detail', hideDetail);
   document.querySelector('.page-layout')!.classList.toggle('no-detail', hideDetail);
-  window.scrollTo({ top: 0 });
+  window.scrollTo(0, 0);
 }
 
 function onPickedFile(input: HTMLInputElement): void {

@@ -21,7 +21,9 @@
   --miuix-radius-btn: 14px;
   --miuix-radius-game: 16px;
   --miuix-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --miuix-safe-top: 0px;
   --miuix-safe-top: env(safe-area-inset-top, 0px);
+  --miuix-safe-bottom: 0px;
   --miuix-safe-bottom: env(safe-area-inset-bottom, 0px);
   --miuix-bottomnav-h: 60px;
 }
@@ -229,11 +231,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .btn-sm { padding: 6px 14px; font-size: 13px; min-height: auto; }
 .button-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 4px 0; }
 .button-group .btn { width: 100%; }
-.pref-item:has(.button-group) {
+.pref-item:has(.button-group), .pref-item-stack {
   flex-direction: column;
   align-items: stretch;
 }
-.pref-item:has(.button-group) .pref-label { padding-bottom: 8px; }
+.pref-item:has(.button-group) .pref-label, .pref-item-stack .pref-label { padding-bottom: 8px; }
 
 .footer-links {
   display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
@@ -274,7 +276,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .bottom-nav-item.active { color: var(--miuix-primary); }
 
 .action-sheet-overlay {
-  position: fixed; inset: 0; z-index: 500;
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0; inset: 0; z-index: 500;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0; visibility: hidden;
   transition: opacity 0.25s, visibility 0.25s;
@@ -354,12 +356,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .detail-settings-btns { display: flex; gap: 10px; padding: 14px 0 0; }
 .detail-settings-btns .btn { flex: 1; }
 
-body.about-page { display: flex; flex-direction: column; min-height: 100vh; padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+body.about-page { display: flex; flex-direction: column; min-height: 100vh; padding-bottom: 8px; padding-bottom: max(8px, env(safe-area-inset-bottom)); }
 body.about-page .top-app-bar { position: relative; }
 body.about-page .top-bar-small-title { opacity: 1; transform: none; }
 body.about-page .page-layout {
-  max-width: min(720px, 100%); margin: 0 auto;
-  padding: 0 10px max(12px, env(safe-area-inset-bottom));
+  max-width: 720px; max-width: min(720px, 100%); margin: 0 auto;
+  padding: 0 10px 12px; padding: 0 10px max(12px, env(safe-area-inset-bottom));
 }
 .about-text { font-size: 15px; color: var(--miuix-on-surface-secondary); line-height: 1.8; margin-bottom: 14px; }
 .about-lead { font-size: 18px; font-weight: 700; margin: 8px 0 16px; }
@@ -374,11 +376,12 @@ body.about-page .page-layout {
 .about-tip-note { font-size: 14px; line-height: 1.5; color: var(--miuix-on-surface-tertiary); margin: 0; }
 .about-tip-figure { display: flex; justify-content: center; width: 100%; }
 .about-tip-qr {
+  width: 70vw; max-width: 260px; height: auto;
   width: min(260px, 70vw); max-width: 280px; height: auto;
   border-radius: 14px; box-shadow: var(--miuix-shadow-card);
 }
 @media screen and (min-width: 480px) {
-  .about-tip-qr { width: min(280px, 50vw); max-width: 300px; }
+  .about-tip-qr { width: 50vw; max-width: 280px; width: min(280px, 50vw); max-width: 300px; }
 }
 
 @media screen and (min-width: 768px) {
@@ -528,7 +531,29 @@ body.about-page .page-layout {
 }
 .store-sheet-close:hover { background-color: var(--miuix-btn-secondary); }
 .store-sheet-close svg { width: 20px; height: 20px; }
-.store-sheet-scroll { max-height: min(66vh, 520px); overflow-y: auto; padding: 4px 20px 14px; }
+.store-sheet-scroll { max-height: 66vh; max-height: min(66vh, 520px); overflow-y: auto; padding: 4px 20px 14px; }
 @media screen and (max-width: 767px) {
   .store-ui-actions .btn { min-height: 46px; }
+}
+
+/* Chrome 60：flex gap / 图标间距回退。现代浏览器仍用 gap。 */
+.search-bar svg { margin-right: 10px; }
+.top-bar-about-icon { margin-right: 5px; }
+.categories button { margin: 0 8px 8px 0; }
+.game-art + .game-info, .store-ui-icon + .store-ui-main { margin-left: 14px; }
+.pref-label + select, .pref-label + .pref-value, .pref-label + .color-picker { margin-left: 16px; }
+.pref-item-stack .pref-label { margin-left: 0; }
+.color-dot + .color-dot { margin-left: 10px; }
+.footer-links a { margin: 6px; }
+.bottom-nav-item svg { margin-bottom: 3px; }
+.action-sheet-item svg, .detail-action-btn svg { margin-right: 12px; }
+.gs-row label + select { margin-left: 16px; }
+.gs-buttons .btn + .btn, .detail-settings-btns .btn + .btn { margin-left: 10px; }
+.detail-actions > * + *, .store-ui > * + *, .store-ui-actions > * + *, .about-tip-block > * + * { margin-top: 8px; }
+.store-ui > * + * { margin-top: 16px; }
+.store-ui-progress > * + * { margin-top: 6px; }
+@media screen and (min-width: 768px) {
+  .rail-item + .rail-item { margin-top: 4px; }
+  .rail-item svg { margin-bottom: 2px; }
+  .game-art + .game-info { margin-left: 0; margin-top: 8px; }
 }

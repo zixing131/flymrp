@@ -22,57 +22,60 @@ export function pwaBuild(): Plugin {
     configResolved(config) {
       output = resolve(config.root, config.build.outDir);
     },
-    async closeBundle() {
-      const buildId = `b${Date.now().toString(36)}`;
-      const iconsDir = join(output, "icons");
-      await mkdir(iconsDir, { recursive: true });
+    closeBundle: {
+      sequential: true,
+      order: "post",
+      handler: async () => {
+        const buildId = `b${Date.now().toString(36)}`;
+        const iconsDir = join(output, "icons");
+        await mkdir(iconsDir, { recursive: true });
 
-      // 1) 图标
-      await Promise.all([
-        writeFile(join(iconsDir, "icon-192.png"), renderIcon(192, false)),
-        writeFile(join(iconsDir, "icon-512.png"), renderIcon(512, false)),
-        writeFile(join(iconsDir, "maskable-192.png"), renderIcon(192, true)),
-        writeFile(join(iconsDir, "maskable-512.png"), renderIcon(512, true)),
-      ]);
+        // 1) 图标
+        await Promise.all([
+          writeFile(join(iconsDir, "icon-192.png"), renderIcon(192, false)),
+          writeFile(join(iconsDir, "icon-512.png"), renderIcon(512, false)),
+          writeFile(join(iconsDir, "maskable-192.png"), renderIcon(192, true)),
+          writeFile(join(iconsDir, "maskable-512.png"), renderIcon(512, true)),
+        ]);
 
-      // 2) manifest
-      const manifest = {
-        name: "flymrp · 经典掌上游戏",
-        short_name: "flymrp",
-        description: "浏览器原生 Mythroad MRP 游戏运行器，经典掌上游戏即点即玩。",
-        lang: "zh-CN",
-        start_url: "./",
-        scope: "./",
-        display: "standalone",
-        orientation: "any",
-        background_color: "#131420",
-        theme_color: "#131420",
-        categories: ["games", "entertainment"],
-        version: buildId,
-        icons: [
-          { src: "./icons/icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "./icons/icon-512.png", sizes: "512x512", type: "image/png" },
-          { src: "./icons/maskable-192.png", sizes: "192x192", type: "image/png", purpose: "maskable" },
-          { src: "./icons/maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
-        ],
-      };
-      await writeFile(join(output, "manifest.json"), JSON.stringify(manifest, null, 2));
-      await writeFile(join(output, "build-version.json"), JSON.stringify({ version: buildId, builtAt: new Date().toISOString() }, null, 2));
+        // 2) manifest
+        const manifest = {
+          name: "flymrp · 经典掌上游戏",
+          short_name: "flymrp",
+          description: "浏览器原生 Mythroad MRP 游戏运行器，经典掌上游戏即点即玩。",
+          lang: "zh-CN",
+          start_url: "./",
+          scope: "./",
+          display: "standalone",
+          orientation: "any",
+          background_color: "#131420",
+          theme_color: "#131420",
+          categories: ["games", "entertainment"],
+          version: buildId,
+          icons: [
+            { src: "./icons/icon-192.png", sizes: "192x192", type: "image/png" },
+            { src: "./icons/icon-512.png", sizes: "512x512", type: "image/png" },
+            { src: "./icons/maskable-192.png", sizes: "192x192", type: "image/png", purpose: "maskable" },
+            { src: "./icons/maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+          ],
+        };
+        await writeFile(join(output, "manifest.json"), JSON.stringify(manifest, null, 2));
+        await writeFile(join(output, "build-version.json"), JSON.stringify({ version: buildId, builtAt: new Date().toISOString() }, null, 2));
 
-      // 3) 预缓存列表：仅核心壳 + vite 产物 + 图标 + 游戏索引。
-      //    系统组件（system/gwy/plugins/app240400 等）与 games/*.mrp、
-      //    mythroad_res/** 按需请求时缓存，避免安装时一次性下载大量资源。
-      const precache = ["./", "./index.html", "./main.html", "./about.html", "./manifest.json", "./build-version.json", process.env.VITE_MRP_STORE_ORIGIN === "/blob" ? "/blob/runtime/games/index.json" : "./games/index.json"];
-      const shellFiles: string[] = [];
-      await walk(output, "", (rel, isDir) => {
-        if (isDir) return;
-        if (rel.startsWith("assets/") || rel.startsWith("icons/")) shellFiles.push(`./${rel}`);
-      });
-      shellFiles.sort();
-      precache.push(...shellFiles);
+        // 3) 预缓存列表：仅核心壳 + vite 产物 + 图标 + 游戏索引。
+        //    系统组件（system/gwy/plugins/app240400 等）与 games/*.mrp、
+        //    mythroad_res/** 按需请求时缓存，避免安装时一次性下载大量资源。
+        const precache = ["./", "./index.html", "./main.html", "./about.html", "./manifest.json", "./build-version.json", process.env.VITE_MRP_STORE_ORIGIN === "/blob" ? "/blob/runtime/games/index.json" : "./games/index.json"];
+        const shellFiles: string[] = [];
+        await walk(output, "", (rel, isDir) => {
+          if (isDir) return;
+          if (rel.startsWith("assets/") || rel.startsWith("icons/") || (!rel.includes("/") && rel.endsWith(".js") && rel !== "sw.js")) shellFiles.push(`./${rel}`);
+        });
+        shellFiles.sort();
+        precache.push(...shellFiles);
 
-      // 4) sw.js
-      const sw = `const VERSION = ${JSON.stringify(buildId)};
+        // 4) sw.js
+        const sw = `const VERSION = ${JSON.stringify(buildId)};
 const CACHE = 'flymrp-' + VERSION;
 const PRECACHE = ${JSON.stringify(precache)};
 
@@ -127,8 +130,9 @@ self.addEventListener('fetch', (event) => {
   })());
 });
 `;
-      await writeFile(join(output, "sw.js"), sw);
-      console.log(`PWA：版本 ${buildId}，预缓存 ${precache.length} 项（游戏/资源按需缓存），已生成 manifest.json / sw.js / build-version.json / icons。`);
+        await writeFile(join(output, "sw.js"), sw);
+        console.log(`PWA：版本 ${buildId}，预缓存 ${precache.length} 项（游戏/资源按需缓存），已生成 manifest.json / sw.js / build-version.json / icons。`);
+      },
     },
   };
 }

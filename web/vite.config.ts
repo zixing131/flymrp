@@ -5,7 +5,9 @@ import { localSystem } from "./local-system.ts";
 import { localGames } from "./local-games.ts";
 import { gameBuild } from "./game-build.ts";
 import { resourceBuild } from "./resource-build.ts";
+import { legacyBuild } from "./legacy-build.ts";
 import { pwaBuild } from "./pwa-build.ts";
+import { FIREFOX48_SUPPORTED, FIREFOX48_TARGET } from "../tools/es5-bundle.ts";
 
 const root = dirname(fileURLToPath(import.meta.url));
 export default defineConfig(({ mode, command }) => {
@@ -19,12 +21,18 @@ export default defineConfig(({ mode, command }) => {
   const resourceDir = env.MRP_RESOURCE_DIR ?? (gameDir ? resolve(gameDir, "mythroad_res") : undefined);
   const outputDir = resolve(root, "..", env.MRP_DIST_DIR ?? (remoteAssets ? "dist-edgeone" : "dist"));
   return {
-    root, base: "./", build: { outDir: outputDir, emptyOutDir: remoteAssets,
-      rollupOptions: { input: { index: resolve(root, "index.html"), main: resolve(root, "main.html"), about: resolve(root, "about.html") } } },
+    root, base: "./",
+    worker: { format: "iife" },
+    esbuild: { supported: { ...FIREFOX48_SUPPORTED } },
+    build: {
+      outDir: outputDir, emptyOutDir: remoteAssets,
+      target: FIREFOX48_TARGET, cssTarget: FIREFOX48_TARGET, modulePreload: false,
+      rollupOptions: { input: { index: resolve(root, "index.html"), main: resolve(root, "main.html"), about: resolve(root, "about.html") } },
+    },
     publicDir: remoteAssets ? false : resolve(root, "../assets"),
     plugins: remoteAssets
-      ? [pwaBuild()]
-      : [localGames(gameDir), localSystem(systemDir), localSystem(resourceDir, true), resourceBuild(resourceDir), gameBuild(gameDir), pwaBuild()],
+      ? [legacyBuild(), pwaBuild()]
+      : [localGames(gameDir), localSystem(systemDir), localSystem(resourceDir, true), resourceBuild(resourceDir), gameBuild(gameDir), legacyBuild(), pwaBuild()],
     server: { host: "127.0.0.1", port: 5173, strictPort: false, open: "/", fs: { allow: [resolve(root, "..")] } },
   };
 });

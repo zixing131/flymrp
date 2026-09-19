@@ -17,4 +17,4 @@ npm ci --no-audit --no-fund
 npm run games:generate
 npm run typecheck
 npm run build
-echo '构建完成：dist/（精选游戏与 mythroad_res，未变化文件已跳过）。将整个目录部署到 GitHub Pages 等静态网站即可。'
+echo '构建完成：dist/（精选游戏与 mythroad_res，入口已转译为 Firefox 48 / 旧版浏览器可用的经典脚本，未变化文件已跳过）。将整个目录部署到 GitHub Pages 等静态网站即可。'

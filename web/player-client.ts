@@ -4,7 +4,7 @@ import type { PlayerRequest, PlayerResponse } from './player-protocol.ts';
 
 /** One worker per game. Termination stops a busy guest immediately. */
 export class PlayerClient {
-  private readonly worker = import.meta.env.KAIOS
+  private readonly worker = import.meta.env.PROD
     ? new Worker(new URL('player.worker.js', document.baseURI).href)
     : new Worker(new URL('./player.worker.ts', import.meta.url), { type: 'module' });
   private busy = false;

@@ -25,6 +25,15 @@ async function measure(dir: string): Promise<void> {
     else if (entry.isFile()) bytes += (await stat(path)).size;
   }
 }
+for (const name of ["index.html", "main.html", "catalog.js", "player.js", "player.worker.js"] as const) {
+  await stat(join(output, name));
+}
+for (const page of ["index.html", "main.html"] as const) {
+  const html = await readFile(join(output, page), "utf8");
+  if (/<script[^>]*type=["']module["']/.test(html)) throw new Error(`${page} 仍使用 type=module，旧版浏览器无法执行。`);
+  const script = page === "index.html" ? "catalog.js" : "player.js";
+  if (!html.includes(`src="./${script}"`)) throw new Error(`${page} 未引用 ${script}。`);
+}
 await measure(output);
 if (remoteAssets) {
   for (const directory of ["games", "mythroad_res", "system", "plugins", "app240400", "gwy"]) {

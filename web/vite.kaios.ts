@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { defineConfig, loadEnv } from "vite";
 import { gameBuild } from "./game-build.ts";
 import kaiosGames from "../config/kaios-games.json";
+import { FIREFOX48_SUPPORTED, FIREFOX48_TARGET } from "../tools/es5-bundle.ts";
 
 const root = dirname(fileURLToPath(import.meta.url));
 export default defineConfig(({ mode }) => {
@@ -17,27 +18,12 @@ export default defineConfig(({ mode }) => {
       alias: { "webaudio-tinysynth": resolve(root, "tinysynth-stub.ts") },
     },
     worker: { format: "iife" },
-    esbuild: {
-      // Gecko 48 already has these. esbuild cannot rewrite them, so keep the
-      // rest of the firefox48 table (no BigInt, no object rest, no ??).
-      supported: {
-        "const-and-let": true,
-        "for-of": true,
-        "default-argument": true,
-        "destructuring": true,
-        "rest-argument": true,
-        "array-spread": true,
-        "template-literal": true,
-        "arrow": true,
-        "class": true,
-        "generator": true,
-      },
-    },
+    esbuild: { supported: { ...FIREFOX48_SUPPORTED } },
     build: {
       outDir: resolve(root, "../dist-kaios"),
       emptyOutDir: true,
-      target: "firefox48",
-      cssTarget: "firefox48",
+      target: FIREFOX48_TARGET,
+      cssTarget: FIREFOX48_TARGET,
       modulePreload: false,
       sourcemap: false,
       assetsInlineLimit: 0,
