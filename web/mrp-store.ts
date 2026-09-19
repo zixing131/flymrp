@@ -7,6 +7,7 @@
  */
 
 import { fileBaseName, sdPath } from "./sd-card.ts";
+import { gunzip } from "../src/mrp/gzip.ts";
 
 export const STORE_ORIGIN = ((import.meta as ImportMeta & { env?: Record<string, string> }).env?.VITE_MRP_STORE_ORIGIN || "https://mrpstore.gddhy.net").replace(/\/$/, "");
 /** 在线商店列表地址（gzip 压缩的 JSON 数组）。 */
@@ -58,9 +59,9 @@ function absolute(path: string): string {
   return /^https?:\/\//i.test(path) ? path : `${STORE_ORIGIN}${path}`;
 }
 
-/** 列表解压依赖 DecompressionStream，KaiOS 2.x（Firefox 48）等老内核不支持。 */
+/** 网页壳用自带 gunzip 解压商店列表；KaiOS 包内存太小，不拉 2000+ 商店条目。 */
 export function isStoreSupported(): boolean {
-  return typeof (globalThis as { DecompressionStream?: unknown }).DecompressionStream === "function";
+  return !import.meta.env.KAIOS;
 }
 
 function parseApp(raw: unknown): StoreApp | null {
@@ -91,24 +92,9 @@ function parseApp(raw: unknown): StoreApp | null {
   };
 }
 
-type DecompressionStreamCtor = new (format: "gzip") => {
-  readonly readable: ReadableStream<Uint8Array>;
-  readonly writable: WritableStream<Uint8Array>;
-};
-
-async function gunzipBytes(bytes: ArrayBuffer): Promise<Uint8Array> {
-  const Ctor = (globalThis as { DecompressionStream?: DecompressionStreamCtor }).DecompressionStream;
-  if (!Ctor) throw new Error("当前浏览器不支持在线商店数据解压");
-  const output = new Blob([bytes]).stream().pipeThrough(new Ctor("gzip"));
-  return new Uint8Array(await new Response(output).arrayBuffer());
-}
-
-/** 请求并解压在线商店列表。失败时抛错，由调用方决定展示策略。 */
-export async function fetchStoreList(): Promise<StoreApp[]> {
-  const response = await fetch(STORE_LIST_URL, { cache: "no-cache" });
-  if (!response.ok) throw new Error(`在线商店请求失败（HTTP ${response.status}）`);
-  const bytes = await response.arrayBuffer();
-  const text = new TextDecoder("utf-8").decode(await gunzipBytes(bytes));
+/** 解压商店 gzip 列表。Chrome 60 没有 DecompressionStream，走自带 inflate。 */
+export function decodeStoreList(bytes: Uint8Array): StoreApp[] {
+  const text = new TextDecoder("utf-8").decode(gunzip(bytes));
   const data: unknown = JSON.parse(text);
   if (!Array.isArray(data)) throw new Error("在线商店返回的数据格式不正确");
   const apps: StoreApp[] = [];
@@ -118,6 +104,13 @@ export async function fetchStoreList(): Promise<StoreApp[]> {
   }
   if (!apps.length) throw new Error("在线商店返回了空列表");
   return apps;
+}
+
+/** 请求并解压在线商店列表。失败时抛错，由调用方决定展示策略。 */
+export async function fetchStoreList(): Promise<StoreApp[]> {
+  const response = await fetch(STORE_LIST_URL, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`在线商店请求失败（HTTP ${response.status}）`);
+  return decodeStoreList(new Uint8Array(await response.arrayBuffer()));
 }
 
 /* ---- IndexedDB 本地缓存（key-value） ---- */
