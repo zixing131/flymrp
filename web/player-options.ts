@@ -94,3 +94,11 @@ export function playerHeapSize(value?: string | null): number {
 export function playerWordLoadMode(value?: string | null): "armv5" | "bytewise" {
   return value === "bytewise" ? "bytewise" : "armv5";
 }
+
+/** Snap CSS zoom so each guest pixel covers a whole device pixel. */
+export function snapDisplayScale(fitScale: number, devicePixelRatio = 1): number {
+  const dpr = devicePixelRatio > 0 ? devicePixelRatio : 1;
+  const fit = Number.isFinite(fitScale) && fitScale > 0 ? fitScale : 0.1;
+  const device = Math.floor(fit * dpr + 1e-6);
+  return device < 1 ? fit : device / dpr;
+}

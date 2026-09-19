@@ -7,3 +7,18 @@
 
 #sd-panel .upload{color:#fff}#sd-directory{border:1px solid var(--border,#ddd);border-radius:8px;padding:7px;background:var(--panel,#fff);color:inherit}
 .empty-screen>*+*{margin-top:16px}#guest-editor-form>div>*+*{margin-left:10px}
+
+canvas,.screen-shell{
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:crisp-edges;
+  image-rendering:pixelated;
+}
+.controller{justify-content:center;gap:12px}
+.joypad,.numbers{width:26vw;max-width:200px;margin:0 6px}
+@media(max-width:600px){
+  .joypad,.numbers{width:38vw;max-width:168px}
+}
+@media(max-height:480px) and (min-width:600px){
+  .controller{justify-content:center;gap:16px}
+  .joypad,.numbers{width:40%;max-width:320px;margin:0 8px}
+}

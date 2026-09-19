@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { playerHeapSize, clockSlices, gamePrefKey, gameStem, prefKey, rotatedDirection, rotatedTilt, screenPoint } from "../../web/player-options.ts";
+import { playerHeapSize, clockSlices, gamePrefKey, gameStem, prefKey, rotatedDirection, rotatedTilt, screenPoint, snapDisplayScale } from "../../web/player-options.ts";
 describe("player rotation and speed", () => {
   it("maps all four rotated display corners back to guest coordinates", () => {
     expect(screenPoint(0, 0, 240, 320, 0)).toEqual([0, 0]);
@@ -37,4 +37,11 @@ describe("player rotation and speed", () => {
 it("bounds stored memory choices and retains the default for invalid values", () => {
   expect(playerHeapSize("512")).toBe(512 * 1024);
   for (const value of [null, "", "NaN", "-1", "512.5", "999999"]) expect(playerHeapSize(value)).toBe(8 * 1024 * 1024);
+});
+
+it("snaps CSS zoom to whole device pixels so modern Chromium does not bilinear-filter the LCD", () => {
+  expect(snapDisplayScale(2.7, 1)).toBe(2);
+  expect(snapDisplayScale(3.2, 2)).toBe(3);
+  expect(snapDisplayScale(1.5, 1.25)).toBe(0.8);
+  expect(snapDisplayScale(0.4, 1)).toBe(0.4);
 });

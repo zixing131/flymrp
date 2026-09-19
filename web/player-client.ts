@@ -26,6 +26,7 @@ export class PlayerClient {
   }) {
     const context = canvas.getContext('2d', { alpha: false, desynchronized: true });
     if (!context) { this.worker.terminate(); throw new Error('Canvas2D unavailable'); }
+    context.imageSmoothingEnabled = false;
     this.worker.onmessage = (event: MessageEvent<PlayerResponse>) => {
       const data = event.data;
       if (data.type === 'efs-file') { hooks.persist?.(data.path, data.bytes); return; }
@@ -35,6 +36,7 @@ export class PlayerClient {
           this.screenW = data.width; this.screenH = data.height;
           if (canvas.width !== data.width) canvas.width = data.width;
           if (canvas.height !== data.height) canvas.height = data.height;
+          context.imageSmoothingEnabled = false;
           const image = context.createImageData(data.width, data.height);
           rgb565ToRgba(data.pixels, image.data); context.putImageData(image, 0, 0); this.frames++;
           break;

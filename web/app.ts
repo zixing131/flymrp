@@ -12,7 +12,7 @@ import { BrowserAudio } from "./audio.ts";
 import { DOM_KEY, HeldKeys } from "./controls.ts";
 import { assetUrl, catalogHref, readGame, readLibrary } from "./library.ts";
 import { registerServiceWorker } from "./pwa.ts";
-import { playerScreenSize, playerHeapSize, playerWordLoadMode, readPref, writePref, rotatedDirection, rotatedTilt, screenPoint } from "./player-options.ts";
+import { playerScreenSize, playerHeapSize, playerWordLoadMode, readPref, writePref, rotatedDirection, rotatedTilt, screenPoint, snapDisplayScale } from "./player-options.ts";
 import { readCachedStoreList, storeSdPath } from './mrp-store.ts';
 import { PRELOAD_SYSTEM_FILES, isSafeAssetPath, type PlayerFileSource } from "./remote-files.ts";
 import { optionalResourceJson } from './resource-json.ts';
@@ -493,11 +493,23 @@ function fitScreen(): void {
   const width = swapped ? canvas.height : canvas.width, height = swapped ? canvas.width : canvas.height;
   const inset = kaios ? 0 : 32;
   const fit = Math.max(.1, Math.min((stage.clientWidth - inset) / width, (stage.clientHeight - (kaios ? 0 : 26)) / height));
-  const scale = zoomSelect.value === 'auto' ? fit : Math.min(fit, Number(zoomSelect.value));
+  const raw = zoomSelect.value === 'auto' ? fit : Math.min(fit, Number(zoomSelect.value));
+  const scale = snapDisplayScale(raw, window.devicePixelRatio || 1);
   const pad = kaios ? 0 : 10;
-  canvas.style.width = `${canvas.width * scale}px`; canvas.style.height = `${canvas.height * scale}px`;
-  viewport.style.width = `${width * scale + pad}px`; viewport.style.height = `${height * scale + pad}px`;
-  shell.style.transform = `translate(-50%, -50%) rotate(${rotation * 90}deg)`;
+  canvas.style.width = `${canvas.width * scale}px`;
+  canvas.style.height = `${canvas.height * scale}px`;
+  viewport.style.width = `${width * scale + pad}px`;
+  viewport.style.height = `${height * scale + pad}px`;
+  const angle = (rotation % 4) * 90;
+  if (swapped) {
+    shell.style.top = '50%';
+    shell.style.left = '50%';
+    shell.style.transform = `translate(-50%,-50%) rotate(${angle}deg)`;
+  } else {
+    shell.style.top = '0';
+    shell.style.left = '0';
+    shell.style.transform = angle ? `rotate(${angle}deg)` : '';
+  }
 }
 function storeSetting(name: string, value: string): void { try { localStorage.setItem(`flymrp.${name}`, value); } catch {} }
 function bindSelect(id: string, apply: (value: string) => void): void {
