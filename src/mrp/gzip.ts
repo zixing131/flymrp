@@ -196,7 +196,7 @@ function readDynTrees(r: BitReader): { lit: Huff; dist: Huff } {
   };
 }
 
-function inflateRaw(src: Uint8Array, start: number): { bytes: Uint8Array; end: number } {
+export function inflateRaw(src: Uint8Array, start = 0, maxOut = 32 * 1024 * 1024): { bytes: Uint8Array; end: number } {
   const r = new BitReader(src, start);
   const out: number[] = [];
   for (;;) {
@@ -210,12 +210,14 @@ function inflateRaw(src: Uint8Array, start: number): { bytes: Uint8Array; end: n
       r.i += 4;
       if ((len ^ 0xffff) !== nlen) throw new MrpFormatError("bad stored-block length");
       if (r.i + len > src.length) throw new MrpFormatError("truncated stored deflate payload");
+      if (out.length + len > maxOut) throw new MrpFormatError("deflate output exceeds limit");
       for (let i = 0; i < len; i++) out.push(src[r.i++]!);
     } else if (btype === 1 || btype === 2) {
       const trees = btype === 1 ? { lit: FIXED_LIT, dist: FIXED_DIST } : readDynTrees(r);
       for (;;) {
         const sym = decodeHuff(r, trees.lit);
         if (sym < 256) {
+          if (out.length >= maxOut) throw new MrpFormatError("deflate output exceeds limit");
           out.push(sym);
         } else if (sym === 256) {
           break;
@@ -226,6 +228,7 @@ function inflateRaw(src: Uint8Array, start: number): { bytes: Uint8Array; end: n
           if (ds > 29) throw new MrpFormatError("invalid deflate distance symbol");
           const dist = DIST_BASE[ds]! + (DIST_EXTRA[ds]! ? r.bits(DIST_EXTRA[ds]!) : 0);
           if (dist <= 0 || dist > out.length) throw new MrpFormatError("invalid deflate distance");
+          if (out.length + length > maxOut) throw new MrpFormatError("deflate output exceeds limit");
           for (let k = 0; k < length; k++) out.push(out[out.length - dist]!);
         } else {
           throw new MrpFormatError("invalid deflate literal symbol");
@@ -259,7 +262,7 @@ export function gunzip(src: Uint8Array, maxOut = 32 * 1024 * 1024): Uint8Array {
   }
   if (flg & 2) i += 2;
   if (i >= src.length) throw new MrpFormatError("truncated gzip");
-  const { bytes, end } = inflateRaw(src, i);
+  const { bytes, end } = inflateRaw(src, i, maxOut);
   if (bytes.length > maxOut) throw new MrpFormatError("gzip output exceeds limit");
   if (end + 8 > src.length) throw new MrpFormatError("truncated gzip trailer");
   return bytes;

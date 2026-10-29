@@ -1,6 +1,7 @@
 import { fetchFileBytes } from './chunk-download.ts';
 import './kaios-polyfill.ts';
-import { fileBaseName, listSdFiles, readBlobBytes, removeSdFile, saveSdFile, sdPath, type SdFile } from './sd-card.ts';
+import { fileBaseName, listSdFiles, readBlobBytes, removeSdFile, saveSdFile, installSdFiles, sdPath, type SdFile } from './sd-card.ts';
+import { unzipResources } from '../src/mrp/zip.ts';
 import { gameTitle, installedGamesFromSd, isMrpFilename, playerHref, readLibrary, type Game } from './library.ts';
 import { STORE_DIR, fetchStoreList, isStoreSupported, readCachedStoreList, saveCachedStoreList, storeSdPath, type StoreApp } from './mrp-store.ts';
 import { appIdIconUrl, loadPackageInfo, type MrpPackageInfo } from './mrp-meta.ts';
@@ -482,20 +483,25 @@ async function startStoreDownload(app: StoreApp, force = false): Promise<void> {
   if (!force && state.status === 'done') return;
   state.status = 'downloading';
   state.received = 0;
-  state.total = app.len || 0;
+  state.total = (app.len || 0) + (app.resLen || 0);
   state.error = '';
   paintStore(app);
   try {
     const bytes = await fetchFileBytes(app.downUrl, (received, total) => {
-      state.received = received; if (total > 0) state.total = total; maybePaintStore(app);
+      state.received = received; if (total > 0) state.total = total + (app.resLen || 0); maybePaintStore(app);
     });
     if (!bytes.length) throw new Error('下载的文件是空的');
+    const modified = Date.now();
+    const resources = app.resUrl ? unzipResources(await fetchFileBytes(app.resUrl, (received, total) => {
+      state.received = bytes.length + received;
+      state.total = bytes.length + (total || app.resLen || received);
+      maybePaintStore(app);
+    })).map(file => ({ ...file, modified })) : [];
     state.status = 'saving';
-    state.received = bytes.length;
-    state.total = bytes.length;
+    state.total = state.received;
     paintStore(app);
     const path = storeSdPath(app);
-    await saveSdFile({ path, bytes, modified: Date.now(), resolution: app.scr });
+    await installSdFiles({ path, bytes, modified, resolution: app.scr }, resources);
     installedStore.add(path);
     state.status = 'done';
     paintStore(app);

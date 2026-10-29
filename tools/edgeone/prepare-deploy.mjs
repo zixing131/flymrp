@@ -29,7 +29,10 @@ const ruleMap = new Map();
 for (const name of names) {
  const key = `runtime/${name}`, record = records.get(key);
  const bytes = await readFile(`${runtimeOutput}/${name}`);
- if (!record || record.projectId !== summary.projectId || createHash('sha256').update(bytes).digest('hex') !== record.sha256) throw new Error(`Upload runtime asset first: ${name}`);
+ if (name === 'network-rules.json') {
+  // Served by the bundled Blob function, not the historical remote object.
+  if (!bytes.equals(await readFile('assets/network-rules.json'))) throw new Error('Rebuild runtime network-rules.json before packaging');
+ } else if (!record || record.projectId !== summary.projectId || createHash('sha256').update(bytes).digest('hex') !== record.sha256) throw new Error(`Upload runtime asset first: ${name}`);
  const prefix = name.includes('/') ? name.split('/')[0] : name;
  ruleMap.set(prefix, name.includes('/')
   ? {source:`/${prefix}/*`,destination:`/blob/runtime/${prefix}/:splat`}

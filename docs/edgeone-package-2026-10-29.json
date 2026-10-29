@@ -1,0 +1,35 @@
+{
+  "output": "artifacts/edgeone/deploy",
+  "zipPath": "artifacts/edgeone/flymrp-edgeone.zip",
+  "zipBytes": 280594,
+  "runtimeFiles": 16509,
+  "blobRewrites": 15,
+  "zipSha256": "92895f7973a762c8dc2d024c68eb11f2b0bfb0adf53fa94d4b2a64040a88a261",
+  "zipFiles": 35,
+  "zipCrc": "passed",
+  "shellMatchesBuild": true,
+  "packagedConfigRoute": "GET JSON content / HEAD / compatibility redirect passed",
+  "runtimeResourceIndexSha256": "4b874fbf533f4597241177bc358bb2c7a8429120e4d5ffc8e7a1c3cae6128887",
+  "inlineRuntimeFiles": [
+    "network-rules.json"
+  ],
+  "deployed": false,
+  "buildVersion": {
+    "version": "bmvtp19iq",
+    "builtAt": "2026-10-29T15:23:51.053Z"
+  },
+  "tests": {
+    "passed": 914,
+    "skipped": 2,
+    "edgeoneFocusedPassed": 9
+  },
+  "typecheck": "passed",
+  "blobObjectsChanged": false,
+  "sourceFilesSha256": {
+    "assets/network-rules.json": "160094e21fbb242983960da0e0471f0c1511ef3bf9b71b1344fb2cf5d2c38b11",
+    "edge-functions/blob/[[path]].js": "db56a4c8f6c1e9efdd78f54768249fc78430bb9590484b48eabbb31e0b2369a2",
+    "tools/edgeone/prepare-deploy.mjs": "e407165fdccc7cf473a03ef48d0aae701c95428de2d5578b683b2e52d7051b3f",
+    "tools/edgeone/verify-download.ts": "1f803fffa03f67825e164208e9513517218521f44b4221cd621c53c1cc9be6ba",
+    "web/legacy-packages.ts": "bf195a3ee0e6f97121b5e4bf7bdf7e0ce434551d76860ffce7c5e71110fa4281"
+  }
+}

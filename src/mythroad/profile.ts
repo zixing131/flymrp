@@ -46,8 +46,10 @@ export function defaultProfile(over: Partial<DeviceProfile> = {}): DeviceProfile
     // A caller-supplied handset identity still wins through the override below.
     hsman: "sdk",
     hstype: "stage5b",
-    IMEI: "0000000000000000",
-    IMSI: "0000000000000000",
+    // Native user-info fields have 16 bytes including the NUL terminator.
+    // Keep Lua's identity strings consistent with those 15-digit values.
+    IMEI: "000000000000000",
+    IMSI: "000000000000000",
     hsver: 1,
     chw: 16,
     chh: 16,

@@ -51,11 +51,12 @@ if(worker) {
   const scenario=scenarios[String(game.id)]??{},profile={...inferScreenSize(game.path),...scenario.profile};
   loadGb16Uc2(readFileSync("assets/system/gb16.uc2"));
   const resourceFiles = await loadGameResourceFiles(process.env.MRP_RESOURCE_DIR ?? join(root, "mythroad_res"), MRPArchive.parse(bytes).header.filename);
+  const userFiles = await loadLocalSystemFiles(process.env.MRP_TEST_SD_DIR);
   const systemFiles = { ...Object.fromEntries(SYSTEM_COMPONENTS.map(name => [name, readFileSync(`assets/${name}`)])), ...await loadLocalSystemFiles(process.env.MRP_TEST_PRODUCTION ? undefined : localSystemDirectory) };
   loadGb16Uc2(systemFiles["system/gb16.uc2"]);
   const display: FrameCapture=new FrameCapture(()=>rt.screen,profile.width,profile.height);
   const vibrationRequests: number[] = [];
-  const rt: MythroadRuntime=new MythroadRuntime({profile,abiMode:"strict",systemFiles,resourceFiles,graphics:display,onVibrate:ms=>vibrationRequests.push(ms),
+  const rt: MythroadRuntime=new MythroadRuntime({profile,abiMode:"strict",systemFiles,resourceFiles,userFiles,graphics:display,onVibrate:ms=>vibrationRequests.push(ms),
     // Timed benchmarks need the browser worker's clock; other scenarios retain
     // deterministic execution. This choice is frozen in scenarioSha256.
     monotonicTime:scenario.clock==="monotonic"?()=>performance.now():undefined,
@@ -138,6 +139,7 @@ if(worker) {
   const revision=execFileSync("git",["rev-parse","HEAD"],{encoding:"utf8"}).trim();
   const diff=execFileSync("git",["diff"],{encoding:"utf8"});
   const meta={revision,workingDiffSha256:hash(diff),manifestSha256:hash(readFileSync(manifestPath)),scenarioSha256:existsSync(scenarioPath)?hash(readFileSync(scenarioPath)):null,
+    userFilesSha256:systemFileHashes(await loadLocalSystemFiles(process.env.MRP_TEST_SD_DIR)),
     systemFilesSha256:systemFileHashes({ ...Object.fromEntries(SYSTEM_COMPONENTS.map(name=>[name,readFileSync(`assets/${name}`)])), ...await loadLocalSystemFiles(process.env.MRP_TEST_PRODUCTION ? undefined : localSystemDirectory) }),
     startedAt:new Date().toISOString(),requiredCount:allGames.length,selectedCount:games.length,concurrency,verificationMode,method:entryOnly?"frozen-content-startup-review-v1":"frozen-content-presented-lcd-controls-60s-scene-review-v2"};
   const results: any[]=[];

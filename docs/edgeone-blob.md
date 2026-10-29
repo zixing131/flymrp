@@ -4,7 +4,9 @@
 
 ## 直接上传的文件
 
-使用 `artifacts/edgeone/flymrp-edgeone.zip`，不要压缩完整 `dist` 上传。当前 ZIP 为 **250407 字节**，共 28 个 ZIP 条目，根目录直接包含 `index.html` 和 `edge-functions/`。其内容仅包括网页、前端脚本、PWA 图标、许可证、必要配置和已打包的函数。
+使用 `artifacts/edgeone/flymrp-edgeone.zip`，不要压缩完整 `dist` 上传。2026-10-29 更新包为 **280594 字节**，包含 35 个文件，根目录直接包含 `index.html` 和 `edge-functions/`。其内容仅包括网页、前端脚本、PWA 图标、许可证、必要配置和已打包的函数。最新本地打包记录见 [edgeone-package-2026-10-29.json](edgeone-package-2026-10-29.json)。
+
+本轮包含兼容性修复、合辑下载适配和资源 ZIP 安装。资源总索引从现有资源重建，SHA-256 与此前已上传的版本完全相同，没有将空索引上传覆盖现网资源。网络配置由 Blob 函数内置当前 `assets/network-rules.json`，与播放器保持一致，无需修改云端历史配置对象。已验证 ZIP CRC、文件与构建的一致性，以及包内配置的 GET/HEAD 和旧 URL 跳转；本轮没有上传或部署。
 
 官方说明：[直接上传](https://pages.edgeone.ai/document/direct-upload)。直接上传不会执行 `npm install`，因此打包器使用 esbuild 将 Blob SDK 和分片清单全部并入函数，检查没有未解析的模块导入。保留 SDK 的平台部署凭据占位符与环境回退；用户 API token 不进入 ZIP。正式生产部署尚未执行，包内函数已通过本地部署环境模拟及实际 Blob 读取验证。
 
@@ -17,7 +19,7 @@
 
 15 条目录或文件级改写规则，将原静态资源 URL 转到同域 `/blob/runtime/`。游戏和资源索引也在 Blob，PWA 请求地址保持有效。游戏数据不在部署 ZIP 内。
 
-原始 `dist/` 保留完整静态构建；`artifacts/edgeone/deploy/` 是小体积部署目录。打包器验证每个迁出的文件与上传日志中的 SHA-256 一致，拒绝未上传、内容已变化或缺少已验证分片的文件。
+原始 `dist/` 保留完整静态构建；`artifacts/edgeone/deploy/` 是小体积部署目录。打包器验证每个迁出的文件与上传日志中的 SHA-256 一致，拒绝未上传、内容已变化或缺少已验证分片的文件。唯一内置配置 `network-rules.json` 则要求本地构建与源码文件一致，`/blob/runtime/network-rules.json` 和旧资源 URL 均由新函数返回；验证器按 JSON 内容比较该配置，其余资源仍逐字节校验。
 
 ## 上传、编译与打包
 

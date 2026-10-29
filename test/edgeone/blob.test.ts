@@ -3,9 +3,18 @@ const store = vi.hoisted(() => ({getMetadata:vi.fn(),get:vi.fn()}));
 vi.mock('@edgeone/pages-blob',()=>({getStore:()=>store}));
 // @ts-expect-error EdgeOne deploys this JavaScript function directly.
 import { onRequest } from '../../edge-functions/blob/[[path]].js';
+import networkRules from '../../assets/network-rules.json';
 const request=(path: string,options?: RequestInit)=>onRequest({request:new Request(`https://example.com/blob/${path}`,options)});
 beforeEach(()=>vi.resetAllMocks());
 describe('EdgeOne Blob read route',()=>{
+ it('serves the deployed network configuration without reading an outdated Blob object',async()=>{
+  const res=await request('runtime/network-rules.json');
+  expect(await res.text()).toBe(JSON.stringify(networkRules, null, 2) + '\n');
+  expect(res.headers.get('Cache-Control')).toBe('no-cache');
+  const head=await request('runtime/network-rules.json',{method:'HEAD'});
+  expect(head.status).toBe(200); expect(await head.text()).toBe('');
+  expect(store.getMetadata).not.toHaveBeenCalled(); expect(store.get).not.toHaveBeenCalled();
+ });
  it('preserves binary bytes and MIME type',async()=>{
   store.getMetadata.mockResolvedValue({etag:'"abc"'});
   const png = new Uint8Array([137,80,78,71,13,10,26,10,0,255,128,1]);

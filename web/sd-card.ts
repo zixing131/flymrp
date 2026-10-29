@@ -29,6 +29,23 @@ export const removeSdFile = (path: string) => transaction('readwrite', store => 
 
 export const readSdFile = (path: string) => transaction<SdFile | undefined>('readonly', store => store.get(path));
 
+/** Commit the application and its resources together; keep existing SD data. */
+export async function installSdFiles(application: SdFile, resources: SdFile[]): Promise<void> {
+  const db = await open();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction('files', 'readwrite'), store = tx.objectStore('files');
+    for (const file of resources) {
+      if (file.path === application.path) continue;
+      const request = store.get(file.path);
+      request.onsuccess = () => { if (!request.result) store.put(file); };
+    }
+    store.put(application);
+    tx.oncomplete = () => resolve();
+    tx.onabort = () => reject(tx.error ?? new Error('文件保存失败'));
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
 /** Firefox 48 / KaiOS has FileReader, but not `Blob.arrayBuffer()`. */
 export function readBlobBytes(blob: Blob): Promise<Uint8Array> {
   if (typeof blob.arrayBuffer === "function") return blob.arrayBuffer().then(buf => new Uint8Array(buf));

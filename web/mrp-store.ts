@@ -45,6 +45,9 @@ export interface StoreApp {
   iconUrl: string;
   /** 完整下载地址：https://mrpstore.gddhy.net + down。 */
   downUrl: string;
+  /** Optional ZIP whose paths are relative to the SD card root. */
+  resUrl?: string;
+  resLen?: number;
 }
 
 export type StoreListCache = { savedAt: number; apps: StoreApp[] };
@@ -89,6 +92,8 @@ function parseApp(raw: unknown): StoreApp | null {
     md5: str(it.md5).trim() || undefined,
     iconUrl: icon ? absolute(icon) : "",
     downUrl: absolute(down),
+    resUrl: str(it.res).trim() ? absolute(str(it.res).trim()) : undefined,
+    resLen: num(it.resLen),
   };
 }
 

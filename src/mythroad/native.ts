@@ -1,5 +1,8 @@
 import { diskSpace } from "./work-path.ts";
+import { ExtRuntime } from '../abi/runtime.ts';
 import { installLuaGui } from './lua-gui.ts';
+import { installLuaStringPointers } from './lua-string-pointers.ts';
+import { installLuaNetwork } from './lua-network.ts';
 import { makeBitmapInfo } from './lua-bitmap-info.ts';
 import { LegacyConfig } from './legacy-config.ts';
 import { LuaChunkFormatError, LuaRuntimeError, NativeAbiError, VfsError } from "../err/errors.ts";
@@ -38,6 +41,7 @@ export function installNatives(rt: MythroadRuntime): void {
   const L = rt.lua.L;
   const reg = (name: string, fn: NativeFunction) => L.register(name, fn);
   installLuaGui(rt);
+  installLuaStringPointers(rt);
 
   const c2u: NativeFunction = Ls => {
     const chars = gbkBytesToUcs2(binToBytes(Ls.checkString(1).s.split('\0')[0]));
@@ -48,15 +52,36 @@ export function installNatives(rt: MythroadRuntime): void {
   reg('c2u', c2u); L.setTableFn(L.getGlobal('string').num, 'c2u', c2u);
   reg("_strCom", rt.strCom);
   reg("TestCom1", rt.strCom);
+  const loadString: NativeFunction = Ls => {
+    const bytes = binToBytes(Ls.checkString(1).s);
+    try { rt.lua.loadBytes(bytes); return 1; }
+    catch (error) {
+      if (!(error instanceof LuaChunkFormatError)) throw error;
+      Ls.pushNil(); Ls.pushString(error.message); return 2;
+    }
+  };
+  reg('_loads', loadString);
+  reg('_loadBuf', loadString);
+  reg('loadstring', loadString);
   reg("GetNetworkID", Ls => { Ls.pushInteger(MR_NET_ID_MOBILE); return 1; });
   const phone = L.newTable();
   L.setTableFn(phone, 'getNetID', Ls => { Ls.pushInteger(MR_NET_ID_MOBILE); return 1; });
   L.setGlobal('phone', TAG_TABLE, phone);
+  reg('_plat', Ls => {
+    if (!rt.ext) rt.bindExt(new ExtRuntime());
+    Ls.pushInteger(rt.mrTable!.plat(Ls.optNumber(1, 0), Ls.optNumber(2, 0)));
+    return 1;
+  });
   // mythroad.c MRF_platEx returns (binary output, platform status). Old Lua
   // games query the four little-endian font metric bytes before drawing menus.
   reg("_platEx", (Ls) => {
     const code = Ls.optNumber(1, 0) | 0;
     if (code === 1201) { Ls.pushString(new Uint8Array([16, 16, 8, 16])); Ls.pushInteger(MR_SUCCESS); return 2; }
+    if (code === 1222 || code === 1223) {
+      if (!rt.ext) rt.bindExt(new ExtRuntime());
+      const status = rt.mrTable!.platEx(rt.ext!.mem, new Uint32Array([code, 0, 0, 0, 0, 0]));
+      Ls.pushString(''); Ls.pushInteger(status); return 2;
+    }
     // The reference DSM port returns MR_IGNORE for keypad/title probes
     // and the legacy vendor probe 2200 (no case in its platform switch).
     if (code === 1210 || code === 1221 || code === 2200) { Ls.pushString(''); Ls.pushInteger(MR_IGNORE); return 2; }
@@ -147,7 +172,7 @@ export function installNatives(rt: MythroadRuntime): void {
     return 2;
   });
 
-  const com = makeCom(rt);
+  const com = makeCom(rt, installLuaNetwork(rt));
   reg("_com", com);
   reg("TestCom", com);
 
@@ -287,7 +312,7 @@ export function installNatives(rt: MythroadRuntime): void {
   installSysLib(rt, sys, dt);
 }
 
-function makeCom(rt: MythroadRuntime): NativeFunction {
+function makeCom(rt: MythroadRuntime, network: { open: NativeFunction; close: NativeFunction }): NativeFunction {
   const config = new LegacyConfig(() => rt.appFs.file('dsm.cfg'), bytes => rt.setUserFile('dsm.cfg',bytes));
   return (L) => {
     const a0 = L.optNumber(1, 0) | 0;
@@ -330,6 +355,8 @@ function makeCom(rt: MythroadRuntime): NativeFunction {
         rt.screenW = a1;
         break;
       }
+      case 402: return network.open(L);
+      case 405: return network.close(L);
       case 403:
         rt.gcThreshold = a1;
         rt.gcCalls++;
@@ -787,6 +814,15 @@ function installSysLib(rt: MythroadRuntime, sysInfo: NativeFunction, dt: NativeF
     Ls.pushNil(); Ls.pushString(`file err: ${name}: 2`); Ls.pushInteger(2); return 3;
   };
   L.setTableFn(id, 'rm', remove); L.setTableFn(id, 'remove', remove);
+  L.setTableFn(id, 'rename', Ls => {
+    const from = Ls.checkString(1).s, to = Ls.checkString(2).s;
+    const result = rt.mrTable ? rt.mrTable.files.rename(from, to) : rt.appFs.rename(from, to);
+    if (result === MR_SUCCESS) {
+      rt.vfs.renameRam(from, to);
+      Ls.pushBoolean(true); return 1;
+    }
+    Ls.pushNil(); Ls.pushString(`file err: ${from}: 2`); Ls.pushInteger(2); return 3;
+  });
   for (const [name, operation] of [['mkDir', 'mkdir'], ['rmDir', 'rmdir']] as const) {
     const fn: NativeFunction = Ls => {
       const path = Ls.checkString(1).s;

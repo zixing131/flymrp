@@ -25,9 +25,13 @@ it("inflates a gzip store list without browser DecompressionStream", () => {
     scr: "240x320",
     detail: "bench",
     icon: "/mrp-icon/a.png",
+    res: "/mrp-files/extra.zip",
+    resLen: 37846,
   }]);
   const apps = decodeStoreList(gzipStore(new TextEncoder().encode(json)));
   expect(apps).toHaveLength(1);
   expect(apps[0]?.label).toBe("白跑分");
   expect(apps[0]?.downUrl).toContain("/mrp-files/baipaofenv1.1.5.mrp");
+  expect(apps[0]?.resUrl).toContain('/mrp-files/extra.zip');
+  expect(apps[0]?.resLen).toBe(37846);
 });

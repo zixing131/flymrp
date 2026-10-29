@@ -9,11 +9,12 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync } from '
 import { resolve, join } from 'node:path';
 import { spawn, execFileSync } from 'node:child_process';
 import { DEFAULT_INSN_BUDGET } from '../../src/abi/runtime.ts';
+import { unzipResources } from '../../src/mrp/zip.ts';
 
 const [manifestArg, rootArg, outputArg] = process.argv.slice(2);
 if (!manifestArg || !rootArg || !outputArg) throw new Error('Usage: store-test.ts manifest.json game-root output-dir');
 const manifestPath = resolve(manifestArg), root = resolve(rootArg), output = resolve(outputArg);
-type App = { id: number; caseId?: number; label: string; down: string; md5: string; len: number; scr: string; localPath?: string | null };
+type App = { id: number; caseId?: number; label: string; down: string; md5: string; len: number; scr: string; localPath?: string | null; res?: string; resLen?: number };
 const manifestBytes = readFileSync(manifestPath);
 const apps: App[] = JSON.parse(manifestBytes.toString()).games;
 const digest = (b: Uint8Array | string, kind = 'sha256') => createHash(kind).update(b).digest('hex');
@@ -66,10 +67,25 @@ async function packagePath(app: App): Promise<string> {
   }
   throw error;
 }
-function run(path: string, app: App): Promise<Record<string, unknown>> {
+async function resourceZip(app: App): Promise<string> {
+  if (!app.res) return '';
+  const path = join(cache, `${app.md5}-resources.zip`);
+  if (!existsSync(path)) {
+    const url = new URL(app.res, 'https://mrpstore.gddhy.net');
+    if (url.origin !== 'https://mrpstore.gddhy.net') throw new Error('unexpected resource origin');
+    const response = await fetch(url, { signal: AbortSignal.timeout(60_000) });
+    if (!response.ok) throw new Error(`resource HTTP ${response.status}`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if (app.resLen && bytes.length !== app.resLen) throw new Error('resource length mismatch');
+    unzipResources(bytes);
+    writeFileSync(path + '.tmp', bytes); renameSync(path + '.tmp', path);
+  }
+  return path;
+}
+function run(path: string, app: App, zip: string): Promise<Record<string, unknown>> {
   return new Promise(done => {
     const child = spawn(process.execPath, ['--import', 'tsx', 'tools/real/coarse-all.ts', '--worker', path, output, root], {
-      env: { ...process.env, ...settings, MRP_COARSE_SCREEN: app.scr }, stdio: ['ignore', 'pipe', 'pipe'],
+      env: { ...process.env, ...settings, MRP_COARSE_SCREEN: app.scr, MRP_COARSE_RESOURCE_ZIP: zip }, stdio: ['ignore', 'pipe', 'pipe'],
     });
     let stdout = '', stderr = '', timedOut = false;
     const timer = setTimeout(() => { timedOut = true; child.kill('SIGKILL'); }, 45_000);
@@ -79,7 +95,7 @@ function run(path: string, app: App): Promise<Record<string, unknown>> {
     child.on('close', () => {
       clearTimeout(timer);
       if (timedOut) return done({ classification: 'worker-timeout', error: '45s wall-clock timeout' });
-      try { done(JSON.parse(stdout.trim().split('\n').at(-1)!)); }
+      try { done({ ...JSON.parse(stdout.trim().split('\n').at(-1)!), resourceZipSha256: zip ? digest(readFileSync(zip)) : null }); }
       catch { done({ classification: 'worker-error', error: stderr || 'worker produced no JSON' }); }
     });
   });
@@ -94,7 +110,7 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
     if (existsSync(caseFile)) result = JSON.parse(readFileSync(caseFile, 'utf8'));
     else {
       let detail: Record<string, unknown>;
-      try { detail = await run(await packagePath(app), app); }
+      try { detail = await run(await packagePath(app), app, await resourceZip(app)); }
       catch (e) { detail = { classification: 'download-error', error: String(e) }; }
       result = { ...detail, caseId: app.caseId ?? index + 1, id: app.id, label: app.label, down: app.down, md5: app.md5, scr: app.scr };
       atomicJson(caseFile, result);

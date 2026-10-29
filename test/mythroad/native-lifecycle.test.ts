@@ -40,3 +40,12 @@ it('publishes host timer expiry before guest execution and accepts paused timers
   expect(rt.timers.runWithoutPause).toBe(1);
   expect(ext.mem.read32(cell(5))).toBe(1);
 });
+
+it('preserves the Lua timer pump when native input code rearms the platform timer', () => {
+  const { rt, ext } = setup();
+  rt.timers.start(0, 250, 'i_systemTimFunc', 1);
+  ext.runGuest(tableSlotAddr(31), { r0: 50 });
+  expect(rt.timers.callback).toBe('i_systemTimFunc');
+  expect(rt.timers.deadline).toBe(50);
+  expect(rt.timers.due(50)).toBe('i_systemTimFunc');
+});

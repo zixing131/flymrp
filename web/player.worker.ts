@@ -6,6 +6,7 @@ import { EV_KEY } from '../src/mythroad/events.ts';
 import type { PlayerRequest, PlayerResponse } from './player-protocol.ts';
 import { clockSlices } from './player-options.ts';
 import { createRemoteFileLoaders } from './remote-files.ts';
+import { createLegacyPackageLoader } from './legacy-packages.ts';
 
 const post = self.postMessage.bind(self) as (message: PlayerResponse, transfer?: Transferable[]) => void;
 const send = (message: PlayerResponse, transfer: Transferable[] = []) => post(message, transfer);
@@ -69,6 +70,7 @@ onmessage = (event: MessageEvent<PlayerRequest>) => {
         loadSystemFile: loaders?.loadSystemFile, loadResourceFile: loaders?.loadResourceFile,
         graphics: display, abiMode: 'strict', monotonicTime: () => performance.now(),
         networkRules: DEFAULT_NETWORK_RULES,
+        loadDownloadPackage: createLegacyPackageLoader(message.profile.width ?? 240, message.profile.height ?? 320),
         onEditChange: state => send({ type: 'edit', state }),
         onVibrate: milliseconds => send({ type: 'vibrate', milliseconds }),
         onPlaySound: (format, bytes, loop, positionMs) => send({ type: 'sound', format, bytes, loop, positionMs }),

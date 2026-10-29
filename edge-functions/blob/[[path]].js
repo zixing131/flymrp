@@ -1,5 +1,6 @@
 import { getStore } from '@edgeone/pages-blob';
 import chunks from '../../blob-config/chunks.js';
+import networkRules from '../../assets/network-rules.json' with { type: 'json' };
 
 export function imageContentType(bytes) {
   const b = new Uint8Array(bytes);
@@ -19,6 +20,13 @@ export async function onRequest({ request }) {
   try { key = decodeURIComponent(new URL(request.url).pathname.slice('/blob/'.length)); }
   catch { return new Response('Invalid path', { status: 400 }); }
   if (!/^(mrp-files|mrp-icon|api|mythroad_res|runtime|chunks)\//.test(key) || key.split('/').some(p => !p || p === '.' || p === '..')) return new Response('Not found', { status: 404 });
+  // Keep this small configuration in step with the bundled player. Updating
+  // the deployment ZIP must not require a separate mutation of live Blob data.
+  if (key === 'runtime/network-rules.json') {
+    return new Response(request.method === 'HEAD' ? null : JSON.stringify(networkRules, null, 2) + '\n', {
+      headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff' },
+    });
+  }
   if (Object.hasOwn(chunks, key)) {
     const manifest = chunks[key];
     const headers = { 'Content-Type': 'application/vnd.flymrp.chunks+json', 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff' };

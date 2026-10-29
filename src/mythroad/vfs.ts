@@ -51,6 +51,17 @@ export class MythroadVfs {
     return true;
   }
 
+  renameRam(from: string, to: string): void {
+    if (from === to) return;
+    const source = this.ramIndex(from), target = this.ramIndex(to);
+    if (target >= 0) this.ramNames[target] = null;
+    if (source < 0) return;
+    this.ramNames[source] = to;
+    for (let fd = 1; fd <= MAX_FD; fd++) {
+      if (this.fdOpen[fd] && this.fdRam[fd] === source) this.fdName[fd] = to;
+    }
+  }
+
   exists(name: string): boolean {
     if (this.ramIndex(name) >= 0) return true;
     if (this.archive?.hasFile(name) ?? false) return true;

@@ -5,7 +5,7 @@ import { NativeEditor, type EditState } from "./native-editor.ts";
 import type { NetworkRules } from "./network-rules.ts";
 import { EXT_STACK_ADDR, EXT_TABLE_COUNT, MR_MAX_FILENAME_SIZE, tableSlotIndex, tableSlotAddr } from "../abi/layout.ts";
 import type { ExtRuntime } from "../abi/runtime.ts";
-import { UnknownAbiError, MrpFormatError } from "../err/errors.ts";
+import { UnknownAbiError, MrpFormatError, NativeAbiError } from "../err/errors.ts";
 import { MemoryFault, type GuestMemory } from "../hot/memory.ts";
 import { guestMd5Init, guestMd5Append, guestMd5Finish } from "./guest-md5.ts";
 import { MRPArchive } from "../mrp/index.ts";
@@ -191,6 +191,8 @@ export class MrTableBridge {
   private readonly searches = new Map<number, { names: string[]; index: number }>();
   private randSeed: number | null = null;
   networkMode: string | null = null;
+  private networkGeneration = 0;
+  private readonly dnsCallbacks: { callback: number; result: number; r9: number }[] = [];
   readonly offlineNetwork: OfflineNetwork;
   readonly editor: NativeEditor;
   readonly nativeUi: NativeUi;
@@ -218,6 +220,22 @@ export class MrTableBridge {
   clock = 0;
   private lastTimeCall = { serial: -1, bridge: -1, instructions: 0 };
   private timePolls = 0;
+  closeNetwork(): void {
+    this.networkMode = null;
+    this.networkGeneration++;
+    this.dnsCallbacks.length = 0;
+    this.offlineNetwork.closeAll();
+  }
+
+  /** One platform turn; callbacks queued by callbacks wait for the next turn. */
+  pumpNetworkCallbacks(): void {
+    const generation = this.networkGeneration;
+    for (const request of this.dnsCallbacks.splice(0)) {
+      if (generation !== this.networkGeneration) break;
+      const result = this.ext.runGuest(request.callback, { r0: request.result, r9: request.r9 });
+      if (result.kind !== 'return') throw new NativeAbiError(`DNS callback: ${result.kind}: ${result.detail ?? ''}`);
+    }
+  }
   private pollingInstructions = 0;
   private pollingStarted = 0;
   private pollingCharged = 0;
@@ -241,6 +259,7 @@ export class MrTableBridge {
       onEditChange?: (state: EditState | null) => void;
       onEditComplete?: (accepted: boolean) => void;
       getDownloadFile?: (name: string) => Uint8Array | null;
+      getDownloadPackage?: (appid: number) => Uint8Array | null;
       onUnknownSlot?: (n: number) => void;
       onAlloc?: (rec: AllocRecord) => void;
       onRead?: (rec: ReadFileRecord) => void;
@@ -265,7 +284,7 @@ export class MrTableBridge {
     this.appFs = hooks.appFs ?? new AppFileSystem();
     this.nativeUi = new NativeUi(ext.mem, hooks.onUiChange ?? (() => {}), hooks.onPlatformEvent ?? (() => {}));
     this.editor = new NativeEditor(ext.mem, size => ext.alloc(size), hooks.onEditChange, hooks.onEditComplete);
-    this.offlineNetwork = new OfflineNetwork({ rules: hooks.networkRules, readFile: name => hooks.getDownloadFile?.(name) ?? this.appFs.file(name) });
+    this.offlineNetwork = new OfflineNetwork({ rules: hooks.networkRules, readFile: name => hooks.getDownloadFile?.(name) ?? this.appFs.file(name), readPackage: hooks.getDownloadPackage });
     this.files = new CurrentPackFileBackend(() => this.hooks.getPack?.() ?? null, this.appFs);
   }
 
@@ -462,8 +481,18 @@ export class MrTableBridge {
       this.networkMode = args[1] ? readGuestCString(mem, args[1]) : "";
       return MR_SUCCESS;
     });
-    this.ext.registerHandler(82, () => { this.networkMode = null; this.offlineNetwork.closeAll(); return MR_SUCCESS; });
-    this.ext.registerHandler(83, (_cpu, mem, [host]) => this.offlineNetwork.resolve(readGuestCString(mem, host)));
+    this.ext.registerHandler(82, () => { this.closeNetwork(); return MR_SUCCESS; });
+    this.ext.registerHandler(83, (cpu, mem, [host, callback]) => {
+      const result = this.offlineNetwork.resolve(readGuestCString(mem, host));
+      // mrporting.h: getHostByName(name, MR_GET_HOST_CB), MR_WAITING=2.
+      // Deliver uncached lookup failure after the caller has unwound. Some
+      // applications retry recursively when failure is returned inline.
+      if (result === MR_FAILED && callback && this.dnsCallbacks.length < 64) {
+        this.dnsCallbacks.push({ callback, result, r9: cpu.r[9] });
+        return 2;
+      }
+      return result;
+    });
     this.ext.registerHandler(84, (_cpu, _mem, [type, protocol]) => this.offlineNetwork.socket(type, protocol));
     this.ext.registerHandler(85, (_cpu, _mem, [id, ip, port]) => this.offlineNetwork.connect(id, ip, port));
     this.ext.registerHandler(86, (_cpu, _mem, [id]) => this.offlineNetwork.close(id));
@@ -1200,7 +1229,9 @@ export class MrTableBridge {
     const now = this.hooks.getClock ? this.hooks.getClock() : this.clock;
     const state = this.hooks.getMrState?.() ?? MR_STATE_RUN;
     const timer = this.hooks.getTimer?.() ?? this.localTimer;
-    if (timer.start(now, t, "dealtimer", state)) this.recordTimerOwner();
+    // mr_timerStart only rearms the platform timer. The Lua wrapper (or the
+    // writable timer-name global) owns its callback, including custom pumps.
+    if (timer.start(now, t, timer.callback, state)) this.recordTimerOwner();
     return MR_SUCCESS;
   }
 

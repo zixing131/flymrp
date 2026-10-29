@@ -45,7 +45,11 @@ try{
    const expected=await readFile(`dist/${name}`);
    const bytes=await fetchFileBytes(`http://127.0.0.1:${port}/${name}`);
    const sha256=createHash('sha256').update(bytes).digest('hex');
-   if(sha256!==createHash('sha256').update(expected).digest('hex'))throw new Error(`Runtime route differs: ${name}`);
+   // The bundled JSON config is serialized by the function; integer app IDs
+   // can be reordered by JSON.stringify without changing the configuration.
+   if(name==='network-rules.json') {
+    if(JSON.stringify(JSON.parse(Buffer.from(bytes).toString('utf8')))!==JSON.stringify(JSON.parse(expected.toString('utf8'))))throw new Error(`Runtime config differs: ${name}`);
+   } else if(sha256!==createHash('sha256').update(expected).digest('hex'))throw new Error(`Runtime route differs: ${name}`);
    verified.push({key:`runtime/${name}`,bytes:bytes.length,sha256});
   }
  }

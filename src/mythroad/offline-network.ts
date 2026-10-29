@@ -1,6 +1,7 @@
 import { DEFAULT_NETWORK_RULES, hostname, ipv4, ipString, parseNetworkRules, type NetworkRules } from "./network-rules.ts";
 import { md5Bytes } from "./guest-md5.ts";
 import { MR_FAILED, MR_SUCCESS } from "./constants.ts";
+import { legacyDownloadRequest, legacyDownloadResponse } from "./legacy-download.ts";
 
 const encoder = new TextEncoder(), decoder = new TextDecoder();
 const LIMIT = 1024 * 1024;
@@ -44,7 +45,7 @@ export class OfflineNetwork {
   readonly rules: NetworkRules;
   private readonly dns = new Map<string, number>();
   private readonly addresses = new Set<number>([WAP_GATEWAY]);
-  constructor(private readonly options: { rules?: NetworkRules; readFile?: (name: string) => Uint8Array | null } = {}) {
+  constructor(private readonly options: { rules?: NetworkRules; readFile?: (name: string) => Uint8Array | null; readPackage?: (appid: number) => Uint8Array | null } = {}) {
     this.rules = parseNetworkRules(options.rules ?? DEFAULT_NETWORK_RULES);
     // Keep the original ROP address stable for old callers/tests.
     const hosts = ["rop.skymobiapp.com"];
@@ -73,7 +74,7 @@ export class OfflineNetwork {
   }
   connect(id: number, ip: number, port: number): number {
     const s = this.sockets.get(id);
-    const ports = [80, 6009];
+    const ports = [80, 6009, 8080];
     for (const route of this.rules.routes) if (route.port) ports.push(route.port);
     if (!s || !this.addresses.has(ip >>> 0) || !Number.isInteger(port) || ports.indexOf(port) < 0) return MR_FAILED;
     s.ip = ip >>> 0; s.port = port; s.connected = true;
@@ -160,6 +161,15 @@ export class OfflineNetwork {
       if (!bytes) { note("missing-package", file, appid); s.response = http(404, new Uint8Array()); return; }
       note("local-package", file, appid);
       s.response = http(200, simpleDownload(bytes, appid, product)); return;
+    }
+    if (host === "www.sky-mobi.com" && path === "/" && method === "POST") {
+      const request = legacyDownloadRequest(body);
+      if (!request) { note("unsupported-legacy-command"); s.response = http(404, new Uint8Array()); return; }
+      const file = this.rules.packages[String(request.appid)], bytes = file ? this.options.readFile?.(file) : this.options.readPackage?.(request.appid);
+      const response = bytes ? legacyDownloadResponse(bytes, request.appid, request.sequence) : null;
+      if (!response) { note(bytes ? "invalid-package" : "missing-package", file, request.appid); s.response = http(404, new Uint8Array()); return; }
+      note("legacy-local-package", file, request.appid);
+      s.response = http(200, response, "application/octet-stream"); return;
     }
     if (host !== "rop.skymobiapp.com" || method !== "POST") { note("unmatched"); s.failed = true; return; }
     let response: Uint8Array, stage = "";

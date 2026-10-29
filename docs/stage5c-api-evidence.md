@@ -99,7 +99,7 @@ GETGLOBAL miss → `mr_V_index`（globals 的 `__index`）。SETGLOBAL → `mr_V
 | `string.pack` | `b_pack` | fmt, ... | 1 binary string | **不是** Lua 5.3 pack。`x bB hH lL iI c s`；`>`/`<`；默认 native LE | CONFIRMED |
 | `string.unpack` | `b_unpack` | fmt, data [, pos=1] | values + nextpos | 1-based pos | CONFIRMED |
 | `string.packLen` | `b_size` | fmt | 1 number | size 0 报错 | CONFIRMED |
-| `string.subV` | `str_subV` | 1 string | **2**：`(uintptr_t)p`, `len` | 宿主无稳定 C 指针。本实现返回 `0, len` 并记录 limitation | CONFIRMED ABI / host limitation |
+| `string.subV` | `str_subV` | 1 string | **2**：`(uintptr_t)p`, `len` | MythroadRuntime 提供稳定 guest 地址及可变字符串双向同步（2026-10-29）；独立 LuaVM 无 EXT 时仍返回 `0, len` | CONFIRMED ABI |
 | `string.findEx` / `findex` | `gfind` | s, p | 1 closure | | CONFIRMED，本阶段未实现 |
 | `string.subEx` / `subex` | `str_gsub` | | 2 | | CONFIRMED，本阶段未实现 |
 | `string.format` / `dump` | | | | | CONFIRMED，本阶段未实现 |

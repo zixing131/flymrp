@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { loadGb16Uc2, MythroadRuntime } from "../../src/mythroad/index.ts";
 import { inferScreenSize } from "../../src/mythroad/device-size.ts";
 import { loadGameResourceFiles, loadLocalSystemFiles } from "../local-system-files.ts";
+import { unzipResources } from '../../src/mrp/zip.ts';
 import { SYSTEM_COMPONENTS } from "../../src/mythroad/system-components.ts";
 import { MRPArchive } from "../../src/mrp/index.ts";
 import { FrameCapture } from "./frame-capture.ts";
@@ -81,7 +82,9 @@ async function runGame(path: string, gameRoot: string, systemFiles: Record<strin
     // Keep malformed or intentionally looping modules from blocking the
     // exhaustive pass; detailed regression uses the normal production budget.
     const display = new FrameCapture(() => rt!.screen, profile.width, profile.height);
-    rt = new MythroadRuntime({ profile, graphics: display, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles,
+    const userFiles = process.env.MRP_COARSE_RESOURCE_ZIP
+      ? Object.fromEntries(unzipResources(readFileSync(process.env.MRP_COARSE_RESOURCE_ZIP)).map(f => [f.path, f.bytes])) : {};
+    rt = new MythroadRuntime({ profile, graphics: display, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles, userFiles,
       monotonicTime: process.env.MRP_COARSE_CLOCK === 'monotonic' ? () => performance.now() : undefined });
     const fingerprint = () => hash(new Uint8Array(display.pixels.buffer, display.pixels.byteOffset, display.pixels.byteLength));
     presented = display;

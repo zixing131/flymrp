@@ -1,5 +1,5 @@
 import { WorkPath } from './work-path.ts';
-import { packageWordLoadMode } from './package-compat.ts';
+import { packageWordLoadMode, packageGuestFix, installPackageGuestFix, type GuestFix } from './package-compat.ts';
 import { AppFileSystem } from "./app-fs.ts";
 import type { EditState } from "./native-editor.ts";
 import type { NetworkRules } from "./network-rules.ts";
@@ -45,10 +45,13 @@ import { MrTableBridge, type AllocRecord, type ReadFileRecord } from "./mr-table
 import { createStrCom } from "./strcom.ts";
 import { MythroadTimer } from "./timer.ts";
 import { MythroadVfs } from "./vfs.ts";
+import { legacyPackageName } from "./legacy-download.ts";
 
 export type MythroadRuntimeOptions = {
   profile?: Partial<DeviceProfile>;
   networkRules?: NetworkRules;
+  /** Explicit host catalog resolver for legacy collection downloads. */
+  loadDownloadPackage?: (appid: number) => Uint8Array | null;
   onEditChange?: (state: EditState | null) => void;
   /** Bundled handset files, copied into each runtime’s virtual filesystem. */
   systemFiles?: Readonly<Record<string, Uint8Array>>;
@@ -100,6 +103,7 @@ export class MythroadRuntime {
   lua = new LuaVM();
   readonly vfs = new MythroadVfs();
   private readonly networkRules?: NetworkRules;
+  private readonly loadDownloadPackage?: (appid: number) => Uint8Array | null;
   private readonly onEditChange?: (state: EditState | null) => void;
   private readonly systemFiles: Readonly<Record<string, Uint8Array>>;
   private readonly resourceFiles = new AppFileSystem();
@@ -155,6 +159,7 @@ export class MythroadRuntime {
   private readonly monotonicTime?: () => number;
   private readonly traceGuestSlices: boolean;
   private readonly requestedWordLoadMode?: DeviceProfile['wordLoadMode'];
+  private guestFix: GuestFix = null;
   readonly approvedUnknown = new Map<string, ApprovedBehavior>();
   readonly unknownEvents: UnknownAbiEvent[] = [];
   onExtCall: ((code: number, out: ExtCallResult) => void) | null = null;
@@ -208,6 +213,7 @@ export class MythroadRuntime {
     this.appFs.onPersist = opts.onPersistFile;
     this.vfs.onWrite = (name, bytes) => this.appFs.replace(name, bytes, true);
     this.networkRules = opts.networkRules;
+    this.loadDownloadPackage = opts.loadDownloadPackage;
     this.onEditChange = opts.onEditChange;
     this.entry = opts.entry ?? "_dsm";
     this.param = opts.param ?? "";
@@ -274,6 +280,7 @@ export class MythroadRuntime {
   }
 
   private applyPackageCompatibility(bytes: Uint8Array, archive: MRPArchive): void {
+    this.guestFix = packageGuestFix(bytes, archive.header.filename);
     this.profile.wordLoadMode = this.requestedWordLoadMode ?? packageWordLoadMode(bytes, archive.header.filename);
     if (this.ext) this.ext.mem.wordLoadMode = this.profile.wordLoadMode;
   }
@@ -367,6 +374,9 @@ export class MythroadRuntime {
     this.clock += ms | 0;
     const cb = this.timers.due(this.clock);
     if (cb) this.events.queue(EV_TIMER, 0, 0, 0);
+    if (this.canRun()) {
+      try { this.mrTable?.pumpNetworkCallbacks(); } catch (error) { if (!(error instanceof AppReturn)) throw error; }
+    }
   }
 
   queueEvent(kind: number, type: number, p1 = 0, p2 = 0): void {
@@ -562,6 +572,15 @@ export class MythroadRuntime {
       onEditChange: this.onEditChange,
       onEditComplete: accepted => this.queueEvent(EV_SYSTEM, 6, accepted ? 0 : 1, 0),
       getDownloadFile: name => this.mrTable?.appFs.file(name) ?? this.resourceFiles.file(name) ?? this.systemFiles[name] ?? null,
+      getDownloadPackage: appid => {
+        // Uploaded/installed packages work offline. Do not trigger remote reads
+        // while searching; only the explicit catalog resolver may download.
+        for (const [name, node] of this.appFs.nodes) {
+          if (node.kind !== 'file' || !name.endsWith('.mrp')) continue;
+          if (legacyPackageName(node.bytes, appid)) return node.bytes;
+        }
+        return this.loadDownloadPackage?.(appid) ?? null;
+      },
       getClock: () => this.clock,
       onSleep: (ms) => { this.clock += ms; },
       onExit: exitGuest,
@@ -618,6 +637,7 @@ export class MythroadRuntime {
       },
     });
     bridge.install();
+    installPackageGuestFix(rt, () => this.guestFix);
     rt.setPackTableName(this.packName);
     rt.insnBudget = this.armInstructionBudget;
     rt.monotonicTime = this.monotonicTime;

@@ -86,7 +86,7 @@ stdlib 安装使 `LuaVM` 的 intern/closure 基数上升（bench `intern=57 cl=4
 * **Metamethod**：GETTABLE miss / 非表 → `__index`；SETTABLE raw nil 且有 TM → `__newindex`；CALL → `__call`；算术 tonumber 失败走 TM。循环上限 100 → `table err:2014/2015`。
 * **Integer**：热路径 `i32`。除零 / `INT_MIN/-1` / 负除法向零 = **implementation-defined compatibility choice**。
 * **string.pack**：rxgj `b_pack`（`x bB hH lL iI c s`，`>`/`<`，默认 LE），不是 Lua 5.3 pack。
-* **string.subV**：宿主无稳定 C 指针，返回 `0, len`（limitation）。
+* **string.subV**：2026-10-29 已在 MythroadRuntime 提供稳定 guest 指针、NUL 终止及可变字符串双向同步；独立 LuaVM 无 EXT 时仍返回 `0, len`。
 * **SaveTable/LoadTable**：Pluto LE；nil/bool/number/string/table（含环、metatable）。拒绝 function。禁止 JSON。
 * **RunFile**：pending + timer `"restart"` 100ms + `state=RESTART`。禁止递归 `runFile()`。`callGlobal` 嵌套时不重置 CI。
 * **Graphics**：仍 `NullGraphicsBackend`，补 image/sprite/tile command recording。
@@ -96,7 +96,7 @@ stdlib 安装使 `LuaVM` 的 intern/closure 基数上升（bench `intern=57 cl=4
 ## 已知兼容性 / 未实现
 
 * 无默认 `__pow`/`math`；应用必须自己注册，否则 `^` → `err:1020`。
-* `string.subV` 第一返回值恒为 0。
+* 独立 LuaVM 的 `string.subV` 第一返回值为 0；完整 MythroadRuntime 已实现指针桥接。
 * `string.findEx` / `gsub` / `format` / `c2u` / `u2c` / `new`/`set`/`update` 未实现。
 * coroutine / thread / yield 未实现。
 * Pluto 不持久化 Lua function。
