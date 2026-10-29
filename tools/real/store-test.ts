@@ -23,6 +23,8 @@ mkdirSync(join(output, 'cases'), { recursive: true });
 const cache = join(resolve(manifestPath, '..'), 'packages');
 mkdirSync(cache, { recursive: true });
 const settings = {
+  // Match the browser worker: synchronous timed loops need wall-clock progress.
+  MRP_COARSE_CLOCK: 'monotonic',
   MRP_COARSE_INSN_BUDGET: String(DEFAULT_INSN_BUDGET), MRP_COARSE_BOOT_TICKS: '30',
   MRP_COARSE_KEYS: 'SOFTLEFT,FIRE,FIRE,UP,RIGHT,DOWN,LEFT,5',
   MRP_COARSE_TAIL_TICKS: '30', MRP_COARSE_RESOURCES: '1',

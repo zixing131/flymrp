@@ -81,7 +81,8 @@ async function runGame(path: string, gameRoot: string, systemFiles: Record<strin
     // Keep malformed or intentionally looping modules from blocking the
     // exhaustive pass; detailed regression uses the normal production budget.
     const display = new FrameCapture(() => rt!.screen, profile.width, profile.height);
-    rt = new MythroadRuntime({ profile, graphics: display, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles });
+    rt = new MythroadRuntime({ profile, graphics: display, abiMode: "strict", armInstructionBudget: Number(process.env.MRP_COARSE_INSN_BUDGET ?? 1_000_000), systemFiles, resourceFiles,
+      monotonicTime: process.env.MRP_COARSE_CLOCK === 'monotonic' ? () => performance.now() : undefined });
     const fingerprint = () => hash(new Uint8Array(display.pixels.buffer, display.pixels.byteOffset, display.pixels.byteLength));
     presented = display;
     const tick = (count: number) => {

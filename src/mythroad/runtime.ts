@@ -1,4 +1,5 @@
 import { WorkPath } from './work-path.ts';
+import { packageWordLoadMode } from './package-compat.ts';
 import { AppFileSystem } from "./app-fs.ts";
 import type { EditState } from "./native-editor.ts";
 import type { NetworkRules } from "./network-rules.ts";
@@ -153,6 +154,7 @@ export class MythroadRuntime {
   readonly armInstructionBudget: number;
   private readonly monotonicTime?: () => number;
   private readonly traceGuestSlices: boolean;
+  private readonly requestedWordLoadMode?: DeviceProfile['wordLoadMode'];
   readonly approvedUnknown = new Map<string, ApprovedBehavior>();
   readonly unknownEvents: UnknownAbiEvent[] = [];
   onExtCall: ((code: number, out: ExtCallResult) => void) | null = null;
@@ -167,6 +169,7 @@ export class MythroadRuntime {
   constructor(opts: MythroadRuntimeOptions = {}) {
     this.monotonicTime = opts.monotonicTime;
     this.traceGuestSlices = opts.traceGuestSlices ?? false;
+    this.requestedWordLoadMode = opts.profile?.wordLoadMode;
     this.profile = defaultProfile(opts.profile);
     this.abiMode = opts.abiMode ?? "strict";
     this.armInstructionBudget = Math.min(
@@ -259,6 +262,7 @@ export class MythroadRuntime {
   loadMrp(bytes: Uint8Array): MRPArchive {
     this.saveCurrentPack();
     this.archive = MRPArchive.parse(bytes);
+    this.applyPackageCompatibility(bytes, this.archive);
     this.vfs.attach(this.archive);
     this.packName = this.archive.header.filename || "app.mrp";
     this.knownPacks.set(this.appFs.normalize(this.packName), bytes);
@@ -267,6 +271,11 @@ export class MythroadRuntime {
     this.mrTable?.files.reset(false);
     this.installPackPlugins();
     return this.archive;
+  }
+
+  private applyPackageCompatibility(bytes: Uint8Array, archive: MRPArchive): void {
+    this.profile.wordLoadMode = this.requestedWordLoadMode ?? packageWordLoadMode(bytes, archive.header.filename);
+    if (this.ext) this.ext.mem.wordLoadMode = this.profile.wordLoadMode;
   }
 
   /**
@@ -457,6 +466,7 @@ export class MythroadRuntime {
     if (!bytes) throw new LuaRuntimeError(`cannot read application ${pack}`);
     const archive = MRPArchive.parse(bytes);
     this.lastAction = { kind: "RESTART" };
+    this.applyPackageCompatibility(bytes, archive);
     this.timers.stop();
     this.exited = false;
     this.ext = null;

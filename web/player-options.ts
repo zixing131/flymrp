@@ -91,8 +91,8 @@ export function playerHeapSize(value?: string | null): number {
   return ([256, 512, 1024, 2048, 4096, 8192].includes(kib) ? kib : 8192) * 1024;
 }
 
-export function playerWordLoadMode(value?: string | null): "armv5" | "bytewise" {
-  return value === "bytewise" ? "bytewise" : "armv5";
+export function playerWordLoadMode(value?: string | null): "armv5" | "bytewise" | undefined {
+  return value === "bytewise" || value === "armv5" ? value : undefined;
 }
 
 /** Snap CSS zoom so each guest pixel covers a whole device pixel. */

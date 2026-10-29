@@ -53,6 +53,7 @@ describe('packed-resource LDR compatibility', () => {
   it('rejects invalid profiles and bounds stored preference values', () => {
     expect(() => new MythroadRuntime({ profile: { wordLoadMode: 'invalid' as any } })).toThrow('wordLoadMode');
     expect(playerWordLoadMode('bytewise')).toBe('bytewise');
-    for (const value of [null, '', 'armv5', 'invalid']) expect(playerWordLoadMode(value)).toBe('armv5');
+    expect(playerWordLoadMode('armv5')).toBe('armv5');
+    for (const value of [null, '', 'auto', 'invalid']) expect(playerWordLoadMode(value)).toBeUndefined();
   });
 });
