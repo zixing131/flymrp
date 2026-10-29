@@ -2,8 +2,8 @@
   "scope": 313,
   "criterion": "按用户最新要求，只确认进入正常主界面或游戏画面；不再要求游玩、过关、得分或60秒持续运行。加载/联网错误、机型拒绝、黑屏不能算进入。",
   "sourceFunctionalVerifiedCount": 24,
-  "entryVerifiedCount": 194,
-  "remainingEntryVerification": 119,
+  "entryVerifiedCount": 195,
+  "remainingEntryVerification": 118,
   "results": [
     {
       "testId": 1,
@@ -1400,17 +1400,17 @@
       "testId": 96,
       "caseId": 727,
       "title": "干爹的爱",
-      "entryVerified": false,
-      "status": "blocked-or-prompt",
-      "evidence": "artifacts/compat-20260915/entry/96-failure.png",
+      "entryVerified": true,
+      "status": "entry-verified",
+      "evidence": "artifacts/compat-20261029/budget-fixed-entry-confirm/1-entry.png",
       "previousDisposition": "runtime-failure",
-      "note": "下载资源中约45%，预算超限PC0x29782c。；入口补测切换bytewise模式仍失败，未采用该模式作为修复。",
+      "note": "2026-10-29确认启动需267955004条指令，旧256M预算过低。320M默认预算下通过音效提示后进入正常开始游戏标题页；默认ARMv5读取模式，未验证玩法。",
       "profile": {},
       "entryRun": {
-        "outcome": "runtime-error",
-        "error": "ExtFault: EXT fault abi-fault at 0x29d004 (arm_ext_call: budget exceeded)",
-        "ticks": 0,
-        "artifact": "artifacts/compat-20260915/remaining134/results.json"
+        "outcome": "entry-review",
+        "error": null,
+        "ticks": 63,
+        "artifact": "artifacts/compat-20261029/budget-fixed-entry-confirm/results.json"
       }
     },
     {

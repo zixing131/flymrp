@@ -33,11 +33,12 @@ import { DATA_SLOTS, MrTable, dataSlotAllocSize, initTableMemory } from "./table
 /** Finite watchdog per guest call, not a browser execution slice.
  * Vendor wrappers scan 8 MiB during their first memory check (~34M
  * instructions). Resource installers such as #523/#726/#1350 also finish
- * decoding in that same call and exceed 128M. Allow that finite startup work
+ * decoding in that same call and exceed 128M. 干爹的爱 needs 267,955,004
+ * instructions to reach its sound prompt on a 320x480 screen. Allow that work
  * while retaining explicit diagnostic budgets and the monotonic deadline.
  */
-export const DEFAULT_INSN_BUDGET = 256_000_000;
-export const MAX_INSN_BUDGET = 256_000_000;
+export const DEFAULT_INSN_BUDGET = 320_000_000;
+export const MAX_INSN_BUDGET = 320_000_000;
 
 export function createExtMemory(): GuestMemory {
   const mem = new GuestMemory(EXT_BASE_ADDR, EXT_MEM_SIZE);
