@@ -11,7 +11,7 @@
 来宾无法访问真实短信、支付或网络；未知域名、端点和 UDP 均返回失败。离线测试服务不等于原在线业务或真实支付功能，也不意味着其他依赖在线服务器的游戏已经兼容。
 
 - `system/gb12v2.uc2`、`gb12v2.adl`：来自同一集合的 `相关文件/system/`，供第二版字库加载器直接读取，避免反复提示下载字库。SHA-256 分别为 `728e3c78b4a7ebd11c3cdcec671a4c0c70d2cb03fe5f919ca0b4379ac74533f9` 和 `05ff9a62aeea4d5c8a2a0c3d2a45fa086c478e2f9628f1bbe1cdb75f3a9b61ee`。
-- `plugins/flaengine.mrp`：来自同一集合的 `相关文件/plugins/`，appid 490284、版本 1029，SHA-256 `e8cf02e024c451368f8d2dd8af868a287b4e2aa5f278c231a749c2f1920e5d0d`。供《格子风暴》等游戏加载本地引擎。
+- `plugins/flaengine.mrp`：来自同一集合的 `相关文件/plugins/`，appid 490284、版本 1029，SHA-256 `2212c5bffd441fafecf18ffe25f0cc184074eac72a95956f105c7b4f2f218976`。供《格子风暴》等游戏加载本地引擎。
 
 ## 生产资源包
 
@@ -29,3 +29,5 @@
 - `plugins/addons.mrp`：用户集合 `mythroad_res/plugins/addons.mrp`，1202 字节，SHA-256 `d2f158c25e78c57e3d9e54564ba07739dc54e7802eaaab5dc327a4e892788ddb`。保持原始字节。
 
 `msbase`（appid 499990/version 1001）与 `mscore`（499991/1009）加入原始包下载映射，真实安装器已逐次收到它们；后续 appid 480101 仍缺失，尚不能宣称该安装链完成。`addons.mrp` 是集合中原有的编码资源，不按普通 MRPG 文件强行解析或重打包。
+
+本次按用户提供的 `Downloads/plugins` 同步 23 个通用组件。游戏中的 `C:/mythroad/plugins/` 对应此目录的 `plugins/`。更新了 advbar、flaengine、freecurr 和 smsend，保留另外 4 个已有组件。

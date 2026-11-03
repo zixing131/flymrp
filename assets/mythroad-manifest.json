@@ -1,5 +1,5 @@
 {
-  "source": "用户提供的 mrp游戏大集结/mythroad 目录及 MRP游戏软件合集3426合一/ydqtwo.mrp；第四轮增加用户集合中的 msbase.mrp 与 kbill.mrp、mscore.mrp 与 mythroad_res/plugins/addons.mrp",
+  "source": "用户提供的 mrp游戏大集结/mythroad 目录及 MRP游戏软件合集3426合一/ydqtwo.mrp；第四轮增加用户集合中的 msbase.mrp 与 kbill.mrp、mscore.mrp 与 mythroad_res/plugins/addons.mrp；通用插件按用户提供的 Downloads/plugins 同步",
   "files": [
     {
       "path": "app240400/0/fpd.sav",
@@ -494,7 +494,7 @@
     {
       "path": "plugins/advbar.mrp",
       "size": 41994,
-      "sha256": "902f604ab9db00f762f6548b19e03b60d8b83aa2b3bc4e5b7b7e3e71a00891b4"
+      "sha256": "d454e6418ab685352b5bab02e2af7dbde92e42845b3dfb57ede7ba3434792456"
     },
     {
       "path": "plugins/brwcore.mrp",
@@ -533,13 +533,13 @@
     },
     {
       "path": "plugins/flaengine.mrp",
-      "size": 103214,
-      "sha256": "e8cf02e024c451368f8d2dd8af868a287b4e2aa5f278c231a749c2f1920e5d0d"
+      "size": 103213,
+      "sha256": "2212c5bffd441fafecf18ffe25f0cc184074eac72a95956f105c7b4f2f218976"
     },
     {
       "path": "plugins/freecurr.mrp",
-      "size": 37037,
-      "sha256": "0d3254e1aa5d2a96f40bc8777b1e8e70a370b01b76311b4296a5556df6026346"
+      "size": 37077,
+      "sha256": "16b3e9085f25207d313f3137d14a3e35507a38f77923e129436c687292b4cac6"
     },
     {
       "path": "plugins/kbill.mrp",
@@ -588,8 +588,8 @@
     },
     {
       "path": "plugins/smsend.mrp",
-      "size": 32618,
-      "sha256": "850aafce207a2f5cbd8b440639c0ea8df68c6f57c8e933af1dba1f4a84fdea5c"
+      "size": 32604,
+      "sha256": "631a91e7d2c9122feb77f846619fa544cd50e96a1ce4bb9f18a671bd7324ef76"
     },
     {
       "path": "plugins/wbrwassist.mrp",
