@@ -70,7 +70,7 @@ export const MR_ROTATE_270 = 3;
  * Mythroad `mr_screenBuf` RGB565 cache.
  * Host-owned screen memory, not a guest heap pointer.
  */
-export type GlyphObserver = (code: number, x: number, y: number, width: number, height: number, bits: Uint8Array, color565: number) => void;
+export type GlyphObserver = (code: number, x: number, y: number, width: number, height: number, bits: Uint8Array, color565: number, screen: ScreenBuffer) => void;
 
 export class ScreenBuffer {
   /** Optional display hint. Guest reads always see the original RGB565 glyph. */
@@ -195,7 +195,7 @@ export class ScreenBuffer {
     const y0 = asI16(y);
     const w = width | 0;
     const h = height | 0;
-    if (code !== undefined) this.onGlyph?.(code, x0, y0, w, h, bits, color);
+    if (code !== undefined) this.onGlyph?.(code, x0, y0, w, h, bits, color, this);
     for (let gy = 0; gy < h; gy++) {
       const py = y0 + gy;
       if (py < 0 || py >= this.height) continue;
