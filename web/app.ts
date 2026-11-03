@@ -56,6 +56,8 @@ midiPlayer.addEventListener("change", () => {
   try { localStorage.setItem("flymrp.midi-player", audio.midiPlayer); } catch { /* storage is optional */ }
 });
 type Session = { rt: PlayerClient; raf: number; last: number; title: string; nextHud: number };
+let lcdWidth = canvas.width, lcdHeight = canvas.height;
+let hdText = true;
 let session: Session | null = null;
 let loadingRuntime: PlayerClient | null = null;
 const sdPanel = setupSdPanel((path, bytes) => (session?.rt ?? loadingRuntime)?.setUserFile(path, bytes));
@@ -268,8 +270,8 @@ async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: st
     setStatus("正在启动游戏，请稍候…");
     await new Promise<void>(resolve => setTimeout(resolve, 40));
     if (token !== generation) return;
-    canvas.width = profile.width;
-    canvas.height = profile.height;
+    lcdWidth = canvas.width = profile.width;
+    lcdHeight = canvas.height = profile.height;
     fitScreen();
     const packName = MRPArchive.parse(new Uint8Array(buffer)).header.filename;
     const resourceCatalog = await loadResourceCatalog(packName);
@@ -278,7 +280,7 @@ async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: st
       base: document.baseURI, system: systemCatalog.names, resources: resourceCatalog, packName,
       localSystem: systemCatalog.localSystem, localResources: import.meta.env.DEV,
     };
-    rt = new PlayerClient(canvas, { edit: state => {
+    rt = new PlayerClient(canvas, { resize: (w, h) => { lcdWidth = w; lcdHeight = h; fitScreen(); }, edit: state => {
       if (!state) { if (dialogIsOpen(editorDialog)) closeDialog(editorDialog); editingRuntime = null; if (!kaios) canvas.focus(); syncPlayerKaiOS(); return; }
       editingRuntime = rt ?? null;
       document.querySelector("#guest-editor-title")!.textContent = state.title || "游戏输入";
@@ -295,7 +297,7 @@ async function start(name: string, read: () => Promise<ArrayBuffer>, screen?: st
     const userFiles: Record<string, Uint8Array> = {};
     for (const file of await listSdFiles().catch(() => [])) userFiles[file.path] = file.bytes;
     if (token !== generation) return;
-    const guestTitle = await rt.start({ type: 'start', bytes: buffer, files: { ...systemFiles }, userFiles, profile, fileSource });
+    const guestTitle = await rt.start({ type: 'start', bytes: buffer, files: { ...systemFiles }, userFiles, profile, fileSource, hdText });
     if (token !== generation) return;
     loadingRuntime = null;
     const title = guestTitle || name.split('/').at(-1)!;
@@ -421,7 +423,7 @@ function releaseAll(): void {
   touch = null;
 }
 window.addEventListener("blur", releaseAll);
-document.addEventListener("visibilitychange", () => { if (document.hidden) releaseAll(); });
+document.addEventListener("visibilitychange", () => { if (document.hidden) releaseAll(); else if (session && !paused) audio.resume(); });
 let activationId = 0;
 if (!kaios) for (const btn of document.querySelectorAll<HTMLButtonElement>("[data-key]")) {
   let pointerActivated = false;
@@ -464,7 +466,7 @@ if (!kaios) for (const btn of document.querySelectorAll<HTMLButtonElement>("[dat
 function touchEvent(ev: PointerEvent, type: number): void {
   if (!session) return;
   const rect = canvas.getBoundingClientRect();
-  const [x, y] = screenPoint((ev.clientX - rect.left) / rect.width, (ev.clientY - rect.top) / rect.height, canvas.width, canvas.height, rotation);
+  const [x, y] = screenPoint((ev.clientX - rect.left) / rect.width, (ev.clientY - rect.top) / rect.height, session.rt.screenW, session.rt.screenH, rotation);
   session.rt.queueEvent(EV_KEY, type, x, y);
 }
 if (!kaios) {
@@ -490,16 +492,19 @@ const rotationSelect = document.querySelector<HTMLSelectElement>('#rotation')!;
 function fitScreen(): void {
   if (!stage) return;
   const swapped = rotation % 2 !== 0;
-  const width = swapped ? canvas.height : canvas.width, height = swapped ? canvas.width : canvas.height;
+  const width = swapped ? lcdHeight : lcdWidth, height = swapped ? lcdWidth : lcdHeight;
   const inset = kaios ? 0 : 32;
   const fit = Math.max(.1, Math.min((stage.clientWidth - inset) / width, (stage.clientHeight - (kaios ? 0 : 26)) / height));
   const raw = zoomSelect.value === 'auto' ? fit : Math.min(fit, Number(zoomSelect.value));
   const scale = snapDisplayScale(raw, window.devicePixelRatio || 1);
   const pad = kaios ? 0 : 10;
-  canvas.style.width = `${canvas.width * scale}px`;
-  canvas.style.height = `${canvas.height * scale}px`;
+  const cssWidth = `${lcdWidth * scale}px`;
+  const sizeChanged = canvas.style.width !== cssWidth;
+  canvas.style.width = cssWidth;
+  canvas.style.height = `${lcdHeight * scale}px`;
   viewport.style.width = `${width * scale + pad}px`;
   viewport.style.height = `${height * scale + pad}px`;
+  if (sizeChanged && hdText) session?.rt.setHdText(true);
   const angle = (rotation % 4) * 90;
   if (swapped) {
     shell.style.top = '50%';
@@ -518,6 +523,7 @@ function bindSelect(id: string, apply: (value: string) => void): void {
   apply(select.value);
   select.addEventListener('change', () => { writePref(id, select.value, currentGameKey); apply(select.value); canvas.focus(); });
 }
+bindSelect('hd-text', value => { hdText = value === 'on'; (session?.rt ?? loadingRuntime)?.setHdText(hdText); });
 bindSelect('zoom', fitScreen);
 bindSelect('speed', value => { speed = Number(value); });
 bindSelect('rotation', value => { releaseAll(); rotation = Number(value); fitScreen(); });
@@ -622,7 +628,6 @@ try { const bg = localStorage.getItem('flymrp.game-bg'); if (bg) document.queryS
 document.querySelector('#theme')!.addEventListener('click', () => storeSetting('theme', document.documentElement.dataset.theme!));
 if (typeof ResizeObserver === 'function') new ResizeObserver(fitScreen).observe(stage);
 else window.addEventListener('resize', fitScreen);
-new MutationObserver(fitScreen).observe(canvas, { attributes: true, attributeFilter: ['width', 'height'] });
 document.querySelector('#screenshot')!.addEventListener('click', () => {
   canvas.toBlob(blob => {
     if (!blob) return;

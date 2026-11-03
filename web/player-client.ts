@@ -7,6 +7,8 @@ export class PlayerClient {
   private readonly worker = import.meta.env.PROD
     ? new Worker(new URL('player.worker.js', document.baseURI).href)
     : new Worker(new URL('./player.worker.ts', import.meta.url), { type: 'module' });
+  private watchdog?: ReturnType<typeof setTimeout>;
+  private readonly guard: () => void;
   private busy = false;
   private stopped = false;
   private pendingMotion: [number, number] | null = null;
@@ -18,6 +20,7 @@ export class PlayerClient {
   exited = false;
   readonly input = { press: (key: string) => this.send({ type: 'key', key, pressed: true }), release: (key: string) => this.send({ type: 'key', key, pressed: false }) };
   constructor(canvas: HTMLCanvasElement, hooks: {
+    resize?: (width: number, height: number) => void;
     edit: (state: EditState | null) => void;
     sound: (format: number, bytes: Uint8Array | null, loop: number, positionMs?: number) => void;
     soundStop: (format: number) => void;
@@ -26,24 +29,59 @@ export class PlayerClient {
   }) {
     const context = canvas.getContext('2d', { alpha: false, desynchronized: true });
     if (!context) { this.worker.terminate(); throw new Error('Canvas2D unavailable'); }
-    context.imageSmoothingEnabled = false;
+    let base: HTMLCanvasElement | undefined;
+    this.guard = () => {
+      clearTimeout(this.watchdog);
+      if (!this.stopped && !globalThis.document?.hidden && (this.busy || this.readyReject))
+        this.watchdog = setTimeout(() => this.failed(new Error('应用长时间未响应，已停止运行。'), hooks.error), 8000);
+    };
+    globalThis.document?.addEventListener('visibilitychange', this.guard);
     this.worker.onmessage = (event: MessageEvent<PlayerResponse>) => {
       const data = event.data;
       if (data.type === 'efs-file') { hooks.persist?.(data.path, data.bytes); return; }
       if (this.stopped) return;
       switch (data.type) {
         case 'frame': {
-          this.screenW = data.width; this.screenH = data.height;
-          if (canvas.width !== data.width) canvas.width = data.width;
-          if (canvas.height !== data.height) canvas.height = data.height;
-          context.imageSmoothingEnabled = false;
-          const image = context.createImageData(data.width, data.height);
-          rgb565ToRgba(data.pixels, image.data); context.putImageData(image, 0, 0); this.frames++;
+          const { width, height, glyphs } = data;
+          if (width !== this.screenW || height !== this.screenH) hooks.resize?.(width, height);
+          this.screenW = width; this.screenH = height;
+          const scale = glyphs.length ? Math.max(1, Math.min(6,
+            Math.ceil(canvas.clientWidth * (window.devicePixelRatio || 1) / width),
+            Math.floor(Math.sqrt(4194304 / (width * height))))) : 1;
+          if (canvas.width !== width * scale) canvas.width = width * scale;
+          if (canvas.height !== height * scale) canvas.height = height * scale;
+          const image = context.createImageData(width, height);
+          rgb565ToRgba(data.pixels, image.data);
+          if (scale === 1) context.putImageData(image, 0, 0);
+          else {
+            base ??= document.createElement('canvas');
+            if (base.width !== width) base.width = width;
+            if (base.height !== height) base.height = height;
+            base.getContext('2d', { alpha: false })!.putImageData(image, 0, 0);
+            context.setTransform(scale, 0, 0, scale, 0, 0);
+            context.imageSmoothingEnabled = false;
+            context.drawImage(base, 0, 0);
+          }
+          this.frames++;
+          if (!glyphs.length) break;
+          context.setTransform(scale, 0, 0, scale, 0, 0);
+          context.font = '16px sans-serif';
+          context.textBaseline = 'middle';
+          for (const g of glyphs) {
+            const c = g.color;
+            context.save();
+            context.beginPath();
+            context.rect(g.x, g.y, g.width, g.height);
+            context.clip();
+            context.fillStyle = 'rgb(' + Math.round((c >> 11) * 255 / 31) + ',' + Math.round(((c >> 5) & 63) * 255 / 63) + ',' + Math.round((c & 31) * 255 / 31) + ')';
+            context.fillText(String.fromCharCode(g.code), g.x, g.y + 8, g.width);
+            context.restore();
+          }
           break;
         }
-        case 'ready': this.readyResolve?.(data.title); this.readyResolve = null; this.readyReject = null; break;
+        case 'ready': clearTimeout(this.watchdog); this.readyResolve?.(data.title); this.readyResolve = null; this.readyReject = null; break;
         case 'tick-complete':
-          this.busy = false;
+          clearTimeout(this.watchdog); this.busy = false;
           if (this.pendingMotion) {
             const motion = this.pendingMotion;
             this.pendingMotion = null;
@@ -62,16 +100,17 @@ export class PlayerClient {
   private failed(error: Error, report: (error: Error) => void): void {
     if (this.stopped) return;
     const reject = this.readyReject; this.readyResolve = null; this.readyReject = null;
+    this.stop();
     if (reject) reject(error); else report(error);
   }
   private send(message: PlayerRequest): void { if (!this.stopped) this.worker.postMessage(message); }
   start(message: Extract<PlayerRequest, { type: 'start' }>): Promise<string> {
-    return new Promise((resolve, reject) => { this.readyResolve = resolve; this.readyReject = reject; this.worker.postMessage(message, [message.bytes]); });
+    return new Promise((resolve, reject) => { this.readyResolve = resolve; this.readyReject = reject; this.guard(); this.worker.postMessage(message, [message.bytes]); });
   }
   tick(milliseconds: number, speed: number): void {
     // At most one tick is queued: long callbacks cannot build a catch-up backlog.
     if (this.busy || this.stopped) return;
-    this.busy = true; this.send({ type: 'tick', milliseconds, speed });
+    this.busy = true; this.guard(); this.send({ type: 'tick', milliseconds, speed });
   }
   queueEvent(_kind: number, event: number, x: number, y: number): void { this.send({ type: 'touch', event, x, y }); }
   motion(x: number, y: number): void {
@@ -80,10 +119,14 @@ export class PlayerClient {
     this.send({ type: 'motion', x, y });
   }
   setUserFile(path: string, bytes: Uint8Array | null): void { this.send({ type: 'sd-file', path, bytes }); }
+  setHdText(enabled: boolean): void { this.send({ type: 'hd-text', enabled }); }
   pause(): void { this.send({ type: 'pause', paused: true }); }
   resume(): void { this.send({ type: 'pause', paused: false }); }
   finishEdit(text: string, accepted: boolean): void { this.send({ type: 'edit', text, accepted }); }
   stop(): void {
+    if (this.stopped) return;
+    clearTimeout(this.watchdog);
+    globalThis.document?.removeEventListener('visibilitychange', this.guard);
     navigator.vibrate?.(0);
     this.stopped = true; this.worker.terminate();
     this.readyReject?.(new Error('游戏加载已取消')); this.readyResolve = null; this.readyReject = null;

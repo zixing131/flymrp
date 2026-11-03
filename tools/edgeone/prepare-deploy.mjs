@@ -24,15 +24,21 @@ for (const [key, record] of records) {
   if (!verified || verified.sha256 !== part.sha256 || verified.bytes !== part.size || part.size > 1900000) throw new Error(`Unverified chunk: ${part.key}`);
  }
 }
-const names = await runtimeAssets();
+const names = await runtimeAssets(runtimeOutput);
+const localRuntime = {};
 const ruleMap = new Map();
 for (const name of names) {
  const key = `runtime/${name}`, record = records.get(key);
- const bytes = await readFile(`${runtimeOutput}/${name}`);
- if (name === 'network-rules.json') {
-  // Served by the bundled Blob function, not the historical remote object.
-  if (!bytes.equals(await readFile('assets/network-rules.json'))) throw new Error('Rebuild runtime network-rules.json before packaging');
- } else if (!record || record.projectId !== summary.projectId || createHash('sha256').update(bytes).digest('hex') !== record.sha256) throw new Error(`Upload runtime asset first: ${name}`);
+ // Small shipped handset updates take precedence over the historical Blob copy.
+ if (name !== 'network-rules.json') {
+  const handset = name === 'mythroad-manifest.json' || /^plugins\/[a-z0-9_]+\.mrp$/i.test(name);
+  const bytes = await readFile(handset ? `assets/${name}` : `${runtimeOutput}/${name}`);
+  const hash = createHash('sha256').update(bytes).digest('hex');
+  if (!record || record.projectId !== summary.projectId || hash !== record.sha256) {
+   if (!handset) throw new Error(`Upload runtime asset first: ${name}`);
+   localRuntime[key] = `/handset/${hash}/${name}`;
+  }
+ }
  const prefix = name.includes('/') ? name.split('/')[0] : name;
  ruleMap.set(prefix, name.includes('/')
   ? {source:`/${prefix}/*`,destination:`/blob/runtime/${prefix}/:splat`}
@@ -49,10 +55,16 @@ await cp(shellOutput,output,{recursive:true,filter:source=>{
  if (['assets','icons','licenses'].includes(name.split('/')[0])) return true;
  return !isRuntimeAsset(name);
 }});
+await cp('assets/licenses', `${output}/licenses`, {recursive:true});
+for (const [key, path] of Object.entries(localRuntime)) {
+ const file = output + path;
+ await mkdir(dirname(file), {recursive:true});
+ await cp('assets/' + key.slice('runtime/'.length), file);
+}
 await mkdir(`${output}/edge-functions/blob`,{recursive:true});
 // Console direct uploads do not run npm install. Bundle all imports locally,
 // retaining the SDK's platform deploy-credential placeholder/environment fallback.
-const bundled = await build({metafile:true,entryPoints:['edge-functions/blob/[[path]].js'],outfile:`${output}/edge-functions/blob/[[path]].js`,bundle:true,platform:'browser',format:'esm',target:'es2022'});
+const bundled = await build({define:{BUNDLED_HANDSET:JSON.stringify(localRuntime)},metafile:true,entryPoints:['edge-functions/blob/[[path]].js'],outfile:`${output}/edge-functions/blob/[[path]].js`,bundle:true,platform:'browser',format:'esm',target:'es2022'});
 if(Object.values(bundled.metafile.outputs).some(file=>file.imports.length)) throw new Error('Deployment function has unresolved imports');
 // Physical function routes also support old URLs when console rewrites are ignored.
 for (const rule of rewrites) {

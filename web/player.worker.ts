@@ -1,3 +1,4 @@
+import { LcdText } from '../src/mythroad/lcd-text.ts';
 import './kaios-polyfill.ts';
 import { AppFileSystem, copyLcdDirtyRect, MythroadRuntime, loadGb16Uc2, type GraphicsBackend } from '../src/mythroad/index.ts';
 import { DEFAULT_NETWORK_RULES } from '../src/mythroad/network-rules.ts';
@@ -12,7 +13,10 @@ const post = self.postMessage.bind(self) as (message: PlayerResponse, transfer?:
 const send = (message: PlayerResponse, transfer: Transferable[] = []) => post(message, transfer);
 let rt: MythroadRuntime | null = null;
 let nextPresent = 0, remainder = 0;
+let hdText = true;
+const text = new LcdText();
 class Display implements GraphicsBackend {
+  onGlyph = text.observe;
   lcd = new Uint16Array(0);
   width = 0;
   height = 0;
@@ -44,7 +48,9 @@ function present(): void {
   if (!display.dirty || !display.lcd.length) return;
   const pixels = display.lcd.slice();
   display.dirty = false;
-  send({ type: 'frame', width: display.width, height: display.height, pixels }, [pixels.buffer]);
+  const glyphs = hdText ? text.visible(display.lcd, display.width, display.height, pixels)
+    .map(({ code, x, y, width, height, color }) => ({ code, x, y, width, height, color })) : [];
+  send({ type: 'frame', glyphs, width: display.width, height: display.height, pixels }, [pixels.buffer]);
   nextPresent = performance.now() + 16;
 }
 function step(milliseconds: number): void {
@@ -58,6 +64,7 @@ onmessage = (event: MessageEvent<PlayerRequest>) => {
   const message = event.data;
   try {
     if (message.type === 'start') {
+      hdText = message.hdText !== false;
       display.lcd = new Uint16Array(0);
       display.width = 0;
       display.height = 0;
@@ -78,6 +85,7 @@ onmessage = (event: MessageEvent<PlayerRequest>) => {
         onPersistFile: (path, bytes) => send({ type: 'efs-file', path, bytes: bytes ? bytes.slice() : null }),
       });
       const archive = rt.loadMrp(new Uint8Array(message.bytes));
+      rt.soundOn = true;
       rt.start();
       present();
       let title = '';
@@ -88,6 +96,7 @@ onmessage = (event: MessageEvent<PlayerRequest>) => {
     }
     if (!rt) return;
     switch (message.type) {
+      case 'hd-text': hdText = message.enabled; display.dirty = true; present(); break;
       case 'tick': for (const elapsed of clockSlices(message.milliseconds, message.speed)) step(elapsed); present(); send({ type: 'tick-complete' }); break;
       case 'sd-file': rt.setUserFile(message.path, message.bytes); break;
       case 'key': if (message.pressed) rt.input.press(message.key); else rt.input.release(message.key); break;

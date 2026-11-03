@@ -46,7 +46,7 @@ it('terminates loading immediately and ignores stale frames and errors after rep
   const ready = player.start({ type: 'start', bytes: new ArrayBuffer(4), files: {}, profile: {} });
   const cancelled = expect(ready).rejects.toThrow('取消');
   player.stop(); await cancelled;
-  worker.emit({ type: 'frame', width: 1, height: 1, pixels: new Uint16Array([0xffff]) });
+  worker.emit({ type: 'frame', glyphs: [], width: 1, height: 1, pixels: new Uint16Array([0xffff]) });
   worker.emit({ type: 'error', message: 'old guest', exited: false });
   expect(worker.terminated).toBe(true); expect(draw).not.toHaveBeenCalled(); expect(hooks.error).not.toHaveBeenCalled();
 });
@@ -65,11 +65,25 @@ it('keeps guest file writes after the player has been stopped', () => {
 });
 it('renders transferred LCD pixels and handles resolution changes and editor messages', () => {
   const { player, worker, canvas, draw, hooks } = fixture();
-  worker.emit({ type: 'frame', width: 2, height: 1, pixels: new Uint16Array([0xf800, 0x07e0]) });
+  worker.emit({ type: 'frame', glyphs: [], width: 2, height: 1, pixels: new Uint16Array([0xf800, 0x07e0]) });
   expect([canvas.width, canvas.height, player.frames]).toEqual([2, 1, 1]);
   expect([...draw.mock.calls[0][0].data]).toEqual([255, 0, 0, 255, 0, 255, 0, 255]);
   worker.emit({ type: 'edit', state: { handle: 1, title: '姓名', text: '', type: 0, maxLength: 8 } });
   expect(hooks.edit).toHaveBeenCalledOnce();
   player.finishEdit('阿明', true);
   expect(worker.messages.at(-1)).toEqual({ type: 'edit', text: '阿明', accepted: true });
+});
+
+it('terminates an unresponsive guest and reports the failure once', () => {
+  vi.useFakeTimers();
+  try {
+    const { player, worker, hooks } = fixture();
+    player.tick(16, 1);
+    vi.advanceTimersByTime(8000);
+    expect(worker.terminated).toBe(true);
+    expect(hooks.error).toHaveBeenCalledWith(expect.objectContaining({message: expect.stringContaining('未响应')}));
+    worker.emit({ type: 'tick-complete' });
+    vi.advanceTimersByTime(8000);
+    expect(hooks.error).toHaveBeenCalledTimes(1);
+  } finally { vi.useRealTimers(); }
 });

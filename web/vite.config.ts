@@ -22,6 +22,7 @@ export default defineConfig(({ mode, command }) => {
   const outputDir = resolve(root, "..", env.MRP_DIST_DIR ?? (remoteAssets ? "dist-edgeone" : "dist"));
   return {
     root, base: "./",
+    resolve: { alias: { "webaudio-tinysynth": resolve(root, "vendor/tinysynth.cjs") } },
     worker: { format: "iife" },
     esbuild: { supported: { ...FIREFOX48_SUPPORTED } },
     build: {

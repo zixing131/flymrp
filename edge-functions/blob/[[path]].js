@@ -27,6 +27,9 @@ export async function onRequest({ request }) {
       headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff' },
     });
   }
+  if (typeof BUNDLED_HANDSET !== 'undefined' && Object.hasOwn(BUNDLED_HANDSET, key)) {
+    return Response.redirect(new URL(BUNDLED_HANDSET[key], request.url).href, 307);
+  }
   if (Object.hasOwn(chunks, key)) {
     const manifest = chunks[key];
     const headers = { 'Content-Type': 'application/vnd.flymrp.chunks+json', 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff' };

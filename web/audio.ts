@@ -82,7 +82,7 @@ export class BrowserAudio {
       if (type === MR_SOUND_MIDI) {
         parseMidi(data); // Reject malformed SMF before either player schedules audio.
         this.midi = { data: data.slice(), loop };
-        if (this.midiPlayer === "tinysynth") this.playSynth(data, loop !== 0);
+        if (this.midiPlayer === "tinysynth") this.playSynth(data, loop !== 0, positionMs);
         else this.playMidi(ctx, type, data, loop !== 0);
       }
       else if (type === MR_SOUND_PCM) this.playPcm(ctx, type, data, loop !== 0);
@@ -201,26 +201,35 @@ export class BrowserAudio {
     });
   }
 
-  private playSynth(data: Uint8Array, loop: boolean): void {
+  private playSynth(data: Uint8Array, loop: boolean, positionMs: number): void {
     const song = parseMidi(data);
     if (!song.events.length) return;
-    this.synth ??= new TinySynth({ quality: 1, voices: 64, useReverb: 0 });
+    this.synth ??= new TinySynth();
     const synth = this.synth, ctx = synth.getAudioContext();
     synth.reset(); this.applyVolume();
     if (ctx.state === "suspended") void ctx.resume();
-    let index = 0, origin = ctx.currentTime + .05;
-    const period = Math.max(.25, song.duration);
-    // Schedule only a short window. Stop/switch cancels future notes as well.
+    const period = Math.max(.05, song.duration);
+    const offset = Math.max(0, positionMs / 1000);
+    const start = loop ? offset % period : Math.min(period, offset);
+    let index = 0, origin = ctx.currentTime + .05 - start;
+    while (index < song.events.length && song.events[index].time < start) {
+      const message = song.events[index++].message;
+      if ((message[0] & 0xf0) >= 0xb0) synth.send(message);
+    }
     const pump = () => {
-      while (origin + song.events[index].time < ctx.currentTime + .15) {
-        const event = song.events[index++]; synth.send(event.message, origin + event.time);
-        if (index === song.events.length) {
-          if (!loop) { window.clearInterval(timer); return; }
-          index = 0; origin += period;
-        }
+      const now = ctx.currentTime;
+      while (index < song.events.length && origin + song.events[index].time < now + .12) {
+        const event = song.events[index++];
+        synth.send(event.message, Math.max(now, origin + event.time));
+      }
+      if (index === song.events.length && now >= origin + period) {
+        if (!loop) { this.stop(MR_SOUND_MIDI); return; }
+        synth.stopMIDI(); synth.reset();
+        index = 0;
+        origin += period * Math.max(1, Math.floor((now - origin) / period));
       }
     };
-    const timer = window.setInterval(pump, 40);
+    const timer = window.setInterval(pump, 35);
     this.voices.set(MR_SOUND_MIDI, { stop: () => { window.clearInterval(timer); synth.stopMIDI(); } });
     pump();
   }
