@@ -190,12 +190,13 @@ export class MythroadRuntime {
         : opts.trace === true || opts.abiMode === "trace"
           ? new RuntimeTrace()
           : null;
-    const rawGfx = opts.graphics ?? new NullGraphicsBackend();
+    const rawGfx: GraphicsBackend = opts.graphics ?? new NullGraphicsBackend();
     this.gfx = this.trace ? wrapGraphics(rawGfx, this.trace) : rawGfx;
     this.input = new InputBackend(this.events);
     this.screenW = this.profile.width;
     this.screenH = this.profile.height;
     this.screen = new ScreenBuffer(this.screenW, this.screenH);
+    this.screen.onGlyph = rawGfx.onGlyph;
     this.randSeed = this.profile.randSeed;
     // Lua file.open uses the same installed package name as ARM mr_open.
     // Package introspection (version/header reads) must see the actual bytes,
@@ -597,7 +598,7 @@ export class MythroadRuntime {
       getPack: () => (this.archive ? { name: this.packName, bytes: this.archive.data } : null),
       getProfile: () => this.profile,
       getScreen: () => this.screen,
-      setScreen: screen => { this.screen = screen; this.screenW = screen.width; this.screenH = screen.height; },
+      setScreen: screen => { screen.onGlyph = this.screen.onGlyph; this.screen = screen; this.screenW = screen.width; this.screenH = screen.height; },
       onDrawRect: (x, y, w, h, r, g, b) => this.gfx.drawRect(x, y, w, h, r, g, b),
       onDrawText: (text, x, y, r, g, b, unicode, font) => this.gfx.drawText(text, x, y, r, g, b, unicode, font),
       onFlush: (x, y, w, h) => this.present(x, y, w, h),

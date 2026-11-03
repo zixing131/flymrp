@@ -70,7 +70,11 @@ export const MR_ROTATE_270 = 3;
  * Mythroad `mr_screenBuf` RGB565 cache.
  * Host-owned screen memory, not a guest heap pointer.
  */
+export type GlyphObserver = (code: number, x: number, y: number, width: number, height: number, bits: Uint8Array, color565: number) => void;
+
 export class ScreenBuffer {
+  /** Optional display hint. Guest reads always see the original RGB565 glyph. */
+  onGlyph?: GlyphObserver;
   pixels: Uint16Array;
 
   constructor(
@@ -185,12 +189,13 @@ export class ScreenBuffer {
    * Blit a sky16-style glyph: 16 rows × 2 bytes, MSB-first.
    * Not pixel-identical to device `gb16.uc2`.
    */
-  drawGlyph(x: number, y: number, width: number, height: number, bits: Uint8Array, r: number, g: number, b: number): void {
+  drawGlyph(x: number, y: number, width: number, height: number, bits: Uint8Array, r: number, g: number, b: number, code?: number): void {
     const color = makeRgb565(r & 0xff, g & 0xff, b & 0xff);
     const x0 = asI16(x);
     const y0 = asI16(y);
     const w = width | 0;
     const h = height | 0;
+    if (code !== undefined) this.onGlyph?.(code, x0, y0, w, h, bits, color);
     for (let gy = 0; gy < h; gy++) {
       const py = y0 + gy;
       if (py < 0 || py >= this.height) continue;
@@ -476,6 +481,7 @@ export type SpriteSlot = { h: number };
 export type TileSlot = { x: number; y: number; w: number; h: number; tileh: number; x1: number; y1: number; x2: number; y2: number; cells?: Uint16Array };
 
 export interface GraphicsBackend {
+  onGlyph?: GlyphObserver;
   clear(r: number, g: number, b: number): void;
   drawRect(x: number, y: number, w: number, h: number, r: number, g: number, b: number): void;
   drawLine(x1: number, y1: number, x2: number, y2: number, r: number, g: number, b: number): void;

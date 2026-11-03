@@ -913,7 +913,7 @@ export class MrTableBridge {
     for (const ch of chars) {
       preview += String.fromCharCode(ch);
       const glyph = gb16Glyph(ch);
-      screen.drawGlyph(chx, chy, glyph.width, glyph.height, glyph.bits, r, g, b);
+      screen.drawGlyph(chx, chy, glyph.width, glyph.height, glyph.bits, r, g, b, ch);
       chx += glyph.width;
     }
     this.hooks.onDrawText?.(preview, asI16(x), chy, r, g, b, unicode ? 1 : 0, font);
@@ -1195,6 +1195,7 @@ export class MrTableBridge {
       (r5 << 3) | (r5 >>> 2),
       (g6 << 2) | (g6 >>> 4),
       (b5 << 3) | (b5 >>> 2),
+      id,
     );
     return 0;
   }

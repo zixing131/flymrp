@@ -469,7 +469,7 @@ function makeDrawText(rt: MythroadRuntime): NativeFunction {
     for (const ch of chars) {
       if (!ch) break;
       const glyph = gb16Glyph(ch);
-      rt.screen.drawGlyph(chx, y, glyph.width, glyph.height, glyph.bits, r, g, b);
+      rt.screen.drawGlyph(chx, y, glyph.width, glyph.height, glyph.bits, r, g, b, ch);
       chx += glyph.width;
     }
     rt.gfx.drawText(text, x, y, r, g, b, uni, font);
@@ -503,7 +503,7 @@ function makeDrawTextEx(rt: MythroadRuntime): NativeFunction {
         if (cx + glyph.width > x + w) end = i * 2;
       }
       if (ch === 10 || ch === 13) continue;
-      rt.screen.drawGlyph(cx, cy, Math.max(0, Math.min(glyph.width, x + w - cx)), Math.max(0, Math.min(glyph.height, y + h - cy)), glyph.bits, r, g, b);
+      rt.screen.drawGlyph(cx, cy, Math.max(0, Math.min(glyph.width, x + w - cx)), Math.max(0, Math.min(glyph.height, y + h - cy)), glyph.bits, r, g, b, ch);
       cx = (cx + glyph.width) & 0xffff;
     }
     if (i === chars.length || !chars[i]) {

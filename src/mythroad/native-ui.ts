@@ -85,10 +85,10 @@ export class NativeUi {
   render(screen: ScreenBuffer): ScreenBuffer {
     const view = this.active; if (!view) return screen;
     this.width = screen.width; this.height = screen.height;
-    const out = new ScreenBuffer(screen.width, screen.height); out.drawRect(0, 0, out.width, out.height, 246, 246, 240);
+    const out = new ScreenBuffer(screen.width, screen.height); out.onGlyph = screen.onGlyph; out.drawRect(0, 0, out.width, out.height, 246, 246, 240);
     out.drawRect(0, 0, out.width, 32, 50, 74, 92);
     const text = (value: string, x: number, y: number, light = false) => {
-      for (const ch of value) { const glyph = gb16Glyph(ch.charCodeAt(0)); if (x + glyph.width > out.width - 6) break; out.drawGlyph(x, y, glyph.width, glyph.height, glyph.bits, light ? 255 : 30, light ? 255 : 30, light ? 255 : 30); x += glyph.width; }
+      for (const ch of value) { const glyph = gb16Glyph(ch.charCodeAt(0)); if (x + glyph.width > out.width - 6) break; out.drawGlyph(x, y, glyph.width, glyph.height, glyph.bits, light ? 255 : 30, light ? 255 : 30, light ? 255 : 30, ch.charCodeAt(0)); x += glyph.width; }
     };
     text(view.title, 8, 8, true);
     const rows = Math.max(1, Math.floor((out.height - 72) / 26));
